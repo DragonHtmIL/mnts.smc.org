@@ -1,0 +1,132 @@
+{
+  "name": "Snake Mecha Collector",
+  "short_name": "Snake Mecha Collector",
+  "description": "A classic Snake Game with SMC style.",
+  "scope": "/mnts.snakegame.smc/",
+  "start_url": "/mnts.snakegame.smc/",
+  "display": "fullscreen",
+  "orientation": "portrait",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "/mnts.snakegame.smc/index_data/textures/system/icon_0.png",
+      "type": "image/png",
+      "sizes": "225x225"
+    },
+    {
+      "src": "/mnts.snakegame.smc/index_data/textures/system/icon_16.png",
+      "type": "image/png",
+      "sizes": "16x16"
+    },
+    {
+      "src": "/mnts.snakegame.smc/index_data/textures/system/icon_32.png",
+      "type": "image/png",
+      "sizes": "32x32"
+    },
+    {
+      "src": "/mnts.snakegame.smc/index_data/textures/system/icon_48.png",
+      "type": "image/png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "/mnts.snakegame.smc/index_data/textures/system/icon_76.png",
+      "type": "image/png",
+      "sizes": "76x76"
+    },
+    {
+      "src": "/mnts.snakegame.smc/index_data/textures/system/icon_96.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "/mnts.snakegame.smc/index_data/textures/system/icon_120.png",
+      "type": "image/png",
+      "sizes": "120x120"
+    },
+    {
+      "src": "/mnts.snakegame.smc/index_data/textures/system/icon_128.png",
+      "type": "image/png",
+      "sizes": "128x128"
+    },
+    {
+      "src": "/mnts.snakegame.smc/index_data/textures/system/icon_144.png",
+      "type": "image/png",
+      "sizes": "144x144"
+    },
+    {
+      "src": "/mnts.snakegame.smc/index_data/textures/system/icon_152.png",
+      "type": "image/png",
+      "sizes": "152x152"
+    },
+    {
+      "src": "/mnts.snakegame.smc/index_data/textures/system/icon_167.png",
+      "type": "image/png",
+      "sizes": "167x167"
+    },
+    {
+      "src": "/mnts.snakegame.smc/index_data/textures/system/icon_180.png",
+      "type": "image/png",
+      "sizes": "180x180"
+    },
+    {
+      "src": "/mnts.snakegame.smc/index_data/textures/system/icon_192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/mnts.snakegame.smc/index_data/textures/system/icon_196.png",
+      "type": "image/png",
+      "sizes": "196x196"
+    },
+    {
+      "src": "/mnts.snakegame.smc/index_data/textures/system/icon_228.png",
+      "type": "image/png",
+      "sizes": "228x228"
+    },
+    {
+      "src": "/mnts.snakegame.smc/index_data/textures/system/icon_256.png",
+      "type": "image/png",
+      "sizes": "256x256"
+    },
+    {
+      "src": "/mnts.snakegame.smc/index_data/textures/system/icon_300.png",
+      "type": "image/png",
+      "sizes": "300x300"
+    },
+    {
+      "src": "/mnts.snakegame.smc/index_data/textures/system/icon_384.png",
+      "type": "image/png",
+      "sizes": "384x384"
+    },
+    {
+      "src": "/mnts.snakegame.smc/index_data/textures/system/icon_512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "locales": ["en","ru","ja","zhs","zht","ko","he"],
+  "ru": {
+    "name": "Змея Меха Сборщик",
+    "short_name": "Змея Меха Сборщик"
+  },
+  "ja": {
+    "name": "スネークメカコレクター",
+    "short_name": "スネークメカコレクター"
+  },
+  "zhs": {
+    "name": "蛇形机甲收藏家",
+    "short_name": "蛇形机甲收藏家"
+  },
+  "zht": {
+    "name": "蛇形機甲收藏家",
+    "short_name": "蛇形機甲收藏家"
+  },
+  "ko": {
+    "name": "뱀 메카 수집가",
+    "short_name": "뱀 메카 수집가"
+  },
+  "he": {
+    "name": "מכה נחש אספן",
+    "short_name": "מכה נחש אספן"
+  }
+}

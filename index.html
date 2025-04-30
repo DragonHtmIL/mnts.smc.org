@@ -1,0 +1,1494 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" translate="no">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="background_color" content="#ffffff">
+    <meta name="google" content="notranslate">
+    <title>...</title>
+    <link rel="canonical" href="https://arturvesta.github.io/mnts.snakegame.smc/">
+    <link rel="manifest" href="" id="manifestTestLoad">
+    <link rel="stylesheet" href="index_data/styles/styles.css">
+    <link rel="stylesheet" href="index_data/styles/animations.css">
+    <script>
+      var rUsers = "0";
+      if(localStorage.getItem("lang") === "en") {
+        document.documentElement.setAttribute("lang", "en");
+      }else
+      if(localStorage.getItem("lang") === "ru") {
+        document.documentElement.setAttribute("lang", "ru");
+      }else
+      if(localStorage.getItem("lang") === "jp") {
+        document.documentElement.setAttribute("lang", "ja");
+      }else
+      if(localStorage.getItem("lang") === "chs") {
+        document.documentElement.setAttribute("lang", "zhs");
+      }else
+      if(localStorage.getItem("lang") === "cht") {
+        document.documentElement.setAttribute("lang", "zht");
+      }else
+      if(localStorage.getItem("lang") === "ko") {
+        document.documentElement.setAttribute("lang", "ko");
+      }else
+      if(localStorage.getItem("lang") === "he") {
+        document.documentElement.setAttribute("lang", "he");
+      }
+    </script>
+  </head>
+  <body>
+    <div id="main">
+      <div class="profile-content" id="profileOpener" onclick="clearInterval(setIntervalId);openProfileCenter();menuPauseWalkSound();defaultClickSound();">
+        <div class="league-info" id="">
+          <div class="game-details">
+            <div class="score" id="getscore">...</div>
+            <div class="high-score" id="gethighscore">...</div>
+          </div>
+        </div>
+        <div class="clickable-text" id="clickable0Lang">...</div>
+      </div>
+      <div id="accenter" class="modal">
+        <div class="modal-content">
+          <div id="profileTitleLang">...</div>
+          <button class="reset-button" id="closeacc" onclick="document.getElementById('accenter').style.display='none';handleInterval();closeModalSound();"></button>
+          <div class="in-modal-content" id="accontent">
+            <div class="left-modal-acc">
+              <div id="leagueImage"></div>
+              <div id="leagueType">...</div>
+              <div class="leaguelevel"><span id="star">★</span><span id="leaguelevel">...</span></div>
+            </div>
+            <hr class="acc">
+            <div class="right-modal-acc">
+              <div class="item-cont meow">
+                <div class="item-cont-icon" id="meowIcon"></div>
+                <div class="item-cont-label" id="collectedMeow">0</div>
+              </div>
+              <div class="item-cont gold">
+                <div class="item-cont-icon" id="goldIcon"></div>
+                <div class="item-cont-label" id="collectedGold">0</div>
+              </div>
+              <div class="item-cont alphacoin">
+                <div class="item-cont-icon" id="alphacoinIcon"></div>
+                <div class="item-cont-label" id="collectedAlphacoin">0</div>
+              </div>
+              <div class="item-cont crystal">
+                <div class="item-cont-icon" id="crystalIcon"></div>
+                <div class="item-cont-label" id="collectedCrystal">0</div>
+              </div>
+              <div class="item-cont ticket">
+                <div class="item-cont-icon" id="ticketIcon"></div>
+                <div class="item-cont-label" id="collectedTicket">0</div>
+              </div>
+              <div class="item-cont cticket">
+                <div class="item-cont-icon" id="cTicketIcon"></div>
+                <div class="item-cont-label" id="collectedCticket">0</div>
+              </div>
+              <div class="item-cont pticket">
+                <div class="item-cont-icon" id="pTicketIcon"></div>
+                <div class="item-cont-label" id="collectedPticket">0</div>
+              </div>
+              <div class="item-cont pticket2">
+                <div class="item-cont-icon" id="pTicket2Icon"></div>
+                <div class="item-cont-label" id="collectedPticket2">0</div>
+              </div>
+              <div class="item-cont virtualToken">
+                <div class="item-cont-icon" id="virtualTokenIcon"></div>
+                <div class="item-cont-label" id="collectedVirtualToken">0</div>
+              </div>
+              <div class="item-cont food-item-000-content">
+                <div class="item-cont-icon" id="food000Item0Icon"></div>
+                <div class="item-cont-label" id="collected000Food">0</div>
+              </div>
+              <div class="item-cont food-item-001-content">
+                <div class="item-cont-icon" id="food001Item0Icon"></div>
+                <div class="item-cont-label" id="collected001Food">0</div>
+              </div>
+              <div class="item-cont food-item-002-content">
+                <div class="item-cont-icon" id="food002Item0Icon"></div>
+                <div class="item-cont-label" id="collected002Food">0</div>
+              </div>
+              <div class="item-cont food-item-003-content">
+                <div class="item-cont-icon" id="food003Item0Icon"></div>
+                <div class="item-cont-label" id="collected003Food">0</div>
+              </div>
+              <div class="item-cont food-item-004-content">
+                <div class="item-cont-icon" id="food004Item0Icon"></div>
+                <div class="item-cont-label" id="collected004Food">0</div>
+              </div>
+              <div class="item-cont food-item-005-content">
+                <div class="item-cont-icon" id="food005Item0Icon"></div>
+                <div class="item-cont-label" id="collected005Food">0</div>
+              </div>
+              <div class="item-cont food-item-006-content">
+                <div class="item-cont-icon" id="food006Item0Icon"></div>
+                <div class="item-cont-label" id="collected006Food">0</div>
+              </div>
+              <div class="item-cont food-item-007-content">
+                <div class="item-cont-icon" id="food007Item0Icon"></div>
+                <div class="item-cont-label" id="collected007Food">0</div>
+              </div>
+              <div class="item-cont food-item-008-content">
+                <div class="item-cont-icon" id="food008Item0Icon"></div>
+                <div class="item-cont-label" id="collected008Food">0</div>
+              </div>
+              <div class="item-cont food-item-009-content">
+                <div class="item-cont-icon" id="food009Item0Icon"></div>
+                <div class="item-cont-label" id="collected009Food">0</div>
+              </div>
+              <div class="item-cont food-item-010-content">
+                <div class="item-cont-icon" id="food010Item0Icon"></div>
+                <div class="item-cont-label" id="collected010Food">0</div>
+              </div>
+              <div class="item-cont food-item-011-content">
+                <div class="item-cont-icon" id="food011Item0Icon"></div>
+                <div class="item-cont-label" id="collected011Food">0</div>
+              </div>
+              <div class="item-cont food-item-012-content">
+                <div class="item-cont-icon" id="food012Item0Icon"></div>
+                <div class="item-cont-label" id="collected012Food">0</div>
+              </div>
+              <div class="item-cont food-item-013-content">
+                <div class="item-cont-icon" id="food013Item0Icon"></div>
+                <div class="item-cont-label" id="collected013Food">0</div>
+              </div>
+              <div class="item-cont food-item-014-content">
+                <div class="item-cont-icon" id="food014Item0Icon"></div>
+                <div class="item-cont-label" id="collected014Food">0</div>
+              </div>
+              <div class="item-cont food-item-015-content">
+                <div class="item-cont-icon" id="food015Item0Icon"></div>
+                <div class="item-cont-label" id="collected015Food">0</div>
+              </div>
+              <div class="item-cont food-item-016-content">
+                <div class="item-cont-icon" id="food016Item0Icon"></div>
+                <div class="item-cont-label" id="collected016Food">0</div>
+              </div>
+              <div class="item-cont food-item-017-content">
+                <div class="item-cont-icon" id="food017Item0Icon"></div>
+                <div class="item-cont-label" id="collected017Food">0</div>
+              </div>
+              <div class="item-cont food-item-018-content">
+                <div class="item-cont-icon" id="food018Item0Icon"></div>
+                <div class="item-cont-label" id="collected018Food">0</div>
+              </div>
+              <div class="item-cont food-item-019-content">
+                <div class="item-cont-icon" id="food019Item0Icon"></div>
+                <div class="item-cont-label" id="collected019Food">0</div>
+              </div>
+              <div class="item-cont food-item-020-content">
+                <div class="item-cont-icon" id="food020Item0Icon"></div>
+                <div class="item-cont-label" id="collected020Food">0</div>
+              </div>
+              <div class="item-cont food-item-021-content">
+                <div class="item-cont-icon" id="food021Item0Icon"></div>
+                <div class="item-cont-label" id="collected021Food">0</div>
+              </div>
+              <div class="item-cont food-item-022-content">
+                <div class="item-cont-icon" id="food022Item0Icon"></div>
+                <div class="item-cont-label" id="collected022Food">0</div>
+              </div>
+              <div class="item-cont food-item-023-content">
+                <div class="item-cont-icon" id="food023Item0Icon"></div>
+                <div class="item-cont-label" id="collected023Food">0</div>
+              </div>
+              <div class="item-cont food-item-024-content">
+                <div class="item-cont-icon" id="food024Item0Icon"></div>
+                <div class="item-cont-label" id="collected024Food">0</div>
+              </div>
+              <div class="item-cont food-item-025-content">
+                <div class="item-cont-icon" id="food025Item0Icon"></div>
+                <div class="item-cont-label" id="collected025Food">0</div>
+              </div>
+              <div class="item-cont food-item-026-content">
+                <div class="item-cont-icon" id="food026Item0Icon"></div>
+                <div class="item-cont-label" id="collected026Food">0</div>
+              </div>
+              <div class="item-cont food-item-027-content">
+                <div class="item-cont-icon" id="food027Item0Icon"></div>
+                <div class="item-cont-label" id="collected027Food">0</div>
+              </div>
+              <div class="item-cont food-item-028-content">
+                <div class="item-cont-icon" id="food028Item0Icon"></div>
+                <div class="item-cont-label" id="collected028Food">0</div>
+              </div>
+              <div class="item-cont food-item-029-content">
+                <div class="item-cont-icon" id="food029Item0Icon"></div>
+                <div class="item-cont-label" id="collected029Food">0</div>
+              </div>
+              <div class="item-cont food-item-030-content">
+                <div class="item-cont-icon" id="food030Item0Icon"></div>
+                <div class="item-cont-label" id="collected030Food">0</div>
+              </div>
+              <div class="item-cont food-item-031-content">
+                <div class="item-cont-icon" id="food031Item0Icon"></div>
+                <div class="item-cont-label" id="collected031Food">0</div>
+              </div>
+              <div class="item-cont food-item-032-content">
+                <div class="item-cont-icon" id="food032Item0Icon"></div>
+                <div class="item-cont-label" id="collected032Food">0</div>
+              </div>
+              <div class="item-cont food-item-033-content">
+                <div class="item-cont-icon" id="food033Item0Icon"></div>
+                <div class="item-cont-label" id="collected033Food">0</div>
+              </div>
+              <div class="item-cont food-item-034-content">
+                <div class="item-cont-icon" id="food034Item0Icon"></div>
+                <div class="item-cont-label" id="collected034Food">0</div>
+              </div>
+              <div class="item-cont food-item-035-content">
+                <div class="item-cont-icon" id="food035Item0Icon"></div>
+                <div class="item-cont-label" id="collected035Food">0</div>
+              </div>
+              <div class="item-cont food-item-036-content">
+                <div class="item-cont-icon" id="food036Item0Icon"></div>
+                <div class="item-cont-label" id="collected036Food">0</div>
+              </div>
+              <div class="item-cont food-item-037-content">
+                <div class="item-cont-icon" id="food037Item0Icon"></div>
+                <div class="item-cont-label" id="collected037Food">0</div>
+              </div>
+              <div class="item-cont food-item-038-content">
+                <div class="item-cont-icon" id="food038Item0Icon"></div>
+                <div class="item-cont-label" id="collected038Food">0</div>
+              </div>
+              <div class="item-cont food-item-039-content">
+                <div class="item-cont-icon" id="food039Item0Icon"></div>
+                <div class="item-cont-label" id="collected039Food">0</div>
+              </div>
+              <div class="item-cont food-item-040-content">
+                <div class="item-cont-icon" id="food040Item0Icon"></div>
+                <div class="item-cont-label" id="collected040Food">0</div>
+              </div>
+              <div class="item-cont food-item-041-content">
+                <div class="item-cont-icon" id="food041Item0Icon"></div>
+                <div class="item-cont-label" id="collected041Food">0</div>
+              </div>
+              <div class="item-cont food-item-042-content">
+                <div class="item-cont-icon" id="food042Item0Icon"></div>
+                <div class="item-cont-label" id="collected042Food">0</div>
+              </div>
+              <div class="item-cont food-item-043-content">
+                <div class="item-cont-icon" id="food043Item0Icon"></div>
+                <div class="item-cont-label" id="collected043Food">0</div>
+              </div>
+              <div class="item-cont food-item-044-content">
+                <div class="item-cont-icon" id="food044Item0Icon"></div>
+                <div class="item-cont-label" id="collected044Food">0</div>
+              </div>
+              <div class="item-cont food-item-045-content">
+                <div class="item-cont-icon" id="food045Item0Icon"></div>
+                <div class="item-cont-label" id="collected045Food">0</div>
+              </div>
+              <div class="item-cont food-item-046-content">
+                <div class="item-cont-icon" id="food046Item0Icon"></div>
+                <div class="item-cont-label" id="collected046Food">0</div>
+              </div>
+              <div class="item-cont food-item-047-content">
+                <div class="item-cont-icon" id="food047Item0Icon"></div>
+                <div class="item-cont-label" id="collected047Food">0</div>
+              </div>
+              <div class="item-cont food-item-048-content">
+                <div class="item-cont-icon" id="food048Item0Icon"></div>
+                <div class="item-cont-label" id="collected048Food">0</div>
+              </div>
+              <div class="item-cont food-item-049-content">
+                <div class="item-cont-icon" id="food049Item0Icon"></div>
+                <div class="item-cont-label" id="collected049Food">0</div>
+              </div>
+              <div class="item-cont food-item-050-content">
+                <div class="item-cont-icon" id="food050Item0Icon"></div>
+                <div class="item-cont-label" id="collected050Food">0</div>
+              </div>
+              <div class="item-cont food-item-051-content">
+                <div class="item-cont-icon" id="food051Item0Icon"></div>
+                <div class="item-cont-label" id="collected051Food">0</div>
+              </div>
+              <div class="item-cont food-item-052-content">
+                <div class="item-cont-icon" id="food052Item0Icon"></div>
+                <div class="item-cont-label" id="collected052Food">0</div>
+              </div>
+              <div class="item-cont food-item-053-content">
+                <div class="item-cont-icon" id="food053Item0Icon"></div>
+                <div class="item-cont-label" id="collected053Food">0</div>
+              </div>
+              <div class="item-cont food-item-054-content">
+                <div class="item-cont-icon" id="food054Item0Icon"></div>
+                <div class="item-cont-label" id="collected054Food">0</div>
+              </div>
+              <div class="item-cont food-item-055-content">
+                <div class="item-cont-icon" id="food055Item0Icon"></div>
+                <div class="item-cont-label" id="collected055Food">0</div>
+              </div>
+              <div class="item-cont food-item-056-content">
+                <div class="item-cont-icon" id="food056Item0Icon"></div>
+                <div class="item-cont-label" id="collected056Food">0</div>
+              </div>
+              <div class="item-cont food-item-057-content">
+                <div class="item-cont-icon" id="food057Item0Icon"></div>
+                <div class="item-cont-label" id="collected057Food">0</div>
+              </div>
+              <div class="item-cont food-item-058-content">
+                <div class="item-cont-icon" id="food058Item0Icon"></div>
+                <div class="item-cont-label" id="collected058Food">0</div>
+              </div>
+              <div class="item-cont food-item-059-content">
+                <div class="item-cont-icon" id="food059Item0Icon"></div>
+                <div class="item-cont-label" id="collected059Food">0</div>
+              </div>
+              <div class="item-cont food-item-060-content">
+                <div class="item-cont-icon" id="food060Item0Icon"></div>
+                <div class="item-cont-label" id="collected060Food">0</div>
+              </div>
+              <div class="item-cont food-item-061-content">
+                <div class="item-cont-icon" id="food061Item0Icon"></div>
+                <div class="item-cont-label" id="collected061Food">0</div>
+              </div>
+              <div class="item-cont food-item-062-content">
+                <div class="item-cont-icon" id="food062Item0Icon"></div>
+                <div class="item-cont-label" id="collected062Food">0</div>
+              </div>
+              <div class="item-cont food-item-063-content">
+                <div class="item-cont-icon" id="food063Item0Icon"></div>
+                <div class="item-cont-label" id="collected063Food">0</div>
+              </div>
+              <div class="item-cont food-item-064-content">
+                <div class="item-cont-icon" id="food064Item0Icon"></div>
+                <div class="item-cont-label" id="collected064Food">0</div>
+              </div>
+              <div class="item-cont food-item-065-content">
+                <div class="item-cont-icon" id="food065Item0Icon"></div>
+                <div class="item-cont-label" id="collected065Food">0</div>
+              </div>
+              <div class="item-cont food-item-066-content">
+                <div class="item-cont-icon" id="food066Item0Icon"></div>
+                <div class="item-cont-label" id="collected066Food">0</div>
+              </div>
+              <div class="item-cont food-item-067-content">
+                <div class="item-cont-icon" id="food067Item0Icon"></div>
+                <div class="item-cont-label" id="collected067Food">0</div>
+              </div>
+              <div class="item-cont food-item-068-content">
+                <div class="item-cont-icon" id="food068Item0Icon"></div>
+                <div class="item-cont-label" id="collected068Food">0</div>
+              </div>
+              <div class="item-cont food-item-069-content">
+                <div class="item-cont-icon" id="food069Item0Icon"></div>
+                <div class="item-cont-label" id="collected069Food">0</div>
+              </div>
+              <div class="item-cont food-item-070-content">
+                <div class="item-cont-icon" id="food070Item0Icon"></div>
+                <div class="item-cont-label" id="collected070Food">0</div>
+              </div>
+              <div class="item-cont food-item-071-content">
+                <div class="item-cont-icon" id="food071Item0Icon"></div>
+                <div class="item-cont-label" id="collected071Food">0</div>
+              </div>
+              <div class="item-cont food-item-072-content">
+                <div class="item-cont-icon" id="food072Item0Icon"></div>
+                <div class="item-cont-label" id="collected072Food">0</div>
+              </div>
+              <div class="item-cont food-item-073-content">
+                <div class="item-cont-icon" id="food073Item0Icon"></div>
+                <div class="item-cont-label" id="collected073Food">0</div>
+              </div>
+              <div class="item-cont food-item-074-content">
+                <div class="item-cont-icon" id="food074Item0Icon"></div>
+                <div class="item-cont-label" id="collected074Food">0</div>
+              </div>
+              <div class="item-cont food-item-075-content">
+                <div class="item-cont-icon" id="food075Item0Icon"></div>
+                <div class="item-cont-label" id="collected075Food">0</div>
+              </div>
+              <div class="item-cont food-item-076-content">
+                <div class="item-cont-icon" id="food076Item0Icon"></div>
+                <div class="item-cont-label" id="collected076Food">0</div>
+              </div>
+              <div class="item-cont food-item-077-content">
+                <div class="item-cont-icon" id="food077Item0Icon"></div>
+                <div class="item-cont-label" id="collected077Food">0</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="device-info-indicator">
+        <div id="batteryProgress">
+          <div id="inBatteryProgress"></div>
+        </div>
+        <div id="dateTimeIndicator">
+          <div id="clock">...</div>
+          <div id="calendar">...</div>
+        </div>
+        <div id="batteryIndicator">
+          <div id="batteryLevel"></div>
+          <div id="batteryCharge"></div>
+        </div>
+        <div id="timeAndDateIndicator"></div>
+      </div>
+      <div id="navBtn" onclick="clearInterval(setIntervalId);document.getElementById('menu').style.display='block';openSettingsSound();menuPauseWalkSound();"></div>
+      <input type="checkbox" id="chechboxPausing" class="pauseBtn" onchange="pauseGame();">
+      <div class="menu" id="menu">
+        <div class="menu-content" id="menucontent">
+          <div id="SettingsTitleLang">...</div>
+          <div class="close" id="menuCloseBtnBack"></div>
+          <div class="close-clickable" id="menuCloseBtn" onclick="handleInterval();document.getElementById('menu').style.display='none';closeSettingsSound();menuPauseWalkSound();"></div>
+          <div class="tab">
+            <button class="tablinks active" onclick="openRange(event, 'conOne');openTab(event, 'about');selectionSound();" id="aboutTab">...</button>
+            <button class="tablinks" onclick="openRange(event, 'conTwo');openTab(event, 'system');selectionSound();" id="systemTab">...</button>
+            <button class="tablinks" onclick="openRange(event, 'conThree');openTab(event, 'snake');selectionSound();" id="snakeTab">...</button>
+            <button class="tablinks" onclick="openRange(event, 'conFour');openTab(event, 'food');selectionSound();" id="foodTab">...</button>
+            <button class="tablinks" onclick="openRange(event, 'conFive');openTab(event, 'board');selectionSound();" id="boardTab">...</button>
+            <button class="tablinks" onclick="openRange(event, 'conSix');openTab(event, 'audio');selectionSound();" id="audioTab">...</button>
+          </div>
+          <div id="system" class="content">
+            <div class="categores settingscontent">...</div>
+            <div class="categores" id="controllerSettingsLangs">...</div>
+            <div class="range-content" id="devCheck">
+              <select name="controllerTypes" id="cTypeChenger" onchange="changeControllerType();" onclick="selectionSound();">
+                <option value="classic" id="defOptionLang">...</option>
+                <option value="dynamic" id="dynOptionLang">...</option>
+                <option value="swap" id="swaOptionLang">...</option>
+              </select>
+            </div>
+            <div class="categores" id="cspLang">...</div>
+            <div id="selectOptionsControllerPosition" class="select-content">
+              <div onclick="centerController();" id="ccLang" class="controllerpostype select">...</div>
+              <div onclick="leftController();" id="clLang" class="controllerpostype select">...</div>
+              <div onclick="rightController();" id="crLang" class="controllerpostype select">...</div>
+            </div>
+            <hr id="hr0hiddenTuggle">
+            <div class="categores" id="langsLangs">...</div>
+            <div id="selectOptions" class="select-content">
+              <div onclick="englishLanguage();" id="languageEn" class="language select">English</div>
+              <div onclick="russianLanguage();" id="languageRu" class="language select">Русский</div>
+              <div onclick="japaneseLanguage();" id="languageJp" class="language select">日本語</div>
+              <div onclick="ChineseSimplifiedLanguage();" id="languageChs" class="language select">简体中文</div>
+              <div onclick="ChineseTraditionalLanguage();" id="languageCht" class="language select">繁體中文</div>
+              <div onclick="koreanLanguage();" id="languageKo" class="language select">한국어</div>
+              <div onclick="hebrewLanguage();" id="languageHe" class="language select">עברית</div>
+              <div class="important-text" id="langImportantLang">...</div>
+            </div>
+            <hr>
+            <div class="categores" id="difficultyLang">...</div>
+            <div id="selectOptions" class="select-content">
+              <div onclick="normalDifLoad();" id="normalDif" class="difficulty select">...</div>
+              <div onclick="hardDifLoad();" id="hardDif" class="difficulty select">...</div>
+              <div onclick="hellDifLoad();" id="hellDif" class="difficulty select">...</div>
+            </div>
+            <hr>
+            <div class="categores moresettingscontent">...</div>
+            <input type="button" id="deleteprogbutton" onclick="alertDeleteProgress();" value="...">
+            <input type="button" id="saveProgDataViafile" onclick="saveProgressViaFile();" value="...">
+            <form action="javascript:loadDataSaved();" method="post">
+              <label for="dataLocalUpload" id="uploadDataLang">...</label><br>
+              <input type="file" name="saveProgDataViafile" id="dataLocalUpload" style="display:none;" required>
+              <input type="button" id="subButton" onclick="document.getElementById('dataLocalUpload').click();" value="...">
+              <input type="submit" id="dataRunner" value="...">
+            </form>
+            <br>
+            <input type="button" id="downloadNoAutoUpdate" class="windows-dl" onclick="downloadAlertSystem();" value=" ">
+            <input type="button" id="downloadNoAutoUpdate2" class="android-dl" value=" ">
+            <div class="range-content">
+              <input type="checkbox" id="administratorTools" onclick="selectionSound();">
+              <label class="label-checkbox" for="administratorTools" id="adminToolsLang">...</label>
+            </div>
+            <hr>
+            <div class="categores stylescontent">...</div>
+            <div id="loadingLangStyle">...</div>
+            <div id="selectOptions" class="select-content">
+              <div onclick="loadingClassic();" id="loadClassicCon" class="select"><span id="loadClassic">...</span></div>
+              <div onclick="loadingAnime();" id="loadAnimeCon" class="select"><span id="loadAnime"></span></div>
+              <div onclick="loadingMiku();" id="loadMikuCon" class="select"><span id="loadMiku">Hatsune Miku</span></div>
+              <div onclick="loadingNakano();" id="loadNakanoCon" class="select"><span id="loadNakano">Nakano Azusa</span></div>
+            </div>
+          </div>
+          <div id="board" class="content">
+            <div class="categores settingscontent">...</div>
+            <hr>
+            <div class="categores stylescontent">...</div>
+            <div id="selectOptions" class="select-content">
+              <div onclick="alphaMapLoad();" id="alphaMap" class="select"><div class="select-icon" id="alphaMapImage"></div><span id="boardMapAlphaLang">...</span></div>
+              <div onclick="alphaMap2Load();" id="alphaMap2" class="select"><div class="select-icon" id="alphaMapImage2"></div><span id="boardMapAlpha2Lang">...</span></div>
+              <div onclick="origoMapLoad();" id="origoMap" class="select"><div class="select-icon" id="origoMapImage"></div><span id="boardMapOrigoLang">...</span></div>
+            </div>
+            <hr>
+            <div id="selectOptions" class="select-content">
+              <div onclick="imageAaaLoad();" id="conBoard000img" class="select-img"><div class="select-icon-img" id="board000img"></div></div>
+              <div onclick="imageBaaLoad();" id="conBoard001img" class="select-img"><div class="select-icon-img" id="board001img"></div></div>
+              <div onclick="imageCaaLoad();" id="conBoard002img" class="select-img"><div class="select-icon-img" id="board002img"></div></div>
+              <div onclick="imageDaaLoad();" id="conBoard003img" class="select-img"><div class="select-icon-img" id="board003img"></div></div>
+              <div onclick="imageEaaLoad();" id="conBoard004img" class="select-img"><div class="select-icon-img" id="board004img"></div></div>
+              <div onclick="imageFaaLoad();" id="conBoard005img" class="select-img"><div class="select-icon-img" id="board005img"></div></div>
+              <div onclick="imageGaaLoad();" id="conBoard006img" class="select-img"><div class="select-icon-img" id="board006img"></div></div>
+              <div onclick="imageHaaLoad();" id="conBoard007img" class="select-img"><div class="select-icon-img" id="board007img"></div></div>
+              <div onclick="imageIaaLoad();" id="conBoard008img" class="select-img"><div class="select-icon-img" id="board008img"></div></div>
+              <div onclick="imageJaaLoad();" id="conBoard009img" class="select-img"><div class="select-icon-img" id="board009img"></div></div>
+              <div onclick="imageKaaLoad();" id="conBoard010img" class="select-img"><div class="select-icon-img" id="board010img"></div></div>
+              <div onclick="imageLaaLoad();" id="conBoard011img" class="select-img"><div class="select-icon-img" id="board011img"></div></div>
+              <div onclick="imageMaaLoad();" id="conBoard012img" class="select-img"><div class="select-icon-img" id="board012img"></div></div>
+              <div onclick="imageNaaLoad();" id="conBoard013img" class="select-img"><div class="select-icon-img" id="board013img"></div></div>
+              <div onclick="imageOaaLoad();" id="conBoard014img" class="select-img"><div class="select-icon-img" id="board014img"></div></div>
+              <div onclick="imagePaaLoad();" id="conBoard015img" class="select-img"><div class="select-icon-img" id="board015img"></div></div>
+              <div onclick="imageQaaLoad();" id="conBoard016img" class="select-img"><div class="select-icon-img" id="board016img"></div></div>
+              <div onclick="imageRaaLoad();" id="conBoard017img" class="select-img"><div class="select-icon-img" id="board017img"></div></div>
+              <div onclick="imageSaaLoad();" id="conBoard018img" class="select-img"><div class="select-icon-img" id="board018img"></div></div>
+              <div onclick="imageTaaLoad();" id="conBoard019img" class="select-img"><div class="select-icon-img" id="board019img"></div></div>
+              <div onclick="imageUaaLoad();" id="conBoard020img" class="select-img"><div class="select-icon-img" id="board020img"></div></div>
+              <div onclick="imageVaaLoad();" id="conBoard021img" class="select-img"><div class="select-icon-img" id="board021img"></div></div>
+              <div onclick="imageWaaLoad();" id="conBoard022img" class="select-img"><div class="select-icon-img" id="board022img"></div></div>
+              <div onclick="imageXaaLoad();" id="conBoard023img" class="select-img"><div class="select-icon-img" id="board023img"></div></div>
+              <div onclick="imageYaaLoad();" id="conBoard024img" class="select-img"><div class="select-icon-img" id="board024img"></div></div>
+              <div onclick="imageZaaLoad();" id="conBoard025img" class="select-img"><div class="select-icon-img" id="board025img"></div></div>
+              <div onclick="imageAbaLoad();" id="conBoard026img" class="select-img"><div class="select-icon-img" id="board026img"></div></div>
+              <div onclick="imageBbaLoad();" id="conBoard027img" class="select-img"><div class="select-icon-img" id="board027img"></div></div>
+              <div onclick="imageCbaLoad();" id="conBoard028img" class="select-img"><div class="select-icon-img" id="board028img"></div></div>
+              <div onclick="imageDbaLoad();" id="conBoard029img" class="select-img"><div class="select-icon-img" id="board029img"></div></div>
+              <div onclick="imageEbaLoad();" id="conBoard030img" class="select-img"><div class="select-icon-img" id="board030img"></div></div>
+              <div onclick="imageFbaLoad();" id="conBoard031img" class="select-img"><div class="select-icon-img" id="board031img"></div></div>
+              <div onclick="imageGbaLoad();" id="conBoard032img" class="select-img"><div class="select-icon-img" id="board032img"></div></div>
+              <div onclick="imageHbaLoad();" id="conBoard033img" class="select-img"><div class="select-icon-img" id="board033img"></div></div>
+              <div onclick="imageIbaLoad();" id="conBoard034img" class="select-img"><div class="select-icon-img" id="board034img"></div></div>
+              <div onclick="imageJbaLoad();" id="conBoard035img" class="select-img"><div class="select-icon-img" id="board035img"></div></div>
+              <div onclick="imageKbaLoad();" id="conBoard036img" class="select-img"><div class="select-icon-img" id="board036img"></div></div>
+              <div onclick="imageLbaLoad();" id="conBoard037img" class="select-img"><div class="select-icon-img" id="board037img"></div></div>
+              <div onclick="imageMbaLoad();" id="conBoard038img" class="select-img"><div class="select-icon-img" id="board038img"></div></div>
+              <div onclick="imageNbaLoad();" id="conBoard039img" class="select-img"><div class="select-icon-img" id="board039img"></div></div>
+              <div onclick="imageObaLoad();" id="conBoard040img" class="select-img"><div class="select-icon-img" id="board040img"></div></div>
+              <div onclick="imagePbaLoad();" id="conBoard041img" class="select-img"><div class="select-icon-img" id="board041img"></div></div>
+              <div onclick="imageQbaLoad();" id="conBoard042img" class="select-img"><div class="select-icon-img" id="board042img"></div></div>
+              <div onclick="imageRbaLoad();" id="conBoard043img" class="select-img"><div class="select-icon-img" id="board043img"></div></div>
+              <div onclick="imageSbaLoad();" id="conBoard044img" class="select-img"><div class="select-icon-img" id="board044img"></div></div>
+              <div onclick="imageTbaLoad();" id="conBoard045img" class="select-img"><div class="select-icon-img" id="board045img"></div></div>
+              <div onclick="imageUbaLoad();" id="conBoard046img" class="select-img"><div class="select-icon-img" id="board046img"></div></div>
+              <div onclick="imageVbaLoad();" id="conBoard047img" class="select-img"><div class="select-icon-img" id="board047img"></div></div>
+              <div onclick="imageWbaLoad();" id="conBoard048img" class="select-img"><div class="select-icon-img" id="board048img"></div></div>
+              <div onclick="imageXbaLoad();" id="conBoard049img" class="select-img"><div class="select-icon-img" id="board049img"></div></div>
+              <div onclick="imageYbaLoad();" id="conBoard050img" class="select-img"><div class="select-icon-img" id="board050img"></div></div>
+              <div onclick="imageZbaLoad();" id="conBoard051img" class="select-img"><div class="select-icon-img" id="board051img"></div></div>
+              <div onclick="imageAcaLoad();" id="conBoard052img" class="select-img"><div class="select-icon-img" id="board052img"></div></div>
+              <div onclick="imageBcaLoad();" id="conBoard053img" class="select-img"><div class="select-icon-img" id="board053img"></div></div>
+              <div onclick="imageCcaLoad();" id="conBoard054img" class="select-img"><div class="select-icon-img" id="board054img"></div></div>
+              <div onclick="imageDcaLoad();" id="conBoard055img" class="select-img"><div class="select-icon-img" id="board055img"></div></div>
+              <div onclick="imageEcaLoad();" id="conBoard056img" class="select-img"><div class="select-icon-img" id="board056img"></div></div>
+              <div onclick="imageFcaLoad();" id="conBoard057img" class="select-img"><div class="select-icon-img" id="board057img"></div></div>
+              <div onclick="imageGcaLoad();" id="conBoard058img" class="select-img"><div class="select-icon-img" id="board058img"></div></div>
+              <div onclick="imageHcaLoad();" id="conBoard059img" class="select-img"><div class="select-icon-img" id="board059img"></div></div>
+              <div onclick="imageIcaLoad();" id="conBoard060img" class="select-img"><div class="select-icon-img" id="board060img"></div></div>
+              <div onclick="imageJcaLoad();" id="conBoard061img" class="select-img"><div class="select-icon-img" id="board061img"></div></div>
+              <div onclick="imageKcaLoad();" id="conBoard062img" class="select-img"><div class="select-icon-img" id="board062img"></div></div>
+              <div onclick="imageLcaLoad();" id="conBoard063img" class="select-img"><div class="select-icon-img" id="board063img"></div></div>
+              <div onclick="imageMcaLoad();" id="conBoard064img" class="select-img"><div class="select-icon-img" id="board064img"></div></div>
+              <div onclick="imageNcaLoad();" id="conBoard065img" class="select-img"><div class="select-icon-img" id="board065img"></div></div>
+              <div onclick="imageOcaLoad();" id="conBoard066img" class="select-img"><div class="select-icon-img" id="board066img"></div></div>
+              <div onclick="imagePcaLoad();" id="conBoard067img" class="select-img"><div class="select-icon-img" id="board067img"></div></div>
+              <div onclick="imageQcaLoad();" id="conBoard068img" class="select-img"><div class="select-icon-img" id="board068img"></div></div>
+              <div onclick="imageRcaLoad();" id="conBoard069img" class="select-img"><div class="select-icon-img" id="board069img"></div></div>
+              <div onclick="imageScaLoad();" id="conBoard070img" class="select-img"><div class="select-icon-img" id="board070img"></div></div>
+              <div onclick="imageTcaLoad();" id="conBoard071img" class="select-img"><div class="select-icon-img" id="board071img"></div></div>
+              <div onclick="imageUcaLoad();" id="conBoard072img" class="select-img"><div class="select-icon-img" id="board072img"></div></div>
+              <div onclick="imageVcaLoad();" id="conBoard073img" class="select-img"><div class="select-icon-img" id="board073img"></div></div>
+            </div>
+          </div>
+          <div id="snake" class="content">
+            <div class="categores settingscontent">...</div>
+            <hr>
+            <div class="categores stylescontent">...</div>
+            <div id="snakePreview">
+              <div id="snakeLatter"></div>
+            </div>
+            <div id="snakeColorLang">...</div>
+            <input type="color" id="snakeColor" oninput="snakeDecoloring();" value="#ddaaff">
+            <div id="keypad">
+              <div class="keypad numpad">
+                <div class="keyOboard" id="key1" onclick="letterLoad1();">1</div>
+                <div class="keyOboard" id="key2" onclick="letterLoad2();">2</div>
+                <div class="keyOboard" id="key3" onclick="letterLoad3();">3</div>
+                <div class="keyOboard" id="key4" onclick="letterLoad4();">4</div>
+                <div class="keyOboard" id="key5" onclick="letterLoad5();">5</div>
+                <div class="keyOboard" id="key6" onclick="letterLoad6();">6</div>
+                <div class="keyOboard" id="key7" onclick="letterLoad7();">7</div>
+                <div class="keyOboard" id="key8" onclick="letterLoad8();">8</div>
+                <div class="keyOboard" id="key9" onclick="letterLoad9();">9</div>
+                <div class="keyOboard" id="key0" onclick="letterLoad0();">0</div>
+              </div>
+              <div class="keypad wordpad">
+                <div class="keyOboard" id="keya" onclick="letterLoadAa();">a</div>
+                <div class="keyOboard" id="keyb" onclick="letterLoadBb();">b</div>
+                <div class="keyOboard" id="keyc" onclick="letterLoadCc();">c</div>
+                <div class="keyOboard" id="keyd" onclick="letterLoadDd();">d</div>
+                <div class="keyOboard" id="keye" onclick="letterLoadEe();">e</div>
+                <div class="keyOboard" id="keyf" onclick="letterLoadFf();">f</div>
+                <div class="keyOboard" id="keyg" onclick="letterLoadGg();">g</div>
+                <div class="keyOboard" id="keyh" onclick="letterLoadHh();">h</div>
+                <div class="keyOboard" id="keyi" onclick="letterLoadIi();">i</div>
+                <div class="keyOboard" id="keyj" onclick="letterLoadJj();">j</div>
+                <div class="keyOboard" id="keyk" onclick="letterLoadKk();">k</div>
+                <div class="keyOboard" id="keyl" onclick="letterLoadLl();">l</div>
+                <div class="keyOboard" id="keym" onclick="letterLoadMm();">m</div>
+                <div class="keyOboard" id="keyn" onclick="letterLoadNn();">n</div>
+                <div class="keyOboard" id="keyo" onclick="letterLoadOo();">o</div>
+                <div class="keyOboard" id="keyp" onclick="letterLoadPp();">p</div>
+                <div class="keyOboard" id="keyq" onclick="letterLoadQq();">q</div>
+                <div class="keyOboard" id="keyr" onclick="letterLoadRr();">r</div>
+                <div class="keyOboard" id="keys" onclick="letterLoadSs();">s</div>
+                <div class="keyOboard" id="keyt" onclick="letterLoadTt();">t</div>
+                <div class="keyOboard" id="keyu" onclick="letterLoadUu();">u</div>
+                <div class="keyOboard" id="keyv" onclick="letterLoadVv();">v</div>
+                <div class="keyOboard" id="keyw" onclick="letterLoadWw();">w</div>
+                <div class="keyOboard" id="keyx" onclick="letterLoadXx();">x</div>
+                <div class="keyOboard" id="keyy" onclick="letterLoadYy();">y</div>
+                <div class="keyOboard" id="keyz" onclick="letterLoadZz();">z</div>
+                <div class="keyOboard" id="keyShift" onclick="shiftLetters();">⇑</div>
+                <div class="keyOboard" id="keyClear" onclick="letterLoad();">⨱</div>
+              </div>
+            </div>
+          </div>
+          <div id="food" class="content">
+            <div class="categores settingscontent">...</div>
+            <hr>
+            <div class="categores stylescontent">...</div>
+            <div id="selectOptions" class="select-content">
+              <div onclick="meowItemLoad();" id="meowItem" class="select"><div class="select-icon" id="meowItemImage"></div><span id="meowLang">...</span></div>
+              <div onclick="goldItemLoad();" id="goldItem" class="select"><div class="select-icon" id="goldItemImage"></div><span id="goldLang">...</span></div>
+              <div onclick="alphacoinItemLoad();" id="alphacoinItem" class="select"><div class="select-icon i-op-img" id="alphacoinItemImage"></div><span id="alphaLang">...</span></div>
+              <div onclick="crystalItemLoad();" id="crystalItem" class="select"><div class="select-icon i-op-img" id="crystalItemImage"></div><span id="crystalLang">...</span></div>
+              <div onclick="ticketItemLoad();" id="ticketItem" class="select"><div class="select-icon" id="ticketItemImage"></div><span id="ticketLang">...</span></div>
+              <div onclick="cTicketItemLoad();" id="cTicketItem" class="select"><div class="select-icon" id="cTicketItemImage"></div><span id="cTicketLang">...</span></div>
+              <div onclick="pTicketItemLoad();" id="pTicketItem" class="select"><div class="select-icon" id="pTicketItemImage"></div><span id="pTicketLang">...</span></div>
+              <div onclick="pTicket2ItemLoad();" id="pTicket2Item" class="select"><div class="select-icon" id="pTicket2ItemImage"></div><span id="pTicket2Lang">...</span></div>
+              <div onclick="virtualTokenItemLoad();" id="virtualTokenItem" class="select"><div class="select-icon" id="virtualTokenItemImage"></div><span id="virtualTokenLang">...</span></div>
+            </div>
+            <hr>
+            <div id="selectOptions" class="select-content">
+              <div onclick="food000ItemLoad();" id="food000Item0" class="select-img"><div class="select-icon-img" id="food000Item0Image"></div></div>
+              <div onclick="food001ItemLoad();" id="food001Item0" class="select-img"><div class="select-icon-img" id="food001Item0Image"></div></div>
+              <div onclick="food002ItemLoad();" id="food002Item0" class="select-img"><div class="select-icon-img" id="food002Item0Image"></div></div>
+              <div onclick="food003ItemLoad();" id="food003Item0" class="select-img"><div class="select-icon-img" id="food003Item0Image"></div></div>
+              <div onclick="food004ItemLoad();" id="food004Item0" class="select-img"><div class="select-icon-img" id="food004Item0Image"></div></div>
+              <div onclick="food005ItemLoad();" id="food005Item0" class="select-img"><div class="select-icon-img" id="food005Item0Image"></div></div>
+              <div onclick="food006ItemLoad();" id="food006Item0" class="select-img"><div class="select-icon-img" id="food006Item0Image"></div></div>
+              <div onclick="food007ItemLoad();" id="food007Item0" class="select-img"><div class="select-icon-img" id="food007Item0Image"></div></div>
+              <div onclick="food008ItemLoad();" id="food008Item0" class="select-img"><div class="select-icon-img" id="food008Item0Image"></div></div>
+              <div onclick="food009ItemLoad();" id="food009Item0" class="select-img"><div class="select-icon-img" id="food009Item0Image"></div></div>
+              <div onclick="food010ItemLoad();" id="food010Item0" class="select-img"><div class="select-icon-img" id="food010Item0Image"></div></div>
+              <div onclick="food011ItemLoad();" id="food011Item0" class="select-img"><div class="select-icon-img" id="food011Item0Image"></div></div>
+              <div onclick="food012ItemLoad();" id="food012Item0" class="select-img"><div class="select-icon-img" id="food012Item0Image"></div></div>
+              <div onclick="food013ItemLoad();" id="food013Item0" class="select-img"><div class="select-icon-img" id="food013Item0Image"></div></div>
+              <div onclick="food014ItemLoad();" id="food014Item0" class="select-img"><div class="select-icon-img" id="food014Item0Image"></div></div>
+              <div onclick="food015ItemLoad();" id="food015Item0" class="select-img"><div class="select-icon-img" id="food015Item0Image"></div></div>
+              <div onclick="food016ItemLoad();" id="food016Item0" class="select-img"><div class="select-icon-img" id="food016Item0Image"></div></div>
+              <div onclick="food017ItemLoad();" id="food017Item0" class="select-img"><div class="select-icon-img" id="food017Item0Image"></div></div>
+              <div onclick="food018ItemLoad();" id="food018Item0" class="select-img"><div class="select-icon-img" id="food018Item0Image"></div></div>
+              <div onclick="food019ItemLoad();" id="food019Item0" class="select-img"><div class="select-icon-img" id="food019Item0Image"></div></div>
+              <div onclick="food020ItemLoad();" id="food020Item0" class="select-img"><div class="select-icon-img" id="food020Item0Image"></div></div>
+              <div onclick="food021ItemLoad();" id="food021Item0" class="select-img"><div class="select-icon-img" id="food021Item0Image"></div></div>
+              <div onclick="food022ItemLoad();" id="food022Item0" class="select-img"><div class="select-icon-img" id="food022Item0Image"></div></div>
+              <div onclick="food023ItemLoad();" id="food023Item0" class="select-img"><div class="select-icon-img" id="food023Item0Image"></div></div>
+              <div onclick="food024ItemLoad();" id="food024Item0" class="select-img"><div class="select-icon-img" id="food024Item0Image"></div></div>
+              <div onclick="food025ItemLoad();" id="food025Item0" class="select-img"><div class="select-icon-img" id="food025Item0Image"></div></div>
+              <div onclick="food026ItemLoad();" id="food026Item0" class="select-img"><div class="select-icon-img" id="food026Item0Image"></div></div>
+              <div onclick="food027ItemLoad();" id="food027Item0" class="select-img"><div class="select-icon-img" id="food027Item0Image"></div></div>
+              <div onclick="food028ItemLoad();" id="food028Item0" class="select-img"><div class="select-icon-img" id="food028Item0Image"></div></div>
+              <div onclick="food029ItemLoad();" id="food029Item0" class="select-img"><div class="select-icon-img" id="food029Item0Image"></div></div>
+              <div onclick="food030ItemLoad();" id="food030Item0" class="select-img"><div class="select-icon-img" id="food030Item0Image"></div></div>
+              <div onclick="food031ItemLoad();" id="food031Item0" class="select-img"><div class="select-icon-img" id="food031Item0Image"></div></div>
+              <div onclick="food032ItemLoad();" id="food032Item0" class="select-img"><div class="select-icon-img" id="food032Item0Image"></div></div>
+              <div onclick="food033ItemLoad();" id="food033Item0" class="select-img"><div class="select-icon-img" id="food033Item0Image"></div></div>
+              <div onclick="food034ItemLoad();" id="food034Item0" class="select-img"><div class="select-icon-img" id="food034Item0Image"></div></div>
+              <div onclick="food035ItemLoad();" id="food035Item0" class="select-img"><div class="select-icon-img" id="food035Item0Image"></div></div>
+              <div onclick="food036ItemLoad();" id="food036Item0" class="select-img"><div class="select-icon-img" id="food036Item0Image"></div></div>
+              <div onclick="food037ItemLoad();" id="food037Item0" class="select-img"><div class="select-icon-img" id="food037Item0Image"></div></div>
+              <div onclick="food038ItemLoad();" id="food038Item0" class="select-img"><div class="select-icon-img" id="food038Item0Image"></div></div>
+              <div onclick="food039ItemLoad();" id="food039Item0" class="select-img"><div class="select-icon-img" id="food039Item0Image"></div></div>
+              <div onclick="food040ItemLoad();" id="food040Item0" class="select-img"><div class="select-icon-img" id="food040Item0Image"></div></div>
+              <div onclick="food041ItemLoad();" id="food041Item0" class="select-img"><div class="select-icon-img" id="food041Item0Image"></div></div>
+              <div onclick="food042ItemLoad();" id="food042Item0" class="select-img"><div class="select-icon-img" id="food042Item0Image"></div></div>
+              <div onclick="food043ItemLoad();" id="food043Item0" class="select-img"><div class="select-icon-img" id="food043Item0Image"></div></div>
+              <div onclick="food044ItemLoad();" id="food044Item0" class="select-img"><div class="select-icon-img" id="food044Item0Image"></div></div>
+              <div onclick="food045ItemLoad();" id="food045Item0" class="select-img"><div class="select-icon-img" id="food045Item0Image"></div></div>
+              <div onclick="food046ItemLoad();" id="food046Item0" class="select-img"><div class="select-icon-img" id="food046Item0Image"></div></div>
+              <div onclick="food047ItemLoad();" id="food047Item0" class="select-img"><div class="select-icon-img" id="food047Item0Image"></div></div>
+              <div onclick="food048ItemLoad();" id="food048Item0" class="select-img"><div class="select-icon-img" id="food048Item0Image"></div></div>
+              <div onclick="food049ItemLoad();" id="food049Item0" class="select-img"><div class="select-icon-img" id="food049Item0Image"></div></div>
+              <div onclick="food050ItemLoad();" id="food050Item0" class="select-img"><div class="select-icon-img" id="food050Item0Image"></div></div>
+              <div onclick="food051ItemLoad();" id="food051Item0" class="select-img"><div class="select-icon-img" id="food051Item0Image"></div></div>
+              <div onclick="food052ItemLoad();" id="food052Item0" class="select-img"><div class="select-icon-img" id="food052Item0Image"></div></div>
+              <div onclick="food053ItemLoad();" id="food053Item0" class="select-img"><div class="select-icon-img" id="food053Item0Image"></div></div>
+              <div onclick="food054ItemLoad();" id="food054Item0" class="select-img"><div class="select-icon-img" id="food054Item0Image"></div></div>
+              <div onclick="food055ItemLoad();" id="food055Item0" class="select-img"><div class="select-icon-img" id="food055Item0Image"></div></div>
+              <div onclick="food056ItemLoad();" id="food056Item0" class="select-img"><div class="select-icon-img" id="food056Item0Image"></div></div>
+              <div onclick="food057ItemLoad();" id="food057Item0" class="select-img"><div class="select-icon-img" id="food057Item0Image"></div></div>
+              <div onclick="food058ItemLoad();" id="food058Item0" class="select-img"><div class="select-icon-img" id="food058Item0Image"></div></div>
+              <div onclick="food059ItemLoad();" id="food059Item0" class="select-img"><div class="select-icon-img" id="food059Item0Image"></div></div>
+              <div onclick="food060ItemLoad();" id="food060Item0" class="select-img"><div class="select-icon-img" id="food060Item0Image"></div></div>
+              <div onclick="food061ItemLoad();" id="food061Item0" class="select-img"><div class="select-icon-img" id="food061Item0Image"></div></div>
+              <div onclick="food062ItemLoad();" id="food062Item0" class="select-img"><div class="select-icon-img" id="food062Item0Image"></div></div>
+              <div onclick="food063ItemLoad();" id="food063Item0" class="select-img"><div class="select-icon-img" id="food063Item0Image"></div></div>
+              <div onclick="food064ItemLoad();" id="food064Item0" class="select-img"><div class="select-icon-img" id="food064Item0Image"></div></div>
+              <div onclick="food065ItemLoad();" id="food065Item0" class="select-img"><div class="select-icon-img" id="food065Item0Image"></div></div>
+              <div onclick="food066ItemLoad();" id="food066Item0" class="select-img"><div class="select-icon-img" id="food066Item0Image"></div></div>
+              <div onclick="food067ItemLoad();" id="food067Item0" class="select-img"><div class="select-icon-img" id="food067Item0Image"></div></div>
+              <div onclick="food068ItemLoad();" id="food068Item0" class="select-img"><div class="select-icon-img" id="food068Item0Image"></div></div>
+              <div onclick="food069ItemLoad();" id="food069Item0" class="select-img"><div class="select-icon-img" id="food069Item0Image"></div></div>
+              <div onclick="food070ItemLoad();" id="food070Item0" class="select-img"><div class="select-icon-img" id="food070Item0Image"></div></div>
+              <div onclick="food071ItemLoad();" id="food071Item0" class="select-img"><div class="select-icon-img" id="food071Item0Image"></div></div>
+              <div onclick="food072ItemLoad();" id="food072Item0" class="select-img"><div class="select-icon-img" id="food072Item0Image"></div></div>
+              <div onclick="food073ItemLoad();" id="food073Item0" class="select-img"><div class="select-icon-img" id="food073Item0Image"></div></div>
+              <div onclick="food074ItemLoad();" id="food074Item0" class="select-img"><div class="select-icon-img" id="food074Item0Image"></div></div>
+              <div onclick="food075ItemLoad();" id="food075Item0" class="select-img"><div class="select-icon-img" id="food075Item0Image"></div></div>
+              <div onclick="food076ItemLoad();" id="food076Item0" class="select-img"><div class="select-icon-img" id="food076Item0Image"></div></div>
+              <div onclick="food077ItemLoad();" id="food077Item0" class="select-img"><div class="select-icon-img" id="food077Item0Image"></div></div>
+            </div>
+          </div>
+          <div id="audio" class="content">
+            <div class="range-content">
+              <input type="checkbox" id="checkBaseVolum" onchange="baseVolum();musicBackground();ambientSound();selectionSound();">
+              <label class="label-checkbox" for="checkBaseVolum" id="muteLang">...</label>
+            </div>
+            <div class="range-content">
+              <label class="label-range" for="sfxvolume" id="sfxLang">...</label>
+              <input type="range" id="sfxvolume" oninput="sFxVolume();" value="0" min="0" max="1" step="0.1">
+            </div>
+            <div class="range-content">
+              <input type="checkbox" id="ambientChecker" onchange="playActiveMoveSound();saveAmbientChecker();ambientSound();selectionSound();">
+              <label class="label-checkbox" for="ambientChecker" id="ambLang">...</label>
+            </div>
+            <div class="range-content">
+              <input type="checkbox" id="checkMusicMute" onchange="musicBackground();baseMusicVolum();selectionSound();">
+              <label class="label-checkbox" for="checkMusicMute" id="musicLang">...</label>
+              <input type="range" id="musicvolume" oninput="musicVolume();" value="0" min="0" max="1" step="0.1">
+            </div>
+            <hr>
+            <div class="categores stylescontent" id="scrollToIdElementMusicLang">...</div>
+            <div class="tab-sounds">
+              <button class="tablinks-sounds" onclick="openTabSound(event, 'musicsound');selectionSound();" id="musicstyleLang">...</button>
+              <button class="tablinks-sounds" onclick="openTabSound(event, 'snakesound');selectionSound();" id="snakeTabsound">...</button>
+            </div>
+            <div id="musicsound" class="sound-content">
+              <div id="selectOptions" class="select-content">
+                <div onclick="aaSetActiveMusic();" id="msAlang" class="select">Stable and Upbeat</div>
+                <div onclick="baSetActiveMusic();" id="msBlang" class="select">Acceleration Folding</div>
+                <div onclick="caSetActiveMusic();" id="msClang" class="select">Alice the Dreamer: Accompaniment</div>
+                <div onclick="daSetActiveMusic();" id="msDlang" class="select">Alice the Dreamer</div>
+                <div onclick="eaSetActiveMusic();" id="msElang" class="select">All or Nothing - Ending Version</div>
+                <div onclick="faSetActiveMusic();" id="msFlang" class="select">All or Nothing</div>
+                <div onclick="gaSetActiveMusic();" id="msGlang" class="select">Backtracking Journey</div>
+                <div onclick="haSetActiveMusic();" id="msHlang" class="select">Before the Storm</div>
+                <div onclick="iaSetActiveMusic();" id="msIlang" class="select">Disillusionment Melody</div>
+                <div onclick="jaSetActiveMusic();" id="msJlang" class="select">Explosive Halo</div>
+                <div onclick="kaSetActiveMusic();" id="msKlang" class="select">Firestar</div>
+                <div onclick="laSetActiveMusic();" id="msLlang" class="select">Future Bounce</div>
+                <div onclick="maSetActiveMusic();" id="msMlang" class="select">Interlude Mojito</div>
+                <div onclick="naSetActiveMusic();" id="msNlang" class="select">Joyful Passion</div>
+                <div onclick="oaSetActiveMusic();" id="msOlang" class="select">Lunar</div>
+                <div onclick="paSetActiveMusic();" id="msPlang" class="select">Nyan Nyan</div>
+                <div onclick="qaSetActiveMusic();" id="msQlang" class="select">Prelude of War</div>
+                <div onclick="raSetActiveMusic();" id="msRlang" class="select">Preparation Break</div>
+                <div onclick="saSetActiveMusic();" id="msSlang" class="select">SMC Memory 2022</div>
+                <div onclick="taSetActiveMusic();" id="msTlang" class="select">SMC Memory 2023</div>
+                <div onclick="uaSetActiveMusic();" id="msUlang" class="select">Throbbing Beat</div>
+                <div onclick="vaSetActiveMusic();" id="msVlang" class="select">Ultra Beast Force</div>
+                <div onclick="goToScrollToIdElementMusicLang();selectionSound();" class="select activet totopelement">...</div>
+              </div>
+            </div>
+            <div id="snakesound" class="sound-content">
+              <div id="selectOptions" class="select-content">
+                <div onclick="aaSetActiveMoveSound();" id="pwAlang" class="select">Pilot Walk</div>
+                <hr class="hr-fix">
+                <div onclick="ibSetActiveMechaMoveSound();" id="mwAIlang" class="select">Akashic (Walk)</div>
+                <div onclick="aaSetActiveMechaMoveSound();" id="mwAlang" class="select">Alborada (Walk)</div>
+                <div onclick="baSetActiveMechaMoveSound();" id="mwBlang" class="select">Andromeda (Walk)</div>
+                <div onclick="caSetActiveMechaMoveSound();" id="mwClang" class="select">Arthur (Walk)</div>
+                <div onclick="daSetActiveMechaMoveSound();" id="mwDlang" class="select">Aurora (Walk)</div>
+                <div onclick="eaSetActiveMechaMoveSound();" id="mwElang" class="select">Boltus (Walk)</div>
+                <div onclick="faSetActiveMechaMoveSound();" id="mwFlang" class="select">Caramel (Walk)</div>
+                <div onclick="yaSetActiveMechaMoveSound();" id="mwYlang" class="select">Death knell (Walk)</div>
+                <div onclick="gaSetActiveMechaMoveSound();" id="mwGlang" class="select">Doomlight (Walk)</div>
+                <div onclick="zaSetActiveMechaMoveSound();" id="mwZlang" class="select">Dreadwolf (Walk)</div>
+                <div onclick="haSetActiveMechaMoveSound();" id="mwHlang" class="select">Frefox (Walk)</div>
+                <div onclick="iaSetActiveMechaMoveSound();" id="mwIlang" class="select">Firestar (Walk)</div>
+                <div onclick="jaSetActiveMechaMoveSound();" id="mwJlang" class="select">Flamenco (Walk)</div>
+                <div onclick="kaSetActiveMechaMoveSound();" id="mwKlang" class="select">Gabriel (Walk)</div>
+                <div onclick="abSetActiveMechaMoveSound();" id="mwAAlang" class="select">Gaia (Walk)</div>
+                <div onclick="bbSetActiveMechaMoveSound();" id="mwABlang" class="select">Guerilla Hunter (Walk)</div>
+                <div onclick="laSetActiveMechaMoveSound();" id="mwLlang" class="select">Hotsteel (Walk)</div>
+                <div onclick="maSetActiveMechaMoveSound();" id="mwMlang" class="select">Hurricane (Walk)</div>
+                <div onclick="naSetActiveMechaMoveSound();" id="mwNlang" class="select">Jojo (Walk)</div>
+                <div onclick="cbSetActiveMechaMoveSound();" id="mwAClang" class="select">Lancelot (Walk)</div>
+                <div onclick="oaSetActiveMechaMoveSound();" id="mwOlang" class="select">Michael (Walk)</div>
+                <div onclick="dbSetActiveMechaMoveSound();" id="mwADlang" class="select">Moon Rabbit (Walk)</div>
+                <div onclick="ebSetActiveMechaMoveSound();" id="mwAElang" class="select">Nebula (Walk)</div>
+                <div onclick="paSetActiveMechaMoveSound();" id="mwPlang" class="select">Neutron Star (Walk)</div>
+                <div onclick="qaSetActiveMechaMoveSound();" id="mwQlang" class="select">Northern Knight (Walk)</div>
+                <div onclick="raSetActiveMechaMoveSound();" id="mwRlang" class="select">Pulsar (Walk)</div>
+                <div onclick="saSetActiveMechaMoveSound();" id="mwSlang" class="select">Ranger (Walk)</div>
+                <div onclick="taSetActiveMechaMoveSound();" id="mwTlang" class="select">Raven (Walk)</div>
+                <div onclick="fbSetActiveMechaMoveSound();" id="mwAFlang" class="select">Shiranui (Walk)</div>
+                <div onclick="jbSetActiveMechaMoveSound();" id="mwAJlang" class="select">Skyfall (Walk)</div>
+                <div onclick="gbSetActiveMechaMoveSound();" id="mwAGlang" class="select">Skyfire (Walk)</div>
+                <div onclick="uaSetActiveMechaMoveSound();" id="mwUlang" class="select">Skylark (Walk)</div>
+                <div onclick="vaSetActiveMechaMoveSound();" id="mwVlang" class="select">Snow Mirage (Walk)</div>
+                <div onclick="kbSetActiveMechaMoveSound();" id="mwAKlang" class="select">Tempest (Walk)</div>
+                <div onclick="waSetActiveMechaMoveSound();" id="mwWlang" class="select">Trio of Enders (Walk)</div>
+                <div onclick="hbSetActiveMechaMoveSound();" id="mwAHlang" class="select">Twilight (Walk)</div>
+                <div onclick="xaSetActiveMechaMoveSound();" id="mwXlang" class="select">Ventorus (Walk)</div>
+                <div onclick="goToScrollToIdElementMusicLang();selectionSound();" class="select activet totopelement">...</div>
+              </div>
+            </div>
+          </div>
+          <div id="about" class="content" style="display: block;">
+            <p id="netEaseLang1">...</p>
+            <p id="netEaseLang2">...</p>
+            <hr>
+            <div id="translateUsage">
+              <div id="translate"></div>
+              <button id="customLanguage" onclick="document.getElementById('contactUsDiscord').click();">...</button>
+            </div>
+            <hr>
+            <span class="heading" id="heading">...</span>
+            <hr style="border:3px solid #f1f1f1;padding:0;margin:0;">
+            <div class="row">
+              <div class="middle">
+                <div class="bar-container">
+                  <div class="bar-5" style="width: 0px;"></div>
+                </div>
+              </div>
+              <div class="side left">
+                <div class="r-stars">5</div>
+              </div>
+              <div class="side right">
+                <div>0</div>
+              </div>
+              <div class="middle">
+                <div class="bar-container">
+                  <div class="bar-4" style="width: 0px;"></div>
+                </div>
+              </div>
+              <div class="side left">
+                <div class="r-stars">4</div>
+              </div>
+              <div class="side right">
+                <div>0</div>
+              </div>
+              <div class="middle">
+                <div class="bar-container">
+                  <div class="bar-3" style="width: 0px;"></div>
+                </div>
+              </div>
+              <div class="side left">
+                <div class="r-stars">3</div>
+              </div>
+              <div class="side right">
+                <div>0</div>
+              </div>
+              <div class="middle">
+                <div class="bar-container">
+                  <div class="bar-2" style="width: 0px;"></div>
+                </div>
+              </div>
+              <div class="side left">
+                <div class="r-stars">2</div>
+              </div>
+              <div class="side right">
+                <div>0</div>
+              </div>
+              <div class="middle">
+                <div class="bar-container">
+                  <div class="bar-1" style="width: 0px;"></div>
+                </div>
+              </div>
+              <div class="side left">
+                <div class="r-star">1</div>
+              </div>
+              <div class="side right">
+                <div>0</div>
+              </div>
+            </div>
+            <hr>
+            <p id="coderLang">...</p>
+            <p id="direction1"><span id="baseCodeLang">...</span><a href="https://www.codingnepalweb.com/create-snake-game-htm-css-javascript/" target="_blank">CodingNepal</a>;</p>
+            <p><span id="cratedOn0Lang">...</span><a id="cratedOnLang" href="https://code.visualstudio.com" target="_blank">Visual Studio Code</a></p>
+            <hr>
+            <div class="serviceLang">...</div>
+            <div id="contactUsMessenger" onclick="goToMessenger();">
+              <div>Messaneger</div>
+            </div>
+            <div id="contactUsDiscord" onclick="goToDiscord();">
+              <div>Discord</div>
+            </div>
+          </div>
+          <input type="submit" id="defaultSettings" onclick="alertReloadLater();" value="..." />
+          <input type="submit" id="applySettings" onclick="applySettings();" value="..." />
+          <div id="menuButtonsChain">
+            <button onclick="alertExitSite();" class="site-exit" id="exitSiteLang">...</button>
+            <button onclick="document.getElementById('updateModal').style.display='block';defaultClickSound();" class="update-notice" id="noticeUpLang">...</button>
+            <button onclick="document.getElementById('howToPlayModal').style.display='block';defaultClickSound();" class="how-to-play" id="howToPlayLang"></button>
+          </div>
+          <div class="sub-device-inpo-indicator">
+            <div id="subDateTimeIndicator">
+              <div id="subClock">...</div>
+              <div class="sub-dc-symbol"> | </div>
+              <div id="subCalendar">...</div>
+            </div>
+            <div id="subBatteryIndicator">
+              <div id="subBatteryLevel"></div>
+              <div id="subBatteryCharge"></div>
+            </div>
+            <div id="subBatteryProgress">
+              <div id="subInBatteryProgress"></div>
+            </div>
+            <div id="subTimeAndDateIndicator"></div>
+          </div>
+        </div>
+        <input class="menuscroller" type="range" name="conOne" id="conOne" min="0" max="100" value="0" style="display:block;">
+        <input class="menuscroller" type="range" name="conTwo" id="conTwo" min="0" max="100" value="0" style="display:none;">
+        <input class="menuscroller" type="range" name="conThree" id="conThree" min="0" max="100" value="0" style="display:none;">
+        <input class="menuscroller" type="range" name="conFour" id="conFour" min="0" max="100" value="0" style="display:none;">
+        <input class="menuscroller" type="range" name="conFive" id="conFive" min="0" max="100" value="0" style="display:none;">
+        <input class="menuscroller" type="range" name="conSix" id="conSix" min="0" max="100" value="0" style="display:none;">
+      </div>
+      <div class="wrapper">
+        <div class="play-board" id="playBoardId"></div>
+        <div class="controls">
+          <i data-key="ArrowLeft" class="fa-solid fa-arrow-left-long" id="left"></i>
+          <i data-key="ArrowUp" id="up"></i>
+          <i data-key="ArrowRight" id="right"></i>
+          <i data-key="ArrowDown" id="down"></i>
+        </div>
+      </div>
+      <div class="sub-controls" id="controller">
+        <div id="btn000" onclick="document.getElementById('chechboxPausing').click();" ondblclick="return false;">#</div>
+        <div onclick="document.getElementById('up').click();defaultClickSound();" id="btn001">#</div>
+        <div onclick="document.getElementById('navBtn').click();" id="btn002" ondblclick="return false;">#</div>
+        <div onclick="document.getElementById('left').click();defaultClickSound();" id="btn003">#</div>
+        <div onclick="document.getElementById('down').click();defaultClickSound();" id="btn004">#</div>
+        <div onclick="document.getElementById('right').click();defaultClickSound();" id="btn005">#</div>
+      </div>
+      <div class="container" id="loading">
+        <div class="loading">
+          <div class="loading-img" id="loadingContiner">
+            <div class="text-logo"></div>
+            <div class="animate-img" id="animateImg"></div>
+          </div>
+          <h2 id="loadingText">...</h2>
+        </div>
+          <div style="width:0;" id="widther"></div>
+          <div id="widthernum"></div>
+        <div id="loadedbar" class="loading-assets">
+          <div class="blocker"></div>
+        </div>
+      </div>
+    </div>
+    <div class="alert" id="alert">
+      <div class="alert-content">
+        <h2 id="alertText">...</h2>
+        <div class="alert-btn-container">
+          <input type="submit" id="alertLeft" value="...">
+          <input type="submit" id="alertRight" value="...">
+        </div>
+      </div>
+    </div>
+    <div id="loseModal" class="modal">
+      <div class="modal-content">
+      <div id="noticeTitleLang">...</div>
+        <button class="reset-button" id="reset"></button>
+        <div class="in-modal-content" id="progressingALost">
+          <div class="left-modal-acc">
+            <div id="subleagueImage"></div>
+            <div id="subleagueType">...</div>
+            <div class="subleaguelevel"><span id="substar">★</span><span id="subleaguelevel">...</span></div>
+          </div>
+          <hr class="acc">
+          <div class="right-modal-acc">
+            <h2 class="lose-title" id="loseText">...</h2>
+            <div class="gettedscore" id="loseScore">...</div>
+            <div class="gettedscore" id="loseNewRecordScore">...</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="firstModal" class="first-modal">
+      <div class="first-modal-content">
+        <div id="firstContentA" class="in-first-modal">
+          <div class="stepsFirsts">1/1</div>
+          <div>
+            <p id="langTitleOfFirstModal"></p>
+          </div>
+          <div id="selectOptions" class="select-content">
+            <div onclick="document.getElementById('langTitleOfFirstModal').innerHTML='Select language';document.getElementById('languageEn').click();document.getElementById('selectedLanguageIs').innerHTML='English is selected.';document.getElementById('firstModalApplyBtm').style.display='block';document.getElementById('firstModalApplyBtm').value='Apply';document.getElementById('selectedLanguageIs').style.direction='ltr';" class="language select firstinfirstmodal">English</div>
+            <div onclick="document.getElementById('langTitleOfFirstModal').innerHTML='Вибирайте язык';document.getElementById('languageRu').click();document.getElementById('selectedLanguageIs').innerHTML='Русский вибирань.';document.getElementById('firstModalApplyBtm').style.display='block';document.getElementById('firstModalApplyBtm').value='Подтвердить';document.getElementById('selectedLanguageIs').style.direction='ltr'" class="language select">Русский</div>
+            <div onclick="document.getElementById('langTitleOfFirstModal').innerHTML='言語を選択';document.getElementById('languageJp').click();document.getElementById('selectedLanguageIs').innerHTML='日本語が選択されています。';document.getElementById('firstModalApplyBtm').style.display='block';document.getElementById('firstModalApplyBtm').value='適用する';document.getElementById('selectedLanguageIs').style.direction='ltr'" class="language select">日本語</div>
+            <div onclick="document.getElementById('langTitleOfFirstModal').innerHTML='选择语言';document.getElementById('languageChs').click();document.getElementById('selectedLanguageIs').innerHTML='选择简体中文。';document.getElementById('firstModalApplyBtm').style.display='block';document.getElementById('firstModalApplyBtm').value='申请';document.getElementById('selectedLanguageIs').style.direction='ltr'" class="language select" id="newFirstLineBtns">简体中文</div>
+            <div onclick="document.getElementById('langTitleOfFirstModal').innerHTML='繁體中文';document.getElementById('languageCht').click();document.getElementById('selectedLanguageIs').innerHTML='已選擇繁體中文。';document.getElementById('firstModalApplyBtm').style.display='block';document.getElementById('firstModalApplyBtm').value='申請';document.getElementById('selectedLanguageIs').style.direction='ltr'" class="language select">繁體中文</div>
+            <div onclick="document.getElementById('langTitleOfFirstModal').innerHTML='언어 선택';document.getElementById('languageKo').click();document.getElementById('selectedLanguageIs').innerHTML='한국어가 선택되었습니다.';document.getElementById('firstModalApplyBtm').style.display='block';document.getElementById('firstModalApplyBtm').value='적용하다';document.getElementById('selectedLanguageIs').style.direction='ltr'" class="language select">한국어</div>
+            <div onclick="document.getElementById('langTitleOfFirstModal').innerHTML='בחר שפה';document.getElementById('languageHe').click();document.getElementById('selectedLanguageIs').innerHTML='עברית נבחרה.';document.getElementById('firstModalApplyBtm').style.display='block';document.getElementById('firstModalApplyBtm').value='החל';document.getElementById('selectedLanguageIs').style.direction='rtl'" class="language select">עברית</div>
+            <div id="selectedLanguageIs"></div>
+          </div>
+          <input type="submit" id="firstModalApplyBtm" onclick="document.getElementById('applySettings').click();localStorage.setItem('firsttime','exist')" style="display:none;" value="..." />
+        </div>
+      </div>
+    </div>
+    <div id="updateModal" class="modal">
+      <div class="modal-content">
+      <div id="updateTitleLang">...</div>
+        <button class="reset-button" id="closeUpdate" onclick="markUpdateReaded();closeModalSound();"></button>
+        <div class="in-modal-content" id="updateNoticeContent"></div>
+      </div>
+    </div>
+    <div id="howToPlayModal" class="modal">
+      <div class="modal-content">
+      <div id="howTitleLang">...</div>
+        <button class="reset-button" id="closeHowToPlay" onclick="document.getElementById('howToPlayModal').style.display='none';closeModalSound();"></button>
+        <div class="in-modal-content" id="howToPlayContent">
+          <div id="ifMobileLang">...</div><br>
+          <div id="txtAhow">...</div>
+          <hr>
+          <div id="ifOthersLang">...</div><br>
+          <div id="txtBhow">...</div>
+        </div>
+      </div>
+    </div>
+    <textarea name="text-area" id="textarea" style="position:fixed;display:none;"></textarea>
+    <!-- Audio sources -->
+    <!-- Colections Sounds -->
+    <!-- Item collected -->
+    <audio muted preload="none" id="itemCollected" class="collect-background">
+      <source type="audio/mp3" src="index_data/audio/item_taked.mp3">
+      <script src="index_data/scripts/item_taked.js"></script>
+    </audio>
+    <!-- Movement Sounds -->
+    <!-- Player Walk -->
+    <audio muted preload="none" id="playerWalk" loop class="walk-background">
+      <source type="audio/mp3" src="index_data/audio/player_walk.mp3">
+      <script src="index_data/scripts/player_walk.js"></script>
+    </audio>
+    <!-- Akashic Walk -->
+    <audio muted preload="none" id="akashicWalk" loop class="walk-background">
+      <source type="audio/mp3" src="index_data/audio/akashic_walk.mp3">
+      <script src="index_data/scripts/akashic_walk.js"></script>
+    </audio>
+    <!-- Alborada Walk -->
+    <audio muted preload="none" id="alboradaWalk" loop class="walk-background">
+      <source type="audio/mp3" src="index_data/audio/alborada_walk.mp3">
+      <script src="index_data/scripts/alborada_walk.js"></script>
+    </audio>
+    <!-- Andromeda Walk -->
+    <audio muted preload="none" id="andromedaWalk" loop class="walk-background">
+      <source type="audio/mp3" src="index_data/audio/andromeda_walk.mp3">
+      <script src="index_data/scripts/andromeda_walk.js"></script>
+    </audio>
+    <!-- Arthur Walk -->
+    <audio muted preload="none" id="arthurWalk" loop class="walk-background">
+      <source type="audio/mp3" src="index_data/audio/arthur_walk.mp3">
+      <script src="index_data/scripts/arthur_walk.js"></script>
+    </audio>
+    <!-- Aurora Walk -->
+    <audio muted preload="none" id="auroraWalk" loop class="walk-background">
+      <source type="audio/mp3" src="index_data/audio/aurora_walk.mp3">
+      <script src="index_data/scripts/aurora_walk.js"></script>
+    </audio>
+    <!-- Boltus Walk -->
+    <audio muted preload="none" id="boltusWalk" loop class="walk-background">
+      <source type="audio/mp3" src="index_data/audio/boltus_walk.mp3">
+      <script src="index_data/scripts/boltus_walk.js"></script>
+    </audio>
+    <!-- Caramel Walk -->
+    <audio muted preload="none" id="caramelWalk" loop class="walk-background">
+      <source type="audio/mp3" src="index_data/audio/caramel_walk.mp3">
+      <script src="index_data/scripts/caramel_walk.js"></script>
+    </audio>
+    <!-- Death knell Walk -->
+    <audio muted preload="none" id="deathKnellWalk" loop class="walk-background">
+      <source type="audio/mp3" src="index_data/audio/death_knell_walk.mp3">
+      <script src="index_data/scripts/death_knell_walk.js"></script>
+    </audio>
+    <!-- Doomlight Walk -->
+    <audio muted preload="none" id="doomlightlWalk" loop class="walk-background">
+      <source type="audio/mp3" src="index_data/audio/doomlight_walk.mp3">
+      <script src="index_data/scripts/doomlight_walk.js"></script>
+    </audio>
+    <!-- Dreadwolf Walk -->
+    <audio muted preload="none" id="dreadwolfWalk" loop class="walk-background">
+      <source type="audio/mp3" src="index_data/audio/dreadwolf_walk.mp3">
+      <script src="index_data/scripts/dreadwolf_walk.js"></script>
+    </audio>
+    <!-- Frefox Walk -->
+    <audio muted preload="none" id="firefoxWalk" loop class="walk-background">
+      <source type="audio/mp3" src="index_data/audio/firefox_walk.mp3">
+      <script src="index_data/scripts/firefox_walk.js"></script>
+    </audio>
+    <!-- Frestar Walk -->
+    <audio muted preload="none" id="firestarWalk" loop class="walk-background">
+      <source type="audio/mp3" src="index_data/audio/firestar_walk.mp3">
+      <script src="index_data/scripts/firestar_walk.js"></script>
+    </audio>
+    <!-- Flamenco Walk -->
+    <audio muted preload="none" id="flamencoWalk" loop class="walk-background">
+      <source type="audio/mp3" src="index_data/audio/flamenco_walk.mp3">
+      <script src="index_data/scripts/flamenco_walk.js"></script>
+    </audio>
+    <!-- Gabriel Walk -->
+    <audio muted preload="none" id="gabrielWalk" loop class="walk-background">
+      <source type="audio/mp3" src="index_data/audio/gabriel_walk.mp3">
+      <script src="index_data/scripts/gabriel_walk.js"></script>
+    </audio>
+    <!-- Gaia Walk -->
+    <audio muted preload="none" id="gaialWalk" loop class="walk-background">
+      <source type="audio/mp3" src="index_data/audio/gaia_walk.mp3">
+      <script src="index_data/scripts/gaia_walk.js"></script>
+    </audio>
+    <!-- Guerilla Hunter Walk -->
+    <audio muted preload="none" id="guerillaHunterWalk" loop class="walk-background">
+      <source type="audio/mp3" src="index_data/audio/guerilla_hunter_walk.mp3">
+      <script src="index_data/scripts/guerilla_hunter_walk.js"></script>
+    </audio>
+    <!-- Hotsteel Walk -->
+    <audio muted preload="none" id="hotsteelWalk" loop class="walk-background">
+      <source type="audio/mp3" src="index_data/audio/hotsteel_walk.mp3">
+      <script src="index_data/scripts/hotsteel_walk.js"></script>
+    </audio>
+    <!-- Hurricane Walk -->
+    <audio muted preload="none" id="hurricaneWalk" loop class="walk-background">
+      <source type="audio/mp3" src="index_data/audio/hurricane_walk.mp3">
+      <script src="index_data/scripts/hurricane_walk.js"></script>
+    </audio>
+    <!-- Jojo Walk -->
+    <audio muted preload="none" id="jojoWalk" loop class="walk-background">
+      <source type="audio/mp3" src="index_data/audio/jojo_walk.mp3">
+      <script src="index_data/scripts/jojo_walk.js"></script>
+    </audio>
+    <!-- Lancelot Walk -->
+    <audio muted preload="none" id="lancelotWalk" loop class="walk-background">
+      <source type="audio/mp3" src="index_data/audio/lancelot_walk.mp3">
+      <script src="index_data/scripts/lancelot_walk.js"></script>
+    </audio>
+    <!-- Michael Walk -->
+    <audio muted preload="none" id="michaelWalk" loop class="walk-background">
+      <source type="audio/mp3" src="index_data/audio/michael_walk.mp3">
+      <script src="index_data/scripts/michael_walk.js"></script>
+    </audio>
+    <!-- Moon Rabbit Walk -->
+    <audio muted preload="none" id="moonRabbitWalk" loop class="walk-background">
+      <source type="audio/mp3" src="index_data/audio/moon_rabbit_walk.mp3">
+      <script src="index_data/scripts/moon_rabbit_walk.js"></script>
+    </audio>
+    <!-- Nebula Walk -->
+    <audio muted preload="none" id="nebulaWalk" loop class="walk-background">
+      <source type="audio/mp3" src="index_data/audio/nebula_walk.mp3">
+      <script src="index_data/scripts/nebula_walk.js"></script>
+    </audio>
+    <!-- Neutron Walk -->
+    <audio muted preload="none" id="neutronWalk" loop class="walk-background">
+      <source type="audio/mp3" src="index_data/audio/neutron_star_walk.mp3">
+      <script src="index_data/scripts/neutron_star_walk.js"></script>
+    </audio>
+    <!-- Northern Walk -->
+    <audio muted preload="none" id="northernWalk" loop class="walk-background">
+      <source type="audio/mp3" src="index_data/audio/northern_knight_walk.mp3">
+      <script src="index_data/scripts/northern_knight_walk.js"></script>
+    </audio>
+    <!-- Pulsar Walk -->
+    <audio muted preload="none" id="pulsarWalk" loop class="walk-background">
+      <source type="audio/mp3" src="index_data/audio/pulsar_walk.mp3">
+      <script src="index_data/scripts/pulsar_walk.js"></script>
+    </audio>
+    <!-- Ranger Walk -->
+    <audio muted preload="none" id="rangerWalk" loop class="walk-background">
+      <source type="audio/mp3" src="index_data/audio/ranger_walk.mp3">
+      <script src="index_data/scripts/ranger_walk.js"></script>
+    </audio>
+    <!-- Raven Walk -->
+    <audio muted preload="none" id="ravenWalk" loop class="walk-background">
+      <source type="audio/mp3" src="index_data/audio/raven_walk.mp3">
+      <script src="index_data/scripts/raven_walk.js"></script>
+    </audio>
+    <!-- Shiranui Walk -->
+    <audio muted preload="none" id="shiranuiWalk" loop class="walk-background">
+      <source type="audio/mp3" src="index_data/audio/shiranui_walk.mp3">
+      <script src="index_data/scripts/shiranui_walk.js"></script>
+    </audio>
+    <!-- Skyfall Walk -->
+    <audio muted preload="none" id="skyfallWalk" loop class="walk-background">
+      <source type="audio/mp3" src="index_data/audio/skyfall_walk.mp3">
+      <script src="index_data/scripts/skyfall_walk.js"></script>
+    </audio>
+    <!-- Skyfire Walk -->
+    <audio muted preload="none" id="skyfireWalk" loop class="walk-background">
+      <source type="audio/mp3" src="index_data/audio/skyfire_walk.mp3">
+      <script src="index_data/scripts/skyfire_walk.js"></script>
+    </audio>
+    <!-- Skylark Walk -->
+    <audio muted preload="none" id="skylarkWalk" loop class="walk-background">
+      <source type="audio/mp3" src="index_data/audio/skylark_walk.mp3">
+      <script src="index_data/scripts/skylark_walk.js"></script>
+    </audio>
+    <!-- Snow Walk -->
+    <audio muted preload="none" id="snowWalk" loop class="walk-background">
+      <source type="audio/mp3" src="index_data/audio/snow_mirage_walk.mp3">
+      <script src="index_data/scripts/snow_mirage_walk.js"></script>
+    </audio>
+    <!-- Tempes Walk -->
+    <audio muted preload="none" id="tempestWalk" loop class="walk-background">
+      <source type="audio/mp3" src="index_data/audio/tempest_walk.mp3">
+      <script src="index_data/scripts/tempest_walk.js"></script>
+    </audio>
+    <!-- Trio Walk -->
+    <audio muted preload="none" id="trioWalk" loop class="walk-background">
+      <source type="audio/mp3" src="index_data/audio/trio_of_enders_walk.mp3">
+      <script src="index_data/scripts/trio_of_enders_walk.js"></script>
+    </audio>
+    <!-- Twilight Walk -->
+    <audio muted preload="none" id="twilightWalk" loop class="walk-background">
+      <source type="audio/mp3" src="index_data/audio/twilight_walk.mp3">
+      <script src="index_data/scripts/twilight_walk.js"></script>
+    </audio>
+    <!-- Ventorus Walk -->
+    <audio muted preload="none" id="ventorusWalk" loop class="walk-background">
+      <source type="audio/mp3" src="index_data/audio/ventorus_walk.mp3">
+      <script src="index_data/scripts/ventorus_walk.js"></script>
+    </audio>
+    <script src="index_data/scripts/play_walk.js"></script>
+    <script src="index_data/scripts/local_movement.js"></script>
+    <!-- Default Click -->
+    <audio muted preload="none" id="defaultClickSound">
+      <source src="index_data/audio/default_press.mp3" type="audio/mp3">
+      <script src="index_data/scripts/default_click.js"></script>
+    </audio>
+    <!-- Close Settings -->
+    <audio muted preload="none" id="closeSettingsSound">
+      <source src="index_data/audio/close_settings.mp3" type="audio/mp3">
+      <script src="index_data/scripts/close_settings.js"></script>
+    </audio>
+    <!-- Cancel -->
+    <audio muted preload="none" id="cancelSound">
+      <source src="index_data/audio/cancel.mp3" type="audio/mp3">
+      <script src="index_data/scripts/cancel.js"></script>
+    </audio>
+    <!-- Open Settings -->
+    <audio muted preload="none" id="openSettingsSound">
+      <source src="index_data/audio/open_settings.mp3" type="audio/mp3">
+      <script src="index_data/scripts/open_settings.js"></script>
+    </audio>
+    <!-- Tab Select & Select Buttons -->
+    <audio muted preload="none" id="selectionSound">
+      <source src="index_data/audio/tab_select.mp3" type="audio/mp3">
+      <script src="index_data/scripts/tab_select.js"></script>
+    </audio>
+    <!-- Close Modals -->
+    <audio muted preload="none" id="closeModalSound">
+      <source src="index_data/audio/notice_close.mp3" type="audio/mp3">
+      <script src="index_data/scripts/notice_close.js"></script>
+    </audio>
+    <!-- Background Music 1 -->
+    <audio muted preload="none" id="musicAbgSound" loop class="music-background">
+      <source type="audio/mp3" src="index_data/audio/stable_and_upbeat.mp3">
+      <script src="index_data/scripts/stable_and_upbeat.js"></script>
+    </audio>
+    <!-- Background Music 2 -->
+    <audio muted preload="none" id="musicBbgSound" loop class="music-background">
+      <source type="audio/mp3" src="index_data/audio/acceleration_folding.mp3">
+      <script src="index_data/scripts/acceleration_folding.js"></script>
+    </audio>
+    <!-- Background Music 3 -->
+    <audio muted preload="none" id="musicCbgSound" loop class="music-background">
+      <source type="audio/mp3" src="index_data/audio/alice_the_dreamer_accompaniment.mp3">
+      <script src="index_data/scripts/alice_the_dreamer_accompaniment.js"></script>
+    </audio>
+    <!-- Background Music 4 -->
+    <audio muted preload="none" id="musicDbgSound" loop class="music-background">
+      <source type="audio/mp3" src="index_data/audio/alice_the_dreamer.mp3">
+      <script src="index_data/scripts/alice_the_dreamer.js"></script>
+    </audio>
+    <!-- Background Music 5 -->
+    <audio muted preload="none" id="musicEbgSound" loop class="music-background">
+      <source type="audio/mp3" src="index_data/audio/all_or_nothing_ending_version.mp3">
+      <script src="index_data/scripts/all_or_nothing_ending_version.js"></script>
+    </audio>
+    <!-- Background Music 6 -->
+    <audio muted preload="none" id="musicFbgSound" loop class="music-background">
+      <source type="audio/mp3" src="index_data/audio/all_or_nothing.mp3">
+      <script src="index_data/scripts/all_or_nothing.js"></script>
+    </audio>
+    <!-- Background Music 7 -->
+    <audio muted preload="none" id="musicGbgSound" loop class="music-background">
+      <source type="audio/mp3" src="index_data/audio/backtracking_journey.mp3">
+      <script src="index_data/scripts/backtracking_journey.js"></script>
+    </audio>
+    <!-- Background Music 8 -->
+    <audio muted preload="none" id="musicHbgSound" loop class="music-background">
+      <source type="audio/mp3" src="index_data/audio/before_the_storm.mp3">
+      <script src="index_data/scripts/before_the_storm.js"></script>
+    </audio>
+    <!-- Background Music 9 -->
+    <audio muted preload="none" id="musicIbgSound" loop class="music-background">
+      <source type="audio/mp3" src="index_data/audio/disillusionment_melody.mp3">
+      <script src="index_data/scripts/disillusionment_melody.js"></script>
+    </audio>
+    <!-- Background Music 10 -->
+    <audio muted preload="none" id="musicJbgSound" loop class="music-background">
+      <source type="audio/mp3" src="index_data/audio/explosive_halo.mp3">
+      <script src="index_data/scripts/explosive_halo.js"></script>
+    </audio>
+    <!-- Background Music 11 -->
+    <audio muted preload="none" id="musicKbgSound" loop class="music-background">
+      <source type="audio/mp3" src="index_data/audio/firestar.mp3">
+      <script src="index_data/scripts/firestar.js"></script>
+    </audio>
+    <!-- Background Music 12 -->
+    <audio muted preload="none" id="musicLbgSound" loop class="music-background">
+      <source type="audio/mp3" src="index_data/audio/future_bounce.mp3">
+      <script src="index_data/scripts/future_bounce.js"></script>
+    </audio>
+    <!-- Background Music 13 -->
+    <audio muted preload="none" id="musicMbgSound" loop class="music-background">
+      <source type="audio/mp3" src="index_data/audio/interlude_mojito.mp3">
+      <script src="index_data/scripts/interlude_mojito.js"></script>
+    </audio>
+    <!-- Background Music 14 -->
+    <audio muted preload="none" id="musicNbgSound" loop class="music-background">
+      <source type="audio/mp3" src="index_data/audio/joyful_passion.mp3">
+      <script src="index_data/scripts/joyful_passion.js"></script>
+    </audio>
+    <!-- Background Music 15 -->
+    <audio muted preload="none" id="musicObgSound" loop class="music-background">
+      <source type="audio/mp3" src="index_data/audio/lunar.mp3">
+      <script src="index_data/scripts/lunar.js"></script>
+    </audio>
+    <!-- Background Music 16 -->
+    <audio muted preload="none" id="musicPbgSound" loop class="music-background">
+      <source type="audio/mp3" src="index_data/audio/nyan_nyan.mp3">
+      <script src="index_data/scripts/nyan_nyan.js"></script>
+    </audio>
+    <!-- Background Music 17 -->
+    <audio muted preload="none" id="musicQbgSound" loop class="music-background">
+      <source type="audio/mp3" src="index_data/audio/prelude_of_war.mp3">
+      <script src="index_data/scripts/prelude_of_war.js"></script>
+    </audio>
+    <!-- Background Music 18 -->
+    <audio muted preload="none" id="musicRbgSound" loop class="music-background">
+      <source type="audio/mp3" src="index_data/audio/preparation_break.mp3">
+      <script src="index_data/scripts/preparation_break.js"></script>
+    </audio>
+    <!-- Background Music 19 -->
+    <audio muted preload="none" id="musicSbgSound" loop class="music-background">
+      <source type="audio/mp3" src="index_data/audio/smc_memory_2022.mp3">
+      <script src="index_data/scripts/smc_memory_2022.js"></script>
+    </audio>
+    <!-- Background Music 20 -->
+    <audio muted preload="none" id="musicTbgSound" loop class="music-background">
+      <source type="audio/mp3" src="index_data/audio/smc_memory_2023.mp3">
+      <script src="index_data/scripts/smc_memory_2023.js"></script>
+    </audio>
+    <!-- Background Music 21 -->
+    <audio muted preload="none" id="musicUbgSound" loop class="music-background">
+      <source type="audio/mp3" src="index_data/audio/throbbing_beat.mp3">
+      <script src="index_data/scripts/throbbing_beat.js"></script>
+    </audio>
+    <!-- Background Music 22 -->
+    <audio muted preload="none" id="musicVbgSound" loop class="music-background">
+      <source type="audio/mp3" src="index_data/audio/ultra_beast_force.mp3">
+      <script src="index_data/scripts/ultra_beast_force.js"></script>
+    </audio>
+    <!-- Game Over Fireworks -->
+    <audio muted preload="none" id="goFireworksSound" class="go-background">
+      <source type="audio/mp3" src="index_data/audio/fireworks_sound.mp3">
+      <script src="index_data/scripts/goFireworksSound.js"></script>
+    </audio>
+    <!-- Game Over Fireworks -->
+    <audio muted preload="none" id="basicAmbientSound" loop class="ambient-background">
+      <source type="audio/mp3" src="index_data/audio/ambient_sounds.ogg">
+      <script src="index_data/scripts/ambient.js"></script>
+    </audio>
+    <!-- Scripts -->
+    <script src="index_data/scripts/scripts.js"></script>
+    <script src="index_data/scripts/system.js" defer></script>
+    <script src="index_data/scripts/loading_system.js">// Specific for load</script>
+    <script src="index_data/scripts/languages.js"></script>
+    <script src="index_data/scripts/languages_texts.js"></script>
+    <script src="index_data/scripts/key_controlls.js"></script>
+    <script src="index_data/scripts/scripts_2.js"></script>
+    <script>
+      let basicVersion = "1.0.0";
+      function markUpdateReaded() {
+        var modal = document.getElementById("updateModal");
+        modal.style.display = "none";
+        localStorage.setItem("updateRead", basicVersion);
+      }
+      function updateTextLangs() {
+        var updateTitle = document.getElementById("updateTitleLang");
+        var updateContent = document.getElementById("updateNoticeContent");
+        if(localStorage.getItem("lang") === "en") {
+          updateTitle.innerHTML = "What new in " + basicVersion + " Version";
+          updateContent.innerHTML = "<h3>[01/05/2025] Snake Mecha Collector project is closed/completed and not supported by creators more.</h3>";
+          updateContent.innerHTML += "but can be repaired languages for users.";
+        }else
+        if(localStorage.getItem("lang") === "ru") {
+          updateTitle.innerHTML = "Что нового в " + basicVersion + " версии";
+          updateContent.innerHTML = "<h3>[01/05/2025] Проект Snake Mecha Collector закрыт/завершён и больше не поддерживается создателями.</h3>";
+          updateContent.innerHTML += "но могут быть восстановлены языки для пользователей.";
+        }else
+        if(localStorage.getItem("lang") === "jp") {
+          updateTitle.innerHTML = "バージョン" + basicVersion + "の新機能";
+          updateContent.innerHTML = "<h3>[01/05/2025] Snake Mecha Collector プロジェクトは終了/完了しており、クリエイターによるサポートは終了しています。</h3>";
+          updateContent.innerHTML += "ただし、ユーザー向けに言語を修復することは可能です。";
+        }else
+        if(localStorage.getItem("lang") === "chs") {
+          updateTitle.innerHTML = basicVersion + "版本有哪些新功能";
+          updateContent.innerHTML = "<h3>[01/05/2025] Snake Mecha Collector 项目已关闭/完成，并且不再受到创作者的支持。</h3>";
+          updateContent.innerHTML += "但可以为用户修复语言。";
+        }else
+        if(localStorage.getItem("lang") === "cht") {
+          updateTitle.innerHTML = basicVersion + " 版本有哪些新功能";
+          updateContent.innerHTML = "<h3>[01/05/2025] Snake Mecha Collector 專案已關閉/完成，並且不再受到創作者的支持。</h3>";
+          updateContent.innerHTML += "但可以為使用者修復語言。";
+        }else
+        if(localStorage.getItem("lang") === "ko") {
+          updateTitle.innerHTML = basicVersion + "버전의 새로운 기능";
+          updateContent.innerHTML = "<h3>[01/05/2025] 스네이크 메카 수집 프로젝트는 종료/완료되었으며 더 이상 창작자의 지원을 받지 않습니다.</h3>";
+          updateContent.innerHTML += "하지만 사용자를 위해 언어를 복구할 수도 있습니다.";
+        }else
+        if(localStorage.getItem("lang") === "he") {
+          updateTitle.innerHTML = "מה חדש בגרסה " + basicVersion;
+          updateTitle.style.textAlign = "right";
+          updateTitle.style.width = "75%";
+          updateContent.style.direction = "rtl";
+          updateContent.style.textAlign = "right";
+          updateContent.innerHTML = "<h3>[01/05/2025] פרויקט Snake Mecha Collector סגור/הושלם ואינו נתמך על ידי היוצרים עוד.</h3>";
+          updateContent.innerHTML += "אבל ניתן לתקן שפות עבור משתמשים.";
+        }
+      }
+    </script>
+    <script>
+      if(navigator.serviceWorker) {
+        if(window.location.protocol === 'https:') {
+          navigator.serviceWorker.register('/mnts.snakegame.smc/sw.js',{scope: '/mnts.snakegame.smc/'})
+          .then(registration => {
+            console.log('Service Worker registered with scope:', registration.scope);
+          })
+          .catch(error => {
+            return false
+          });
+          document.getElementById("manifestTestLoad").setAttribute('href','/mnts.snakegame.smc/manifest.webmanifest');
+        }else
+        if (window.location.protocol === 'file:') {
+          // Potentially register service worker for local file access (USE WITH CAUTION)
+          if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/service-worker.js', { scope: '/' }) // Scope might need adjustment
+              .then(registration => {
+                console.log('Service Worker registered for local file with scope:', registration.scope);
+              })
+              .catch(error => {
+                return false
+              });
+              document.getElementById("manifestTestLoad").setAttribute('href','./manifest.webmanifest');
+          } else {
+            console.log('Service workers are not supported in this environment.');
+          }
+        } else {
+          console.log('Service workers are not being registered on non-HTTPS or non-file protocols.');
+        }
+      }
+    </script>
+    <div id="scriptContainer"></div>
+  </body>
+</html>
