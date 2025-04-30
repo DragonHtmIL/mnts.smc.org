@@ -12,12 +12,12 @@ Can be costumize:<br>
 <hr>
 Languages<br>
   English: Google Translate;<br>
-  Russian: By my memory;<br>
+  Russian: MNTS;<br>
   Japanese: Google Translate;<br>
   Chinese (Simplified): Google Translate;<br>
   Chinese (Traditional): Google Translate;<br>
   Korean: Google Translate;<br>
-  Hebrew: Google Translate;<br>
+  Hebrew: DragonHtmIL;<br>
 <hr>
 Game is downlodable for Android, Ios, Windows and Linux;
 <hr>
