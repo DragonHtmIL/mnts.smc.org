@@ -1,4 +1,4 @@
-<h3><a href="https://arturvesta.github.io/mnts.snakegame.smc/">Open the game</a></h3>
+<h3><a href="https://dragonhtmil.github.io/mnts.smc.org/">Open the game</a></h3>
 There is a classic Snake Game but with SMC styles.<br>
 MNTS make this minigame with love SMC by coding in 30minutes up to 1-2 hourse through <a href="https://code.visualstudio.com">Visual Studio Code</a>.
 <hr>
