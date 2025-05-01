@@ -456,387 +456,387 @@ const initGame = () => {
       localStorage.setItem("food000Storage", food_id_000);
     }else
     if(localStorage.getItem("foodStyle") === "img001food") {
-      food_id_000++;
+      food_id_001++;
       document.getElementById("collected000Food").innerHTML = food_id_001;
       localStorage.setItem("food001Storage", food_id_001);
     }else
     if(localStorage.getItem("foodStyle") === "img002food") {
-      food_id_000++;
+      food_id_002++;
       document.getElementById("collected000Food").innerHTML = food_id_002;
       localStorage.setItem("food002Storage", food_id_002);
     }else
     if(localStorage.getItem("foodStyle") === "img003food") {
-      food_id_000++;
+      food_id_003++;
       document.getElementById("collected000Food").innerHTML = food_id_003;
       localStorage.setItem("food003Storage", food_id_003);
     }else
     if(localStorage.getItem("foodStyle") === "img004food") {
-      food_id_000++;
+      food_id_004++;
       document.getElementById("collected000Food").innerHTML = food_id_004;
       localStorage.setItem("food004Storage", food_id_004);
     }else
     if(localStorage.getItem("foodStyle") === "img005food") {
-      food_id_000++;
+      food_id_005++;
       document.getElementById("collected000Food").innerHTML = food_id_005;
       localStorage.setItem("food005Storage", food_id_005);
     }else
     if(localStorage.getItem("foodStyle") === "img006food") {
-      food_id_000++;
+      food_id_006++;
       document.getElementById("collected000Food").innerHTML = food_id_006;
       localStorage.setItem("food006Storage", food_id_006);
     }else
     if(localStorage.getItem("foodStyle") === "img007food") {
-      food_id_000++;
+      food_id_007++;
       document.getElementById("collected000Food").innerHTML = food_id_007;
       localStorage.setItem("food007Storage", food_id_007);
     }else
     if(localStorage.getItem("foodStyle") === "img008food") {
-      food_id_000++;
+      food_id_008++;
       document.getElementById("collected000Food").innerHTML = food_id_008;
       localStorage.setItem("food008Storage", food_id_008);
     }else
     if(localStorage.getItem("foodStyle") === "img009food") {
-      food_id_000++;
+      food_id_009++;
       document.getElementById("collected000Food").innerHTML = food_id_009;
       localStorage.setItem("food009Storage", food_id_009);
     }else
     if(localStorage.getItem("foodStyle") === "img010food") {
-      food_id_000++;
+      food_id_010++;
       document.getElementById("collected000Food").innerHTML = food_id_010;
       localStorage.setItem("food010Storage", food_id_010);
     }else
     if(localStorage.getItem("foodStyle") === "img011food") {
-      food_id_000++;
+      food_id_011++;
       document.getElementById("collected000Food").innerHTML = food_id_011;
       localStorage.setItem("food011Storage", food_id_011);
     }else
     if(localStorage.getItem("foodStyle") === "img012food") {
-      food_id_000++;
+      food_id_012++;
       document.getElementById("collected000Food").innerHTML = food_id_012;
       localStorage.setItem("food012Storage", food_id_012);
     }else
     if(localStorage.getItem("foodStyle") === "img013food") {
-      food_id_000++;
+      food_id_013++;
       document.getElementById("collected000Food").innerHTML = food_id_013;
       localStorage.setItem("food013Storage", food_id_013);
     }else
     if(localStorage.getItem("foodStyle") === "img014food") {
-      food_id_000++;
+      food_id_014++;
       document.getElementById("collected000Food").innerHTML = food_id_014;
       localStorage.setItem("food014Storage", food_id_014);
     }else
     if(localStorage.getItem("foodStyle") === "img015food") {
-      food_id_000++;
+      food_id_015++;
       document.getElementById("collected000Food").innerHTML = food_id_015;
       localStorage.setItem("food015Storage", food_id_015);
     }else
     if(localStorage.getItem("foodStyle") === "img016food") {
-      food_id_000++;
+      food_id_016++;
       document.getElementById("collected000Food").innerHTML = food_id_016;
       localStorage.setItem("food016Storage", food_id_016);
     }else
     if(localStorage.getItem("foodStyle") === "img017food") {
-      food_id_000++;
+      food_id_017++;
       document.getElementById("collected000Food").innerHTML = food_id_017;
       localStorage.setItem("food017Storage", food_id_017);
     }else
     if(localStorage.getItem("foodStyle") === "img018food") {
-      food_id_000++;
+      food_id_018++;
       document.getElementById("collected000Food").innerHTML = food_id_018;
       localStorage.setItem("food018Storage", food_id_018);
     }else
     if(localStorage.getItem("foodStyle") === "img019food") {
-      food_id_000++;
+      food_id_019++;
       document.getElementById("collected000Food").innerHTML = food_id_019;
       localStorage.setItem("food019Storage", food_id_019);
     }else
     if(localStorage.getItem("foodStyle") === "img020food") {
-      food_id_000++;
+      food_id_020++;
       document.getElementById("collected000Food").innerHTML = food_id_020;
       localStorage.setItem("food020Storage", food_id_020);
     }else
     if(localStorage.getItem("foodStyle") === "img021food") {
-      food_id_000++;
+      food_id_021++;
       document.getElementById("collected000Food").innerHTML = food_id_021;
       localStorage.setItem("food021Storage", food_id_021);
     }else
     if(localStorage.getItem("foodStyle") === "img022food") {
-      food_id_000++;
+      food_id_022++;
       document.getElementById("collected000Food").innerHTML = food_id_022;
       localStorage.setItem("food022Storage", food_id_022);
     }else
     if(localStorage.getItem("foodStyle") === "img023food") {
-      food_id_000++;
+      food_id_023++;
       document.getElementById("collected000Food").innerHTML = food_id_023;
       localStorage.setItem("food023Storage", food_id_023);
     }else
     if(localStorage.getItem("foodStyle") === "img024food") {
-      food_id_000++;
+      food_id_024++;
       document.getElementById("collected000Food").innerHTML = food_id_024;
       localStorage.setItem("food024Storage", food_id_024);
     }else
     if(localStorage.getItem("foodStyle") === "img025food") {
-      food_id_000++;
+      food_id_025++;
       document.getElementById("collected000Food").innerHTML = food_id_025;
       localStorage.setItem("food025Storage", food_id_025);
     }else
     if(localStorage.getItem("foodStyle") === "img026food") {
-      food_id_000++;
+      food_id_026++;
       document.getElementById("collected000Food").innerHTML = food_id_026;
       localStorage.setItem("food026Storage", food_id_026);
     }else
     if(localStorage.getItem("foodStyle") === "img027food") {
-      food_id_000++;
+      food_id_027++;
       document.getElementById("collected000Food").innerHTML = food_id_027;
       localStorage.setItem("food027Storage", food_id_027);
     }else
     if(localStorage.getItem("foodStyle") === "img028food") {
-      food_id_000++;
+      food_id_028++;
       document.getElementById("collected000Food").innerHTML = food_id_028;
       localStorage.setItem("food028Storage", food_id_028);
     }else
     if(localStorage.getItem("foodStyle") === "img029food") {
-      food_id_000++;
+      food_id_029++;
       document.getElementById("collected000Food").innerHTML = food_id_029;
       localStorage.setItem("food029Storage", food_id_029);
     }else
     if(localStorage.getItem("foodStyle") === "img030food") {
-      food_id_000++;
+      food_id_030++;
       document.getElementById("collected000Food").innerHTML = food_id_030;
       localStorage.setItem("food030Storage", food_id_030);
     }else
     if(localStorage.getItem("foodStyle") === "img031food") {
-      food_id_000++;
+      food_id_031++;
       document.getElementById("collected000Food").innerHTML = food_id_031;
       localStorage.setItem("food031Storage", food_id_031);
     }else
     if(localStorage.getItem("foodStyle") === "img032food") {
-      food_id_000++;
+      food_id_032++;
       document.getElementById("collected000Food").innerHTML = food_id_032;
       localStorage.setItem("food032Storage", food_id_032);
     }else
     if(localStorage.getItem("foodStyle") === "img033food") {
-      food_id_000++;
+      food_id_033++;
       document.getElementById("collected000Food").innerHTML = food_id_033;
       localStorage.setItem("food033Storage", food_id_033);
     }else
     if(localStorage.getItem("foodStyle") === "img034food") {
-      food_id_000++;
+      food_id_034++;
       document.getElementById("collected000Food").innerHTML = food_id_034;
       localStorage.setItem("food034Storage", food_id_034);
     }else
     if(localStorage.getItem("foodStyle") === "img035food") {
-      food_id_000++;
+      food_id_035++;
       document.getElementById("collected000Food").innerHTML = food_id_035;
       localStorage.setItem("food035Storage", food_id_035);
     }else
     if(localStorage.getItem("foodStyle") === "img036food") {
-      food_id_000++;
+      food_id_036++;
       document.getElementById("collected000Food").innerHTML = food_id_036;
       localStorage.setItem("food036Storage", food_id_036);
     }else
     if(localStorage.getItem("foodStyle") === "img037food") {
-      food_id_000++;
+      food_id_037++;
       document.getElementById("collected000Food").innerHTML = food_id_037;
       localStorage.setItem("food037Storage", food_id_037);
     }else
     if(localStorage.getItem("foodStyle") === "img038food") {
-      food_id_000++;
+      food_id_038++;
       document.getElementById("collected000Food").innerHTML = food_id_038;
       localStorage.setItem("food038Storage", food_id_038);
     }else
     if(localStorage.getItem("foodStyle") === "img039food") {
-      food_id_000++;
+      food_id_039++;
       document.getElementById("collected000Food").innerHTML = food_id_039;
       localStorage.setItem("food039Storage", food_id_039);
     }else
     if(localStorage.getItem("foodStyle") === "img040food") {
-      food_id_000++;
+      food_id_040++;
       document.getElementById("collected000Food").innerHTML = food_id_040;
       localStorage.setItem("food040Storage", food_id_040);
     }else
     if(localStorage.getItem("foodStyle") === "img041food") {
-      food_id_000++;
+      food_id_041++;
       document.getElementById("collected000Food").innerHTML = food_id_041;
       localStorage.setItem("food041Storage", food_id_041);
     }else
     if(localStorage.getItem("foodStyle") === "img042food") {
-      food_id_000++;
+      food_id_042++;
       document.getElementById("collected000Food").innerHTML = food_id_042;
       localStorage.setItem("food042Storage", food_id_042);
     }else
     if(localStorage.getItem("foodStyle") === "img043food") {
-      food_id_000++;
+      food_id_043++;
       document.getElementById("collected000Food").innerHTML = food_id_043;
       localStorage.setItem("food043Storage", food_id_043);
     }else
     if(localStorage.getItem("foodStyle") === "img044food") {
-      food_id_000++;
+      food_id_044++;
       document.getElementById("collected000Food").innerHTML = food_id_044;
       localStorage.setItem("food044Storage", food_id_044);
     }else
     if(localStorage.getItem("foodStyle") === "img045food") {
-      food_id_000++;
+      food_id_045++;
       document.getElementById("collected000Food").innerHTML = food_id_045;
       localStorage.setItem("food045Storage", food_id_045);
     }else
     if(localStorage.getItem("foodStyle") === "img046food") {
-      food_id_000++;
+      food_id_046++;
       document.getElementById("collected000Food").innerHTML = food_id_046;
       localStorage.setItem("food046Storage", food_id_046);
     }else
     if(localStorage.getItem("foodStyle") === "img047food") {
-      food_id_000++;
+      food_id_047++;
       document.getElementById("collected000Food").innerHTML = food_id_047;
       localStorage.setItem("food047Storage", food_id_047);
     }else
     if(localStorage.getItem("foodStyle") === "img048food") {
-      food_id_000++;
+      food_id_048++;
       document.getElementById("collected000Food").innerHTML = food_id_048;
       localStorage.setItem("food048Storage", food_id_048);
     }else
     if(localStorage.getItem("foodStyle") === "img049food") {
-      food_id_000++;
+      food_id_049++;
       document.getElementById("collected000Food").innerHTML = food_id_049;
       localStorage.setItem("food049Storage", food_id_049);
     }else
     if(localStorage.getItem("foodStyle") === "img050food") {
-      food_id_000++;
+      food_id_050++;
       document.getElementById("collected000Food").innerHTML = food_id_050;
       localStorage.setItem("food050Storage", food_id_050);
     }else
     if(localStorage.getItem("foodStyle") === "img051food") {
-      food_id_000++;
+      food_id_051++;
       document.getElementById("collected000Food").innerHTML = food_id_051;
       localStorage.setItem("food051Storage", food_id_051);
     }else
     if(localStorage.getItem("foodStyle") === "img052food") {
-      food_id_000++;
+      food_id_052++;
       document.getElementById("collected000Food").innerHTML = food_id_052;
       localStorage.setItem("food052Storage", food_id_052);
     }else
     if(localStorage.getItem("foodStyle") === "img053food") {
-      food_id_000++;
+      food_id_053++;
       document.getElementById("collected000Food").innerHTML = food_id_053;
       localStorage.setItem("food053Storage", food_id_053);
     }else
     if(localStorage.getItem("foodStyle") === "img054food") {
-      food_id_000++;
+      food_id_054++;
       document.getElementById("collected000Food").innerHTML = food_id_054;
       localStorage.setItem("food054Storage", food_id_054);
     }else
     if(localStorage.getItem("foodStyle") === "img055food") {
-      food_id_000++;
+      food_id_055++;
       document.getElementById("collected000Food").innerHTML = food_id_055;
       localStorage.setItem("food055Storage", food_id_055);
     }else
     if(localStorage.getItem("foodStyle") === "img056food") {
-      food_id_000++;
+      food_id_056++;
       document.getElementById("collected000Food").innerHTML = food_id_056;
       localStorage.setItem("food056Storage", food_id_056);
     }else
     if(localStorage.getItem("foodStyle") === "img057food") {
-      food_id_000++;
+      food_id_057++;
       document.getElementById("collected000Food").innerHTML = food_id_057;
       localStorage.setItem("food057Storage", food_id_057);
     }else
     if(localStorage.getItem("foodStyle") === "img058food") {
-      food_id_000++;
+      food_id_058++;
       document.getElementById("collected000Food").innerHTML = food_id_058;
       localStorage.setItem("food058Storage", food_id_058);
     }else
     if(localStorage.getItem("foodStyle") === "img059food") {
-      food_id_000++;
+      food_id_059++;
       document.getElementById("collected000Food").innerHTML = food_id_059;
       localStorage.setItem("food059Storage", food_id_059);
     }else
     if(localStorage.getItem("foodStyle") === "img060food") {
-      food_id_000++;
+      food_id_060++;
       document.getElementById("collected000Food").innerHTML = food_id_060;
       localStorage.setItem("food060Storage", food_id_060);
     }else
     if(localStorage.getItem("foodStyle") === "img061food") {
-      food_id_000++;
+      food_id_061++;
       document.getElementById("collected000Food").innerHTML = food_id_061;
       localStorage.setItem("food061Storage", food_id_061);
     }else
     if(localStorage.getItem("foodStyle") === "img062food") {
-      food_id_000++;
+      food_id_062++;
       document.getElementById("collected000Food").innerHTML = food_id_062;
       localStorage.setItem("food062Storage", food_id_062);
     }else
     if(localStorage.getItem("foodStyle") === "img063food") {
-      food_id_000++;
+      food_id_063++;
       document.getElementById("collected000Food").innerHTML = food_id_063;
       localStorage.setItem("food063Storage", food_id_063);
     }else
     if(localStorage.getItem("foodStyle") === "img064food") {
-      food_id_000++;
+      food_id_064++;
       document.getElementById("collected000Food").innerHTML = food_id_064;
       localStorage.setItem("food064Storage", food_id_064);
     }else
     if(localStorage.getItem("foodStyle") === "img065food") {
-      food_id_000++;
+      food_id_065++;
       document.getElementById("collected000Food").innerHTML = food_id_065;
       localStorage.setItem("food065Storage", food_id_065);
     }else
     if(localStorage.getItem("foodStyle") === "img066food") {
-      food_id_000++;
+      food_id_066++;
       document.getElementById("collected000Food").innerHTML = food_id_066;
       localStorage.setItem("food066Storage", food_id_066);
     }else
     if(localStorage.getItem("foodStyle") === "img067food") {
-      food_id_000++;
+      food_id_067++;
       document.getElementById("collected000Food").innerHTML = food_id_067;
       localStorage.setItem("food067Storage", food_id_067);
     }else
     if(localStorage.getItem("foodStyle") === "img068food") {
-      food_id_000++;
+      food_id_068++;
       document.getElementById("collected000Food").innerHTML = food_id_068;
       localStorage.setItem("food068Storage", food_id_068);
     }else
     if(localStorage.getItem("foodStyle") === "img069food") {
-      food_id_000++;
+      food_id_069++;
       document.getElementById("collected000Food").innerHTML = food_id_069;
       localStorage.setItem("food069Storage", food_id_069);
     }else
     if(localStorage.getItem("foodStyle") === "img070food") {
-      food_id_000++;
+      food_id_070++;
       document.getElementById("collected000Food").innerHTML = food_id_070;
       localStorage.setItem("food070Storage", food_id_070);
     }else
     if(localStorage.getItem("foodStyle") === "img071food") {
-      food_id_000++;
+      food_id_071++;
       document.getElementById("collected000Food").innerHTML = food_id_071;
       localStorage.setItem("food071Storage", food_id_071);
     }else
     if(localStorage.getItem("foodStyle") === "img072food") {
-      food_id_000++;
+      food_id_072++;
       document.getElementById("collected000Food").innerHTML = food_id_072;
       localStorage.setItem("food072Storage", food_id_072);
     }else
     if(localStorage.getItem("foodStyle") === "img073food") {
-      food_id_000++;
+      food_id_073++;
       document.getElementById("collected000Food").innerHTML = food_id_073;
       localStorage.setItem("food073Storage", food_id_073);
     }else
     if(localStorage.getItem("foodStyle") === "img074food") {
-      food_id_000++;
+      food_id_074++;
       document.getElementById("collected000Food").innerHTML = food_id_074;
       localStorage.setItem("food074Storage", food_id_074);
     }else
     if(localStorage.getItem("foodStyle") === "img075food") {
-      food_id_000++;
+      food_id_075++;
       document.getElementById("collected000Food").innerHTML = food_id_075;
       localStorage.setItem("food075Storage", food_id_075);
     }else
     if(localStorage.getItem("foodStyle") === "img076food") {
-      food_id_000++;
+      food_id_076++;
       document.getElementById("collected000Food").innerHTML = food_id_076;
       localStorage.setItem("food076Storage", food_id_076);
     }else
     if(localStorage.getItem("foodStyle") === "img077food") {
-      food_id_000++;
+      food_id_077++;
       document.getElementById("collected000Food").innerHTML = food_id_077;
       localStorage.setItem("food077Storage", food_id_077);
     }

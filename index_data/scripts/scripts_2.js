@@ -678,6 +678,942 @@ function autoVirtualTokenrStorageLoadNew() {
     return false;
   }
 }
+function autoFood000StorageLoadNew() {
+  if(localStorage.getItem("food000Storage") === null) {
+    localStorage.setItem("food000Storage", "0");
+    window.location.reload();
+  }else
+  if(localStorage.getItem("food000Storage") === "") {
+    localStorage.setItem("food000Storage", "0");
+    window.location.reload();
+  }else{
+    return false;
+  }
+}
+function autoFood001StorageLoadNew() {
+  if(localStorage.getItem("food001Storage") === null) {
+    localStorage.setItem("food001Storage", "0");
+    window.location.reload();
+  }else
+  if(localStorage.getItem("food001Storage") === "") {
+    localStorage.setItem("food001Storage", "0");
+    window.location.reload();
+  }else{
+    return false;
+  }
+}
+function autoFood002StorageLoadNew() {
+  if(localStorage.getItem("food002Storage") === null) {
+    localStorage.setItem("food002Storage", "0");
+    window.location.reload();
+  }else
+  if(localStorage.getItem("food002Storage") === "") {
+    localStorage.setItem("food002Storage", "0");
+    window.location.reload();
+  }else{
+    return false;
+  }
+}
+function autoFood003StorageLoadNew() {
+  if(localStorage.getItem("food003Storage") === null) {
+    localStorage.setItem("food003Storage", "0");
+    window.location.reload();
+  }else
+  if(localStorage.getItem("food003Storage") === "") {
+    localStorage.setItem("food003Storage", "0");
+    window.location.reload();
+  }else{
+    return false;
+  }
+}
+function autoFood004StorageLoadNew() {
+  if(localStorage.getItem("food004Storage") === null) {
+    localStorage.setItem("food004Storage", "0");
+    window.location.reload();
+  }else
+  if(localStorage.getItem("food004Storage") === "") {
+    localStorage.setItem("food004Storage", "0");
+    window.location.reload();
+  }else{
+    return false;
+  }
+}
+function autoFood005StorageLoadNew() {
+  if(localStorage.getItem("food005Storage") === null) {
+    localStorage.setItem("food005Storage", "0");
+    window.location.reload();
+  }else
+  if(localStorage.getItem("food005Storage") === "") {
+    localStorage.setItem("food005Storage", "0");
+    window.location.reload();
+  }else{
+    return false;
+  }
+}
+function autoFood006StorageLoadNew() {
+  if(localStorage.getItem("food006Storage") === null) {
+    localStorage.setItem("food006Storage", "0");
+    window.location.reload();
+  }else
+  if(localStorage.getItem("food006Storage") === "") {
+    localStorage.setItem("food006Storage", "0");
+    window.location.reload();
+  }else{
+    return false;
+  }
+}
+function autoFood007StorageLoadNew() {
+  if(localStorage.getItem("food007Storage") === null) {
+    localStorage.setItem("food007Storage", "0");
+    window.location.reload();
+  }else
+  if(localStorage.getItem("food007Storage") === "") {
+    localStorage.setItem("food007Storage", "0");
+    window.location.reload();
+  }else{
+    return false;
+  }
+}
+function autoFood008StorageLoadNew() {
+  if(localStorage.getItem("food008Storage") === null) {
+    localStorage.setItem("food008Storage", "0");
+    window.location.reload();
+  }else
+  if(localStorage.getItem("food008Storage") === "") {
+    localStorage.setItem("food008Storage", "0");
+    window.location.reload();
+  }else{
+    return false;
+  }
+}
+function autoFood009StorageLoadNew() {
+  if(localStorage.getItem("food009Storage") === null) {
+    localStorage.setItem("food009Storage", "0");
+    window.location.reload();
+  }else
+  if(localStorage.getItem("food009Storage") === "") {
+    localStorage.setItem("food009Storage", "0");
+    window.location.reload();
+  }else{
+    return false;
+  }
+}
+function autoFood010StorageLoadNew() {
+  if(localStorage.getItem("food010Storage") === null) {
+    localStorage.setItem("food010Storage", "0");
+    window.location.reload();
+  }else
+  if(localStorage.getItem("food010Storage") === "") {
+    localStorage.setItem("food010Storage", "0");
+    window.location.reload();
+  }else{
+    return false;
+  }
+}
+function autoFood011StorageLoadNew() {
+  if(localStorage.getItem("food011Storage") === null) {
+    localStorage.setItem("food011Storage", "0");
+    window.location.reload();
+  }else
+  if(localStorage.getItem("food011Storage") === "") {
+    localStorage.setItem("food011Storage", "0");
+    window.location.reload();
+  }else{
+    return false;
+  }
+}
+function autoFood012StorageLoadNew() {
+  if(localStorage.getItem("food012Storage") === null) {
+    localStorage.setItem("food012Storage", "0");
+    window.location.reload();
+  }else
+  if(localStorage.getItem("food012Storage") === "") {
+    localStorage.setItem("food012Storage", "0");
+    window.location.reload();
+  }else{
+    return false;
+  }
+}
+function autoFood013StorageLoadNew() {
+  if(localStorage.getItem("food013Storage") === null) {
+    localStorage.setItem("food013Storage", "0");
+    window.location.reload();
+  }else
+  if(localStorage.getItem("food013Storage") === "") {
+    localStorage.setItem("food013Storage", "0");
+    window.location.reload();
+  }else{
+    return false;
+  }
+}
+function autoFood014StorageLoadNew() {
+  if(localStorage.getItem("food014Storage") === null) {
+    localStorage.setItem("food014Storage", "0");
+    window.location.reload();
+  }else
+  if(localStorage.getItem("food014Storage") === "") {
+    localStorage.setItem("food014Storage", "0");
+    window.location.reload();
+  }else{
+    return false;
+  }
+}
+function autoFood015StorageLoadNew() {
+  if(localStorage.getItem("food015Storage") === null) {
+    localStorage.setItem("food015Storage", "0");
+    window.location.reload();
+  }else
+  if(localStorage.getItem("food015Storage") === "") {
+    localStorage.setItem("food015Storage", "0");
+    window.location.reload();
+  }else{
+    return false;
+  }
+}
+function autoFood016StorageLoadNew() {
+  if(localStorage.getItem("food016Storage") === null) {
+    localStorage.setItem("food016Storage", "0");
+    window.location.reload();
+  }else
+  if(localStorage.getItem("food016Storage") === "") {
+    localStorage.setItem("food016Storage", "0");
+    window.location.reload();
+  }else{
+    return false;
+  }
+}
+function autoFood017StorageLoadNew() {
+  if(localStorage.getItem("food017Storage") === null) {
+    localStorage.setItem("food017Storage", "0");
+    window.location.reload();
+  }else
+  if(localStorage.getItem("food017Storage") === "") {
+    localStorage.setItem("food017Storage", "0");
+    window.location.reload();
+  }else{
+    return false;
+  }
+}
+function autoFood018StorageLoadNew() {
+  if(localStorage.getItem("food018Storage") === null) {
+    localStorage.setItem("food018Storage", "0");
+    window.location.reload();
+  }else
+  if(localStorage.getItem("food018Storage") === "") {
+    localStorage.setItem("food018Storage", "0");
+    window.location.reload();
+  }else{
+    return false;
+  }
+}
+function autoFood019StorageLoadNew() {
+  if(localStorage.getItem("food019Storage") === null) {
+    localStorage.setItem("food019Storage", "0");
+    window.location.reload();
+  }else
+  if(localStorage.getItem("food019Storage") === "") {
+    localStorage.setItem("food019Storage", "0");
+    window.location.reload();
+  }else{
+    return false;
+  }
+}
+function autoFood020StorageLoadNew() {
+  if(localStorage.getItem("food020Storage") === null) {
+    localStorage.setItem("food020Storage", "0");
+    window.location.reload();
+  }else
+  if(localStorage.getItem("food020Storage") === "") {
+    localStorage.setItem("food020Storage", "0");
+    window.location.reload();
+  }else{
+    return false;
+  }
+}
+function autoFood021StorageLoadNew() {
+  if(localStorage.getItem("food021Storage") === null) {
+    localStorage.setItem("food021Storage", "0");
+    window.location.reload();
+  }else
+  if(localStorage.getItem("food021Storage") === "") {
+    localStorage.setItem("food021Storage", "0");
+    window.location.reload();
+  }else{
+    return false;
+  }
+}
+function autoFood022StorageLoadNew() {
+  if(localStorage.getItem("food022Storage") === null) {
+    localStorage.setItem("food022Storage", "0");
+    window.location.reload();
+  }else
+  if(localStorage.getItem("food022Storage") === "") {
+    localStorage.setItem("food022Storage", "0");
+    window.location.reload();
+  }else{
+    return false;
+  }
+}
+function autoFood023StorageLoadNew() {
+  if(localStorage.getItem("food023Storage") === null) {
+    localStorage.setItem("food023Storage", "0");
+    window.location.reload();
+  }else
+  if(localStorage.getItem("food023Storage") === "") {
+    localStorage.setItem("food023Storage", "0");
+    window.location.reload();
+  }else{
+    return false;
+  }
+}
+function autoFood024StorageLoadNew() {
+  if(localStorage.getItem("food024Storage") === null) {
+    localStorage.setItem("food024Storage", "0");
+    window.location.reload();
+  }else
+  if(localStorage.getItem("food024Storage") === "") {
+    localStorage.setItem("food024Storage", "0");
+    window.location.reload();
+  }else{
+    return false;
+  }
+}
+function autoFood025StorageLoadNew() {
+  if(localStorage.getItem("food025Storage") === null) {
+    localStorage.setItem("food025Storage", "0");
+    window.location.reload();
+  }else
+  if(localStorage.getItem("food025Storage") === "") {
+    localStorage.setItem("food025Storage", "0");
+    window.location.reload();
+  }else{
+    return false;
+  }
+}
+function autoFood026StorageLoadNew() {
+  if(localStorage.getItem("food026Storage") === null) {
+    localStorage.setItem("food026Storage", "0");
+    window.location.reload();
+  }else
+  if(localStorage.getItem("food026Storage") === "") {
+    localStorage.setItem("food026Storage", "0");
+    window.location.reload();
+  }else{
+    return false;
+  }
+}
+function autoFood027StorageLoadNew() {
+  if(localStorage.getItem("food027Storage") === null) {
+    localStorage.setItem("food027Storage", "0");
+    window.location.reload();
+  }else
+  if(localStorage.getItem("food027Storage") === "") {
+    localStorage.setItem("food027Storage", "0");
+    window.location.reload();
+  }else{
+    return false;
+  }
+}
+function autoFood028StorageLoadNew() {
+  if(localStorage.getItem("food028Storage") === null) {
+    localStorage.setItem("food028Storage", "0");
+    window.location.reload();
+  }else
+  if(localStorage.getItem("food028Storage") === "") {
+    localStorage.setItem("food028Storage", "0");
+    window.location.reload();
+  }else{
+    return false;
+  }
+}
+function autoFood029StorageLoadNew() {
+  if(localStorage.getItem("food029Storage") === null) {
+    localStorage.setItem("food029Storage", "0");
+    window.location.reload();
+  }else
+  if(localStorage.getItem("food029Storage") === "") {
+    localStorage.setItem("food029Storage", "0");
+    window.location.reload();
+  }else{
+    return false;
+  }
+}
+function autoFood030StorageLoadNew() {
+  if(localStorage.getItem("food030Storage") === null) {
+    localStorage.setItem("food030Storage", "0");
+    window.location.reload();
+  }else
+  if(localStorage.getItem("food030Storage") === "") {
+    localStorage.setItem("food030Storage", "0");
+    window.location.reload();
+  }else{
+    return false;
+  }
+}
+function autoFood031StorageLoadNew() {
+  if(localStorage.getItem("food031Storage") === null) {
+    localStorage.setItem("food031Storage", "0");
+    window.location.reload();
+  }else
+  if(localStorage.getItem("food031Storage") === "") {
+    localStorage.setItem("food031Storage", "0");
+    window.location.reload();
+  }else{
+    return false;
+  }
+}
+function autoFood032StorageLoadNew() {
+  if(localStorage.getItem("food032Storage") === null) {
+    localStorage.setItem("food032Storage", "0");
+    window.location.reload();
+  }else
+  if(localStorage.getItem("food032Storage") === "") {
+    localStorage.setItem("food032Storage", "0");
+    window.location.reload();
+  }else{
+    return false;
+  }
+}
+function autoFood033StorageLoadNew() {
+  if(localStorage.getItem("food033Storage") === null) {
+    localStorage.setItem("food033Storage", "0");
+    window.location.reload();
+  }else
+  if(localStorage.getItem("food033Storage") === "") {
+    localStorage.setItem("food033Storage", "0");
+    window.location.reload();
+  }else{
+    return false;
+  }
+}
+function autoFood034StorageLoadNew() {
+  if(localStorage.getItem("food034Storage") === null) {
+    localStorage.setItem("food034Storage", "0");
+    window.location.reload();
+  }else
+  if(localStorage.getItem("food034Storage") === "") {
+    localStorage.setItem("food034Storage", "0");
+    window.location.reload();
+  }else{
+    return false;
+  }
+}
+function autoFood035StorageLoadNew() {
+  if(localStorage.getItem("food035Storage") === null) {
+    localStorage.setItem("food035Storage", "0");
+    window.location.reload();
+  }else
+  if(localStorage.getItem("food035Storage") === "") {
+    localStorage.setItem("food035Storage", "0");
+    window.location.reload();
+  }else{
+    return false;
+  }
+}
+function autoFood036StorageLoadNew() {
+  if(localStorage.getItem("food036Storage") === null) {
+    localStorage.setItem("food036Storage", "0");
+    window.location.reload();
+  }else
+  if(localStorage.getItem("food036Storage") === "") {
+    localStorage.setItem("food036Storage", "0");
+    window.location.reload();
+  }else{
+    return false;
+  }
+}
+function autoFood037StorageLoadNew() {
+  if(localStorage.getItem("food037Storage") === null) {
+    localStorage.setItem("food037Storage", "0");
+    window.location.reload();
+  }else
+  if(localStorage.getItem("food037Storage") === "") {
+    localStorage.setItem("food037Storage", "0");
+    window.location.reload();
+  }else{
+    return false;
+  }
+}
+function autoFood038StorageLoadNew() {
+  if(localStorage.getItem("food038Storage") === null) {
+    localStorage.setItem("food038Storage", "0");
+    window.location.reload();
+  }else
+  if(localStorage.getItem("food038Storage") === "") {
+    localStorage.setItem("food038Storage", "0");
+    window.location.reload();
+  }else{
+    return false;
+  }
+}
+function autoFood039StorageLoadNew() {
+  if(localStorage.getItem("food039Storage") === null) {
+    localStorage.setItem("food039Storage", "0");
+    window.location.reload();
+  }else
+  if(localStorage.getItem("food039Storage") === "") {
+    localStorage.setItem("food039Storage", "0");
+    window.location.reload();
+  }else{
+    return false;
+  }
+}
+function autoFood040StorageLoadNew() {
+  if(localStorage.getItem("food040Storage") === null) {
+    localStorage.setItem("food040Storage", "0");
+    window.location.reload();
+  }else
+  if(localStorage.getItem("food040Storage") === "") {
+    localStorage.setItem("food040Storage", "0");
+    window.location.reload();
+  }else{
+    return false;
+  }
+}
+function autoFood041StorageLoadNew() {
+  if(localStorage.getItem("food041Storage") === null) {
+    localStorage.setItem("food041Storage", "0");
+    window.location.reload();
+  }else
+  if(localStorage.getItem("food041Storage") === "") {
+    localStorage.setItem("food041Storage", "0");
+    window.location.reload();
+  }else{
+    return false;
+  }
+}
+function autoFood042StorageLoadNew() {
+  if(localStorage.getItem("food042Storage") === null) {
+    localStorage.setItem("food042Storage", "0");
+    window.location.reload();
+  }else
+  if(localStorage.getItem("food042Storage") === "") {
+    localStorage.setItem("food042Storage", "0");
+    window.location.reload();
+  }else{
+    return false;
+  }
+}
+function autoFood043StorageLoadNew() {
+  if(localStorage.getItem("food043Storage") === null) {
+    localStorage.setItem("food043Storage", "0");
+    window.location.reload();
+  }else
+  if(localStorage.getItem("food043Storage") === "") {
+    localStorage.setItem("food043Storage", "0");
+    window.location.reload();
+  }else{
+    return false;
+  }
+}
+function autoFood044StorageLoadNew() {
+  if(localStorage.getItem("food044Storage") === null) {
+    localStorage.setItem("food044Storage", "0");
+    window.location.reload();
+  }else
+  if(localStorage.getItem("food044Storage") === "") {
+    localStorage.setItem("food044Storage", "0");
+    window.location.reload();
+  }else{
+    return false;
+  }
+}
+function autoFood045StorageLoadNew() {
+  if(localStorage.getItem("food045Storage") === null) {
+    localStorage.setItem("food045Storage", "0");
+    window.location.reload();
+  }else
+  if(localStorage.getItem("food045Storage") === "") {
+    localStorage.setItem("food045Storage", "0");
+    window.location.reload();
+  }else{
+    return false;
+  }
+}
+function autoFood046StorageLoadNew() {
+  if(localStorage.getItem("food046Storage") === null) {
+    localStorage.setItem("food046Storage", "0");
+    window.location.reload();
+  }else
+  if(localStorage.getItem("food046Storage") === "") {
+    localStorage.setItem("food046Storage", "0");
+    window.location.reload();
+  }else{
+    return false;
+  }
+}
+function autoFood047StorageLoadNew() {
+  if(localStorage.getItem("food047Storage") === null) {
+    localStorage.setItem("food047Storage", "0");
+    window.location.reload();
+  }else
+  if(localStorage.getItem("food047Storage") === "") {
+    localStorage.setItem("food047Storage", "0");
+    window.location.reload();
+  }else{
+    return false;
+  }
+}
+function autoFood048StorageLoadNew() {
+  if(localStorage.getItem("food048Storage") === null) {
+    localStorage.setItem("food048Storage", "0");
+    window.location.reload();
+  }else
+  if(localStorage.getItem("food048Storage") === "") {
+    localStorage.setItem("food048Storage", "0");
+    window.location.reload();
+  }else{
+    return false;
+  }
+}
+function autoFood049StorageLoadNew() {
+  if(localStorage.getItem("food049Storage") === null) {
+    localStorage.setItem("food049Storage", "0");
+    window.location.reload();
+  }else
+  if(localStorage.getItem("food049Storage") === "") {
+    localStorage.setItem("food049Storage", "0");
+    window.location.reload();
+  }else{
+    return false;
+  }
+}
+function autoFood050StorageLoadNew() {
+  if(localStorage.getItem("food050Storage") === null) {
+    localStorage.setItem("food050Storage", "0");
+    window.location.reload();
+  }else
+  if(localStorage.getItem("food050Storage") === "") {
+    localStorage.setItem("food050Storage", "0");
+    window.location.reload();
+  }else{
+    return false;
+  }
+}
+function autoFood051StorageLoadNew() {
+  if(localStorage.getItem("food051Storage") === null) {
+    localStorage.setItem("food051Storage", "0");
+    window.location.reload();
+  }else
+  if(localStorage.getItem("food051Storage") === "") {
+    localStorage.setItem("food051Storage", "0");
+    window.location.reload();
+  }else{
+    return false;
+  }
+}
+function autoFood052StorageLoadNew() {
+  if(localStorage.getItem("food052Storage") === null) {
+    localStorage.setItem("food052Storage", "0");
+    window.location.reload();
+  }else
+  if(localStorage.getItem("food052Storage") === "") {
+    localStorage.setItem("food052Storage", "0");
+    window.location.reload();
+  }else{
+    return false;
+  }
+}
+function autoFood053StorageLoadNew() {
+  if(localStorage.getItem("food053Storage") === null) {
+    localStorage.setItem("food053Storage", "0");
+    window.location.reload();
+  }else
+  if(localStorage.getItem("food053Storage") === "") {
+    localStorage.setItem("food053Storage", "0");
+    window.location.reload();
+  }else{
+    return false;
+  }
+}
+function autoFood054StorageLoadNew() {
+  if(localStorage.getItem("food054Storage") === null) {
+    localStorage.setItem("food054Storage", "0");
+    window.location.reload();
+  }else
+  if(localStorage.getItem("food054Storage") === "") {
+    localStorage.setItem("food054Storage", "0");
+    window.location.reload();
+  }else{
+    return false;
+  }
+}
+function autoFood055StorageLoadNew() {
+  if(localStorage.getItem("food055Storage") === null) {
+    localStorage.setItem("food055Storage", "0");
+    window.location.reload();
+  }else
+  if(localStorage.getItem("food055Storage") === "") {
+    localStorage.setItem("food055Storage", "0");
+    window.location.reload();
+  }else{
+    return false;
+  }
+}
+function autoFood056StorageLoadNew() {
+  if(localStorage.getItem("food056Storage") === null) {
+    localStorage.setItem("food056Storage", "0");
+    window.location.reload();
+  }else
+  if(localStorage.getItem("food056Storage") === "") {
+    localStorage.setItem("food056Storage", "0");
+    window.location.reload();
+  }else{
+    return false;
+  }
+}
+function autoFood057StorageLoadNew() {
+  if(localStorage.getItem("food057Storage") === null) {
+    localStorage.setItem("food057Storage", "0");
+    window.location.reload();
+  }else
+  if(localStorage.getItem("food057Storage") === "") {
+    localStorage.setItem("food057Storage", "0");
+    window.location.reload();
+  }else{
+    return false;
+  }
+}
+function autoFood058StorageLoadNew() {
+  if(localStorage.getItem("food058Storage") === null) {
+    localStorage.setItem("food058Storage", "0");
+    window.location.reload();
+  }else
+  if(localStorage.getItem("food058Storage") === "") {
+    localStorage.setItem("food058Storage", "0");
+    window.location.reload();
+  }else{
+    return false;
+  }
+}
+function autoFood059StorageLoadNew() {
+  if(localStorage.getItem("food059Storage") === null) {
+    localStorage.setItem("food059Storage", "0");
+    window.location.reload();
+  }else
+  if(localStorage.getItem("food059Storage") === "") {
+    localStorage.setItem("food059Storage", "0");
+    window.location.reload();
+  }else{
+    return false;
+  }
+}
+function autoFood060StorageLoadNew() {
+  if(localStorage.getItem("food060Storage") === null) {
+    localStorage.setItem("food060Storage", "0");
+    window.location.reload();
+  }else
+  if(localStorage.getItem("food060Storage") === "") {
+    localStorage.setItem("food060Storage", "0");
+    window.location.reload();
+  }else{
+    return false;
+  }
+}
+function autoFood061StorageLoadNew() {
+  if(localStorage.getItem("food061Storage") === null) {
+    localStorage.setItem("food061Storage", "0");
+    window.location.reload();
+  }else
+  if(localStorage.getItem("food061Storage") === "") {
+    localStorage.setItem("food061Storage", "0");
+    window.location.reload();
+  }else{
+    return false;
+  }
+}
+function autoFood062StorageLoadNew() {
+  if(localStorage.getItem("food062Storage") === null) {
+    localStorage.setItem("food062Storage", "0");
+    window.location.reload();
+  }else
+  if(localStorage.getItem("food062Storage") === "") {
+    localStorage.setItem("food062Storage", "0");
+    window.location.reload();
+  }else{
+    return false;
+  }
+}
+function autoFood063StorageLoadNew() {
+  if(localStorage.getItem("food063Storage") === null) {
+    localStorage.setItem("food063Storage", "0");
+    window.location.reload();
+  }else
+  if(localStorage.getItem("food063Storage") === "") {
+    localStorage.setItem("food063Storage", "0");
+    window.location.reload();
+  }else{
+    return false;
+  }
+}
+function autoFood064StorageLoadNew() {
+  if(localStorage.getItem("food064Storage") === null) {
+    localStorage.setItem("food064Storage", "0");
+    window.location.reload();
+  }else
+  if(localStorage.getItem("food064Storage") === "") {
+    localStorage.setItem("food064Storage", "0");
+    window.location.reload();
+  }else{
+    return false;
+  }
+}
+function autoFood065StorageLoadNew() {
+  if(localStorage.getItem("food065Storage") === null) {
+    localStorage.setItem("food065Storage", "0");
+    window.location.reload();
+  }else
+  if(localStorage.getItem("food065Storage") === "") {
+    localStorage.setItem("food065Storage", "0");
+    window.location.reload();
+  }else{
+    return false;
+  }
+}
+function autoFood066StorageLoadNew() {
+  if(localStorage.getItem("food066Storage") === null) {
+    localStorage.setItem("food066Storage", "0");
+    window.location.reload();
+  }else
+  if(localStorage.getItem("food066Storage") === "") {
+    localStorage.setItem("food066Storage", "0");
+    window.location.reload();
+  }else{
+    return false;
+  }
+}
+function autoFood067StorageLoadNew() {
+  if(localStorage.getItem("food067Storage") === null) {
+    localStorage.setItem("food067Storage", "0");
+    window.location.reload();
+  }else
+  if(localStorage.getItem("food067Storage") === "") {
+    localStorage.setItem("food067Storage", "0");
+    window.location.reload();
+  }else{
+    return false;
+  }
+}
+function autoFood068StorageLoadNew() {
+  if(localStorage.getItem("food068Storage") === null) {
+    localStorage.setItem("food068Storage", "0");
+    window.location.reload();
+  }else
+  if(localStorage.getItem("food068Storage") === "") {
+    localStorage.setItem("food068Storage", "0");
+    window.location.reload();
+  }else{
+    return false;
+  }
+}
+function autoFood069StorageLoadNew() {
+  if(localStorage.getItem("food069Storage") === null) {
+    localStorage.setItem("food069Storage", "0");
+    window.location.reload();
+  }else
+  if(localStorage.getItem("food069Storage") === "") {
+    localStorage.setItem("food069Storage", "0");
+    window.location.reload();
+  }else{
+    return false;
+  }
+}
+function autoFood070StorageLoadNew() {
+  if(localStorage.getItem("food070Storage") === null) {
+    localStorage.setItem("food070Storage", "0");
+    window.location.reload();
+  }else
+  if(localStorage.getItem("food070Storage") === "") {
+    localStorage.setItem("food070Storage", "0");
+    window.location.reload();
+  }else{
+    return false;
+  }
+}
+function autoFood071StorageLoadNew() {
+  if(localStorage.getItem("food071Storage") === null) {
+    localStorage.setItem("food071Storage", "0");
+    window.location.reload();
+  }else
+  if(localStorage.getItem("food071Storage") === "") {
+    localStorage.setItem("food071Storage", "0");
+    window.location.reload();
+  }else{
+    return false;
+  }
+}
+function autoFood072StorageLoadNew() {
+  if(localStorage.getItem("food072Storage") === null) {
+    localStorage.setItem("food072Storage", "0");
+    window.location.reload();
+  }else
+  if(localStorage.getItem("food072Storage") === "") {
+    localStorage.setItem("food072Storage", "0");
+    window.location.reload();
+  }else{
+    return false;
+  }
+}
+function autoFood073StorageLoadNew() {
+  if(localStorage.getItem("food073Storage") === null) {
+    localStorage.setItem("food073Storage", "0");
+    window.location.reload();
+  }else
+  if(localStorage.getItem("food073Storage") === "") {
+    localStorage.setItem("food073Storage", "0");
+    window.location.reload();
+  }else{
+    return false;
+  }
+}
+function autoFood074StorageLoadNew() {
+  if(localStorage.getItem("food074Storage") === null) {
+    localStorage.setItem("food074Storage", "0");
+    window.location.reload();
+  }else
+  if(localStorage.getItem("food074Storage") === "") {
+    localStorage.setItem("food074Storage", "0");
+    window.location.reload();
+  }else{
+    return false;
+  }
+}
+function autoFood075StorageLoadNew() {
+  if(localStorage.getItem("food075Storage") === null) {
+    localStorage.setItem("food075Storage", "0");
+    window.location.reload();
+  }else
+  if(localStorage.getItem("food075Storage") === "") {
+    localStorage.setItem("food075Storage", "0");
+    window.location.reload();
+  }else{
+    return false;
+  }
+}
+function autoFood076StorageLoadNew() {
+  if(localStorage.getItem("food076Storage") === null) {
+    localStorage.setItem("food076Storage", "0");
+    window.location.reload();
+  }else
+  if(localStorage.getItem("food076Storage") === "") {
+    localStorage.setItem("food076Storage", "0");
+    window.location.reload();
+  }else{
+    return false;
+  }
+}
+function autoFood077StorageLoadNew() {
+  if(localStorage.getItem("food077Storage") === null) {
+    localStorage.setItem("food077Storage", "0");
+    window.location.reload();
+  }else
+  if(localStorage.getItem("food077Storage") === "") {
+    localStorage.setItem("food077Storage", "0");
+    window.location.reload();
+  }else{
+    return false;
+  }
+}
 function autoLoadingAnimLogoLoadNew() {
   if(localStorage.getItem("loadingStyle") === null) {
     localStorage.setItem("loadingStyle", "classic");
@@ -1562,6 +2498,84 @@ window.addEventListener('load', function() {
   autoAmbientCheckLoadNew();
   autoSnakeColorerLoadNew();
   autoSnakeLettersLoadNew();
+  autoFood000StorageLoadNew();
+  autoFood001StorageLoadNew();
+  autoFood002StorageLoadNew();
+  autoFood003StorageLoadNew();
+  autoFood004StorageLoadNew();
+  autoFood005StorageLoadNew();
+  autoFood006StorageLoadNew();
+  autoFood007StorageLoadNew();
+  autoFood008StorageLoadNew();
+  autoFood009StorageLoadNew();
+  autoFood010StorageLoadNew();
+  autoFood011StorageLoadNew();
+  autoFood012StorageLoadNew();
+  autoFood013StorageLoadNew();
+  autoFood014StorageLoadNew();
+  autoFood015StorageLoadNew();
+  autoFood016StorageLoadNew();
+  autoFood017StorageLoadNew();
+  autoFood018StorageLoadNew();
+  autoFood019StorageLoadNew();
+  autoFood020StorageLoadNew();
+  autoFood021StorageLoadNew();
+  autoFood022StorageLoadNew();
+  autoFood023StorageLoadNew();
+  autoFood024StorageLoadNew();
+  autoFood025StorageLoadNew();
+  autoFood026StorageLoadNew();
+  autoFood027StorageLoadNew();
+  autoFood028StorageLoadNew();
+  autoFood029StorageLoadNew();
+  autoFood030StorageLoadNew();
+  autoFood031StorageLoadNew();
+  autoFood032StorageLoadNew();
+  autoFood033StorageLoadNew();
+  autoFood034StorageLoadNew();
+  autoFood035StorageLoadNew();
+  autoFood036StorageLoadNew();
+  autoFood037StorageLoadNew();
+  autoFood038StorageLoadNew();
+  autoFood039StorageLoadNew();
+  autoFood040StorageLoadNew();
+  autoFood041StorageLoadNew();
+  autoFood042StorageLoadNew();
+  autoFood043StorageLoadNew();
+  autoFood044StorageLoadNew();
+  autoFood045StorageLoadNew();
+  autoFood046StorageLoadNew();
+  autoFood047StorageLoadNew();
+  autoFood048StorageLoadNew();
+  autoFood049StorageLoadNew();
+  autoFood050StorageLoadNew();
+  autoFood051StorageLoadNew();
+  autoFood052StorageLoadNew();
+  autoFood053StorageLoadNew();
+  autoFood054StorageLoadNew();
+  autoFood055StorageLoadNew();
+  autoFood056StorageLoadNew();
+  autoFood057StorageLoadNew();
+  autoFood058StorageLoadNew();
+  autoFood059StorageLoadNew();
+  autoFood060StorageLoadNew();
+  autoFood061StorageLoadNew();
+  autoFood062StorageLoadNew();
+  autoFood063StorageLoadNew();
+  autoFood064StorageLoadNew();
+  autoFood065StorageLoadNew();
+  autoFood066StorageLoadNew();
+  autoFood067StorageLoadNew();
+  autoFood068StorageLoadNew();
+  autoFood069StorageLoadNew();
+  autoFood070StorageLoadNew();
+  autoFood071StorageLoadNew();
+  autoFood072StorageLoadNew();
+  autoFood073StorageLoadNew();
+  autoFood074StorageLoadNew();
+  autoFood075StorageLoadNew();
+  autoFood076StorageLoadNew();
+  autoFood077StorageLoadNew();
   snakeColorerValueLoad();
   localStorage.setItem("steelScore", localStorage.getItem("high-score"));
   document.getElementById("collectedMeow").innerHTML = localStorage.getItem("meawTokenStorage");
