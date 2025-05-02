@@ -1,6 +1,6 @@
 var GHPATH = '/mnts.smc.org';
 var APP_PREFIX = 'gppwa_';
-let VERSIONNAME = "1.0.0-v2";
+let VERSIONNAME = "1.0.1-v2";
 var VERSION = VERSIONNAME;
 var URLS = [
   `${GHPATH}/`,
@@ -569,6 +569,22 @@ var URLS = [
   `${GHPATH}/index_data/animations/blue/link-13.png`,
   `${GHPATH}/index_data/animations/blue/link-14.png`,
   `${GHPATH}/index_data/animations/blue/link-15.png`,
+  `${GHPATH}/index_data/animations/blue/disabled-0.png`,
+  `${GHPATH}/index_data/animations/blue/disabled-1.png`,
+  `${GHPATH}/index_data/animations/blue/disabled-2.png`,
+  `${GHPATH}/index_data/animations/blue/disabled-3.png`,
+  `${GHPATH}/index_data/animations/blue/disabled-4.png`,
+  `${GHPATH}/index_data/animations/blue/disabled-5.png`,
+  `${GHPATH}/index_data/animations/blue/disabled-6.png`,
+  `${GHPATH}/index_data/animations/blue/disabled-7.png`,
+  `${GHPATH}/index_data/animations/blue/disabled-8.png`,
+  `${GHPATH}/index_data/animations/blue/disabled-9.png`,
+  `${GHPATH}/index_data/animations/blue/disabled-10.png`,
+  `${GHPATH}/index_data/animations/blue/disabled-11.png`,
+  `${GHPATH}/index_data/animations/blue/disabled-12.png`,
+  `${GHPATH}/index_data/animations/blue/disabled-13.png`,
+  `${GHPATH}/index_data/animations/blue/disabled-14.png`,
+  `${GHPATH}/index_data/animations/blue/disabled-15.png`,
 
   `${GHPATH}/index_data/styles`,
   `${GHPATH}/index_data/styles/animations.css`,

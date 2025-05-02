@@ -33,6 +33,9 @@
       }else
       if(localStorage.getItem("lang") === "he") {
         document.documentElement.setAttribute("lang", "he");
+      }else
+      if(localStorage.getItem("lang") === "de") {
+        document.documentElement.setAttribute("lang", "de");
       }
     </script>
   </head>
@@ -466,6 +469,7 @@
               <div onclick="ChineseTraditionalLanguage();" id="languageCht" class="language select">繁體中文</div>
               <div onclick="koreanLanguage();" id="languageKo" class="language select">한국어</div>
               <div onclick="hebrewLanguage();" id="languageHe" class="language select">עברית</div>
+              <div onclick="germanLanguage();" id="languageDe" class="language select">Deutsche</div>
               <div class="important-text" id="langImportantLang">...</div>
             </div>
             <hr>
@@ -489,7 +493,7 @@
             <input type="button" id="downloadNoAutoUpdate" class="windows-dl" onclick="downloadAlertSystem();" value=" ">
             <input type="button" id="downloadNoAutoUpdate2" class="android-dl" value=" ">
             <div class="range-content">
-              <input type="checkbox" id="administratorTools" onclick="selectionSound();">
+              <input type="checkbox" id="administratorTools" onclick="selectionSound();" disabled>
               <label class="label-checkbox" for="administratorTools" id="adminToolsLang">...</label>
             </div>
             <hr>
@@ -842,7 +846,6 @@
             <hr>
             <div id="translateUsage">
               <div id="translate"></div>
-              <button id="customLanguage" onclick="document.getElementById('contactUsDiscord').click();">...</button>
             </div>
             <hr>
             <span class="heading" id="heading">...</span>
@@ -908,14 +911,6 @@
             <p id="coderLang">...</p>
             <p id="direction1"><span id="baseCodeLang">...</span><a href="https://www.codingnepalweb.com/create-snake-game-htm-css-javascript/" target="_blank">CodingNepal</a>;</p>
             <p><span id="cratedOn0Lang">...</span><a id="cratedOnLang" href="https://code.visualstudio.com" target="_blank">Visual Studio Code</a></p>
-            <hr>
-            <div class="serviceLang">...</div>
-            <div id="contactUsMessenger" onclick="goToMessenger();">
-              <div>Messaneger</div>
-            </div>
-            <div id="contactUsDiscord" onclick="goToDiscord();">
-              <div>Discord</div>
-            </div>
           </div>
           <input type="submit" id="defaultSettings" onclick="alertReloadLater();" value="..." />
           <input type="submit" id="applySettings" onclick="applySettings();" value="..." />
@@ -1022,6 +1017,7 @@
             <div onclick="document.getElementById('langTitleOfFirstModal').innerHTML='繁體中文';document.getElementById('languageCht').click();document.getElementById('selectedLanguageIs').innerHTML='已選擇繁體中文。';document.getElementById('firstModalApplyBtm').style.display='block';document.getElementById('firstModalApplyBtm').value='申請';document.getElementById('selectedLanguageIs').style.direction='ltr'" class="language select">繁體中文</div>
             <div onclick="document.getElementById('langTitleOfFirstModal').innerHTML='언어 선택';document.getElementById('languageKo').click();document.getElementById('selectedLanguageIs').innerHTML='한국어가 선택되었습니다.';document.getElementById('firstModalApplyBtm').style.display='block';document.getElementById('firstModalApplyBtm').value='적용하다';document.getElementById('selectedLanguageIs').style.direction='ltr'" class="language select">한국어</div>
             <div onclick="document.getElementById('langTitleOfFirstModal').innerHTML='בחר שפה';document.getElementById('languageHe').click();document.getElementById('selectedLanguageIs').innerHTML='עברית נבחרה.';document.getElementById('firstModalApplyBtm').style.display='block';document.getElementById('firstModalApplyBtm').value='החל';document.getElementById('selectedLanguageIs').style.direction='rtl'" class="language select" id="newFirstLineBtns2">עברית</div>
+            <div onclick="document.getElementById('langTitleOfFirstModal').innerHTML='Sprache auswählen';document.getElementById('languageHe').click();document.getElementById('selectedLanguageIs').innerHTML='Englisch ist ausgewählt.';document.getElementById('firstModalApplyBtm').style.display='block';document.getElementById('firstModalApplyBtm').value='Anwenden';document.getElementById('selectedLanguageIs').style.direction='ltr'" class="language select">Deutsche</div>
             <div id="selectedLanguageIs"></div>
           </div>
           <input type="submit" id="firstModalApplyBtm" onclick="document.getElementById('applySettings').click();localStorage.setItem('firsttime','exist')" style="display:none;" value="..." />
@@ -1408,7 +1404,7 @@
     <script src="index_data/scripts/key_controlls.js"></script>
     <script src="index_data/scripts/scripts_2.js"></script>
     <script>
-      let basicVersion = "1.0.0";
+      let basicVersion = "1.0.1-v2";
       function markUpdateReaded() {
         var modal = document.getElementById("updateModal");
         modal.style.display = "none";
@@ -1418,43 +1414,73 @@
         var updateTitle = document.getElementById("updateTitleLang");
         var updateContent = document.getElementById("updateNoticeContent");
         if(localStorage.getItem("lang") === "en") {
-          updateTitle.innerHTML = "What new in " + basicVersion + " Version";
-          updateContent.innerHTML = "<h3>[01/05/2025] Snake Mecha Collector project is closed/completed and not supported by creators more.</h3>";
-          updateContent.innerHTML += "but can be repaired languages for users.";
+          updateTitle.innerHTML = basicVersion + " is last version";
+          updateContent.innerHTML = "<h3>[02/05/2025]</h3>" + "<br>";
+          updateContent.innerHTML += "Added more boards." + "<br>";
+          updateContent.innerHTML += "Added more foods." + "<br>";
+          updateContent.innerHTML += "Added hebrew language." + "<br>";
+          updateContent.innerHTML += "Added german language." + "<br>";
         }else
         if(localStorage.getItem("lang") === "ru") {
-          updateTitle.innerHTML = "Что нового в " + basicVersion + " версии";
-          updateContent.innerHTML = "<h3>[01/05/2025] Проект Snake Mecha Collector закрыт/завершён и больше не поддерживается создателями.</h3>";
-          updateContent.innerHTML += "но могут быть восстановлены языки для пользователей.";
+          updateTitle.innerHTML = basicVersion + " последняя версия";
+          updateContent.innerHTML = "<h3>[02/05/2025]</h3>" + "<br>";
+          updateContent.innerHTML += "Добавлено больше досок." + "<br>";
+          updateContent.innerHTML += "Добавлено больше продуктов." + "<br>";
+          updateContent.innerHTML += "Добавлен язык иврит." + "<br>";
+          updateContent.innerHTML += "Добавлен немецкий язык." + "<br>";
         }else
         if(localStorage.getItem("lang") === "jp") {
-          updateTitle.innerHTML = "バージョン" + basicVersion + "の新機能";
-          updateContent.innerHTML = "<h3>[01/05/2025] Snake Mecha Collector プロジェクトは終了/完了しており、クリエイターによるサポートは終了しています。</h3>";
-          updateContent.innerHTML += "ただし、ユーザー向けに言語を修復することは可能です。";
+          updateTitle.innerHTML = basicVersion + " が最新バージョンです";
+          updateContent.innerHTML = "<h3>[02/05/2025]</h3>" + "<br>";
+          updateContent.innerHTML += "ボードを追加しました." + "<br>";
+          updateContent.innerHTML += "食べ物を追加しました." + "<br>";
+          updateContent.innerHTML += "ヘブライ語を追加しました." + "<br>";
+          updateContent.innerHTML += "ドイツ語を追加しました." + "<br>";
         }else
         if(localStorage.getItem("lang") === "chs") {
-          updateTitle.innerHTML = basicVersion + "版本有哪些新功能";
-          updateContent.innerHTML = "<h3>[01/05/2025] Snake Mecha Collector 项目已关闭/完成，并且不再受到创作者的支持。</h3>";
-          updateContent.innerHTML += "但可以为用户修复语言。";
+          updateTitle.innerHTML = basicVersion + " 是最新版本";
+          updateContent.innerHTML = "<h3>[02/05/2025]</h3>" + "<br>";
+          updateContent.innerHTML += "增加了更多板." + "<br>";
+          updateContent.innerHTML += "添加了更多食物." + "<br>";
+          updateContent.innerHTML += "添加希伯来语." + "<br>";
+          updateContent.innerHTML += "添加德语." + "<br>";
         }else
         if(localStorage.getItem("lang") === "cht") {
-          updateTitle.innerHTML = basicVersion + " 版本有哪些新功能";
-          updateContent.innerHTML = "<h3>[01/05/2025] Snake Mecha Collector 專案已關閉/完成，並且不再受到創作者的支持。</h3>";
-          updateContent.innerHTML += "但可以為使用者修復語言。";
+          updateTitle.innerHTML = basicVersion + " 是最新版本";
+          updateContent.innerHTML = "<h3>[02/05/2025]</h3>" + "<br>";
+          updateContent.innerHTML += "增加了更多板." + "<br>";
+          updateContent.innerHTML += "添加了更多食物." + "<br>";
+          updateContent.innerHTML += "添加希伯來語." + "<br>";
+          updateContent.innerHTML += "加入德語." + "<br>";
         }else
         if(localStorage.getItem("lang") === "ko") {
-          updateTitle.innerHTML = basicVersion + "버전의 새로운 기능";
-          updateContent.innerHTML = "<h3>[01/05/2025] 스네이크 메카 수집 프로젝트는 종료/완료되었으며 더 이상 창작자의 지원을 받지 않습니다.</h3>";
-          updateContent.innerHTML += "하지만 사용자를 위해 언어를 복구할 수도 있습니다.";
+          updateTitle.innerHTML = basicVersion + " 이 최신 버전입니다";
+          updateContent.innerHTML = "<h3>[02/05/2025]</h3>" + "<br>";
+          updateContent.innerHTML += "더 많은 보드를 추가했습니다." + "<br>";
+          updateContent.innerHTML += "더 많은 음식을 추가했습니다." + "<br>";
+          updateContent.innerHTML += "히브리어 언어 추가됨." + "<br>";
+          updateContent.innerHTML += "독일어 추가됨." + "<br>";
         }else
         if(localStorage.getItem("lang") === "he") {
-          updateTitle.innerHTML = "מה חדש בגרסה " + basicVersion;
+          updateTitle.innerHTML = basicVersion + " היא הגרסה האחרונה";
           updateTitle.style.textAlign = "right";
+          updateTitle.style.direction = "rtl";
           updateTitle.style.width = "75%";
           updateContent.style.direction = "rtl";
           updateContent.style.textAlign = "right";
-          updateContent.innerHTML = "<h3>[01/05/2025] פרויקט Snake Mecha Collector סגור/הושלם ואינו נתמך על ידי היוצרים עוד.</h3>";
-          updateContent.innerHTML += "אבל ניתן לתקן שפות עבור משתמשים.";
+          updateContent.innerHTML = "<h3>[02/05/2025]</h3>" + "<br>";
+          updateContent.innerHTML += "נוספו עוד לוחות." + "<br>";
+          updateContent.innerHTML += "נוספו עוד מאכלים." + "<br>";
+          updateContent.innerHTML += "נוספה השפה העברית." + "<br>";
+          updateContent.innerHTML += "נוספה שפה גרמנית." + "<br>";
+        }else
+        if(localStorage.getItem("lang") === "de") {
+          updateTitle.innerHTML = basicVersion + " ist die neueste Version";
+          updateContent.innerHTML = "<h3>[02/05/2025]</h3>" + "<br>";
+          updateContent.innerHTML += "Weitere Boards hinzugefügt." + "<br>";
+          updateContent.innerHTML += "Weitere Lebensmittel hinzugefügt." + "<br>";
+          updateContent.innerHTML += "Hebräische Sprache hinzugefügt." + "<br>";
+          updateContent.innerHTML += "Deutsche Sprache hinzugefügt." + "<br>";
         }
       }
     </script>

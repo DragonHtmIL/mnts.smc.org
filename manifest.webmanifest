@@ -104,7 +104,7 @@
       "sizes": "512x512"
     }
   ],
-  "locales": ["en","ru","ja","zhs","zht","ko","he"],
+  "locales": ["en","ru","ja","zhs","zht","ko","he","de"],
   "ru": {
     "name": "Змея Меха Сборщик",
     "short_name": "Змея Меха Сборщик"
@@ -128,5 +128,9 @@
   "he": {
     "name": "מכה נחש אספן",
     "short_name": "מכה נחש אספן"
+  },
+  "de": {
+    "name": "Schlangen Mecha Sammler",
+    "short_name": "Schlangen Mecha Sammler"
   }
 }
