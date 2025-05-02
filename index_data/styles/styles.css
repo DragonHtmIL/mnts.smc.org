@@ -22,6 +22,7 @@
   --google-fanyi-t: url('../textures/system/Google_cht.png');
   --google-beon-yeog: url('../textures/system/Google_ko.png');
   --google-targum: url('../textures/system/Google_he.png');
+  --google-ubersetzer: url('../textures/system/Google_de.png');
   --messenger: url('../textures/system/messenger.png');
   --discord: url('../textures/system/discord.png');
   /* Food */
@@ -209,12 +210,14 @@
   --menu-cht: url('../textures/gui/nav_menu_cht.png');
   --menu-ko: url('../textures/gui/nav_menu_ko.png');
   --menu-he: url('../textures/gui/nav_menu_he.png');
+  --menu-de: url('../textures/gui/nav_menu_de.png');
   --menu-en-hover: url('../textures/gui/nav_menu_en_hover.png');
   --menu-ru-hover: url('../textures/gui/nav_menu_ru_hover.png');
   --menu-jp-hover: url('../textures/gui/nav_menu_jp_hover.png');
   --menu-chs-hover: url('../textures/gui/nav_menu_chs_hover.png');
   --menu-cht-hover: url('../textures/gui/nav_menu_cht_hover.png');
   --menu-he-hover: url('../textures/gui/nav_menu_he_hover.png');
+  --menu-de-hover: url('../textures/gui/nav_menu_de_hover.png');
   --left: url('../textures/gui/btn_control_lt.png');
   --left-hover: url('../textures/gui/btn_control_lt_hover.png');
   --down: url('../textures/gui/btn_control_dn.png');
@@ -371,6 +374,12 @@
   -o-transition: 0.6s;
   -moz-transition: 0.6s;
   -webkit-transition: 0.6s;
+}
+*:disabled {
+  opacity: 0.5;
+  cursor: url('../animations/blue/disabled-0.png'), no-drop;
+  -webkit-animation: cursordsbld 1500ms infinite !important;
+  animation: cursordsbld 1500ms infinite !important;
 }
 *::-webkit-scrollbar {
   display: none;
@@ -1488,6 +1497,16 @@ a {
   var(--border),
   var(--menu-he-hover);
 }
+#btn002.de-lang {background-image:
+  var(--border),
+  var(--menu-de);
+  position: relative;
+  display: block;
+}
+#btn002.de-lang:hover {background-image:
+  var(--border),
+  var(--menu-de-hover);
+}
 #btn003 {background-image:
   var(--border),
   var(--left);
@@ -1649,6 +1668,9 @@ a {
 #navBtn.he-lang {
   background-image: var(--menu-he);
 }
+#navBtn.de-lang {
+  background-image: var(--menu-de);
+}
 #navBtn.en-lang:hover {
   background-image: var(--menu-en-hover);
 }
@@ -1666,6 +1688,9 @@ a {
 }
 #navBtn.he-lang:hover {
   background-image: var(--menu-he-hover);
+}
+#navBtn.de-lang:hover {
+  background-image: var(--menu-de-hover);
 }
 .tab {
   float: left;
@@ -2790,27 +2815,8 @@ input[type="range"]::-webkit-slider-thumb {
 #translate.g-t-he {
   background-image: var(--google-targum);
 }
-#customLanguage {
-  width: 64%;
-  margin: 0px auto;
-  height: auto;
-  border-radius: 0;
-  outline: none;
-  border: none;
-  background-image: var(--changed);
-  background-position: right top;
-  background-size: auto 200%;
-  background-repeat: no-repeat;
-  cursor: url('../animations/blue/link-0.png'), default;
-  -webkit-animation: cursorlnk 1500ms infinite;
-  animation: cursorlnk 1500ms infinite;
-  transition: 0.6s;
-  -webkit-transition: 0.6s;
-  -moz-transition: 0.6s;
-  -o-transition: 0.6s;
-}
-#customLanguage:hover {
-  background-position: right bottom;
+#translate.g-t-de {
+  background-image: var(--google-targum);
 }
 .totopelement {
   width: 100% !important;
@@ -2953,45 +2959,6 @@ hr.acc {
   -webkit-transition: 0.6s;
   -moz-transition: 0.6s;
   -o-transition: 0.6s;
-}
-#contactUsMessenger,
-#contactUsDiscord {
-  background-size: auto 100%, auto 100%;
-  background-repeat: no-repeat;
-  background-position: left center, center center;
-  color: var(--white);
-  width: 157px;
-  height: 50px;
-  margin: 10px;
-  display: inline-block;
-  font-size: 17px;
-  cursor: url('../animations/blue/link-0.png'), default;
-  -webkit-animation: cursorlnk 1500ms infinite;
-  animation: cursorlnk 1500ms infinite;
-  transition: 0.6s;
-  -webkit-transition: 0.6s;
-  -moz-transition: 0.6s;
-  -o-transition: 0.6s;
-}
-#contactUsMessenger {
-  background-image: var(--messenger), var(--services-bg);
-}
-#contactUsDiscord {
-  background-image: var(--discord), var(--services-bg);
-}
-#contactUsMessenger div {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  padding-left: 50px;
-}
-#contactUsDiscord div {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  padding-left: 50px;
 }
 #downloadNoAutoUpdate,
 #downloadNoAutoUpdate2 {

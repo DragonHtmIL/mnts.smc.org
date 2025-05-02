@@ -70,3 +70,39 @@
   90% {cursor: url('../animations/blue/link-14.png'), pointer;}
   100% {cursor: url('../animations/blue/link-15.png'), pointer;}
 }
+@-webkit-keyframes cursordsbld {
+  0% {cursor: url('../animations/blue/disabled-0.png'), no-drop;}
+  10% {cursor: url('../animations/blue/disabled-1.png'), no-drop;}
+  20% {cursor: url('../animations/blue/disabled-2.png'), no-drop;}
+  30% {cursor: url('../animations/blue/disabled-3.png'), no-drop;}
+  40% {cursor: url('../animations/blue/disabled-4.png'), no-drop;}
+  50% {cursor: url('../animations/blue/disabled-5.png'), no-drop;}
+  51% {cursor: url('../animations/blue/disabled-6.png'), no-drop;}
+  52% {cursor: url('../animations/blue/disabled-7.png'), no-drop;}
+  53% {cursor: url('../animations/blue/disabled-8.png'), no-drop;}
+  55% {cursor: url('../animations/blue/disabled-9.png'), no-drop;}
+  57% {cursor: url('../animations/blue/disabled-10.png'), no-drop;}
+  60% {cursor: url('../animations/blue/disabled-11.png'), no-drop;}
+  70% {cursor: url('../animations/blue/disabled-12.png'), no-drop;}
+  80% {cursor: url('../animations/blue/disabled-13.png'), no-drop;}
+  90% {cursor: url('../animations/blue/disabled-14.png'), no-drop;}
+  100% {cursor: url('../animations/blue/disabled-15.png'), no-drop;}
+}
+@keyframes cursordsbld {
+  0% {cursor: url('../animations/blue/disabled-0.png'), no-drop;}
+  10% {cursor: url('../animations/blue/disabled-1.png'), no-drop;}
+  20% {cursor: url('../animations/blue/disabled-2.png'), no-drop;}
+  30% {cursor: url('../animations/blue/disabled-3.png'), no-drop;}
+  40% {cursor: url('../animations/blue/disabled-4.png'), no-drop;}
+  50% {cursor: url('../animations/blue/disabled-5.png'), no-drop;}
+  51% {cursor: url('../animations/blue/disabled-6.png'), no-drop;}
+  52% {cursor: url('../animations/blue/disabled-7.png'), no-drop;}
+  53% {cursor: url('../animations/blue/disabled-8.png'), no-drop;}
+  55% {cursor: url('../animations/blue/disabled-9.png'), no-drop;}
+  57% {cursor: url('../animations/blue/disabled-10.png'), no-drop;}
+  60% {cursor: url('../animations/blue/disabled-11.png'), no-drop;}
+  70% {cursor: url('../animations/blue/disabled-12.png'), no-drop;}
+  80% {cursor: url('../animations/blue/disabled-13.png'), no-drop;}
+  90% {cursor: url('../animations/blue/disabled-14.png'), no-drop;}
+  100% {cursor: url('../animations/blue/disabled-15.png'), no-drop;}
+}
