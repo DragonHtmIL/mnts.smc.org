@@ -2816,7 +2816,7 @@ input[type="range"]::-webkit-slider-thumb {
   background-image: var(--google-targum);
 }
 #translate.g-t-de {
-  background-image: var(--google-targum);
+  background-image: var(--google-ubersetzer);
 }
 .totopelement {
   width: 100% !important;
