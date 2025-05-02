@@ -6,6 +6,7 @@ function englishLanguage() {
   document.getElementById("languageCht").classList.remove("activet");
   document.getElementById("languageKo").classList.remove("activet");
   document.getElementById("languageHe").classList.remove("activet");
+  document.getElementById("languageDe").classList.remove("activet");
   document.getElementById("applySettings").style.display = "block";
   selectionSound();
 };
@@ -17,6 +18,7 @@ function russianLanguage() {
   document.getElementById("languageCht").classList.remove("activet");
   document.getElementById("languageKo").classList.remove("activet");
   document.getElementById("languageHe").classList.remove("activet");
+  document.getElementById("languageDe").classList.remove("activet");
   document.getElementById("applySettings").style.display = "block";
   selectionSound();
 };
@@ -28,6 +30,7 @@ function japaneseLanguage() {
   document.getElementById("languageCht").classList.remove("activet");
   document.getElementById("languageKo").classList.remove("activet");
   document.getElementById("languageHe").classList.remove("activet");
+  document.getElementById("languageDe").classList.remove("activet");
   document.getElementById("applySettings").style.display = "block";
   selectionSound();
 };
@@ -50,6 +53,7 @@ function ChineseTraditionalLanguage() {
   document.getElementById("languageCht").classList.add("activet");
   document.getElementById("languageKo").classList.remove("activet");
   document.getElementById("languageHe").classList.remove("activet");
+  document.getElementById("languageDe").classList.remove("activet");
   document.getElementById("applySettings").style.display = "block";
   selectionSound();
 };
@@ -61,6 +65,7 @@ function koreanLanguage() {
   document.getElementById("languageCht").classList.remove("activet");
   document.getElementById("languageKo").classList.add("activet");
   document.getElementById("languageHe").classList.remove("activet");
+  document.getElementById("languageDe").classList.remove("activet");
   document.getElementById("applySettings").style.display = "block";
   selectionSound();
 };
@@ -72,6 +77,19 @@ function hebrewLanguage() {
   document.getElementById("languageCht").classList.remove("activet");
   document.getElementById("languageKo").classList.remove("activet");
   document.getElementById("languageHe").classList.add("activet");
+  document.getElementById("languageDe").classList.remove("activet");
+  document.getElementById("applySettings").style.display = "block";
+  selectionSound();
+};
+function germanLanguage() {
+  document.getElementById("languageEn").classList.remove("activet");
+  document.getElementById("languageRu").classList.remove("activet");
+  document.getElementById("languageJp").classList.remove("activet");
+  document.getElementById("languageChs").classList.remove("activet");
+  document.getElementById("languageCht").classList.remove("activet");
+  document.getElementById("languageKo").classList.remove("activet");
+  document.getElementById("languageHe").classList.remove("activet");
+  document.getElementById("languageDe").classList.add("activet");
   document.getElementById("applySettings").style.display = "block";
   selectionSound();
 };
@@ -96,6 +114,9 @@ function langCheck() {
   }else
   if(localStorage.getItem("lang") === "he") {
     document.getElementById("languageHe").classList.add("activet");
+  }else
+  if(localStorage.getItem("lang") === "de") {
+    document.getElementById("languageDe").classList.add("activet");
   }
 };
 langCheck();

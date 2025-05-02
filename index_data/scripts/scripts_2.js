@@ -29,6 +29,9 @@ document.getElementById("reset").onclick = function() {
   }else
   if(localStorage.getItem("lang") === "he") {
     scoreElement.innerText = `ציון: ${score}`;
+  }else
+  if(localStorage.getItem("lang") === "de") {
+    scoreElement.innerText = `punktzahl: ${score}`;
   };
   localStorage.setItem("steelScore", localStorage.getItem("high-score"));
   fireworksIntervalId = setInterval(playFireworksSounds, 1000);
@@ -100,6 +103,14 @@ function pauseGame() {
         document.getElementById("alertText").innerHTML = "משחק נעצר, לחץ ''המשך'' בכדי להמשיך.";
       }
       alertconfirm.value = "המשך";
+    }else
+    if(localStorage.getItem("lang") === "de") {
+      if(navigator.userAgent.match(/mobile/i)) {
+        document.getElementById("alertText").innerHTML = "Spiel pausiert. Drücken Sie auf „Weiter“, um fortzufahren.";
+      }else{
+        document.getElementById("alertText").innerHTML = "Spiel pausiert. Klicken Sie auf „Weiter“, um fortzufahren.";
+      }
+      alertconfirm.value = "Weiter";
     }
     alertconfirm.onclick = function() {
       document.getElementById('chechboxPausing').click();
@@ -108,7 +119,7 @@ function pauseGame() {
   }else
   if(checkbox.checked === false) {
     if(localStorage.getItem("lang") === "en") {
-      document.getElementById("alertText").innerHTML = "Ready continue in...";
+      document.getElementById("alertText").innerHTML = "Ready to continue in...";
     }else
     if(localStorage.getItem("lang") === "ru") {
       document.getElementById("alertText").innerHTML = "Готово продолжить через...";
@@ -123,10 +134,13 @@ function pauseGame() {
       document.getElementById("alertText").innerHTML = "準備繼續...";
     }else
     if(localStorage.getItem("lang") === "ko") {
-      document.getElementById("alertText").innerHTML = "계속 준비...";
+      document.getElementById("alertText").innerHTML = "계속할 준비가 되었습니다...";
     }else
     if(localStorage.getItem("lang") === "he") {
       document.getElementById("alertText").innerHTML = "מוכן להמשיך בעוד...";
+    }else
+    if(localStorage.getItem("lang") === "de") {
+      document.getElementById("alertText").innerHTML = "Bereit, weiterzumachen in...";
     }
     setTimeout(() => {
       document.getElementById("alertText").innerHTML = "3"
@@ -1723,6 +1737,10 @@ function leagueSystem() {
     if(localStorage.getItem("lang") === "he") {
       document.getElementById("leagueType").innerHTML = "לא בליגה";
       document.getElementById("subleagueType").innerHTML = "לא בליגה";
+    }else
+    if(localStorage.getItem("lang") === "de") {
+      document.getElementById("leagueType").innerHTML = "Nicht-Liga";
+      document.getElementById("subleagueType").innerHTML = "Nicht-Liga";
     }
   }else
   if(localStorage.getItem("high-score") == "1" || localStorage.getItem("high-score") == "2" || localStorage.getItem("high-score") == "3" || localStorage.getItem("high-score") == "4" || localStorage.getItem("high-score") == "5" || localStorage.getItem("high-score") == "6" || localStorage.getItem("high-score") == "7" || localStorage.getItem("high-score") == "8" || localStorage.getItem("high-score") == "9" || localStorage.getItem("high-score") == "10") {
@@ -1757,6 +1775,10 @@ function leagueSystem() {
     if(localStorage.getItem("lang") === "he") {
       document.getElementById("leagueType").innerHTML = "ליגת הארד";
       document.getElementById("subleagueType").innerHTML = "ליגת הארד";
+    }else
+    if(localStorage.getItem("lang") === "de") {
+      document.getElementById("leagueType").innerHTML = "Bronze-Liga";
+      document.getElementById("subleagueType").innerHTML = "Bronze-Liga";
     }
     star.classList.remove("null-league");
     substar.classList.remove("null-league");
@@ -1795,6 +1817,10 @@ function leagueSystem() {
     if(localStorage.getItem("lang") === "he") {
       document.getElementById("leagueType").innerHTML = "ליגת הכסף";
       document.getElementById("subleagueType").innerHTML = "ליגת הכסף";
+    }else
+    if(localStorage.getItem("lang") === "de") {
+      document.getElementById("leagueType").innerHTML = "Silberliga";
+      document.getElementById("subleagueType").innerHTML = "Silberliga";
     }
     star.classList.remove("bronze");
     substar.classList.remove("bronze");
@@ -1833,6 +1859,10 @@ function leagueSystem() {
     if(localStorage.getItem("lang") === "he") {
       document.getElementById("leagueType").innerHTML = "ליגת הזהב";
       document.getElementById("subleagueType").innerHTML = "ליגת הזהב";
+    }else
+    if(localStorage.getItem("lang") === "de") {
+      document.getElementById("leagueType").innerHTML = "Goldene Liga";
+      document.getElementById("subleagueType").innerHTML = "Goldene Liga";
     }
     star.classList.remove("silver");
     substar.classList.remove("silver");
@@ -1871,6 +1901,10 @@ function leagueSystem() {
     if(localStorage.getItem("lang") === "he") {
       document.getElementById("leagueType").innerHTML = "ליגת פלטינה";
       document.getElementById("subleagueType").innerHTML = "ליגת פלטינה";
+    }else
+    if(localStorage.getItem("lang") === "de") {
+      document.getElementById("leagueType").innerHTML = "Platin-Liga";
+      document.getElementById("subleagueType").innerHTML = "Platin-Liga";
     }
     star.classList.remove("goldleague");
     substar.classList.remove("goldleague");
@@ -1909,6 +1943,10 @@ function leagueSystem() {
     if(localStorage.getItem("lang") === "he") {
       document.getElementById("leagueType").innerHTML = "ליגת היהלום";
       document.getElementById("subleagueType").innerHTML = "ליגת היהלום";
+    }else
+    if(localStorage.getItem("lang") === "de") {
+      document.getElementById("leagueType").innerHTML = "Diamant-Liga";
+      document.getElementById("subleagueType").innerHTML = "Diamant-Liga";
     }
     star.classList.remove("platinium");
     substar.classList.remove("platinium");
@@ -1947,6 +1985,10 @@ function leagueSystem() {
     if(localStorage.getItem("lang") === "he") {
       document.getElementById("leagueType").innerHTML = "ליגת העל";
       document.getElementById("subleagueType").innerHTML = "ליגת העל";
+    }else
+    if(localStorage.getItem("lang") === "de") {
+      document.getElementById("leagueType").innerHTML = "Superliga";
+      document.getElementById("subleagueType").innerHTML = "Superliga";
     }
     star.classList.remove("diamond");
     substar.classList.remove("diamond");
@@ -1985,6 +2027,10 @@ function leagueSystem() {
     if(localStorage.getItem("lang") === "he") {
       document.getElementById("leagueType").innerHTML = "ליגה האגדית";
       document.getElementById("subleagueType").innerHTML = "ליגה האגדית";
+    }else
+    if(localStorage.getItem("lang") === "de") {
+      document.getElementById("leagueType").innerHTML = "Legendäre Liga";
+      document.getElementById("subleagueType").innerHTML = "Legendäre Liga";
     }
     star.classList.remove("super");
     substar.classList.remove("super");
@@ -2023,6 +2069,10 @@ function leagueSystem() {
     if(localStorage.getItem("lang") === "he") {
       document.getElementById("leagueType").innerHTML = "אביר אלפא";
       document.getElementById("subleagueType").innerHTML = "אביר אלפא";
+    }else
+    if(localStorage.getItem("lang") === "de") {
+      document.getElementById("leagueType").innerHTML = "Alpha-Ritter";
+      document.getElementById("subleagueType").innerHTML = "Alpha-Ritter";
     }
     star.classList.remove("legendary");
     substar.classList.remove("legendary");
@@ -2032,12 +2082,6 @@ function leagueSystem() {
 };
 leagueSystem();
 function changeControllerType() {
-//  if (document.getElementById("cTypeChenger").checked === true) {
-//    document.getElementById("applySettings").style.display = "block";
-//  } else
-//  if(document.getElementById("cTypeChenger").checked === false) {
-//    document.getElementById("applySettings").style.display = "block";
-//  }
   if(document.getElementById("cTypeChenger").value === document.getElementById("cTypeChenger").value) {
     document.getElementById("applySettings").style.display = "block";
   }else {
@@ -2278,12 +2322,6 @@ function menuPauseWalkSound() {
 };
 function openProfileCenter() {
   document.getElementById("accenter").style.display = "block";
-};
-function goToMessenger() {
-  window.open('https://m.me/100037328776594?hash=AbbiIv3lRHEaooAd&source=qr_link_share', '_blank');
-};
-function goToDiscord() {
-  window.open('https://discord.gg/YGV7CKbwjQ', '_blank');
 };
 function downloadAlertSystem() {
   var host = "https://";

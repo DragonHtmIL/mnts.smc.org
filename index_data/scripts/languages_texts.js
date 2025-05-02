@@ -49,7 +49,7 @@ function languagesContents() {
   var a047 = document.getElementById("ifMobileLang");
   var a048 = document.getElementById("translate");
   var a049 = document.getElementById("snakeTabsound");
-  var a050 = document.getElementById("customLanguage");
+//  var a050 = document.getElementById("");
   var a051 = document.getElementById("profileTitleLang");
   var a052 = document.getElementById("clickable0Lang");
   var a053 = document.getElementById("cratedOn0Lang");
@@ -111,7 +111,7 @@ function languagesContents() {
     a025.innerHTML = "SFX Volume";
     a026.innerHTML = "Privacy Policy, Terms and Conditions";
     a027.innerHTML = "©1997-2025 NetEase, Inc.All Rights Reserved";
-    a028.innerHTML = "Coding: " + "MNTS;";
+    a028.innerHTML = "Coding: " + "MNTS, DragonHtmIL;;";
     a029.innerHTML = "Base Code: From";
     a030.innerHTML = "Score: 0";
     a031.innerHTML = "Game Over!";
@@ -133,7 +133,7 @@ function languagesContents() {
     a047.innerHTML = "If users use Mobiles (Android, iPhone, iPad, Tablets)";
     a048.classList.add("g-t-en");
     a049.innerHTML = "Snake";
-    a050.innerHTML = "Share your language or repair existing languages on Discord";
+//    a050.innerHTML = "";
     a051.innerHTML = "Collection Center";
     a052.innerHTML = "> Clickable <";
     a053.innerHTML = "Coded on: ";
@@ -161,7 +161,7 @@ function languagesContents() {
     a064.innerHTML = "How to play";
     a065.innerHTML = "If users use other devices (Windows, MacOS, Linux)";
     a066.innerHTML = "Keyboard keys:<br>";
-    a066.innerHTML += "↑←↓→ and WASD: Start game.<br>";
+    a066.innerHTML += "↑←↓→ and W.A.S.D: Start game.<br>";
     a066.innerHTML += "Space bar: Pause and continue game.<br>";
     a066.innerHTML += "ESC: Open/close menu.<br>";
     a066.innerHTML += "E: Open/close collection center.<br>";
@@ -229,7 +229,7 @@ function languagesContents() {
     a025.innerHTML = "Громкость SFX";
     a026.innerHTML = "Политика конфиденциальности, положения и условия";
     a027.innerHTML = "©1997-2025 NetEase, Inc.Все права защищены";
-    a028.innerHTML = "Кодирование: " + "MNTS;";
+    a028.innerHTML = "Кодирование: " + "MNTS, DragonHtmIL;;";
     a029.innerHTML = "Базовый код: Из ";
     a030.innerHTML = "Счет: 0";
     a031.innerHTML = "Игра закончена!";
@@ -251,7 +251,7 @@ function languagesContents() {
     a047.innerHTML = "Если пользователи используют мобильные (Android, iPhone, iPad, планшеты)";
     a048.classList.add("g-t-ru");
     a049.innerHTML = "Змея";
-    a050.innerHTML = "Поделитесь своим языком или исправьте существующие языки на Discord";
+//    a050.innerHTML = "";
     a051.innerHTML = "Центр сбора";
     a052.innerHTML = "> Нажемной <";
     a053.innerHTML = "Кодировано на: ";
@@ -279,7 +279,7 @@ function languagesContents() {
     a064.innerHTML = "Как играть";
     a065.innerHTML = "Если пользователи используют другие устройства (Windows, MacOS, Linux)";
     a066.innerHTML = "Клавиши клавиатура:<br>";
-    a066.innerHTML += "↑←↓→ и WASD: Начать игру.<br>";
+    a066.innerHTML += "↑←↓→ и Ц.Ф.Ы.В: Начать игру.<br>";
     a066.innerHTML += "Пробел: Пауза и продолжение игры.<br>";
     a066.innerHTML += "ESC: Открыть/закрыть меню.<br>";
     a066.innerHTML += "E: Открыть/закрыть центр сбора.<br>";
@@ -347,7 +347,7 @@ function languagesContents() {
     a025.innerHTML = "SFXボリューム";
     a026.innerHTML = "プライバシーポリシー、利用規約";
     a027.innerHTML = "©1997-2025 NetEase, Inc.無断転載禁止";
-    a028.innerHTML = "コーディング： " + "MNTS;";
+    a028.innerHTML = "コーディング： " + "MNTS, DragonHtmIL;;";
     a029.innerHTML = "ベースコード： から ";
     a030.innerHTML = "スコア： 0";
     a031.innerHTML = "ゲームオーバー！";
@@ -369,7 +369,7 @@ function languagesContents() {
     a047.innerHTML = "ユーザーがモバイル（Android、iPhone、iPad、タブレット）を使用する場合";
     a048.classList.add("g-t-jp");
     a049.innerHTML = "蛇";
-    a050.innerHTML = "Discordであなたの言語を共有したり、既存の言語を修正したりしましょう";
+//    a050.innerHTML = "";
     a051.innerHTML = "収集センター";
     a052.innerHTML = "> ニックネーム可能 <";
       a052.style.fontSize = "12px";
@@ -398,7 +398,7 @@ function languagesContents() {
     a064.innerHTML = "遊び方";
     a065.innerHTML = "ユーザーが他のデバイス（Windows、MacOS、Linux）を使用する場合";
     a066.innerHTML = "キーボードキー：<br>";
-    a066.innerHTML += "↑←↓→ と WASD：ゲーム開始。<br>";
+    a066.innerHTML += "↑←↓→ と て.ち.と.し：ゲーム開始。<br>";
     a066.innerHTML += "スペースバー：ゲームを一時停止して続行。<br>";
     a066.innerHTML += "ESC：メニューを開く/閉じる。<br>";
     a066.innerHTML += "E：コレクションセンターを開く/閉じる。<br>";
@@ -466,7 +466,7 @@ function languagesContents() {
     a025.innerHTML = "音效音量";
     a026.innerHTML = "隐私政策、条款和条件";
     a027.innerHTML = "©1997-2025 网易公司版权所有";
-    a028.innerHTML = "编码： " + "MNTS;";
+    a028.innerHTML = "编码： " + "MNTS, DragonHtmIL;;";
     a029.innerHTML = "基本代码：来自";
     a030.innerHTML = "分数： 0";
     a031.innerHTML = "游戏结束！";
@@ -488,7 +488,7 @@ function languagesContents() {
     a047.innerHTML = "如果用户使用手机（Android、iPhone、iPad、平板电脑）";
     a048.classList.add("g-t-chs");
     a049.innerHTML = "蛇";
-    a050.innerHTML = "在 Discord 上分享您的语言或修复现有语言";
+//    a050.innerHTML = "";
     a051.innerHTML = "收集中心";
     a052.innerHTML = "> 可点击 <";
     a053.innerHTML = "编码于： ";
@@ -516,7 +516,7 @@ function languagesContents() {
     a064.innerHTML = "怎么玩";
     a065.innerHTML = "如果用户使用其他设备（Windows、MacOS、Linux）";
     a066.innerHTML = "键盘按键：<br>";
-    a066.innerHTML += "↑←↓→ 和 WASD：开始游戏。<br>";
+    a066.innerHTML += "↑←↓→ 和 田-山.日-人.尸-革.木-日：开始游戏。<br>";
     a066.innerHTML += "空格键：暂停并继续游戏。<br>";
     a066.innerHTML += "ESC：打开/关闭菜单。<br>";
     a066.innerHTML += "E：打开/关闭收集中心。<br>";
@@ -584,7 +584,7 @@ function languagesContents() {
     a025.innerHTML = "SFX 音量";
     a026.innerHTML = "隱私權政策、條款與條件";
     a027.innerHTML = "©1997-2025 網易公司版權所有";
-    a028.innerHTML = "編碼： " + "MNTS;";
+    a028.innerHTML = "編碼： " + "MNTS, DragonHtmIL;;";
     a029.innerHTML = "基本程式碼：來自";
     a030.innerHTML = "分數： 0";
     a031.innerHTML = "遊戲結束！";
@@ -606,7 +606,7 @@ function languagesContents() {
     a047.innerHTML = "如果用戶使用手機（Android、iPhone、iPad、平板電腦）";
     a048.classList.add("g-t-cht");
     a049.innerHTML = "蛇";
-    a050.innerHTML = "在 Discord 上分享您的語言或修復現有語言";
+//    a050.innerHTML = "";
     a051.innerHTML = "收集中心";
     a052.innerHTML = "> 可點擊 <";
     a053.innerHTML = "編碼於： ";
@@ -634,7 +634,7 @@ function languagesContents() {
     a064.innerHTML = "怎麼玩";
     a065.innerHTML = "如果使用者使用其他裝置（Windows、MacOS、Linux）";
     a066.innerHTML = "鍵盤鍵：<br>";
-    a066.innerHTML += "↑←↓→ 和 WASD：開始遊戲。<br>";
+    a066.innerHTML += "↑←↓→ 和 田-山.日-人.尸-革.木-日：開始遊戲。<br>";
     a066.innerHTML += "空白鍵：暫停和繼續遊戲。<br>";
     a066.innerHTML += "ESC：開啟/關閉選單。<br>";
     a066.innerHTML += "E：開啟/關閉收集中心。<br>";
@@ -702,7 +702,7 @@ function languagesContents() {
     a025.innerHTML = "SFX 용량";
     a026.innerHTML = "개인정보 보호정책, 이용약관";
     a027.innerHTML = "©1997-2025 NetEase, Inc. 모든 권리 보유";
-    a028.innerHTML = "코딩: " + "MNTS;";
+    a028.innerHTML = "코딩: " + "MNTS, DragonHtmIL;;";
     a029.innerHTML = "기본 코드: 에서";
     a030.innerHTML = "점수: 0";
     a031.innerHTML = "게임 오버!";
@@ -724,7 +724,7 @@ function languagesContents() {
     a047.innerHTML = "사용자가 모바일(Android, iPhone, iPad, Tablet)을 사용하는 경우";
     a048.classList.add("g-t-ko");
     a049.innerHTML = "뱀";
-    a050.innerHTML = "Discord에서 언어를 공유하거나 기존 언어를 복구하세요";
+//    a050.innerHTML = "";
     a051.innerHTML = "수집 센터";
     a052.innerHTML = "> 클릭 가능 <";
     a053.innerHTML = "코딩된 내용: ";
@@ -752,7 +752,7 @@ function languagesContents() {
     a064.innerHTML = "게임 방법";
     a065.innerHTML = "사용자가 다른 장치(Windows, MacOS, Linux)를 사용하는 경우";
     a066.innerHTML = "키보드 키:<br>";
-    a066.innerHTML += "↑←↓→ 및 WASD: 게임 시작.<br>";
+    a066.innerHTML += "↑←↓→ 및 ㅁ.ㄴ.ㅇ.ㄹ.: 게임 시작.<br>";
     a066.innerHTML += "스페이스바: 게임 일시 정지 및 계속.<br>";
     a066.innerHTML += "ESC: 메뉴 열기/닫기.<br>";
     a066.innerHTML += "E: 수집 센터 열기/닫기.<br>";
@@ -828,7 +828,7 @@ function languagesContents() {
     a026.innerHTML = "מדיניות פרטיות, תנאים והגבלות";
     a027.innerHTML = "©1997-2025 NetEase, Inc. כל הזכויות שמורות";
     a027.style.direction = "rtl";
-    a028.innerHTML = "קידוד: " + "MNTS, DragonIL;";
+    a028.innerHTML = "קידוד: " + "MNTS, DragonHtmIL;";
     a028.style.direction = "rtl";
     a029.innerHTML = "קוד בסיס: מאת";
     a029.style.direction = "rtl";
@@ -860,8 +860,7 @@ function languagesContents() {
     a047.style.textAlign = "right";
     a048.classList.add("g-t-he");
     a049.innerHTML = "נחש";
-    a050.innerHTML = "שתף את השפה שלך או תקן שפות קיימות בDiscord";
-    a050.style.direction = "rtl";
+//    a050.innerHTML = "";
     a051.innerHTML = "מרכז איסוף";
     a051.style.textAlign = "right";
     a051.style.width = "75%";
@@ -899,7 +898,7 @@ function languagesContents() {
     a065.style.direction = "rtl";
     a065.style.textAlign = "right";
     a066.innerHTML = "כפתורי מיקלדת:<br>";
-    a066.innerHTML += "↑←↓→ ו WASD: התחלת משחק.<br>";
+    a066.innerHTML += "↑←↓→ ו '.ש.ד.ג: התחלת משחק.<br>";
     a066.innerHTML += "רווח: לעצור ולהמשיך את המשחק.<br>";
     a066.innerHTML += "ESC: פתיחת/סגירת התפריט.<br>";
     a066.innerHTML += "E: פתיחת/סגירת מרכז איסוף.<br>";
@@ -949,6 +948,124 @@ function languagesContents() {
       a007_all[i].classList.add("he");
     }
     document.title = "מכה נחש אספן";
+  }else
+  if(localStorage.getItem("lang") === "de") {
+    a000.innerHTML = "Einstel'";//Not sure...
+    a001.innerHTML = "Über";
+    a002.innerHTML = "System";
+    a003.innerHTML = "Schlange";
+    a004.innerHTML = "Essen";
+    a005.innerHTML = "Planke";
+    a006.innerHTML = "Audio";
+    a007.innerHTML = "Schwierigkeit:";
+    a008.innerHTML = "Normaler";
+    a009.innerHTML = "Schwerer";
+    a010.innerHTML = "Höllen";
+    a011.innerHTML = "Sprachen:";
+    a012.innerHTML = "Alpha-Stadtplan";
+    a013.innerHTML = "Karte der Insel Origo";
+//    a014.value = "";
+    a015.innerHTML = "Daten per Datei laden (.js)";
+    a016.value = "Daten in Datei speichern";
+    a017.innerHTML = "Miau-Token";
+    a018.innerHTML = "Gold";
+    a019.innerHTML = "Alpha-Münze";
+    a020.innerHTML = "Kristall";
+    a021.innerHTML = "Ticket";
+    a022.innerHTML = "Chromatisches Ticket";
+    a023.innerHTML = "Premium Ticket";
+    a024.innerHTML = "Audio stummschalten";
+    a025.innerHTML = "SFX-Lautstärke";
+    a026.innerHTML = "Datenschutzrichtlinie, Allgemeine Geschäftsbedingungen";
+    a027.innerHTML = "©1997-2025 NetEase, Inc. Alle Rechte vorbehalten";
+    a028.innerHTML = "Kodierung: " + "MNTS, DragonHtmIL;";
+    a029.innerHTML = "Basiscode: Von";
+    a030.innerHTML = "Punktzahl: 0";
+    a031.innerHTML = "Spiel vorbei!";
+    a032.value = "Standard";
+    a033.value = "Anwenden";
+    a034.innerHTML = "Konsole:";
+    a035.innerHTML = "Position:";
+    a036.innerHTML = "Mitte";
+    a037.innerHTML = "Links";
+    a038.innerHTML = "Rechts";
+    a039.innerHTML = "Beachten";
+    a040.innerHTML = "Bewertung von " + rUsers + " Benutzern";
+    a041.innerHTML = "Hintergrundmusik";
+    a042.innerHTML = "Musik";
+      a043.classList.add("de-lang");
+      a044.classList.add("de-lang");
+    a045.value = "Fortschritt löschen";
+    a046.innerHTML = "(Sprachübersetzungen sind möglicherweise nicht 100 % genau)";
+    a047.innerHTML = "Wenn Benutzer Mobilgeräte verwenden (Android, iPhone, iPad, Tablets)";
+    a048.classList.add("g-t-de");
+    a049.innerHTML = "Schlange";
+//    a050.innerHTML = "";
+    a051.innerHTML = "Sammelzentrum";
+    a052.innerHTML = "> Anklickbar <";
+    a053.innerHTML = "Codiert am: ";
+    a054.innerHTML = "Es können 3 Arten der Spielsteuerung ausgewählt werden:<br>";
+    a054.innerHTML += "(Menü/System öffnen)<br>";
+    a054.innerHTML += "Klassiker.<br>";
+    a054.innerHTML += "Dynamisch.<br>";
+    a054.innerHTML += "Berühren.<br>";
+    a054.innerHTML += "Klassisch: Tasten müssen gedrückt werden.<br>";
+    a054.innerHTML += "Dynamisch: Tasten müssen gedrückt werden, aber die Position der Tasten hat sich geändert.<br>";
+    a054.innerHTML += "Berühren: Gesten auf dem Bildschirm zum Wechseln der Seite der Schlange.";
+    if(localStorage.getItem("loadingStyle") === "anime") {
+      a055.innerHTML = "";
+    }else{
+      a055.innerHTML = "Laden…";
+    }
+    a056.innerHTML = "Klassiker";
+    a057.innerHTML = "Anime";
+    a058.innerHTML = "Animation wird geladen";
+    a059.innerHTML = "Alpha-Stadtplan 2";
+    a060.innerHTML = "Entwicklungen";
+    a061.innerHTML = "Beenden";
+    a062.innerHTML = "Beachten";
+    a063.innerHTML = "Umgebung";
+    a064.innerHTML = "Spielanleitung";
+    a065.innerHTML = "Wenn Benutzer andere Geräte verwenden (Windows, MacOS, Linux)";
+    a066.innerHTML = "Tastaturtasten:<br>";
+    a066.innerHTML += "↑←↓→ und W.A.S.D: Spiel starten.<br>";
+    a066.innerHTML += "Leertaste: Spiel pausieren und fortsetzen.<br>";
+    a066.innerHTML += "ESC: Menü öffnen/schließen.<br>";
+    a066.innerHTML += "E: Sammelstelle öffnen/schließen.<br>";
+    a066.innerHTML += "Eingabe: Fortfahren, wenn die Warnung geöffnet ist, und das Fenster „Game Over“ schließen.";
+    a067.innerHTML = "Premium-Ticket";
+    a068.innerHTML = "Virtuelles Token";
+    a069.value = "Hochladen(.js)";
+    a070.value = "Laden";
+    a071.innerHTML = "Schlangenfarbe";
+    a072.innerHTML = "Klassische Konsole";
+    a073.innerHTML = "Dynamische Konsole";
+    a074.innerHTML = "Touchscreen-Gesten";
+    for (let i = 0; i < a000_all.length; i++) {
+      a000_all[i].textContent = 'Einstellungen:';
+    };
+    for (let i = 0; i < a001_all.length; i++) {
+      a001_all[i].textContent = 'Stil:';
+    };
+    for (let i = 0; i < a002_all.length; i++) {
+      a002_all[i].textContent = 'Demnächst verfügbar! Warten Sie auf Updates.';
+    };
+    for (let i = 0; i < a003_all.length; i++) {
+      a003_all[i].textContent = 'Mehr:';
+    };
+    for (let i = 0; i < a004_all.length; i++) {
+      a004_all[i].textContent = 'Zum Anfang';
+    };
+    for (let i = 0; i < a005_all.length; i++) {
+      a005_all[i].textContent = 'Leistungen:';
+    };
+    for (let i = 0; i < a006_all.length; i++) {
+      a006_all[i].classList.add("de");
+    };
+    for (let i = 0; i < a007_all.length; i++) {
+      a007_all[i].classList.add("de");
+    }
+    document.title = "Schlangen Mecha Sammler";
   }
 };
 languagesContents();

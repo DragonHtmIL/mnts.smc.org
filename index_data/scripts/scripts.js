@@ -15598,6 +15598,9 @@ function applySettings() {
   }else
   if(document.getElementById("languageHe").className === "language select activet") {
     localStorage.setItem("lang", "he");
+  }else
+  if(document.getElementById("languageDe").className === "language select activet") {
+    localStorage.setItem("lang", "de");
   };
   if(document.getElementById("ccLang").className === "controllerpostype select activet") {
     localStorage.setItem("controllerPosition", "center");
@@ -15786,6 +15789,11 @@ function alertReloadLater() {
     document.getElementById("alertText").style.direction = "rtl";
     alertcancel.value = "ביטול";
     alertconfirm.value = "אישור";
+  }else
+  if(localStorage.getItem("lang") === "de") {
+    document.getElementById("alertText").innerHTML = "Auf Standard setzen?";
+    alertcancel.value = "Abbrechen";
+    alertconfirm.value = "Bestätigen";
   }
   alertcancel.onclick = function() {
     document.getElementById("alert").style.display = "none";
@@ -15854,6 +15862,11 @@ function alertExitSite() {
     document.getElementById("alertText").style.direction = "rtl";
     alertcancel.value = "לא";
     alertconfirm.value = "כן";
+  }else
+  if(localStorage.getItem("lang") === "de") {
+    document.getElementById("alertText").innerHTML = "Gehst du?";
+    alertcancel.value = "kein";
+    alertconfirm.value = "ja";
   }
   alertcancel.onclick = function() {
     document.getElementById("alert").style.display = "none";
@@ -15900,6 +15913,10 @@ function alertAccept() {
     document.getElementById("alertText").innerHTML = "נדרשת הסכמתך לטעינת משאבי אודיו לצורך השבתת עיכוב של האודיו.";
     document.getElementById("alertText").style.direction = "rtl";
     alertconfirm.value = "אישור";
+  }else
+  if(localStorage.getItem("lang") === "de") {
+    document.getElementById("alertText").innerHTML = "Zum Deaktivieren der Audioverzögerung ist Ihre Zustimmung zum Laden der Audioressourcen erforderlich.";
+    alertconfirm.value = "Bestätigen";
   }
   alertcancel.value = "...";
   alertcancel.style.display = "none";
@@ -15924,6 +15941,9 @@ function alertAccept() {
   }else
   if(localStorage.getItem("lang") === "he") {
     alert("איך לחצתם על זה!?");
+  }else
+  if(localStorage.getItem("lang") === "de") {
+    alert("Wie hast du darauf geklickt!?");
   }
   };
   alertconfirm.onclick = function() {
@@ -15959,6 +15979,9 @@ function alertAccept() {
     if(localStorage.getItem("lang") === "he") {
       document.getElementById("alertText").innerHTML = "טוען…";
       document.getElementById("alertText").style.direction = "rtl";
+    }else
+    if(localStorage.getItem("lang") === "de") {
+      document.getElementById("alertText").innerHTML = "Laden…";
     };
     if(localStorage.getItem("updateRead") === basicVersion) {
       document.getElementById("updateModal").style.display = "none";
@@ -16012,6 +16035,11 @@ function alertDeleteProgress() {
     document.getElementById("alertText").style.direction = "rtl";
     alertcancel.value = "לא";
     alertconfirm.value = "כן";
+  }else
+  if(localStorage.getItem("lang") === "de") {
+    document.getElementById("alertText").innerHTML = "Möchten Sie Ihren Fortschritt wirklich löschen?";
+    alertcancel.value = "kein";
+    alertconfirm.value = "ja";
   }
   alertcancel.onclick = function() {
     document.getElementById("alert").style.display = "none";
@@ -16176,6 +16204,10 @@ function installApp() {
       document.getElementById("alertText").innerHTML = "אפליקצייה כבר מורדת או רצה במצב עצמאי.";
       document.getElementById("alertText").style.direction = "rtl";
       alertconfirm.value = "אישור";
+    }else
+    if(localStorage.getItem("lang") === "de") {
+      document.getElementById("alertText").innerHTML = "Die App ist bereits installiert oder wird im Standalone-Modus ausgeführt.";
+      alertconfirm.value = "Bestätigen";
     }
     alertconfirm.onclick = function() {
       document.getElementById("alert").style.display = "none";
@@ -16194,32 +16226,36 @@ function installApp() {
     alertconfirm.style.display = "block";
     if(localStorage.getItem("lang") === "en") {
       document.getElementById("alertText").innerHTML = "App is already installed or running in standalone mode.";
-      alertconfirm.value = "Ok";
+      alertconfirm.value = "Confirm";
     }else
     if(localStorage.getItem("lang") === "ru") {
       document.getElementById("alertText").innerHTML = "Приложение уже установлено или работает в автономном режиме.";
-      alertconfirm.value = "Ok";
+      alertconfirm.value = "Подтвердить";
     }else
     if(localStorage.getItem("lang") === "jp") {
       document.getElementById("alertText").innerHTML = "アプリケーションはすでにインストールされているか、オフラインで実行されています。";
-      alertconfirm.value = "Ok";
+      alertconfirm.value = "確認する";
     }else
     if(localStorage.getItem("lang") === "chs") {
       document.getElementById("alertText").innerHTML = "应用程序已安装或以独立模式运行。";
-      alertconfirm.value = "Ok";
+      alertconfirm.value = "确认";
     }else
     if(localStorage.getItem("lang") === "cht") {
       document.getElementById("alertText").innerHTML = "應用程式已安裝或以獨立模式運作。";
-      alertconfirm.value = "Ok";
+      alertconfirm.value = "確認";
     }else
     if(localStorage.getItem("lang") === "ko") {
       document.getElementById("alertText").innerHTML = "앱이 이미 설치되었거나 독립 실행형 모드로 실행 중입니다.";
-      alertconfirm.value = "Ok";
+      alertconfirm.value = "확인하다";
     }else
     if(localStorage.getItem("lang") === "he") {
       document.getElementById("alertText").innerHTML = "אפליקצייה כבר מורדת או רצה במצב עצמאי.";
       document.getElementById("alertText").style.direction = "rtl";
-      alertconfirm.value = "Ok";
+      alertconfirm.value = "אישור";
+    }else
+    if(localStorage.getItem("lang") === "de") {
+      document.getElementById("alertText").innerHTML = "Die App ist bereits installiert oder wird im Standalone-Modus ausgeführt.";
+      alertconfirm.value = "Bestätigen";
     }
     alertconfirm.onclick = function() {
       document.getElementById("alert").style.display = "none";
@@ -16308,6 +16344,11 @@ function installApp() {
             document.getElementById("alertText").innerHTML = "פונקציונליות הוספה למסך הבית אינה זמינה כעת. ודא שכבר ביקרת באתר מספר פעמים.";
             document.getElementById("alertText").style.direction = "rtl";
             alertconfirm.value = "Ok";
+          }else
+          if(localStorage.getItem("lang") === "de") {
+            document.getElementById("alertText").innerHTML = "Die Funktion „Zum Home-Bildschirm hinzufügen“ ist derzeit nicht verfügbar. Stellen Sie sicher, dass Sie die Website mehrmals besucht haben.";
+            document.getElementById("alertText").style.direction = "rtl";
+            alertconfirm.value = "Ok";
           }
           alertconfirm.onclick = function() {
             document.getElementById("alert").style.display = "none";
@@ -16347,9 +16388,13 @@ function installApp() {
       document.getElementById("alertText").innerHTML = "이 브라우저는 홈 화면에 추가를 지원하지 않습니다.";
       alertconfirm.value = "Ok";
     }else
-    if(localStorage.getItem("lang") === "ko") {
+    if(localStorage.getItem("lang") === "he") {
       document.getElementById("alertText").innerHTML = "דפדפן זה אינו תומך בהוספה למסך הבית.";
       document.getElementById("alertText").style.direction = "rtl";
+      alertconfirm.value = "Ok";
+    }else
+    if(localStorage.getItem("lang") === "de") {
+      document.getElementById("alertText").innerHTML = "Dieser Browser unterstützt „Zum Home-Bildschirm hinzufügen“ nicht.";
       alertconfirm.value = "Ok";
     }
     alertconfirm.onclick = function() {
@@ -16685,6 +16730,36 @@ function displayTime() {
       document.getElementById("subCalendar").innerHTML = todaynum + "/" + monthswin + "/" + year;
       document.getElementById("calendar").innerHTML = todaynum + "/" + monthswin + "/" + year;
     }
+  }else
+  if(localStorage.getItem("lang") == "de") {
+    const timeNow = new Date();
+    let hoursOfDay = timeNow.getHours();
+    let minutes = timeNow.getMinutes();
+    let weekDay = ["Sonntag","Montag","Dienstag","Mittwoch","Donnerstag","Freitag","Samstag","Sonntag"];
+    let today = weekDay[timeNow.getDay()];
+    let todaynum = timeNow.getDate();
+    let months = ["Januar","Februar","März","April","Mai","Juni","Juli","August","September","Oktober","November","Dezember"];
+    let monthswin = timeNow.getMonth() + 1;
+    monthswin < 10 ? "0" + monthswin : monthswin.toFixed();
+    let tomonths = months[timeNow.getMonth()];
+    let year = timeNow.getFullYear();
+    hoursOfDay = hoursOfDay < 10 ? "0" + hoursOfDay : hoursOfDay;
+    minutes = minutes < 10 ? "0" + minutes : minutes;
+    document.getElementById("subClock").innerHTML = hoursOfDay + ":" + minutes;
+    document.getElementById("clock").innerHTML = hoursOfDay + ":" + minutes;
+    if (navigator.userAgent.match(/Android/i)) {
+      document.getElementById("subCalendar").innerHTML = today + " | " + todaynum + " " + tomonths + " " + year;
+      document.getElementById("calendar").innerHTML = today + " | " + todaynum + " " + tomonths + " " + year;
+    } else if (navigator.userAgent.match(/iPhone|iPad|iPod/i)) {
+      document.getElementById("subCalendar").innerHTML = today + " " + todaynum + " " + tomonths;
+      document.getElementById("calendar").innerHTML = today + " " + todaynum + " " + tomonths;
+    } else if (navigator.userAgent.match(/Windows/i)) {
+      document.getElementById("subCalendar").innerHTML = todaynum + "/" + monthswin + "/" + year;
+      document.getElementById("calendar").innerHTML = todaynum + "/" + monthswin + "/" + year;
+    } else {
+      document.getElementById("subCalendar").innerHTML = todaynum + "/" + monthswin + "/" + year;
+      document.getElementById("calendar").innerHTML = todaynum + "/" + monthswin + "/" + year;
+    }
   }
 };
 function snakeDecoloring() {
@@ -16706,7 +16781,7 @@ function letterLoad0() {
     localStorage.setItem("snakeLetter", key.innerHTML);
     presnake.className = "ltr" + key.innerHTML + "";
   }else{
-    localStorage.setItem("snakeLetter", key.innerHTML + "s");
+    localStorage.setItem("snakeLetter", "0s");
     presnake.className = "ltr0s";
   }
 }
@@ -16717,7 +16792,7 @@ function letterLoad1() {
     localStorage.setItem("snakeLetter", key.innerHTML);
     presnake.className = "ltr" + key.innerHTML + "";
   }else{
-    localStorage.setItem("snakeLetter", key.innerHTML + "s");
+    localStorage.setItem("snakeLetter", "1s");
     presnake.className = "ltr1s";
   }
 }
@@ -16728,7 +16803,7 @@ function letterLoad2() {
     localStorage.setItem("snakeLetter", key.innerHTML);
     presnake.className = "ltr" + key.innerHTML + "";
   }else{
-    localStorage.setItem("snakeLetter", key.innerHTML + "s");
+    localStorage.setItem("snakeLetter", "2s");
     presnake.className = "ltr2s";
   }
 }
@@ -16739,7 +16814,7 @@ function letterLoad3() {
     localStorage.setItem("snakeLetter", key.innerHTML);
     presnake.className = "ltr" + key.innerHTML + "";
   }else{
-    localStorage.setItem("snakeLetter", key.innerHTML + "s");
+    localStorage.setItem("snakeLetter", "3s");
     presnake.className = "ltr3s";
   }
 }
@@ -16750,7 +16825,7 @@ function letterLoad4() {
     localStorage.setItem("snakeLetter", key.innerHTML);
     presnake.className = "ltr" + key.innerHTML + "";
   }else{
-    localStorage.setItem("snakeLetter", key.innerHTML + "s");
+    localStorage.setItem("snakeLetter", "4s");
     presnake.className = "ltr4s";
   }
 }
@@ -16761,7 +16836,7 @@ function letterLoad5() {
     localStorage.setItem("snakeLetter", key.innerHTML);
     presnake.className = "ltr" + key.innerHTML + "";
   }else{
-    localStorage.setItem("snakeLetter", key.innerHTML + "s");
+    localStorage.setItem("snakeLetter", "5s");
     presnake.className = "ltr5s";
   }
 }
@@ -16772,7 +16847,7 @@ function letterLoad6() {
     localStorage.setItem("snakeLetter", key.innerHTML);
     presnake.className = "ltr" + key.innerHTML + "";
   }else{
-    localStorage.setItem("snakeLetter", key.innerHTML + "s");
+    localStorage.setItem("snakeLetter", "6s");
     presnake.className = "ltr6s";
   }
 }
@@ -16783,7 +16858,7 @@ function letterLoad7() {
     localStorage.setItem("snakeLetter", key.innerHTML);
     presnake.className = "ltr" + key.innerHTML + "";
   }else{
-    localStorage.setItem("snakeLetter", key.innerHTML + "s");
+    localStorage.setItem("snakeLetter", "7s");
     presnake.className = "ltr7s";
   }
 }
@@ -16794,7 +16869,7 @@ function letterLoad8() {
     localStorage.setItem("snakeLetter", key.innerHTML);
     presnake.className = "ltr" + key.innerHTML + "";
   }else{
-    localStorage.setItem("snakeLetter", key.innerHTML + "s");
+    localStorage.setItem("snakeLetter", "8s");
     presnake.className = "ltr8s";
   }
 }
@@ -16805,7 +16880,7 @@ function letterLoad9() {
     localStorage.setItem("snakeLetter", key.innerHTML);
     presnake.className = "ltr" + key.innerHTML + "";
   }else{
-    localStorage.setItem("snakeLetter", key.innerHTML + "s");
+    localStorage.setItem("snakeLetter", "9s");
     presnake.className = "ltr9s";
   }
 }

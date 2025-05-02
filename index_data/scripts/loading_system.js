@@ -148,6 +148,10 @@ const tassetGuis = [//62
   "nav_menu_ko_hover",
   "nav_menu_ru",
   "nav_menu_ru_hover",
+  "nav_menu_he",
+  "nav_menu_he_hover",
+  "nav_menu_de",
+  "nav_menu_de_hover",
   "new_modal_content",
   "normal_on",
   "notice",
@@ -274,6 +278,8 @@ const tassetSystems = [//33
   "Google_jp",
   "Google_ko",
   "Google_ru",
+  "Google_he",
+  "Google_de",
   "icon_0",
   "icon_16",
   "icon_32",
@@ -333,7 +339,23 @@ const tassetCursors = [//32
   "link-12",
   "link-13",
   "link-14",
-  "link-15"
+  "link-15",
+  "disabled-0",
+  "disabled-1",
+  "disabled-2",
+  "disabled-3",
+  "disabled-4",
+  "disabled-5",
+  "disabled-6",
+  "disabled-7",
+  "disabled-8",
+  "disabled-9",
+  "disabled-10",
+  "disabled-11",
+  "disabled-12",
+  "disabled-13",
+  "disabled-14",
+  "disabled-15"
 ];
 function loadTextures() {
   for(var board = 0; board < tassetBoards.length; board++) {
@@ -367,6 +389,12 @@ function loadTextures() {
       }else
       if(localStorage.getItem("lang") === "ko") {
         document.getElementById("loadingText").innerHTML = errorscont + "개의 자산을 로드할 수 없습니다. 자산을 찾을 수 없거나 삭제되지 않았습니다...";
+      }else
+      if(localStorage.getItem("lang") === "he") {
+        document.getElementById("loadingText").innerHTML = "לא ניתן לטעון " + errorscont + " נכסים, לא נמצאו או הוסרו...";
+      }else
+      if(localStorage.getItem("lang") === "de") {
+        document.getElementById("loadingText").innerHTML = errorscont + " Assets können nicht geladen werden, nicht gefunden oder entfernt …";
       }
     });
     document.getElementById("loadedbar").appendChild(assetboard);
@@ -402,6 +430,12 @@ function loadTextures() {
       }else
       if(localStorage.getItem("lang") === "ko") {
         document.getElementById("loadingText").innerHTML = errorscont + "개의 자산을 로드할 수 없습니다. 자산을 찾을 수 없거나 삭제되지 않았습니다...";
+      }else
+      if(localStorage.getItem("lang") === "he") {
+        document.getElementById("loadingText").innerHTML = "לא ניתן לטעון " + errorscont + " נכסים, לא נמצאו או הוסרו...";
+      }else
+      if(localStorage.getItem("lang") === "de") {
+        document.getElementById("loadingText").innerHTML = errorscont + " Assets können nicht geladen werden, nicht gefunden oder entfernt …";
       }
     });
     document.getElementById("loadedbar").appendChild(assetFood);
@@ -437,6 +471,12 @@ function loadTextures() {
       }else
       if(localStorage.getItem("lang") === "ko") {
         document.getElementById("loadingText").innerHTML = errorscont + "개의 자산을 로드할 수 없습니다. 자산을 찾을 수 없거나 삭제되지 않았습니다...";
+      }else
+      if(localStorage.getItem("lang") === "he") {
+        document.getElementById("loadingText").innerHTML = "לא ניתן לטעון " + errorscont + " נכסים, לא נמצאו או הוסרו...";
+      }else
+      if(localStorage.getItem("lang") === "de") {
+        document.getElementById("loadingText").innerHTML = errorscont + " Assets können nicht geladen werden, nicht gefunden oder entfernt …";
       }
     });
     document.getElementById("loadedbar").appendChild(assetGui);
@@ -472,6 +512,12 @@ function loadTextures() {
       }else
       if(localStorage.getItem("lang") === "ko") {
         document.getElementById("loadingText").innerHTML = errorscont + "개의 자산을 로드할 수 없습니다. 자산을 찾을 수 없거나 삭제되지 않았습니다...";
+      }else
+      if(localStorage.getItem("lang") === "he") {
+        document.getElementById("loadingText").innerHTML = "לא ניתן לטעון " + errorscont + " נכסים, לא נמצאו או הוסרו...";
+      }else
+      if(localStorage.getItem("lang") === "de") {
+        document.getElementById("loadingText").innerHTML = errorscont + " Assets können nicht geladen werden, nicht gefunden oder entfernt …";
       }
     });
     document.getElementById("loadedbar").appendChild(assetLeague);
@@ -507,6 +553,12 @@ function loadTextures() {
       }else
       if(localStorage.getItem("lang") === "ko") {
         document.getElementById("loadingText").innerHTML = errorscont + "개의 자산을 로드할 수 없습니다. 자산을 찾을 수 없거나 삭제되지 않았습니다...";
+      }else
+      if(localStorage.getItem("lang") === "he") {
+        document.getElementById("loadingText").innerHTML = "לא ניתן לטעון " + errorscont + " נכסים, לא נמצאו או הוסרו...";
+      }else
+      if(localStorage.getItem("lang") === "de") {
+        document.getElementById("loadingText").innerHTML = errorscont + " Assets können nicht geladen werden, nicht gefunden oder entfernt …";
       }
     });
     document.getElementById("loadedbar").appendChild(assetSnake);
@@ -542,6 +594,12 @@ function loadTextures() {
       }else
       if(localStorage.getItem("lang") === "ko") {
         document.getElementById("loadingText").innerHTML = errorscont + "개의 자산을 로드할 수 없습니다. 자산을 찾을 수 없거나 삭제되지 않았습니다...";
+      }else
+      if(localStorage.getItem("lang") === "he") {
+        document.getElementById("loadingText").innerHTML = "לא ניתן לטעון " + errorscont + " נכסים, לא נמצאו או הוסרו...";
+      }else
+      if(localStorage.getItem("lang") === "de") {
+        document.getElementById("loadingText").innerHTML = errorscont + " Assets können nicht geladen werden, nicht gefunden oder entfernt …";
       }
     });
     document.getElementById("loadedbar").appendChild(assetSystem);
@@ -577,6 +635,12 @@ function loadTextures() {
       }else
       if(localStorage.getItem("lang") === "ko") {
         document.getElementById("loadingText").innerHTML = errorscont + "개의 자산을 로드할 수 없습니다. 자산을 찾을 수 없거나 삭제되지 않았습니다...";
+      }else
+      if(localStorage.getItem("lang") === "he") {
+        document.getElementById("loadingText").innerHTML = "לא ניתן לטעון " + errorscont + " נכסים, לא נמצאו או הוסרו...";
+      }else
+      if(localStorage.getItem("lang") === "de") {
+        document.getElementById("loadingText").innerHTML = errorscont + " Assets können nicht geladen werden, nicht gefunden oder entfernt …";
       }
     });
     document.getElementById("loadedbar").appendChild(assetLoadingLogo);
@@ -612,13 +676,19 @@ function loadTextures() {
       }else
       if(localStorage.getItem("lang") === "ko") {
         document.getElementById("loadingText").innerHTML = errorscont + "개의 자산을 로드할 수 없습니다. 자산을 찾을 수 없거나 삭제되지 않았습니다...";
+      }else
+      if(localStorage.getItem("lang") === "he") {
+        document.getElementById("loadingText").innerHTML = "לא ניתן לטעון " + errorscont + " נכסים, לא נמצאו או הוסרו...";
+      }else
+      if(localStorage.getItem("lang") === "de") {
+        document.getElementById("loadingText").innerHTML = errorscont + " Assets können nicht geladen werden, nicht gefunden oder entfernt …";
       }
     });
     document.getElementById("loadedbar").appendChild(assetCursor);
   }
 }
 function toDisplayNone() {
-  if(document.getElementById('widther').style.width === "30.6%") {
+  if(document.getElementById('widther').style.width === "32.3%") {
     alertAccept();
     document.getElementById("loading").style.display = "none";
   }
