@@ -384,6 +384,9 @@
 *::-webkit-scrollbar {
   display: none;
 }
+html {
+  overflow: hidden;
+}
 body {
   overflow: hidden;
   cursor: url('../animations/blue/default-0.png'), default;
