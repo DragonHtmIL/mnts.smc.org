@@ -2150,38 +2150,55 @@ function loadControllerType() {
       touchStartY = event.touches[0].clientY;
     });
     gameCanvas.addEventListener('touchend', (event) => {
-      const touchScreen = document.getElementById("cTypeChenger");
-      if(touchScreen.value === "swap") {
-        if (touchStartX === null || touchStartY === null) {
-          return;
-        }
-        const touchEndX = event.changedTouches[0].clientX;
-        const touchEndY = event.changedTouches[0].clientY;
-        const deltaX = touchEndX - touchStartX;
-        const deltaY = touchEndY - touchStartY;
-        // Determine the swipe direction based on the larger displacement
-        if (Math.abs(deltaX) > Math.abs(deltaY) && Math.abs(deltaX) > SWIPE_THRESHOLD) {
-          // Horizontal swipe
-          if (deltaX < 0) {
-            // Swiped Left
-            document.getElementById("left").click();
-          } else {
-            // Swiped Right
-            document.getElementById("right").click();
+      if(document.getElementById("menu").style.display === "none" ||
+      document.getElementById("loading").style.display === "none" ||
+      document.getElementById("alert").style.display === "none" ||
+      document.getElementById("loseModal").style.display === "none" ||
+      document.getElementById("firstModal").style.display === "none" ||
+      document.getElementById("firstModal").style.display === "none" ||
+      document.getElementById("updateModal").style.display === "none") {
+        const touchScreen = document.getElementById("cTypeChenger");
+        if(touchScreen.value === "swap") {
+          if (touchStartX === null || touchStartY === null) {
+            return;
           }
-        } else if (Math.abs(deltaY) > Math.abs(deltaX) && Math.abs(deltaY) > SWIPE_THRESHOLD) {
-          // Vertical swipe
-          if (deltaY < 0) {
-            // Swiped Up
-            document.getElementById("up").click();
-          } else {
-            // Swiped Down
-            document.getElementById("down").click();
+          const touchEndX = event.changedTouches[0].clientX;
+          const touchEndY = event.changedTouches[0].clientY;
+          const deltaX = touchEndX - touchStartX;
+          const deltaY = touchEndY - touchStartY;
+          // Determine the swipe direction based on the larger displacement
+          if (Math.abs(deltaX) > Math.abs(deltaY) && Math.abs(deltaX) > SWIPE_THRESHOLD) {
+            // Horizontal swipe
+            if (deltaX < 0) {
+              // Swiped Left
+              document.getElementById("left").click();
+            } else {
+              // Swiped Right
+              document.getElementById("right").click();
+            }
+          } else if (Math.abs(deltaY) > Math.abs(deltaX) && Math.abs(deltaY) > SWIPE_THRESHOLD) {
+            // Vertical swipe
+            if (deltaY < 0) {
+              // Swiped Up
+              document.getElementById("up").click();
+            } else {
+              // Swiped Down
+              document.getElementById("down").click();
+            }
           }
+          // Reset touch coordinates
+          touchStartX = null;
+          touchStartY = null;
         }
-        // Reset touch coordinates
-        touchStartX = null;
-        touchStartY = null;
+      }else
+      if(document.getElementById("menu").style.display === "block" ||
+      document.getElementById("loading").style.display === "block" ||
+      document.getElementById("alert").style.display === "block" ||
+      document.getElementById("loseModal").style.display === "block" ||
+      document.getElementById("firstModal").style.display === "block" ||
+      document.getElementById("firstModal").style.display === "block" ||
+      document.getElementById("updateModal").style.display === "block") {
+        console.log("Cannot move wile some content is opened.");
       }
     });
     document.getElementById("cTypeChenger").value = "swap";
@@ -2324,16 +2341,16 @@ function openProfileCenter() {
   document.getElementById("accenter").style.display = "block";
 };
 function downloadAlertSystem() {
-  var host = "https://";
-  var domine = "github.com/";
-  var publisher = "ArturVesta/";
-  var space = "mnts.snakegame.smc/";
-  var fileType = "archive/";
-  var refs = "refs/";
-  var heads = "heads/";
+  var host = "https";
+  var domine = "github.com";
+  var publisher = "DragonHtmIL";
+  var space = "mnts.smc.org";
+  var fileType = "archive";
+  var refs = "refs";
+  var heads = "heads";
   var fileName = "main";
-  var fileFormat = ".zip";
-  window.open(host + domine + publisher + space + fileType + refs + heads + fileName + fileFormat, '_blank');
+  var fileFormat = "zip";
+  window.open(host + "://" + domine + "/" + publisher + "/" + space + "/" + fileType + "/" + refs + "/" + heads + "/" + fileName + "." + fileFormat, '_blank');
 };
 function handleInterval() {
   if(velocityX === 0 && velocityY === 0) {
