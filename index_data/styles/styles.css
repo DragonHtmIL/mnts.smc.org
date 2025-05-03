@@ -392,6 +392,7 @@ body {
   cursor: url('../animations/blue/default-0.png'), default;
   -webkit-animation: cursordef 1500ms infinite;
   animation: cursordef 1500ms infinite;
+  overscroll-behavior-y: contain;
 }
 hr {
   display: block;
