@@ -18,6 +18,7 @@ Languages<br>
   Chinese (Traditional): Google Translate;<br>
   Korean: Google Translate;<br>
   Hebrew: DragonHtmIL;<br>
+  German: Google Translate;<br>
 <hr>
 Game is downlodable for Android, Ios, Windows and Linux;
 <hr>
