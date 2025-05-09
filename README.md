@@ -5,9 +5,9 @@ MNTS make this minigame with love SMC by coding in 30minutes up to 1-2 hourse th
 Supports keyboard buttons
 <hr>
 Can be costumize:<br>
-<h4>Foods</h4>
+<h4>Food</h4>
 <h4>Snake</h4>
-<h4>Boards</h4>
+<h4>Board</h4>
 <h4>Audio</h4>
 <hr>
 Languages<br>
