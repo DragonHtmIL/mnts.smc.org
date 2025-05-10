@@ -438,6 +438,7 @@
           <div class="tab">
             <button class="tablinks active" onclick="openRange(event, 'conOne');openTab(event, 'about');selectionSound();" id="aboutTab">...</button>
             <button class="tablinks" onclick="openRange(event, 'conTwo');openTab(event, 'system');selectionSound();" id="systemTab">...</button>
+            <button class="tablinks" onclick="openRange(event, 'conSeven');openTab(event, 'game');selectionSound();" id="gameTab">...</button>
             <button class="tablinks" onclick="openRange(event, 'conThree');openTab(event, 'snake');selectionSound();" id="snakeTab">...</button>
             <button class="tablinks" onclick="openRange(event, 'conFour');openTab(event, 'food');selectionSound();" id="foodTab">...</button>
             <button class="tablinks" onclick="openRange(event, 'conFive');openTab(event, 'board');selectionSound();" id="boardTab">...</button>
@@ -445,21 +446,6 @@
           </div>
           <div id="system" class="content">
             <div class="categores settingscontent">...</div>
-            <div class="categores" id="controllerSettingsLangs">...</div>
-            <div class="range-content" id="devCheck">
-              <select name="controllerTypes" id="cTypeChenger" onchange="changeControllerType();" onclick="selectionSound();">
-                <option value="classic" id="defOptionLang">...</option>
-                <option value="dynamic" id="dynOptionLang">...</option>
-                <option value="swap" id="swaOptionLang">...</option>
-              </select>
-            </div>
-            <div class="categores" id="cspLang">...</div>
-            <div id="selectOptionsControllerPosition" class="select-content">
-              <div onclick="centerController();" id="ccLang" class="controllerpostype select">...</div>
-              <div onclick="leftController();" id="clLang" class="controllerpostype select">...</div>
-              <div onclick="rightController();" id="crLang" class="controllerpostype select">...</div>
-            </div>
-            <hr id="hr0hiddenTuggle">
             <div class="categores" id="langsLangs">...</div>
             <div id="selectOptions" class="select-content">
               <div onclick="englishLanguage();" id="languageEn" class="language select">English</div>
@@ -471,13 +457,6 @@
               <div onclick="hebrewLanguage();" id="languageHe" class="language select">עברית</div>
               <div onclick="germanLanguage();" id="languageDe" class="language select">Deutsche</div>
               <div class="important-text" id="langImportantLang">...</div>
-            </div>
-            <hr>
-            <div class="categores" id="difficultyLang">...</div>
-            <div id="selectOptions" class="select-content">
-              <div onclick="normalDifLoad();" id="normalDif" class="difficulty select">...</div>
-              <div onclick="hardDifLoad();" id="hardDif" class="difficulty select">...</div>
-              <div onclick="hellDifLoad();" id="hellDif" class="difficulty select">...</div>
             </div>
             <hr>
             <div class="categores moresettingscontent">...</div>
@@ -504,6 +483,30 @@
               <div onclick="loadingAnime();" id="loadAnimeCon" class="select"><span id="loadAnime"></span></div>
               <div onclick="loadingMiku();" id="loadMikuCon" class="select"><span id="loadMiku">Hatsune Miku</span></div>
               <div onclick="loadingNakano();" id="loadNakanoCon" class="select"><span id="loadNakano">Nakano Azusa</span></div>
+            </div>
+          </div>
+          <div id="game" class="content">
+            <div class="categores settingscontent">...</div>
+            <div class="categores" id="controllerSettingsLangs">...</div>
+            <div class="range-content" id="devCheck">
+              <select name="controllerTypes" id="cTypeChenger" onchange="changeControllerType();" onclick="selectionSound();">
+                <option value="classic" id="defOptionLang">...</option>
+                <option value="dynamic" id="dynOptionLang">...</option>
+                <option value="swap" id="swaOptionLang">...</option>
+              </select>
+            </div>
+            <div class="categores" id="cspLang">...</div>
+            <div id="selectOptionsControllerPosition" class="select-content">
+              <div onclick="centerController();" id="ccLang" class="controllerpostype select">...</div>
+              <div onclick="leftController();" id="clLang" class="controllerpostype select">...</div>
+              <div onclick="rightController();" id="crLang" class="controllerpostype select">...</div>
+            </div>
+            <hr id="hr0hiddenTuggle">
+            <div class="categores" id="difficultyLang">...</div>
+            <div id="selectOptions" class="select-content">
+              <div onclick="normalDifLoad();" id="normalDif" class="difficulty select">...</div>
+              <div onclick="hardDifLoad();" id="hardDif" class="difficulty select">...</div>
+              <div onclick="hellDifLoad();" id="hellDif" class="difficulty select">...</div>
             </div>
           </div>
           <div id="board" class="content">
@@ -937,6 +940,7 @@
         </div>
         <input class="menuscroller" type="range" name="conOne" id="conOne" min="0" max="100" value="0" style="display:block;">
         <input class="menuscroller" type="range" name="conTwo" id="conTwo" min="0" max="100" value="0" style="display:none;">
+        <input class="menuscroller" type="range" name="conSeven" id="conSeven" min="0" max="100" value="0" style="display:none;">
         <input class="menuscroller" type="range" name="conThree" id="conThree" min="0" max="100" value="0" style="display:none;">
         <input class="menuscroller" type="range" name="conFour" id="conFour" min="0" max="100" value="0" style="display:none;">
         <input class="menuscroller" type="range" name="conFive" id="conFive" min="0" max="100" value="0" style="display:none;">
@@ -945,7 +949,7 @@
       <div class="wrapper">
         <div class="play-board" id="playBoardId"></div>
         <div class="controls">
-          <i data-key="ArrowLeft" class="fa-solid fa-arrow-left-long" id="left"></i>
+          <i data-key="ArrowLeft" id="left"></i>
           <i data-key="ArrowUp" id="up"></i>
           <i data-key="ArrowRight" id="right"></i>
           <i data-key="ArrowDown" id="down"></i>
@@ -959,6 +963,7 @@
         <div onclick="document.getElementById('down').click();defaultClickSound();" id="btn004">#</div>
         <div onclick="document.getElementById('right').click();defaultClickSound();" id="btn005">#</div>
       </div>
+      <div id="touchBoard"></div>
       <div class="container" id="loading">
         <div class="loading">
           <div class="loading-img" id="loadingContiner">
@@ -1404,7 +1409,7 @@
     <script src="index_data/scripts/key_controlls.js"></script>
     <script src="index_data/scripts/scripts_2.js"></script>
     <script>
-      let basicVersion = "1.0.2-v2";
+      let basicVersion = "1.0.3-v2";
       function markUpdateReaded() {
         var modal = document.getElementById("updateModal");
         modal.style.display = "none";
@@ -1415,7 +1420,10 @@
         var updateContent = document.getElementById("updateNoticeContent");
         if(localStorage.getItem("lang") === "en") {
           updateTitle.innerHTML = "What new in Version " + basicVersion;
-          updateContent.innerHTML = "<h3>[03/05/2025]</h3>" + "<br>";
+          updateContent.innerHTML = "<h3>[10/05/2025]</h3>" + "<br>";
+          updateContent.innerHTML += "Some fixes." + "<br>";
+          updateContent.innerHTML += "<hr>";
+          updateContent.innerHTML += "<h3>[03/05/2025]</h3>" + "<br>";
           updateContent.innerHTML += "Some fixes." + "<br>";
           updateContent.innerHTML += "<hr>";
           updateContent.innerHTML += "<h3>[02/05/2025]</h3>" + "<br>";
@@ -1426,7 +1434,10 @@
         }else
         if(localStorage.getItem("lang") === "ru") {
           updateTitle.innerHTML = "Что нового в версии " + basicVersion;
-          updateContent.innerHTML = "<h3>[03/05/2025]</h3>" + "<br>";
+          updateContent.innerHTML = "<h3>[10/05/2025]</h3>" + "<br>";
+          updateContent.innerHTML += "Некоторые исправления." + "<br>";
+          updateContent.innerHTML += "<hr>";
+          updateContent.innerHTML += "<h3>[03/05/2025]</h3>" + "<br>";
           updateContent.innerHTML += "Некоторые исправления." + "<br>";
           updateContent.innerHTML += "<hr>";
           updateContent.innerHTML += "<h3>[02/05/2025]</h3>" + "<br>";
@@ -1437,7 +1448,10 @@
         }else
         if(localStorage.getItem("lang") === "jp") {
           updateTitle.innerHTML = "バージョン " + basicVersion + " の新機能";
-          updateContent.innerHTML = "<h3>[03/05/2025]</h3>" + "<br>";
+          updateContent.innerHTML = "<h3>[10/05/2025]</h3>" + "<br>";
+          updateContent.innerHTML += "いくつかの修正." + "<br>";
+          updateContent.innerHTML += "<hr>";
+          updateContent.innerHTML += "<h3>[03/05/2025]</h3>" + "<br>";
           updateContent.innerHTML += "いくつかの修正." + "<br>";
           updateContent.innerHTML += "<hr>";
           updateContent.innerHTML += "<h3>[02/05/2025]</h3>" + "<br>";
@@ -1448,7 +1462,10 @@
         }else
         if(localStorage.getItem("lang") === "chs") {
           updateTitle.innerHTML = basicVersion + " 版新增功能";
-          updateContent.innerHTML = "<h3>[03/05/2025]</h3>" + "<br>";
+          updateContent.innerHTML = "<h3>[10/05/2025]</h3>" + "<br>";
+          updateContent.innerHTML += "一些修复." + "<br>";
+          updateContent.innerHTML += "<hr>";
+          updateContent.innerHTML += "<h3>[03/05/2025]</h3>" + "<br>";
           updateContent.innerHTML += "一些修复." + "<br>";
           updateContent.innerHTML += "<hr>";
           updateContent.innerHTML += "<h3>[02/05/2025]</h3>" + "<br>";
@@ -1459,7 +1476,10 @@
         }else
         if(localStorage.getItem("lang") === "cht") {
           updateTitle.innerHTML = basicVersion + " 版新增功能";
-          updateContent.innerHTML = "<h3>[03/05/2025]</h3>" + "<br>";
+          updateContent.innerHTML = "<h3>[10/05/2025]</h3>" + "<br>";
+          updateContent.innerHTML += "一些修復." + "<br>";
+          updateContent.innerHTML += "<hr>";
+          updateContent.innerHTML += "<h3>[03/05/2025]</h3>" + "<br>";
           updateContent.innerHTML += "一些修復." + "<br>";
           updateContent.innerHTML += "<hr>";
           updateContent.innerHTML += "<h3>[02/05/2025]</h3>" + "<br>";
@@ -1470,7 +1490,10 @@
         }else
         if(localStorage.getItem("lang") === "ko") {
           updateTitle.innerHTML = "버전" + basicVersion + "의 새로운 기능";
-          updateContent.innerHTML = "<h3>[03/05/2025]</h3>" + "<br>";
+          updateContent.innerHTML = "<h3>[10/05/2025]</h3>" + "<br>";
+          updateContent.innerHTML += "일부 수정 사항." + "<br>";
+          updateContent.innerHTML += "<hr>";
+          updateContent.innerHTML += "<h3>[03/05/2025]</h3>" + "<br>";
           updateContent.innerHTML += "일부 수정 사항." + "<br>";
           updateContent.innerHTML += "<hr>";
           updateContent.innerHTML += "<h3>[02/05/2025]</h3>" + "<br>";
@@ -1486,7 +1509,10 @@
           updateTitle.style.width = "75%";
           updateContent.style.direction = "rtl";
           updateContent.style.textAlign = "right";
-          updateContent.innerHTML = "<h3>[03/05/2025]</h3>" + "<br>";
+          updateContent.innerHTML = "<h3>[10/05/2025]</h3>" + "<br>";
+          updateContent.innerHTML += "כמה תיקונים." + "<br>";
+          updateContent.innerHTML += "<hr>";
+          updateContent.innerHTML += "<h3>[03/05/2025]</h3>" + "<br>";
           updateContent.innerHTML += "כמה תיקונים." + "<br>";
           updateContent.innerHTML += "<hr>";
           updateContent.innerHTML += "<h3>[02/05/2025]</h3>" + "<br>";
@@ -1497,7 +1523,10 @@
         }else
         if(localStorage.getItem("lang") === "de") {
           updateTitle.innerHTML = "Was ist neu in Version " + basicVersion;
-          updateContent.innerHTML = "<h3>[03/05/2025]</h3>" + "<br>";
+          updateContent.innerHTML = "<h3>[10/05/2025]</h3>" + "<br>";
+          updateContent.innerHTML += "Einige Korrekturen." + "<br>";
+          updateContent.innerHTML += "<hr>";
+          updateContent.innerHTML += "<h3>[03/05/2025]</h3>" + "<br>";
           updateContent.innerHTML += "Einige Korrekturen." + "<br>";
           updateContent.innerHTML += "<hr>";
           updateContent.innerHTML += "<h3>[02/05/2025]</h3>" + "<br>";
