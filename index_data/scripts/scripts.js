@@ -149,7 +149,7 @@ function checkMusicVolume() {
   for (var i=0; i<audio.length; i++) {
     audio[i].volume = input.value;
   }
-};
+}
 checkMusicVolume();
 function baseVolum() {
   var checkbox = document.getElementById("checkBaseVolum");
@@ -166,7 +166,7 @@ function checkBaseVolum() {
   }else{
     checkbox.checked = false;
   }
-};
+}
 checkBaseVolum();
 function sFxVolume() {
   var input = document.getElementById("sfxvolume");
@@ -219,7 +219,7 @@ function checkSfXvolume() {
   for (var w = 0; w < audiow0.length; w++) {
     audiow0[w].volume = input.value;
   }
-};
+}
 checkSfXvolume();
 function normalDifLoad() {
   document.getElementById("normalDif").classList.add("activet");
@@ -258,7 +258,7 @@ function difficultyLoader() {
   document.getElementById("hardDif").classList.remove("activet");
   document.getElementById("hellDif").classList.add("activet");
   }
-};
+}
 difficultyLoader();
 function meowItemLoad() {
   document.getElementById("meowItem").classList.add("activet");
@@ -8526,7 +8526,7 @@ function foodBGloader() {
     document.getElementById("food077Item0").classList.add("activet");
     localStorage.setItem("reapitfood","food-77-img");
   }
-};
+}
 foodBGloader();
 function alphaMapLoad() {
   document.getElementById("alphaMap").classList.add("activet");
@@ -15074,7 +15074,7 @@ function boardBGloader() {
   document.getElementById("playBoardId").classList.add("board-73-img");
   document.getElementById("conBoard073img").classList.add("activet");
   }
-};
+}
 boardBGloader();
 function applySettings() {
   if(document.getElementById("origoMap").className === "select activet") {
@@ -16402,20 +16402,12 @@ function installApp() {
       document.getElementById("alert").style.zIndex = "3";
     }
   }
-}
+};
 // Call installApp() when your button is clicked.  For example:
 const installButton = document.getElementById('downloadNoAutoUpdate2'); // Replace with your actual button ID
 if (installButton) {
   installButton.addEventListener('click', installApp);
 };
-// Get battery level in % with charging detection
-//if (navigator.userAgent.match(/Android|Windows/i)) {
-//
-//} else if (navigator.userAgent.match(/iPhone|iPad|iPod/i)) {
-//
-//} else {
-//  console.log('Battery Status API is not supported in this browser.');
-//}
 if ('getBattery' in navigator) {
   navigator.getBattery().then(function (battery) {
     function updateBatteryStatus() {
@@ -16430,7 +16422,7 @@ if ('getBattery' in navigator) {
   });
 } else {
   console.log('Battery Status API is not supported in this browser.');
-}
+};
 navigator.getBattery().then(function (battery) {
   function showAllBatteryInfo() {
     editChargeInfo();
@@ -16767,13 +16759,13 @@ function snakeDecoloring() {
   const colorer = document.getElementById("snakeColor");
   localStorage.setItem("snakeColor", colorer.value);
   presnake.style.backgroundColor = localStorage.getItem("snakeColor");
-}
+};
 function snakeColorerValueLoad() {
   const colorer = document.getElementById("snakeColor");
   const presnake = document.getElementById("snakeLatter");
   colorer.value = localStorage.getItem("snakeColor");
   presnake.style.backgroundColor = localStorage.getItem("snakeColor");
-}
+};
 function letterLoad0() {
   const presnake = document.getElementById("snakeLatter");
   const key = document.getElementById("key0");
@@ -16784,7 +16776,7 @@ function letterLoad0() {
     localStorage.setItem("snakeLetter", "0s");
     presnake.className = "ltr0s";
   }
-}
+};
 function letterLoad1() {
   const presnake = document.getElementById("snakeLatter");
   const key = document.getElementById("key1");
@@ -16795,7 +16787,7 @@ function letterLoad1() {
     localStorage.setItem("snakeLetter", "1s");
     presnake.className = "ltr1s";
   }
-}
+};
 function letterLoad2() {
   const presnake = document.getElementById("snakeLatter");
   const key = document.getElementById("key2");
@@ -16806,7 +16798,7 @@ function letterLoad2() {
     localStorage.setItem("snakeLetter", "2s");
     presnake.className = "ltr2s";
   }
-}
+};
 function letterLoad3() {
   const presnake = document.getElementById("snakeLatter");
   const key = document.getElementById("key3");
@@ -16817,7 +16809,7 @@ function letterLoad3() {
     localStorage.setItem("snakeLetter", "3s");
     presnake.className = "ltr3s";
   }
-}
+};
 function letterLoad4() {
   const presnake = document.getElementById("snakeLatter");
   const key = document.getElementById("key4");
@@ -16828,7 +16820,7 @@ function letterLoad4() {
     localStorage.setItem("snakeLetter", "4s");
     presnake.className = "ltr4s";
   }
-}
+};
 function letterLoad5() {
   const presnake = document.getElementById("snakeLatter");
   const key = document.getElementById("key5");
@@ -16839,7 +16831,7 @@ function letterLoad5() {
     localStorage.setItem("snakeLetter", "5s");
     presnake.className = "ltr5s";
   }
-}
+};
 function letterLoad6() {
   const presnake = document.getElementById("snakeLatter");
   const key = document.getElementById("key6");
@@ -16850,7 +16842,7 @@ function letterLoad6() {
     localStorage.setItem("snakeLetter", "6s");
     presnake.className = "ltr6s";
   }
-}
+};
 function letterLoad7() {
   const presnake = document.getElementById("snakeLatter");
   const key = document.getElementById("key7");
@@ -16861,7 +16853,7 @@ function letterLoad7() {
     localStorage.setItem("snakeLetter", "7s");
     presnake.className = "ltr7s";
   }
-}
+};
 function letterLoad8() {
   const presnake = document.getElementById("snakeLatter");
   const key = document.getElementById("key8");
@@ -16872,7 +16864,7 @@ function letterLoad8() {
     localStorage.setItem("snakeLetter", "8s");
     presnake.className = "ltr8s";
   }
-}
+};
 function letterLoad9() {
   const presnake = document.getElementById("snakeLatter");
   const key = document.getElementById("key9");
@@ -16883,168 +16875,168 @@ function letterLoad9() {
     localStorage.setItem("snakeLetter", "9s");
     presnake.className = "ltr9s";
   }
-}
+};
 function letterLoadAa() {
   const presnake = document.getElementById("snakeLatter");
   const key = document.getElementById("keya");
   presnake.className = "ltr" + key.innerHTML;
   localStorage.setItem("snakeLetter", key.innerHTML);
-}
+};
 function letterLoadBb() {
   const presnake = document.getElementById("snakeLatter");
   const key = document.getElementById("keyb");
   presnake.className = "ltr" + key.innerHTML;
   localStorage.setItem("snakeLetter", key.innerHTML);
-}
+};
 function letterLoadCc() {
   const presnake = document.getElementById("snakeLatter");
   const key = document.getElementById("keyc");
   presnake.className = "ltr" + key.innerHTML;
   localStorage.setItem("snakeLetter", key.innerHTML);
-}
+};
 function letterLoadDd() {
   const presnake = document.getElementById("snakeLatter");
   const key = document.getElementById("keyd");
   presnake.className = "ltr" + key.innerHTML;
   localStorage.setItem("snakeLetter", key.innerHTML);
-}
+};
 function letterLoadEe() {
   const presnake = document.getElementById("snakeLatter");
   const key = document.getElementById("keye");
   presnake.className = "ltr" + key.innerHTML;
   localStorage.setItem("snakeLetter", key.innerHTML);
-}
+};
 function letterLoadFf() {
   const presnake = document.getElementById("snakeLatter");
   const key = document.getElementById("keyf");
   presnake.className = "ltr" + key.innerHTML;
   localStorage.setItem("snakeLetter", key.innerHTML);
-}
+};
 function letterLoadGg() {
   const presnake = document.getElementById("snakeLatter");
   const key = document.getElementById("keyg");
   presnake.className = "ltr" + key.innerHTML;
   localStorage.setItem("snakeLetter", key.innerHTML);
-}
+};
 function letterLoadHh() {
   const presnake = document.getElementById("snakeLatter");
   const key = document.getElementById("keyh");
   presnake.className = "ltr" + key.innerHTML;
   localStorage.setItem("snakeLetter", key.innerHTML);
-}
+};
 function letterLoadIi() {
   const presnake = document.getElementById("snakeLatter");
   const key = document.getElementById("keyi");
   presnake.className = "ltr" + key.innerHTML;
   localStorage.setItem("snakeLetter", key.innerHTML);
-}
+};
 function letterLoadJj() {
   const presnake = document.getElementById("snakeLatter");
   const key = document.getElementById("keyj");
   presnake.className = "ltr" + key.innerHTML;
   localStorage.setItem("snakeLetter", key.innerHTML);
-}
+};
 function letterLoadKk() {
   const presnake = document.getElementById("snakeLatter");
   const key = document.getElementById("keyk");
   presnake.className = "ltr" + key.innerHTML;
   localStorage.setItem("snakeLetter", key.innerHTML);
-}
+};
 function letterLoadLl() {
   const presnake = document.getElementById("snakeLatter");
   const key = document.getElementById("keyl");
   presnake.className = "ltr" + key.innerHTML;
   localStorage.setItem("snakeLetter", key.innerHTML);
-}
+};
 function letterLoadMm() {
   const presnake = document.getElementById("snakeLatter");
   const key = document.getElementById("keym");
   presnake.className = "ltr" + key.innerHTML;
   localStorage.setItem("snakeLetter", key.innerHTML);
-}
+};
 function letterLoadNn() {
   const presnake = document.getElementById("snakeLatter");
   const key = document.getElementById("keyn");
   presnake.className = "ltr" + key.innerHTML;
   localStorage.setItem("snakeLetter", key.innerHTML);
-}
+};
 function letterLoadOo() {
   const presnake = document.getElementById("snakeLatter");
   const key = document.getElementById("keyo");
   presnake.className = "ltr" + key.innerHTML;
   localStorage.setItem("snakeLetter", key.innerHTML);
-}
+};
 function letterLoadPp() {
   const presnake = document.getElementById("snakeLatter");
   const key = document.getElementById("keyp");
   presnake.className = "ltr" + key.innerHTML;
   localStorage.setItem("snakeLetter", key.innerHTML);
-}
+};
 function letterLoadQq() {
   const presnake = document.getElementById("snakeLatter");
   const key = document.getElementById("keyq");
   presnake.className = "ltr" + key.innerHTML;
   localStorage.setItem("snakeLetter", key.innerHTML);
-}
+};
 function letterLoadRr() {
   const presnake = document.getElementById("snakeLatter");
   const key = document.getElementById("keyr");
   presnake.className = "ltr" + key.innerHTML;
   localStorage.setItem("snakeLetter", key.innerHTML);
-}
+};
 function letterLoadSs() {
   const presnake = document.getElementById("snakeLatter");
   const key = document.getElementById("keys");
   presnake.className = "ltr" + key.innerHTML;
   localStorage.setItem("snakeLetter", key.innerHTML);
-}
+};
 function letterLoadTt() {
   const presnake = document.getElementById("snakeLatter");
   const key = document.getElementById("keyt");
   presnake.className = "ltr" + key.innerHTML;
   localStorage.setItem("snakeLetter", key.innerHTML);
-}
+};
 function letterLoadUu() {
   const presnake = document.getElementById("snakeLatter");
   const key = document.getElementById("keyu");
   presnake.className = "ltr" + key.innerHTML;
   localStorage.setItem("snakeLetter", key.innerHTML);
-}
+};
 function letterLoadVv() {
   const presnake = document.getElementById("snakeLatter");
   const key = document.getElementById("keyv");
   presnake.className = "ltr" + key.innerHTML;
   localStorage.setItem("snakeLetter", key.innerHTML);
-}
+};
 function letterLoadWw() {
   const presnake = document.getElementById("snakeLatter");
   const key = document.getElementById("keyw");
   presnake.className = "ltr" + key.innerHTML;
   localStorage.setItem("snakeLetter", key.innerHTML);
-}
+};
 function letterLoadXx() {
   const presnake = document.getElementById("snakeLatter");
   const key = document.getElementById("keyx");
   presnake.className = "ltr" + key.innerHTML;
   localStorage.setItem("snakeLetter", key.innerHTML);
-}
+};
 function letterLoadYy() {
   const presnake = document.getElementById("snakeLatter");
   const key = document.getElementById("keyy");
   presnake.className = "ltr" + key.innerHTML;
   localStorage.setItem("snakeLetter", key.innerHTML);
-}
+};
 function letterLoadZz() {
   const presnake = document.getElementById("snakeLatter");
   const key = document.getElementById("keyz");
   presnake.className = "ltr" + key.innerHTML;
   localStorage.setItem("snakeLetter", key.innerHTML);
-}
+};
 function letterLoad() {
   const presnake = document.getElementById("snakeLatter");
   presnake.className = "ltr";
   localStorage.setItem("snakeLetter", " ");
-}
+};
 function shiftLetters() {
   if(document.getElementById("keyShift").className === "keyOboard") {
     document.getElementById("keyShift").classList.add('actived');
@@ -17124,7 +17116,7 @@ function shiftLetters() {
     document.getElementById("keyy").innerHTML = "w";
     document.getElementById("keyz").innerHTML = "z";
   }
-}
+};
 function saveProgressViaFile() {
   const text = document.getElementById("textarea");
   text.value = "// this file is load saved data that can be load the data\n";
@@ -17249,7 +17241,7 @@ function saveProgressViaFile() {
   anele.setAttribute("download", "SnakeMechaCollector-Save.js");
   anele.href = url;
   anele.click();
-}
+};
 document.addEventListener('DOMContentLoaded', () => {
   const fileInput = document.getElementById('dataLocalUpload');
   const scriptContainer = document.getElementById('scriptContainer');

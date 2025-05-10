@@ -118,5 +118,5 @@ function langCheck() {
   if(localStorage.getItem("lang") === "de") {
     document.getElementById("languageDe").classList.add("activet");
   }
-};
+}
 langCheck();

@@ -425,7 +425,7 @@ function autoSnakeLoadNew() {
   }else{
     return false;
   }
-}
+};
 function autoDifficultyLoadNew() {
   if(localStorage.getItem("difficulty") === null) {
     // load difficulty
@@ -439,7 +439,7 @@ function autoDifficultyLoadNew() {
   }else{
     return false;
   }
-}
+};
 function autoFoodsLoadNew() {
   if(localStorage.getItem("foodStyle") === null) {
     // load food
@@ -455,7 +455,7 @@ function autoFoodsLoadNew() {
   }else{
     return false;
   }
-}
+};
 function autoBoardsLoadNew() {
   if(localStorage.getItem("boardStyle") === null) {
     // load board
@@ -469,7 +469,7 @@ function autoBoardsLoadNew() {
   }else{
     return false;
   }
-}
+};
 function autoControllerPoseLoadNew() {
   if(localStorage.getItem("controllerPosition") === null) {
     // load controller position
@@ -483,7 +483,7 @@ function autoControllerPoseLoadNew() {
   }else{
     return false;
   }
-}
+};
 function autoLanguageLoadNew() {
   if(localStorage.getItem("lang") === null) {
     // load language
@@ -497,7 +497,7 @@ function autoLanguageLoadNew() {
   }else{
     return false;
   }
-}
+};
 function autoMusicLoadNew() {
   if(localStorage.getItem("musicbg") === null) {
     // load music
@@ -513,7 +513,7 @@ function autoMusicLoadNew() {
   }else{
     return false;
   }
-}
+};
 function autoDynamicControllerLoadNew() {
   if(localStorage.getItem("controllerTypeDev") === null) {
     // load music
@@ -527,7 +527,7 @@ function autoDynamicControllerLoadNew() {
   }else{
     return false;
   }
-}
+};
 function autoMusicCheckLoadNew() {
   if(localStorage.getItem("musicPlay") === null) {
     // load music checkbox
@@ -541,7 +541,7 @@ function autoMusicCheckLoadNew() {
   }else{
     return false;
   }
-}
+};
 function autoSfxProgLoadNew() {
   if(localStorage.getItem("sfxvolumedata") === null) {
     // load sfx volume
@@ -555,7 +555,7 @@ function autoSfxProgLoadNew() {
   }else{
     return false;
   }
-}
+};
 function autoMusicProgLoadNew() {
   if(localStorage.getItem("musicvolumedata") === null) {
     // load music volume
@@ -569,7 +569,7 @@ function autoMusicProgLoadNew() {
   }else{
     return false;
   }
-}
+};
 function autoMovementLoadNew() {
   if(localStorage.getItem("movementbg") === null) {
     // load walk
@@ -583,7 +583,7 @@ function autoMovementLoadNew() {
   }else{
     return false;
   }
-}
+};
 function autoMeawStorageLoadNew() {
   if(localStorage.getItem("meawTokenStorage") === null) {
     localStorage.setItem("meawTokenStorage", "0");
@@ -595,7 +595,7 @@ function autoMeawStorageLoadNew() {
   }else{
     return false;
   }
-}
+};
 function autoGoldStorageLoadNew() {
   if(localStorage.getItem("goldStorage") === null) {
     localStorage.setItem("goldStorage", "0");
@@ -607,7 +607,7 @@ function autoGoldStorageLoadNew() {
   }else{
     return false;
   }
-}
+};
 function autoAlphaStorageLoadNew() {
   if(localStorage.getItem("alphaCoinStorage") === null) {
     localStorage.setItem("alphaCoinStorage", "0");
@@ -619,7 +619,7 @@ function autoAlphaStorageLoadNew() {
   }else{
     return false;
   }
-}
+};
 function autoCrystalStorageLoadNew() {
   if(localStorage.getItem("crystalStorage") === null) {
     localStorage.setItem("crystalStorage", "0");
@@ -631,7 +631,7 @@ function autoCrystalStorageLoadNew() {
   }else{
     return false;
   }
-}
+};
 function autoTicketStorageLoadNew() {
   if(localStorage.getItem("ticketStorage") === null) {
     localStorage.setItem("ticketStorage", "0");
@@ -643,7 +643,7 @@ function autoTicketStorageLoadNew() {
   }else{
     return false;
   }
-}
+};
 function autoTicketChStorageLoadNew() {
   if(localStorage.getItem("ticketChromaticStorage") === null) {
     localStorage.setItem("ticketChromaticStorage", "0");
@@ -655,7 +655,7 @@ function autoTicketChStorageLoadNew() {
   }else{
     return false;
   }
-}
+};
 function autoTicketPrStorageLoadNew() {
   if(localStorage.getItem("ticketPremiumStorage") === null) {
     localStorage.setItem("ticketPremiumStorage", "0");
@@ -667,7 +667,7 @@ function autoTicketPrStorageLoadNew() {
   }else{
     return false;
   }
-}
+};
 function autoTicketP2rStorageLoadNew() {
   if(localStorage.getItem("ticketPremium2Storage") === null) {
     localStorage.setItem("ticketPremium2Storage", "0");
@@ -679,7 +679,7 @@ function autoTicketP2rStorageLoadNew() {
   }else{
     return false;
   }
-}
+};
 function autoVirtualTokenrStorageLoadNew() {
   if(localStorage.getItem("virtualTokenStorage") === null) {
     localStorage.setItem("virtualTokenStorage", "0");
@@ -691,7 +691,7 @@ function autoVirtualTokenrStorageLoadNew() {
   }else{
     return false;
   }
-}
+};
 function autoFood000StorageLoadNew() {
   if(localStorage.getItem("food000Storage") === null) {
     localStorage.setItem("food000Storage", "0");
@@ -703,7 +703,7 @@ function autoFood000StorageLoadNew() {
   }else{
     return false;
   }
-}
+};
 function autoFood001StorageLoadNew() {
   if(localStorage.getItem("food001Storage") === null) {
     localStorage.setItem("food001Storage", "0");
@@ -715,7 +715,7 @@ function autoFood001StorageLoadNew() {
   }else{
     return false;
   }
-}
+};
 function autoFood002StorageLoadNew() {
   if(localStorage.getItem("food002Storage") === null) {
     localStorage.setItem("food002Storage", "0");
@@ -727,7 +727,7 @@ function autoFood002StorageLoadNew() {
   }else{
     return false;
   }
-}
+};
 function autoFood003StorageLoadNew() {
   if(localStorage.getItem("food003Storage") === null) {
     localStorage.setItem("food003Storage", "0");
@@ -739,7 +739,7 @@ function autoFood003StorageLoadNew() {
   }else{
     return false;
   }
-}
+};
 function autoFood004StorageLoadNew() {
   if(localStorage.getItem("food004Storage") === null) {
     localStorage.setItem("food004Storage", "0");
@@ -751,7 +751,7 @@ function autoFood004StorageLoadNew() {
   }else{
     return false;
   }
-}
+};
 function autoFood005StorageLoadNew() {
   if(localStorage.getItem("food005Storage") === null) {
     localStorage.setItem("food005Storage", "0");
@@ -763,7 +763,7 @@ function autoFood005StorageLoadNew() {
   }else{
     return false;
   }
-}
+};
 function autoFood006StorageLoadNew() {
   if(localStorage.getItem("food006Storage") === null) {
     localStorage.setItem("food006Storage", "0");
@@ -775,7 +775,7 @@ function autoFood006StorageLoadNew() {
   }else{
     return false;
   }
-}
+};
 function autoFood007StorageLoadNew() {
   if(localStorage.getItem("food007Storage") === null) {
     localStorage.setItem("food007Storage", "0");
@@ -787,7 +787,7 @@ function autoFood007StorageLoadNew() {
   }else{
     return false;
   }
-}
+};
 function autoFood008StorageLoadNew() {
   if(localStorage.getItem("food008Storage") === null) {
     localStorage.setItem("food008Storage", "0");
@@ -799,7 +799,7 @@ function autoFood008StorageLoadNew() {
   }else{
     return false;
   }
-}
+};
 function autoFood009StorageLoadNew() {
   if(localStorage.getItem("food009Storage") === null) {
     localStorage.setItem("food009Storage", "0");
@@ -811,7 +811,7 @@ function autoFood009StorageLoadNew() {
   }else{
     return false;
   }
-}
+};
 function autoFood010StorageLoadNew() {
   if(localStorage.getItem("food010Storage") === null) {
     localStorage.setItem("food010Storage", "0");
@@ -823,7 +823,7 @@ function autoFood010StorageLoadNew() {
   }else{
     return false;
   }
-}
+};
 function autoFood011StorageLoadNew() {
   if(localStorage.getItem("food011Storage") === null) {
     localStorage.setItem("food011Storage", "0");
@@ -835,7 +835,7 @@ function autoFood011StorageLoadNew() {
   }else{
     return false;
   }
-}
+};
 function autoFood012StorageLoadNew() {
   if(localStorage.getItem("food012Storage") === null) {
     localStorage.setItem("food012Storage", "0");
@@ -847,7 +847,7 @@ function autoFood012StorageLoadNew() {
   }else{
     return false;
   }
-}
+};
 function autoFood013StorageLoadNew() {
   if(localStorage.getItem("food013Storage") === null) {
     localStorage.setItem("food013Storage", "0");
@@ -859,7 +859,7 @@ function autoFood013StorageLoadNew() {
   }else{
     return false;
   }
-}
+};
 function autoFood014StorageLoadNew() {
   if(localStorage.getItem("food014Storage") === null) {
     localStorage.setItem("food014Storage", "0");
@@ -871,7 +871,7 @@ function autoFood014StorageLoadNew() {
   }else{
     return false;
   }
-}
+};
 function autoFood015StorageLoadNew() {
   if(localStorage.getItem("food015Storage") === null) {
     localStorage.setItem("food015Storage", "0");
@@ -883,7 +883,7 @@ function autoFood015StorageLoadNew() {
   }else{
     return false;
   }
-}
+};
 function autoFood016StorageLoadNew() {
   if(localStorage.getItem("food016Storage") === null) {
     localStorage.setItem("food016Storage", "0");
@@ -895,7 +895,7 @@ function autoFood016StorageLoadNew() {
   }else{
     return false;
   }
-}
+};
 function autoFood017StorageLoadNew() {
   if(localStorage.getItem("food017Storage") === null) {
     localStorage.setItem("food017Storage", "0");
@@ -907,7 +907,7 @@ function autoFood017StorageLoadNew() {
   }else{
     return false;
   }
-}
+};
 function autoFood018StorageLoadNew() {
   if(localStorage.getItem("food018Storage") === null) {
     localStorage.setItem("food018Storage", "0");
@@ -919,7 +919,7 @@ function autoFood018StorageLoadNew() {
   }else{
     return false;
   }
-}
+};
 function autoFood019StorageLoadNew() {
   if(localStorage.getItem("food019Storage") === null) {
     localStorage.setItem("food019Storage", "0");
@@ -931,7 +931,7 @@ function autoFood019StorageLoadNew() {
   }else{
     return false;
   }
-}
+};
 function autoFood020StorageLoadNew() {
   if(localStorage.getItem("food020Storage") === null) {
     localStorage.setItem("food020Storage", "0");
@@ -943,7 +943,7 @@ function autoFood020StorageLoadNew() {
   }else{
     return false;
   }
-}
+};
 function autoFood021StorageLoadNew() {
   if(localStorage.getItem("food021Storage") === null) {
     localStorage.setItem("food021Storage", "0");
@@ -955,7 +955,7 @@ function autoFood021StorageLoadNew() {
   }else{
     return false;
   }
-}
+};
 function autoFood022StorageLoadNew() {
   if(localStorage.getItem("food022Storage") === null) {
     localStorage.setItem("food022Storage", "0");
@@ -967,7 +967,7 @@ function autoFood022StorageLoadNew() {
   }else{
     return false;
   }
-}
+};
 function autoFood023StorageLoadNew() {
   if(localStorage.getItem("food023Storage") === null) {
     localStorage.setItem("food023Storage", "0");
@@ -979,7 +979,7 @@ function autoFood023StorageLoadNew() {
   }else{
     return false;
   }
-}
+};
 function autoFood024StorageLoadNew() {
   if(localStorage.getItem("food024Storage") === null) {
     localStorage.setItem("food024Storage", "0");
@@ -991,7 +991,7 @@ function autoFood024StorageLoadNew() {
   }else{
     return false;
   }
-}
+};
 function autoFood025StorageLoadNew() {
   if(localStorage.getItem("food025Storage") === null) {
     localStorage.setItem("food025Storage", "0");
@@ -1003,7 +1003,7 @@ function autoFood025StorageLoadNew() {
   }else{
     return false;
   }
-}
+};
 function autoFood026StorageLoadNew() {
   if(localStorage.getItem("food026Storage") === null) {
     localStorage.setItem("food026Storage", "0");
@@ -1015,7 +1015,7 @@ function autoFood026StorageLoadNew() {
   }else{
     return false;
   }
-}
+};
 function autoFood027StorageLoadNew() {
   if(localStorage.getItem("food027Storage") === null) {
     localStorage.setItem("food027Storage", "0");
@@ -1027,7 +1027,7 @@ function autoFood027StorageLoadNew() {
   }else{
     return false;
   }
-}
+};
 function autoFood028StorageLoadNew() {
   if(localStorage.getItem("food028Storage") === null) {
     localStorage.setItem("food028Storage", "0");
@@ -1039,7 +1039,7 @@ function autoFood028StorageLoadNew() {
   }else{
     return false;
   }
-}
+};
 function autoFood029StorageLoadNew() {
   if(localStorage.getItem("food029Storage") === null) {
     localStorage.setItem("food029Storage", "0");
@@ -1051,7 +1051,7 @@ function autoFood029StorageLoadNew() {
   }else{
     return false;
   }
-}
+};
 function autoFood030StorageLoadNew() {
   if(localStorage.getItem("food030Storage") === null) {
     localStorage.setItem("food030Storage", "0");
@@ -1063,7 +1063,7 @@ function autoFood030StorageLoadNew() {
   }else{
     return false;
   }
-}
+};
 function autoFood031StorageLoadNew() {
   if(localStorage.getItem("food031Storage") === null) {
     localStorage.setItem("food031Storage", "0");
@@ -1075,7 +1075,7 @@ function autoFood031StorageLoadNew() {
   }else{
     return false;
   }
-}
+};
 function autoFood032StorageLoadNew() {
   if(localStorage.getItem("food032Storage") === null) {
     localStorage.setItem("food032Storage", "0");
@@ -1087,7 +1087,7 @@ function autoFood032StorageLoadNew() {
   }else{
     return false;
   }
-}
+};
 function autoFood033StorageLoadNew() {
   if(localStorage.getItem("food033Storage") === null) {
     localStorage.setItem("food033Storage", "0");
@@ -1099,7 +1099,7 @@ function autoFood033StorageLoadNew() {
   }else{
     return false;
   }
-}
+};
 function autoFood034StorageLoadNew() {
   if(localStorage.getItem("food034Storage") === null) {
     localStorage.setItem("food034Storage", "0");
@@ -1111,7 +1111,7 @@ function autoFood034StorageLoadNew() {
   }else{
     return false;
   }
-}
+};
 function autoFood035StorageLoadNew() {
   if(localStorage.getItem("food035Storage") === null) {
     localStorage.setItem("food035Storage", "0");
@@ -1123,7 +1123,7 @@ function autoFood035StorageLoadNew() {
   }else{
     return false;
   }
-}
+};
 function autoFood036StorageLoadNew() {
   if(localStorage.getItem("food036Storage") === null) {
     localStorage.setItem("food036Storage", "0");
@@ -1135,7 +1135,7 @@ function autoFood036StorageLoadNew() {
   }else{
     return false;
   }
-}
+};
 function autoFood037StorageLoadNew() {
   if(localStorage.getItem("food037Storage") === null) {
     localStorage.setItem("food037Storage", "0");
@@ -1147,7 +1147,7 @@ function autoFood037StorageLoadNew() {
   }else{
     return false;
   }
-}
+};
 function autoFood038StorageLoadNew() {
   if(localStorage.getItem("food038Storage") === null) {
     localStorage.setItem("food038Storage", "0");
@@ -1159,7 +1159,7 @@ function autoFood038StorageLoadNew() {
   }else{
     return false;
   }
-}
+};
 function autoFood039StorageLoadNew() {
   if(localStorage.getItem("food039Storage") === null) {
     localStorage.setItem("food039Storage", "0");
@@ -1171,7 +1171,7 @@ function autoFood039StorageLoadNew() {
   }else{
     return false;
   }
-}
+};
 function autoFood040StorageLoadNew() {
   if(localStorage.getItem("food040Storage") === null) {
     localStorage.setItem("food040Storage", "0");
@@ -1183,7 +1183,7 @@ function autoFood040StorageLoadNew() {
   }else{
     return false;
   }
-}
+};
 function autoFood041StorageLoadNew() {
   if(localStorage.getItem("food041Storage") === null) {
     localStorage.setItem("food041Storage", "0");
@@ -1195,7 +1195,7 @@ function autoFood041StorageLoadNew() {
   }else{
     return false;
   }
-}
+};
 function autoFood042StorageLoadNew() {
   if(localStorage.getItem("food042Storage") === null) {
     localStorage.setItem("food042Storage", "0");
@@ -1207,7 +1207,7 @@ function autoFood042StorageLoadNew() {
   }else{
     return false;
   }
-}
+};
 function autoFood043StorageLoadNew() {
   if(localStorage.getItem("food043Storage") === null) {
     localStorage.setItem("food043Storage", "0");
@@ -1219,7 +1219,7 @@ function autoFood043StorageLoadNew() {
   }else{
     return false;
   }
-}
+};
 function autoFood044StorageLoadNew() {
   if(localStorage.getItem("food044Storage") === null) {
     localStorage.setItem("food044Storage", "0");
@@ -1231,7 +1231,7 @@ function autoFood044StorageLoadNew() {
   }else{
     return false;
   }
-}
+};
 function autoFood045StorageLoadNew() {
   if(localStorage.getItem("food045Storage") === null) {
     localStorage.setItem("food045Storage", "0");
@@ -1243,7 +1243,7 @@ function autoFood045StorageLoadNew() {
   }else{
     return false;
   }
-}
+};
 function autoFood046StorageLoadNew() {
   if(localStorage.getItem("food046Storage") === null) {
     localStorage.setItem("food046Storage", "0");
@@ -1255,7 +1255,7 @@ function autoFood046StorageLoadNew() {
   }else{
     return false;
   }
-}
+};
 function autoFood047StorageLoadNew() {
   if(localStorage.getItem("food047Storage") === null) {
     localStorage.setItem("food047Storage", "0");
@@ -1267,7 +1267,7 @@ function autoFood047StorageLoadNew() {
   }else{
     return false;
   }
-}
+};
 function autoFood048StorageLoadNew() {
   if(localStorage.getItem("food048Storage") === null) {
     localStorage.setItem("food048Storage", "0");
@@ -1279,7 +1279,7 @@ function autoFood048StorageLoadNew() {
   }else{
     return false;
   }
-}
+};
 function autoFood049StorageLoadNew() {
   if(localStorage.getItem("food049Storage") === null) {
     localStorage.setItem("food049Storage", "0");
@@ -1291,7 +1291,7 @@ function autoFood049StorageLoadNew() {
   }else{
     return false;
   }
-}
+};
 function autoFood050StorageLoadNew() {
   if(localStorage.getItem("food050Storage") === null) {
     localStorage.setItem("food050Storage", "0");
@@ -1303,7 +1303,7 @@ function autoFood050StorageLoadNew() {
   }else{
     return false;
   }
-}
+};
 function autoFood051StorageLoadNew() {
   if(localStorage.getItem("food051Storage") === null) {
     localStorage.setItem("food051Storage", "0");
@@ -1315,7 +1315,7 @@ function autoFood051StorageLoadNew() {
   }else{
     return false;
   }
-}
+};
 function autoFood052StorageLoadNew() {
   if(localStorage.getItem("food052Storage") === null) {
     localStorage.setItem("food052Storage", "0");
@@ -1327,7 +1327,7 @@ function autoFood052StorageLoadNew() {
   }else{
     return false;
   }
-}
+};
 function autoFood053StorageLoadNew() {
   if(localStorage.getItem("food053Storage") === null) {
     localStorage.setItem("food053Storage", "0");
@@ -1339,7 +1339,7 @@ function autoFood053StorageLoadNew() {
   }else{
     return false;
   }
-}
+};
 function autoFood054StorageLoadNew() {
   if(localStorage.getItem("food054Storage") === null) {
     localStorage.setItem("food054Storage", "0");
@@ -1351,7 +1351,7 @@ function autoFood054StorageLoadNew() {
   }else{
     return false;
   }
-}
+};
 function autoFood055StorageLoadNew() {
   if(localStorage.getItem("food055Storage") === null) {
     localStorage.setItem("food055Storage", "0");
@@ -1363,7 +1363,7 @@ function autoFood055StorageLoadNew() {
   }else{
     return false;
   }
-}
+};
 function autoFood056StorageLoadNew() {
   if(localStorage.getItem("food056Storage") === null) {
     localStorage.setItem("food056Storage", "0");
@@ -1375,7 +1375,7 @@ function autoFood056StorageLoadNew() {
   }else{
     return false;
   }
-}
+};
 function autoFood057StorageLoadNew() {
   if(localStorage.getItem("food057Storage") === null) {
     localStorage.setItem("food057Storage", "0");
@@ -1387,7 +1387,7 @@ function autoFood057StorageLoadNew() {
   }else{
     return false;
   }
-}
+};
 function autoFood058StorageLoadNew() {
   if(localStorage.getItem("food058Storage") === null) {
     localStorage.setItem("food058Storage", "0");
@@ -1399,7 +1399,7 @@ function autoFood058StorageLoadNew() {
   }else{
     return false;
   }
-}
+};
 function autoFood059StorageLoadNew() {
   if(localStorage.getItem("food059Storage") === null) {
     localStorage.setItem("food059Storage", "0");
@@ -1411,7 +1411,7 @@ function autoFood059StorageLoadNew() {
   }else{
     return false;
   }
-}
+};
 function autoFood060StorageLoadNew() {
   if(localStorage.getItem("food060Storage") === null) {
     localStorage.setItem("food060Storage", "0");
@@ -1423,7 +1423,7 @@ function autoFood060StorageLoadNew() {
   }else{
     return false;
   }
-}
+};
 function autoFood061StorageLoadNew() {
   if(localStorage.getItem("food061Storage") === null) {
     localStorage.setItem("food061Storage", "0");
@@ -1435,7 +1435,7 @@ function autoFood061StorageLoadNew() {
   }else{
     return false;
   }
-}
+};
 function autoFood062StorageLoadNew() {
   if(localStorage.getItem("food062Storage") === null) {
     localStorage.setItem("food062Storage", "0");
@@ -1447,7 +1447,7 @@ function autoFood062StorageLoadNew() {
   }else{
     return false;
   }
-}
+};
 function autoFood063StorageLoadNew() {
   if(localStorage.getItem("food063Storage") === null) {
     localStorage.setItem("food063Storage", "0");
@@ -1459,7 +1459,7 @@ function autoFood063StorageLoadNew() {
   }else{
     return false;
   }
-}
+};
 function autoFood064StorageLoadNew() {
   if(localStorage.getItem("food064Storage") === null) {
     localStorage.setItem("food064Storage", "0");
@@ -1471,7 +1471,7 @@ function autoFood064StorageLoadNew() {
   }else{
     return false;
   }
-}
+};
 function autoFood065StorageLoadNew() {
   if(localStorage.getItem("food065Storage") === null) {
     localStorage.setItem("food065Storage", "0");
@@ -1483,7 +1483,7 @@ function autoFood065StorageLoadNew() {
   }else{
     return false;
   }
-}
+};
 function autoFood066StorageLoadNew() {
   if(localStorage.getItem("food066Storage") === null) {
     localStorage.setItem("food066Storage", "0");
@@ -1495,7 +1495,7 @@ function autoFood066StorageLoadNew() {
   }else{
     return false;
   }
-}
+};
 function autoFood067StorageLoadNew() {
   if(localStorage.getItem("food067Storage") === null) {
     localStorage.setItem("food067Storage", "0");
@@ -1507,7 +1507,7 @@ function autoFood067StorageLoadNew() {
   }else{
     return false;
   }
-}
+};
 function autoFood068StorageLoadNew() {
   if(localStorage.getItem("food068Storage") === null) {
     localStorage.setItem("food068Storage", "0");
@@ -1519,7 +1519,7 @@ function autoFood068StorageLoadNew() {
   }else{
     return false;
   }
-}
+};
 function autoFood069StorageLoadNew() {
   if(localStorage.getItem("food069Storage") === null) {
     localStorage.setItem("food069Storage", "0");
@@ -1531,7 +1531,7 @@ function autoFood069StorageLoadNew() {
   }else{
     return false;
   }
-}
+};
 function autoFood070StorageLoadNew() {
   if(localStorage.getItem("food070Storage") === null) {
     localStorage.setItem("food070Storage", "0");
@@ -1543,7 +1543,7 @@ function autoFood070StorageLoadNew() {
   }else{
     return false;
   }
-}
+};
 function autoFood071StorageLoadNew() {
   if(localStorage.getItem("food071Storage") === null) {
     localStorage.setItem("food071Storage", "0");
@@ -1555,7 +1555,7 @@ function autoFood071StorageLoadNew() {
   }else{
     return false;
   }
-}
+};
 function autoFood072StorageLoadNew() {
   if(localStorage.getItem("food072Storage") === null) {
     localStorage.setItem("food072Storage", "0");
@@ -1567,7 +1567,7 @@ function autoFood072StorageLoadNew() {
   }else{
     return false;
   }
-}
+};
 function autoFood073StorageLoadNew() {
   if(localStorage.getItem("food073Storage") === null) {
     localStorage.setItem("food073Storage", "0");
@@ -1579,7 +1579,7 @@ function autoFood073StorageLoadNew() {
   }else{
     return false;
   }
-}
+};
 function autoFood074StorageLoadNew() {
   if(localStorage.getItem("food074Storage") === null) {
     localStorage.setItem("food074Storage", "0");
@@ -1591,7 +1591,7 @@ function autoFood074StorageLoadNew() {
   }else{
     return false;
   }
-}
+};
 function autoFood075StorageLoadNew() {
   if(localStorage.getItem("food075Storage") === null) {
     localStorage.setItem("food075Storage", "0");
@@ -1603,7 +1603,7 @@ function autoFood075StorageLoadNew() {
   }else{
     return false;
   }
-}
+};
 function autoFood076StorageLoadNew() {
   if(localStorage.getItem("food076Storage") === null) {
     localStorage.setItem("food076Storage", "0");
@@ -1615,7 +1615,7 @@ function autoFood076StorageLoadNew() {
   }else{
     return false;
   }
-}
+};
 function autoFood077StorageLoadNew() {
   if(localStorage.getItem("food077Storage") === null) {
     localStorage.setItem("food077Storage", "0");
@@ -1627,7 +1627,7 @@ function autoFood077StorageLoadNew() {
   }else{
     return false;
   }
-}
+};
 function autoLoadingAnimLogoLoadNew() {
   if(localStorage.getItem("loadingStyle") === null) {
     localStorage.setItem("loadingStyle", "classic");
@@ -1639,7 +1639,7 @@ function autoLoadingAnimLogoLoadNew() {
   }else{
     return false;
   }
-}
+};
 function autoAmbientCheckLoadNew() {
   if(localStorage.getItem("ambients") === null) {
     localStorage.setItem("ambients", "true");
@@ -1651,7 +1651,7 @@ function autoAmbientCheckLoadNew() {
   }else{
     return false;
   }
-}
+};
 function autoSnakeColorerLoadNew() {
   if(localStorage.getItem("snakeColor") === null) {
     localStorage.setItem("snakeColor", "#ddaaff");
@@ -1663,7 +1663,7 @@ function autoSnakeColorerLoadNew() {
   }else{
     return false;
   }
-}
+};
 function autoSnakeLettersLoadNew() {
   if(localStorage.getItem("snakeLetter") === null) {
     localStorage.setItem("snakeLetter", " ");
@@ -1675,7 +1675,7 @@ function autoSnakeLettersLoadNew() {
   }else{
     return false;
   }
-}
+};
 function levelsSystem() {
   var star = document.getElementById("star");
   var substar = document.getElementById("substar");
@@ -1704,7 +1704,7 @@ function levelsSystem() {
     document.getElementById("leaguelevel").innerHTML = "5";
     document.getElementById("subleaguelevel").innerHTML = "5";
   }
-};
+}
 levelsSystem();
 function leagueSystem() {
   if(localStorage.getItem("high-score") == "0" || localStorage.getItem("high-score") == null) {
@@ -2079,7 +2079,7 @@ function leagueSystem() {
     star.classList.add("alphaknight");
     substar.classList.add("alphaknight");
   }
-};
+}
 leagueSystem();
 function changeControllerType() {
   if(document.getElementById("cTypeChenger").value === document.getElementById("cTypeChenger").value) {
@@ -2144,61 +2144,44 @@ function loadControllerType() {
     let touchStartY = null;
     const SWIPE_THRESHOLD = 20; // Adjust this value as needed
     // Get the game canvas or the element that will capture swipes
-    const gameCanvas = document.body; // Replace with your canvas ID
+    const gameCanvas = document.getElementById("touchBoard"); // Replace with your canvas ID
     gameCanvas.addEventListener('touchstart', (event) => {
       touchStartX = event.touches[0].clientX;
       touchStartY = event.touches[0].clientY;
     });
     gameCanvas.addEventListener('touchend', (event) => {
-      if(document.getElementById("menu").style.display === "none" ||
-      document.getElementById("loading").style.display === "none" ||
-      document.getElementById("alert").style.display === "none" ||
-      document.getElementById("loseModal").style.display === "none" ||
-      document.getElementById("firstModal").style.display === "none" ||
-      document.getElementById("firstModal").style.display === "none" ||
-      document.getElementById("updateModal").style.display === "none") {
-        const touchScreen = document.getElementById("cTypeChenger");
-        if(touchScreen.value === "swap") {
-          if (touchStartX === null || touchStartY === null) {
-            return;
-          }
-          const touchEndX = event.changedTouches[0].clientX;
-          const touchEndY = event.changedTouches[0].clientY;
-          const deltaX = touchEndX - touchStartX;
-          const deltaY = touchEndY - touchStartY;
-          // Determine the swipe direction based on the larger displacement
-          if (Math.abs(deltaX) > Math.abs(deltaY) && Math.abs(deltaX) > SWIPE_THRESHOLD) {
-            // Horizontal swipe
-            if (deltaX < 0) {
-              // Swiped Left
-              document.getElementById("left").click();
-            } else {
-              // Swiped Right
-              document.getElementById("right").click();
-            }
-          } else if (Math.abs(deltaY) > Math.abs(deltaX) && Math.abs(deltaY) > SWIPE_THRESHOLD) {
-            // Vertical swipe
-            if (deltaY < 0) {
-              // Swiped Up
-              document.getElementById("up").click();
-            } else {
-              // Swiped Down
-              document.getElementById("down").click();
-            }
-          }
-          // Reset touch coordinates
-          touchStartX = null;
-          touchStartY = null;
+      const touchScreen = document.getElementById("cTypeChenger");
+      if(touchScreen.value === "swap") {
+        if (touchStartX === null || touchStartY === null) {
+          return;
         }
-      }else
-      if(document.getElementById("menu").style.display === "block" ||
-      document.getElementById("loading").style.display === "block" ||
-      document.getElementById("alert").style.display === "block" ||
-      document.getElementById("loseModal").style.display === "block" ||
-      document.getElementById("firstModal").style.display === "block" ||
-      document.getElementById("firstModal").style.display === "block" ||
-      document.getElementById("updateModal").style.display === "block") {
-        console.log("Cannot move wile some content is opened.");
+        const touchEndX = event.changedTouches[0].clientX;
+        const touchEndY = event.changedTouches[0].clientY;
+        const deltaX = touchEndX - touchStartX;
+        const deltaY = touchEndY - touchStartY;
+        // Determine the swipe direction based on the larger displacement
+        if (Math.abs(deltaX) > Math.abs(deltaY) && Math.abs(deltaX) > SWIPE_THRESHOLD) {
+          // Horizontal swipe
+          if (deltaX < 0) {
+            // Swiped Left
+            document.getElementById("left").click();
+          } else {
+            // Swiped Right
+            document.getElementById("right").click();
+          }
+        } else if (Math.abs(deltaY) > Math.abs(deltaX) && Math.abs(deltaY) > SWIPE_THRESHOLD) {
+          // Vertical swipe
+          if (deltaY < 0) {
+            // Swiped Up
+            document.getElementById("up").click();
+          } else {
+            // Swiped Down
+            document.getElementById("down").click();
+          }
+        }
+        // Reset touch coordinates
+        touchStartX = null;
+        touchStartY = null;
       }
     });
     document.getElementById("cTypeChenger").value = "swap";
@@ -2218,8 +2201,9 @@ function loadControllerType() {
     document.getElementById("ccLang").setAttribute("locked", "true");
     document.getElementById("clLang").setAttribute("locked", "true");
     document.getElementById("crLang").setAttribute("locked", "true");
+    document.getElementById("touchBoard").style.display = "block";
   }
-};
+}
 loadControllerType();
 function menuPauseWalkSound() {
   if(localStorage.getItem("movementbg") === "playerWalk") {
@@ -2421,7 +2405,7 @@ function loadingAnimationLoader() {
     document.getElementById("loadNakanoCon").classList.add("activet");
     document.getElementById("loadingContiner").style.height = "192px";
   }
-};
+}
 loadingAnimationLoader();
 function openRange(evt, rangeName) {
   var i, menuscroller;
@@ -2439,12 +2423,14 @@ document.addEventListener('DOMContentLoaded', function() {
   const scrollableElementD = document.getElementById('food');
   const scrollableElementE = document.getElementById('board');
   const scrollableElementF = document.getElementById('audio');
+  const scrollableElementG = document.getElementById('game');
   const scrollRangeA = document.getElementById('conOne');
   const scrollRangeB = document.getElementById('conTwo');
   const scrollRangeC = document.getElementById('conThree');
   const scrollRangeD = document.getElementById('conFour');
   const scrollRangeE = document.getElementById('conFive');
   const scrollRangeF = document.getElementById('conSix');
+  const scrollRangeG = document.getElementById('conSeven');
   scrollRangeA.addEventListener('input', function() {
     const percentage = this.value;
     const maxScrollTop = scrollableElementA.scrollHeight - scrollableElementA.clientHeight;
@@ -2480,6 +2466,12 @@ document.addEventListener('DOMContentLoaded', function() {
     const maxScrollTop = scrollableElementF.scrollHeight - scrollableElementF.clientHeight;
     const scrollTopPosition = (percentage / 100) * maxScrollTop;
     scrollableElementF.scrollTop = scrollTopPosition;
+  });
+  scrollRangeG.addEventListener('input', function() {
+    const percentage = this.value;
+    const maxScrollTop = scrollableElementG.scrollHeight - scrollableElementG.clientHeight;
+    const scrollTopPosition = (percentage / 100) * maxScrollTop;
+    scrollableElementG.scrollTop = scrollTopPosition;
   });
   scrollableElementA.addEventListener('scroll', function() {
     const maxScrollTop = this.scrollHeight - this.clientHeight;
@@ -2517,6 +2509,12 @@ document.addEventListener('DOMContentLoaded', function() {
     const scrollPercentage = (currentScrollTop / maxScrollTop) * 100;
     scrollRangeF.value = scrollPercentage;
   });
+  scrollableElementG.addEventListener('scroll', function() {
+    const maxScrollTop = this.scrollHeight - this.clientHeight;
+    const currentScrollTop = this.scrollTop;
+    const scrollPercentage = (currentScrollTop / maxScrollTop) * 100;
+    scrollRangeG.value = scrollPercentage;
+  });
 });
 function saveAmbientChecker() {
   if(document.getElementById("ambientChecker").checked === true) {
@@ -2524,7 +2522,7 @@ function saveAmbientChecker() {
   }else{
     localStorage.setItem("ambients", "false");
   }
-}
+};
 window.addEventListener('load', function() {
   loadTextures();
   updateTextLangs();
@@ -2730,7 +2728,7 @@ window.addEventListener('load', function() {
 });
 window.oncontextmenu=function(){
   return false
-}
+};
 window.onerror=function(){
   if(localStorage.getItem("lang") === "en") {
     alert("Something error.., Tell us if this alert is jump.");

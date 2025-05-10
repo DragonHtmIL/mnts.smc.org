@@ -123,11 +123,11 @@ if(localStorage.getItem("lang") === "he") {
 }else
 if(localStorage.getItem("lang") === "de") {
   highScoreElement.innerText = `hohes punktzahl: ${highScore}`;
-}
+};
 const updateFoodPosition = () => {
   foodX = Math.floor(Math.random() * 30) + 1;
   foodY = Math.floor(Math.random() * 30) + 1;
-}
+};
 const handleGameOver = () => {
   document.getElementById("loseModal").style.display = "block";
   document.getElementById("loseScore").innerHTML = scoreElement.innerText;
@@ -189,7 +189,7 @@ const handleGameOver = () => {
     if(localStorage.getItem("lang") === "de") {
       document.getElementById("loseNewRecordScore").innerHTML = "Glückwunsch, Sie haben einen neuen Rekord aufgestellt!";
     }
-  }
+  };
   if(localStorage.getItem("movementbg") === "playerWalk") {
     document.getElementById("playerWalk").pause();
   }else
@@ -305,7 +305,6 @@ const handleGameOver = () => {
     document.getElementById("tempestWalk").pause();
   }
 };
-
 const changeDirection = e => {
   if(e.key === "ArrowUp" && velocityY != 1) {
     velocityX = 0;
@@ -372,7 +371,7 @@ const changeDirection = e => {
       return false;
     }
   }
-}
+};
 controls.forEach(button => button.addEventListener("click", () => changeDirection({ key: button.dataset.key })));
 const initGame = () => {
   if(gameOver) return handleGameOver();
@@ -853,26 +852,26 @@ const initGame = () => {
       document.getElementById("collected077Food").innerHTML = food_id_077;
       localStorage.setItem("food077Storage", food_id_077);
     }
-  }
+  };
   snakeX += velocityX;
   snakeY += velocityY;
   for (let i = snakeBody.length - 1; i > 0; i--) {
     snakeBody[i] = snakeBody[i - 1];
-  }
+  };
   snakeBody[0] = [snakeX, snakeY];
   if(snakeX <= 0 || snakeX > 30 || snakeY <= 0 || snakeY > 30) {
     return gameOver = true;
-  }
+  };
   for (let i = 0; i < snakeBody.length; i++) {
     html += `<div class="head ltr` + localStorage.getItem("snakeLetter") + `" style="grid-area:${snakeBody[i][1]}/${snakeBody[i][0]}` + `;background-color:` + localStorage.getItem("snakeColor") + `;"></div>`;
     if (i !== 0 && snakeBody[0][1] === snakeBody[i][1] && snakeBody[0][0] === snakeBody[i][0]) {
       gameOver = true;
     }
-  }
+  };
   playBoard.innerHTML = html;
   levelsSystem();
   leagueSystem();
-}
+};
 updateFoodPosition();
 if(localStorage.getItem("difficulty") === "normal") {
   setIntervalId = setInterval(initGame, 140);
@@ -1338,5 +1337,5 @@ if(localStorage.getItem("difficulty") === "") {
   if(localStorage.getItem("movementbg") === "tempestWalk") {
     document.getElementById("tempestWalk").playbackRate = 1.0;
   }
-}
+};
 document.addEventListener("keydown", changeDirection);

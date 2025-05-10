@@ -398,7 +398,7 @@ function loadTextures() {
       }
     });
     document.getElementById("loadedbar").appendChild(assetboard);
-  }
+  };
   for(var food = 0; food < tassetFoods.length; food++) {
     const assetFood = document.createElement('img');
     assetFood.src = foods + tassetFoods[food] + png;
@@ -439,7 +439,7 @@ function loadTextures() {
       }
     });
     document.getElementById("loadedbar").appendChild(assetFood);
-  }
+  };
   for(var gui = 0; gui < tassetGuis.length; gui++) {
     const assetGui = document.createElement('img');
     assetGui.src = guis + tassetGuis[gui] + png;
@@ -480,7 +480,7 @@ function loadTextures() {
       }
     });
     document.getElementById("loadedbar").appendChild(assetGui);
-  }
+  };
   for(var league = 0; league < tassetLeagues.length; league++) {
     const assetLeague = document.createElement('img');
     assetLeague.src = leagues + tassetLeagues[league] + png;
@@ -521,7 +521,7 @@ function loadTextures() {
       }
     });
     document.getElementById("loadedbar").appendChild(assetLeague);
-  }
+  };
   for(var snake = 0; snake < tassetSnakes.length; snake++) {
     const assetSnake = document.createElement('img');
     assetSnake.src = snakes + tassetSnakes[snake] + png;
@@ -562,7 +562,7 @@ function loadTextures() {
       }
     });
     document.getElementById("loadedbar").appendChild(assetSnake);
-  }
+  };
   for(var system = 0; system < tassetSystems.length; system++) {
     const assetSystem = document.createElement('img');
     assetSystem.src = systems + tassetSystems[system] + png;
@@ -603,7 +603,7 @@ function loadTextures() {
       }
     });
     document.getElementById("loadedbar").appendChild(assetSystem);
-  }
+  };
   for(var loadinglogo = 0; loadinglogo < tassetLoadingLogos.length; loadinglogo++) {
     const assetLoadingLogo = document.createElement('img');
     assetLoadingLogo.src = loadingLogos + tassetLoadingLogos[loadinglogo] + gif;
@@ -644,7 +644,7 @@ function loadTextures() {
       }
     });
     document.getElementById("loadedbar").appendChild(assetLoadingLogo);
-  }
+  };
   for(var cursor = 0; cursor < tassetCursors.length; cursor++) {
     const assetCursor = document.createElement('img');
     assetCursor.src = cursors + tassetCursors[cursor] + png;
@@ -685,11 +685,11 @@ function loadTextures() {
       }
     });
     document.getElementById("loadedbar").appendChild(assetCursor);
-  }
-}
+  };
+};
 function toDisplayNone() {
   if(document.getElementById('widther').style.width === "32.3%") {
     alertAccept();
     document.getElementById("loading").style.display = "none";
   }
-}
+};

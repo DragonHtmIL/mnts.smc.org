@@ -13,7 +13,7 @@ function languagesContents() {
   var a011 = document.getElementById("langsLangs");
   var a012 = document.getElementById("boardMapAlphaLang");
   var a013 = document.getElementById("boardMapOrigoLang");
-//  var a014 = document.getElementById("");
+  var a014 = document.getElementById("gameTab");
   var a015 = document.getElementById("uploadDataLang");
   var a016 = document.getElementById("saveProgDataViafile");
   var a017 = document.getElementById("meowLang");
@@ -97,7 +97,7 @@ function languagesContents() {
     a011.innerHTML = "Languages:";
     a012.innerHTML = "Alpha City Map";
     a013.innerHTML = "Origo Island Map";
-//    a014.value = "";
+    a014.innerHTML = "Game";
     a015.innerHTML = "Load data via file (.js)";
     a016.value = "Save data on file";
     a017.innerHTML = "Meow Token";
@@ -215,7 +215,7 @@ function languagesContents() {
     a011.innerHTML = "Языки:";
     a012.innerHTML = "Карта города Альфа";
     a013.innerHTML = "Карта острова Ориго";
-//    a014.value = "";
+    a014.innerHTML = "Игра";
     a015.innerHTML = "Загрузка данных через файл (.js)";
     a016.value = "Сохранить данные в файле";
     a017.innerHTML = "Мяу-жетон";
@@ -333,7 +333,7 @@ function languagesContents() {
     a011.innerHTML = "言語：";
     a012.innerHTML = "アルファシティマップ";
     a013.innerHTML = "オリゴ島の地図";
-//    a014.value = "";
+    a014.innerHTML = "ゲーム";
     a015.innerHTML = "ファイル（.js）経由でデータを読み込む";
     a016.value = "データをファイルに保存する";
     a017.innerHTML = "ニャートークン";
@@ -452,7 +452,7 @@ function languagesContents() {
     a011.innerHTML = "语言：";
     a012.innerHTML = "阿尔法城地图";
     a013.innerHTML = "奥里戈岛地图";
-//    a014.value = "";
+    a014.innerHTML = "游戏";
     a015.innerHTML = "通过文件（.js）加载数据";
     a016.value = "将数据保存在文件中";
     a017.innerHTML = "喵币";
@@ -570,7 +570,7 @@ function languagesContents() {
     a011.innerHTML = "語言：";
     a012.innerHTML = "阿爾法城地圖";
     a013.innerHTML = "奧里戈島地圖";
-//    a014.value = "";
+    a014.innerHTML = "遊戲";
     a015.innerHTML = "透過檔案（.js）載入數據";
     a016.innerHTML = "將資料保存在文件中";
     a017.innerHTML = "喵幣";
@@ -688,7 +688,7 @@ function languagesContents() {
     a011.innerHTML = "언어:";
     a012.innerHTML = "알파 시티 지도";
     a013.innerHTML = "오리고 섬 지도";
-//    a014.value = "";
+    a014.innerHTML = "게임";
     a015.innerHTML = "파일(.js)을 통해 데이터 로드";
     a016.innerHTML = "파일에 데이터 저장";
     a017.innerHTML = "야옹 토큰";
@@ -810,7 +810,7 @@ function languagesContents() {
     a011.style.textAlign = "right";
     a012.innerHTML = "מפת עיר אלפא";
     a013.innerHTML = "מפת אי אוריגו";
-//    a014.value = "";
+    a014.innerHTML = "משחק";
     a015.innerHTML = "טעינת נתונים דרך קובץ (.js)";
     a015.style.direction = "rtl";
     a016.value = "שמירת נתונים בקובץ";
@@ -964,7 +964,7 @@ function languagesContents() {
     a011.innerHTML = "Sprachen:";
     a012.innerHTML = "Alpha-Stadtplan";
     a013.innerHTML = "Karte der Insel Origo";
-//    a014.value = "";
+    a014.innerHTML = "Spiel";
     a015.innerHTML = "Daten per Datei laden (.js)";
     a016.value = "Daten in Datei speichern";
     a017.innerHTML = "Miau-Token";
@@ -1067,5 +1067,5 @@ function languagesContents() {
     }
     document.title = "Schlangen Mecha Sammler";
   }
-};
+}
 languagesContents();
