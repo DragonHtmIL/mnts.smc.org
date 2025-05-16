@@ -27,5 +27,13 @@ This site is with copyrights!<br>
 Do not distribute any of content out share the game link to friends or peoples!<br>
 and this site is free usage;
 <hr>
-  Thanks: MNTS: Codding, NetEase: Game SMC, Online Converter: Converting, Xiaomi Screen Recorder: Music, Microsoft Visual Studio Code: Codded on, Google Translate: Translate langs, GitHub: HTTPS, DragonHtmIL: Continue;
+  Thanks: MNTS,<br>
+  NetEase,<br>
+  Online Converter,<br>
+  Xiaomi Screen Recorder,<br>
+  Microsoft Visual Studio Code,<br>
+  Google Translate,<br>
+  GitHub,<br>
+  Gemini,<br>
+  DragonHtmIL;
 <hr>
