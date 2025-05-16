@@ -27,7 +27,8 @@ This site is with copyrights!<br>
 Do not distribute any of content out share the game link to friends or peoples!<br>
 and this site is free usage;
 <hr>
-  Thanks: MNTS,<br>
+  Thanks:<br>
+  MNTS,<br>
   NetEase,<br>
   Online Converter,<br>
   Xiaomi Screen Recorder,<br>
