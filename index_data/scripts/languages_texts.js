@@ -49,7 +49,7 @@ function languagesContents() {
   var a047 = document.getElementById("ifMobileLang");
   var a048 = document.getElementById("translate");
   var a049 = document.getElementById("snakeTabsound");
-//  var a050 = document.getElementById("");
+  var a050 = document.getElementById("autoScoreLang");
   var a051 = document.getElementById("profileTitleLang");
   var a052 = document.getElementById("clickable0Lang");
   var a053 = document.getElementById("cratedOn0Lang");
@@ -133,7 +133,7 @@ function languagesContents() {
     a047.innerHTML = "If users use Mobiles (Android, iPhone, iPad, Tablets)";
     a048.classList.add("g-t-en");
     a049.innerHTML = "Snake";
-//    a050.innerHTML = "";
+    a050.innerHTML = "Auto load the saved score";
     a051.innerHTML = "Collection Center";
     a052.innerHTML = "> Clickable <";
     a053.innerHTML = "Coded on: ";
@@ -251,7 +251,7 @@ function languagesContents() {
     a047.innerHTML = "Если пользователи используют мобильные (Android, iPhone, iPad, планшеты)";
     a048.classList.add("g-t-ru");
     a049.innerHTML = "Змея";
-//    a050.innerHTML = "";
+    a050.innerHTML = "Автоматически загрузить сохраненного счета";
     a051.innerHTML = "Центр сбора";
     a052.innerHTML = "> Нажемной <";
     a053.innerHTML = "Кодировано на: ";
@@ -369,7 +369,7 @@ function languagesContents() {
     a047.innerHTML = "ユーザーがモバイル（Android、iPhone、iPad、タブレット）を使用する場合";
     a048.classList.add("g-t-jp");
     a049.innerHTML = "蛇";
-//    a050.innerHTML = "";
+    a050.innerHTML = "保存したスコアを自動ロード";
     a051.innerHTML = "収集センター";
     a052.innerHTML = "> ニックネーム可能 <";
       a052.style.fontSize = "12px";
@@ -488,7 +488,7 @@ function languagesContents() {
     a047.innerHTML = "如果用户使用手机（Android、iPhone、iPad、平板电脑）";
     a048.classList.add("g-t-chs");
     a049.innerHTML = "蛇";
-//    a050.innerHTML = "";
+    a050.innerHTML = "自动加载已保存的乐谱";
     a051.innerHTML = "收集中心";
     a052.innerHTML = "> 可点击 <";
     a053.innerHTML = "编码于： ";
@@ -606,7 +606,7 @@ function languagesContents() {
     a047.innerHTML = "如果用戶使用手機（Android、iPhone、iPad、平板電腦）";
     a048.classList.add("g-t-cht");
     a049.innerHTML = "蛇";
-//    a050.innerHTML = "";
+    a050.innerHTML = "自動載入已儲存的樂譜";
     a051.innerHTML = "收集中心";
     a052.innerHTML = "> 可點擊 <";
     a053.innerHTML = "編碼於： ";
@@ -724,7 +724,7 @@ function languagesContents() {
     a047.innerHTML = "사용자가 모바일(Android, iPhone, iPad, Tablet)을 사용하는 경우";
     a048.classList.add("g-t-ko");
     a049.innerHTML = "뱀";
-//    a050.innerHTML = "";
+    a050.innerHTML = "저장된 점수를 자동으로 로드합니다";
     a051.innerHTML = "수집 센터";
     a052.innerHTML = "> 클릭 가능 <";
     a053.innerHTML = "코딩된 내용: ";
@@ -860,7 +860,7 @@ function languagesContents() {
     a047.style.textAlign = "right";
     a048.classList.add("g-t-he");
     a049.innerHTML = "נחש";
-//    a050.innerHTML = "";
+    a050.innerHTML = "טעינה אוטומטית של הציון הנשמר";
     a051.innerHTML = "מרכז איסוף";
     a051.style.textAlign = "right";
     a051.style.width = "75%";
@@ -1000,7 +1000,7 @@ function languagesContents() {
     a047.innerHTML = "Wenn Benutzer Mobilgeräte verwenden (Android, iPhone, iPad, Tablets)";
     a048.classList.add("g-t-de");
     a049.innerHTML = "Schlange";
-//    a050.innerHTML = "";
+    a050.innerHTML = "Automatisches Laden der gespeicherten Punktzahl";
     a051.innerHTML = "Sammelzentrum";
     a052.innerHTML = "> Anklickbar <";
     a053.innerHTML = "Codiert am: ";

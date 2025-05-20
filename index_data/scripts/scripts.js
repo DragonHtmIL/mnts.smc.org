@@ -15817,6 +15817,7 @@ function alertReloadLater() {
     localStorage.setItem("ambients", "true");
     localStorage.setItem("snakeColor", "#ddaaff");
     localStorage.setItem("snakeLetter", " ");
+    localStorage.setItem("autoSaveScoreCheck", "false");
     window.location.reload();
   }
   defaultClickSound();
@@ -17232,6 +17233,7 @@ function saveProgressViaFile() {
   text.value += "localStorage.setItem('reapitfood','" + localStorage.getItem('reapitfood') + "');\n";
   text.value += "localStorage.setItem('firsttime','" + localStorage.getItem('firsttime') + "');\n";
   text.value += "localStorage.setItem('updateRead','" + localStorage.getItem('updateRead') + "');\n";
+  text.value += "localStorage.setItem('currentScore','" + localStorage.getItem('currentScore') + "');\n";
   text.value += "window.location.reload();\n";
   text.value += "}";
   let valueinput = text.value;

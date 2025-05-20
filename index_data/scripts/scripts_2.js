@@ -53,6 +53,18 @@ function pauseGame() {
         document.getElementById("alertText").innerHTML = "Game paused, press ''Continue'' to continue.";
       }else{
         document.getElementById("alertText").innerHTML = "Game paused, click ''Continue'' to continue.";
+      };
+      if(velocityY === -1) {
+        document.getElementById("alertText").innerHTML += "<br>" + "You be continue to up.";
+      }else
+      if(velocityY === 1) {
+        document.getElementById("alertText").innerHTML += "<br>" + "You be continue to down.";
+      }else
+      if(velocityX === -1) {
+        document.getElementById("alertText").innerHTML += "<br>" + "You be continue to left.";
+      }else
+      if(velocityX === 1) {
+        document.getElementById("alertText").innerHTML += "<br>" + "You be continue to right.";
       }
       alertconfirm.value = "Continue";
     }else
@@ -61,6 +73,18 @@ function pauseGame() {
         document.getElementById("alertText").innerHTML = "Игра приостановлена, коснитесь ''Продолжить'', чтобы продолжить.";
       }else{
         document.getElementById("alertText").innerHTML = "Игра приостановлена, нажмите ''Продолжить'', чтобы продолжить.";
+      };
+      if(velocityY === -1) {
+        document.getElementById("alertText").innerHTML += "<br>" + "Вы будете продолжать вверх.";
+      }else
+      if(velocityY === 1) {
+        document.getElementById("alertText").innerHTML += "<br>" + "YВы будете продолжать вниз.";
+      }else
+      if(velocityX === -1) {
+        document.getElementById("alertText").innerHTML += "<br>" + "Вы будете продолжать влево.";
+      }else
+      if(velocityX === 1) {
+        document.getElementById("alertText").innerHTML += "<br>" + "Вы будете продолжать вправо.";
       }
       alertconfirm.value = "Продолжать";
     }else
@@ -69,6 +93,18 @@ function pauseGame() {
         document.getElementById("alertText").innerHTML = "ゲームは一時停止されています。続行するには「再開」をタップしてください。";
       }else{
         document.getElementById("alertText").innerHTML = "ゲームは一時停止されています。続行するには「続行」をクリックしてください。";
+      };
+      if(velocityY === -1) {
+        document.getElementById("alertText").innerHTML += "<br>" + "上へ進み続けます。";
+      }else
+      if(velocityY === 1) {
+        document.getElementById("alertText").innerHTML += "<br>" + "下へ進み続けます。";
+      }else
+      if(velocityX === -1) {
+        document.getElementById("alertText").innerHTML += "<br>" + "左へ進み続けます。";
+      }else
+      if(velocityX === 1) {
+        document.getElementById("alertText").innerHTML += "<br>" + "右へ進み続けます。";
       }
       alertconfirm.value = "続く";
     }else
@@ -77,6 +113,18 @@ function pauseGame() {
         document.getElementById("alertText").innerHTML = "游戏暂停，按“继续”继续。";
       }else{
         document.getElementById("alertText").innerHTML = "游戏暂停，点击“继续”继续。";
+      };
+      if(velocityY === -1) {
+        document.getElementById("alertText").innerHTML += "<br>" + "你继续向上。";
+      }else
+      if(velocityY === 1) {
+        document.getElementById("alertText").innerHTML += "<br>" + "你继续向下。";
+      }else
+      if(velocityX === -1) {
+        document.getElementById("alertText").innerHTML += "<br>" + "你继续向左。";
+      }else
+      if(velocityX === 1) {
+        document.getElementById("alertText").innerHTML += "<br>" + "你继续向右。";
       }
       alertconfirm.value = "继续";
     }else
@@ -85,6 +133,18 @@ function pauseGame() {
         document.getElementById("alertText").innerHTML = "遊戲暫停，按「繼續」繼續。";
       }else{
         document.getElementById("alertText").innerHTML = "遊戲暫停，點選「繼續」繼續。";
+      };
+      if(velocityY === -1) {
+        document.getElementById("alertText").innerHTML += "<br>" + "你繼續往上走吧。";
+      }else
+      if(velocityY === 1) {
+        document.getElementById("alertText").innerHTML += "<br>" + "你繼續往下走吧。";
+      }else
+      if(velocityX === -1) {
+        document.getElementById("alertText").innerHTML += "<br>" + "你繼續往左走。";
+      }else
+      if(velocityX === 1) {
+        document.getElementById("alertText").innerHTML += "<br>" + "你繼續做對吧。";
       }
       alertconfirm.value = "繼續";
     }else
@@ -93,6 +153,18 @@ function pauseGame() {
         document.getElementById("alertText").innerHTML = "게임이 일시 정지되었습니다. 계속하려면 ''계속''을 누르세요.";
       }else{
         document.getElementById("alertText").innerHTML = "게임이 일시 정지되었습니다. 계속하려면 ''계속''을 클릭하세요.";
+      };
+      if(velocityY === -1) {
+        document.getElementById("alertText").innerHTML += "<br>" + "계속 위로 가세요.";
+      }else
+      if(velocityY === 1) {
+        document.getElementById("alertText").innerHTML += "<br>" + "계속 아래로 가세요.";
+      }else
+      if(velocityX === -1) {
+        document.getElementById("alertText").innerHTML += "<br>" + "계속 왼쪽으로 가세요.";
+      }else
+      if(velocityX === 1) {
+        document.getElementById("alertText").innerHTML += "<br>" + "계속 오른쪽으로 가세요.";
       }
       alertconfirm.value = "계속하다";
     }else
@@ -101,6 +173,18 @@ function pauseGame() {
         document.getElementById("alertText").innerHTML = "משחק נעצר, גע ''המשך'' בכדי להמשיך.";
       }else{
         document.getElementById("alertText").innerHTML = "משחק נעצר, לחץ ''המשך'' בכדי להמשיך.";
+      };
+      if(velocityY === -1) {
+        document.getElementById("alertText").innerHTML += "<br>" + "אתם תמשיך למעלה.";
+      }else
+      if(velocityY === 1) {
+        document.getElementById("alertText").innerHTML += "<br>" + "אתם תמשיך למטה.";
+      }else
+      if(velocityX === -1) {
+        document.getElementById("alertText").innerHTML += "<br>" + "אתם תמשיך שמאלה.";
+      }else
+      if(velocityX === 1) {
+        document.getElementById("alertText").innerHTML += "<br>" + "אתם תמשיך ימינה.";
       }
       alertconfirm.value = "המשך";
     }else
@@ -109,6 +193,18 @@ function pauseGame() {
         document.getElementById("alertText").innerHTML = "Spiel pausiert. Drücken Sie auf „Weiter“, um fortzufahren.";
       }else{
         document.getElementById("alertText").innerHTML = "Spiel pausiert. Klicken Sie auf „Weiter“, um fortzufahren.";
+      };
+      if(velocityY === -1) {
+        document.getElementById("alertText").innerHTML += "<br>" + "Du gehst weiter nach oben.";
+      }else
+      if(velocityY === 1) {
+        document.getElementById("alertText").innerHTML += "<br>" + "Du gehst weiter nach unten.";
+      }else
+      if(velocityX === -1) {
+        document.getElementById("alertText").innerHTML += "<br>" + "Du gehst weiter nach links.";
+      }else
+      if(velocityX === 1) {
+        document.getElementById("alertText").innerHTML += "<br>" + "Du gehst weiter nach rechts.";
       }
       alertconfirm.value = "Weiter";
     }
@@ -1703,6 +1799,42 @@ function levelsSystem() {
   if(localStorage.getItem("high-score") == "9" || localStorage.getItem("high-score") == "19" || localStorage.getItem("high-score") == "29" || localStorage.getItem("high-score") == "39" || localStorage.getItem("high-score") == "49" || localStorage.getItem("high-score") == "59" || localStorage.getItem("high-score") == "69" || localStorage.getItem("high-score") == "79" || localStorage.getItem("high-score") == "80" || localStorage.getItem("high-score") == "10" || localStorage.getItem("high-score") == "20" || localStorage.getItem("high-score") == "30" || localStorage.getItem("high-score") == "40" || localStorage.getItem("high-score") == "50" || localStorage.getItem("high-score") == "60" || localStorage.getItem("high-score") == "70") {
     document.getElementById("leaguelevel").innerHTML = "5";
     document.getElementById("subleaguelevel").innerHTML = "5";
+  }else
+  if(localStorage.getItem("high-score") > "80") {
+    if(localStorage.getItem("lang") === "en") {
+      document.getElementById("leaguelevel").innerHTML = "5 (MAX)";
+      document.getElementById("subleaguelevel").innerHTML = "5 (MAX)";
+    }else
+    if(localStorage.getItem("lang") === "ru") {
+      document.getElementById("leaguelevel").innerHTML = "5 (МАКС)";
+      document.getElementById("subleaguelevel").innerHTML = "5 (МАКС)";
+    }else
+    if(localStorage.getItem("lang") === "jp") {
+      document.getElementById("leaguelevel").innerHTML = "5 （マックス）";
+      document.getElementById("subleaguelevel").innerHTML = "5 （マックス）";
+    }else
+    if(localStorage.getItem("lang") === "chs") {
+      document.getElementById("leaguelevel").innerHTML = "5 （最大限度）";
+      document.getElementById("subleaguelevel").innerHTML = "5 （最大限度）";
+    }else
+    if(localStorage.getItem("lang") === "cht") {
+      document.getElementById("leaguelevel").innerHTML = "5 （最大限度）";
+      document.getElementById("subleaguelevel").innerHTML = "5 （最大限度）";
+    }else
+    if(localStorage.getItem("lang") === "ko") {
+      document.getElementById("leaguelevel").innerHTML = "5 (MAX)";
+      document.getElementById("subleaguelevel").innerHTML = "5 (MAX)";
+      document.getElementById("leagueType").innerHTML = "알파 나이트 (최대)";
+      document.getElementById("subleagueType").innerHTML = "알파 나이트 (최대)";
+    }else
+    if(localStorage.getItem("lang") === "he") {
+      document.getElementById("leaguelevel").innerHTML = "5 (מקס)";
+      document.getElementById("subleaguelevel").innerHTML = "5 (מקס)";
+    }else
+    if(localStorage.getItem("lang") === "de") {
+      document.getElementById("leaguelevel").innerHTML = "5 (MAX)";
+      document.getElementById("subleaguelevel").innerHTML = "5 (MAX)";
+    }
   }
 }
 levelsSystem();
@@ -2076,6 +2208,44 @@ function leagueSystem() {
     }
     star.classList.remove("legendary");
     substar.classList.remove("legendary");
+    star.classList.add("alphaknight");
+    substar.classList.add("alphaknight");
+  }else
+  if(localStorage.getItem("high-score") > "80") {
+    document.getElementById("leagueImage").classList.add("alphaknight");
+    document.getElementById("subleagueImage").classList.add("alphaknight");
+    if(localStorage.getItem("lang") === "en") {
+      document.getElementById("leagueType").innerHTML = "Alpha Knight (MAX)";
+      document.getElementById("subleagueType").innerHTML = "Alpha Knight (MAX)";
+    }else
+    if(localStorage.getItem("lang") === "ru") {
+      document.getElementById("leagueType").innerHTML = "Альфа Рыцарь (МАКС)";
+      document.getElementById("subleagueType").innerHTML = "Альфа Рыцарь (МАКС)";
+    }else
+    if(localStorage.getItem("lang") === "jp") {
+      document.getElementById("leagueType").innerHTML = "アルファナイト （マックス）";
+      document.getElementById("subleagueType").innerHTML = "アルファナイト （マックス）";
+    }else
+    if(localStorage.getItem("lang") === "chs") {
+      document.getElementById("leagueType").innerHTML = "阿尔法骑士 （最大限度）";
+      document.getElementById("subleagueType").innerHTML = "阿尔法骑士 （最大限度）";
+    }else
+    if(localStorage.getItem("lang") === "cht") {
+      document.getElementById("leagueType").innerHTML = "阿爾法騎士 （最大限度）";
+      document.getElementById("subleagueType").innerHTML = "阿爾法騎士 （最大限度）";
+    }else
+    if(localStorage.getItem("lang") === "ko") {
+      document.getElementById("leagueType").innerHTML = "알파 나이트 (최대)";
+      document.getElementById("subleagueType").innerHTML = "알파 나이트 (최대)";
+    }else
+    if(localStorage.getItem("lang") === "he") {
+      document.getElementById("leagueType").innerHTML = "אביר אלפא (מקס)";
+      document.getElementById("subleagueType").innerHTML = "אביר אלפא (מקס)";
+    }else
+    if(localStorage.getItem("lang") === "de") {
+      document.getElementById("leagueType").innerHTML = "Alpha-Ritter (MAX)";
+      document.getElementById("subleagueType").innerHTML = "Alpha-Ritter (MAX)";
+    }
     star.classList.add("alphaknight");
     substar.classList.add("alphaknight");
   }
@@ -2523,6 +2693,13 @@ function saveAmbientChecker() {
     localStorage.setItem("ambients", "false");
   }
 };
+function saveAutoScoreCheckboxPhasa() {
+  if(document.getElementById("autoSaveScoreCheck").checked === true) {
+    localStorage.setItem("autoSaveScoreCheck", "true");
+  }else{
+    localStorage.setItem("autoSaveScoreCheck", "false");
+  }
+}
 window.addEventListener('load', function() {
   loadTextures();
   updateTextLangs();
@@ -2724,6 +2901,44 @@ window.addEventListener('load', function() {
     document.getElementById("ambientChecker").checked = true;
   }else{
     document.getElementById("ambientChecker").checked = false;
+  };
+  if(localStorage.getItem("autoSaveScoreCheck") === "true") {
+    document.getElementById("autoSaveScoreCheck").checked = true;
+    score = localStorage.getItem("currentScore");
+    if(localStorage.getItem("lang") === "en") {
+      scoreElement.innerText = `Score: ${score}`;
+    }else
+    if(localStorage.getItem("lang") === "ru") {
+      scoreElement.innerText = `Счет: ${score}`;
+    }else
+    if(localStorage.getItem("lang") === "jp") {
+      scoreElement.innerText = `チェック： ${score}`;
+    }else
+    if(localStorage.getItem("lang") === "chs") {
+      scoreElement.innerText = `分数： ${score}`;
+    }else
+    if(localStorage.getItem("lang") === "cht") {
+      scoreElement.innerText = `分數： ${score}`;
+    }else
+    if(localStorage.getItem("lang") === "ko") {
+      scoreElement.innerText = `점수: ${score}`;
+    }else
+    if(localStorage.getItem("lang") === "he") {
+      scoreElement.innerText = `ציון: ${score}`;
+      document.getElementById("getscore").style.textAlign = "right";
+      document.getElementById("gethighscore").style.textAlign = "right";
+    }else
+    if(localStorage.getItem("lang") === "de") {
+      scoreElement.innerText = `punktzahl: ${score}`;
+    }
+  }else{
+    document.getElementById("autoSaveScoreCheck").checked = false;
+    localStorage.setItem("currentScore", "0");
+  };
+  if(document.getElementById("autoSaveScoreCheck").checked === true) {
+    score = localStorage.getItem("currentScore");
+  }else{
+    console.log("Saved score = " + localStorage.getItem("currentScore"));
   };
 });
 window.oncontextmenu=function(){

@@ -9,7 +9,7 @@ let velocityX = 0, velocityY = 0;
 let snakeBody = [];
 let setIntervalId;
 // Scores
-let score = 0;
+let score = 0; // localStorage.getItem("currentScore") || 0;
 let meaw_token_item = localStorage.getItem("meawTokenStorage") || 0;
 let gold_item = localStorage.getItem("goldStorage") || 0;
 let alpha_coin_item = localStorage.getItem("alphaCoinStorage") || 0;
@@ -304,6 +304,8 @@ const handleGameOver = () => {
   if(localStorage.getItem("movementbg") === "tempestWalk") {
     document.getElementById("tempestWalk").pause();
   }
+  document.getElementById("chechboxPausing").setAttribute("disabled", "");
+  localStorage.setItem("currentScore", "0");
 };
 const changeDirection = e => {
   if(e.key === "ArrowUp" && velocityY != 1) {
@@ -314,6 +316,7 @@ const changeDirection = e => {
     }else{
       return false;
     }
+    document.getElementById("chechboxPausing").removeAttribute("disabled");
   } else if(e.key === "ArrowDown" && velocityY != -1) {
     velocityX = 0;
     velocityY = 1;
@@ -322,6 +325,7 @@ const changeDirection = e => {
     }else{
       return false;
     }
+    document.getElementById("chechboxPausing").removeAttribute("disabled");
   } else if(e.key === "ArrowLeft" && velocityX != 1) {
     velocityX = -1;
     velocityY = 0;
@@ -330,6 +334,7 @@ const changeDirection = e => {
     }else{
       return false;
     }
+    document.getElementById("chechboxPausing").removeAttribute("disabled");
   } else if(e.key === "ArrowRight" && velocityX != -1) {
     velocityX = 1;
     velocityY = 0;
@@ -338,6 +343,7 @@ const changeDirection = e => {
     }else{
       return false;
     }
+    document.getElementById("chechboxPausing").removeAttribute("disabled");
   } else if(e.key === "ArrowUp" && velocityY != 1) {
     velocityX = 0;
     velocityY = -1;
@@ -346,6 +352,7 @@ const changeDirection = e => {
     }else{
       return false;
     }
+    document.getElementById("chechboxPausing").removeAttribute("disabled");
   } else if(e.key === "ArrowDown" && velocityY != -1) {
     velocityX = 0;
     velocityY = 1;
@@ -354,6 +361,7 @@ const changeDirection = e => {
     }else{
       return false;
     }
+    document.getElementById("chechboxPausing").removeAttribute("disabled");
   } else if(e.key === "ArrowLeft" && velocityX != 1) {
     velocityX = -1;
     velocityY = 0;
@@ -362,6 +370,7 @@ const changeDirection = e => {
     }else{
       return false;
     }
+    document.getElementById("chechboxPausing").removeAttribute("disabled");
   } else if(e.key === "ArrowRight" && velocityX != -1) {
     velocityX = 1;
     velocityY = 0;
@@ -370,6 +379,7 @@ const changeDirection = e => {
     }else{
       return false;
     }
+    document.getElementById("chechboxPausing").removeAttribute("disabled");
   }
 };
 controls.forEach(button => button.addEventListener("click", () => changeDirection({ key: button.dataset.key })));
@@ -382,6 +392,11 @@ const initGame = () => {
     snakeBody.push([foodY, foodX]);
     score++;
     highScore = score >= highScore ? score : highScore;
+    if(document.getElementById("autoSaveScoreCheck").checked === true) {
+      localStorage.setItem("currentScore", score);
+    }else{
+      localStorage.setItem("currentScore", "0");
+    };
     localStorage.setItem("high-score", highScore);
     if(localStorage.getItem("lang") === "en") {
       scoreElement.innerText = `Score: ${score}`;
