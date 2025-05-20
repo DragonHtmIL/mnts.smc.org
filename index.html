@@ -429,7 +429,7 @@
         <div id="timeAndDateIndicator"></div>
       </div>
       <div id="navBtn" onclick="clearInterval(setIntervalId);document.getElementById('menu').style.display='block';openSettingsSound();menuPauseWalkSound();"></div>
-      <input type="checkbox" id="chechboxPausing" class="pauseBtn" onchange="pauseGame();">
+      <input type="checkbox" id="chechboxPausing" class="pauseBtn" onchange="pauseGame();" disabled>
       <div class="menu" id="menu">
         <div class="menu-content" id="menucontent">
           <div id="SettingsTitleLang">...</div>
@@ -507,6 +507,11 @@
               <div onclick="normalDifLoad();" id="normalDif" class="difficulty select">...</div>
               <div onclick="hardDifLoad();" id="hardDif" class="difficulty select">...</div>
               <div onclick="hellDifLoad();" id="hellDif" class="difficulty select">...</div>
+            </div>
+            <hr>
+            <div class="range-content">
+              <input type="checkbox" id="autoSaveScoreCheck" onclick="saveAutoScoreCheckboxPhasa();selectionSound();">
+              <label class="label-checkbox" for="autoSaveScoreCheck" id="autoScoreLang">...</label>
             </div>
           </div>
           <div id="board" class="content">
@@ -607,46 +612,46 @@
             <input type="color" id="snakeColor" oninput="snakeDecoloring();" value="#ddaaff">
             <div id="keypad">
               <div class="keypad numpad">
-                <div class="keyOboard" id="key1" onclick="letterLoad1();">1</div>
-                <div class="keyOboard" id="key2" onclick="letterLoad2();">2</div>
-                <div class="keyOboard" id="key3" onclick="letterLoad3();">3</div>
-                <div class="keyOboard" id="key4" onclick="letterLoad4();">4</div>
-                <div class="keyOboard" id="key5" onclick="letterLoad5();">5</div>
-                <div class="keyOboard" id="key6" onclick="letterLoad6();">6</div>
-                <div class="keyOboard" id="key7" onclick="letterLoad7();">7</div>
-                <div class="keyOboard" id="key8" onclick="letterLoad8();">8</div>
-                <div class="keyOboard" id="key9" onclick="letterLoad9();">9</div>
-                <div class="keyOboard" id="key0" onclick="letterLoad0();">0</div>
+                <div class="keyOboard" id="key1" onclick="letterLoad1();defaultClickSound();">1</div>
+                <div class="keyOboard" id="key2" onclick="letterLoad2();defaultClickSound();">2</div>
+                <div class="keyOboard" id="key3" onclick="letterLoad3();defaultClickSound();">3</div>
+                <div class="keyOboard" id="key4" onclick="letterLoad4();defaultClickSound();">4</div>
+                <div class="keyOboard" id="key5" onclick="letterLoad5();defaultClickSound();">5</div>
+                <div class="keyOboard" id="key6" onclick="letterLoad6();defaultClickSound();">6</div>
+                <div class="keyOboard" id="key7" onclick="letterLoad7();defaultClickSound();">7</div>
+                <div class="keyOboard" id="key8" onclick="letterLoad8();defaultClickSound();">8</div>
+                <div class="keyOboard" id="key9" onclick="letterLoad9();defaultClickSound();">9</div>
+                <div class="keyOboard" id="key0" onclick="letterLoad0();defaultClickSound();">0</div>
               </div>
               <div class="keypad wordpad">
-                <div class="keyOboard" id="keya" onclick="letterLoadAa();">a</div>
-                <div class="keyOboard" id="keyb" onclick="letterLoadBb();">b</div>
-                <div class="keyOboard" id="keyc" onclick="letterLoadCc();">c</div>
-                <div class="keyOboard" id="keyd" onclick="letterLoadDd();">d</div>
-                <div class="keyOboard" id="keye" onclick="letterLoadEe();">e</div>
-                <div class="keyOboard" id="keyf" onclick="letterLoadFf();">f</div>
-                <div class="keyOboard" id="keyg" onclick="letterLoadGg();">g</div>
-                <div class="keyOboard" id="keyh" onclick="letterLoadHh();">h</div>
-                <div class="keyOboard" id="keyi" onclick="letterLoadIi();">i</div>
-                <div class="keyOboard" id="keyj" onclick="letterLoadJj();">j</div>
-                <div class="keyOboard" id="keyk" onclick="letterLoadKk();">k</div>
-                <div class="keyOboard" id="keyl" onclick="letterLoadLl();">l</div>
-                <div class="keyOboard" id="keym" onclick="letterLoadMm();">m</div>
-                <div class="keyOboard" id="keyn" onclick="letterLoadNn();">n</div>
-                <div class="keyOboard" id="keyo" onclick="letterLoadOo();">o</div>
-                <div class="keyOboard" id="keyp" onclick="letterLoadPp();">p</div>
-                <div class="keyOboard" id="keyq" onclick="letterLoadQq();">q</div>
-                <div class="keyOboard" id="keyr" onclick="letterLoadRr();">r</div>
-                <div class="keyOboard" id="keys" onclick="letterLoadSs();">s</div>
-                <div class="keyOboard" id="keyt" onclick="letterLoadTt();">t</div>
-                <div class="keyOboard" id="keyu" onclick="letterLoadUu();">u</div>
-                <div class="keyOboard" id="keyv" onclick="letterLoadVv();">v</div>
-                <div class="keyOboard" id="keyw" onclick="letterLoadWw();">w</div>
-                <div class="keyOboard" id="keyx" onclick="letterLoadXx();">x</div>
-                <div class="keyOboard" id="keyy" onclick="letterLoadYy();">y</div>
-                <div class="keyOboard" id="keyz" onclick="letterLoadZz();">z</div>
-                <div class="keyOboard" id="keyShift" onclick="shiftLetters();">⇑</div>
-                <div class="keyOboard" id="keyClear" onclick="letterLoad();">⨱</div>
+                <div class="keyOboard" id="keya" onclick="letterLoadAa();defaultClickSound();">a</div>
+                <div class="keyOboard" id="keyb" onclick="letterLoadBb();defaultClickSound();">b</div>
+                <div class="keyOboard" id="keyc" onclick="letterLoadCc();defaultClickSound();">c</div>
+                <div class="keyOboard" id="keyd" onclick="letterLoadDd();defaultClickSound();">d</div>
+                <div class="keyOboard" id="keye" onclick="letterLoadEe();defaultClickSound();">e</div>
+                <div class="keyOboard" id="keyf" onclick="letterLoadFf();defaultClickSound();">f</div>
+                <div class="keyOboard" id="keyg" onclick="letterLoadGg();defaultClickSound();">g</div>
+                <div class="keyOboard" id="keyh" onclick="letterLoadHh();defaultClickSound();">h</div>
+                <div class="keyOboard" id="keyi" onclick="letterLoadIi();defaultClickSound();">i</div>
+                <div class="keyOboard" id="keyj" onclick="letterLoadJj();defaultClickSound();">j</div>
+                <div class="keyOboard" id="keyk" onclick="letterLoadKk();defaultClickSound();">k</div>
+                <div class="keyOboard" id="keyl" onclick="letterLoadLl();defaultClickSound();">l</div>
+                <div class="keyOboard" id="keym" onclick="letterLoadMm();defaultClickSound();">m</div>
+                <div class="keyOboard" id="keyn" onclick="letterLoadNn();defaultClickSound();">n</div>
+                <div class="keyOboard" id="keyo" onclick="letterLoadOo();defaultClickSound();">o</div>
+                <div class="keyOboard" id="keyp" onclick="letterLoadPp();defaultClickSound();">p</div>
+                <div class="keyOboard" id="keyq" onclick="letterLoadQq();defaultClickSound();">q</div>
+                <div class="keyOboard" id="keyr" onclick="letterLoadRr();defaultClickSound();">r</div>
+                <div class="keyOboard" id="keys" onclick="letterLoadSs();defaultClickSound();">s</div>
+                <div class="keyOboard" id="keyt" onclick="letterLoadTt();defaultClickSound();">t</div>
+                <div class="keyOboard" id="keyu" onclick="letterLoadUu();defaultClickSound();">u</div>
+                <div class="keyOboard" id="keyv" onclick="letterLoadVv();defaultClickSound();">v</div>
+                <div class="keyOboard" id="keyw" onclick="letterLoadWw();defaultClickSound();">w</div>
+                <div class="keyOboard" id="keyx" onclick="letterLoadXx();defaultClickSound();">x</div>
+                <div class="keyOboard" id="keyy" onclick="letterLoadYy();defaultClickSound();">y</div>
+                <div class="keyOboard" id="keyz" onclick="letterLoadZz();defaultClickSound();">z</div>
+                <div class="keyOboard" id="keyShift" onclick="shiftLetters();selectionSound();">⇑</div>
+                <div class="keyOboard" id="keyClear" onclick="letterLoad();cancelSound();">⨱</div>
               </div>
             </div>
           </div>
