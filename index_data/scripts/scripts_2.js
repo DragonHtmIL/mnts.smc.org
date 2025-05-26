@@ -2372,9 +2372,169 @@ function loadControllerType() {
     document.getElementById("clLang").setAttribute("locked", "true");
     document.getElementById("crLang").setAttribute("locked", "true");
     document.getElementById("touchBoard").style.display = "block";
+  }else
+  if(localStorage.getItem("controllerTypeDev") === "classic" && navigator.userAgent.match(/Windows/i) ||
+    localStorage.getItem("controllerTypeDev") === "dynamic" && navigator.userAgent.match(/Windows/i) ||
+    localStorage.getItem("controllerTypeDev") === "swap" && navigator.userAgent.match(/Windows/i) ||
+    localStorage.getItem("controllerTypeDev") === "classic" && navigator.userAgent.match(/Linux/i) ||
+    localStorage.getItem("controllerTypeDev") === "dynamic" && navigator.userAgent.match(/Linux/i) ||
+    localStorage.getItem("controllerTypeDev") === "swap" && navigator.userAgent.match(/Linux/i)) {
+    let startX = null;
+    let startY = null;
+    let isMouseDown = false;
+    const SWIPE_THRESHOLD = 20;
+    const gameCanvas = document.getElementById("mouseBoard");
+    gameCanvas.addEventListener('mousedown', (event) => {
+      isMouseDown = true;
+      startX = event.clientX;
+      startY = event.clientY;
+      if(gameCanvas.className === "out-controller upcur") {
+        gameCanvas.classList.remove("upcur");
+      }else
+      if(gameCanvas.className === "out-controller downcur") {
+        gameCanvas.classList.remove("downcur");
+      }else
+      if(gameCanvas.className === "out-controller rightcur") {
+        gameCanvas.classList.remove("rightcur");
+      }else
+      if(gameCanvas.className === "out-controller leftcur") {
+        gameCanvas.classList.remove("leftcur");
+      }
+    });
+    gameCanvas.addEventListener('mouseup', (event) => {
+      if (isMouseDown) {
+        const endX = event.clientX;
+        const endY = event.clientY;
+        handleSwipe(startX, startY, endX, endY);
+        isMouseDown = false;
+        startX = null;
+        startY = null;
+        if(gameCanvas.className === "out-controller upcur") {
+          gameCanvas.classList.remove("upcur");
+        }else
+        if(gameCanvas.className === "out-controller downcur") {
+          gameCanvas.classList.remove("downcur");
+        }else
+        if(gameCanvas.className === "out-controller rightcur") {
+          gameCanvas.classList.remove("rightcur");
+        }else
+        if(gameCanvas.className === "out-controller leftcur") {
+          gameCanvas.classList.remove("leftcur");
+        }
+      }
+    });
+    gameCanvas.addEventListener('mousemove', (event) => {
+      if(isMouseDown && (startX !== null && startY !== null)) {
+        const currentX = event.clientX;
+        const currentY = event.clientY;
+        const deltaX = currentX - startX;
+        const deltaY = currentY - startY;
+        if (Math.abs(deltaX) > Math.abs(deltaY)) {
+          if (deltaX < -SWIPE_THRESHOLD) {
+            gameCanvas.className = "out-controller leftcur";
+          } else if (deltaX > SWIPE_THRESHOLD) {
+            gameCanvas.className = "out-controller rightcur";
+          } else {
+            if(gameCanvas.className === "out-controller upcur") {
+              gameCanvas.classList.remove("upcur");
+            }else
+            if(gameCanvas.className === "out-controller downcur") {
+              gameCanvas.classList.remove("downcur");
+            }else
+            if(gameCanvas.className === "out-controller rightcur") {
+              gameCanvas.classList.remove("rightcur");
+            }else
+            if(gameCanvas.className === "out-controller leftcur") {
+              gameCanvas.classList.remove("leftcur");
+            }
+          }
+        } else {
+          if (deltaY < -SWIPE_THRESHOLD) {
+            gameCanvas.className = "out-controller upcur";
+          } else if (deltaY > SWIPE_THRESHOLD) {
+            gameCanvas.className = "out-controller downcur";
+          } else {
+            if(gameCanvas.className === "out-controller upcur") {
+              gameCanvas.classList.remove("upcur");
+            }else
+            if(gameCanvas.className === "out-controller downcur") {
+              gameCanvas.classList.remove("downcur");
+            }else
+            if(gameCanvas.className === "out-controller rightcur") {
+              gameCanvas.classList.remove("rightcur");
+            }else
+            if(gameCanvas.className === "out-controller leftcur") {
+              gameCanvas.classList.remove("leftcur");
+            }
+          }
+        }
+      }else{
+        if(gameCanvas.className === "out-controller upcur") {
+          gameCanvas.classList.remove("upcur");
+        }else
+        if(gameCanvas.className === "out-controller downcur") {
+          gameCanvas.classList.remove("downcur");
+        }else
+        if(gameCanvas.className === "out-controller rightcur") {
+          gameCanvas.classList.remove("rightcur");
+        }else
+        if(gameCanvas.className === "out-controller leftcur") {
+          gameCanvas.classList.remove("leftcur");
+        }
+      }
+    });
+    document.addEventListener('mouseup', () => {
+      if (isMouseDown) {
+        isMouseDown = false;
+        startX = null;
+        startY = null;
+        if(gameCanvas){
+          if(gameCanvas.className === "out-controller upcur") {
+            gameCanvas.classList.remove("upcur");
+          }else
+          if(gameCanvas.className === "out-controller downcur") {
+            gameCanvas.classList.remove("downcur");
+          }else
+          if(gameCanvas.className === "out-controller rightcur") {
+            gameCanvas.classList.remove("rightcur");
+          }else
+          if(gameCanvas.className === "out-controller leftcur") {
+            gameCanvas.classList.remove("leftcur");
+          }
+        }
+      };
+    });
+    function handleSwipe(startClientX, startClientY, endClientX, endClientY) {
+      const deltaX = endClientX - startClientX;
+      const deltaY = endClientY - startClientY;
+      if (Math.abs(deltaX) > Math.abs(deltaY) && Math.abs(deltaX) > SWIPE_THRESHOLD) {
+        if (deltaX < 0) {
+          document.getElementById("left").click();
+        } else {
+          document.getElementById("right").click();
+        }
+      } else if (Math.abs(deltaY) > Math.abs(deltaX) && Math.abs(deltaY) > SWIPE_THRESHOLD) {
+        if (deltaY < 0) {
+          document.getElementById("up").click();
+        } else {
+          document.getElementById("down").click();
+        }
+      }
+    }
   }
 }
 loadControllerType();
+function mouseBoard() {
+  if(navigator.userAgent.match(/mobile/i)) {
+    document.getElementById("mouseBoard").style.display = "none";
+  }else{
+    document.getElementById("mouseBoard").style.display = "block";
+  }
+};
+function touchstart(event) {
+  startX = event.touches[0].clientX;
+  startY = event.touches[0].clientY;
+}
 function menuPauseWalkSound() {
   if(localStorage.getItem("movementbg") === "playerWalk") {
     document.getElementById("playerWalk").pause();
@@ -2807,6 +2967,7 @@ window.addEventListener('load', function() {
   autoFood076StorageLoadNew();
   autoFood077StorageLoadNew();
   snakeColorerValueLoad();
+  mouseBoard();
   localStorage.setItem("steelScore", localStorage.getItem("high-score"));
   document.getElementById("collectedMeow").innerHTML = localStorage.getItem("meawTokenStorage");
   document.getElementById("collectedGold").innerHTML = localStorage.getItem("goldStorage");
