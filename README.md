@@ -2,8 +2,8 @@
 There is a classic Snake Game but with SMC styles.<br>
 MNTS make this minigame with love SMC by coding in 30minutes up to 1-2 hourse through <a href="https://code.visualstudio.com">Visual Studio Code</a>.
 <hr>
-Supports keyboard buttons
-Supports Mouse Gestures
+Supports keyboard buttons<br>
+Supports Mouse Gestures<br>
 Supports Touch Gestures
 <hr>
 Can be costumize:<br>
