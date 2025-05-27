@@ -39,4 +39,3 @@ and this site is free usage;
   GitHub,<br>
   Gemini,<br>
   DragonHtmIL;
-<hr>
