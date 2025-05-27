@@ -15834,7 +15834,7 @@ function alertExitSite() {
     alertconfirm.value = "Yes";
   }else
   if(localStorage.getItem("lang") === "ru") {
-    document.getElementById("alertText").innerHTML = "Ты уходишь?";
+    document.getElementById("alertText").innerHTML = "Вы уходите?";
     alertcancel.value = "Нет";
     alertconfirm.value = "Да";
   }else

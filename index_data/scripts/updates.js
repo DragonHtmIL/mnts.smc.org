@@ -1,4 +1,4 @@
-let basicVersion = "1.0.6-v2";
+let basicVersion = "1.0.7-v2";
 function markUpdateReaded() {
   var modal = document.getElementById("updateModal");
   modal.style.display = "none";
@@ -9,7 +9,10 @@ function updateTextLangs() {
   var updateContent = document.getElementById("updateNoticeContent");
   if(localStorage.getItem("lang") === "en") {
     updateTitle.innerHTML = "What new in Version " + basicVersion;
-    updateContent.innerHTML = "<h3>[26/05/2025]</h3>" + "<br>";
+    updateContent.innerHTML = "<h3>[27/05/2025]</h3>" + "<br>";
+    updateContent.innerHTML += "Some fixes." + "<br>";
+    updateContent.innerHTML += "<hr>";
+    updateContent.innerHTML += "<h3>[26/05/2025]</h3>" + "<br>";
     updateContent.innerHTML += "Added Mouse Board that give control snake direction with mouse click→move→leave." + "<br>";
     updateContent.innerHTML += "<hr>";
     updateContent.innerHTML += "<h3>[20/05/2025]</h3>" + "<br>";
@@ -22,13 +25,13 @@ function updateTextLangs() {
     updateContent.innerHTML += "<hr>";
     updateContent.innerHTML += "<h3>[10/05/2025]</h3>" + "<br>";
     updateContent.innerHTML += "Some fixes." + "<br>";
-    updateContent.innerHTML += "<hr>";
-    updateContent.innerHTML += "<h3>[03/05/2025]</h3>" + "<br>";
-    updateContent.innerHTML += "Some fixes." + "<br>";
   }else
   if(localStorage.getItem("lang") === "ru") {
     updateTitle.innerHTML = "Что нового в версии " + basicVersion;
-    updateContent.innerHTML = "<h3>[26/05/2025]</h3>" + "<br>";
+    updateContent.innerHTML = "<h3>[27/05/2025]</h3>" + "<br>";
+    updateContent.innerHTML += "Некоторые исправления." + "<br>";
+    updateContent.innerHTML += "<hr>";
+    updateContent.innerHTML += "<h3>[26/05/2025]</h3>" + "<br>";
     updateContent.innerHTML += "Добавлена ​​панель управления мышью, которая позволяет управлять направлением змеи с помощью щелчка мыши→переместить→отпустить." + "<br>";
     updateContent.innerHTML += "<hr>";
     updateContent.innerHTML += "<h3>[20/05/2025]</h3>" + "<br>";
@@ -41,13 +44,13 @@ function updateTextLangs() {
     updateContent.innerHTML += "<hr>";
     updateContent.innerHTML += "<h3>[10/05/2025]</h3>" + "<br>";
     updateContent.innerHTML += "Некоторые исправления." + "<br>";
-    updateContent.innerHTML += "<hr>";
-    updateContent.innerHTML += "<h3>[03/05/2025]</h3>" + "<br>";
-    updateContent.innerHTML += "Некоторые исправления." + "<br>";
   }else
   if(localStorage.getItem("lang") === "jp") {
     updateTitle.innerHTML = "バージョン " + basicVersion + " の新機能";
-    updateContent.innerHTML = "<h3>[26/05/2025]</h3>" + "<br>";
+    updateContent.innerHTML = "<h3>[27/05/2025]</h3>" + "<br>";
+    updateContent.innerHTML += "いくつかの修正." + "<br>";
+    updateContent.innerHTML += "<hr>";
+    updateContent.innerHTML += "<h3>[26/05/2025]</h3>" + "<br>";
     updateContent.innerHTML += "マウスのクリック→移動→離脱でヘビの方向を制御できるマウスボードを追加しました。." + "<br>";
     updateContent.innerHTML += "<hr>";
     updateContent.innerHTML += "<h3>[20/05/2025]</h3>" + "<br>";
@@ -60,13 +63,13 @@ function updateTextLangs() {
     updateContent.innerHTML += "<hr>";
     updateContent.innerHTML += "<h3>[10/05/2025]</h3>" + "<br>";
     updateContent.innerHTML += "いくつかの修正." + "<br>";
-    updateContent.innerHTML += "<hr>";
-    updateContent.innerHTML += "<h3>[03/05/2025]</h3>" + "<br>";
-    updateContent.innerHTML += "いくつかの修正." + "<br>";
   }else
   if(localStorage.getItem("lang") === "chs") {
     updateTitle.innerHTML = basicVersion + " 版新增功能";
-    updateContent.innerHTML = "<h3>[26/05/2025]</h3>" + "<br>";
+    updateContent.innerHTML = "<h3>[27/05/2025]</h3>" + "<br>";
+    updateContent.innerHTML += "一些修复." + "<br>";
+    updateContent.innerHTML += "<hr>";
+    updateContent.innerHTML += "<h3>[26/05/2025]</h3>" + "<br>";
     updateContent.innerHTML += "添加了鼠标板，通过鼠标单击→移动→离开来控制蛇的方向。" + "<br>";
     updateContent.innerHTML += "<hr>";
     updateContent.innerHTML += "<h3>[20/05/2025]</h3>" + "<br>";
@@ -79,13 +82,13 @@ function updateTextLangs() {
     updateContent.innerHTML += "<hr>";
     updateContent.innerHTML += "<h3>[10/05/2025]</h3>" + "<br>";
     updateContent.innerHTML += "一些修复." + "<br>";
-    updateContent.innerHTML += "<hr>";
-    updateContent.innerHTML += "<h3>[03/05/2025]</h3>" + "<br>";
-    updateContent.innerHTML += "一些修复." + "<br>";
   }else
   if(localStorage.getItem("lang") === "cht") {
     updateTitle.innerHTML = basicVersion + " 版新增功能";
-    updateContent.innerHTML = "<h3>[26/05/2025]</h3>" + "<br>";
+    updateContent.innerHTML = "<h3>[27/05/2025]</h3>" + "<br>";
+    updateContent.innerHTML += "一些修復." + "<br>";
+    updateContent.innerHTML += "<hr>";
+    updateContent.innerHTML += "<h3>[26/05/2025]</h3>" + "<br>";
     updateContent.innerHTML += "新增了滑鼠板，透過滑鼠點擊→移動→離開來控制蛇的方向。" + "<br>";
     updateContent.innerHTML += "<hr>";
     updateContent.innerHTML += "<h3>[20/05/2025]</h3>" + "<br>";
@@ -98,13 +101,13 @@ function updateTextLangs() {
     updateContent.innerHTML += "<hr>";
     updateContent.innerHTML += "<h3>[10/05/2025]</h3>" + "<br>";
     updateContent.innerHTML += "一些修復." + "<br>";
-    updateContent.innerHTML += "<hr>";
-    updateContent.innerHTML += "<h3>[03/05/2025]</h3>" + "<br>";
-    updateContent.innerHTML += "一些修復." + "<br>";
   }else
   if(localStorage.getItem("lang") === "ko") {
     updateTitle.innerHTML = "버전" + basicVersion + "의 새로운 기능";
-    updateContent.innerHTML = "<h3>[26/05/2025]</h3>" + "<br>";
+    updateContent.innerHTML = "<h3>[27/05/2025]</h3>" + "<br>";
+    updateContent.innerHTML += "일부 수정 사항." + "<br>";
+    updateContent.innerHTML += "<hr>";
+    updateContent.innerHTML += "<h3>[26/05/2025]</h3>" + "<br>";
     updateContent.innerHTML += "新增了滑鼠板，透過滑鼠點擊→移動→離開來控制蛇的方向。" + "<br>";
     updateContent.innerHTML += "<hr>";
     updateContent.innerHTML += "<h3>[20/05/2025]</h3>" + "<br>";
@@ -117,9 +120,6 @@ function updateTextLangs() {
     updateContent.innerHTML += "<hr>";
     updateContent.innerHTML += "<h3>[10/05/2025]</h3>" + "<br>";
     updateContent.innerHTML += "일부 수정 사항." + "<br>";
-    updateContent.innerHTML += "<hr>";
-    updateContent.innerHTML += "<h3>[03/05/2025]</h3>" + "<br>";
-    updateContent.innerHTML += "일부 수정 사항." + "<br>";
   }else
   if(localStorage.getItem("lang") === "he") {
     updateTitle.innerHTML = "מה חדש בגרסה " + basicVersion;
@@ -128,7 +128,10 @@ function updateTextLangs() {
     updateTitle.style.width = "75%";
     updateContent.style.direction = "rtl";
     updateContent.style.textAlign = "right";
-    updateContent.innerHTML = "<h3>[26/05/2025]</h3>" + "<br>";
+    updateContent.innerHTML = "<h3>[27/05/2025]</h3>" + "<br>";
+    updateContent.innerHTML += "כמה תיקונים." + "<br>";
+    updateContent.innerHTML += "<hr>";
+    updateContent.innerHTML += "<h3>[26/05/2025]</h3>" + "<br>";
     updateContent.innerHTML += "נוסף לוח עכבר שנותן שליטה על כיוון הנחש באמצעות לחיצת עכבר → הזזה → עזיבה." + "<br>";
     updateContent.innerHTML += "<hr>";
     updateContent.innerHTML += "<h3>[20/05/2025]</h3>" + "<br>";
@@ -140,13 +143,13 @@ function updateTextLangs() {
     updateContent.innerHTML += "<hr>";
     updateContent.innerHTML += "<h3>[10/05/2025]</h3>" + "<br>";
     updateContent.innerHTML += "כמה תיקונים." + "<br>";
-    updateContent.innerHTML += "<hr>";
-    updateContent.innerHTML += "<h3>[03/05/2025]</h3>" + "<br>";
-    updateContent.innerHTML += "כמה תיקונים." + "<br>";
   }else
   if(localStorage.getItem("lang") === "de") {
     updateTitle.innerHTML = "Was ist neu in Version " + basicVersion;
-    updateContent.innerHTML = "<h3>[26/05/2025]</h3>" + "<br>";
+    updateContent.innerHTML = "<h3>[27/05/2025]</h3>" + "<br>";
+    updateContent.innerHTML += "Einige Korrekturen." + "<br>";
+    updateContent.innerHTML += "<hr>";
+    updateContent.innerHTML += "<h3>[26/05/2025]</h3>" + "<br>";
     updateContent.innerHTML += "Maussteuerung hinzugefügt, die die Steuerung der Schlangenrichtung durch Mausklick → Bewegen → Verlassen ermöglicht." + "<br>";
     updateContent.innerHTML += "<hr>";
     updateContent.innerHTML += "<h3>[20/05/2025]</h3>" + "<br>";
@@ -157,9 +160,6 @@ function updateTextLangs() {
     updateContent.innerHTML += "Einige Korrekturen." + "<br>";
     updateContent.innerHTML += "<hr>";
     updateContent.innerHTML += "<h3>[10/05/2025]</h3>" + "<br>";
-    updateContent.innerHTML += "Einige Korrekturen." + "<br>";
-    updateContent.innerHTML += "<hr>";
-    updateContent.innerHTML += "<h3>[03/05/2025]</h3>" + "<br>";
     updateContent.innerHTML += "Einige Korrekturen." + "<br>";
   }
 }

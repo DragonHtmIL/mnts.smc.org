@@ -78,7 +78,7 @@ function pauseGame() {
         document.getElementById("alertText").innerHTML += "<br>" + "Вы будете продолжать вверх.";
       }else
       if(velocityY === 1) {
-        document.getElementById("alertText").innerHTML += "<br>" + "YВы будете продолжать вниз.";
+        document.getElementById("alertText").innerHTML += "<br>" + "Вы будете продолжать вниз.";
       }else
       if(velocityX === -1) {
         document.getElementById("alertText").innerHTML += "<br>" + "Вы будете продолжать влево.";
@@ -175,16 +175,16 @@ function pauseGame() {
         document.getElementById("alertText").innerHTML = "משחק נעצר, לחץ ''המשך'' בכדי להמשיך.";
       };
       if(velocityY === -1) {
-        document.getElementById("alertText").innerHTML += "<br>" + "אתם תמשיך למעלה.";
+        document.getElementById("alertText").innerHTML += "<br>" + "אתם תמשיכו למעלה.";
       }else
       if(velocityY === 1) {
-        document.getElementById("alertText").innerHTML += "<br>" + "אתם תמשיך למטה.";
+        document.getElementById("alertText").innerHTML += "<br>" + "אתם תמשיכו למטה.";
       }else
       if(velocityX === -1) {
-        document.getElementById("alertText").innerHTML += "<br>" + "אתם תמשיך שמאלה.";
+        document.getElementById("alertText").innerHTML += "<br>" + "אתם תמשיכו שמאלה.";
       }else
       if(velocityX === 1) {
-        document.getElementById("alertText").innerHTML += "<br>" + "אתם תמשיך ימינה.";
+        document.getElementById("alertText").innerHTML += "<br>" + "אתם תמשיכו ימינה.";
       }
       alertconfirm.value = "המשך";
     }else
@@ -239,16 +239,16 @@ function pauseGame() {
       document.getElementById("alertText").innerHTML = "Bereit, weiterzumachen in...";
     }
     setTimeout(() => {
-      document.getElementById("alertText").innerHTML = "3"
+      document.getElementById("alertText").innerHTML = "3";
     },1000);
     setTimeout(() => {
-      document.getElementById("alertText").innerHTML = "2"
+      document.getElementById("alertText").innerHTML = "2";
     },2000);
     setTimeout(() => {
-      document.getElementById("alertText").innerHTML = "1"
+      document.getElementById("alertText").innerHTML = "1";
     },3000);
     setTimeout(() => {
-      document.getElementById("alertText").innerHTML = "0"
+      document.getElementById("alertText").innerHTML = "0";
       if(localStorage.getItem("difficulty") === "normal") {
         setIntervalId = setInterval(initGame, 140);
         document.getElementById("playerWalk").playbackRate = 1.0;

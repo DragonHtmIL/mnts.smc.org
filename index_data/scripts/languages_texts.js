@@ -111,7 +111,7 @@ function languagesContents() {
     a025.innerHTML = "SFX Volume";
     a026.innerHTML = "Privacy Policy, Terms and Conditions";
     a027.innerHTML = "©1997-2025 NetEase, Inc.All Rights Reserved";
-    a028.innerHTML = "Coding: " + "MNTS, DragonHtmIL;;";
+    a028.innerHTML = "Coding: " + "MNTS, DragonHtmIL;";
     a029.innerHTML = "Base Code: From";
     a030.innerHTML = "Score: 0";
     a031.innerHTML = "Game Over!";
@@ -211,7 +211,7 @@ function languagesContents() {
     a007.innerHTML = "Сложность:";
     a008.innerHTML = "Нормальный";
     a009.innerHTML = "Тяжелый";
-    a010.innerHTML = "Ад";
+    a010.innerHTML = "Адский";
     a011.innerHTML = "Языки:";
     a012.innerHTML = "Карта города Альфа";
     a013.innerHTML = "Карта острова Ориго";
@@ -229,7 +229,7 @@ function languagesContents() {
     a025.innerHTML = "Громкость SFX";
     a026.innerHTML = "Политика конфиденциальности, положения и условия";
     a027.innerHTML = "©1997-2025 NetEase, Inc.Все права защищены";
-    a028.innerHTML = "Кодирование: " + "MNTS, DragonHtmIL;;";
+    a028.innerHTML = "Кодирование: " + "MNTS, DragonHtmIL;";
     a029.innerHTML = "Базовый код: Из ";
     a030.innerHTML = "Счет: 0";
     a031.innerHTML = "Игра закончена!";
@@ -347,7 +347,7 @@ function languagesContents() {
     a025.innerHTML = "SFXボリューム";
     a026.innerHTML = "プライバシーポリシー、利用規約";
     a027.innerHTML = "©1997-2025 NetEase, Inc.無断転載禁止";
-    a028.innerHTML = "コーディング： " + "MNTS, DragonHtmIL;;";
+    a028.innerHTML = "コーディング： " + "MNTS, DragonHtmIL;";
     a029.innerHTML = "ベースコード： から ";
     a030.innerHTML = "スコア： 0";
     a031.innerHTML = "ゲームオーバー！";
@@ -466,7 +466,7 @@ function languagesContents() {
     a025.innerHTML = "音效音量";
     a026.innerHTML = "隐私政策、条款和条件";
     a027.innerHTML = "©1997-2025 网易公司版权所有";
-    a028.innerHTML = "编码： " + "MNTS, DragonHtmIL;;";
+    a028.innerHTML = "编码： " + "MNTS, DragonHtmIL;";
     a029.innerHTML = "基本代码：来自";
     a030.innerHTML = "分数： 0";
     a031.innerHTML = "游戏结束！";
@@ -572,7 +572,7 @@ function languagesContents() {
     a013.innerHTML = "奧里戈島地圖";
     a014.innerHTML = "遊戲";
     a015.innerHTML = "透過檔案（.js）載入數據";
-    a016.innerHTML = "將資料保存在文件中";
+    a016.value = "將資料保存在文件中";
     a017.innerHTML = "喵幣";
     a018.innerHTML = "金子";
     a019.innerHTML = "阿爾法幣";
@@ -584,7 +584,7 @@ function languagesContents() {
     a025.innerHTML = "SFX 音量";
     a026.innerHTML = "隱私權政策、條款與條件";
     a027.innerHTML = "©1997-2025 網易公司版權所有";
-    a028.innerHTML = "編碼： " + "MNTS, DragonHtmIL;;";
+    a028.innerHTML = "編碼： " + "MNTS, DragonHtmIL;";
     a029.innerHTML = "基本程式碼：來自";
     a030.innerHTML = "分數： 0";
     a031.innerHTML = "遊戲結束！";
@@ -690,7 +690,7 @@ function languagesContents() {
     a013.innerHTML = "오리고 섬 지도";
     a014.innerHTML = "게임";
     a015.innerHTML = "파일(.js)을 통해 데이터 로드";
-    a016.innerHTML = "파일에 데이터 저장";
+    a016.value = "파일에 데이터 저장";
     a017.innerHTML = "야옹 토큰";
     a018.innerHTML = "금";
     a019.innerHTML = "알파 코인";
@@ -702,7 +702,7 @@ function languagesContents() {
     a025.innerHTML = "SFX 용량";
     a026.innerHTML = "개인정보 보호정책, 이용약관";
     a027.innerHTML = "©1997-2025 NetEase, Inc. 모든 권리 보유";
-    a028.innerHTML = "코딩: " + "MNTS, DragonHtmIL;;";
+    a028.innerHTML = "코딩: " + "MNTS, DragonHtmIL;";
     a029.innerHTML = "기본 코드: 에서";
     a030.innerHTML = "점수: 0";
     a031.innerHTML = "게임 오버!";
@@ -950,7 +950,7 @@ function languagesContents() {
     document.title = "מכה נחש אספן";
   }else
   if(localStorage.getItem("lang") === "de") {
-    a000.innerHTML = "Einstel'";//Not sure...
+    a000.innerHTML = "Einstel'";
     a001.innerHTML = "Über";
     a002.innerHTML = "System";
     a003.innerHTML = "Schlange";
