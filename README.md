@@ -22,11 +22,6 @@ Languages<br>
 <hr>
 Game is downlodable for Android(WebAPK), Ios, Windows(No updates) and Linux;
 <hr>
-  <h4>Screenshots:</h4>
-
-  <img src="" alt="" style="height:100px;float:left;">
-
-<hr>
 <img src="https://github.com/user-attachments/assets/9fc9ef63-7696-4ee0-9cb1-be625d87cf9b" style="width: 55px; height: 55px">
 This site is with copyrights!<br>
 Do not distribute any of content out share the game link to friends or peoples!<br>
