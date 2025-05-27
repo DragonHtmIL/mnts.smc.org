@@ -23,8 +23,8 @@ Languages<br>
 Game is downlodable for Android(WebAPK), Ios, Windows(No updates) and Linux;
 <hr>
   <h4>Screenshots:</h4>
-  <img src="https://github.com/user-attachments/assets/291d1bbc-36bc-4653-924c-6844a91f15ed" alt="Snake Mecha Collector 27_05_2025 12_18_12" style="height: 100px;">
-  <img src="" alt="" style="height: 100px;">
+  <img src="https://github.com/user-attachments/assets/291d1bbc-36bc-4653-924c-6844a91f15ed" alt="Snake Mecha Collector 27_05_2025 12_18_12" style="max-height:400px;max-width:100%;">
+  <img src="" alt="" style="max-height:400px;max-width:100%;">
 ![Snake Mecha Collector 27_05_2025 12_17_14](https://github.com/user-attachments/assets/54590857-48c5-4c59-b0b4-29c69e6fd8e1)
 ![Snake Mecha Collector 27_05_2025 12_16_47](https://github.com/user-attachments/assets/7d86808f-3845-4423-9a98-bc4c0ba35421)
 ![Snake Mecha Collector 27_05_2025 12_16_26](https://github.com/user-attachments/assets/874fffe3-5c60-4d98-a086-c0a3ee7e6133)
