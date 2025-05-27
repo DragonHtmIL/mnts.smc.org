@@ -216,6 +216,7 @@
   --menu-jp-hover: url('../textures/gui/nav_menu_jp_hover.png');
   --menu-chs-hover: url('../textures/gui/nav_menu_chs_hover.png');
   --menu-cht-hover: url('../textures/gui/nav_menu_cht_hover.png');
+  --menu-ko-hover: url('../textures/gui/nav_menu_ko_hover.png');
   --menu-he-hover: url('../textures/gui/nav_menu_he_hover.png');
   --menu-de-hover: url('../textures/gui/nav_menu_de_hover.png');
   --left: url('../textures/gui/btn_control_lt.png');
@@ -1683,6 +1684,9 @@ a {
 #navBtn.jp-lang:hover {
   background-image: var(--menu-jp-hover);
 }
+#navBtn.chs-lang:hover {
+  background-image: var(--menu-chs-hover);
+}
 #navBtn.cht-lang:hover {
   background-image: var(--menu-cht-hover);
 }
@@ -3044,25 +3048,23 @@ hr.acc {
 .r-star.cht::after {
   content: ' 星星';
 }
-.r-stars.ko,
-.r-star.ko {
-  font-size: 12px;
-}
 .r-stars.ko::after {
   content: ' 별';
 }
 .r-star.ko::after {
   content: ' 별';
 }
-.r-stars.he,
-.r-star.he {
-  font-size: 12px;
-}
 .r-stars.he::after {
   content: ' כוכבים';
 }
 .r-star.he::after {
   content: ' כוכב';
+}
+.r-stars.de::after {
+  content: ' Sterne';
+}
+.r-star.de::after {
+  content: ' Stern';
 }
 .sub-device-inpo-indicator {
   position: absolute;
