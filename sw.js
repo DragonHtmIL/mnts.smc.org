@@ -1,6 +1,6 @@
 var GHPATH = '/mnts.smc.org';
 var APP_PREFIX = 'gppwa_';
-let VERSIONNAME = "1.0.6-v2";
+let VERSIONNAME = "1.0.7-v2";
 var VERSION = VERSIONNAME;
 var URLS = [
   `${GHPATH}/`,
