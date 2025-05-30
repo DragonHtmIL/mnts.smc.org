@@ -50,7 +50,7 @@
         </div>
         <div class="clickable-text" id="clickable0Lang">...</div>
       </div>
-      <div id="accenter" class="modal">
+      <div id="accenter" class="modal" style="display: none;">
         <div class="modal-content">
           <div id="profileTitleLang">...</div>
           <button class="reset-button" id="closeacc" onclick="document.getElementById('accenter').style.display='none';handleInterval();closeModalSound();"></button>
@@ -430,7 +430,7 @@
       </div>
       <div id="navBtn" onclick="clearInterval(setIntervalId);document.getElementById('menu').style.display='block';openSettingsSound();menuPauseWalkSound();"></div>
       <input type="checkbox" id="chechboxPausing" class="pauseBtn" onchange="pauseGame();" disabled>
-      <div class="menu" id="menu">
+      <div class="menu" id="menu" style="display: none;">
         <div class="menu-content" id="menucontent">
           <div id="SettingsTitleLang">...</div>
           <div class="close" id="menuCloseBtnBack"></div>
@@ -1470,7 +1470,7 @@
       </div>
       <div class="out-controller" id="touchBoard"></div>
       <div class="out-controller" id="mouseBoard"></div>
-      <div class="container" id="loading">
+      <div class="container" id="loading" style="display: none;">
         <div class="loading">
           <div class="loading-img" id="loadingContiner">
             <div class="text-logo"></div>
@@ -1485,7 +1485,7 @@
         </div>
       </div>
     </div>
-    <div class="alert" id="alert">
+    <div class="alert" id="alert" style="display: none;">
       <div class="alert-content">
         <h2 id="alertText">...</h2>
         <div class="alert-btn-container">
@@ -1494,7 +1494,7 @@
         </div>
       </div>
     </div>
-    <div id="loseModal" class="modal">
+    <div id="loseModal" class="modal" style="display: none;">
       <div class="modal-content">
       <div id="noticeTitleLang">...</div>
         <button class="reset-button" id="reset"></button>
@@ -1513,7 +1513,7 @@
         </div>
       </div>
     </div>
-    <div id="firstModal" class="first-modal">
+    <div id="firstModal" class="first-modal" style="display: none;">
       <div class="first-modal-content">
         <div id="firstContentA" class="in-first-modal">
           <div class="stepsFirsts">1/1</div>
@@ -1535,14 +1535,14 @@
         </div>
       </div>
     </div>
-    <div id="updateModal" class="modal">
+    <div id="updateModal" class="modal" style="display: none;">
       <div class="modal-content">
       <div id="updateTitleLang">...</div>
         <button class="reset-button" id="closeUpdate" onclick="markUpdateReaded();closeModalSound();"></button>
         <div class="in-modal-content" id="updateNoticeContent"></div>
       </div>
     </div>
-    <div id="howToPlayModal" class="modal">
+    <div id="howToPlayModal" class="modal" style="display: none;">
       <div class="modal-content">
       <div id="howTitleLang">...</div>
         <button class="reset-button" id="closeHowToPlay" onclick="document.getElementById('howToPlayModal').style.display='none';closeModalSound();"></button>
