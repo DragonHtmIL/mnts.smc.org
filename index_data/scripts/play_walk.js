@@ -111,10 +111,10 @@ function playActiveMoveSound() {
     }
   }else{
     if(velocityX === 0 && velocityY === 0) {
-        return false;
+      return false;
     }else{
       if(document.getElementById("checkBaseVolum").checked === false && document.getElementById("ambientChecker").checked === true) {
-        if(localStorage.getItem("movementbg") === "playerWalk" && document.getElementById("menu").style.display === "none") {
+        if(localStorage.getItem("movementbg") === "playerWalk") {
           document.getElementById("playerWalk").muted = false;
           document.getElementById("playerWalk").currentTime = 0;
           document.getElementById("playerWalk").play();

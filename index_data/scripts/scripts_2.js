@@ -251,19 +251,14 @@ function pauseGame() {
       document.getElementById("alertText").innerHTML = "0";
       if(localStorage.getItem("difficulty") === "normal") {
         setIntervalId = setInterval(initGame, 140);
-        document.getElementById("playerWalk").playbackRate = 1.0;
       }else
       if(localStorage.getItem("difficulty") === "hard") {
         setIntervalId = setInterval(initGame, 100);
-        document.getElementById("playerWalk").playbackRate = 1.5;
       }else
       if(localStorage.getItem("difficulty") === "hell") {
         setIntervalId = setInterval(initGame, 50);
-        document.getElementById("playerWalk").playbackRate = 2;
-      }else
-      if(localStorage.getItem("difficulty") === "") {
-        setIntervalId = setInterval(initGame, 140);
-        document.getElementById("playerWalk").playbackRate = 1.0;
+      }else{
+        console.log("An error running in this script");
       }
       document.getElementById("alert").style.display = "none";
       checkbox.classList.remove("pauser");
@@ -2676,9 +2671,8 @@ function handleInterval() {
     }else
     if(localStorage.getItem("difficulty") === "hell") {
       setIntervalId = setInterval(initGame, 50);
-    }else
-    if(localStorage.getItem("difficulty") === "") {
-      setIntervalId = setInterval(initGame, 140);
+    }else{
+      console.log("An error running with this script")
     }
   }else{
     document.getElementById("chechboxPausing").click();

@@ -308,78 +308,175 @@ const handleGameOver = () => {
   localStorage.setItem("currentScore", "0");
 };
 const changeDirection = e => {
-  if(e.key === "ArrowUp" && velocityY != 1) {
-    velocityX = 0;
-    velocityY = -1;
-    if(document.getElementById("chechboxPausing").checked === false) {
-      playActiveMoveSound();
-    }else{
-      return false;
+  const win1 = document.getElementById("howToPlayModal");
+  const win2 = document.getElementById("updateModal");
+  const win3 = document.getElementById("firstModal");
+  const win4 = document.getElementById("loseModal");
+  const win5 = document.getElementById("alert");
+  const win6 = document.getElementById("loading");
+  const win7 = document.getElementById("menu");
+  const win8 = document.getElementById("accenter");
+  if(win1.style.display === "none" &&
+    win2.style.display === "none" &&
+    win3.style.display === "none" &&
+    win4.style.display === "none" &&
+    win5.style.display === "none" &&
+    win6.style.display === "none" &&
+    win7.style.display === "none" &&
+    win8.style.display === "none") {
+    if(e.key === "ArrowUp" && velocityY != 1) {
+      velocityX = 0;
+      velocityY = -1;
+      if(document.getElementById("chechboxPausing").checked === false) {
+        playActiveMoveSound();
+      }else{
+        return false;
+      }
+      document.getElementById("chechboxPausing").removeAttribute("disabled");
+    } else if(e.key === "ArrowDown" && velocityY != -1) {
+      velocityX = 0;
+      velocityY = 1;
+      if(document.getElementById("chechboxPausing").checked === false) {
+        playActiveMoveSound();
+      }else{
+        return false;
+      }
+      document.getElementById("chechboxPausing").removeAttribute("disabled");
+    } else if(e.key === "ArrowLeft" && velocityX != 1) {
+      velocityX = -1;
+      velocityY = 0;
+      if(document.getElementById("chechboxPausing").checked === false) {
+        playActiveMoveSound();
+      }else{
+        return false;
+      }
+      document.getElementById("chechboxPausing").removeAttribute("disabled");
+    } else if(e.key === "ArrowRight" && velocityX != -1) {
+      velocityX = 1;
+      velocityY = 0;
+      if(document.getElementById("chechboxPausing").checked === false) {
+        playActiveMoveSound();
+      }else{
+        return false;
+      }
+      document.getElementById("chechboxPausing").removeAttribute("disabled");
+    } else if(e.key === "ArrowUp" && velocityY != 1) {
+      velocityX = 0;
+      velocityY = -1;
+      if(document.getElementById("chechboxPausing").checked === false) {
+        playActiveMoveSound();
+      }else{
+        return false;
+      }
+      document.getElementById("chechboxPausing").removeAttribute("disabled");
+    } else if(e.key === "ArrowDown" && velocityY != -1) {
+      velocityX = 0;
+      velocityY = 1;
+      if(document.getElementById("chechboxPausing").checked === false) {
+        playActiveMoveSound();
+      }else{
+        return false;
+      }
+      document.getElementById("chechboxPausing").removeAttribute("disabled");
+    } else if(e.key === "ArrowLeft" && velocityX != 1) {
+      velocityX = -1;
+      velocityY = 0;
+      if(document.getElementById("chechboxPausing").checked === false) {
+        playActiveMoveSound();
+      }else{
+        return false;
+      }
+      document.getElementById("chechboxPausing").removeAttribute("disabled");
+    } else if(e.key === "ArrowRight" && velocityX != -1) {
+      velocityX = 1;
+      velocityY = 0;
+      if(document.getElementById("chechboxPausing").checked === false) {
+        playActiveMoveSound();
+      }else{
+        return false;
+      }
+      document.getElementById("chechboxPausing").removeAttribute("disabled");
     }
-    document.getElementById("chechboxPausing").removeAttribute("disabled");
-  } else if(e.key === "ArrowDown" && velocityY != -1) {
-    velocityX = 0;
-    velocityY = 1;
-    if(document.getElementById("chechboxPausing").checked === false) {
-      playActiveMoveSound();
-    }else{
-      return false;
-    }
-    document.getElementById("chechboxPausing").removeAttribute("disabled");
-  } else if(e.key === "ArrowLeft" && velocityX != 1) {
-    velocityX = -1;
-    velocityY = 0;
-    if(document.getElementById("chechboxPausing").checked === false) {
-      playActiveMoveSound();
-    }else{
-      return false;
-    }
-    document.getElementById("chechboxPausing").removeAttribute("disabled");
-  } else if(e.key === "ArrowRight" && velocityX != -1) {
-    velocityX = 1;
-    velocityY = 0;
-    if(document.getElementById("chechboxPausing").checked === false) {
-      playActiveMoveSound();
-    }else{
-      return false;
-    }
-    document.getElementById("chechboxPausing").removeAttribute("disabled");
-  } else if(e.key === "ArrowUp" && velocityY != 1) {
-    velocityX = 0;
-    velocityY = -1;
-    if(document.getElementById("chechboxPausing").checked === false) {
-      playActiveMoveSound();
-    }else{
-      return false;
-    }
-    document.getElementById("chechboxPausing").removeAttribute("disabled");
-  } else if(e.key === "ArrowDown" && velocityY != -1) {
-    velocityX = 0;
-    velocityY = 1;
-    if(document.getElementById("chechboxPausing").checked === false) {
-      playActiveMoveSound();
-    }else{
-      return false;
-    }
-    document.getElementById("chechboxPausing").removeAttribute("disabled");
-  } else if(e.key === "ArrowLeft" && velocityX != 1) {
-    velocityX = -1;
-    velocityY = 0;
-    if(document.getElementById("chechboxPausing").checked === false) {
-      playActiveMoveSound();
-    }else{
-      return false;
-    }
-    document.getElementById("chechboxPausing").removeAttribute("disabled");
-  } else if(e.key === "ArrowRight" && velocityX != -1) {
-    velocityX = 1;
-    velocityY = 0;
-    if(document.getElementById("chechboxPausing").checked === false) {
-      playActiveMoveSound();
-    }else{
-      return false;
-    }
-    document.getElementById("chechboxPausing").removeAttribute("disabled");
+  }else
+  if(win1.style.display === "block" &&
+    win2.style.display === "none" &&
+    win3.style.display === "none" &&
+    win4.style.display === "none" &&
+    win5.style.display === "none" &&
+    win6.style.display === "none" &&
+    win7.style.display === "none" &&
+    win8.style.display === "none") {
+    console.log("Cannot walk whene any window is opened...");
+  }else
+  if(win1.style.display === "none" &&
+    win2.style.display === "block" &&
+    win3.style.display === "none" &&
+    win4.style.display === "none" &&
+    win5.style.display === "none" &&
+    win6.style.display === "none" &&
+    win7.style.display === "none" &&
+    win8.style.display === "none") {
+    console.log("Cannot walk whene any window is opened...");
+  }else
+  if(win1.style.display === "none" &&
+    win2.style.display === "none" &&
+    win3.style.display === "block" &&
+    win4.style.display === "none" &&
+    win5.style.display === "none" &&
+    win6.style.display === "none" &&
+    win7.style.display === "none" &&
+    win8.style.display === "none") {
+    console.log("Cannot walk whene any window is opened...");
+  }else
+  if(win1.style.display === "none" &&
+    win2.style.display === "none" &&
+    win3.style.display === "none" &&
+    win4.style.display === "block" &&
+    win5.style.display === "none" &&
+    win6.style.display === "none" &&
+    win7.style.display === "none" &&
+    win8.style.display === "none") {
+    console.log("Cannot walk whene any window is opened...");
+  }else
+  if(win1.style.display === "none" &&
+    win2.style.display === "none" &&
+    win3.style.display === "none" &&
+    win4.style.display === "none" &&
+    win5.style.display === "block" &&
+    win6.style.display === "none" &&
+    win7.style.display === "none" &&
+    win8.style.display === "none") {
+    console.log("Cannot walk whene any window is opened...");
+  }else
+  if(win1.style.display === "none" &&
+    win2.style.display === "none" &&
+    win3.style.display === "none" &&
+    win4.style.display === "none" &&
+    win5.style.display === "none" &&
+    win6.style.display === "block" &&
+    win7.style.display === "none" &&
+    win8.style.display === "none") {
+    console.log("Cannot walk whene any window is opened...");
+  }else
+  if(win1.style.display === "none" &&
+    win2.style.display === "none" &&
+    win3.style.display === "none" &&
+    win4.style.display === "none" &&
+    win5.style.display === "none" &&
+    win6.style.display === "none" &&
+    win7.style.display === "block" &&
+    win8.style.display === "none") {
+    console.log("Cannot walk whene any window is opened...");
+  }else
+  if(win1.style.display === "none" &&
+    win2.style.display === "none" &&
+    win3.style.display === "none" &&
+    win4.style.display === "none" &&
+    win5.style.display === "none" &&
+    win6.style.display === "none" &&
+    win7.style.display === "none" &&
+    win8.style.display === "block") {
+    console.log("Cannot walk whene any window is opened...");
   }
 };
 controls.forEach(button => button.addEventListener("click", () => changeDirection({ key: button.dataset.key })));
@@ -1235,122 +1332,7 @@ if(localStorage.getItem("difficulty") === "hell") {
   if(localStorage.getItem("movementbg") === "skyfallWalk") {
     document.getElementById("skyfallWalk").playbackRate = 2.0;
   }
-}else
-if(localStorage.getItem("difficulty") === "") {
-  setIntervalId = setInterval(initGame, 140);
-  if(localStorage.getItem("movementbg") === "playerWalk") {
-    document.getElementById("playerWalk").playbackRate = 1.0;
-  }else
-  if(localStorage.getItem("movementbg") === "alboradaWalk") {
-    document.getElementById("alboradaWalk").playbackRate = 1.0;
-  }else
-  if(localStorage.getItem("movementbg") === "andromedaWalk") {
-    document.getElementById("andromedaWalk").playbackRate = 1.0;
-  }else
-  if(localStorage.getItem("movementbg") === "arthurWalk") {
-    document.getElementById("arthurWalk").playbackRate = 1.0;
-  }else
-  if(localStorage.getItem("movementbg") === "auroraWalk") {
-    document.getElementById("auroraWalk").playbackRate = 1.0;
-  }else
-  if(localStorage.getItem("movementbg") === "boltusWalk") {
-    document.getElementById("boltusWalk").playbackRate = 1.0;
-  }else
-  if(localStorage.getItem("movementbg") === "caramelWalk") {
-    document.getElementById("caramelWalk").playbackRate = 1.0;
-  }else
-  if(localStorage.getItem("movementbg") === "doomlightlWalk") {
-    document.getElementById("doomlightlWalk").playbackRate = 1.0;
-  }else
-  if(localStorage.getItem("movementbg") === "firefoxWalk") {
-    document.getElementById("firefoxWalk").playbackRate = 1.0;
-  }else
-  if(localStorage.getItem("movementbg") === "firestarWalk") {
-    document.getElementById("firestarWalk").playbackRate = 1.0;
-  }else
-  if(localStorage.getItem("movementbg") === "flamencoWalk") {
-    document.getElementById("flamencoWalk").playbackRate = 1.0;
-  }else
-  if(localStorage.getItem("movementbg") === "gabrielWalk") {
-    document.getElementById("gabrielWalk").playbackRate = 1.0;
-  }else
-  if(localStorage.getItem("movementbg") === "hotsteelWalk") {
-    document.getElementById("hotsteelWalk").playbackRate = 1.0;
-  }else
-  if(localStorage.getItem("movementbg") === "hurricaneWalk") {
-    document.getElementById("hurricaneWalk").playbackRate = 1.0;
-  }else
-  if(localStorage.getItem("movementbg") === "jojoWalk") {
-    document.getElementById("jojoWalk").playbackRate = 1.0;
-  }else
-  if(localStorage.getItem("movementbg") === "michaelWalk") {
-    document.getElementById("michaelWalk").playbackRate = 1.0;
-  }else
-  if(localStorage.getItem("movementbg") === "neutronWalk") {
-    document.getElementById("neutronWalk").playbackRate = 1.0;
-  }else
-  if(localStorage.getItem("movementbg") === "northernWalk") {
-    document.getElementById("northernWalk").playbackRate = 1.0;
-  }else
-  if(localStorage.getItem("movementbg") === "pulsarWalk") {
-    document.getElementById("pulsarWalk").playbackRate = 1.0;
-  }else
-  if(localStorage.getItem("movementbg") === "rangerWalk") {
-    document.getElementById("rangerWalk").playbackRate = 1.0;
-  }else
-  if(localStorage.getItem("movementbg") === "ravenWalk") {
-    document.getElementById("ravenWalk").playbackRate = 1.0;
-  }else
-  if(localStorage.getItem("movementbg") === "skylarkWalk") {
-    document.getElementById("skylarkWalk").playbackRate = 1.0;
-  }else
-  if(localStorage.getItem("movementbg") === "snowWalk") {
-    document.getElementById("snowWalk").playbackRate = 1.0;
-  }else
-  if(localStorage.getItem("movementbg") === "trioWalk") {
-    document.getElementById("trioWalk").playbackRate = 1.0;
-  }else
-  if(localStorage.getItem("movementbg") === "ventorusWalk") {
-    document.getElementById("ventorusWalk").playbackRate = 1.0;
-  }else
-  if(localStorage.getItem("movementbg") === "deathKnellWalk") {
-    document.getElementById("deathKnellWalk").playbackRate = 1.0;
-  }else
-  if(localStorage.getItem("movementbg") === "dreadwolfWalk") {
-    document.getElementById("dreadwolfWalk").playbackRate = 1.0;
-  }else
-  if(localStorage.getItem("movementbg") === "gaialWalk") {
-    document.getElementById("gaialWalk").playbackRate = 1.0;
-  }else
-  if(localStorage.getItem("movementbg") === "guerillaHunterWalk") {
-    document.getElementById("guerillaHunterWalk").playbackRate = 1.0;
-  }else
-  if(localStorage.getItem("movementbg") === "lancelotWalk") {
-    document.getElementById("lancelotWalk").playbackRate = 1.0;
-  }else
-  if(localStorage.getItem("movementbg") === "moonRabbitWalk") {
-    document.getElementById("moonRabbitWalk").playbackRate = 1.0;
-  }else
-  if(localStorage.getItem("movementbg") === "nebulaWalk") {
-    document.getElementById("nebulaWalk").playbackRate = 1.0;
-  }else
-  if(localStorage.getItem("movementbg") === "shiranuiWalk") {
-    document.getElementById("shiranuiWalk").playbackRate = 1.0;
-  }else
-  if(localStorage.getItem("movementbg") === "skyfireWalk") {
-    document.getElementById("skyfireWalk").playbackRate = 1.0;
-  }else
-  if(localStorage.getItem("movementbg") === "twilightWalk") {
-    document.getElementById("twilightWalk").playbackRate = 1.0;
-  }else
-  if(localStorage.getItem("movementbg") === "akashicWalk") {
-    document.getElementById("akashicWalk").playbackRate = 1.0;
-  }else
-  if(localStorage.getItem("movementbg") === "skyfallWalk") {
-    document.getElementById("skyfallWalk").playbackRate = 1.0;
-  }else
-  if(localStorage.getItem("movementbg") === "tempestWalk") {
-    document.getElementById("tempestWalk").playbackRate = 1.0;
-  }
+}else{
+  console.log("An error is runnin with difficulty...");
 };
 document.addEventListener("keydown", changeDirection);
