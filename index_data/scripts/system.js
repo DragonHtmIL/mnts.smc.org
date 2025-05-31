@@ -453,7 +453,7 @@ const changeDirection = e => {
     win3.style.display === "none" &&
     win4.style.display === "none" &&
     win5.style.display === "none" &&
-    win6.style.display === "block" &&
+    win6.style.display === "flex" &&
     win7.style.display === "none" &&
     win8.style.display === "none") {
     console.log("Cannot walk whene any window is opened...");
