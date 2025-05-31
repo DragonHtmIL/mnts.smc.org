@@ -1469,7 +1469,7 @@
       </div>
       <div class="out-controller" id="touchBoard"></div>
       <div class="out-controller" id="mouseBoard"></div>
-      <div class="container" id="loading" style="display: none;">
+      <div class="container" id="loading" style="display: flex;">
         <div class="loading">
           <div class="loading-img" id="loadingContiner">
             <div class="text-logo"></div>
@@ -1483,74 +1483,74 @@
           <div class="blocker"></div>
         </div>
       </div>
-    </div>
-    <div class="alert" id="alert" style="display: none;">
-      <div class="alert-content">
-        <h2 id="alertText">...</h2>
-        <div class="alert-btn-container">
-          <input type="submit" id="alertLeft" value="...">
-          <input type="submit" id="alertRight" value="...">
-        </div>
-      </div>
-    </div>
-    <div id="loseModal" class="modal" style="display: none;">
-      <div class="modal-content">
-      <div id="noticeTitleLang">...</div>
-        <button class="reset-button" id="reset"></button>
-        <div class="in-modal-content" id="progressingALost">
-          <div class="left-modal-acc">
-            <div id="subleagueImage"></div>
-            <div id="subleagueType">...</div>
-            <div class="subleaguelevel"><span id="substar">★</span><span id="subleaguelevel">...</span></div>
-          </div>
-          <hr class="acc">
-          <div class="right-modal-acc">
-            <h2 class="lose-title" id="loseText">...</h2>
-            <div class="gettedscore" id="loseScore">...</div>
-            <div class="gettedscore" id="loseNewRecordScore">...</div>
+      <div class="alert" id="alert" style="display: none;">
+        <div class="alert-content">
+          <h2 id="alertText">...</h2>
+          <div class="alert-btn-container">
+            <input type="submit" id="alertLeft" value="...">
+            <input type="submit" id="alertRight" value="...">
           </div>
         </div>
       </div>
-    </div>
-    <div id="firstModal" class="first-modal" style="display: none;">
-      <div class="first-modal-content">
-        <div id="firstContentA" class="in-first-modal">
-          <div class="stepsFirsts">1/1</div>
-          <div>
-            <p id="langTitleOfFirstModal"></p>
+      <div id="loseModal" class="modal" style="display: none;">
+        <div class="modal-content">
+        <div id="noticeTitleLang">...</div>
+          <button class="reset-button" id="reset"></button>
+          <div class="in-modal-content" id="progressingALost">
+            <div class="left-modal-acc">
+              <div id="subleagueImage"></div>
+              <div id="subleagueType">...</div>
+              <div class="subleaguelevel"><span id="substar">★</span><span id="subleaguelevel">...</span></div>
+            </div>
+            <hr class="acc">
+            <div class="right-modal-acc">
+              <h2 class="lose-title" id="loseText">...</h2>
+              <div class="gettedscore" id="loseScore">...</div>
+              <div class="gettedscore" id="loseNewRecordScore">...</div>
+            </div>
           </div>
-          <div id="selectOptions" class="select-content">
-            <div onclick="document.getElementById('langTitleOfFirstModal').innerHTML='Select language';document.getElementById('languageEn').click();document.getElementById('selectedLanguageIs').innerHTML='English is selected.';document.getElementById('firstModalApplyBtm').style.display='block';document.getElementById('firstModalApplyBtm').value='Apply';document.getElementById('selectedLanguageIs').style.direction='ltr';" class="language select firstinfirstmodal">English</div>
-            <div onclick="document.getElementById('langTitleOfFirstModal').innerHTML='Вибирайте язык';document.getElementById('languageRu').click();document.getElementById('selectedLanguageIs').innerHTML='Русский вибирань.';document.getElementById('firstModalApplyBtm').style.display='block';document.getElementById('firstModalApplyBtm').value='Подтвердить';document.getElementById('selectedLanguageIs').style.direction='ltr'" class="language select">Русский</div>
-            <div onclick="document.getElementById('langTitleOfFirstModal').innerHTML='言語を選択';document.getElementById('languageJp').click();document.getElementById('selectedLanguageIs').innerHTML='日本語が選択されています。';document.getElementById('firstModalApplyBtm').style.display='block';document.getElementById('firstModalApplyBtm').value='適用する';document.getElementById('selectedLanguageIs').style.direction='ltr'" class="language select">日本語</div>
-            <div onclick="document.getElementById('langTitleOfFirstModal').innerHTML='选择语言';document.getElementById('languageChs').click();document.getElementById('selectedLanguageIs').innerHTML='选择简体中文。';document.getElementById('firstModalApplyBtm').style.display='block';document.getElementById('firstModalApplyBtm').value='申请';document.getElementById('selectedLanguageIs').style.direction='ltr'" class="language select" id="newFirstLineBtns">简体中文</div>
-            <div onclick="document.getElementById('langTitleOfFirstModal').innerHTML='繁體中文';document.getElementById('languageCht').click();document.getElementById('selectedLanguageIs').innerHTML='已選擇繁體中文。';document.getElementById('firstModalApplyBtm').style.display='block';document.getElementById('firstModalApplyBtm').value='申請';document.getElementById('selectedLanguageIs').style.direction='ltr'" class="language select">繁體中文</div>
-            <div onclick="document.getElementById('langTitleOfFirstModal').innerHTML='언어 선택';document.getElementById('languageKo').click();document.getElementById('selectedLanguageIs').innerHTML='한국어가 선택되었습니다.';document.getElementById('firstModalApplyBtm').style.display='block';document.getElementById('firstModalApplyBtm').value='적용하다';document.getElementById('selectedLanguageIs').style.direction='ltr'" class="language select">한국어</div>
-            <div onclick="document.getElementById('langTitleOfFirstModal').innerHTML='בחר שפה';document.getElementById('languageHe').click();document.getElementById('selectedLanguageIs').innerHTML='עברית נבחרה.';document.getElementById('firstModalApplyBtm').style.display='block';document.getElementById('firstModalApplyBtm').value='החל';document.getElementById('selectedLanguageIs').style.direction='rtl'" class="language select" id="newFirstLineBtns2">עברית</div>
-            <div onclick="document.getElementById('langTitleOfFirstModal').innerHTML='Sprache auswählen';document.getElementById('languageHe').click();document.getElementById('selectedLanguageIs').innerHTML='Deutsch ist ausgewählt.';document.getElementById('firstModalApplyBtm').style.display='block';document.getElementById('firstModalApplyBtm').value='Anwenden';document.getElementById('selectedLanguageIs').style.direction='ltr'" class="language select">Deutsche</div>
-            <div id="selectedLanguageIs"></div>
-          </div>
-          <input type="submit" id="firstModalApplyBtm" onclick="document.getElementById('applySettings').click();localStorage.setItem('firsttime','exist')" style="display:none;" value="..." />
         </div>
       </div>
-    </div>
-    <div id="updateModal" class="modal" style="display: none;">
-      <div class="modal-content">
-      <div id="updateTitleLang">...</div>
-        <button class="reset-button" id="closeUpdate" onclick="markUpdateReaded();closeModalSound();"></button>
-        <div class="in-modal-content" id="updateNoticeContent"></div>
+      <div id="firstModal" class="first-modal" style="display: none;">
+        <div class="first-modal-content">
+          <div id="firstContentA" class="in-first-modal">
+            <div class="stepsFirsts">1/1</div>
+            <div>
+              <p id="langTitleOfFirstModal"></p>
+            </div>
+            <div id="selectOptions" class="select-content">
+              <div onclick="document.getElementById('langTitleOfFirstModal').innerHTML='Select language';document.getElementById('languageEn').click();document.getElementById('selectedLanguageIs').innerHTML='English is selected.';document.getElementById('firstModalApplyBtm').style.display='block';document.getElementById('firstModalApplyBtm').value='Apply';document.getElementById('selectedLanguageIs').style.direction='ltr';" class="language select firstinfirstmodal">English</div>
+              <div onclick="document.getElementById('langTitleOfFirstModal').innerHTML='Вибирайте язык';document.getElementById('languageRu').click();document.getElementById('selectedLanguageIs').innerHTML='Русский вибирань.';document.getElementById('firstModalApplyBtm').style.display='block';document.getElementById('firstModalApplyBtm').value='Подтвердить';document.getElementById('selectedLanguageIs').style.direction='ltr'" class="language select">Русский</div>
+              <div onclick="document.getElementById('langTitleOfFirstModal').innerHTML='言語を選択';document.getElementById('languageJp').click();document.getElementById('selectedLanguageIs').innerHTML='日本語が選択されています。';document.getElementById('firstModalApplyBtm').style.display='block';document.getElementById('firstModalApplyBtm').value='適用する';document.getElementById('selectedLanguageIs').style.direction='ltr'" class="language select">日本語</div>
+              <div onclick="document.getElementById('langTitleOfFirstModal').innerHTML='选择语言';document.getElementById('languageChs').click();document.getElementById('selectedLanguageIs').innerHTML='选择简体中文。';document.getElementById('firstModalApplyBtm').style.display='block';document.getElementById('firstModalApplyBtm').value='申请';document.getElementById('selectedLanguageIs').style.direction='ltr'" class="language select" id="newFirstLineBtns">简体中文</div>
+              <div onclick="document.getElementById('langTitleOfFirstModal').innerHTML='繁體中文';document.getElementById('languageCht').click();document.getElementById('selectedLanguageIs').innerHTML='已選擇繁體中文。';document.getElementById('firstModalApplyBtm').style.display='block';document.getElementById('firstModalApplyBtm').value='申請';document.getElementById('selectedLanguageIs').style.direction='ltr'" class="language select">繁體中文</div>
+              <div onclick="document.getElementById('langTitleOfFirstModal').innerHTML='언어 선택';document.getElementById('languageKo').click();document.getElementById('selectedLanguageIs').innerHTML='한국어가 선택되었습니다.';document.getElementById('firstModalApplyBtm').style.display='block';document.getElementById('firstModalApplyBtm').value='적용하다';document.getElementById('selectedLanguageIs').style.direction='ltr'" class="language select">한국어</div>
+              <div onclick="document.getElementById('langTitleOfFirstModal').innerHTML='בחר שפה';document.getElementById('languageHe').click();document.getElementById('selectedLanguageIs').innerHTML='עברית נבחרה.';document.getElementById('firstModalApplyBtm').style.display='block';document.getElementById('firstModalApplyBtm').value='החל';document.getElementById('selectedLanguageIs').style.direction='rtl'" class="language select" id="newFirstLineBtns2">עברית</div>
+              <div onclick="document.getElementById('langTitleOfFirstModal').innerHTML='Sprache auswählen';document.getElementById('languageHe').click();document.getElementById('selectedLanguageIs').innerHTML='Deutsch ist ausgewählt.';document.getElementById('firstModalApplyBtm').style.display='block';document.getElementById('firstModalApplyBtm').value='Anwenden';document.getElementById('selectedLanguageIs').style.direction='ltr'" class="language select">Deutsche</div>
+              <div id="selectedLanguageIs"></div>
+            </div>
+            <input type="submit" id="firstModalApplyBtm" onclick="document.getElementById('applySettings').click();localStorage.setItem('firsttime','exist')" style="display:none;" value="..." />
+          </div>
+        </div>
       </div>
-    </div>
-    <div id="howToPlayModal" class="modal" style="display: none;">
-      <div class="modal-content">
-      <div id="howTitleLang">...</div>
-        <button class="reset-button" id="closeHowToPlay" onclick="document.getElementById('howToPlayModal').style.display='none';closeModalSound();"></button>
-        <div class="in-modal-content" id="howToPlayContent">
-          <div id="ifMobileLang">...</div><br>
-          <div id="txtAhow">...</div>
-          <hr>
-          <div id="ifOthersLang">...</div><br>
-          <div id="txtBhow">...</div>
+      <div id="updateModal" class="modal" style="display: none;">
+        <div class="modal-content">
+        <div id="updateTitleLang">...</div>
+          <button class="reset-button" id="closeUpdate" onclick="markUpdateReaded();closeModalSound();"></button>
+          <div class="in-modal-content" id="updateNoticeContent"></div>
+        </div>
+      </div>
+      <div id="howToPlayModal" class="modal" style="display: none;">
+        <div class="modal-content">
+        <div id="howTitleLang">...</div>
+          <button class="reset-button" id="closeHowToPlay" onclick="document.getElementById('howToPlayModal').style.display='none';closeModalSound();"></button>
+          <div class="in-modal-content" id="howToPlayContent">
+            <div id="ifMobileLang">...</div><br>
+            <div id="txtAhow">...</div>
+            <hr>
+            <div id="ifOthersLang">...</div><br>
+            <div id="txtBhow">...</div>
+          </div>
         </div>
       </div>
     </div>
