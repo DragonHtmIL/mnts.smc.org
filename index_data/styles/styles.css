@@ -3627,28 +3627,28 @@ input[type="color"]::-webkit-color-swatch {
     display: block;
   }
   .modal .modal-content {
-    width: 400px;
-    height: 209px;
+    width: 378px;
+    height: 197px;
   }
   .modal .modal-content .in-modal-content {
     width: 353px;
     height: 170px;
-    top: 21px;
-    left: 15px;
+    top: 15px;
+    left: 2px;
   }
   .modal .modal-content .reset-button {
     width: 37px;
-    height: 24px;
+    height: 23px;
   }
   .menu .menu-content {
-    width: 400px;
-    height: 204px;
+    width: 378px;
+    height: 193px;
   }
   .menu .menu-content .content {
-    width: 329px;
-    height: 154px;
-    top: 15px;
-    left: 55px;
+    width: 321px;
+    height: 143px;
+    top: 14px;
+    left: 47px;
     font-size: 11px !important;
   }
   .menu .menu-content .close {
@@ -3672,15 +3672,15 @@ input[type="color"]::-webkit-color-swatch {
     margin-left: 53px !important;
   }
   .tab {
-    top: 25px;
+    top: 24px;
     left: -9px;
-    height: 173px;
+    height: 168px;
   }
   .tab .tablinks {
     color: var(--white);
     padding: 3px 0px 12px 10px;
     margin: 5px 0px;
-    width: 70px;
+    width: 67px;
     font-size: 12px;
     background-size: 118% 131%;
   }
@@ -3696,23 +3696,23 @@ input[type="color"]::-webkit-color-swatch {
     overflow: hidden;
   }
   .select-content .select-img {
-    height: 51.8px;
-    width: 51.8px;
+    height: 65.2px;
+    width: 65.2px;
   }
   .select-content .select.difficulty {
     font-size: 12px;
-    margin: 5px 5px 5px 5px;
+    margin: 5px 4.5px 5px 4.5px;
     padding: 3px 0px;
     height: 24px;
     width: 89px;
   }
   .select-content .select.difficulty:first-child {
-    margin: 5px 5px 5px 10px;
+    margin: 5px 4.5px 5px 9px;
   }
   .select-content .select.language,
   .select-content .select.controllerpostype {
     font-size: 12px;
-    margin: 5px 17px;
+    margin: 5px 15px;
     padding: 3px 0px;
     height: 24px;
     width: 69px;
@@ -3734,7 +3734,7 @@ input[type="color"]::-webkit-color-swatch {
   #defaultSettings,
   #applySettings,
   #firstModalApplyBtm {
-    bottom: 3px;
+    bottom: 4px;
     width: 60px;
     height: 18px;
     font-size: 10px;
@@ -3762,15 +3762,15 @@ input[type="color"]::-webkit-color-swatch {
     font-size: 15px;
   }
   #SettingsTitleLang {
-    top: 9px;
+    top: 10px;
     left: 21px;
-    font-size: 10px;
+    font-size: 9px;
   }
   #noticeTitleLang,
   #profileTitleLang,
   #updateTitleLang,
   #howTitleLang {
-    top: 3px;
+    top: 2px;
     left: 26px;
     font-size: 14px;
   }
@@ -3806,8 +3806,8 @@ input[type="color"]::-webkit-color-swatch {
   .site-exit {
     height: 23px;
     width: 54px;
-    padding: 9px 0px 0px 0px;
-    font-size: 12px;
+    padding: 12px 0px 0px 0px;
+    font-size: 11px;
     background-position: 17px 0px;
   }
   .update-notice {
@@ -3820,8 +3820,8 @@ input[type="color"]::-webkit-color-swatch {
   .how-to-play {
     height: 23px;
     width: 54px;
-    padding: 9px 0px 0px 0px;
-    font-size: 12px;
+    padding: 12px 0px 0px 0px;
+    font-size: 11px;
     background-position: 17px 0px;
   }
   .left {
@@ -3842,9 +3842,9 @@ input[type="color"]::-webkit-color-swatch {
     width: calc(100% - 20px);
   }
   .sub-device-inpo-indicator {
-    left: 61px;
+    left: 57px;
     top: 0px;
-    width: 300px;
+    width: 280px;
     height: 24px;
   }
   #subBatteryProgress {
@@ -3853,39 +3853,52 @@ input[type="color"]::-webkit-color-swatch {
     height: 4px;
   }
   #subBatteryCharge {
-    margin-top: -2.5px;
-    font-size: 16px;
+    margin-top: -4.5px;
+    font-size: 17px;
   }
   #subBatteryLevel {
     padding: 0px;
-    font-size: 18px;
+    font-size: 17px;
   }
   #subClock {
-    font-size: 18px;
+    font-size: 17px;
     padding-left: 6px;
+    padding-right: 4px;
     margin-top: -1.5px;
+    border-right: solid 1px var(--black);
   }
   #subCalendar {
-    font-size: 18px;
-    padding-right: 6px;
+    font-size: 17px;
+    padding-left: 4px;
     margin-top: -1.5px;
+    border-left: solid 2px var(--black);
   }
-  .sub-dc-symbol {
-    font-size: 23px;
-    padding: 0px 5px;
-    margin-top: -6px;
-  }
-  .menuscroller {
+/*  .menuscroller {
     bottom: 25%;
     width: 395px !important;
+  }*/
+  .menuscroller {
+    bottom: 17%;
+    right: -89%;
+    width: 34vh !important;
+    transform: rotate(90deg);
   }
   #menuButtonsChain {
     width: 179px;
-    height: 25px;
+    height: 26px;
     left: 61px;
+    padding-top: 1.5px;
   }
   .widther-container {
     width: 100%;
+  }
+  #keypad .keypad:last-child {
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+  #keypad .keypad:last-child div {
+    width: 22px;
   }
 }
 @media screen and (min-width: 1545px) {
