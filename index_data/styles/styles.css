@@ -195,7 +195,6 @@
   --modal: url('../textures/gui/notice.png');
   --menu: url('../textures/gui/menu.png');
   --alert: url('../textures/gui/alert.png');
-  --first: url('../textures/gui/new_modal_content.png');
   --button-true: url('../textures/gui/button_true.png');
   --first-back: url('../textures/gui/first_modal_bg.png');
   --controller: url('../textures/gui/cube_bg.png');
@@ -256,6 +255,8 @@
   --key-bg-hover:  url('../textures/gui/key_bg_hover.png');
   --how-to-play:  url('../textures/gui/htp_button.png');
   --actived-frame-cube:  url('../textures/gui/actived_frame_cube.png');
+  --line: url('../textures/gui/line.png');
+  --loading-prog: url('../textures/gui/loading_progress.png');
   /* League */
   --league-0: url('../textures/league/non.png');
   --league-1: url('../textures/league/league_1_bronze.png');
@@ -407,7 +408,7 @@ hr {
   border-style: none;
   border-width: 0px;
   padding: 2px 0px;
-  background-image: url('../textures/gui/line.png');
+  background-image: var(--line);
   background-size: auto 100%;
 }
 a {
@@ -1219,8 +1220,7 @@ a {
 }
 .modal .modal-content,
 .menu .menu-content,
-.alert .alert-content,
-.first-modal .first-modal-content {
+.alert .alert-content {
   margin: auto;
   padding: 10px;
   word-wrap: normal;
@@ -1230,6 +1230,21 @@ a {
   bottom: 0;
   left: 0;
   background-size: 100% auto;
+  text-align: center;
+}
+.first-modal .first-modal-content {
+  width: 100%;
+  height: calc(100% - 70px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 50px;
+  backdrop-filter: blur(5px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 .modal .modal-content {
@@ -1255,21 +1270,6 @@ a {
   background-size: auto 100%;
   background-position: center center;
   color: var(--black);
-}
-.first-modal .first-modal-content {
-  width: 576px;
-  height: 312px;
-  right: 0;
-  left: 0;
-  background-image: var(--first);
-  background-size: auto 100%;
-  background-position: center center;
-  background-repeat: no-repeat;
-  color: var(--white);
-}
-#selectedLanguageIs {
-  text-align: center;
-  width: 100%;
 }
 .menu .menu-content .content {
   margin: 0;
@@ -2565,16 +2565,14 @@ form input[type="button"] {
   color: var(--white);
 }
 #defaultSettings,
-#applySettings,
-#firstModalApplyBtm {
+#applySettings {
   position: absolute;
   bottom: 8px;
   right: 25px;
   width: 84px;
   height: 25px;
 }
-#applySettings,
-#firstModalApplyBtm {
+#applySettings {
   right: 125px;
   display: none;
 }
@@ -2818,17 +2816,6 @@ input[type="range"]::-webkit-slider-thumb {
 }
 .totopelement:hover {
   filter: grayscale(0);
-}
-.firstinfirstmodal,
-#newFirstLineBtns,
-#newFirstLineBtns2 {
-  margin-left: 68px !important;
-}
-#firstModalApplyBtm {
-  bottom: 14px;
-  left: auto !important;
-  right: auto !important;
-  margin: 0 !important;
 }
 .hr-fix {
   width: 100%;
@@ -3248,14 +3235,14 @@ select:hover {
   background-position: bottom right;
 }
 #widther {
-  background-image: var(--battery-prog-normal);
+  background-image: var(--loading-prog);
+  outline: solid 2px var(--black-b);
   background-size: 100% auto;
   background-position: center center;
   transition: 0s;
   -o-transition: 0s;
   -moz-transition: 0s;
   -webkit-transition: 0s;
-  
   height: 5px;
   position: absolute;
   margin-top: 276px;
@@ -3608,6 +3595,85 @@ input[type="color"]::-webkit-color-swatch {
   -webkit-animation: cursordown 1s !important;
   animation: cursordown 1s !important;
 }
+.first-content {
+  display: none;
+}
+.first-language {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  margin: 10px auto;
+  width: 95%;
+  background-image: var(--changed);
+  background-position: right top;
+}
+.tab-first {
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  overflow-x: auto;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.tab-first .tablinks-first {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+  width: 100%;
+  background-image: var(--tabs-audio);
+  background-size: auto 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  filter: brightness(0.4) grayscale(1);
+  background-color: transparent;
+  border: none;
+}
+.tab-first .tablinks-first:hover {
+  filter: brightness(0.4) grayscale(0);
+  cursor: url('../animations/cursour/clickable/0.png'), pointer;
+  -webkit-animation: cursorlnk 0.4s infinite;
+  animation: cursorlnk 0.4s infinite;
+  background-image: var(--tabs-audio-hover);
+}
+.tab-first .tablinks-first.active {
+  filter: brightness(1) grayscale(0);
+  cursor: var(--cur-def) !important;
+  background-image: var(--tabs-audio-hover);
+}
+.first-letters {
+  width: 100%;
+  height: 100%;
+}
+.padsInFirst {
+  grid-template-columns: 1fr 1fr !important;
+}
+.tablinks-first:disabled:hover {
+  color: var(--white);
+  background-image: var(--tabs-audio);
+  filter: brightness(0.4) grayscale(1);
+}
+#firstDtab,
+#firstEtab {
+  overflow: auto;
+}
+.apply-first-settings {
+  width: 100%;
+  height: 20px;
+  background-size: 100% 100%;
+  background-image: var(--line);
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  bottom: 50px;
+  cursor: url('../animations/cursour/clickable/0.png'), pointer;
+  -webkit-animation: cursorlnk 0.4s infinite;
+  animation: cursorlnk 0.4s infinite;
+}
 @font-face {
   font-family: miSans;
   src: url('../fonts/MiSans.ttf');
@@ -3661,15 +3727,6 @@ input[type="color"]::-webkit-color-swatch {
     height: 24px;
     top: 0px;
     right: 0px;
-  }
-  .first-modal .first-modal-content {
-    width: 400px;
-    height: 209px;
-  }
-  .firstinfirstmodal,
-  #newFirstLineBtns,
-  #newFirstLineBtns2 {
-    margin-left: 53px !important;
   }
   .tab {
     top: 24px;
@@ -3732,16 +3789,15 @@ input[type="color"]::-webkit-color-swatch {
     padding-top: 12px;
   }
   #defaultSettings,
-  #applySettings,
-  #firstModalApplyBtm {
+  #applySettings {
     bottom: 4px;
+    right: 10px;
     width: 60px;
     height: 18px;
     font-size: 10px;
   }
-  #applySettings,
-  #firstModalApplyBtm {
-    right: 100px;
+  #applySettings {
+    right: 82px;
   }
   .russian-text {
     font-size: 12px;
@@ -3900,6 +3956,18 @@ input[type="color"]::-webkit-color-swatch {
   #keypad .keypad:last-child div {
     width: 22px;
   }
+  .first-modal-content {
+    height: calc(100% - 47px) !important;
+  }
+  .tab-first {
+    height: 27px;
+  }
+  .tab-first .tablinks-first {
+    font-size: 12.5px;
+  }
+  .apply-first-settings {
+    bottom: 27px;
+  }
 }
 @media screen and (min-width: 1545px) {
   .alert-btn-container input {
@@ -3917,5 +3985,8 @@ input[type="color"]::-webkit-color-swatch {
   }
   .alert .alert-content #alertText {
     font-size: 25px;
+  }
+  .alert-btn-container input {
+    margin: 0px 25px;
   }
 }
