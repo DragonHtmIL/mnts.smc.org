@@ -472,7 +472,7 @@
             <input type="button" id="downloadNoAutoUpdate" class="windows-dl" onclick="downloadAlertSystem();" value=" ">
             <input type="button" id="downloadNoAutoUpdate2" class="android-dl" value=" ">
             <div class="range-content">
-              <input type="checkbox" id="administratorTools" onclick="selectionSound();" disabled>
+              <input type="checkbox" id="administratorTools" onclick="selectionSound();">
               <label class="label-checkbox" for="administratorTools" id="adminToolsLang">...</label>
             </div>
             <hr>
@@ -889,7 +889,7 @@
                 <div class="keyOboard" id="keyx" onclick="letterLoadXx();defaultClickSound();">x</div>
                 <div class="keyOboard" id="keyy" onclick="letterLoadYy();defaultClickSound();">y</div>
                 <div class="keyOboard" id="keyz" onclick="letterLoadZz();defaultClickSound();">z</div>
-                <div class="keyOboard" id="keyShift" onclick="shiftLetters();selectionSound();">⇑</div>
+                <div class="keyOboard" id="keyShift" onclick="shiftLetters();selectionSound();">↑</div>
                 <div class="keyOboard" id="keyClear" onclick="letterLoad();cancelSound();">⨱</div>
               </div>
             </div>
@@ -1361,29 +1361,29 @@
             <div class="row">
               <div class="middle">
                 <div class="bar-container">
-                  <div class="bar-5" style="width: 0.0%;"></div>
+                  <div class="bar-5" style="width: 1%;"></div>
                 </div>
               </div>
               <div class="side left">
                 <div class="r-stars">5</div>
               </div>
               <div class="side right">
-                <div>0</div>
+                <div>1</div>
               </div>
               <div class="middle">
                 <div class="bar-container">
-                  <div class="bar-4" style="width: 1%;"></div>
+                  <div class="bar-4" style="width: 0%;"></div>
                 </div>
               </div>
               <div class="side left">
                 <div class="r-stars">4</div>
               </div>
               <div class="side right">
-                <div>1</div>
+                <div>0</div>
               </div>
               <div class="middle">
                 <div class="bar-container">
-                  <div class="bar-3" style="width: 0.0%;"></div>
+                  <div class="bar-3" style="width: 0%;"></div>
                 </div>
               </div>
               <div class="side left">
@@ -1394,7 +1394,7 @@
               </div>
               <div class="middle">
                 <div class="bar-container">
-                  <div class="bar-2" style="width: 0.0%;"></div>
+                  <div class="bar-2" style="width: 0%;"></div>
                 </div>
               </div>
               <div class="side left">
@@ -1405,7 +1405,7 @@
               </div>
               <div class="middle">
                 <div class="bar-container">
-                  <div class="bar-1" style="width: 0.0%;"></div>
+                  <div class="bar-1" style="width: 0%;"></div>
                 </div>
               </div>
               <div class="side left">
@@ -1512,25 +1512,155 @@
         </div>
       </div>
       <div id="firstModal" class="first-modal" style="display: none;">
-        <div class="first-modal-content">
-          <div id="firstContentA" class="in-first-modal">
-            <div class="stepsFirsts">1/1</div>
-            <div>
-              <p id="langTitleOfFirstModal"></p>
-            </div>
+        <div id="firstTabsContents" class="first-modal-content">
+          <div id="firstAtab" class="first-content" style="display: block;"><!--Language Content-->
+            <h1 id="fAtLang" class="first-tabs-title">First select a Language</h1>
             <div id="selectOptions" class="select-content">
-              <div onclick="document.getElementById('langTitleOfFirstModal').innerHTML='Select language';document.getElementById('languageEn').click();document.getElementById('selectedLanguageIs').innerHTML='English is selected.';document.getElementById('firstModalApplyBtm').style.display='block';document.getElementById('firstModalApplyBtm').value='Apply';document.getElementById('selectedLanguageIs').style.direction='ltr';" class="language select firstinfirstmodal">English</div>
-              <div onclick="document.getElementById('langTitleOfFirstModal').innerHTML='Вибирайте язык';document.getElementById('languageRu').click();document.getElementById('selectedLanguageIs').innerHTML='Русский вибирань.';document.getElementById('firstModalApplyBtm').style.display='block';document.getElementById('firstModalApplyBtm').value='Подтвердить';document.getElementById('selectedLanguageIs').style.direction='ltr'" class="language select">Русский</div>
-              <div onclick="document.getElementById('langTitleOfFirstModal').innerHTML='言語を選択';document.getElementById('languageJp').click();document.getElementById('selectedLanguageIs').innerHTML='日本語が選択されています。';document.getElementById('firstModalApplyBtm').style.display='block';document.getElementById('firstModalApplyBtm').value='適用する';document.getElementById('selectedLanguageIs').style.direction='ltr'" class="language select">日本語</div>
-              <div onclick="document.getElementById('langTitleOfFirstModal').innerHTML='选择语言';document.getElementById('languageChs').click();document.getElementById('selectedLanguageIs').innerHTML='选择简体中文。';document.getElementById('firstModalApplyBtm').style.display='block';document.getElementById('firstModalApplyBtm').value='申请';document.getElementById('selectedLanguageIs').style.direction='ltr'" class="language select" id="newFirstLineBtns">简体中文</div>
-              <div onclick="document.getElementById('langTitleOfFirstModal').innerHTML='繁體中文';document.getElementById('languageCht').click();document.getElementById('selectedLanguageIs').innerHTML='已選擇繁體中文。';document.getElementById('firstModalApplyBtm').style.display='block';document.getElementById('firstModalApplyBtm').value='申請';document.getElementById('selectedLanguageIs').style.direction='ltr'" class="language select">繁體中文</div>
-              <div onclick="document.getElementById('langTitleOfFirstModal').innerHTML='언어 선택';document.getElementById('languageKo').click();document.getElementById('selectedLanguageIs').innerHTML='한국어가 선택되었습니다.';document.getElementById('firstModalApplyBtm').style.display='block';document.getElementById('firstModalApplyBtm').value='적용하다';document.getElementById('selectedLanguageIs').style.direction='ltr'" class="language select">한국어</div>
-              <div onclick="document.getElementById('langTitleOfFirstModal').innerHTML='בחר שפה';document.getElementById('languageHe').click();document.getElementById('selectedLanguageIs').innerHTML='עברית נבחרה.';document.getElementById('firstModalApplyBtm').style.display='block';document.getElementById('firstModalApplyBtm').value='החל';document.getElementById('selectedLanguageIs').style.direction='rtl'" class="language select" id="newFirstLineBtns2">עברית</div>
-              <div onclick="document.getElementById('langTitleOfFirstModal').innerHTML='Sprache auswählen';document.getElementById('languageHe').click();document.getElementById('selectedLanguageIs').innerHTML='Deutsch ist ausgewählt.';document.getElementById('firstModalApplyBtm').style.display='block';document.getElementById('firstModalApplyBtm').value='Anwenden';document.getElementById('selectedLanguageIs').style.direction='ltr'" class="language select">Deutsche</div>
-              <div id="selectedLanguageIs"></div>
+              <div onclick="selectLangInFirstEn();" class="first-language select" id="fLsa">English</div><br>
+              <div onclick="selectLangInFirstRu();" class="first-language select" id="fLsb">Русский</div><br>
+              <div onclick="selectLangInFirstJp();" class="first-language select" id="fLsc">日本語</div><br>
+              <div onclick="selectLangInFirstChs();" class="first-language select" id="fLsd">简体中文</div><br>
+              <div onclick="selectLangInFirstCht();" class="first-language select" id="fLse">繁體中文</div><br>
+              <div onclick="selectLangInFirstKo();" class="first-language select" id="fLsf">한국어</div><br>
+              <div onclick="selectLangInFirstHe();" class="first-language select" id="fLsg">עברית</div><br>
+              <div onclick="selectLangInFirstDe();" class="first-language select" id="fLsh">Deutsche</div>
             </div>
-            <input type="submit" id="firstModalApplyBtm" onclick="document.getElementById('applySettings').click();localStorage.setItem('firsttime','exist')" style="display:none;" value="..." />
+            <div id="nc100l"></div>
           </div>
+          <div id="firstBtab" class="first-content" style="display: none;"><!--Game Content-->
+            <h1 id="fBtLang" class="first-tabs-title">...</h1>
+            <div id="selectOptions" class="select-content">
+              <div onclick="selectDeffInFirstNorm();" class="first-difficulty select" id="fDsa">...</div><br>
+              <div onclick="selectDeffInFirstHard();" class="first-difficulty select" id="fDsb">...</div><br>
+              <div onclick="selectDeffInFirstHell();" class="first-difficulty select" id="fDsc">...</div><br>
+            </div>
+          </div>
+          <div id="firstCtab" class="first-content" style="display: none;"><!--Snake Content-->
+            <h1 id="fCtLang" class="first-tabs-title">...</h1>
+            <input type="color" name="sCinFirst" id="fSnakeColor" value="#ddaaff" onchange="document.getElementById('snakeColor').value=document.getElementById('fSnakeColor').value">
+            <div id="keypad" class="padsInFirst">
+              <div class="keypad numpad">
+                <div class="first-letters" id="sLetter0" onclick="sLetterSis0();">0</div>
+                <div class="first-letters" id="sLetter1" onclick="sLetterSis1();">1</div>
+                <div class="first-letters" id="sLetter2" onclick="sLetterSis2();">2</div>
+                <div class="first-letters" id="sLetter3" onclick="sLetterSis3();">3</div>
+                <div class="first-letters" id="sLetter4" onclick="sLetterSis4();">4</div>
+                <div class="first-letters" id="sLetter5" onclick="sLetterSis5();">5</div>
+                <div class="first-letters" id="sLetter6" onclick="sLetterSis6();">6</div>
+                <div class="first-letters" id="sLetter7" onclick="sLetterSis7();">7</div>
+                <div class="first-letters" id="sLetter8" onclick="sLetterSis8();">8</div>
+                <div class="first-letters" id="sLetter9" onclick="sLetterSis9();">9</div>
+              </div>
+              <div class="keypad wordpad">
+                <div class="first-letters" id="sLettera" onclick="sLetterSisa();">a</div>
+                <div class="first-letters" id="sLetterb" onclick="sLetterSisb();">b</div>
+                <div class="first-letters" id="sLetterc" onclick="sLetterSisc();">c</div>
+                <div class="first-letters" id="sLetterd" onclick="sLetterSisd();">d</div>
+                <div class="first-letters" id="sLettere" onclick="sLetterSise();">e</div>
+                <div class="first-letters" id="sLetterf" onclick="sLetterSisf();">f</div>
+                <div class="first-letters" id="sLetterg" onclick="sLetterSisg();">g</div>
+                <div class="first-letters" id="sLetterh" onclick="sLetterSish();">h</div>
+                <div class="first-letters" id="sLetteri" onclick="sLetterSisi();">i</div>
+                <div class="first-letters" id="sLetterj" onclick="sLetterSisj();">j</div>
+                <div class="first-letters" id="sLetterk" onclick="sLetterSisk();">k</div>
+                <div class="first-letters" id="sLetterl" onclick="sLetterSisl();">l</div>
+                <div class="first-letters" id="sLetterm" onclick="sLetterSism();">m</div>
+                <div class="first-letters" id="sLettern" onclick="sLetterSisn();">n</div>
+                <div class="first-letters" id="sLettero" onclick="sLetterSiso();">o</div>
+                <div class="first-letters" id="sLetterp" onclick="sLetterSisp();">p</div>
+                <div class="first-letters" id="sLetterq" onclick="sLetterSisq();">q</div>
+                <div class="first-letters" id="sLetterr" onclick="sLetterSisr();">r</div>
+                <div class="first-letters" id="sLetters" onclick="sLetterSiss();">s</div>
+                <div class="first-letters" id="sLettert" onclick="sLetterSist();">t</div>
+                <div class="first-letters" id="sLetteru" onclick="sLetterSisu();">u</div>
+                <div class="first-letters" id="sLetterv" onclick="sLetterSisv();">v</div>
+                <div class="first-letters" id="sLetterw" onclick="sLetterSisw();">w</div>
+                <div class="first-letters" id="sLetterx" onclick="sLetterSisx();">x</div>
+                <div class="first-letters" id="sLettery" onclick="sLetterSisy();">y</div>
+                <div class="first-letters" id="sLetterz" onclick="sLetterSisz();">z</div>
+                <div class="first-letters" id="keyShiftFirst" onclick="sLetterSisShift();">↑</div>
+                <div class="first-letters" id="sLetterSisEmpty" onclick="sLetterSisEmpty();">⨱</div>
+              </div>
+            </div>
+          </div>
+          <div id="firstDtab" class="first-content" style="display: none;"><!--Music Content-->
+            <h1 id="fDtLang" class="first-tabs-title">...</h1>
+            <div id="selectOptions" class="select-content">
+              <div onclick="selectMusicInFirsta();" class="first-music select" id="fMsa">Stable and Upbeat</div><br>
+              <div onclick="selectMusicInFirstb();" class="first-music select" id="fMsb">Acceleration Folding</div><br>
+              <div onclick="selectMusicInFirstc();" class="first-music select" id="fMsc">Alice the Dreamer: Accompaniment</div><br>
+              <div onclick="selectMusicInFirstd();" class="first-music select" id="fMsd">Alice the Dreamer</div><br>
+              <div onclick="selectMusicInFirste();" class="first-music select" id="fMse">All or Nothing - Ending Version</div><br>
+              <div onclick="selectMusicInFirstf();" class="first-music select" id="fMsf">All or Nothing</div><br>
+              <div onclick="selectMusicInFirstg();" class="first-music select" id="fMsg">Backtracking Journey</div><br>
+              <div onclick="selectMusicInFirsth();" class="first-music select" id="fMsh">Before the Storm</div><br>
+              <div onclick="selectMusicInFirsti();" class="first-music select" id="fMsi">Disillusionment Melody</div><br>
+              <div onclick="selectMusicInFirstj();" class="first-music select" id="fMsj">Explosive Halo</div><br>
+              <div onclick="selectMusicInFirstk();" class="first-music select" id="fMsk">Firestar</div><br>
+              <div onclick="selectMusicInFirstl();" class="first-music select" id="fMsl">Future Bounce</div><br>
+              <div onclick="selectMusicInFirstm();" class="first-music select" id="fMsm">Interlude Mojito</div><br>
+              <div onclick="selectMusicInFirstn();" class="first-music select" id="fMsn">Joyful Passion</div><br>
+              <div onclick="selectMusicInFirsto();" class="first-music select" id="fMso">Lunar</div><br>
+              <div onclick="selectMusicInFirstp();" class="first-music select" id="fMsp">Nyan Nyan</div><br>
+              <div onclick="selectMusicInFirstq();" class="first-music select" id="fMsq">Prelude of War</div><br>
+              <div onclick="selectMusicInFirstr();" class="first-music select" id="fMsr">Preparation Break</div><br>
+              <div onclick="selectMusicInFirsts();" class="first-music select" id="fMss">SMC Memory 2022</div><br>
+              <div onclick="selectMusicInFirstt();" class="first-music select" id="fMst">SMC Memory 2023</div><br>
+              <div onclick="selectMusicInFirstu();" class="first-music select" id="fMsu">Throbbing Beat</div><br>
+              <div onclick="selectMusicInFirstv();" class="first-music select" id="fMsv">Ultra Beast Force</div>
+            </div>
+          </div>
+          <div id="firstEtab" class="first-content" style="display: none;"><!--Walking Content-->
+            <h1 id="fEtLang" class="first-tabs-title">...</h1>
+            <div id="selectOptions" class="select-content">
+              <div onclick="mwAIlangFunction();" class="first-music select" id="fWsai">Akashic (Walk)</div><br>
+              <hr>
+              <div onclick="mwAlangFunction();" class="first-music select" id="fWsa">Alborada (Walk)</div><br>
+              <div onclick="mwBlangFunction();" class="first-music select" id="fWsb">Andromeda (Walk)</div><br>
+              <div onclick="mwClangFunction();" class="first-music select" id="fWsc">Arthur (Walk)</div><br>
+              <div onclick="mwDlangFunction();" class="first-music select" id="fWsd">Aurora (Walk)</div><br>
+              <div onclick="mwElangFunction();" class="first-music select" id="fWse">Boltus (Walk)</div><br>
+              <div onclick="mwFlangFunction();" class="first-music select" id="fWsf">Caramel (Walk)</div><br>
+              <div onclick="mwYlangFunction();" class="first-music select" id="fWsy">Death knell (Walk)</div><br>
+              <div onclick="mwGlangFunction();" class="first-music select" id="fWsg">Doomlight (Walk)</div><br>
+              <div onclick="mwZlangFunction();" class="first-music select" id="fWsz">Dreadwolf (Walk)</div><br>
+              <div onclick="mwHlangFunction();" class="first-music select" id="fWsh">Frefox (Walk)</div><br>
+              <div onclick="mwIlangFunction();" class="first-music select" id="fWsi">Firestar (Walk)</div><br>
+              <div onclick="mwJlangFunction();" class="first-music select" id="fWsj">Flamenco (Walk)</div><br>
+              <div onclick="mwKlangFunction();" class="first-music select" id="fWsk">Gabriel (Walk)</div><br>
+              <div onclick="mwAAlangFunction();" class="first-music select" id="fWsaa">Gaia (Walk)</div><br>
+              <div onclick="mwABlangFunction();" class="first-music select" id="fWsab">Guerilla Hunter (Walk)</div><br>
+              <div onclick="mwLlangFunction();" class="first-music select" id="fWsl">Hotsteel (Walk)</div><br>
+              <div onclick="mwMlangFunction();" class="first-music select" id="fWsm">Hurricane (Walk)</div><br>
+              <div onclick="mwNlangFunction();" class="first-music select" id="fWsn">Jojo (Walk)</div><br>
+              <div onclick="mwAClangFunction();" class="first-music select" id="fWsac">Lancelot (Walk)</div><br>
+              <div onclick="mwOlangFunction();" class="first-music select" id="fWso">Michael (Walk)</div><br>
+              <div onclick="mwADlangFunction();" class="first-music select" id="fWsad">Moon Rabbit (Walk)</div><br>
+              <div onclick="mwAElangFunction();" class="first-music select" id="fWsae">Nebula (Walk)</div><br>
+              <div onclick="mwPlangFunction();" class="first-music select" id="fWsp">Neutron Star (Walk)</div><br>
+              <div onclick="mwQlangFunction();" class="first-music select" id="fWsq">Northern Knight (Walk)</div><br>
+              <div onclick="mwRlangFunction();" class="first-music select" id="fWsr">Pulsar (Walk)</div><br>
+              <div onclick="mwSlangFunction();" class="first-music select" id="fWss">Ranger (Walk)</div><br>
+              <div onclick="mwTlangFunction();" class="first-music select" id="fWst">Raven (Walk)</div><br>
+              <div onclick="mwAFlangFunction();" class="first-music select" id="fWsaf">Shiranui (Walk)</div><br>
+              <div onclick="mwAJlangFunction();" class="first-music select" id="fWsaj">Skyfall (Walk)</div><br>
+              <div onclick="mwAGlangFunction();" class="first-music select" id="fWsag">Skyfire (Walk)</div><br>
+              <div onclick="mwUlangFunction();" class="first-music select" id="fWsu">Skylark (Walk)</div><br>
+              <div onclick="mwVlangFunction();" class="first-music select" id="fWsv">Snow Mirage (Walk)</div><br>
+              <div onclick="mwAKlangFunction();" class="first-music select" id="fWsak">Tempest (Walk)</div><br>
+              <div onclick="mwWlangFunction();" class="first-music select" id="fWsw">Trio of Enders (Walk)</div><br>
+              <div onclick="mwAHlangFunction();" class="first-music select" id="fWsah">Twilight (Walk)</div><br>
+              <div onclick="mwXlangFunction();" class="first-music select" id="fWsx">Ventorus (Walk)</div>
+            </div>
+          </div>
+        </div>
+        <button id="applyFirstSettings" class="apply-first-settings" onclick="localStorage.setItem('firstModal', 'exist');applySettings();" disabled>Complate</button>
+        <div id="firstTabsContiner" class="tab-first">
+          <button onclick="openFtab(event, 'firstAtab');pauseFirstMusic();selectionSound();" class="tablinks-first active" id="tabAfirst">Languages</button>
+          <button onclick="openFtab(event, 'firstBtab');pauseFirstMusic();selectionSound();" class="tablinks-first" id="tabBfirst" disabled>Game</button>
+          <button onclick="openFtab(event, 'firstCtab');pauseFirstMusic();selectionSound();" class="tablinks-first" id="tabCfirst" disabled>Snake</button>
+          <button onclick="openFtab(event, 'firstDtab');selectionSound();" class="tablinks-first" id="tabDfirst" disabled>Music</button>
+          <button onclick="openFtab(event, 'firstEtab');pauseFirstMusic();selectionSound();" class="tablinks-first" id="tabEfirst" disabled>Walking</button>
         </div>
       </div>
       <div id="updateModal" class="modal" style="display: none;">
@@ -1553,7 +1683,6 @@
           </div>
         </div>
       </div>
-    </div>
     <textarea name="text-area" id="textarea" style="position:fixed;display:none;"></textarea>
     <!-- Audio sources -->
     <!-- Colections Sounds -->
@@ -1914,6 +2043,7 @@
     <script src="index_data/scripts/key_controlls.js"></script>
     <script src="index_data/scripts/updates.js"></script>
     <script src="index_data/scripts/scripts_2.js"></script>
+    <script src="index_data/scripts/is_first_player.js"></script>
     <script>
       if(navigator.serviceWorker) {
         if(window.location.protocol === 'https:') {

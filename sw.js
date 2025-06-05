@@ -1,6 +1,6 @@
 var GHPATH = '/mnts.smc.org';
 var APP_PREFIX = 'gppwa_';
-let VERSIONNAME = "1.0.9-v2";
+let VERSIONNAME = "1.1.0-v2";
 var VERSION = VERSIONNAME;
 var URLS = [
   `${GHPATH}/`,
@@ -86,6 +86,7 @@ var URLS = [
   `${GHPATH}/index_data/scripts/system.js`,
   `${GHPATH}/index_data/scripts/loading_system.js`,
   `${GHPATH}/index_data/scripts/updates.js`,
+  `${GHPATH}/index_data/scripts/is_first_player.js`,
 
   `${GHPATH}/index_data/textures`,
   `${GHPATH}/index_data/textures/empty.png`,
@@ -321,6 +322,8 @@ var URLS = [
   `${GHPATH}/index_data/textures/gui/key_bg.png`,
   `${GHPATH}/index_data/textures/gui/key_bg_hover.png`,
   `${GHPATH}/index_data/textures/gui/actived_frame_cube.png`,
+  `${GHPATH}/index_data/textures/gui/actived_frame_cube.png`,
+  `${GHPATH}/index_data/textures/gui/loading_progress.png`,
 
   `${GHPATH}/index_data/textures/league`,
   `${GHPATH}/index_data/textures/league/league_1_bronze.png`,
