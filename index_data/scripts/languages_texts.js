@@ -74,6 +74,7 @@ function languagesContents() {
   var a072 = document.getElementById("defOptionLang");
   var a073 = document.getElementById("dynOptionLang");
   var a074 = document.getElementById("swaOptionLang");
+//  var a075 = document.getElementById("");
   const a000_all = document.getElementsByClassName('settingscontent');
   const a001_all = document.getElementsByClassName('stylescontent');
   const a002_all = document.getElementsByClassName('coming-soon');
@@ -174,6 +175,7 @@ function languagesContents() {
     a072.innerHTML = "Classic controller";
     a073.innerHTML = "DYnamic controller";
     a074.innerHTML = "Touch Screen Gestures";
+//    a075.innerHTML = "";
     for (let i = 0; i < a000_all.length; i++) {
       a000_all[i].textContent = 'Settings:';
     };
@@ -292,6 +294,7 @@ function languagesContents() {
     a072.innerHTML = "Классический контроллер";
     a073.innerHTML = "Динамический контроллер";
     a074.innerHTML = "Жесты сенсорного экрана";
+//    a075.innerHTML = "";
     for (let i = 0; i < a000_all.length; i++) {
       a000_all[i].textContent = 'Настройки:';
     };
@@ -411,6 +414,7 @@ function languagesContents() {
     a072.innerHTML = "クラシックコントローラー";
     a073.innerHTML = "ダイナミックコントローラー";
     a074.innerHTML = "タッチスクリーンジェスチャー";
+//    a075.innerHTML = "";
     for (let i = 0; i < a000_all.length; i++) {
       a000_all[i].textContent = '設定：';
     };
@@ -529,6 +533,7 @@ function languagesContents() {
     a072.innerHTML = "经典控制器";
     a073.innerHTML = "动态控制器";
     a074.innerHTML = "触摸屏手势";
+//    a075.innerHTML = "";
     for (let i = 0; i < a000_all.length; i++) {
       a000_all[i].textContent = '设置：';
     };
@@ -647,6 +652,7 @@ function languagesContents() {
     a072.innerHTML = "經典控制器";
     a073.innerHTML = "動態控制器";
     a074.innerHTML = "觸控螢幕手勢";
+//    a075.innerHTML = "";
     for (let i = 0; i < a000_all.length; i++) {
       a000_all[i].textContent = '設定:';
     };
@@ -765,6 +771,7 @@ function languagesContents() {
     a072.innerHTML = "클래식 컨트롤러";
     a073.innerHTML = "다이내믹 컨트롤러";
     a074.innerHTML = "터치스크린 제스처";
+//    a075.innerHTML = "";
     for (let i = 0; i < a000_all.length; i++) {
       a000_all[i].textContent = '설정:';
     };
@@ -914,6 +921,7 @@ function languagesContents() {
     a072.innerHTML = "בקר קלאסי";
     a073.innerHTML = "בקר דינמי";
     a074.innerHTML = "מחוות מסך מגע";
+//    a075.innerHTML = "";
     for (let i = 0; i < a000_all.length; i++) {
       a000_all[i].textContent = 'הגדרות:';
       a000_all[i].style.direction = "rtl";
@@ -1041,6 +1049,7 @@ function languagesContents() {
     a072.innerHTML = "Klassische Konsole";
     a073.innerHTML = "Dynamische Konsole";
     a074.innerHTML = "Touchscreen-Gesten";
+//    a075.innerHTML = "";
     for (let i = 0; i < a000_all.length; i++) {
       a000_all[i].textContent = 'Einstellungen:';
     };

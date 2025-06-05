@@ -493,14 +493,6 @@ function checkDeviceType() {
   }
 };
 checkDeviceType();
-function firstTime() {
-  if(localStorage.getItem("firsttime") === null || localStorage.getItem("firsttime") === "") {
-    document.getElementById("firstModal").style.display = "block";
-  }else{
-    return false;
-  }
-}
-firstTime();
 function autoSnakeLoadNew() {
   if(localStorage.getItem("snakeStyle") === null) {
     // load snake

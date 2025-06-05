@@ -254,7 +254,8 @@ const tassetGuis = [//62
   "key_bg",
   "key_bg_hover",
   "htp_button",
-  "actived_frame_cube"
+  "actived_frame_cube",
+  "loading_progress"
 ];
 const tassetLeagues = [//18
   "league_1_bronze",
@@ -1048,8 +1049,15 @@ function loadTextures() {
   };
 };
 function toDisplayNone() {
-  if(document.getElementById('widther').style.width === "46.4%") {
-    alertAccept();
+  if(document.getElementById('widther').style.width === "46.5%") {
+    if(localStorage.getItem("firstModal") === null) {
+      document.getElementById("firstModal").style.display = "block";
+    }else
+    if(localStorage.getItem("firstModal") === "") {
+      document.getElementById("firstModal").style.display = "block";
+    }else{
+      alertAccept();
+    }
     document.getElementById("loading").style.display = "none";
   }
 };
