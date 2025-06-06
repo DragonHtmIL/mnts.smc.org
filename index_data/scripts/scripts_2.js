@@ -2846,6 +2846,9 @@ function saveAutoScoreCheckboxPhasa() {
     localStorage.setItem("autoSaveScoreCheck", "false");
   }
 }
+function openDiscordService() {
+  window.open("https://discord.gg/9qapnUDKsW",'_blank');
+}
 window.addEventListener('load', function() {
   loadTextures();
   updateTextLangs();

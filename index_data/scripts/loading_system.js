@@ -385,8 +385,7 @@ const tassetSystems = [//33
   "icon_256",
   "icon_300",
   "icon_384",
-  "icon_512",
-  "messenger"
+  "icon_512"
 ];
 const tassetLoadingLogos = [//4
   "anime",
@@ -448,28 +447,37 @@ function loadTextures() {
       errorscont++;
       if(localStorage.getItem("lang") === "en") {
         document.getElementById("loadingText").innerHTML = "Cant load " + errorscont + " assets, not found or removed...";
+        document.getElementById("loadingText").innerHTML += "<br>" + "maybe try reload, if again not loaded tell us.";
       }else
       if(localStorage.getItem("lang") === "ru") {
         document.getElementById("loadingText").innerHTML = "Невозможно загрузить " + errorscont + " активов, они не найдены или удалены...";
+        document.getElementById("loadingText").innerHTML += "<br>" + "попробуйте перезагрузить, если снова не загрузится, сообщите нам.";
       }else
       if(localStorage.getItem("lang") === "jp") {
         document.getElementById("loadingText").innerHTML = errorscont + "つのアセットを読み込めません。見つからないか削除されています...";
+        document.getElementById("loadingText").innerHTML += "<br>" + "再ロードしてみてください。それでもロードされない場合はお知らせください。";
       }else
       if(localStorage.getItem("lang") === "chs") {
         document.getElementById("loadingText").innerHTML = "無法載入" + errorscont + "個資產，未找到或已刪除...";
+        document.getElementById("loadingText").innerHTML += "<br>" + "也许尝试重新加载，如果再次没有加载请告诉我们。";
       }else
       if(localStorage.getItem("lang") === "cht") {
         document.getElementById("loadingText").innerHTML = "無法載入" + errorscont + "個資產，未找到或已刪除...";
+        document.getElementById("loadingText").innerHTML += "<br>" + "也許嘗試重新加載，如果再次沒有加載請告訴我們。";
       }else
       if(localStorage.getItem("lang") === "ko") {
         document.getElementById("loadingText").innerHTML = errorscont + "개의 자산을 로드할 수 없습니다. 자산을 찾을 수 없거나 삭제되지 않았습니다...";
+        document.getElementById("loadingText").innerHTML += "<br>" + "다시 로드해 보세요. 그래도 로드되지 않으면 알려주세요.";
       }else
       if(localStorage.getItem("lang") === "he") {
         document.getElementById("loadingText").innerHTML = "לא ניתן לטעון " + errorscont + " נכסים, לא נמצאו או הוסרו...";
+        document.getElementById("loadingText").innerHTML += "<br>" + "אולי תנסה לטעון מחדש, אם שוב לא נטען הודיעו לנו.";
       }else
       if(localStorage.getItem("lang") === "de") {
         document.getElementById("loadingText").innerHTML = errorscont + " Assets können nicht geladen werden, nicht gefunden oder entfernt …";
+        document.getElementById("loadingText").innerHTML += "<br>" + "Versuchen Sie es vielleicht erneut. Wenn es erneut nicht geladen wird, sagen Sie es uns.";
       }
+      document.getElementById("loadingService").style.display = "flex";
     });
     document.getElementById("loadedbar").appendChild(assetboard);
   };
@@ -489,28 +497,37 @@ function loadTextures() {
       errorscont++;
       if(localStorage.getItem("lang") === "en") {
         document.getElementById("loadingText").innerHTML = "Cant load " + errorscont + " assets, not found or removed...";
+        document.getElementById("loadingText").innerHTML += "<br>" + "maybe try reload, if again not loaded tell us.";
       }else
       if(localStorage.getItem("lang") === "ru") {
         document.getElementById("loadingText").innerHTML = "Невозможно загрузить " + errorscont + " активов, они не найдены или удалены...";
+        document.getElementById("loadingText").innerHTML += "<br>" + "попробуйте перезагрузить, если снова не загрузится, сообщите нам.";
       }else
       if(localStorage.getItem("lang") === "jp") {
         document.getElementById("loadingText").innerHTML = errorscont + "つのアセットを読み込めません。見つからないか削除されています...";
+        document.getElementById("loadingText").innerHTML += "<br>" + "再ロードしてみてください。それでもロードされない場合はお知らせください。";
       }else
       if(localStorage.getItem("lang") === "chs") {
         document.getElementById("loadingText").innerHTML = "無法載入" + errorscont + "個資產，未找到或已刪除...";
+        document.getElementById("loadingText").innerHTML += "<br>" + "也许尝试重新加载，如果再次没有加载请告诉我们。";
       }else
       if(localStorage.getItem("lang") === "cht") {
         document.getElementById("loadingText").innerHTML = "無法載入" + errorscont + "個資產，未找到或已刪除...";
+        document.getElementById("loadingText").innerHTML += "<br>" + "也許嘗試重新加載，如果再次沒有加載請告訴我們。";
       }else
       if(localStorage.getItem("lang") === "ko") {
         document.getElementById("loadingText").innerHTML = errorscont + "개의 자산을 로드할 수 없습니다. 자산을 찾을 수 없거나 삭제되지 않았습니다...";
+        document.getElementById("loadingText").innerHTML += "<br>" + "다시 로드해 보세요. 그래도 로드되지 않으면 알려주세요.";
       }else
       if(localStorage.getItem("lang") === "he") {
         document.getElementById("loadingText").innerHTML = "לא ניתן לטעון " + errorscont + " נכסים, לא נמצאו או הוסרו...";
+        document.getElementById("loadingText").innerHTML += "<br>" + "אולי תנסה לטעון מחדש, אם שוב לא נטען הודיעו לנו.";
       }else
       if(localStorage.getItem("lang") === "de") {
         document.getElementById("loadingText").innerHTML = errorscont + " Assets können nicht geladen werden, nicht gefunden oder entfernt …";
+        document.getElementById("loadingText").innerHTML += "<br>" + "Versuchen Sie es vielleicht erneut. Wenn es erneut nicht geladen wird, sagen Sie es uns.";
       }
+      document.getElementById("loadingService").style.display = "flex";
     });
     document.getElementById("loadedbar").appendChild(assetFood);
   };
@@ -530,28 +547,37 @@ function loadTextures() {
       errorscont++;
       if(localStorage.getItem("lang") === "en") {
         document.getElementById("loadingText").innerHTML = "Cant load " + errorscont + " assets, not found or removed...";
+        document.getElementById("loadingText").innerHTML += "<br>" + "maybe try reload, if again not loaded tell us.";
       }else
       if(localStorage.getItem("lang") === "ru") {
         document.getElementById("loadingText").innerHTML = "Невозможно загрузить " + errorscont + " активов, они не найдены или удалены...";
+        document.getElementById("loadingText").innerHTML += "<br>" + "попробуйте перезагрузить, если снова не загрузится, сообщите нам.";
       }else
       if(localStorage.getItem("lang") === "jp") {
         document.getElementById("loadingText").innerHTML = errorscont + "つのアセットを読み込めません。見つからないか削除されています...";
+        document.getElementById("loadingText").innerHTML += "<br>" + "再ロードしてみてください。それでもロードされない場合はお知らせください。";
       }else
       if(localStorage.getItem("lang") === "chs") {
         document.getElementById("loadingText").innerHTML = "無法載入" + errorscont + "個資產，未找到或已刪除...";
+        document.getElementById("loadingText").innerHTML += "<br>" + "也许尝试重新加载，如果再次没有加载请告诉我们。";
       }else
       if(localStorage.getItem("lang") === "cht") {
         document.getElementById("loadingText").innerHTML = "無法載入" + errorscont + "個資產，未找到或已刪除...";
+        document.getElementById("loadingText").innerHTML += "<br>" + "也許嘗試重新加載，如果再次沒有加載請告訴我們。";
       }else
       if(localStorage.getItem("lang") === "ko") {
         document.getElementById("loadingText").innerHTML = errorscont + "개의 자산을 로드할 수 없습니다. 자산을 찾을 수 없거나 삭제되지 않았습니다...";
+        document.getElementById("loadingText").innerHTML += "<br>" + "다시 로드해 보세요. 그래도 로드되지 않으면 알려주세요.";
       }else
       if(localStorage.getItem("lang") === "he") {
         document.getElementById("loadingText").innerHTML = "לא ניתן לטעון " + errorscont + " נכסים, לא נמצאו או הוסרו...";
+        document.getElementById("loadingText").innerHTML += "<br>" + "אולי תנסה לטעון מחדש, אם שוב לא נטען הודיעו לנו.";
       }else
       if(localStorage.getItem("lang") === "de") {
         document.getElementById("loadingText").innerHTML = errorscont + " Assets können nicht geladen werden, nicht gefunden oder entfernt …";
+        document.getElementById("loadingText").innerHTML += "<br>" + "Versuchen Sie es vielleicht erneut. Wenn es erneut nicht geladen wird, sagen Sie es uns.";
       }
+      document.getElementById("loadingService").style.display = "flex";
     });
     document.getElementById("loadedbar").appendChild(assetGui);
   };
@@ -571,28 +597,37 @@ function loadTextures() {
       errorscont++;
       if(localStorage.getItem("lang") === "en") {
         document.getElementById("loadingText").innerHTML = "Cant load " + errorscont + " assets, not found or removed...";
+        document.getElementById("loadingText").innerHTML += "<br>" + "maybe try reload, if again not loaded tell us.";
       }else
       if(localStorage.getItem("lang") === "ru") {
         document.getElementById("loadingText").innerHTML = "Невозможно загрузить " + errorscont + " активов, они не найдены или удалены...";
+        document.getElementById("loadingText").innerHTML += "<br>" + "попробуйте перезагрузить, если снова не загрузится, сообщите нам.";
       }else
       if(localStorage.getItem("lang") === "jp") {
         document.getElementById("loadingText").innerHTML = errorscont + "つのアセットを読み込めません。見つからないか削除されています...";
+        document.getElementById("loadingText").innerHTML += "<br>" + "再ロードしてみてください。それでもロードされない場合はお知らせください。";
       }else
       if(localStorage.getItem("lang") === "chs") {
         document.getElementById("loadingText").innerHTML = "無法載入" + errorscont + "個資產，未找到或已刪除...";
+        document.getElementById("loadingText").innerHTML += "<br>" + "也许尝试重新加载，如果再次没有加载请告诉我们。";
       }else
       if(localStorage.getItem("lang") === "cht") {
         document.getElementById("loadingText").innerHTML = "無法載入" + errorscont + "個資產，未找到或已刪除...";
+        document.getElementById("loadingText").innerHTML += "<br>" + "也許嘗試重新加載，如果再次沒有加載請告訴我們。";
       }else
       if(localStorage.getItem("lang") === "ko") {
         document.getElementById("loadingText").innerHTML = errorscont + "개의 자산을 로드할 수 없습니다. 자산을 찾을 수 없거나 삭제되지 않았습니다...";
+        document.getElementById("loadingText").innerHTML += "<br>" + "다시 로드해 보세요. 그래도 로드되지 않으면 알려주세요.";
       }else
       if(localStorage.getItem("lang") === "he") {
         document.getElementById("loadingText").innerHTML = "לא ניתן לטעון " + errorscont + " נכסים, לא נמצאו או הוסרו...";
+        document.getElementById("loadingText").innerHTML += "<br>" + "אולי תנסה לטעון מחדש, אם שוב לא נטען הודיעו לנו.";
       }else
       if(localStorage.getItem("lang") === "de") {
         document.getElementById("loadingText").innerHTML = errorscont + " Assets können nicht geladen werden, nicht gefunden oder entfernt …";
+        document.getElementById("loadingText").innerHTML += "<br>" + "Versuchen Sie es vielleicht erneut. Wenn es erneut nicht geladen wird, sagen Sie es uns.";
       }
+      document.getElementById("loadingService").style.display = "flex";
     });
     document.getElementById("loadedbar").appendChild(assetLeague);
   };
@@ -612,28 +647,37 @@ function loadTextures() {
       errorscont++;
       if(localStorage.getItem("lang") === "en") {
         document.getElementById("loadingText").innerHTML = "Cant load " + errorscont + " assets, not found or removed...";
+        document.getElementById("loadingText").innerHTML += "<br>" + "maybe try reload, if again not loaded tell us.";
       }else
       if(localStorage.getItem("lang") === "ru") {
         document.getElementById("loadingText").innerHTML = "Невозможно загрузить " + errorscont + " активов, они не найдены или удалены...";
+        document.getElementById("loadingText").innerHTML += "<br>" + "попробуйте перезагрузить, если снова не загрузится, сообщите нам.";
       }else
       if(localStorage.getItem("lang") === "jp") {
         document.getElementById("loadingText").innerHTML = errorscont + "つのアセットを読み込めません。見つからないか削除されています...";
+        document.getElementById("loadingText").innerHTML += "<br>" + "再ロードしてみてください。それでもロードされない場合はお知らせください。";
       }else
       if(localStorage.getItem("lang") === "chs") {
         document.getElementById("loadingText").innerHTML = "無法載入" + errorscont + "個資產，未找到或已刪除...";
+        document.getElementById("loadingText").innerHTML += "<br>" + "也许尝试重新加载，如果再次没有加载请告诉我们。";
       }else
       if(localStorage.getItem("lang") === "cht") {
         document.getElementById("loadingText").innerHTML = "無法載入" + errorscont + "個資產，未找到或已刪除...";
+        document.getElementById("loadingText").innerHTML += "<br>" + "也許嘗試重新加載，如果再次沒有加載請告訴我們。";
       }else
       if(localStorage.getItem("lang") === "ko") {
         document.getElementById("loadingText").innerHTML = errorscont + "개의 자산을 로드할 수 없습니다. 자산을 찾을 수 없거나 삭제되지 않았습니다...";
+        document.getElementById("loadingText").innerHTML += "<br>" + "다시 로드해 보세요. 그래도 로드되지 않으면 알려주세요.";
       }else
       if(localStorage.getItem("lang") === "he") {
         document.getElementById("loadingText").innerHTML = "לא ניתן לטעון " + errorscont + " נכסים, לא נמצאו או הוסרו...";
+        document.getElementById("loadingText").innerHTML += "<br>" + "אולי תנסה לטעון מחדש, אם שוב לא נטען הודיעו לנו.";
       }else
       if(localStorage.getItem("lang") === "de") {
         document.getElementById("loadingText").innerHTML = errorscont + " Assets können nicht geladen werden, nicht gefunden oder entfernt …";
+        document.getElementById("loadingText").innerHTML += "<br>" + "Versuchen Sie es vielleicht erneut. Wenn es erneut nicht geladen wird, sagen Sie es uns.";
       }
+      document.getElementById("loadingService").style.display = "flex";
     });
     document.getElementById("loadedbar").appendChild(assetSnake);
   };
@@ -653,28 +697,37 @@ function loadTextures() {
       errorscont++;
       if(localStorage.getItem("lang") === "en") {
         document.getElementById("loadingText").innerHTML = "Cant load " + errorscont + " assets, not found or removed...";
+        document.getElementById("loadingText").innerHTML += "<br>" + "maybe try reload, if again not loaded tell us.";
       }else
       if(localStorage.getItem("lang") === "ru") {
         document.getElementById("loadingText").innerHTML = "Невозможно загрузить " + errorscont + " активов, они не найдены или удалены...";
+        document.getElementById("loadingText").innerHTML += "<br>" + "попробуйте перезагрузить, если снова не загрузится, сообщите нам.";
       }else
       if(localStorage.getItem("lang") === "jp") {
         document.getElementById("loadingText").innerHTML = errorscont + "つのアセットを読み込めません。見つからないか削除されています...";
+        document.getElementById("loadingText").innerHTML += "<br>" + "再ロードしてみてください。それでもロードされない場合はお知らせください。";
       }else
       if(localStorage.getItem("lang") === "chs") {
         document.getElementById("loadingText").innerHTML = "無法載入" + errorscont + "個資產，未找到或已刪除...";
+        document.getElementById("loadingText").innerHTML += "<br>" + "也许尝试重新加载，如果再次没有加载请告诉我们。";
       }else
       if(localStorage.getItem("lang") === "cht") {
         document.getElementById("loadingText").innerHTML = "無法載入" + errorscont + "個資產，未找到或已刪除...";
+        document.getElementById("loadingText").innerHTML += "<br>" + "也許嘗試重新加載，如果再次沒有加載請告訴我們。";
       }else
       if(localStorage.getItem("lang") === "ko") {
         document.getElementById("loadingText").innerHTML = errorscont + "개의 자산을 로드할 수 없습니다. 자산을 찾을 수 없거나 삭제되지 않았습니다...";
+        document.getElementById("loadingText").innerHTML += "<br>" + "다시 로드해 보세요. 그래도 로드되지 않으면 알려주세요.";
       }else
       if(localStorage.getItem("lang") === "he") {
         document.getElementById("loadingText").innerHTML = "לא ניתן לטעון " + errorscont + " נכסים, לא נמצאו או הוסרו...";
+        document.getElementById("loadingText").innerHTML += "<br>" + "אולי תנסה לטעון מחדש, אם שוב לא נטען הודיעו לנו.";
       }else
       if(localStorage.getItem("lang") === "de") {
         document.getElementById("loadingText").innerHTML = errorscont + " Assets können nicht geladen werden, nicht gefunden oder entfernt …";
+        document.getElementById("loadingText").innerHTML += "<br>" + "Versuchen Sie es vielleicht erneut. Wenn es erneut nicht geladen wird, sagen Sie es uns.";
       }
+      document.getElementById("loadingService").style.display = "flex";
     });
     document.getElementById("loadedbar").appendChild(assetSystem);
   };
@@ -694,28 +747,37 @@ function loadTextures() {
       errorscont++;
       if(localStorage.getItem("lang") === "en") {
         document.getElementById("loadingText").innerHTML = "Cant load " + errorscont + " assets, not found or removed...";
+        document.getElementById("loadingText").innerHTML += "<br>" + "maybe try reload, if again not loaded tell us.";
       }else
       if(localStorage.getItem("lang") === "ru") {
         document.getElementById("loadingText").innerHTML = "Невозможно загрузить " + errorscont + " активов, они не найдены или удалены...";
+        document.getElementById("loadingText").innerHTML += "<br>" + "попробуйте перезагрузить, если снова не загрузится, сообщите нам.";
       }else
       if(localStorage.getItem("lang") === "jp") {
         document.getElementById("loadingText").innerHTML = errorscont + "つのアセットを読み込めません。見つからないか削除されています...";
+        document.getElementById("loadingText").innerHTML += "<br>" + "再ロードしてみてください。それでもロードされない場合はお知らせください。";
       }else
       if(localStorage.getItem("lang") === "chs") {
         document.getElementById("loadingText").innerHTML = "無法載入" + errorscont + "個資產，未找到或已刪除...";
+        document.getElementById("loadingText").innerHTML += "<br>" + "也许尝试重新加载，如果再次没有加载请告诉我们。";
       }else
       if(localStorage.getItem("lang") === "cht") {
         document.getElementById("loadingText").innerHTML = "無法載入" + errorscont + "個資產，未找到或已刪除...";
+        document.getElementById("loadingText").innerHTML += "<br>" + "也許嘗試重新加載，如果再次沒有加載請告訴我們。";
       }else
       if(localStorage.getItem("lang") === "ko") {
         document.getElementById("loadingText").innerHTML = errorscont + "개의 자산을 로드할 수 없습니다. 자산을 찾을 수 없거나 삭제되지 않았습니다...";
+        document.getElementById("loadingText").innerHTML += "<br>" + "다시 로드해 보세요. 그래도 로드되지 않으면 알려주세요.";
       }else
       if(localStorage.getItem("lang") === "he") {
         document.getElementById("loadingText").innerHTML = "לא ניתן לטעון " + errorscont + " נכסים, לא נמצאו או הוסרו...";
+        document.getElementById("loadingText").innerHTML += "<br>" + "אולי תנסה לטעון מחדש, אם שוב לא נטען הודיעו לנו.";
       }else
       if(localStorage.getItem("lang") === "de") {
         document.getElementById("loadingText").innerHTML = errorscont + " Assets können nicht geladen werden, nicht gefunden oder entfernt …";
+        document.getElementById("loadingText").innerHTML += "<br>" + "Versuchen Sie es vielleicht erneut. Wenn es erneut nicht geladen wird, sagen Sie es uns.";
       }
+      document.getElementById("loadingService").style.display = "flex";
     });
     document.getElementById("loadedbar").appendChild(assetLoadingLogo);
   };
@@ -735,28 +797,37 @@ function loadTextures() {
       errorscont++;
       if(localStorage.getItem("lang") === "en") {
         document.getElementById("loadingText").innerHTML = "Cant load " + errorscont + " assets, not found or removed...";
+        document.getElementById("loadingText").innerHTML += "<br>" + "maybe try reload, if again not loaded tell us.";
       }else
       if(localStorage.getItem("lang") === "ru") {
         document.getElementById("loadingText").innerHTML = "Невозможно загрузить " + errorscont + " активов, они не найдены или удалены...";
+        document.getElementById("loadingText").innerHTML += "<br>" + "попробуйте перезагрузить, если снова не загрузится, сообщите нам.";
       }else
       if(localStorage.getItem("lang") === "jp") {
         document.getElementById("loadingText").innerHTML = errorscont + "つのアセットを読み込めません。見つからないか削除されています...";
+        document.getElementById("loadingText").innerHTML += "<br>" + "再ロードしてみてください。それでもロードされない場合はお知らせください。";
       }else
       if(localStorage.getItem("lang") === "chs") {
         document.getElementById("loadingText").innerHTML = "無法載入" + errorscont + "個資產，未找到或已刪除...";
+        document.getElementById("loadingText").innerHTML += "<br>" + "也许尝试重新加载，如果再次没有加载请告诉我们。";
       }else
       if(localStorage.getItem("lang") === "cht") {
         document.getElementById("loadingText").innerHTML = "無法載入" + errorscont + "個資產，未找到或已刪除...";
+        document.getElementById("loadingText").innerHTML += "<br>" + "也許嘗試重新加載，如果再次沒有加載請告訴我們。";
       }else
       if(localStorage.getItem("lang") === "ko") {
         document.getElementById("loadingText").innerHTML = errorscont + "개의 자산을 로드할 수 없습니다. 자산을 찾을 수 없거나 삭제되지 않았습니다...";
+        document.getElementById("loadingText").innerHTML += "<br>" + "다시 로드해 보세요. 그래도 로드되지 않으면 알려주세요.";
       }else
       if(localStorage.getItem("lang") === "he") {
         document.getElementById("loadingText").innerHTML = "לא ניתן לטעון " + errorscont + " נכסים, לא נמצאו או הוסרו...";
+        document.getElementById("loadingText").innerHTML += "<br>" + "אולי תנסה לטעון מחדש, אם שוב לא נטען הודיעו לנו.";
       }else
       if(localStorage.getItem("lang") === "de") {
         document.getElementById("loadingText").innerHTML = errorscont + " Assets können nicht geladen werden, nicht gefunden oder entfernt …";
+        document.getElementById("loadingText").innerHTML += "<br>" + "Versuchen Sie es vielleicht erneut. Wenn es erneut nicht geladen wird, sagen Sie es uns.";
       }
+      document.getElementById("loadingService").style.display = "flex";
     });
     document.getElementById("loadedbar").appendChild(assetCursorDef);
   };
@@ -776,28 +847,37 @@ function loadTextures() {
       errorscont++;
       if(localStorage.getItem("lang") === "en") {
         document.getElementById("loadingText").innerHTML = "Cant load " + errorscont + " assets, not found or removed...";
+        document.getElementById("loadingText").innerHTML += "<br>" + "maybe try reload, if again not loaded tell us.";
       }else
       if(localStorage.getItem("lang") === "ru") {
         document.getElementById("loadingText").innerHTML = "Невозможно загрузить " + errorscont + " активов, они не найдены или удалены...";
+        document.getElementById("loadingText").innerHTML += "<br>" + "попробуйте перезагрузить, если снова не загрузится, сообщите нам.";
       }else
       if(localStorage.getItem("lang") === "jp") {
         document.getElementById("loadingText").innerHTML = errorscont + "つのアセットを読み込めません。見つからないか削除されています...";
+        document.getElementById("loadingText").innerHTML += "<br>" + "再ロードしてみてください。それでもロードされない場合はお知らせください。";
       }else
       if(localStorage.getItem("lang") === "chs") {
         document.getElementById("loadingText").innerHTML = "無法載入" + errorscont + "個資產，未找到或已刪除...";
+        document.getElementById("loadingText").innerHTML += "<br>" + "也许尝试重新加载，如果再次没有加载请告诉我们。";
       }else
       if(localStorage.getItem("lang") === "cht") {
         document.getElementById("loadingText").innerHTML = "無法載入" + errorscont + "個資產，未找到或已刪除...";
+        document.getElementById("loadingText").innerHTML += "<br>" + "也許嘗試重新加載，如果再次沒有加載請告訴我們。";
       }else
       if(localStorage.getItem("lang") === "ko") {
         document.getElementById("loadingText").innerHTML = errorscont + "개의 자산을 로드할 수 없습니다. 자산을 찾을 수 없거나 삭제되지 않았습니다...";
+        document.getElementById("loadingText").innerHTML += "<br>" + "다시 로드해 보세요. 그래도 로드되지 않으면 알려주세요.";
       }else
       if(localStorage.getItem("lang") === "he") {
         document.getElementById("loadingText").innerHTML = "לא ניתן לטעון " + errorscont + " נכסים, לא נמצאו או הוסרו...";
+        document.getElementById("loadingText").innerHTML += "<br>" + "אולי תנסה לטעון מחדש, אם שוב לא נטען הודיעו לנו.";
       }else
       if(localStorage.getItem("lang") === "de") {
         document.getElementById("loadingText").innerHTML = errorscont + " Assets können nicht geladen werden, nicht gefunden oder entfernt …";
+        document.getElementById("loadingText").innerHTML += "<br>" + "Versuchen Sie es vielleicht erneut. Wenn es erneut nicht geladen wird, sagen Sie es uns.";
       }
+      document.getElementById("loadingService").style.display = "flex";
     });
     document.getElementById("loadedbar").appendChild(assetCursorCli);
   };
@@ -817,28 +897,37 @@ function loadTextures() {
       errorscont++;
       if(localStorage.getItem("lang") === "en") {
         document.getElementById("loadingText").innerHTML = "Cant load " + errorscont + " assets, not found or removed...";
+        document.getElementById("loadingText").innerHTML += "<br>" + "maybe try reload, if again not loaded tell us.";
       }else
       if(localStorage.getItem("lang") === "ru") {
         document.getElementById("loadingText").innerHTML = "Невозможно загрузить " + errorscont + " активов, они не найдены или удалены...";
+        document.getElementById("loadingText").innerHTML += "<br>" + "попробуйте перезагрузить, если снова не загрузится, сообщите нам.";
       }else
       if(localStorage.getItem("lang") === "jp") {
         document.getElementById("loadingText").innerHTML = errorscont + "つのアセットを読み込めません。見つからないか削除されています...";
+        document.getElementById("loadingText").innerHTML += "<br>" + "再ロードしてみてください。それでもロードされない場合はお知らせください。";
       }else
       if(localStorage.getItem("lang") === "chs") {
         document.getElementById("loadingText").innerHTML = "無法載入" + errorscont + "個資產，未找到或已刪除...";
+        document.getElementById("loadingText").innerHTML += "<br>" + "也许尝试重新加载，如果再次没有加载请告诉我们。";
       }else
       if(localStorage.getItem("lang") === "cht") {
         document.getElementById("loadingText").innerHTML = "無法載入" + errorscont + "個資產，未找到或已刪除...";
+        document.getElementById("loadingText").innerHTML += "<br>" + "也許嘗試重新加載，如果再次沒有加載請告訴我們。";
       }else
       if(localStorage.getItem("lang") === "ko") {
         document.getElementById("loadingText").innerHTML = errorscont + "개의 자산을 로드할 수 없습니다. 자산을 찾을 수 없거나 삭제되지 않았습니다...";
+        document.getElementById("loadingText").innerHTML += "<br>" + "다시 로드해 보세요. 그래도 로드되지 않으면 알려주세요.";
       }else
       if(localStorage.getItem("lang") === "he") {
         document.getElementById("loadingText").innerHTML = "לא ניתן לטעון " + errorscont + " נכסים, לא נמצאו או הוסרו...";
+        document.getElementById("loadingText").innerHTML += "<br>" + "אולי תנסה לטעון מחדש, אם שוב לא נטען הודיעו לנו.";
       }else
       if(localStorage.getItem("lang") === "de") {
         document.getElementById("loadingText").innerHTML = errorscont + " Assets können nicht geladen werden, nicht gefunden oder entfernt …";
+        document.getElementById("loadingText").innerHTML += "<br>" + "Versuchen Sie es vielleicht erneut. Wenn es erneut nicht geladen wird, sagen Sie es uns.";
       }
+      document.getElementById("loadingService").style.display = "flex";
     });
     document.getElementById("loadedbar").appendChild(assetCursorDis);
   };
@@ -858,28 +947,37 @@ function loadTextures() {
       errorscont++;
       if(localStorage.getItem("lang") === "en") {
         document.getElementById("loadingText").innerHTML = "Cant load " + errorscont + " assets, not found or removed...";
+        document.getElementById("loadingText").innerHTML += "<br>" + "maybe try reload, if again not loaded tell us.";
       }else
       if(localStorage.getItem("lang") === "ru") {
         document.getElementById("loadingText").innerHTML = "Невозможно загрузить " + errorscont + " активов, они не найдены или удалены...";
+        document.getElementById("loadingText").innerHTML += "<br>" + "попробуйте перезагрузить, если снова не загрузится, сообщите нам.";
       }else
       if(localStorage.getItem("lang") === "jp") {
         document.getElementById("loadingText").innerHTML = errorscont + "つのアセットを読み込めません。見つからないか削除されています...";
+        document.getElementById("loadingText").innerHTML += "<br>" + "再ロードしてみてください。それでもロードされない場合はお知らせください。";
       }else
       if(localStorage.getItem("lang") === "chs") {
         document.getElementById("loadingText").innerHTML = "無法載入" + errorscont + "個資產，未找到或已刪除...";
+        document.getElementById("loadingText").innerHTML += "<br>" + "也许尝试重新加载，如果再次没有加载请告诉我们。";
       }else
       if(localStorage.getItem("lang") === "cht") {
         document.getElementById("loadingText").innerHTML = "無法載入" + errorscont + "個資產，未找到或已刪除...";
+        document.getElementById("loadingText").innerHTML += "<br>" + "也許嘗試重新加載，如果再次沒有加載請告訴我們。";
       }else
       if(localStorage.getItem("lang") === "ko") {
         document.getElementById("loadingText").innerHTML = errorscont + "개의 자산을 로드할 수 없습니다. 자산을 찾을 수 없거나 삭제되지 않았습니다...";
+        document.getElementById("loadingText").innerHTML += "<br>" + "다시 로드해 보세요. 그래도 로드되지 않으면 알려주세요.";
       }else
       if(localStorage.getItem("lang") === "he") {
         document.getElementById("loadingText").innerHTML = "לא ניתן לטעון " + errorscont + " נכסים, לא נמצאו או הוסרו...";
+        document.getElementById("loadingText").innerHTML += "<br>" + "אולי תנסה לטעון מחדש, אם שוב לא נטען הודיעו לנו.";
       }else
       if(localStorage.getItem("lang") === "de") {
         document.getElementById("loadingText").innerHTML = errorscont + " Assets können nicht geladen werden, nicht gefunden oder entfernt …";
+        document.getElementById("loadingText").innerHTML += "<br>" + "Versuchen Sie es vielleicht erneut. Wenn es erneut nicht geladen wird, sagen Sie es uns.";
       }
+      document.getElementById("loadingService").style.display = "flex";
     });
     document.getElementById("loadedbar").appendChild(assetCursorLeft);
   };
@@ -899,28 +997,37 @@ function loadTextures() {
       errorscont++;
       if(localStorage.getItem("lang") === "en") {
         document.getElementById("loadingText").innerHTML = "Cant load " + errorscont + " assets, not found or removed...";
+        document.getElementById("loadingText").innerHTML += "<br>" + "maybe try reload, if again not loaded tell us.";
       }else
       if(localStorage.getItem("lang") === "ru") {
         document.getElementById("loadingText").innerHTML = "Невозможно загрузить " + errorscont + " активов, они не найдены или удалены...";
+        document.getElementById("loadingText").innerHTML += "<br>" + "попробуйте перезагрузить, если снова не загрузится, сообщите нам.";
       }else
       if(localStorage.getItem("lang") === "jp") {
         document.getElementById("loadingText").innerHTML = errorscont + "つのアセットを読み込めません。見つからないか削除されています...";
+        document.getElementById("loadingText").innerHTML += "<br>" + "再ロードしてみてください。それでもロードされない場合はお知らせください。";
       }else
       if(localStorage.getItem("lang") === "chs") {
         document.getElementById("loadingText").innerHTML = "無法載入" + errorscont + "個資產，未找到或已刪除...";
+        document.getElementById("loadingText").innerHTML += "<br>" + "也许尝试重新加载，如果再次没有加载请告诉我们。";
       }else
       if(localStorage.getItem("lang") === "cht") {
         document.getElementById("loadingText").innerHTML = "無法載入" + errorscont + "個資產，未找到或已刪除...";
+        document.getElementById("loadingText").innerHTML += "<br>" + "也許嘗試重新加載，如果再次沒有加載請告訴我們。";
       }else
       if(localStorage.getItem("lang") === "ko") {
         document.getElementById("loadingText").innerHTML = errorscont + "개의 자산을 로드할 수 없습니다. 자산을 찾을 수 없거나 삭제되지 않았습니다...";
+        document.getElementById("loadingText").innerHTML += "<br>" + "다시 로드해 보세요. 그래도 로드되지 않으면 알려주세요.";
       }else
       if(localStorage.getItem("lang") === "he") {
         document.getElementById("loadingText").innerHTML = "לא ניתן לטעון " + errorscont + " נכסים, לא נמצאו או הוסרו...";
+        document.getElementById("loadingText").innerHTML += "<br>" + "אולי תנסה לטעון מחדש, אם שוב לא נטען הודיעו לנו.";
       }else
       if(localStorage.getItem("lang") === "de") {
         document.getElementById("loadingText").innerHTML = errorscont + " Assets können nicht geladen werden, nicht gefunden oder entfernt …";
+        document.getElementById("loadingText").innerHTML += "<br>" + "Versuchen Sie es vielleicht erneut. Wenn es erneut nicht geladen wird, sagen Sie es uns.";
       }
+      document.getElementById("loadingService").style.display = "flex";
     });
     document.getElementById("loadedbar").appendChild(assetCursorRight);
   };
@@ -940,28 +1047,37 @@ function loadTextures() {
       errorscont++;
       if(localStorage.getItem("lang") === "en") {
         document.getElementById("loadingText").innerHTML = "Cant load " + errorscont + " assets, not found or removed...";
+        document.getElementById("loadingText").innerHTML += "<br>" + "maybe try reload, if again not loaded tell us.";
       }else
       if(localStorage.getItem("lang") === "ru") {
         document.getElementById("loadingText").innerHTML = "Невозможно загрузить " + errorscont + " активов, они не найдены или удалены...";
+        document.getElementById("loadingText").innerHTML += "<br>" + "попробуйте перезагрузить, если снова не загрузится, сообщите нам.";
       }else
       if(localStorage.getItem("lang") === "jp") {
         document.getElementById("loadingText").innerHTML = errorscont + "つのアセットを読み込めません。見つからないか削除されています...";
+        document.getElementById("loadingText").innerHTML += "<br>" + "再ロードしてみてください。それでもロードされない場合はお知らせください。";
       }else
       if(localStorage.getItem("lang") === "chs") {
         document.getElementById("loadingText").innerHTML = "無法載入" + errorscont + "個資產，未找到或已刪除...";
+        document.getElementById("loadingText").innerHTML += "<br>" + "也许尝试重新加载，如果再次没有加载请告诉我们。";
       }else
       if(localStorage.getItem("lang") === "cht") {
         document.getElementById("loadingText").innerHTML = "無法載入" + errorscont + "個資產，未找到或已刪除...";
+        document.getElementById("loadingText").innerHTML += "<br>" + "也許嘗試重新加載，如果再次沒有加載請告訴我們。";
       }else
       if(localStorage.getItem("lang") === "ko") {
         document.getElementById("loadingText").innerHTML = errorscont + "개의 자산을 로드할 수 없습니다. 자산을 찾을 수 없거나 삭제되지 않았습니다...";
+        document.getElementById("loadingText").innerHTML += "<br>" + "다시 로드해 보세요. 그래도 로드되지 않으면 알려주세요.";
       }else
       if(localStorage.getItem("lang") === "he") {
         document.getElementById("loadingText").innerHTML = "לא ניתן לטעון " + errorscont + " נכסים, לא נמצאו או הוסרו...";
+        document.getElementById("loadingText").innerHTML += "<br>" + "אולי תנסה לטעון מחדש, אם שוב לא נטען הודיעו לנו.";
       }else
       if(localStorage.getItem("lang") === "de") {
         document.getElementById("loadingText").innerHTML = errorscont + " Assets können nicht geladen werden, nicht gefunden oder entfernt …";
+        document.getElementById("loadingText").innerHTML += "<br>" + "Versuchen Sie es vielleicht erneut. Wenn es erneut nicht geladen wird, sagen Sie es uns.";
       }
+      document.getElementById("loadingService").style.display = "flex";
     });
     document.getElementById("loadedbar").appendChild(assetCursorUp);
   };
@@ -981,28 +1097,37 @@ function loadTextures() {
       errorscont++;
       if(localStorage.getItem("lang") === "en") {
         document.getElementById("loadingText").innerHTML = "Cant load " + errorscont + " assets, not found or removed...";
+        document.getElementById("loadingText").innerHTML += "<br>" + "maybe try reload, if again not loaded tell us.";
       }else
       if(localStorage.getItem("lang") === "ru") {
         document.getElementById("loadingText").innerHTML = "Невозможно загрузить " + errorscont + " активов, они не найдены или удалены...";
+        document.getElementById("loadingText").innerHTML += "<br>" + "попробуйте перезагрузить, если снова не загрузится, сообщите нам.";
       }else
       if(localStorage.getItem("lang") === "jp") {
         document.getElementById("loadingText").innerHTML = errorscont + "つのアセットを読み込めません。見つからないか削除されています...";
+        document.getElementById("loadingText").innerHTML += "<br>" + "再ロードしてみてください。それでもロードされない場合はお知らせください。";
       }else
       if(localStorage.getItem("lang") === "chs") {
         document.getElementById("loadingText").innerHTML = "無法載入" + errorscont + "個資產，未找到或已刪除...";
+        document.getElementById("loadingText").innerHTML += "<br>" + "也许尝试重新加载，如果再次没有加载请告诉我们。";
       }else
       if(localStorage.getItem("lang") === "cht") {
         document.getElementById("loadingText").innerHTML = "無法載入" + errorscont + "個資產，未找到或已刪除...";
+        document.getElementById("loadingText").innerHTML += "<br>" + "也許嘗試重新加載，如果再次沒有加載請告訴我們。";
       }else
       if(localStorage.getItem("lang") === "ko") {
         document.getElementById("loadingText").innerHTML = errorscont + "개의 자산을 로드할 수 없습니다. 자산을 찾을 수 없거나 삭제되지 않았습니다...";
+        document.getElementById("loadingText").innerHTML += "<br>" + "다시 로드해 보세요. 그래도 로드되지 않으면 알려주세요.";
       }else
       if(localStorage.getItem("lang") === "he") {
         document.getElementById("loadingText").innerHTML = "לא ניתן לטעון " + errorscont + " נכסים, לא נמצאו או הוסרו...";
+        document.getElementById("loadingText").innerHTML += "<br>" + "אולי תנסה לטעון מחדש, אם שוב לא נטען הודיעו לנו.";
       }else
       if(localStorage.getItem("lang") === "de") {
         document.getElementById("loadingText").innerHTML = errorscont + " Assets können nicht geladen werden, nicht gefunden oder entfernt …";
+        document.getElementById("loadingText").innerHTML += "<br>" + "Versuchen Sie es vielleicht erneut. Wenn es erneut nicht geladen wird, sagen Sie es uns.";
       }
+      document.getElementById("loadingService").style.display = "flex";
     });
     document.getElementById("loadedbar").appendChild(assetCursorDown);
   };
@@ -1022,34 +1147,43 @@ function loadTextures() {
       errorscont++;
       if(localStorage.getItem("lang") === "en") {
         document.getElementById("loadingText").innerHTML = "Cant load " + errorscont + " assets, not found or removed...";
+        document.getElementById("loadingText").innerHTML += "<br>" + "maybe try reload, if again not loaded tell us.";
       }else
       if(localStorage.getItem("lang") === "ru") {
         document.getElementById("loadingText").innerHTML = "Невозможно загрузить " + errorscont + " активов, они не найдены или удалены...";
+        document.getElementById("loadingText").innerHTML += "<br>" + "попробуйте перезагрузить, если снова не загрузится, сообщите нам.";
       }else
       if(localStorage.getItem("lang") === "jp") {
         document.getElementById("loadingText").innerHTML = errorscont + "つのアセットを読み込めません。見つからないか削除されています...";
+        document.getElementById("loadingText").innerHTML += "<br>" + "再ロードしてみてください。それでもロードされない場合はお知らせください。";
       }else
       if(localStorage.getItem("lang") === "chs") {
         document.getElementById("loadingText").innerHTML = "無法載入" + errorscont + "個資產，未找到或已刪除...";
+        document.getElementById("loadingText").innerHTML += "<br>" + "也许尝试重新加载，如果再次没有加载请告诉我们。";
       }else
       if(localStorage.getItem("lang") === "cht") {
         document.getElementById("loadingText").innerHTML = "無法載入" + errorscont + "個資產，未找到或已刪除...";
+        document.getElementById("loadingText").innerHTML += "<br>" + "也許嘗試重新加載，如果再次沒有加載請告訴我們。";
       }else
       if(localStorage.getItem("lang") === "ko") {
         document.getElementById("loadingText").innerHTML = errorscont + "개의 자산을 로드할 수 없습니다. 자산을 찾을 수 없거나 삭제되지 않았습니다...";
+        document.getElementById("loadingText").innerHTML += "<br>" + "다시 로드해 보세요. 그래도 로드되지 않으면 알려주세요.";
       }else
       if(localStorage.getItem("lang") === "he") {
         document.getElementById("loadingText").innerHTML = "לא ניתן לטעון " + errorscont + " נכסים, לא נמצאו או הוסרו...";
+        document.getElementById("loadingText").innerHTML += "<br>" + "אולי תנסה לטעון מחדש, אם שוב לא נטען הודיעו לנו.";
       }else
       if(localStorage.getItem("lang") === "de") {
         document.getElementById("loadingText").innerHTML = errorscont + " Assets können nicht geladen werden, nicht gefunden oder entfernt …";
+        document.getElementById("loadingText").innerHTML += "<br>" + "Versuchen Sie es vielleicht erneut. Wenn es erneut nicht geladen wird, sagen Sie es uns.";
       }
+      document.getElementById("loadingService").style.display = "flex";
     });
     document.getElementById("loadedbar").appendChild(assetOther);
   };
 };
 function toDisplayNone() {
-  if(document.getElementById('widther').style.width === "46.5%") {
+  if(document.getElementById('widther').style.width === "46.4%") {
     if(localStorage.getItem("firstModal") === null) {
       document.getElementById("firstModal").style.display = "block";
     }else
