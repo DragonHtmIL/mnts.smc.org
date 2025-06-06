@@ -23,7 +23,6 @@
   --google-beon-yeog: url('../textures/system/Google_ko.png');
   --google-targum: url('../textures/system/Google_he.png');
   --google-ubersetzer: url('../textures/system/Google_de.png');
-  --messenger: url('../textures/system/messenger.png');
   --discord: url('../textures/system/discord.png');
   /* Food */
   --meaw-token: url('../textures/foods/meaw_token.png');
@@ -3237,21 +3236,21 @@ select:hover {
 #widther {
   background-image: var(--loading-prog);
   outline: solid 2px var(--black-b);
-  background-size: 100% auto;
-  background-position: center center;
+  background-size: auto 100%;
+  background-position: left center;
+  height: 5px;
+  position: absolute;
+  margin-top: 276px;
   transition: 0s;
   -o-transition: 0s;
   -moz-transition: 0s;
   -webkit-transition: 0s;
-  height: 5px;
-  position: absolute;
-  margin-top: 276px;
 }
 #widthernum {
   text-align: center;
   font-size: 17px;
   position: absolute;
-  margin-top: 275px;
+  margin-top: 255px;
 }
 form input[type="submit"] {
   width: 100px;
@@ -3674,6 +3673,49 @@ input[type="color"]::-webkit-color-swatch {
   -webkit-animation: cursorlnk 0.4s infinite;
   animation: cursorlnk 0.4s infinite;
 }
+.services {
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#loadingService {
+  display: none;
+  position: absolute;
+  bottom: 70px;
+}
+.services .service-type {
+  display: flex;
+  width: 100px;
+  height: 34px;
+  background-image: var(--services-bg);
+  background-size: 100% auto;
+  background-position: center center;
+  flex-direction: row;
+  color: var(--white);
+  font-size: 10px;
+  align-items: center;
+}
+.service-logo {
+  height: 100%;
+  width: 34px;
+  text-align: center;
+}
+#sIdiscord {
+  background-image: var(--discord);
+  background-size: 100% 100%;
+}
+.service-name {
+  width: calc(100% - 34px);
+  text-align: center;
+}
+#servicesLang {
+  width: 100%;
+  text-align: center;
+}
 @font-face {
   font-family: miSans;
   src: url('../fonts/MiSans.ttf');
@@ -3944,9 +3986,6 @@ input[type="color"]::-webkit-color-swatch {
     height: 26px;
     left: 61px;
     padding-top: 1.5px;
-  }
-  .widther-container {
-    width: 100%;
   }
   #keypad .keypad:last-child {
     overflow: hidden;
