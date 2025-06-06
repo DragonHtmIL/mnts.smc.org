@@ -1,6 +1,6 @@
 var GHPATH = '/mnts.smc.org';
 var APP_PREFIX = 'gppwa_';
-let VERSIONNAME = "1.1.0-v2";
+let VERSIONNAME = "1.1.1-v2";
 var VERSION = VERSIONNAME;
 var URLS = [
   `${GHPATH}/`,
@@ -427,7 +427,6 @@ var URLS = [
   `${GHPATH}/index_data/textures/system/battery_normal.png`,
   `${GHPATH}/index_data/textures/system/battery_main_normal.png`,
   `${GHPATH}/index_data/textures/system/discord.png`,
-  `${GHPATH}/index_data/textures/system/messenger.png`,
   `${GHPATH}/index_data/textures/system/Google_chs.png`,
   `${GHPATH}/index_data/textures/system/Google_cht.png`,
   `${GHPATH}/index_data/textures/system/Google_en.png`,
