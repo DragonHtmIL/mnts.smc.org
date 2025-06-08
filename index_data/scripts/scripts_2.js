@@ -2849,7 +2849,45 @@ function saveAutoScoreCheckboxPhasa() {
 function openDiscordService() {
   window.open("https://discord.gg/9qapnUDKsW",'_blank');
 }
+function fpsDisplaying() {
+  const fpsDisplay = document.getElementById('fpsDisplay');
+  let frames = 0;
+  let lastTime = performance.now();
+  function updateFPS() {
+    const currentTime = performance.now();
+    const deltaTime = currentTime - lastTime;
+    const currentFPS = Math.round(1000 / deltaTime);
+    fpsDisplay.textContent = `FPS: ${currentFPS}`;
+    frames++;
+    lastTime = currentTime;
+    requestAnimationFrame(updateFPS);
+  }
+  requestAnimationFrame(updateFPS);
+}
+function showFpsDisplaying() {
+  var checkbox = document.getElementById("cFpsDisplay");
+  var fps = document.getElementById("fpsDisplay");
+  if(checkbox.checked === true) {
+    fps.style.display = "block";
+    localStorage.setItem("showFPS", "true");
+  }else{
+    fps.style.display = "none";
+    localStorage.setItem("showFPS", "false");
+  }
+}
+function loadCdisplatFPS() {
+  var checkbox = document.getElementById("cFpsDisplay");
+  var fps = document.getElementById("fpsDisplay");
+  if(localStorage.getItem("showFPS") === "true") {
+    fps.style.display = "block";
+    checkbox.checked = true;
+  }else{
+    fps.style.display = "none";
+    checkbox.checked = false;
+  }
+}
 window.addEventListener('load', function() {
+  languagesContents();
   loadTextures();
   updateTextLangs();
   autoSnakeLoadNew();
@@ -2957,6 +2995,8 @@ window.addEventListener('load', function() {
   autoFood077StorageLoadNew();
   snakeColorerValueLoad();
   mouseBoard();
+  fpsDisplaying();
+  loadCdisplatFPS();
   localStorage.setItem("steelScore", localStorage.getItem("high-score"));
   document.getElementById("collectedMeow").innerHTML = localStorage.getItem("meawTokenStorage");
   document.getElementById("collectedGold").innerHTML = localStorage.getItem("goldStorage");

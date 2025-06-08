@@ -75,6 +75,7 @@ function languagesContents() {
   var a073 = document.getElementById("dynOptionLang");
   var a074 = document.getElementById("swaOptionLang");
   var a075 = document.getElementById("servicesLang");
+  var a076 = document.getElementById("displayFpsLang");
   const a000_all = document.getElementsByClassName('settingscontent');
   const a001_all = document.getElementsByClassName('stylescontent');
   const a002_all = document.getElementsByClassName('coming-soon');
@@ -176,6 +177,7 @@ function languagesContents() {
     a073.innerHTML = "DYnamic controller";
     a074.innerHTML = "Touch Screen Gestures";
     a075.innerHTML = "Services";
+    a076.innerHTML = "Show FPS (BETA)";
     for (let i = 0; i < a000_all.length; i++) {
       a000_all[i].textContent = 'Settings:';
     };
@@ -295,6 +297,7 @@ function languagesContents() {
     a073.innerHTML = "Динамический контроллер";
     a074.innerHTML = "Жесты сенсорного экрана";
     a075.innerHTML = "Услуги";
+    a076.innerHTML = "Показать FPS (БЕТА)";
     for (let i = 0; i < a000_all.length; i++) {
       a000_all[i].textContent = 'Настройки:';
     };
@@ -415,6 +418,7 @@ function languagesContents() {
     a073.innerHTML = "ダイナミックコントローラー";
     a074.innerHTML = "タッチスクリーンジェスチャー";
     a075.innerHTML = "サービス";
+    a076.innerHTML = "FPS を表示 (ベータ版)";
     for (let i = 0; i < a000_all.length; i++) {
       a000_all[i].textContent = '設定：';
     };
@@ -534,6 +538,7 @@ function languagesContents() {
     a073.innerHTML = "动态控制器";
     a074.innerHTML = "触摸屏手势";
     a075.innerHTML = "服务";
+    a076.innerHTML = "显示 FPS（测试版）";
     for (let i = 0; i < a000_all.length; i++) {
       a000_all[i].textContent = '设置：';
     };
@@ -653,6 +658,7 @@ function languagesContents() {
     a073.innerHTML = "動態控制器";
     a074.innerHTML = "觸控螢幕手勢";
     a075.innerHTML = "服務";
+    a076.innerHTML = "顯示 FPS（測試版）";
     for (let i = 0; i < a000_all.length; i++) {
       a000_all[i].textContent = '設定:';
     };
@@ -772,6 +778,7 @@ function languagesContents() {
     a073.innerHTML = "다이내믹 컨트롤러";
     a074.innerHTML = "터치스크린 제스처";
     a075.innerHTML = "서비스";
+    a076.innerHTML = "FPS 표시(베타)";
     for (let i = 0; i < a000_all.length; i++) {
       a000_all[i].textContent = '설정:';
     };
@@ -807,19 +814,19 @@ function languagesContents() {
     a005.innerHTML = "לוח";
     a006.innerHTML = "אודיו";
     a007.innerHTML = "קושי:";
-    a007.style.direction = "rtl";
-    a007.style.textAlign = "right";
+     a007.style.direction = "rtl";
+     a007.style.textAlign = "right";
     a008.innerHTML = "רגיל";
     a009.innerHTML = "קשה";
     a010.innerHTML = "גהנום";
     a011.innerHTML = "שפות:";
-    a011.style.direction = "rtl";
-    a011.style.textAlign = "right";
+     a011.style.direction = "rtl";
+     a011.style.textAlign = "right";
     a012.innerHTML = "מפת עיר אלפא";
     a013.innerHTML = "מפת אי אוריגו";
     a014.innerHTML = "משחק";
     a015.innerHTML = "טעינת נתונים דרך קובץ (.js)";
-    a015.style.direction = "rtl";
+     a015.style.direction = "rtl";
     a016.value = "שמירת נתונים בקובץ";
     a017.innerHTML = "מיאו אסימון";
     a018.innerHTML = "זהב";
@@ -830,32 +837,32 @@ function languagesContents() {
     a023.innerHTML = "כרטיס פרימיום";
     a024.innerHTML = "השתקת שמע";
     a025.innerHTML = "עוצמת SFX";
-    a025.style.direction = "rtl";
-    a025.style.textAlign = "right";
+     a025.style.direction = "rtl";
+     a025.style.textAlign = "right";
     a026.innerHTML = "מדיניות פרטיות, תנאים והגבלות";
     a027.innerHTML = "©1997-2025 NetEase, Inc. כל הזכויות שמורות";
-    a027.style.direction = "rtl";
+     a027.style.direction = "rtl";
     a028.innerHTML = "קידוד: " + "MNTS, DragonHtmIL;";
-    a028.style.direction = "rtl";
+     a028.style.direction = "rtl";
     a029.innerHTML = "קוד בסיס: מאת";
-    a029.style.direction = "rtl";
+     a029.style.direction = "rtl";
     a030.innerHTML = "ניקוד: 0";
     a031.innerHTML = "משחק נגמר!";
-    a031.style.direction = "rtl";
+     a031.style.direction = "rtl";
     a032.value = "ב''מחדל";
     a033.value = "החל";
     a034.innerHTML = "בקר:";
-    a034.style.direction = "rtl";
-    a034.style.textAlign = "right";
+     a034.style.direction = "rtl";
+     a034.style.textAlign = "right";
     a035.innerHTML = "מיקום:";
-    a035.style.direction = "rtl";
-    a035.style.textAlign = "right";
+     a035.style.direction = "rtl";
+     a035.style.textAlign = "right";
     a036.innerHTML = "מרכז";
     a037.innerHTML = "שמאל";
     a038.innerHTML = "ימין";
     a039.innerHTML = "הודעה";
-    a039.style.textAlign = "right";
-    a039.style.width = "75%";
+     a039.style.textAlign = "right";
+     a039.style.width = "75%";
     a040.innerHTML = "דירוג על ידי " + rUsers + " משתמשים";
     a041.innerHTML = "מוסיקת רקע";
     a042.innerHTML = "מוסיקה";
@@ -864,16 +871,16 @@ function languagesContents() {
     a045.value = "מחיקת התקדמות";
     a046.innerHTML = "(ייתכן שתרגומי שפה לא יהיו מדויקים ב-100%)";
     a047.innerHTML = "אם משתמשים משתמשים בטלפונים ניידים (אנדרואיד, אייפון, אייפד, טאבלטים)";
-    a047.style.textAlign = "right";
+     a047.style.textAlign = "right";
     a048.classList.add("g-t-he");
     a049.innerHTML = "נחש";
     a050.innerHTML = "טעינה אוטומטית של הציון הנשמר";
     a051.innerHTML = "מרכז איסוף";
-    a051.style.textAlign = "right";
-    a051.style.width = "75%";
+     a051.style.textAlign = "right";
+     a051.style.width = "75%";
     a052.innerHTML = "> נלחץ <";
     a053.innerHTML = "קודד על: ";
-    a053.style.direction = "rtl";
+     a053.style.direction = "rtl";
     a054.innerHTML = "ניתן לבחור 3 סוגים של שליטה במשחק:<br>";
     a054.innerHTML += "(פתח תפריט/מערכת)<br>";
     a054.innerHTML += "קלאסי.<br>";
@@ -882,8 +889,8 @@ function languagesContents() {
     a054.innerHTML += "קלאסי: צריך ללחוץ על כפתורים.<br>";
     a054.innerHTML += "דינמי: צריך ללחוץ על הכפתורים אבל מיקום הכפתורים ישתנה.<br>";
     a054.innerHTML += "מגע: מחוות על המסך לשינוי צד של נחש.";
-    a054.style.direction = "rtl";
-    a054.style.textAlign = "right";
+     a054.style.direction = "rtl";
+     a054.style.textAlign = "right";
     if(localStorage.getItem("loadingStyle") === "anime") {
       a055.innerHTML = "";
     }else{
@@ -899,29 +906,31 @@ function languagesContents() {
     a062.innerHTML = "הודעה";
     a063.innerHTML = "סביבה";
     a064.innerHTML = "איך לשחק";
-    a064.style.textAlign = "right";
-    a064.style.width = "75%";
+     a064.style.textAlign = "right";
+     a064.style.width = "75%";
     a065.innerHTML = "אם משתמשים משתמשים במחשירים אחרים (Windows, MacOS, Linux)";
-    a065.style.direction = "rtl";
-    a065.style.textAlign = "right";
+     a065.style.direction = "rtl";
+     a065.style.textAlign = "right";
     a066.innerHTML = "כפתורי מיקלדת:<br>";
     a066.innerHTML += "↑←↓→ ו '.ש.ד.ג: התחלת משחק.<br>";
     a066.innerHTML += "רווח: לעצור ולהמשיך את המשחק.<br>";
     a066.innerHTML += "ESC: פתיחת/סגירת התפריט.<br>";
     a066.innerHTML += "E: פתיחת/סגירת מרכז איסוף.<br>";
     a066.innerHTML += "Enter: המשך אם ההתראה פתוחה וסגירת חלון 'המשחק נגמר'.";
-    a066.style.direction = "rtl";
-    a066.style.textAlign = "right";
+     a066.style.direction = "rtl";
+     a066.style.textAlign = "right";
     a067.innerHTML = "כרטיס פרימיום";
     a068.innerHTML = "אסימון וירטואלי";
     a069.value = "העלאה(.js)";
-    a069.style.direction = "rtl";
+     a069.style.direction = "rtl";
     a070.value = "טעינה";
     a071.innerHTML = "צבע הנחש";
     a072.innerHTML = "בקר קלאסי";
     a073.innerHTML = "בקר דינמי";
     a074.innerHTML = "מחוות מסך מגע";
     a075.innerHTML = "שרותים";
+    a076.innerHTML = "הצג FPS (בטא)";
+     a076.style.direction = "rtl";
     for (let i = 0; i < a000_all.length; i++) {
       a000_all[i].textContent = 'הגדרות:';
       a000_all[i].style.direction = "rtl";
@@ -1050,6 +1059,7 @@ function languagesContents() {
     a073.innerHTML = "Dynamische Konsole";
     a074.innerHTML = "Touchscreen-Gesten";
     a075.innerHTML = "Leistungen";
+    a076.innerHTML = "FPS anzeigen (BETA)";
     for (let i = 0; i < a000_all.length; i++) {
       a000_all[i].textContent = 'Einstellungen:';
     };
@@ -1077,4 +1087,3 @@ function languagesContents() {
     document.title = "Schlangen Mecha Sammler";
   }
 }
-languagesContents();
