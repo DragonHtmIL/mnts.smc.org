@@ -3236,7 +3236,7 @@ select:hover {
 #widther {
   background-image: var(--loading-prog);
   outline: solid 2px var(--black-b);
-  background-size: auto 100%;
+  background-size: 100% auto;
   background-position: left center;
   height: 5px;
   position: absolute;
@@ -3716,6 +3716,16 @@ input[type="color"]::-webkit-color-swatch {
   width: 100%;
   text-align: center;
 }
+#fpsDisplay {
+  position: fixed;
+  left: 5px;
+  background-image: var(--wrapper);
+  background-size: auto 100%;
+  color: var(--light-blue);
+  padding: 2px 6px;
+  border-radius: 5px;
+  display: none;
+}
 @font-face {
   font-family: miSans;
   src: url('../fonts/MiSans.ttf');
@@ -4006,6 +4016,10 @@ input[type="color"]::-webkit-color-swatch {
   }
   .apply-first-settings {
     bottom: 27px;
+  }
+  #fpsDisplay {
+    left: auto;
+    top: 5px;
   }
 }
 @media screen and (min-width: 1545px) {
