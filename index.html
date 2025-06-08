@@ -518,6 +518,10 @@
             </div>
             <hr>
             <div class="range-content">
+              <input type="checkbox" id="cFpsDisplay" onclick="showFpsDisplaying();selectionSound();">
+              <label class="label-checkbox" for="cFpsDisplay" id="displayFpsLang">...</label>
+            </div>
+            <div class="range-content">
               <input type="checkbox" id="autoSaveScoreCheck" onclick="saveAutoScoreCheckboxPhasa();selectionSound();">
               <label class="label-checkbox" for="autoSaveScoreCheck" id="autoScoreLang">...</label>
             </div>
@@ -1697,6 +1701,8 @@
           </div>
         </div>
       </div>
+      <div id="fpsDisplay">FPS: 0</div>
+    </div>
     <textarea name="text-area" id="textarea" style="position:fixed;display:none;"></textarea>
     <!-- Audio sources -->
     <!-- Colections Sounds -->
