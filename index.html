@@ -9,8 +9,9 @@
     <title>...</title>
     <link rel="canonical" href="https://dragonhtmil.github.io/mnts.smc.org/">
     <link rel="manifest" href="" id="manifestTestLoad">
-    <link rel="stylesheet" href="index_data/styles/styles.css">
-    <link rel="stylesheet" href="index_data/styles/animations.css">
+    <link rel="stylesheet" href="index_data/styles/loading_style.css">
+    <link rel="stylesheet" id="styleDefault" href="index_data/styles/styles.css">
+    <link rel="stylesheet" id="styleAnimation" href="index_data/styles/animations.css">
     <script>
       var rUsers = "1";
       if(localStorage.getItem("lang") === "en") {
@@ -469,9 +470,20 @@
               <input type="submit" id="dataRunner" value="...">
             </form>
             <br>
-            <input type="button" id="downloadNoAutoUpdate" class="windows-dl" onclick="downloadAlertSystem();" value=" ">
-            <input type="button" id="downloadNoAutoUpdate2" class="android-dl" value=" ">
-            <div class="range-content">
+            <div class="downloads-continer">
+              <button id="downloadNoAutoUpdateWZ" class="dl-button">
+                <div class="dlName">Wndows Zip</div>
+                <div class="dlIcon" id="dlWindowsZip"></div>
+                <div class="dlLabel" id="dlZWlang" onclick="handleDownloadWZ();defaultClickSound();">...</div>
+              </button>
+              <button id="downloadAutoUpdateAC" class="dl-button">
+                <div class="dlName">Android Chrome</div>
+                <div class="dlIcon" id="dlAndroidChrome"></div>
+                <div class="dlLabel" id="dlAClang" onclick="handleDownloadAC();defaultClickSound();">...</div>
+                <div class="dl-av-view" onclick="window.open('index_data/textures/screenshots/VirusTotal.png', '_blank');">VirusTotal</div>
+              </button>
+            </div>
+            <div class="checkbox-content">
               <input type="checkbox" id="administratorTools" onclick="selectionSound();">
               <label class="label-checkbox" for="administratorTools" id="adminToolsLang">...</label>
             </div>
@@ -483,7 +495,13 @@
                 <span id="loadClassic">...</span>
               </div>
               <div onclick="loadingAnime();" id="loadAnimeCon" class="select">
-                <span id="loadAnime"></span>
+                <span id="loadAnime" class="lasbLang">...</span>
+              </div>
+              <div onclick="loadingAnime2();" id="loadAnimeCon2" class="select">
+                <span id="loadAnime2" class="lasbLang">...</span><span> 2</span>
+              </div>
+              <div onclick="loadingAnime3();" id="loadAnimeCon3" class="select">
+                <span id="loadAnime3" class="lasbLang">...</span><span> 3</span>
               </div>
               <div onclick="loadingMiku();" id="loadMikuCon" class="select">
                 <span id="loadMiku">Hatsune Miku</span>
@@ -505,9 +523,9 @@
             </div>
             <div class="categores" id="cspLang">...</div>
             <div id="selectOptionsControllerPosition" class="select-content">
-              <div onclick="centerController();" id="ccLang" class="controllerpostype select">...</div>
-              <div onclick="leftController();" id="clLang" class="controllerpostype select">...</div>
-              <div onclick="rightController();" id="crLang" class="controllerpostype select">...</div>
+              <button onclick="centerController();" id="ccLang" class="controllerpostype select">...</button>
+              <button onclick="leftController();" id="clLang" class="controllerpostype select">...</button>
+              <button onclick="rightController();" id="crLang" class="controllerpostype select">...</button>
             </div>
             <hr id="hr0hiddenTuggle">
             <div class="categores" id="difficultyLang">...</div>
@@ -517,11 +535,11 @@
               <div onclick="hellDifLoad();" id="hellDif" class="difficulty select">...</div>
             </div>
             <hr>
-            <div class="range-content">
+            <div class="checkbox-content">
               <input type="checkbox" id="cFpsDisplay" onclick="showFpsDisplaying();selectionSound();">
               <label class="label-checkbox" for="cFpsDisplay" id="displayFpsLang">...</label>
             </div>
-            <div class="range-content">
+            <div class="checkbox-content">
               <input type="checkbox" id="autoSaveScoreCheck" onclick="saveAutoScoreCheckboxPhasa();selectionSound();">
               <label class="label-checkbox" for="autoSaveScoreCheck" id="autoScoreLang">...</label>
             </div>
@@ -855,46 +873,46 @@
             <input type="color" id="snakeColor" oninput="snakeDecoloring();" value="#ddaaff">
             <div id="keypad">
               <div class="keypad numpad">
-                <div class="keyOboard" id="key1" onclick="letterLoad1();defaultClickSound();">1</div>
-                <div class="keyOboard" id="key2" onclick="letterLoad2();defaultClickSound();">2</div>
-                <div class="keyOboard" id="key3" onclick="letterLoad3();defaultClickSound();">3</div>
-                <div class="keyOboard" id="key4" onclick="letterLoad4();defaultClickSound();">4</div>
-                <div class="keyOboard" id="key5" onclick="letterLoad5();defaultClickSound();">5</div>
-                <div class="keyOboard" id="key6" onclick="letterLoad6();defaultClickSound();">6</div>
-                <div class="keyOboard" id="key7" onclick="letterLoad7();defaultClickSound();">7</div>
-                <div class="keyOboard" id="key8" onclick="letterLoad8();defaultClickSound();">8</div>
-                <div class="keyOboard" id="key9" onclick="letterLoad9();defaultClickSound();">9</div>
-                <div class="keyOboard" id="key0" onclick="letterLoad0();defaultClickSound();">0</div>
+                <div class="keyOboard" id="key1" onclick="letterLoad1();defaultClickSound();keysRegistering();">1</div>
+                <div class="keyOboard" id="key2" onclick="letterLoad2();defaultClickSound();keysRegistering();">2</div>
+                <div class="keyOboard" id="key3" onclick="letterLoad3();defaultClickSound();keysRegistering();">3</div>
+                <div class="keyOboard" id="key4" onclick="letterLoad4();defaultClickSound();keysRegistering();">4</div>
+                <div class="keyOboard" id="key5" onclick="letterLoad5();defaultClickSound();keysRegistering();">5</div>
+                <div class="keyOboard" id="key6" onclick="letterLoad6();defaultClickSound();keysRegistering();">6</div>
+                <div class="keyOboard" id="key7" onclick="letterLoad7();defaultClickSound();keysRegistering();">7</div>
+                <div class="keyOboard" id="key8" onclick="letterLoad8();defaultClickSound();keysRegistering();">8</div>
+                <div class="keyOboard" id="key9" onclick="letterLoad9();defaultClickSound();keysRegistering();">9</div>
+                <div class="keyOboard" id="key0" onclick="letterLoad0();defaultClickSound();keysRegistering();">0</div>
               </div>
               <div class="keypad wordpad">
-                <div class="keyOboard" id="keya" onclick="letterLoadAa();defaultClickSound();">a</div>
-                <div class="keyOboard" id="keyb" onclick="letterLoadBb();defaultClickSound();">b</div>
-                <div class="keyOboard" id="keyc" onclick="letterLoadCc();defaultClickSound();">c</div>
-                <div class="keyOboard" id="keyd" onclick="letterLoadDd();defaultClickSound();">d</div>
-                <div class="keyOboard" id="keye" onclick="letterLoadEe();defaultClickSound();">e</div>
-                <div class="keyOboard" id="keyf" onclick="letterLoadFf();defaultClickSound();">f</div>
-                <div class="keyOboard" id="keyg" onclick="letterLoadGg();defaultClickSound();">g</div>
-                <div class="keyOboard" id="keyh" onclick="letterLoadHh();defaultClickSound();">h</div>
-                <div class="keyOboard" id="keyi" onclick="letterLoadIi();defaultClickSound();">i</div>
-                <div class="keyOboard" id="keyj" onclick="letterLoadJj();defaultClickSound();">j</div>
-                <div class="keyOboard" id="keyk" onclick="letterLoadKk();defaultClickSound();">k</div>
-                <div class="keyOboard" id="keyl" onclick="letterLoadLl();defaultClickSound();">l</div>
-                <div class="keyOboard" id="keym" onclick="letterLoadMm();defaultClickSound();">m</div>
-                <div class="keyOboard" id="keyn" onclick="letterLoadNn();defaultClickSound();">n</div>
-                <div class="keyOboard" id="keyo" onclick="letterLoadOo();defaultClickSound();">o</div>
-                <div class="keyOboard" id="keyp" onclick="letterLoadPp();defaultClickSound();">p</div>
-                <div class="keyOboard" id="keyq" onclick="letterLoadQq();defaultClickSound();">q</div>
-                <div class="keyOboard" id="keyr" onclick="letterLoadRr();defaultClickSound();">r</div>
-                <div class="keyOboard" id="keys" onclick="letterLoadSs();defaultClickSound();">s</div>
-                <div class="keyOboard" id="keyt" onclick="letterLoadTt();defaultClickSound();">t</div>
-                <div class="keyOboard" id="keyu" onclick="letterLoadUu();defaultClickSound();">u</div>
-                <div class="keyOboard" id="keyv" onclick="letterLoadVv();defaultClickSound();">v</div>
-                <div class="keyOboard" id="keyw" onclick="letterLoadWw();defaultClickSound();">w</div>
-                <div class="keyOboard" id="keyx" onclick="letterLoadXx();defaultClickSound();">x</div>
-                <div class="keyOboard" id="keyy" onclick="letterLoadYy();defaultClickSound();">y</div>
-                <div class="keyOboard" id="keyz" onclick="letterLoadZz();defaultClickSound();">z</div>
+                <div class="keyOboard" id="keya" onclick="letterLoadAa();defaultClickSound();keysRegistering();">a</div>
+                <div class="keyOboard" id="keyb" onclick="letterLoadBb();defaultClickSound();keysRegistering();">b</div>
+                <div class="keyOboard" id="keyc" onclick="letterLoadCc();defaultClickSound();keysRegistering();">c</div>
+                <div class="keyOboard" id="keyd" onclick="letterLoadDd();defaultClickSound();keysRegistering();">d</div>
+                <div class="keyOboard" id="keye" onclick="letterLoadEe();defaultClickSound();keysRegistering();">e</div>
+                <div class="keyOboard" id="keyf" onclick="letterLoadFf();defaultClickSound();keysRegistering();">f</div>
+                <div class="keyOboard" id="keyg" onclick="letterLoadGg();defaultClickSound();keysRegistering();">g</div>
+                <div class="keyOboard" id="keyh" onclick="letterLoadHh();defaultClickSound();keysRegistering();">h</div>
+                <div class="keyOboard" id="keyi" onclick="letterLoadIi();defaultClickSound();keysRegistering();">i</div>
+                <div class="keyOboard" id="keyj" onclick="letterLoadJj();defaultClickSound();keysRegistering();">j</div>
+                <div class="keyOboard" id="keyk" onclick="letterLoadKk();defaultClickSound();keysRegistering();">k</div>
+                <div class="keyOboard" id="keyl" onclick="letterLoadLl();defaultClickSound();keysRegistering();">l</div>
+                <div class="keyOboard" id="keym" onclick="letterLoadMm();defaultClickSound();keysRegistering();">m</div>
+                <div class="keyOboard" id="keyn" onclick="letterLoadNn();defaultClickSound();keysRegistering();">n</div>
+                <div class="keyOboard" id="keyo" onclick="letterLoadOo();defaultClickSound();keysRegistering();">o</div>
+                <div class="keyOboard" id="keyp" onclick="letterLoadPp();defaultClickSound();keysRegistering();">p</div>
+                <div class="keyOboard" id="keyq" onclick="letterLoadQq();defaultClickSound();keysRegistering();">q</div>
+                <div class="keyOboard" id="keyr" onclick="letterLoadRr();defaultClickSound();keysRegistering();">r</div>
+                <div class="keyOboard" id="keys" onclick="letterLoadSs();defaultClickSound();keysRegistering();">s</div>
+                <div class="keyOboard" id="keyt" onclick="letterLoadTt();defaultClickSound();keysRegistering();">t</div>
+                <div class="keyOboard" id="keyu" onclick="letterLoadUu();defaultClickSound();keysRegistering();">u</div>
+                <div class="keyOboard" id="keyv" onclick="letterLoadVv();defaultClickSound();keysRegistering();">v</div>
+                <div class="keyOboard" id="keyw" onclick="letterLoadWw();defaultClickSound();keysRegistering();">w</div>
+                <div class="keyOboard" id="keyx" onclick="letterLoadXx();defaultClickSound();keysRegistering();">x</div>
+                <div class="keyOboard" id="keyy" onclick="letterLoadYy();defaultClickSound();keysRegistering();">y</div>
+                <div class="keyOboard" id="keyz" onclick="letterLoadZz();defaultClickSound();keysRegistering();">z</div>
                 <div class="keyOboard" id="keyShift" onclick="shiftLetters();selectionSound();">↑</div>
-                <div class="keyOboard" id="keyClear" onclick="letterLoad();cancelSound();">⨱</div>
+                <div class="keyOboard" id="keyClear" onclick="letterLoad();cancelSound();keysRegistering();">⨱</div>
               </div>
             </div>
           </div>
@@ -1257,7 +1275,7 @@
             </div>
           </div>
           <div id="audio" class="content">
-            <div class="range-content">
+            <div class="checkbox-content">
               <input type="checkbox" id="checkBaseVolum" onchange="baseVolum();musicBackground();ambientSound();selectionSound();">
               <label class="label-checkbox" for="checkBaseVolum" id="muteLang">...</label>
             </div>
@@ -1265,13 +1283,15 @@
               <label class="label-range" for="sfxvolume" id="sfxLang">...</label>
               <input type="range" id="sfxvolume" oninput="sFxVolume();" value="0" min="0" max="1" step="0.1">
             </div>
-            <div class="range-content">
+            <div class="checkbox-content">
               <input type="checkbox" id="ambientChecker" onchange="playActiveMoveSound();saveAmbientChecker();ambientSound();selectionSound();">
               <label class="label-checkbox" for="ambientChecker" id="ambLang">...</label>
             </div>
             <div class="range-content">
-              <input type="checkbox" id="checkMusicMute" onchange="musicBackground();baseMusicVolum();selectionSound();">
-              <label class="label-checkbox" for="checkMusicMute" id="musicLang">...</label>
+              <div class="checkbox-content">
+                <input type="checkbox" id="checkMusicMute" onchange="musicBackground();baseMusicVolum();selectionSound();">
+                <label class="label-checkbox" for="checkMusicMute" id="musicLang">...</label>
+              </div>
               <input type="range" id="musicvolume" oninput="musicVolume();" value="0" min="0" max="1" step="0.1">
             </div>
             <hr>
@@ -1555,7 +1575,7 @@
           </div>
           <div id="firstCtab" class="first-content" style="display: none;"><!--Snake Content-->
             <h1 id="fCtLang" class="first-tabs-title">...</h1>
-            <input type="color" name="sCinFirst" id="fSnakeColor" value="#ddaaff" onchange="document.getElementById('snakeColor').value=document.getElementById('fSnakeColor').value">
+            <input type="color" name="sCinFirst" id="fSnakeColor" value="#ddaaff" onchange="snakeDecoloringFmodal();">
             <div id="keypad" class="padsInFirst">
               <div class="keypad numpad">
                 <div class="first-letters" id="sLetter0" onclick="sLetterSis0();">0</div>
@@ -1596,7 +1616,7 @@
                 <div class="first-letters" id="sLetterx" onclick="sLetterSisx();">x</div>
                 <div class="first-letters" id="sLettery" onclick="sLetterSisy();">y</div>
                 <div class="first-letters" id="sLetterz" onclick="sLetterSisz();">z</div>
-                <div class="first-letters" id="keyShiftFirst" onclick="sLetterSisShift();">↑</div>
+                <div class="first-letters" id="keyShiftFirst" onclick="sLetterSisShift();markedKeysActivedShift();">↑</div>
                 <div class="first-letters" id="sLetterSisEmpty" onclick="sLetterSisEmpty();">⨱</div>
               </div>
             </div>

@@ -1,7 +1,8 @@
 var GHPATH = '/mnts.smc.org';
 var APP_PREFIX = 'gppwa_';
-let VERSIONNAME = "1.1.2-v2";
+let VERSIONNAME = "1.1.3-v2";
 var VERSION = VERSIONNAME;
+
 var URLS = [
   `${GHPATH}/`,
   `${GHPATH}/index_data`,
@@ -278,8 +279,8 @@ var URLS = [
   `${GHPATH}/index_data/textures/gui/checkbox_on.png`,
   `${GHPATH}/index_data/textures/gui/cube_bg.png`,
   `${GHPATH}/index_data/textures/gui/download.png`,
-  `${GHPATH}/index_data/textures/gui/download_android.png`,
-  `${GHPATH}/index_data/textures/gui/download_computer.png`,
+  `${GHPATH}/index_data/textures/gui/download_android_icon.png`,
+  `${GHPATH}/index_data/textures/gui/download_windows_icon.png`,
   `${GHPATH}/index_data/textures/gui/exit.png`,
   `${GHPATH}/index_data/textures/gui/first_modal_bg.png`,
   `${GHPATH}/index_data/textures/gui/hard_on.png`,
@@ -324,6 +325,7 @@ var URLS = [
   `${GHPATH}/index_data/textures/gui/actived_frame_cube.png`,
   `${GHPATH}/index_data/textures/gui/actived_frame_cube.png`,
   `${GHPATH}/index_data/textures/gui/loading_progress.png`,
+  `${GHPATH}/index_data/textures/gui/windows_bg.png`,
 
   `${GHPATH}/index_data/textures/league`,
   `${GHPATH}/index_data/textures/league/league_1_bronze.png`,
@@ -541,6 +543,8 @@ var URLS = [
   `${GHPATH}/index_data/animations/anime.gif`,
   `${GHPATH}/index_data/animations/miku.gif`,
   `${GHPATH}/index_data/animations/nakano_azusa.gif`,
+  `${GHPATH}/index_data/animations/anime_2.gif`,
+  `${GHPATH}/index_data/animations/anime_3.gif`,
 
   `${GHPATH}/index_data/animations/cursour`,
 
