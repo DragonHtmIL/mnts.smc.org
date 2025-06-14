@@ -2755,6 +2755,8 @@ function loadingClassic() {
   document.getElementById("loadAnimeCon").classList.remove("activet");
   document.getElementById("loadMikuCon").classList.remove("activet");
   document.getElementById("loadNakanoCon").classList.remove("activet");
+  document.getElementById("loadAnimeCon2").classList.remove("activet");
+  document.getElementById("loadAnimeCon3").classList.remove("activet");
   document.getElementById("applySettings").style.display = "block";
   selectionSound();
 };
@@ -2763,6 +2765,8 @@ function loadingAnime() {
   document.getElementById("loadAnimeCon").classList.add("activet");
   document.getElementById("loadMikuCon").classList.remove("activet");
   document.getElementById("loadNakanoCon").classList.remove("activet");
+  document.getElementById("loadAnimeCon2").classList.remove("activet");
+  document.getElementById("loadAnimeCon3").classList.remove("activet");
   document.getElementById("applySettings").style.display = "block";
   selectionSound();
 };
@@ -2771,6 +2775,8 @@ function loadingMiku() {
   document.getElementById("loadAnimeCon").classList.remove("activet");
   document.getElementById("loadMikuCon").classList.add("activet");
   document.getElementById("loadNakanoCon").classList.remove("activet");
+  document.getElementById("loadAnimeCon2").classList.remove("activet");
+  document.getElementById("loadAnimeCon3").classList.remove("activet");
   document.getElementById("applySettings").style.display = "block";
   selectionSound();
 };
@@ -2779,6 +2785,28 @@ function loadingNakano() {
   document.getElementById("loadAnimeCon").classList.remove("activet");
   document.getElementById("loadMikuCon").classList.remove("activet");
   document.getElementById("loadNakanoCon").classList.add("activet");
+  document.getElementById("loadAnimeCon2").classList.remove("activet");
+  document.getElementById("loadAnimeCon3").classList.remove("activet");
+  document.getElementById("applySettings").style.display = "block";
+  selectionSound();
+};
+function loadingAnime2() {
+  document.getElementById("loadClassicCon").classList.remove("activet");
+  document.getElementById("loadAnimeCon").classList.remove("activet");
+  document.getElementById("loadMikuCon").classList.remove("activet");
+  document.getElementById("loadNakanoCon").classList.remove("activet");
+  document.getElementById("loadAnimeCon2").classList.add("activet");
+  document.getElementById("loadAnimeCon3").classList.remove("activet");
+  document.getElementById("applySettings").style.display = "block";
+  selectionSound();
+};
+function loadingAnime3() {
+  document.getElementById("loadClassicCon").classList.remove("activet");
+  document.getElementById("loadAnimeCon").classList.remove("activet");
+  document.getElementById("loadMikuCon").classList.remove("activet");
+  document.getElementById("loadNakanoCon").classList.remove("activet");
+  document.getElementById("loadAnimeCon2").classList.remove("activet");
+  document.getElementById("loadAnimeCon3").classList.add("activet");
   document.getElementById("applySettings").style.display = "block";
   selectionSound();
 };
@@ -2800,6 +2828,14 @@ function loadingAnimationLoader() {
     document.getElementById("animateImg").classList.add("nakanoload");
     document.getElementById("loadNakanoCon").classList.add("activet");
     document.getElementById("loadingContiner").style.height = "192px";
+  }else
+  if(localStorage.getItem("loadingStyle") === "anime2") {
+    document.getElementById("animateImg").classList.add("anime2load");
+    document.getElementById("loadAnimeCon2").classList.add("activet");
+  }else
+  if(localStorage.getItem("loadingStyle") === "anime3") {
+    document.getElementById("animateImg").classList.add("anime3load");
+    document.getElementById("loadAnimeCon3").classList.add("activet");
   }
 }
 loadingAnimationLoader();

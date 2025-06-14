@@ -15745,6 +15745,12 @@ function applySettings() {
   }else
   if(document.getElementById("loadNakanoCon").className === "select activet") {
     localStorage.setItem("loadingStyle", "nakano");
+  }else
+  if(document.getElementById("loadAnimeCon2").className === "select activet") {
+    localStorage.setItem("loadingStyle", "anime2");
+  }else
+  if(document.getElementById("loadAnimeCon3").className === "select activet") {
+    localStorage.setItem("loadingStyle", "anime3");
   };
   window.location.reload();
 };
