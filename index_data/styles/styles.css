@@ -191,9 +191,6 @@
   --board-72-image: url('../textures/boards/img_072.png');
   --board-73-image: url('../textures/boards/img_073.png');
   /* Gui */
-  --modal: url('../textures/gui/notice.png');
-  --menu: url('../textures/gui/menu.png');
-  --alert: url('../textures/gui/alert.png');
   --button-true: url('../textures/gui/button_true.png');
   --first-back: url('../textures/gui/first_modal_bg.png');
   --controller: url('../textures/gui/cube_bg.png');
@@ -223,39 +220,44 @@
   --down-hover: url('../textures/gui/btn_control_dn_hover.png');
   --right: url('../textures/gui/btn_control_rt.png');
   --right-hover: url('../textures/gui/btn_control_rt_hover.png');
-  --loading-logo: url('../textures/gui/loading_yi_logo_2x.png');
-  --tabs-menu: url('../textures/gui/tab_vertical.png');
   --tabs-audio: url('../textures/gui/tab_off.png');
   --tabs-audio-hover: url('../textures/gui/tab_horizontal.png');
-  --changed: url('../textures/gui/changed_bg.png');
   --toggled-off: url('../textures/gui/unselected.png');
   --toggled-on: url('../textures/gui/selected.png');
   --def-norm: url('../textures/gui/normal_on.png');
   --def-hard: url('../textures/gui/hard_on.png');
   --def-hell: url('../textures/gui/hell_on.png');
-  --checkbox: url('../textures/gui/checkbox_off.png');
-  --checkbox-checked: url('../textures/gui/checkbox_on.png');
   --button: url('../textures/gui/button.png');
   --range: url('../textures/gui/range_bar.png');
   --range-thumb: url('../textures/gui/range_thumb.png');
-  --wrapper: url('../textures/gui/wrapper_bg.png');
   --button-long: url('../textures/gui/long_button.png');
   --button-long-hover: url('../textures/gui/long_button_hover.png');
   --play: url('../textures/gui/btn_function_py.png');
-  --icons: url('../textures/gui/icon_bg.png');
   --exit: url('../textures/gui/exit.png');
-  --dl-windows: url('../textures/gui/download_computer.png');
-  --dl-android: url('../textures/gui/download_android.png');
+  --dl-windows: url('../textures/gui/download_windows_icon.png');
+  --dl-android: url('../textures/gui/download_android_icon.png');
   --up-note: url('../textures/gui/up_note.png');
-  --close-notice: url('../textures/gui/close.png');
-  --close-menu: url('../textures/gui/menu_close.png');
-  --services-bg: url('../textures/gui/services_bg.png');
   --key-bg:  url('../textures/gui/key_bg.png');
   --key-bg-hover:  url('../textures/gui/key_bg_hover.png');
   --how-to-play:  url('../textures/gui/htp_button.png');
   --actived-frame-cube:  url('../textures/gui/actived_frame_cube.png');
   --line: url('../textures/gui/line.png');
   --loading-prog: url('../textures/gui/loading_progress.png');
+  --dl-background: url('../textures/gui/download.png');
+  --background-overlay: url('../textures/gui/bg_overlay.png');
+  --modal: url('../textures/gui/notice.png');
+  --menu: url('../textures/gui/menu.png');
+  --alert: url('../textures/gui/alert.png');
+  --tabs-menu: url('../textures/gui/tab_vertical.png');
+  --changed: url('../textures/gui/changed_bg.png');
+  --checkbox: url('../textures/gui/checkbox_off.png');
+  --checkbox-checked: url('../textures/gui/checkbox_on.png');
+  --icons: url('../textures/gui/icon_bg.png');
+  --wrapper: url('../textures/gui/wrapper_bg.png');
+  --close-notice: url('../textures/gui/close.png');
+  --close-menu: url('../textures/gui/menu_close.png');
+  --services-bg: url('../textures/gui/services_bg.png');
+  --windows-bg: url('../textures/gui/windows_bg.png');
   /* League */
   --league-0: url('../textures/league/non.png');
   --league-1: url('../textures/league/league_1_bronze.png');
@@ -275,11 +277,6 @@
   --league-6-star: url('../textures/league/league_6_super_star.png');
   --league-7-star: url('../textures/league/league_7_legendary_star.png');
   --league-8-star: url('../textures/league/league_8_alpha_knight_star.png');
-  /* Animation */
-  --loading-classic: url('../animations/classic.gif');
-  --loading-anime: url('../animations/anime.gif');
-  --loading-miku: url('../animations/miku.gif');
-  --loading-nakano: url('../animations/nakano_azusa.gif');
   /* System Scripts */
   --battery-prog-normal-script: url('index_data/textures/system/battery_normal.png');
   --battery-prog-low-script: url('index_data/textures/system/battery_low.png');
@@ -423,7 +420,7 @@ a {
   justify-content: center;
   min-height: 100vh;
   background: var(--white);
-  background-image: url('../textures/gui/bg_overlay.png');
+  background-image: var(--background-overlay);
   overflow: hidden;
 }
 #content404,
@@ -1211,6 +1208,13 @@ a {
   background-color: var(--black-a);
   display: none;
 }
+.modal,
+.menu,
+.alert {
+  background-image: var(--windows-bg);
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
 .alert {
   z-index: 4;
 }
@@ -1549,97 +1553,6 @@ a {
 #btn000, #btn002 {
   background-size: 100% 100%, auto 80%;
 }
-.loading {
-  text-align: center;
-  width: 300px;
-  margin: -100px auto 0 auto;
-}
-.container {
-  height: 100%;
-  width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-align: center;
-  -moz-box-align: center;/* OLD… */
-  -webkit-align-items: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -moz-box-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 5;
-  background-color: var(--white);
-}
-.loading h2 {
-  font-weight: normal;
-  font-size: 20px;
-  padding: 0;
-  margin: -34px -20px 0 0;
-}
-.loading-img {
-  width: 132px;
-  height: 132px;
-  position: relative;
-  margin: 0 auto;
-}
-.text-logo {
-  width: 60px;
-  height: 60px;
-  background: var(--loading-logo) no-repeat;
-  -webkit-background-size: 100% 100%;
-  background-size: 100% 100%;
-  position: fixed;
-  left: calc(50% - 30px);
-  bottom: 10px;
-}
-.animate-img {
-  position: absolute;
-  left: 0;
-  top: 0;
-  transform-origin:center center;
-  -webkit-transform-origin:center center;	
-}
-.classicload {
-  width: 157px;
-  height: 100px;
-  background: var(--loading-classic) no-repeat;
-  -webkit-background-size: 100% 100%;
-  background-size: 100% 100%;
-}
-.animeload {
-  width: 165px;
-  height: 100px;
-  background: var(--loading-anime) no-repeat;
-  -webkit-background-size: 100% 100%;
-  background-size: 100% 100%;
-}
-.mikuload {
-  width: 165px;
-  height: 165px;
-  background: var(--loading-miku) no-repeat;
-  -webkit-background-size: 100% 100%;
-  background-size: 100% 100%;
-}
-.nakanoload {
-  width: 165px;
-  height: 165px;
-  background: var(--loading-nakano) no-repeat;
-  -webkit-background-size: 100% 100%;
-  background-size: 100% 100%;
-}
-.loading-assets {
-  width: 100%;
-  height: 100%;
-  padding: 0px;
-  margin: 0px;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
 #navBtn {
   background-size: 100% 100%;
   position: fixed;
@@ -1704,7 +1617,7 @@ a {
   height: 261px;
   position: absolute;
   top: 36px;
-  left: -20px;
+  left: -22px;
   overflow-y: auto;
 }
 .tab .tablinks {
@@ -1712,7 +1625,7 @@ a {
   background-color: inherit;
   color: var(--white);
   padding: 4px 0px 13px 22px;
-  margin: 10px 0px;
+  margin: 0px;
   width: 112px;
   border: none;
   outline: none;
@@ -1726,7 +1639,7 @@ a {
   background-repeat: no-repeat;
 }
 .tab .tablinks.active {
-  background-position: -5px -4px;
+  background-position: -4px -4px;
   cursor: var(--cur-def) !important;
 }
 .tablinks:first-child {
@@ -1818,7 +1731,7 @@ a {
   color: var(--black);
   height: 58px;
   width: 58px;
-  cursor: url(../animations/cursour/clickable/0.png), default;
+  cursor: url('../animations/cursour/clickable/0.png'), default;
   -webkit-animation: cursorlnk 0.4s infinite;
   animation: cursorlnk 0.4s infinite;
   background-size: auto 100px;
@@ -1887,6 +1800,7 @@ a {
   flex: none;
   color: var(--white);
   margin: 5px 27px;
+  border: none;
   transition: 0.4s;
   -webkit-transition: 0.4s;
   -moz-transition: 0.4s;
@@ -2616,8 +2530,17 @@ input[type="range"]::-webkit-slider-thumb {
   padding: 10px;
   margin: 10px 0px;
 }
+.checkbox-content {
+  background-color: var(--black-b);
+  padding: 10px;
+  margin: 10px 0px;
+}
+.range-content .checkbox-content {
+  background-color: transparent;
+  margin: -10px;
+}
 .label-checkbox {
-  text-align: left !important;
+  text-align: left;
   padding-left: 25px;
   margin-top: -2px;
   display: block;
@@ -2626,7 +2549,7 @@ input[type="range"]::-webkit-slider-thumb {
   animation: cursorlnk 0.4s infinite;
 }
 .label-range {
-  text-align: left !important;
+  text-align: left;
   display: block;
   cursor: url('../animations/cursour/clickable/0.png'), pointer;
   -webkit-animation: cursorlnk 0.4s infinite;
@@ -2928,33 +2851,63 @@ hr.acc {
   padding: 23px 4px 0px 4px;
   float: left;
 }
-#downloadNoAutoUpdate,
-#downloadNoAutoUpdate2 {
-  width: 160px;
-  height: 37px;
-  margin: auto;
+.downloads-continer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.dl-button {
+  background-image: var(--dl-background);
   background-size: auto 100%;
-  background-position: center center;
-  background-repeat: no-repeat;
-  filter: grayscale(1);
-  transform: scale(1.0);
+  height: 120px;
+  width: 100px;
   border: none;
   background-color: transparent;
-  outline: none;
+  font-size: 11px;
+  color: var(--white);
+  transform: scale(1.0);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  cursor: url('../animations/cursour/delault/0.png'), default;
+  -webkit-animation: cursordef 0.4s infinite;
+  animation: cursordef 0.4s infinite;
+}
+.dl-av-view {
+  position: absolute;
+  bottom: 17px;
+  right: 0;
+  border: solid 2px var(--white);
+  border-right: none;
+  border-bottom: none;
   cursor: url('../animations/cursour/clickable/0.png'), pointer;
   -webkit-animation: cursorlnk 0.4s infinite;
   animation: cursorlnk 0.4s infinite;
 }
-.windows-dl {
+.dlIcon {
+  width: 100%;
+  height: 84px;
+  background-position: center center;
+  background-size: auto 75%;
+  background-repeat: no-repeat;
+}
+#dlWindowsZip {
   background-image: var(--dl-windows);
 }
-.android-dl {
+#dlAndroidChrome {
   background-image: var(--dl-android);
 }
-#downloadNoAutoUpdate:hover,
-#downloadNoAutoUpdate2:hover {
-  filter: grayscale(0);
-  transform: scale(1.02);
+.dlLabel {
+  color: var(--black);
+  height: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: url('../animations/cursour/clickable/0.png'), pointer;
+  -webkit-animation: cursorlnk 0.4s infinite;
+  animation: cursorlnk 0.4s infinite;
 }
 .blocker {
   width: 100%;
@@ -2997,7 +2950,7 @@ hr.acc {
   width: 100%;
   background-color: #f1f1f1;
   text-align: center;
-  color: white;
+  color: var(--white);
 }
 .bar-1,.bar-2,.bar-3,.bar-4,.bar-5 {
   height: 18px;
@@ -3063,8 +3016,8 @@ hr.acc {
   position: absolute;
   bottom: 0;
   width: 100%;
-  border-top: solid 2px black;
-  border-right: solid 2px black;
+  border-top: solid 2px var(--black);
+  border-right: solid 2px var(--black);
   height: 6px;
   background-color: var(--black-a);
 }
@@ -3122,8 +3075,8 @@ hr.acc {
   justify-content: center;
   align-items: start;
   flex-wrap: wrap;
-  border-bottom: solid 2px black;
-  border-left: solid 2px black;
+  border-bottom: solid 2px var(--black);
+  border-left: solid 2px var(--black);
   z-index: 1;
   backdrop-filter: blur(3px);
 }
@@ -3144,7 +3097,7 @@ hr.acc {
   top: 0;
   right: 0;
   height: 100%;
-  border-left: solid 2px black;
+  border-left: solid 2px var(--black);
   width: 6px;
   background-color: var(--black-a);
 }
@@ -3981,13 +3934,9 @@ input[type="color"]::-webkit-color-swatch {
     margin-top: -1.5px;
     border-left: solid 2px var(--black);
   }
-/*  .menuscroller {
-    bottom: 25%;
-    width: 395px !important;
-  }*/
   .menuscroller {
-    bottom: 17%;
-    right: -89%;
+    bottom: 18%;
+    right: -55%;
     width: 34vh !important;
     transform: rotate(90deg);
   }
