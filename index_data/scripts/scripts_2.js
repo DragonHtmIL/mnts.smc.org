@@ -406,43 +406,27 @@ function iconAllLoad() {
 }
 iconAllLoad();
 function centerController() {
-  if(document.getElementById("ccLang").getAttribute("locked") === "false") {
-    document.getElementById("ccLang").classList.add("activet");
-    document.getElementById("clLang").classList.remove("activet");
-    document.getElementById("crLang").classList.remove("activet");
-    document.getElementById("applySettings").style.display = "block";
-    selectionSound();
-  } else {
-    selectionSound();
-    return false;
-  }
+  document.getElementById("ccLang").classList.add("activet");
+  document.getElementById("clLang").classList.remove("activet");
+  document.getElementById("crLang").classList.remove("activet");
+  document.getElementById("applySettings").style.display = "block";
+  selectionSound();
 };
 function leftController() {
-  if(document.getElementById("clLang").getAttribute("locked") === "false") {
-    document.getElementById("ccLang").classList.remove("activet");
-    document.getElementById("clLang").classList.add("activet");
-    document.getElementById("crLang").classList.remove("activet");
-    document.getElementById("applySettings").style.display = "block";
-    selectionSound();
-  } else {
-    selectionSound();
-    return false;
-  }
+  document.getElementById("ccLang").classList.remove("activet");
+  document.getElementById("clLang").classList.add("activet");
+  document.getElementById("crLang").classList.remove("activet");
+  document.getElementById("applySettings").style.display = "block";
+  selectionSound();
 };
 function rightController() {
-  if(document.getElementById("crLang").getAttribute("locked") === "false") {
-    document.getElementById("ccLang").classList.remove("activet");
-    document.getElementById("clLang").classList.remove("activet");
-    document.getElementById("crLang").classList.add("activet");
-    document.getElementById("applySettings").style.display = "block";
-    selectionSound();
-  } else {
-    selectionSound();
-    return false;
-  }
+  document.getElementById("ccLang").classList.remove("activet");
+  document.getElementById("clLang").classList.remove("activet");
+  document.getElementById("crLang").classList.add("activet");
+  document.getElementById("applySettings").style.display = "block";
+  selectionSound();
 };
 function positioningController() {
-  var checkbox = document.getElementById("showPadButtons");
   if(localStorage.getItem("controllerPosition") === "center") {
     document.getElementById("ccLang").classList.add("activet");
     document.getElementById("clLang").classList.remove("activet");
@@ -1711,6 +1695,18 @@ function autoFood077StorageLoadNew() {
     return false;
   }
 };
+function autoFood077StorageLoadNew() {
+  if(localStorage.getItem("food077Storage") === null) {
+    localStorage.setItem("food077Storage", "0");
+    window.location.reload();
+  }else
+  if(localStorage.getItem("food077Storage") === "") {
+    localStorage.setItem("food077Storage", "0");
+    window.location.reload();
+  }else{
+    return false;
+  }
+};
 function autoLoadingAnimLogoLoadNew() {
   if(localStorage.getItem("loadingStyle") === null) {
     localStorage.setItem("loadingStyle", "classic");
@@ -2239,10 +2235,40 @@ function leagueSystem() {
 }
 leagueSystem();
 function changeControllerType() {
-  if(document.getElementById("cTypeChenger").value === document.getElementById("cTypeChenger").value) {
-    document.getElementById("applySettings").style.display = "block";
-  }else {
+  if(document.getElementById("cTypeChenger").value === localStorage.getItem("controllerTypeDev")) {
     document.getElementById("applySettings").style.display = "none";
+    if(document.getElementById("cTypeChenger").value === "classic") {
+      document.getElementById("clLang").removeAttribute("disabled");
+      document.getElementById("ccLang").removeAttribute("disabled");
+      document.getElementById("crLang").removeAttribute("disabled");
+    }else
+    if(document.getElementById("cTypeChenger").value === "dynamic") {
+      document.getElementById("clLang").setAttribute("disabled", "");
+      document.getElementById("ccLang").setAttribute("disabled", "");
+      document.getElementById("crLang").setAttribute("disabled", "");
+    }else
+    if(document.getElementById("cTypeChenger").value === "swap") {
+      document.getElementById("clLang").setAttribute("disabled", "");
+      document.getElementById("ccLang").setAttribute("disabled", "");
+      document.getElementById("crLang").setAttribute("disabled", "");
+    }
+  }else{
+    document.getElementById("applySettings").style.display = "block";
+    if(document.getElementById("cTypeChenger").value === "classic") {
+      document.getElementById("clLang").removeAttribute("disabled");
+      document.getElementById("ccLang").removeAttribute("disabled");
+      document.getElementById("crLang").removeAttribute("disabled");
+    }else
+    if(document.getElementById("cTypeChenger").value === "dynamic") {
+      document.getElementById("clLang").setAttribute("disabled", "");
+      document.getElementById("ccLang").setAttribute("disabled", "");
+      document.getElementById("crLang").setAttribute("disabled", "");
+    }else
+    if(document.getElementById("cTypeChenger").value === "swap") {
+      document.getElementById("clLang").setAttribute("disabled", "");
+      document.getElementById("ccLang").setAttribute("disabled", "");
+      document.getElementById("crLang").setAttribute("disabled", "");
+    }
   }
 };
 function loadControllerType() {
@@ -2266,9 +2292,6 @@ function loadControllerType() {
     document.getElementById("btn005").style.position = "relative";
     document.getElementById("btn005").style.bottom = "auto";
     document.getElementById("btn005").style.right = "auto";
-    document.getElementById("ccLang").setAttribute("locked", "false");
-    document.getElementById("clLang").setAttribute("locked", "false");
-    document.getElementById("crLang").setAttribute("locked", "false");
   } else
   if(localStorage.getItem("controllerTypeDev") === "dynamic" && navigator.userAgent.match(/mobile/i)) {
     document.getElementById("cTypeChenger").value = "dynamic";
@@ -2292,9 +2315,6 @@ function loadControllerType() {
     document.getElementById("btn005").style.position = "fixed";
     document.getElementById("btn005").style.bottom = "0";
     document.getElementById("btn005").style.right = "35px";
-    document.getElementById("ccLang").setAttribute("locked", "true");
-    document.getElementById("clLang").setAttribute("locked", "true");
-    document.getElementById("crLang").setAttribute("locked", "true");
   } else
   if(localStorage.getItem("controllerTypeDev") === "swap" && navigator.userAgent.match(/mobile/i)) {
     let touchStartX = null;
@@ -2355,9 +2375,6 @@ function loadControllerType() {
     document.getElementById("btn004").style.display = "none";
     document.getElementById("btn003").style.display = "none";
     document.getElementById("btn005").style.display = "none";
-    document.getElementById("ccLang").setAttribute("locked", "true");
-    document.getElementById("clLang").setAttribute("locked", "true");
-    document.getElementById("crLang").setAttribute("locked", "true");
     document.getElementById("touchBoard").style.display = "block";
   }else
   if(localStorage.getItem("controllerTypeDev") === "classic" && navigator.userAgent.match(/Windows/i) ||
@@ -2641,7 +2658,63 @@ function menuPauseWalkSound() {
 function openProfileCenter() {
   document.getElementById("accenter").style.display = "block";
 };
-function downloadAlertSystem() {
+function handleDownloadAC() {
+  if (document.fullscreenElement) {
+    var alertconfirm = document.getElementById("alertRight");
+    document.getElementById("alert").style.display = "block";
+    document.getElementById("alert").style.zIndex = "5";
+    alertcancel.style.display = "none";
+    alertconfirm.style.display = "block";
+    if(localStorage.getItem("lang") === "en") {
+      document.getElementById("alertText").innerHTML = "The application is already downloaded or running in fullscreen.";
+      alertconfirm.value = "Confirm";
+    }else
+    if(localStorage.getItem("lang") === "ru") {
+      document.getElementById("alertText").innerHTML = "Приложение уже загружено или запущено в полноэкранном режиме.";
+      alertconfirm.value = "Подтвердить";
+    }else
+    if(localStorage.getItem("lang") === "jp") {
+      document.getElementById("alertText").innerHTML = "アプリケーションはすでにダウンロードされているか、全画面で実行されています。";
+      alertconfirm.value = "確認する";
+    }else
+    if(localStorage.getItem("lang") === "chs") {
+      document.getElementById("alertText").innerHTML = "该应用程序已下载或全屏运行。";
+      alertconfirm.value = "确认";
+    }else
+    if(localStorage.getItem("lang") === "cht") {
+      document.getElementById("alertText").innerHTML = "該應用程式已下載或全螢幕運行。";
+      alertconfirm.value = "確認";
+    }else
+    if(localStorage.getItem("lang") === "ko") {
+      document.getElementById("alertText").innerHTML = "해당 애플리케이션은 이미 다운로드되었거나 전체 화면으로 실행 중입니다.";
+      alertconfirm.value = "확인하다";
+    }else
+    if(localStorage.getItem("lang") === "he") {
+      document.getElementById("alertText").innerHTML = "האפליקציה כבר הורדה או פועלת במסך מלא.";
+      document.getElementById("alertText").style.direction = "rtl";
+      alertconfirm.value = "אישור";
+    }else
+    if(localStorage.getItem("lang") === "de") {
+      document.getElementById("alertText").innerHTML = "Die Anwendung ist bereits heruntergeladen oder wird im Vollbildmodus ausgeführt.";
+      alertconfirm.value = "Bestätigen";
+    }
+    alertconfirm.onclick = function() {
+      document.getElementById("alert").style.display = "none";
+      document.getElementById("alert").style.zIndex = "3";
+      defaultClickSound();
+    }
+  } else {
+    const apkUrl = 'index_data/external/snake.mecha.collector.auto-update.apk';
+    const link = document.createElement('a');
+    link.style.display = "none";
+    link.href = apkUrl;
+    link.download = 'snake.mecha.collector.auto-update.apk';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
+};
+function handleDownloadWZ() {
   var host = "https";
   var domine = "github.com";
   var publisher = "DragonHtmIL";
@@ -2651,7 +2724,14 @@ function downloadAlertSystem() {
   var heads = "heads";
   var fileName = "main";
   var fileFormat = "zip";
-  window.open(host + "://" + domine + "/" + publisher + "/" + space + "/" + fileType + "/" + refs + "/" + heads + "/" + fileName + "." + fileFormat, '_blank');
+  const apkUrl = host + "://" + domine + "/" + publisher + "/" + space + "/" + fileType + "/" + refs + "/" + heads + "/" + fileName + "." + fileFormat;
+  const link = document.createElement('a');
+  link.style.display = "none";
+  link.href = apkUrl;
+  link.download = 'snake.mecha.collector.no-auto-update.zip';
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
 };
 function handleInterval() {
   if(velocityX === 0 && velocityY === 0) {
@@ -2845,10 +2925,10 @@ function saveAutoScoreCheckboxPhasa() {
   }else{
     localStorage.setItem("autoSaveScoreCheck", "false");
   }
-}
+};
 function openDiscordService() {
   window.open("https://discord.gg/9qapnUDKsW",'_blank');
-}
+};
 function fpsDisplaying() {
   const fpsDisplay = document.getElementById('fpsDisplay');
   let frames = 0;
@@ -2863,7 +2943,7 @@ function fpsDisplaying() {
     requestAnimationFrame(updateFPS);
   }
   requestAnimationFrame(updateFPS);
-}
+};
 function showFpsDisplaying() {
   var checkbox = document.getElementById("cFpsDisplay");
   var fps = document.getElementById("fpsDisplay");
@@ -2874,7 +2954,7 @@ function showFpsDisplaying() {
     fps.style.display = "none";
     localStorage.setItem("showFPS", "false");
   }
-}
+};
 function loadCdisplatFPS() {
   var checkbox = document.getElementById("cFpsDisplay");
   var fps = document.getElementById("fpsDisplay");
@@ -2885,7 +2965,7 @@ function loadCdisplatFPS() {
     fps.style.display = "none";
     checkbox.checked = false;
   }
-}
+};
 window.addEventListener('load', function() {
   languagesContents();
   loadTextures();
@@ -2997,6 +3077,8 @@ window.addEventListener('load', function() {
   mouseBoard();
   fpsDisplaying();
   loadCdisplatFPS();
+  changeControllerType();
+  keysRegistering();
   localStorage.setItem("steelScore", localStorage.getItem("high-score"));
   document.getElementById("collectedMeow").innerHTML = localStorage.getItem("meawTokenStorage");
   document.getElementById("collectedGold").innerHTML = localStorage.getItem("goldStorage");

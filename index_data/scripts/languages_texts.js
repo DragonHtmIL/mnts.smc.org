@@ -56,7 +56,7 @@ function languagesContents() {
   var a054 = document.getElementById("txtAhow");
   var a055 = document.getElementById("loadingText");
   var a056 = document.getElementById("loadClassic");
-  var a057 = document.getElementById("loadAnime");
+//  var a057 = document.getElementById("");
   var a058 = document.getElementById("loadingLangStyle");
   var a059 = document.getElementById("boardMapAlpha2Lang");
   var a060 = document.getElementById("adminToolsLang");
@@ -84,6 +84,10 @@ function languagesContents() {
   const a005_all = document.getElementsByClassName('serviceLang');
   const a006_all = document.getElementsByClassName('r-stars');
   const a007_all = document.getElementsByClassName('r-star');
+  const a008_all = document.getElementsByClassName('checkbox-content');
+  const a009_all = document.getElementsByClassName('label-range');
+  const a010_all = document.getElementsByClassName('dlLabel');
+  const a011_all = document.getElementsByClassName('lasbLang');
   if(localStorage.getItem("lang") === "en") {
     a000.innerHTML = "Settings";
     a001.innerHTML = "About";
@@ -153,13 +157,15 @@ function languagesContents() {
       a055.innerHTML = "Loading…";
     }
     a056.innerHTML = "Classic";
-    a057.innerHTML = "Anime";
+//    a057.innerHTML = "";
     a058.innerHTML = "Loading Animation";
     a059.innerHTML = "Alpha City Map 2";
     a060.innerHTML = "Developments";
     a061.innerHTML = "Exit";
     a062.innerHTML = "Notice";
     a063.innerHTML = "Ambient";
+     a063.style.width = "100%";
+     a063.style.textAlign = "right";
     a064.innerHTML = "How to play";
     a065.innerHTML = "If users use other devices (Windows, MacOS, Linux)";
     a066.innerHTML = "Keyboard keys:<br>";
@@ -201,7 +207,13 @@ function languagesContents() {
     };
     for (let i = 0; i < a007_all.length; i++) {
       a007_all[i].classList.add("en");
-    }
+    };
+    for (let i = 0; i < a010_all.length; i++) {
+      a010_all[i].textContent = 'Download';
+    };
+    for (let i = 0; i < a011_all.length; i++) {
+      a011_all[i].textContent = 'Anime';
+    };
     document.title = "Snake Mecha Collector";
   }else
   if(localStorage.getItem("lang") === "ru") {
@@ -273,7 +285,7 @@ function languagesContents() {
       a055.innerHTML = "Загрузка…";
     }
     a056.innerHTML = "Классический";
-    a057.innerHTML = "Аниме";
+//    a057.innerHTML = "";
     a058.innerHTML = "Анимация загрузки";
     a059.innerHTML = "Карта города Альфа 2";
     a060.innerHTML = "Разработки";
@@ -321,7 +333,13 @@ function languagesContents() {
     };
     for (let i = 0; i < a007_all.length; i++) {
       a007_all[i].classList.add("ru");
-    }
+    };
+    for (let i = 0; i < a010_all.length; i++) {
+      a010_all[i].textContent = 'Скачать';
+    };
+    for (let i = 0; i < a011_all.length; i++) {
+      a011_all[i].textContent = 'Аниме';
+    };
     document.title = "Змея Меха Сборщик";
   }else
   if(localStorage.getItem("lang") === "jp") {
@@ -394,7 +412,7 @@ function languagesContents() {
       a055.innerHTML = "読み込み中…";
     }
     a056.innerHTML = "クラシック";
-    a057.innerHTML = "アニメ";
+//    a057.innerHTML = "";
     a058.innerHTML = "読み込みのアニメーション";
     a059.innerHTML = "アルファシティマップ 2";
     a060.innerHTML = "開発";
@@ -442,7 +460,13 @@ function languagesContents() {
     };
     for (let i = 0; i < a007_all.length; i++) {
       a007_all[i].classList.add("jp");
-    }
+    };
+    for (let i = 0; i < a010_all.length; i++) {
+      a010_all[i].textContent = 'ダウンロード';
+    };
+    for (let i = 0; i < a011_all.length; i++) {
+      a011_all[i].textContent = 'アニメ';
+    };
     document.title = "スネークメカコレクター";
   }else
   if(localStorage.getItem("lang") === "chs") {
@@ -514,7 +538,7 @@ function languagesContents() {
       a055.innerHTML = "加载中…";
     }
     a056.innerHTML = "经典的";
-    a057.innerHTML = "日本动画片";
+//    a057.innerHTML = "";
     a058.innerHTML = "加载动画";
     a059.innerHTML = "阿尔法城地图 2";
     a060.innerHTML = "发展";
@@ -562,7 +586,13 @@ function languagesContents() {
     };
     for (let i = 0; i < a007_all.length; i++) {
       a007_all[i].classList.add("chs");
-    }
+    };
+    for (let i = 0; i < a010_all.length; i++) {
+      a010_all[i].textContent = '下载';
+    };
+    for (let i = 0; i < a011_all.length; i++) {
+      a011_all[i].textContent = '日本动画片';
+    };
     document.title = "蛇形机甲收藏家";
   }else
   if(localStorage.getItem("lang") === "cht") {
@@ -634,7 +664,7 @@ function languagesContents() {
       a055.innerHTML = "載入中…";
     }
     a056.innerHTML = "經典的";
-    a057.innerHTML = "日本卡通";
+//    a057.innerHTML = "";
     a058.innerHTML = "載入動畫";
     a059.innerHTML = "阿爾法城地圖 2";
     a060.innerHTML = "發展";
@@ -682,7 +712,13 @@ function languagesContents() {
     };
     for (let i = 0; i < a007_all.length; i++) {
       a007_all[i].classList.add("cht");
-    }
+    };
+    for (let i = 0; i < a010_all.length; i++) {
+      a010_all[i].textContent = '下載';
+    };
+    for (let i = 0; i < a011_all.length; i++) {
+      a011_all[i].textContent = '日本卡通';
+    };
     document.title = "蛇形機甲收藏家";
   }else
   if(localStorage.getItem("lang") === "ko") {
@@ -754,7 +790,7 @@ function languagesContents() {
       a055.innerHTML = "로딩중…";
     }
     a056.innerHTML = "고전적인";
-    a057.innerHTML = "애니";
+//    a057.innerHTML = "";
     a058.innerHTML = "로딩 애니메이션";
     a059.innerHTML = "알파 시티 지도 2";
     a060.innerHTML = "개발";
@@ -802,7 +838,13 @@ function languagesContents() {
     };
     for (let i = 0; i < a007_all.length; i++) {
       a007_all[i].classList.add("ko");
-    }
+    };
+    for (let i = 0; i < a010_all.length; i++) {
+      a010_all[i].textContent = '다운로드';
+    };
+    for (let i = 0; i < a011_all.length; i++) {
+      a011_all[i].textContent = '애니';
+    };
     document.title = "뱀 메카 수집가";
   }else
   if(localStorage.getItem("lang") === "he") {
@@ -836,6 +878,8 @@ function languagesContents() {
     a022.innerHTML = "כרטיס כרומטי";
     a023.innerHTML = "כרטיס פרימיום";
     a024.innerHTML = "השתקת שמע";
+     a024.style.width = "100%";
+     a024.style.textAlign = "right";
     a025.innerHTML = "עוצמת SFX";
      a025.style.direction = "rtl";
      a025.style.textAlign = "right";
@@ -865,6 +909,8 @@ function languagesContents() {
      a039.style.width = "75%";
     a040.innerHTML = "דירוג על ידי " + rUsers + " משתמשים";
     a041.innerHTML = "מוסיקת רקע";
+     a041.style.width = "100%";
+     a041.style.textAlign = "right";
     a042.innerHTML = "מוסיקה";
       a043.classList.add("he-lang");
       a044.classList.add("he-lang");
@@ -875,6 +921,8 @@ function languagesContents() {
     a048.classList.add("g-t-he");
     a049.innerHTML = "נחש";
     a050.innerHTML = "טעינה אוטומטית של הציון הנשמר";
+     a050.style.width = "100%";
+     a050.style.textAlign = "right";
     a051.innerHTML = "מרכז איסוף";
      a051.style.textAlign = "right";
      a051.style.width = "75%";
@@ -898,10 +946,12 @@ function languagesContents() {
     }
     a055.style.direction = "rtl";
     a056.innerHTML = "קלאסי";
-    a057.innerHTML = "אנימה";
+//    a057.innerHTML = "";
     a058.innerHTML = "אנימציית טעינה";
     a059.innerHTML = "מפת עיר אלפא 2";
     a060.innerHTML = "התפתחויות";
+     a060.style.width = "100%";
+     a060.style.textAlign = "right";
     a061.innerHTML = "יציאה";
     a062.innerHTML = "הודעה";
     a063.innerHTML = "סביבה";
@@ -963,7 +1013,20 @@ function languagesContents() {
     };
     for (let i = 0; i < a007_all.length; i++) {
       a007_all[i].classList.add("he");
-    }
+    };
+    for (let i = 0; i < a008_all.length; i++) {
+      a008_all[i].style.display = "flex";
+      a008_all[i].style.justifyContent = "space-between";
+    };
+    for (let i = 0; i < a009_all.length; i++) {
+      a009_all[i].style.textAlign = "right";
+    };
+    for (let i = 0; i < a010_all.length; i++) {
+      a010_all[i].textContent = 'הורדה';
+    };
+    for (let i = 0; i < a011_all.length; i++) {
+      a011_all[i].textContent = 'אנימה';
+    };
     document.title = "מכה נחש אספן";
   }else
   if(localStorage.getItem("lang") === "de") {
@@ -1035,7 +1098,7 @@ function languagesContents() {
       a055.innerHTML = "Laden…";
     }
     a056.innerHTML = "Klassiker";
-    a057.innerHTML = "Anime";
+//    a057.innerHTML = "";
     a058.innerHTML = "Animation wird geladen";
     a059.innerHTML = "Alpha-Stadtplan 2";
     a060.innerHTML = "Entwicklungen";
@@ -1083,7 +1146,13 @@ function languagesContents() {
     };
     for (let i = 0; i < a007_all.length; i++) {
       a007_all[i].classList.add("de");
-    }
+    };
+    for (let i = 0; i < a010_all.length; i++) {
+      a010_all[i].textContent = 'Herunterladen';
+    };
+    for (let i = 0; i < a011_all.length; i++) {
+      a011_all[i].textContent = 'Anime';
+    };
     document.title = "Schlangen Mecha Sammler";
   }
 }

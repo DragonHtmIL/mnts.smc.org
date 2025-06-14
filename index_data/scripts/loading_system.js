@@ -20,7 +20,7 @@ const cursorsUp = "index_data/animations/cursour/up/";
 const cursorsDown = "index_data/animations/cursour/down/";
 const others = "index_data/textures/";
 
-const tassetBoards = [//76
+const tassetBoards = [
   "alpha_map",
   "alpha_map_2",
   "origo_map",
@@ -98,7 +98,7 @@ const tassetBoards = [//76
   "img_071",
   "img_072",
 ];
-const tassetFoods = [//87
+const tassetFoods = [
   "alpha_coin",
   "crystal",
   "gold",
@@ -187,9 +187,7 @@ const tassetFoods = [//87
   "img_0_076",
   "img_0_077"
 ];
-const tassetGuis = [//62
-  "alert",
-  "bg_overlay",
+const tassetGuis = [
   "border",
   "btn_control_dn",
   "btn_control_dn_hover",
@@ -203,24 +201,18 @@ const tassetGuis = [//62
   "btn_function_py",
   "button",
   "button_true",
-  "changed_bg",
-  "checkbox_off",
-  "checkbox_on",
   "cube_bg",
   "download",
-  "download_android",
-  "download_computer",
+  "download_android_icon",
+  "download_windows_icon",
   "exit",
   "first_modal_bg",
   "hard_on",
   "hell_on",
-  "icon_bg",
   "line",
   "loading_yi_logo_2x",
   "long_button",
   "long_button_hover",
-  "menu",
-  "menu_close",
   "nav_menu_chs",
   "nav_menu_chs_hover",
   "nav_menu_cht",
@@ -239,25 +231,34 @@ const tassetGuis = [//62
   "nav_menu_de_hover",
   "new_modal_content",
   "normal_on",
-  "notice",
   "range_bar",
   "range_thumb",
   "selected",
   "tab_horizontal",
   "tab_off",
-  "tab_vertical",
   "unselected",
-  "wrapper_bg",
   "up_note",
-  "close",
-  "services_bg",
   "key_bg",
   "key_bg_hover",
   "htp_button",
   "actived_frame_cube",
-  "loading_progress"
+  "loading_progress",
+  "alert",
+  "bg_overlay",
+  "changed_bg",
+  "checkbox_off",
+  "checkbox_on",
+  "services_bg",
+  "close",
+  "wrapper_bg",
+  "tab_vertical",
+  "notice",
+  "menu",
+  "menu_close",
+  "icon_bg",
+  "windows_bg"
 ];
-const tassetLeagues = [//18
+const tassetLeagues = [
   "league_1_bronze",
   "league_2_silver",
   "league_3_gold",
@@ -277,7 +278,7 @@ const tassetLeagues = [//18
   "league_8_alpha_knight_star",
   "non_star"
 ];
-const tassetSnakes = [//72
+const tassetSnakes = [
   "0",
   "0s",
   "1",
@@ -351,22 +352,13 @@ const tassetSnakes = [//72
   "z",
   "Zs"
 ];
-const tassetSystems = [//33
+const tassetSystems = [
   "battery_charging",
   "battery_low",
   "battery_normal",
   "battery_main_charging",
   "battery_main_low",
   "battery_main_normal",
-  "discord",
-  "Google_chs",
-  "Google_cht",
-  "Google_en",
-  "Google_jp",
-  "Google_ko",
-  "Google_ru",
-  "Google_he",
-  "Google_de",
   "icon_0",
   "icon_16",
   "icon_32",
@@ -385,15 +377,26 @@ const tassetSystems = [//33
   "icon_256",
   "icon_300",
   "icon_384",
-  "icon_512"
+  "icon_512",
+  "discord",
+  "Google_chs",
+  "Google_cht",
+  "Google_en",
+  "Google_jp",
+  "Google_ko",
+  "Google_ru",
+  "Google_he",
+  "Google_de"
 ];
-const tassetLoadingLogos = [//4
+const tassetLoadingLogos = [
   "anime",
   "classic",
   "miku",
-  "nakano_azusa"
+  "nakano_azusa",
+  "anime_2",
+  "anime_3"
 ];
-const tassetCursors = [//16
+const tassetCursors = [
   "0",
   "1",
   "2",
@@ -411,7 +414,7 @@ const tassetCursors = [//16
   "14",
   "15"
 ];
-const tassetCursorsSides = [//14
+const tassetCursorsSides = [
   "0",
   "1",
   "2",
@@ -427,7 +430,7 @@ const tassetCursorsSides = [//14
   "12",
   "13"
 ];
-const tassetOthers = [//1
+const tassetOthers = [
   "empty"
 ];
 function loadTextures() {
@@ -1183,7 +1186,7 @@ function loadTextures() {
   };
 };
 function toDisplayNone() {
-  if(document.getElementById('widther').style.width === "46.4%") {
+  if(document.getElementById('widther').style.width === "46.7%") {
     if(localStorage.getItem("firstModal") === null) {
       document.getElementById("firstModal").style.display = "block";
     }else

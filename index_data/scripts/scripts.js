@@ -15745,7 +15745,7 @@ function applySettings() {
   }else
   if(document.getElementById("loadNakanoCon").className === "select activet") {
     localStorage.setItem("loadingStyle", "nakano");
-  }
+  };
   window.location.reload();
 };
 function alertReloadLater() {
@@ -15818,6 +15818,7 @@ function alertReloadLater() {
     localStorage.setItem("snakeColor", "#ddaaff");
     localStorage.setItem("snakeLetter", " ");
     localStorage.setItem("autoSaveScoreCheck", "false");
+    localStorage.setItem("showFPS", "false");
     window.location.reload();
   }
   defaultClickSound();
@@ -16164,250 +16165,6 @@ function openTabSound(evt, tabName) {
   }
   document.getElementById(tabName).style.display = "block";
   evt.currentTarget.className += " active";
-};
-// Install App: Gen by: Gemini
-function installApp() {
-  let deferredPrompt; // Store the deferred prompt
-  if (navigator.standalone) {
-    // Already installed (iOS) or running as a standalone app
-    var alertcancel = document.getElementById("alertLeft");
-    var alertconfirm = document.getElementById("alertRight");
-    document.getElementById("alert").style.display = "block";
-    document.getElementById("alert").style.zIndex = "5";
-    alertcancel.style.display = "none";
-    alertconfirm.style.display = "block";
-    alertcancel.style.display = "none";
-    if(localStorage.getItem("lang") === "en") {
-      document.getElementById("alertText").innerHTML = "App is already installed or running in standalone mode.";
-      alertconfirm.value = "Confirm";
-    }else
-    if(localStorage.getItem("lang") === "ru") {
-      document.getElementById("alertText").innerHTML = "Приложение уже установлено или работает в автономном режиме.";
-      alertconfirm.value = "Подтвердить";
-    }else
-    if(localStorage.getItem("lang") === "jp") {
-      document.getElementById("alertText").innerHTML = "アプリケーションはすでにインストールされているか、オフラインで実行されています。";
-      alertconfirm.value = "確認する";
-    }else
-    if(localStorage.getItem("lang") === "chs") {
-      document.getElementById("alertText").innerHTML = "应用程序已安装或以独立模式运行。";
-      alertconfirm.value = "确认";
-    }else
-    if(localStorage.getItem("lang") === "cht") {
-      document.getElementById("alertText").innerHTML = "應用程式已安裝或以獨立模式運作。";
-      alertconfirm.value = "確認";
-    }else
-    if(localStorage.getItem("lang") === "ko") {
-      document.getElementById("alertText").innerHTML = "앱이 이미 설치되었거나 독립 실행형 모드로 실행 중입니다.";
-      alertconfirm.value = "확인하다";
-    }else
-    if(localStorage.getItem("lang") === "he") {
-      document.getElementById("alertText").innerHTML = "אפליקצייה כבר מורדת או רצה במצב עצמאי.";
-      document.getElementById("alertText").style.direction = "rtl";
-      alertconfirm.value = "אישור";
-    }else
-    if(localStorage.getItem("lang") === "de") {
-      document.getElementById("alertText").innerHTML = "Die App ist bereits installiert oder wird im Standalone-Modus ausgeführt.";
-      alertconfirm.value = "Bestätigen";
-    }
-    alertconfirm.onclick = function() {
-      document.getElementById("alert").style.display = "none";
-      document.getElementById("alert").style.zIndex = "3";
-      defaultClickSound();
-    }
-    return;
-  }
-  if (window.matchMedia('(display-mode: fullscreen)').matches) {
-    // Already installed (Android)
-    var alertcancel = document.getElementById("alertLeft");
-    var alertconfirm = document.getElementById("alertRight");
-    document.getElementById("alert").style.display = "block";
-    document.getElementById("alert").style.zIndex = "5";
-    alertcancel.style.display = "none";
-    alertconfirm.style.display = "block";
-    if(localStorage.getItem("lang") === "en") {
-      document.getElementById("alertText").innerHTML = "App is already installed or running in standalone mode.";
-      alertconfirm.value = "Confirm";
-    }else
-    if(localStorage.getItem("lang") === "ru") {
-      document.getElementById("alertText").innerHTML = "Приложение уже установлено или работает в автономном режиме.";
-      alertconfirm.value = "Подтвердить";
-    }else
-    if(localStorage.getItem("lang") === "jp") {
-      document.getElementById("alertText").innerHTML = "アプリケーションはすでにインストールされているか、オフラインで実行されています。";
-      alertconfirm.value = "確認する";
-    }else
-    if(localStorage.getItem("lang") === "chs") {
-      document.getElementById("alertText").innerHTML = "应用程序已安装或以独立模式运行。";
-      alertconfirm.value = "确认";
-    }else
-    if(localStorage.getItem("lang") === "cht") {
-      document.getElementById("alertText").innerHTML = "應用程式已安裝或以獨立模式運作。";
-      alertconfirm.value = "確認";
-    }else
-    if(localStorage.getItem("lang") === "ko") {
-      document.getElementById("alertText").innerHTML = "앱이 이미 설치되었거나 독립 실행형 모드로 실행 중입니다.";
-      alertconfirm.value = "확인하다";
-    }else
-    if(localStorage.getItem("lang") === "he") {
-      document.getElementById("alertText").innerHTML = "אפליקצייה כבר מורדת או רצה במצב עצמאי.";
-      document.getElementById("alertText").style.direction = "rtl";
-      alertconfirm.value = "אישור";
-    }else
-    if(localStorage.getItem("lang") === "de") {
-      document.getElementById("alertText").innerHTML = "Die App ist bereits installiert oder wird im Standalone-Modus ausgeführt.";
-      alertconfirm.value = "Bestätigen";
-    }
-    alertconfirm.onclick = function() {
-      document.getElementById("alert").style.display = "none";
-      document.getElementById("alert").style.zIndex = "3";
-      defaultClickSound();
-    }
-    return;
-  }
-  if (typeof deferredPrompt !== 'undefined') {
-    // The user has been prompted before, so let's prompt them again
-    deferredPrompt.prompt();
-    deferredPrompt.userChoice.then((choiceResult) => {
-      if (choiceResult.outcome === 'accepted') {
-        console.log('User accepted the A2HS prompt');
-      } else {
-        console.log('User dismissed the A2HS prompt');
-      }
-      deferredPrompt = null; // Reset the deferred prompt
-    });
-    return;
-  }
-  // Check if the browser supports add to home screen
-  if (window.matchMedia('(display-mode: browser)').matches) {
-    // Check if the browser supports beforeinstallprompt event
-    window.addEventListener('beforeinstallprompt', (e) => {
-      // Prevent the mini-infobar from appearing on mobile
-      e.preventDefault();
-      // Stash the event so it can be used later.
-      deferredPrompt = e;
-      // Optionally, send analytics event that A2HS prompt was shown.
-      console.log('beforeinstallprompt' + 'event was fired.');
-      // Show the install button
-       const installButton = document.getElementById('downloadNoAutoUpdate2'); // Replace with your button ID
-       if (installButton) {
-           installButton.style.display = 'block'; // Or however you want to show it
-       }
-    });
-    // Handle the button click
-    const installButton = document.getElementById('downloadNoAutoUpdate2'); // Replace with your button ID
-    if (installButton) {
-      installButton.addEventListener('click', () => {
-        if (deferredPrompt) {
-          deferredPrompt.prompt();
-          deferredPrompt.userChoice.then((choiceResult) => {
-            if (choiceResult.outcome === 'accepted') {
-              console.log('User accepted the A2HS prompt');
-            } else {
-              console.log('User dismissed the A2HS prompt');
-            }
-            deferredPrompt = null;
-            installButton.style.display = 'none'; // Hide the button after the prompt
-          });
-        } else {
-          // The deferred prompt is not available, possibly due to user interaction or browser limitations.
-          var alertcancel = document.getElementById("alertLeft");
-          var alertconfirm = document.getElementById("alertRight");
-          document.getElementById("alert").style.display = "block";
-          document.getElementById("alert").style.zIndex = "5";
-          alertcancel.style.display = "none";
-          alertconfirm.style.display = "block";
-          if(localStorage.getItem("lang") === "en") {
-            document.getElementById("alertText").innerHTML = "Add to Home Screen functionality is not currently available.  Make sure you've visited the site a few times.";
-            alertconfirm.value = "Ok";
-          }else
-          if(localStorage.getItem("lang") === "ru") {
-            document.getElementById("alertText").innerHTML = "Функция «Добавить на главный экран» в настоящее время недоступна. Убедитесь, что вы посетили сайт несколько раз.";
-            alertconfirm.value = "Ok";
-          }else
-          if(localStorage.getItem("lang") === "jp") {
-            document.getElementById("alertText").innerHTML = "ホーム画面に追加機能は現在利用できません。サイトに数回アクセスしたことを確認してください。";
-            alertconfirm.value = "Ok";
-          }else
-          if(localStorage.getItem("lang") === "chs") {
-            document.getElementById("alertText").innerHTML = "添加到主屏幕功能目前不可用。请确保您已访问过该网站几次。";
-            alertconfirm.value = "Ok";
-          }else
-          if(localStorage.getItem("lang") === "cht") {
-            document.getElementById("alertText").innerHTML = "「新增至主畫面」功能目前無法使用。 確保您已經訪問過該網站幾次。";
-            alertconfirm.value = "Ok";
-          }else
-          if(localStorage.getItem("lang") === "ko") {
-            document.getElementById("alertText").innerHTML = "홈 화면에 추가 기능은 현재 사용할 수 없습니다. 사이트를 몇 번 방문했는지 확인하세요.";
-            alertconfirm.value = "Ok";
-          }else
-          if(localStorage.getItem("lang") === "he") {
-            document.getElementById("alertText").innerHTML = "פונקציונליות הוספה למסך הבית אינה זמינה כעת. ודא שכבר ביקרת באתר מספר פעמים.";
-            document.getElementById("alertText").style.direction = "rtl";
-            alertconfirm.value = "Ok";
-          }else
-          if(localStorage.getItem("lang") === "de") {
-            document.getElementById("alertText").innerHTML = "Die Funktion „Zum Home-Bildschirm hinzufügen“ ist derzeit nicht verfügbar. Stellen Sie sicher, dass Sie die Website mehrmals besucht haben.";
-            document.getElementById("alertText").style.direction = "rtl";
-            alertconfirm.value = "Ok";
-          }
-          alertconfirm.onclick = function() {
-            document.getElementById("alert").style.display = "none";
-            document.getElementById("alert").style.zIndex = "3";
-          }
-        }
-      });
-    }
-  } else {
-    var alertcancel = document.getElementById("alertLeft");
-    var alertconfirm = document.getElementById("alertRight");
-    document.getElementById("alert").style.display = "block";
-    document.getElementById("alert").style.zIndex = "5";
-    alertcancel.style.display = "none";
-    alertconfirm.style.display = "block";
-    if(localStorage.getItem("lang") === "en") {
-      document.getElementById("alertText").innerHTML = "This browser does not support Add to Home Screen.";
-      alertconfirm.value = "Ok";
-    }else
-    if(localStorage.getItem("lang") === "ru") {
-      document.getElementById("alertText").innerHTML = "Этот браузер не поддерживает функцию «Добавить на главный экран».";
-      alertconfirm.value = "Ok";
-    }else
-    if(localStorage.getItem("lang") === "jp") {
-      document.getElementById("alertText").innerHTML = "このブラウザはホーム画面への追加をサポートしていません。";
-      alertconfirm.value = "Ok";
-    }else
-    if(localStorage.getItem("lang") === "chs") {
-      document.getElementById("alertText").innerHTML = "该浏览器不支持添加到主屏幕。";
-      alertconfirm.value = "Ok";
-    }else
-    if(localStorage.getItem("lang") === "cht") {
-      document.getElementById("alertText").innerHTML = "該瀏覽器不支援添加到主螢幕。";
-      alertconfirm.value = "Ok";
-    }else
-    if(localStorage.getItem("lang") === "ko") {
-      document.getElementById("alertText").innerHTML = "이 브라우저는 홈 화면에 추가를 지원하지 않습니다.";
-      alertconfirm.value = "Ok";
-    }else
-    if(localStorage.getItem("lang") === "he") {
-      document.getElementById("alertText").innerHTML = "דפדפן זה אינו תומך בהוספה למסך הבית.";
-      document.getElementById("alertText").style.direction = "rtl";
-      alertconfirm.value = "Ok";
-    }else
-    if(localStorage.getItem("lang") === "de") {
-      document.getElementById("alertText").innerHTML = "Dieser Browser unterstützt „Zum Home-Bildschirm hinzufügen“ nicht.";
-      alertconfirm.value = "Ok";
-    }
-    alertconfirm.onclick = function() {
-      document.getElementById("alert").style.display = "none";
-      document.getElementById("alert").style.zIndex = "3";
-    }
-  }
-};
-// Call installApp() when your button is clicked.  For example:
-const installButton = document.getElementById('downloadNoAutoUpdate2'); // Replace with your actual button ID
-if (installButton) {
-  installButton.addEventListener('click', installApp);
 };
 if ('getBattery' in navigator) {
   navigator.getBattery().then(function (battery) {
@@ -16760,6 +16517,10 @@ function snakeDecoloring() {
   const colorer = document.getElementById("snakeColor");
   localStorage.setItem("snakeColor", colorer.value);
   presnake.style.backgroundColor = localStorage.getItem("snakeColor");
+};
+function snakeDecoloringFmodal() {
+  const colorer = document.getElementById("fSnakeColor");
+  localStorage.setItem("snakeColor", colorer.value);
 };
 function snakeColorerValueLoad() {
   const colorer = document.getElementById("snakeColor");
@@ -17194,6 +16955,738 @@ function shiftLetters() {
     document.getElementById("sLetterz").innerHTML = "z";
     document.getElementById("keyShift").innerHTML = "↑";
     document.getElementById("keyShiftFirst").innerHTML = "↑";
+  };
+  markKeysActived1();
+  markKeysActived2();
+  markKeysActived3();
+  markKeysActived4();
+  markKeysActived5();
+  markKeysActived6();
+  markKeysActived7();
+  markKeysActived8();
+  markKeysActived9();
+  markKeysActived0();
+  markKeysActiveda();
+  markKeysActivedb();
+  markKeysActivedc();
+  markKeysActivedd();
+  markKeysActivede();
+  markKeysActivedf();
+  markKeysActivedg();
+  markKeysActivedh();
+  markKeysActivedi();
+  markKeysActivedj();
+  markKeysActivedk();
+  markKeysActivedl();
+  markKeysActivedm();
+  markKeysActivedn();
+  markKeysActivedo();
+  markKeysActivedp();
+  markKeysActivedq();
+  markKeysActivedr();
+  markKeysActiveds();
+  markKeysActivedt();
+  markKeysActivedu();
+  markKeysActivedv();
+  markKeysActivedw();
+  markKeysActivedx();
+  markKeysActivedy();
+  markKeysActivedz();
+};
+function keysRegistering() {
+  markKeysActived1();
+  markKeysActived2();
+  markKeysActived3();
+  markKeysActived4();
+  markKeysActived5();
+  markKeysActived6();
+  markKeysActived7();
+  markKeysActived8();
+  markKeysActived9();
+  markKeysActived0();
+  markKeysActiveda();
+  markKeysActivedb();
+  markKeysActivedc();
+  markKeysActivedd();
+  markKeysActivede();
+  markKeysActivedf();
+  markKeysActivedg();
+  markKeysActivedh();
+  markKeysActivedi();
+  markKeysActivedj();
+  markKeysActivedk();
+  markKeysActivedl();
+  markKeysActivedm();
+  markKeysActivedn();
+  markKeysActivedo();
+  markKeysActivedp();
+  markKeysActivedq();
+  markKeysActivedr();
+  markKeysActiveds();
+  markKeysActivedt();
+  markKeysActivedu();
+  markKeysActivedv();
+  markKeysActivedw();
+  markKeysActivedx();
+  markKeysActivedy();
+  markKeysActivedz();
+  markKeysActived();
+}
+function markKeysActived() {
+  const key = document.getElementById("keyClear");
+  const lsKey = localStorage.getItem("snakeLetter");
+  if(lsKey === " " && key.innerHTML === "⨱") {
+    key.className = "keyOboard actived";
+  }else{
+    key.className = "keyOboard";
+  }
+};
+function markKeysActived1() {
+  const key = document.getElementById("key1");
+  const lsKey = localStorage.getItem("snakeLetter");
+  if(lsKey === "1" && key.innerHTML === "1") {
+    key.className = "keyOboard actived";
+  }else
+  if(lsKey === "1s" && key.innerHTML === "Ⅰ") {
+    key.className = "keyOboard actived";
+  }else
+  if(lsKey === "1" && key.innerHTML === "Ⅰ") {
+    key.className = "keyOboard";
+  }else
+  if(lsKey === "1s" && key.innerHTML === "1") {
+    key.className = "keyOboard";
+  }else{
+    key.className = "keyOboard";
+  }
+};
+function markKeysActived2() {
+  const key = document.getElementById("key2");
+  const lsKey = localStorage.getItem("snakeLetter");
+  if(lsKey === "2" && key.innerHTML === "2") {
+    key.className = "keyOboard actived";
+  }else
+  if(lsKey === "2s" && key.innerHTML === "Ⅱ") {
+    key.className = "keyOboard actived";
+  }else
+  if(lsKey === "2" && key.innerHTML === "Ⅱ") {
+    key.className = "keyOboard";
+  }else
+  if(lsKey === "2s" && key.innerHTML === "2") {
+    key.className = "keyOboard";
+  }else{
+    key.className = "keyOboard";
+  }
+};
+function markKeysActived3() {
+  const key = document.getElementById("key3");
+  const lsKey = localStorage.getItem("snakeLetter");
+  if(lsKey === "3" && key.innerHTML === "3") {
+    key.className = "keyOboard actived";
+  }else
+  if(lsKey === "3s" && key.innerHTML === "Ⅲ") {
+    key.className = "keyOboard actived";
+  }else
+  if(lsKey === "3" && key.innerHTML === "Ⅲ") {
+    key.className = "keyOboard";
+  }else
+  if(lsKey === "3s" && key.innerHTML === "3") {
+    key.className = "keyOboard";
+  }else{
+    key.className = "keyOboard";
+  }
+};
+function markKeysActived4() {
+  const key = document.getElementById("key4");
+  const lsKey = localStorage.getItem("snakeLetter");
+  if(lsKey === "4" && key.innerHTML === "4") {
+    key.className = "keyOboard actived";
+  }else
+  if(lsKey === "4s" && key.innerHTML === "Ⅳ") {
+    key.className = "keyOboard actived";
+  }else
+  if(lsKey === "4" && key.innerHTML === "Ⅳ") {
+    key.className = "keyOboard";
+  }else
+  if(lsKey === "4s" && key.innerHTML === "4") {
+    key.className = "keyOboard";
+  }else{
+    key.className = "keyOboard";
+  }
+};
+function markKeysActived5() {
+  const key = document.getElementById("key5");
+  const lsKey = localStorage.getItem("snakeLetter");
+  if(lsKey === "5" && key.innerHTML === "5") {
+    key.className = "keyOboard actived";
+  }else
+  if(lsKey === "5s" && key.innerHTML === "Ⅴ") {
+    key.className = "keyOboard actived";
+  }else
+  if(lsKey === "5" && key.innerHTML === "Ⅴ") {
+    key.className = "keyOboard";
+  }else
+  if(lsKey === "5s" && key.innerHTML === "5") {
+    key.className = "keyOboard";
+  }else{
+    key.className = "keyOboard";
+  }
+};
+function markKeysActived6() {
+  const key = document.getElementById("key6");
+  const lsKey = localStorage.getItem("snakeLetter");
+  if(lsKey === "6" && key.innerHTML === "6") {
+    key.className = "keyOboard actived";
+  }else
+  if(lsKey === "6s" && key.innerHTML === "Ⅵ") {
+    key.className = "keyOboard actived";
+  }else
+  if(lsKey === "6" && key.innerHTML === "Ⅵ") {
+    key.className = "keyOboard";
+  }else
+  if(lsKey === "6s" && key.innerHTML === "6") {
+    key.className = "keyOboard";
+  }else{
+    key.className = "keyOboard";
+  }
+};
+function markKeysActived7() {
+  const key = document.getElementById("key7");
+  const lsKey = localStorage.getItem("snakeLetter");
+  if(lsKey === "7" && key.innerHTML === "7") {
+    key.className = "keyOboard actived";
+  }else
+  if(lsKey === "7s" && key.innerHTML === "Ⅶ") {
+    key.className = "keyOboard actived";
+  }else
+  if(lsKey === "7" && key.innerHTML === "Ⅶ") {
+    key.className = "keyOboard";
+  }else
+  if(lsKey === "7s" && key.innerHTML === "7") {
+    key.className = "keyOboard";
+  }else{
+    key.className = "keyOboard";
+  }
+};
+function markKeysActived8() {
+  const key = document.getElementById("key8");
+  const lsKey = localStorage.getItem("snakeLetter");
+  if(lsKey === "8" && key.innerHTML === "8") {
+    key.className = "keyOboard actived";
+  }else
+  if(lsKey === "8s" && key.innerHTML === "Ⅷ") {
+    key.className = "keyOboard actived";
+  }else
+  if(lsKey === "8" && key.innerHTML === "Ⅷ") {
+    key.className = "keyOboard";
+  }else
+  if(lsKey === "8s" && key.innerHTML === "8") {
+    key.className = "keyOboard";
+  }else{
+    key.className = "keyOboard";
+  }
+};
+function markKeysActived9() {
+  const key = document.getElementById("key9");
+  const lsKey = localStorage.getItem("snakeLetter");
+  if(lsKey === "9" && key.innerHTML === "9") {
+    key.className = "keyOboard actived";
+  }else
+  if(lsKey === "9s" && key.innerHTML === "Ⅸ") {
+    key.className = "keyOboard actived";
+  }else
+  if(lsKey === "9" && key.innerHTML === "Ⅸ") {
+    key.className = "keyOboard";
+  }else
+  if(lsKey === "9s" && key.innerHTML === "9") {
+    key.className = "keyOboard";
+  }else{
+    key.className = "keyOboard";
+  }
+};
+function markKeysActived0() {
+  const key = document.getElementById("key0");
+  const lsKey = localStorage.getItem("snakeLetter");
+  if(lsKey === "0" && key.innerHTML === "0") {
+    key.className = "keyOboard actived";
+  }else
+  if(lsKey === "0s" && key.innerHTML === "Ⅹ") {
+    key.className = "keyOboard actived";
+  }else
+  if(lsKey === "0" && key.innerHTML === "Ⅹ") {
+    key.className = "keyOboard";
+  }else
+  if(lsKey === "0s" && key.innerHTML === "0") {
+    key.className = "keyOboard";
+  }else{
+    key.className = "keyOboard";
+  }
+};
+function markKeysActiveda() {
+  const key = document.getElementById("keya");
+  const lsKey = localStorage.getItem("snakeLetter");
+  if(lsKey === "a" && key.innerHTML === "a") {
+    key.className = "keyOboard actived";
+  }else
+  if(lsKey === "A" && key.innerHTML === "A") {
+    key.className = "keyOboard actived";
+  }else
+  if(lsKey === "a" && key.innerHTML === "A") {
+    key.className = "keyOboard";
+  }else
+  if(lsKey === "A" && key.innerHTML === "a") {
+    key.className = "keyOboard";
+  }else{
+    key.className = "keyOboard";
+  }
+};
+function markKeysActivedb() {
+  const key = document.getElementById("keyb");
+  const lsKey = localStorage.getItem("snakeLetter");
+  if(lsKey === "b" && key.innerHTML === "b") {
+    key.className = "keyOboard actived";
+  }else
+  if(lsKey === "B" && key.innerHTML === "B") {
+    key.className = "keyOboard actived";
+  }else
+  if(lsKey === "b" && key.innerHTML === "B") {
+    key.className = "keyOboard";
+  }else
+  if(lsKey === "B" && key.innerHTML === "b") {
+    key.className = "keyOboard";
+  }else{
+    key.className = "keyOboard";
+  }
+};
+function markKeysActivedc() {
+  const key = document.getElementById("keyc");
+  const lsKey = localStorage.getItem("snakeLetter");
+  if(lsKey === "c" && key.innerHTML === "c") {
+    key.className = "keyOboard actived";
+  }else
+  if(lsKey === "C" && key.innerHTML === "C") {
+    key.className = "keyOboard actived";
+  }else
+  if(lsKey === "c" && key.innerHTML === "C") {
+    key.className = "keyOboard";
+  }else
+  if(lsKey === "C" && key.innerHTML === "c") {
+    key.className = "keyOboard";
+  }else{
+    key.className = "keyOboard";
+  }
+};
+function markKeysActivedd() {
+  const key = document.getElementById("keyd");
+  const lsKey = localStorage.getItem("snakeLetter");
+  if(lsKey === "d" && key.innerHTML === "d") {
+    key.className = "keyOboard actived";
+  }else
+  if(lsKey === "D" && key.innerHTML === "D") {
+    key.className = "keyOboard actived";
+  }else
+  if(lsKey === "d" && key.innerHTML === "D") {
+    key.className = "keyOboard";
+  }else
+  if(lsKey === "D" && key.innerHTML === "d") {
+    key.className = "keyOboard";
+  }else{
+    key.className = "keyOboard";
+  }
+};
+function markKeysActivede() {
+  const key = document.getElementById("keye");
+  const lsKey = localStorage.getItem("snakeLetter");
+  if(lsKey === "e" && key.innerHTML === "e") {
+    key.className = "keyOboard actived";
+  }else
+  if(lsKey === "E" && key.innerHTML === "E") {
+    key.className = "keyOboard actived";
+  }else
+  if(lsKey === "e" && key.innerHTML === "E") {
+    key.className = "keyOboard";
+  }else
+  if(lsKey === "E" && key.innerHTML === "e") {
+    key.className = "keyOboard";
+  }else{
+    key.className = "keyOboard";
+  }
+};
+function markKeysActivedf() {
+  const key = document.getElementById("keyf");
+  const lsKey = localStorage.getItem("snakeLetter");
+  if(lsKey === "f" && key.innerHTML === "f") {
+    key.className = "keyOboard actived";
+  }else
+  if(lsKey === "F" && key.innerHTML === "F") {
+    key.className = "keyOboard actived";
+  }else
+  if(lsKey === "f" && key.innerHTML === "F") {
+    key.className = "keyOboard";
+  }else
+  if(lsKey === "F" && key.innerHTML === "f") {
+    key.className = "keyOboard";
+  }else{
+    key.className = "keyOboard";
+  }
+};
+function markKeysActivedg() {
+  const key = document.getElementById("keyg");
+  const lsKey = localStorage.getItem("snakeLetter");
+  if(lsKey === "g" && key.innerHTML === "g") {
+    key.className = "keyOboard actived";
+  }else
+  if(lsKey === "G" && key.innerHTML === "G") {
+    key.className = "keyOboard actived";
+  }else
+  if(lsKey === "g" && key.innerHTML === "G") {
+    key.className = "keyOboard";
+  }else
+  if(lsKey === "G" && key.innerHTML === "g") {
+    key.className = "keyOboard";
+  }else{
+    key.className = "keyOboard";
+  }
+};
+function markKeysActivedh() {
+  const key = document.getElementById("keyh");
+  const lsKey = localStorage.getItem("snakeLetter");
+  if(lsKey === "h" && key.innerHTML === "h") {
+    key.className = "keyOboard actived";
+  }else
+  if(lsKey === "H" && key.innerHTML === "H") {
+    key.className = "keyOboard actived";
+  }else
+  if(lsKey === "h" && key.innerHTML === "H") {
+    key.className = "keyOboard";
+  }else
+  if(lsKey === "H" && key.innerHTML === "h") {
+    key.className = "keyOboard";
+  }else{
+    key.className = "keyOboard";
+  }
+};
+function markKeysActivedi() {
+  const key = document.getElementById("keyi");
+  const lsKey = localStorage.getItem("snakeLetter");
+  if(lsKey === "i" && key.innerHTML === "i") {
+    key.className = "keyOboard actived";
+  }else
+  if(lsKey === "I" && key.innerHTML === "I") {
+    key.className = "keyOboard actived";
+  }else
+  if(lsKey === "i" && key.innerHTML === "I") {
+    key.className = "keyOboard";
+  }else
+  if(lsKey === "I" && key.innerHTML === "i") {
+    key.className = "keyOboard";
+  }else{
+    key.className = "keyOboard";
+  }
+};
+function markKeysActivedj() {
+  const key = document.getElementById("keyj");
+  const lsKey = localStorage.getItem("snakeLetter");
+  if(lsKey === "j" && key.innerHTML === "j") {
+    key.className = "keyOboard actived";
+  }else
+  if(lsKey === "J" && key.innerHTML === "J") {
+    key.className = "keyOboard actived";
+  }else
+  if(lsKey === "j" && key.innerHTML === "J") {
+    key.className = "keyOboard";
+  }else
+  if(lsKey === "J" && key.innerHTML === "j") {
+    key.className = "keyOboard";
+  }else{
+    key.className = "keyOboard";
+  }
+};
+function markKeysActivedk() {
+  const key = document.getElementById("keyk");
+  const lsKey = localStorage.getItem("snakeLetter");
+  if(lsKey === "k" && key.innerHTML === "k") {
+    key.className = "keyOboard actived";
+  }else
+  if(lsKey === "K" && key.innerHTML === "K") {
+    key.className = "keyOboard actived";
+  }else
+  if(lsKey === "k" && key.innerHTML === "K") {
+    key.className = "keyOboard";
+  }else
+  if(lsKey === "K" && key.innerHTML === "k") {
+    key.className = "keyOboard";
+  }else{
+    key.className = "keyOboard";
+  }
+};
+function markKeysActivedl() {
+  const key = document.getElementById("keyl");
+  const lsKey = localStorage.getItem("snakeLetter");
+  if(lsKey === "l" && key.innerHTML === "l") {
+    key.className = "keyOboard actived";
+  }else
+  if(lsKey === "L" && key.innerHTML === "L") {
+    key.className = "keyOboard actived";
+  }else
+  if(lsKey === "l" && key.innerHTML === "L") {
+    key.className = "keyOboard";
+  }else
+  if(lsKey === "L" && key.innerHTML === "l") {
+    key.className = "keyOboard";
+  }else{
+    key.className = "keyOboard";
+  }
+};
+function markKeysActivedm() {
+  const key = document.getElementById("keym");
+  const lsKey = localStorage.getItem("snakeLetter");
+  if(lsKey === "m" && key.innerHTML === "m") {
+    key.className = "keyOboard actived";
+  }else
+  if(lsKey === "M" && key.innerHTML === "M") {
+    key.className = "keyOboard actived";
+  }else
+  if(lsKey === "m" && key.innerHTML === "M") {
+    key.className = "keyOboard";
+  }else
+  if(lsKey === "M" && key.innerHTML === "m") {
+    key.className = "keyOboard";
+  }else{
+    key.className = "keyOboard";
+  }
+};
+function markKeysActivedn() {
+  const key = document.getElementById("keyn");
+  const lsKey = localStorage.getItem("snakeLetter");
+  if(lsKey === "n" && key.innerHTML === "n") {
+    key.className = "keyOboard actived";
+  }else
+  if(lsKey === "N" && key.innerHTML === "N") {
+    key.className = "keyOboard actived";
+  }else
+  if(lsKey === "n" && key.innerHTML === "N") {
+    key.className = "keyOboard";
+  }else
+  if(lsKey === "N" && key.innerHTML === "n") {
+    key.className = "keyOboard";
+  }else{
+    key.className = "keyOboard";
+  }
+};
+function markKeysActivedo() {
+  const key = document.getElementById("keyo");
+  const lsKey = localStorage.getItem("snakeLetter");
+  if(lsKey === "o" && key.innerHTML === "o") {
+    key.className = "keyOboard actived";
+  }else
+  if(lsKey === "O" && key.innerHTML === "O") {
+    key.className = "keyOboard actived";
+  }else
+  if(lsKey === "o" && key.innerHTML === "O") {
+    key.className = "keyOboard";
+  }else
+  if(lsKey === "O" && key.innerHTML === "o") {
+    key.className = "keyOboard";
+  }else{
+    key.className = "keyOboard";
+  }
+};
+function markKeysActivedp() {
+  const key = document.getElementById("keyp");
+  const lsKey = localStorage.getItem("snakeLetter");
+  if(lsKey === "p" && key.innerHTML === "p") {
+    key.className = "keyOboard actived";
+  }else
+  if(lsKey === "P" && key.innerHTML === "P") {
+    key.className = "keyOboard actived";
+  }else
+  if(lsKey === "p" && key.innerHTML === "P") {
+    key.className = "keyOboard";
+  }else
+  if(lsKey === "P" && key.innerHTML === "p") {
+    key.className = "keyOboard";
+  }else{
+    key.className = "keyOboard";
+  }
+};
+function markKeysActivedq() {
+  const key = document.getElementById("keyq");
+  const lsKey = localStorage.getItem("snakeLetter");
+  if(lsKey === "q" && key.innerHTML === "q") {
+    key.className = "keyOboard actived";
+  }else
+  if(lsKey === "Q" && key.innerHTML === "Q") {
+    key.className = "keyOboard actived";
+  }else
+  if(lsKey === "q" && key.innerHTML === "Q") {
+    key.className = "keyOboard";
+  }else
+  if(lsKey === "Q" && key.innerHTML === "q") {
+    key.className = "keyOboard";
+  }else{
+    key.className = "keyOboard";
+  }
+};
+function markKeysActivedr() {
+  const key = document.getElementById("keyr");
+  const lsKey = localStorage.getItem("snakeLetter");
+  if(lsKey === "r" && key.innerHTML === "r") {
+    key.className = "keyOboard actived";
+  }else
+  if(lsKey === "R" && key.innerHTML === "R") {
+    key.className = "keyOboard actived";
+  }else
+  if(lsKey === "r" && key.innerHTML === "R") {
+    key.className = "keyOboard";
+  }else
+  if(lsKey === "R" && key.innerHTML === "r") {
+    key.className = "keyOboard";
+  }else{
+    key.className = "keyOboard";
+  }
+};
+function markKeysActiveds() {
+  const key = document.getElementById("keys");
+  const lsKey = localStorage.getItem("snakeLetter");
+  if(lsKey === "s" && key.innerHTML === "s") {
+    key.className = "keyOboard actived";
+  }else
+  if(lsKey === "S" && key.innerHTML === "S") {
+    key.className = "keyOboard actived";
+  }else
+  if(lsKey === "s" && key.innerHTML === "S") {
+    key.className = "keyOboard";
+  }else
+  if(lsKey === "S" && key.innerHTML === "s") {
+    key.className = "keyOboard";
+  }else{
+    key.className = "keyOboard";
+  }
+};
+function markKeysActivedt() {
+  const key = document.getElementById("keyt");
+  const lsKey = localStorage.getItem("snakeLetter");
+  if(lsKey === "t" && key.innerHTML === "t") {
+    key.className = "keyOboard actived";
+  }else
+  if(lsKey === "T" && key.innerHTML === "T") {
+    key.className = "keyOboard actived";
+  }else
+  if(lsKey === "t" && key.innerHTML === "T") {
+    key.className = "keyOboard";
+  }else
+  if(lsKey === "T" && key.innerHTML === "t") {
+    key.className = "keyOboard";
+  }else{
+    key.className = "keyOboard";
+  }
+};
+function markKeysActivedu() {
+  const key = document.getElementById("keyu");
+  const lsKey = localStorage.getItem("snakeLetter");
+  if(lsKey === "u" && key.innerHTML === "u") {
+    key.className = "keyOboard actived";
+  }else
+  if(lsKey === "U" && key.innerHTML === "U") {
+    key.className = "keyOboard actived";
+  }else
+  if(lsKey === "u" && key.innerHTML === "U") {
+    key.className = "keyOboard";
+  }else
+  if(lsKey === "U" && key.innerHTML === "u") {
+    key.className = "keyOboard";
+  }else{
+    key.className = "keyOboard";
+  }
+};
+function markKeysActivedv() {
+  const key = document.getElementById("keyv");
+  const lsKey = localStorage.getItem("snakeLetter");
+  if(lsKey === "v" && key.innerHTML === "v") {
+    key.className = "keyOboard actived";
+  }else
+  if(lsKey === "V" && key.innerHTML === "V") {
+    key.className = "keyOboard actived";
+  }else
+  if(lsKey === "v" && key.innerHTML === "V") {
+    key.className = "keyOboard";
+  }else
+  if(lsKey === "V" && key.innerHTML === "v") {
+    key.className = "keyOboard";
+  }else{
+    key.className = "keyOboard";
+  }
+};
+function markKeysActivedw() {
+  const key = document.getElementById("keyw");
+  const lsKey = localStorage.getItem("snakeLetter");
+  if(lsKey === "w" && key.innerHTML === "w") {
+    key.className = "keyOboard actived";
+  }else
+  if(lsKey === "W" && key.innerHTML === "W") {
+    key.className = "keyOboard actived";
+  }else
+  if(lsKey === "w" && key.innerHTML === "W") {
+    key.className = "keyOboard";
+  }else
+  if(lsKey === "W" && key.innerHTML === "w") {
+    key.className = "keyOboard";
+  }else{
+    key.className = "keyOboard";
+  }
+};
+function markKeysActivedx() {
+  const key = document.getElementById("keyx");
+  const lsKey = localStorage.getItem("snakeLetter");
+  if(lsKey === "x" && key.innerHTML === "x") {
+    key.className = "keyOboard actived";
+  }else
+  if(lsKey === "X" && key.innerHTML === "X") {
+    key.className = "keyOboard actived";
+  }else
+  if(lsKey === "x" && key.innerHTML === "X") {
+    key.className = "keyOboard";
+  }else
+  if(lsKey === "X" && key.innerHTML === "x") {
+    key.className = "keyOboard";
+  }else{
+    key.className = "keyOboard";
+  }
+};
+function markKeysActivedy() {
+  const key = document.getElementById("keyy");
+  const lsKey = localStorage.getItem("snakeLetter");
+  if(lsKey === "y" && key.innerHTML === "y") {
+    key.className = "keyOboard actived";
+  }else
+  if(lsKey === "Y" && key.innerHTML === "Y") {
+    key.className = "keyOboard actived";
+  }else
+  if(lsKey === "y" && key.innerHTML === "Y") {
+    key.className = "keyOboard";
+  }else
+  if(lsKey === "Y" && key.innerHTML === "y") {
+    key.className = "keyOboard";
+  }else{
+    key.className = "keyOboard";
+  }
+};
+function markKeysActivedz() {
+  const key = document.getElementById("keyz");
+  const lsKey = localStorage.getItem("snakeLetter");
+  if(lsKey === "z" && key.innerHTML === "z") {
+    key.className = "keyOboard actived";
+  }else
+  if(lsKey === "Z" && key.innerHTML === "Z") {
+    key.className = "keyOboard actived";
+  }else
+  if(lsKey === "z" && key.innerHTML === "Z") {
+    key.className = "keyOboard";
+  }else
+  if(lsKey === "Z" && key.innerHTML === "z") {
+    key.className = "keyOboard";
+  }else{
+    key.className = "keyOboard";
   }
 };
 function saveProgressViaFile() {
