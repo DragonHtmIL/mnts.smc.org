@@ -164,8 +164,6 @@ function languagesContents() {
     a061.innerHTML = "Exit";
     a062.innerHTML = "Notice";
     a063.innerHTML = "Ambient";
-     a063.style.width = "100%";
-     a063.style.textAlign = "right";
     a064.innerHTML = "How to play";
     a065.innerHTML = "If users use other devices (Windows, MacOS, Linux)";
     a066.innerHTML = "Keyboard keys:<br>";
@@ -955,6 +953,8 @@ function languagesContents() {
     a061.innerHTML = "יציאה";
     a062.innerHTML = "הודעה";
     a063.innerHTML = "סביבה";
+     a063.style.width = "100%";
+     a063.style.textAlign = "right";
     a064.innerHTML = "איך לשחק";
      a064.style.textAlign = "right";
      a064.style.width = "75%";
