@@ -1,0 +1,236 @@
+@-webkit-keyframes cursordef {
+  0% {cursor: url('../animations/cursour/delault/0.png'), default;}
+  10% {cursor: url('../animations/cursour/delault/1.png'), default;}
+  20% {cursor: url('../animations/cursour/delault/2.png'), default;}
+  30% {cursor: url('../animations/cursour/delault/3.png'), default;}
+  40% {cursor: url('../animations/cursour/delault/4.png'), default;}
+  50% {cursor: url('../animations/cursour/delault/5.png'), default;}
+  51% {cursor: url('../animations/cursour/delault/6.png'), default;}
+  52% {cursor: url('../animations/cursour/delault/7.png'), default;}
+  53% {cursor: url('../animations/cursour/delault/8.png'), default;}
+  55% {cursor: url('../animations/cursour/delault/9.png'), default;}
+  57% {cursor: url('../animations/cursour/delault/10.png'), default;}
+  60% {cursor: url('../animations/cursour/delault/11.png'), default;}
+  70% {cursor: url('../animations/cursour/delault/12.png'), default;}
+  80% {cursor: url('../animations/cursour/delault/13.png'), default;}
+  90% {cursor: url('../animations/cursour/delault/14.png'), default;}
+  100% {cursor: url('../animations/cursour/delault/15.png'), default;}
+}
+@keyframes cursordef {
+  0% {cursor: url('../animations/cursour/delault/0.png'), default;}
+  10% {cursor: url('../animations/cursour/delault/1.png'), default;}
+  20% {cursor: url('../animations/cursour/delault/2.png'), default;}
+  30% {cursor: url('../animations/cursour/delault/3.png'), default;}
+  40% {cursor: url('../animations/cursour/delault/4.png'), default;}
+  50% {cursor: url('../animations/cursour/delault/5.png'), default;}
+  51% {cursor: url('../animations/cursour/delault/6.png'), default;}
+  52% {cursor: url('../animations/cursour/delault/7.png'), default;}
+  53% {cursor: url('../animations/cursour/delault/8.png'), default;}
+  55% {cursor: url('../animations/cursour/delault/9.png'), default;}
+  57% {cursor: url('../animations/cursour/delault/10.png'), default;}
+  60% {cursor: url('../animations/cursour/delault/11.png'), default;}
+  70% {cursor: url('../animations/cursour/delault/12.png'), default;}
+  80% {cursor: url('../animations/cursour/delault/13.png'), default;}
+  90% {cursor: url('../animations/cursour/delault/14.png'), default;}
+  100% {cursor: url('../animations/cursour/delault/15.png'), default;}
+}
+@-webkit-keyframes cursorlnk {
+  0% {cursor: url('../animations/cursour/clickable/0.png'), pointer;}
+  10% {cursor: url('../animations/cursour/clickable/1.png'), pointer;}
+  20% {cursor: url('../animations/cursour/clickable/2.png'), pointer;}
+  30% {cursor: url('../animations/cursour/clickable/3.png'), pointer;}
+  40% {cursor: url('../animations/cursour/clickable/4.png'), pointer;}
+  50% {cursor: url('../animations/cursour/clickable/5.png'), pointer;}
+  51% {cursor: url('../animations/cursour/clickable/6.png'), pointer;}
+  52% {cursor: url('../animations/cursour/clickable/7.png'), pointer;}
+  53% {cursor: url('../animations/cursour/clickable/8.png'), pointer;}
+  55% {cursor: url('../animations/cursour/clickable/9.png'), pointer;}
+  57% {cursor: url('../animations/cursour/clickable/10.png'), pointer;}
+  60% {cursor: url('../animations/cursour/clickable/11.png'), pointer;}
+  70% {cursor: url('../animations/cursour/clickable/12.png'), pointer;}
+  80% {cursor: url('../animations/cursour/clickable/13.png'), pointer;}
+  90% {cursor: url('../animations/cursour/clickable/14.png'), pointer;}
+  100% {cursor: url('../animations/cursour/clickable/15.png'), pointer;}
+}
+@keyframes cursorlnk {
+  0% {cursor: url('../animations/cursour/clickable/0.png'), pointer;}
+  10% {cursor: url('../animations/cursour/clickable/1.png'), pointer;}
+  20% {cursor: url('../animations/cursour/clickable/2.png'), pointer;}
+  30% {cursor: url('../animations/cursour/clickable/3.png'), pointer;}
+  40% {cursor: url('../animations/cursour/clickable/4.png'), pointer;}
+  50% {cursor: url('../animations/cursour/clickable/5.png'), pointer;}
+  51% {cursor: url('../animations/cursour/clickable/6.png'), pointer;}
+  52% {cursor: url('../animations/cursour/clickable/7.png'), pointer;}
+  53% {cursor: url('../animations/cursour/clickable/8.png'), pointer;}
+  55% {cursor: url('../animations/cursour/clickable/9.png'), pointer;}
+  57% {cursor: url('../animations/cursour/clickable/10.png'), pointer;}
+  60% {cursor: url('../animations/cursour/clickable/11.png'), pointer;}
+  70% {cursor: url('../animations/cursour/clickable/12.png'), pointer;}
+  80% {cursor: url('../animations/cursour/clickable/13.png'), pointer;}
+  90% {cursor: url('../animations/cursour/clickable/14.png'), pointer;}
+  100% {cursor: url('../animations/cursour/clickable/15.png'), pointer;}
+}
+@-webkit-keyframes cursordsbld {
+  0% {cursor: url('../animations/cursour/disabled/0.png'), no-drop;}
+  10% {cursor: url('../animations/cursour/disabled/1.png'), no-drop;}
+  20% {cursor: url('../animations/cursour/disabled/2.png'), no-drop;}
+  30% {cursor: url('../animations/cursour/disabled/3.png'), no-drop;}
+  40% {cursor: url('../animations/cursour/disabled/4.png'), no-drop;}
+  50% {cursor: url('../animations/cursour/disabled/5.png'), no-drop;}
+  51% {cursor: url('../animations/cursour/disabled/6.png'), no-drop;}
+  52% {cursor: url('../animations/cursour/disabled/7.png'), no-drop;}
+  53% {cursor: url('../animations/cursour/disabled/8.png'), no-drop;}
+  55% {cursor: url('../animations/cursour/disabled/9.png'), no-drop;}
+  57% {cursor: url('../animations/cursour/disabled/10.png'), no-drop;}
+  60% {cursor: url('../animations/cursour/disabled/11.png'), no-drop;}
+  70% {cursor: url('../animations/cursour/disabled/12.png'), no-drop;}
+  80% {cursor: url('../animations/cursour/disabled/13.png'), no-drop;}
+  90% {cursor: url('../animations/cursour/disabled/14.png'), no-drop;}
+  100% {cursor: url('../animations/cursour/disabled/15.png'), no-drop;}
+}
+@keyframes cursordsbld {
+  0% {cursor: url('../animations/cursour/disabled/0.png'), no-drop;}
+  10% {cursor: url('../animations/cursour/disabled/1.png'), no-drop;}
+  20% {cursor: url('../animations/cursour/disabled/2.png'), no-drop;}
+  30% {cursor: url('../animations/cursour/disabled/3.png'), no-drop;}
+  40% {cursor: url('../animations/cursour/disabled/4.png'), no-drop;}
+  50% {cursor: url('../animations/cursour/disabled/5.png'), no-drop;}
+  51% {cursor: url('../animations/cursour/disabled/6.png'), no-drop;}
+  52% {cursor: url('../animations/cursour/disabled/7.png'), no-drop;}
+  53% {cursor: url('../animations/cursour/disabled/8.png'), no-drop;}
+  55% {cursor: url('../animations/cursour/disabled/9.png'), no-drop;}
+  57% {cursor: url('../animations/cursour/disabled/10.png'), no-drop;}
+  60% {cursor: url('../animations/cursour/disabled/11.png'), no-drop;}
+  70% {cursor: url('../animations/cursour/disabled/12.png'), no-drop;}
+  80% {cursor: url('../animations/cursour/disabled/13.png'), no-drop;}
+  90% {cursor: url('../animations/cursour/disabled/14.png'), no-drop;}
+  100% {cursor: url('../animations/cursour/disabled/15.png'), no-drop;}
+}
+@-webkit-keyframes cursorleft {
+  0% {cursor: url('../animations/cursour/left/0.png') 32 32, default;}
+  10% {cursor: url('../animations/cursour/left/1.png') 32 32, default;}
+  20% {cursor: url('../animations/cursour/left/2.png') 32 32, default;}
+  30% {cursor: url('../animations/cursour/left/3.png') 32 32, default;}
+  40% {cursor: url('../animations/cursour/left/4.png') 32 32, default;}
+  50% {cursor: url('../animations/cursour/left/5.png') 32 32, default;}
+  52% {cursor: url('../animations/cursour/left/6.png') 32 32, default;}
+  55% {cursor: url('../animations/cursour/left/7.png') 32 32, default;}
+  58% {cursor: url('../animations/cursour/left/8.png') 32 32, default;}
+  60% {cursor: url('../animations/cursour/left/9.png') 32 32, default;}
+  70% {cursor: url('../animations/cursour/left/10.png') 32 32, default;}
+  80% {cursor: url('../animations/cursour/left/11.png') 32 32, default;}
+  90% {cursor: url('../animations/cursour/left/12.png') 32 32, default;}
+  100% {cursor: url('../animations/cursour/left/13.png') 32 32, default;}
+}
+@keyframes cursorleft {
+  0% {cursor: url('../animations/cursour/left/0.png') 32 32, default;}
+  10% {cursor: url('../animations/cursour/left/1.png') 32 32, default;}
+  20% {cursor: url('../animations/cursour/left/2.png') 32 32, default;}
+  30% {cursor: url('../animations/cursour/left/3.png') 32 32, default;}
+  40% {cursor: url('../animations/cursour/left/4.png') 32 32, default;}
+  50% {cursor: url('../animations/cursour/left/5.png') 32 32, default;}
+  52% {cursor: url('../animations/cursour/left/6.png') 32 32, default;}
+  55% {cursor: url('../animations/cursour/left/7.png') 32 32, default;}
+  58% {cursor: url('../animations/cursour/left/8.png') 32 32, default;}
+  60% {cursor: url('../animations/cursour/left/9.png') 32 32, default;}
+  70% {cursor: url('../animations/cursour/left/10.png') 32 32, default;}
+  80% {cursor: url('../animations/cursour/left/11.png') 32 32, default;}
+  90% {cursor: url('../animations/cursour/left/12.png') 32 32, default;}
+  100% {cursor: url('../animations/cursour/left/13.png') 32 32, default;}
+}
+@-webkit-keyframes cursorright {
+  0% {cursor: url('../animations/cursour/right/0.png') 32 32, default;}
+  10% {cursor: url('../animations/cursour/right/1.png') 32 32, default;}
+  20% {cursor: url('../animations/cursour/right/2.png') 32 32, default;}
+  30% {cursor: url('../animations/cursour/right/3.png') 32 32, default;}
+  40% {cursor: url('../animations/cursour/right/4.png') 32 32, default;}
+  50% {cursor: url('../animations/cursour/right/5.png') 32 32, default;}
+  52% {cursor: url('../animations/cursour/right/6.png') 32 32, default;}
+  55% {cursor: url('../animations/cursour/right/7.png') 32 32, default;}
+  58% {cursor: url('../animations/cursour/right/8.png') 32 32, default;}
+  60% {cursor: url('../animations/cursour/right/9.png') 32 32, default;}
+  70% {cursor: url('../animations/cursour/right/10.png') 32 32, default;}
+  80% {cursor: url('../animations/cursour/right/11.png') 32 32, default;}
+  90% {cursor: url('../animations/cursour/right/12.png') 32 32, default;}
+  100% {cursor: url('../animations/cursour/right/13.png') 32 32, default;}
+}
+@keyframes cursorright {
+  0% {cursor: url('../animations/cursour/right/0.png') 32 32, default;}
+  10% {cursor: url('../animations/cursour/right/1.png') 32 32, default;}
+  20% {cursor: url('../animations/cursour/right/2.png') 32 32, default;}
+  30% {cursor: url('../animations/cursour/right/3.png') 32 32, default;}
+  40% {cursor: url('../animations/cursour/right/4.png') 32 32, default;}
+  50% {cursor: url('../animations/cursour/right/5.png') 32 32, default;}
+  52% {cursor: url('../animations/cursour/right/6.png') 32 32, default;}
+  55% {cursor: url('../animations/cursour/right/7.png') 32 32, default;}
+  58% {cursor: url('../animations/cursour/right/8.png') 32 32, default;}
+  60% {cursor: url('../animations/cursour/right/9.png') 32 32, default;}
+  70% {cursor: url('../animations/cursour/right/10.png') 32 32, default;}
+  80% {cursor: url('../animations/cursour/right/11.png') 32 32, default;}
+  90% {cursor: url('../animations/cursour/right/12.png') 32 32, default;}
+  100% {cursor: url('../animations/cursour/right/13.png') 32 32, default;}
+}
+@-webkit-keyframes cursorup {
+  0% {cursor: url('../animations/cursour/up/0.png') 32 32, default;}
+  10% {cursor: url('../animations/cursour/up/1.png') 32 32, default;}
+  20% {cursor: url('../animations/cursour/up/2.png') 32 32, default;}
+  30% {cursor: url('../animations/cursour/up/3.png') 32 32, default;}
+  40% {cursor: url('../animations/cursour/up/4.png') 32 32, default;}
+  50% {cursor: url('../animations/cursour/up/5.png') 32 32, default;}
+  52% {cursor: url('../animations/cursour/up/6.png') 32 32, default;}
+  55% {cursor: url('../animations/cursour/up/7.png') 32 32, default;}
+  58% {cursor: url('../animations/cursour/up/8.png') 32 32, default;}
+  60% {cursor: url('../animations/cursour/up/9.png') 32 32, default;}
+  70% {cursor: url('../animations/cursour/up/10.png') 32 32, default;}
+  80% {cursor: url('../animations/cursour/up/11.png') 32 32, default;}
+  90% {cursor: url('../animations/cursour/up/12.png') 32 32, default;}
+  100% {cursor: url('../animations/cursour/up/13.png') 32 32, default;}
+}
+@keyframes cursorup {
+  0% {cursor: url('../animations/cursour/up/0.png') 32 32, default;}
+  10% {cursor: url('../animations/cursour/up/1.png') 32 32, default;}
+  20% {cursor: url('../animations/cursour/up/2.png') 32 32, default;}
+  30% {cursor: url('../animations/cursour/up/3.png') 32 32, default;}
+  40% {cursor: url('../animations/cursour/up/4.png') 32 32, default;}
+  50% {cursor: url('../animations/cursour/up/5.png') 32 32, default;}
+  52% {cursor: url('../animations/cursour/up/6.png') 32 32, default;}
+  55% {cursor: url('../animations/cursour/up/7.png') 32 32, default;}
+  58% {cursor: url('../animations/cursour/up/8.png') 32 32, default;}
+  60% {cursor: url('../animations/cursour/up/9.png') 32 32, default;}
+  70% {cursor: url('../animations/cursour/up/10.png') 32 32, default;}
+  80% {cursor: url('../animations/cursour/up/11.png') 32 32, default;}
+  90% {cursor: url('../animations/cursour/up/12.png') 32 32, default;}
+  100% {cursor: url('../animations/cursour/up/13.png') 32 32, default;}
+}
+@-webkit-keyframes cursordown {
+  0% {cursor: url('../animations/cursour/down/0.png') 32 32, default;}
+  10% {cursor: url('../animations/cursour/down/1.png') 32 32, default;}
+  20% {cursor: url('../animations/cursour/down/2.png') 32 32, default;}
+  30% {cursor: url('../animations/cursour/down/3.png') 32 32, default;}
+  40% {cursor: url('../animations/cursour/down/4.png') 32 32, default;}
+  50% {cursor: url('../animations/cursour/down/5.png') 32 32, default;}
+  52% {cursor: url('../animations/cursour/down/6.png') 32 32, default;}
+  55% {cursor: url('../animations/cursour/down/7.png') 32 32, default;}
+  58% {cursor: url('../animations/cursour/down/8.png') 32 32, default;}
+  60% {cursor: url('../animations/cursour/down/9.png') 32 32, default;}
+  70% {cursor: url('../animations/cursour/down/10.png') 32 32, default;}
+  80% {cursor: url('../animations/cursour/down/11.png') 32 32, default;}
+  90% {cursor: url('../animations/cursour/down/12.png') 32 32, default;}
+  100% {cursor: url('../animations/cursour/down/13.png') 32 32, default;}
+}
+@keyframes cursordown {
+  0% {cursor: url('../animations/cursour/down/0.png') 32 32, default;}
+  10% {cursor: url('../animations/cursour/down/1.png') 32 32, default;}
+  20% {cursor: url('../animations/cursour/down/2.png') 32 32, default;}
+  30% {cursor: url('../animations/cursour/down/3.png') 32 32, default;}
+  40% {cursor: url('../animations/cursour/down/4.png') 32 32, default;}
+  50% {cursor: url('../animations/cursour/down/5.png') 32 32, default;}
+  52% {cursor: url('../animations/cursour/down/6.png') 32 32, default;}
+  55% {cursor: url('../animations/cursour/down/7.png') 32 32, default;}
+  58% {cursor: url('../animations/cursour/down/8.png') 32 32, default;}
+  60% {cursor: url('../animations/cursour/down/9.png') 32 32, default;}
+  70% {cursor: url('../animations/cursour/down/10.png') 32 32, default;}
+  80% {cursor: url('../animations/cursour/down/11.png') 32 32, default;}
+  90% {cursor: url('../animations/cursour/down/12.png') 32 32, default;}
+  100% {cursor: url('../animations/cursour/down/13.png') 32 32, default;}
+}
