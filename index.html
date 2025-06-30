@@ -20,7 +20,7 @@
       if(localStorage.getItem("lang") === "ru") {
         document.documentElement.setAttribute("lang", "ru");
       }else
-      if(localStorage.getItem("lang") === "jp") {
+      if(localStorage.getItem("lang") === "ja") {
         document.documentElement.setAttribute("lang", "ja");
       }else
       if(localStorage.getItem("lang") === "chs") {
@@ -449,14 +449,14 @@
             <div class="categores settingscontent">...</div>
             <div class="categores" id="langsLangs">...</div>
             <div id="selectOptions" class="select-content">
-              <div onclick="englishLanguage();" id="languageEn" class="language select">English</div>
-              <div onclick="russianLanguage();" id="languageRu" class="language select">Русский</div>
-              <div onclick="japaneseLanguage();" id="languageJp" class="language select">日本語</div>
-              <div onclick="ChineseSimplifiedLanguage();" id="languageChs" class="language select">简体中文</div>
-              <div onclick="ChineseTraditionalLanguage();" id="languageCht" class="language select">繁體中文</div>
-              <div onclick="koreanLanguage();" id="languageKo" class="language select">한국어</div>
-              <div onclick="hebrewLanguage();" id="languageHe" class="language select">עברית</div>
-              <div onclick="germanLanguage();" id="languageDe" class="language select">Deutsche</div>
+              <div onclick="englishLanguage();checkSettingsChanges();" id="languageEn" class="language select">English</div>
+              <div onclick="russianLanguage();checkSettingsChanges();" id="languageRu" class="language select">Русский</div>
+              <div onclick="japaneseLanguage();checkSettingsChanges();" id="languageJa" class="language select">日本語</div>
+              <div onclick="ChineseSimplifiedLanguage();checkSettingsChanges();" id="languageChs" class="language select">简体中文</div>
+              <div onclick="ChineseTraditionalLanguage();checkSettingsChanges();" id="languageCht" class="language select">繁體中文</div>
+              <div onclick="koreanLanguage();checkSettingsChanges();" id="languageKo" class="language select">한국어</div>
+              <div onclick="hebrewLanguage();checkSettingsChanges();" id="languageHe" class="language select">עברית</div>
+              <div onclick="germanLanguage();checkSettingsChanges();" id="languageDe" class="language select">Deutsche</div>
               <div class="important-text" id="langImportantLang">...</div>
             </div>
             <hr>
@@ -1501,227 +1501,227 @@
       </div>
       <div class="out-controller" id="touchBoard"></div>
       <div class="out-controller" id="mouseBoard"></div>
-      <div class="container" id="loading" style="display: flex;">
-        <div class="loading">
-          <div class="loading-img" id="loadingContiner">
-            <div class="text-logo"></div>
-            <div class="animate-img" id="animateImg"></div>
-          </div>
-          <h2 id="loadingText">...</h2>
-        </div>
-          <div style="width:0;" id="widther"></div>
-          <div id="widthernum"></div>
-        <div id="loadedbar" class="loading-assets">
-          <div class="blocker"></div>
-        </div>
-        <div id="loadingService" class="services">
-          <div class="service-type" id="discord" onclick="openDiscordService();defaultClickSound();">
-            <div class="service-logo" id="sIdiscord"></div>
-            <div class="service-name">Discord</div>
-          </div>
-        </div>
-      </div>
-      <div class="alert" id="alert" style="display: none;">
-        <div class="alert-content">
-          <h2 id="alertText">...</h2>
-          <div class="alert-btn-container">
-            <input type="submit" id="alertLeft" value="...">
-            <input type="submit" id="alertRight" value="...">
-          </div>
-        </div>
-      </div>
-      <div id="loseModal" class="modal" style="display: none;">
-        <div class="modal-content">
-        <div id="noticeTitleLang">...</div>
-          <button class="reset-button" id="reset"></button>
-          <div class="in-modal-content" id="progressingALost">
-            <div class="left-modal-acc">
-              <div id="subleagueImage"></div>
-              <div id="subleagueType">...</div>
-              <div class="subleaguelevel"><span id="substar">★</span><span id="subleaguelevel">...</span></div>
-            </div>
-            <hr class="acc">
-            <div class="right-modal-acc">
-              <h2 class="lose-title" id="loseText">...</h2>
-              <div class="gettedscore" id="loseScore">...</div>
-              <div class="gettedscore" id="loseNewRecordScore">...</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="firstModal" class="first-modal" style="display: none;">
-        <div id="firstTabsContents" class="first-modal-content">
-          <div id="firstAtab" class="first-content" style="display: block;"><!--Language Content-->
-            <h1 id="fAtLang" class="first-tabs-title">First select a Language</h1>
-            <div id="selectOptions" class="select-content">
-              <div onclick="selectLangInFirstEn();" class="first-language select" id="fLsa">English</div><br>
-              <div onclick="selectLangInFirstRu();" class="first-language select" id="fLsb">Русский</div><br>
-              <div onclick="selectLangInFirstJp();" class="first-language select" id="fLsc">日本語</div><br>
-              <div onclick="selectLangInFirstChs();" class="first-language select" id="fLsd">简体中文</div><br>
-              <div onclick="selectLangInFirstCht();" class="first-language select" id="fLse">繁體中文</div><br>
-              <div onclick="selectLangInFirstKo();" class="first-language select" id="fLsf">한국어</div><br>
-              <div onclick="selectLangInFirstHe();" class="first-language select" id="fLsg">עברית</div><br>
-              <div onclick="selectLangInFirstDe();" class="first-language select" id="fLsh">Deutsche</div>
-            </div>
-            <div id="nc100l"></div>
-          </div>
-          <div id="firstBtab" class="first-content" style="display: none;"><!--Game Content-->
-            <h1 id="fBtLang" class="first-tabs-title">...</h1>
-            <div id="selectOptions" class="select-content">
-              <div onclick="selectDeffInFirstNorm();" class="first-difficulty select" id="fDsa">...</div><br>
-              <div onclick="selectDeffInFirstHard();" class="first-difficulty select" id="fDsb">...</div><br>
-              <div onclick="selectDeffInFirstHell();" class="first-difficulty select" id="fDsc">...</div><br>
-            </div>
-          </div>
-          <div id="firstCtab" class="first-content" style="display: none;"><!--Snake Content-->
-            <h1 id="fCtLang" class="first-tabs-title">...</h1>
-            <input type="color" name="sCinFirst" id="fSnakeColor" value="#ddaaff" onchange="snakeDecoloringFmodal();">
-            <div id="keypad" class="padsInFirst">
-              <div class="keypad numpad">
-                <div class="first-letters" id="sLetter0" onclick="sLetterSis0();">0</div>
-                <div class="first-letters" id="sLetter1" onclick="sLetterSis1();">1</div>
-                <div class="first-letters" id="sLetter2" onclick="sLetterSis2();">2</div>
-                <div class="first-letters" id="sLetter3" onclick="sLetterSis3();">3</div>
-                <div class="first-letters" id="sLetter4" onclick="sLetterSis4();">4</div>
-                <div class="first-letters" id="sLetter5" onclick="sLetterSis5();">5</div>
-                <div class="first-letters" id="sLetter6" onclick="sLetterSis6();">6</div>
-                <div class="first-letters" id="sLetter7" onclick="sLetterSis7();">7</div>
-                <div class="first-letters" id="sLetter8" onclick="sLetterSis8();">8</div>
-                <div class="first-letters" id="sLetter9" onclick="sLetterSis9();">9</div>
-              </div>
-              <div class="keypad wordpad">
-                <div class="first-letters" id="sLettera" onclick="sLetterSisa();">a</div>
-                <div class="first-letters" id="sLetterb" onclick="sLetterSisb();">b</div>
-                <div class="first-letters" id="sLetterc" onclick="sLetterSisc();">c</div>
-                <div class="first-letters" id="sLetterd" onclick="sLetterSisd();">d</div>
-                <div class="first-letters" id="sLettere" onclick="sLetterSise();">e</div>
-                <div class="first-letters" id="sLetterf" onclick="sLetterSisf();">f</div>
-                <div class="first-letters" id="sLetterg" onclick="sLetterSisg();">g</div>
-                <div class="first-letters" id="sLetterh" onclick="sLetterSish();">h</div>
-                <div class="first-letters" id="sLetteri" onclick="sLetterSisi();">i</div>
-                <div class="first-letters" id="sLetterj" onclick="sLetterSisj();">j</div>
-                <div class="first-letters" id="sLetterk" onclick="sLetterSisk();">k</div>
-                <div class="first-letters" id="sLetterl" onclick="sLetterSisl();">l</div>
-                <div class="first-letters" id="sLetterm" onclick="sLetterSism();">m</div>
-                <div class="first-letters" id="sLettern" onclick="sLetterSisn();">n</div>
-                <div class="first-letters" id="sLettero" onclick="sLetterSiso();">o</div>
-                <div class="first-letters" id="sLetterp" onclick="sLetterSisp();">p</div>
-                <div class="first-letters" id="sLetterq" onclick="sLetterSisq();">q</div>
-                <div class="first-letters" id="sLetterr" onclick="sLetterSisr();">r</div>
-                <div class="first-letters" id="sLetters" onclick="sLetterSiss();">s</div>
-                <div class="first-letters" id="sLettert" onclick="sLetterSist();">t</div>
-                <div class="first-letters" id="sLetteru" onclick="sLetterSisu();">u</div>
-                <div class="first-letters" id="sLetterv" onclick="sLetterSisv();">v</div>
-                <div class="first-letters" id="sLetterw" onclick="sLetterSisw();">w</div>
-                <div class="first-letters" id="sLetterx" onclick="sLetterSisx();">x</div>
-                <div class="first-letters" id="sLettery" onclick="sLetterSisy();">y</div>
-                <div class="first-letters" id="sLetterz" onclick="sLetterSisz();">z</div>
-                <div class="first-letters" id="keyShiftFirst" onclick="sLetterSisShift();markedKeysActivedShift();">↑</div>
-                <div class="first-letters" id="sLetterSisEmpty" onclick="sLetterSisEmpty();">⨱</div>
-              </div>
-            </div>
-          </div>
-          <div id="firstDtab" class="first-content" style="display: none;"><!--Music Content-->
-            <h1 id="fDtLang" class="first-tabs-title">...</h1>
-            <div id="selectOptions" class="select-content">
-              <div onclick="selectMusicInFirsta();" class="first-music select" id="fMsa">Stable and Upbeat</div><br>
-              <div onclick="selectMusicInFirstb();" class="first-music select" id="fMsb">Acceleration Folding</div><br>
-              <div onclick="selectMusicInFirstc();" class="first-music select" id="fMsc">Alice the Dreamer: Accompaniment</div><br>
-              <div onclick="selectMusicInFirstd();" class="first-music select" id="fMsd">Alice the Dreamer</div><br>
-              <div onclick="selectMusicInFirste();" class="first-music select" id="fMse">All or Nothing - Ending Version</div><br>
-              <div onclick="selectMusicInFirstf();" class="first-music select" id="fMsf">All or Nothing</div><br>
-              <div onclick="selectMusicInFirstg();" class="first-music select" id="fMsg">Backtracking Journey</div><br>
-              <div onclick="selectMusicInFirsth();" class="first-music select" id="fMsh">Before the Storm</div><br>
-              <div onclick="selectMusicInFirsti();" class="first-music select" id="fMsi">Disillusionment Melody</div><br>
-              <div onclick="selectMusicInFirstj();" class="first-music select" id="fMsj">Explosive Halo</div><br>
-              <div onclick="selectMusicInFirstk();" class="first-music select" id="fMsk">Firestar</div><br>
-              <div onclick="selectMusicInFirstl();" class="first-music select" id="fMsl">Future Bounce</div><br>
-              <div onclick="selectMusicInFirstm();" class="first-music select" id="fMsm">Interlude Mojito</div><br>
-              <div onclick="selectMusicInFirstn();" class="first-music select" id="fMsn">Joyful Passion</div><br>
-              <div onclick="selectMusicInFirsto();" class="first-music select" id="fMso">Lunar</div><br>
-              <div onclick="selectMusicInFirstp();" class="first-music select" id="fMsp">Nyan Nyan</div><br>
-              <div onclick="selectMusicInFirstq();" class="first-music select" id="fMsq">Prelude of War</div><br>
-              <div onclick="selectMusicInFirstr();" class="first-music select" id="fMsr">Preparation Break</div><br>
-              <div onclick="selectMusicInFirsts();" class="first-music select" id="fMss">SMC Memory 2022</div><br>
-              <div onclick="selectMusicInFirstt();" class="first-music select" id="fMst">SMC Memory 2023</div><br>
-              <div onclick="selectMusicInFirstu();" class="first-music select" id="fMsu">Throbbing Beat</div><br>
-              <div onclick="selectMusicInFirstv();" class="first-music select" id="fMsv">Ultra Beast Force</div>
-            </div>
-          </div>
-          <div id="firstEtab" class="first-content" style="display: none;"><!--Walking Content-->
-            <h1 id="fEtLang" class="first-tabs-title">...</h1>
-            <div id="selectOptions" class="select-content">
-              <div onclick="mwAIlangFunction();" class="first-music select" id="fWsai">Akashic (Walk)</div><br>
-              <hr>
-              <div onclick="mwAlangFunction();" class="first-music select" id="fWsa">Alborada (Walk)</div><br>
-              <div onclick="mwBlangFunction();" class="first-music select" id="fWsb">Andromeda (Walk)</div><br>
-              <div onclick="mwClangFunction();" class="first-music select" id="fWsc">Arthur (Walk)</div><br>
-              <div onclick="mwDlangFunction();" class="first-music select" id="fWsd">Aurora (Walk)</div><br>
-              <div onclick="mwElangFunction();" class="first-music select" id="fWse">Boltus (Walk)</div><br>
-              <div onclick="mwFlangFunction();" class="first-music select" id="fWsf">Caramel (Walk)</div><br>
-              <div onclick="mwYlangFunction();" class="first-music select" id="fWsy">Death knell (Walk)</div><br>
-              <div onclick="mwGlangFunction();" class="first-music select" id="fWsg">Doomlight (Walk)</div><br>
-              <div onclick="mwZlangFunction();" class="first-music select" id="fWsz">Dreadwolf (Walk)</div><br>
-              <div onclick="mwHlangFunction();" class="first-music select" id="fWsh">Frefox (Walk)</div><br>
-              <div onclick="mwIlangFunction();" class="first-music select" id="fWsi">Firestar (Walk)</div><br>
-              <div onclick="mwJlangFunction();" class="first-music select" id="fWsj">Flamenco (Walk)</div><br>
-              <div onclick="mwKlangFunction();" class="first-music select" id="fWsk">Gabriel (Walk)</div><br>
-              <div onclick="mwAAlangFunction();" class="first-music select" id="fWsaa">Gaia (Walk)</div><br>
-              <div onclick="mwABlangFunction();" class="first-music select" id="fWsab">Guerilla Hunter (Walk)</div><br>
-              <div onclick="mwLlangFunction();" class="first-music select" id="fWsl">Hotsteel (Walk)</div><br>
-              <div onclick="mwMlangFunction();" class="first-music select" id="fWsm">Hurricane (Walk)</div><br>
-              <div onclick="mwNlangFunction();" class="first-music select" id="fWsn">Jojo (Walk)</div><br>
-              <div onclick="mwAClangFunction();" class="first-music select" id="fWsac">Lancelot (Walk)</div><br>
-              <div onclick="mwOlangFunction();" class="first-music select" id="fWso">Michael (Walk)</div><br>
-              <div onclick="mwADlangFunction();" class="first-music select" id="fWsad">Moon Rabbit (Walk)</div><br>
-              <div onclick="mwAElangFunction();" class="first-music select" id="fWsae">Nebula (Walk)</div><br>
-              <div onclick="mwPlangFunction();" class="first-music select" id="fWsp">Neutron Star (Walk)</div><br>
-              <div onclick="mwQlangFunction();" class="first-music select" id="fWsq">Northern Knight (Walk)</div><br>
-              <div onclick="mwRlangFunction();" class="first-music select" id="fWsr">Pulsar (Walk)</div><br>
-              <div onclick="mwSlangFunction();" class="first-music select" id="fWss">Ranger (Walk)</div><br>
-              <div onclick="mwTlangFunction();" class="first-music select" id="fWst">Raven (Walk)</div><br>
-              <div onclick="mwAFlangFunction();" class="first-music select" id="fWsaf">Shiranui (Walk)</div><br>
-              <div onclick="mwAJlangFunction();" class="first-music select" id="fWsaj">Skyfall (Walk)</div><br>
-              <div onclick="mwAGlangFunction();" class="first-music select" id="fWsag">Skyfire (Walk)</div><br>
-              <div onclick="mwUlangFunction();" class="first-music select" id="fWsu">Skylark (Walk)</div><br>
-              <div onclick="mwVlangFunction();" class="first-music select" id="fWsv">Snow Mirage (Walk)</div><br>
-              <div onclick="mwAKlangFunction();" class="first-music select" id="fWsak">Tempest (Walk)</div><br>
-              <div onclick="mwWlangFunction();" class="first-music select" id="fWsw">Trio of Enders (Walk)</div><br>
-              <div onclick="mwAHlangFunction();" class="first-music select" id="fWsah">Twilight (Walk)</div><br>
-              <div onclick="mwXlangFunction();" class="first-music select" id="fWsx">Ventorus (Walk)</div>
-            </div>
-          </div>
-        </div>
-        <button id="applyFirstSettings" class="apply-first-settings" onclick="localStorage.setItem('firstModal', 'exist');applySettings();" disabled>Complate</button>
-        <div id="firstTabsContiner" class="tab-first">
-          <button onclick="openFtab(event, 'firstAtab');pauseFirstMusic();selectionSound();" class="tablinks-first active" id="tabAfirst">Languages</button>
-          <button onclick="openFtab(event, 'firstBtab');pauseFirstMusic();selectionSound();" class="tablinks-first" id="tabBfirst" disabled>Game</button>
-          <button onclick="openFtab(event, 'firstCtab');pauseFirstMusic();selectionSound();" class="tablinks-first" id="tabCfirst" disabled>Snake</button>
-          <button onclick="openFtab(event, 'firstDtab');selectionSound();" class="tablinks-first" id="tabDfirst" disabled>Music</button>
-          <button onclick="openFtab(event, 'firstEtab');pauseFirstMusic();selectionSound();" class="tablinks-first" id="tabEfirst" disabled>Walking</button>
-        </div>
-      </div>
-      <div id="updateModal" class="modal" style="display: none;">
-        <div class="modal-content">
-        <div id="updateTitleLang">...</div>
-          <button class="reset-button" id="closeUpdate" onclick="markUpdateReaded();closeModalSound();"></button>
-          <div class="in-modal-content" id="updateNoticeContent"></div>
-        </div>
-      </div>
-      <div id="howToPlayModal" class="modal" style="display: none;">
-        <div class="modal-content">
-        <div id="howTitleLang">...</div>
-          <button class="reset-button" id="closeHowToPlay" onclick="document.getElementById('howToPlayModal').style.display='none';closeModalSound();"></button>
-          <div class="in-modal-content" id="howToPlayContent">
-            <div id="ifMobileLang">...</div><br>
-            <div id="txtAhow">...</div>
-            <hr>
-            <div id="ifOthersLang">...</div><br>
-            <div id="txtBhow">...</div>
-          </div>
-        </div>
-      </div>
       <div id="fpsDisplay">FPS: 0</div>
+    </div>
+    <div class="container" id="loading" style="display: flex;">
+      <div class="loading">
+        <div class="loading-img" id="loadingContiner">
+          <div class="text-logo"></div>
+          <div class="animate-img" id="animateImg"></div>
+        </div>
+        <h2 id="loadingText">...</h2>
+      </div>
+        <div style="width:0;" id="widther"></div>
+        <div id="widthernum"></div>
+      <div id="loadedbar" class="loading-assets">
+        <div class="blocker"></div>
+      </div>
+      <div id="loadingService" class="services">
+        <div class="service-type" id="discord" onclick="openDiscordService();defaultClickSound();">
+          <div class="service-logo" id="sIdiscord"></div>
+          <div class="service-name">Discord</div>
+        </div>
+      </div>
+    </div>
+    <div class="alert" id="alert" style="display: none;">
+      <div class="alert-content">
+        <h2 id="alertText">...</h2>
+        <div class="alert-btn-container">
+          <input type="submit" id="alertLeft" value="...">
+          <input type="submit" id="alertRight" value="...">
+        </div>
+      </div>
+    </div>
+    <div id="loseModal" class="modal" style="display: none;">
+      <div class="modal-content">
+      <div id="noticeTitleLang">...</div>
+        <button class="reset-button" id="reset"></button>
+        <div class="in-modal-content" id="progressingALost">
+          <div class="left-modal-acc">
+            <div id="subleagueImage"></div>
+            <div id="subleagueType">...</div>
+            <div class="subleaguelevel"><span id="substar">★</span><span id="subleaguelevel">...</span></div>
+          </div>
+          <hr class="acc">
+          <div class="right-modal-acc">
+            <h2 class="lose-title" id="loseText">...</h2>
+            <div class="gettedscore" id="loseScore">...</div>
+            <div class="gettedscore" id="loseNewRecordScore">...</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="firstModal" class="first-modal" style="display: none;">
+      <div id="firstTabsContents" class="first-modal-content">
+        <div id="firstAtab" class="first-content" style="display: block;"><!--Language Content-->
+          <h1 id="fAtLang" class="first-tabs-title">First select a Language</h1>
+          <div id="selectOptions" class="select-content">
+            <div onclick="selectLangInFirstEn();" class="first-language select" id="fLsa">English</div><br>
+            <div onclick="selectLangInFirstRu();" class="first-language select" id="fLsb">Русский</div><br>
+            <div onclick="selectLangInFirstJa();" class="first-language select" id="fLsc">日本語</div><br>
+            <div onclick="selectLangInFirstChs();" class="first-language select" id="fLsd">简体中文</div><br>
+            <div onclick="selectLangInFirstCht();" class="first-language select" id="fLse">繁體中文</div><br>
+            <div onclick="selectLangInFirstKo();" class="first-language select" id="fLsf">한국어</div><br>
+            <div onclick="selectLangInFirstHe();" class="first-language select" id="fLsg">עברית</div><br>
+            <div onclick="selectLangInFirstDe();" class="first-language select" id="fLsh">Deutsche</div>
+          </div>
+          <div id="nc100l"></div>
+        </div>
+        <div id="firstBtab" class="first-content" style="display: none;"><!--Game Content-->
+          <h1 id="fBtLang" class="first-tabs-title">...</h1>
+          <div id="selectOptions" class="select-content">
+            <div onclick="selectDeffInFirstNorm();" class="first-difficulty select" id="fDsa">...</div><br>
+            <div onclick="selectDeffInFirstHard();" class="first-difficulty select" id="fDsb">...</div><br>
+            <div onclick="selectDeffInFirstHell();" class="first-difficulty select" id="fDsc">...</div><br>
+          </div>
+        </div>
+        <div id="firstCtab" class="first-content" style="display: none;"><!--Snake Content-->
+          <h1 id="fCtLang" class="first-tabs-title">...</h1>
+          <input type="color" name="sCinFirst" id="fSnakeColor" value="#ddaaff" onchange="snakeDecoloringFmodal();">
+          <div id="keypad" class="padsInFirst">
+            <div class="keypad numpad">
+              <div class="first-letters" id="sLetter0" onclick="sLetterSis0();">0</div>
+              <div class="first-letters" id="sLetter1" onclick="sLetterSis1();">1</div>
+              <div class="first-letters" id="sLetter2" onclick="sLetterSis2();">2</div>
+              <div class="first-letters" id="sLetter3" onclick="sLetterSis3();">3</div>
+              <div class="first-letters" id="sLetter4" onclick="sLetterSis4();">4</div>
+              <div class="first-letters" id="sLetter5" onclick="sLetterSis5();">5</div>
+              <div class="first-letters" id="sLetter6" onclick="sLetterSis6();">6</div>
+              <div class="first-letters" id="sLetter7" onclick="sLetterSis7();">7</div>
+              <div class="first-letters" id="sLetter8" onclick="sLetterSis8();">8</div>
+              <div class="first-letters" id="sLetter9" onclick="sLetterSis9();">9</div>
+            </div>
+            <div class="keypad wordpad">
+              <div class="first-letters" id="sLettera" onclick="sLetterSisa();">a</div>
+              <div class="first-letters" id="sLetterb" onclick="sLetterSisb();">b</div>
+              <div class="first-letters" id="sLetterc" onclick="sLetterSisc();">c</div>
+              <div class="first-letters" id="sLetterd" onclick="sLetterSisd();">d</div>
+              <div class="first-letters" id="sLettere" onclick="sLetterSise();">e</div>
+              <div class="first-letters" id="sLetterf" onclick="sLetterSisf();">f</div>
+              <div class="first-letters" id="sLetterg" onclick="sLetterSisg();">g</div>
+              <div class="first-letters" id="sLetterh" onclick="sLetterSish();">h</div>
+              <div class="first-letters" id="sLetteri" onclick="sLetterSisi();">i</div>
+              <div class="first-letters" id="sLetterj" onclick="sLetterSisj();">j</div>
+              <div class="first-letters" id="sLetterk" onclick="sLetterSisk();">k</div>
+              <div class="first-letters" id="sLetterl" onclick="sLetterSisl();">l</div>
+              <div class="first-letters" id="sLetterm" onclick="sLetterSism();">m</div>
+              <div class="first-letters" id="sLettern" onclick="sLetterSisn();">n</div>
+              <div class="first-letters" id="sLettero" onclick="sLetterSiso();">o</div>
+              <div class="first-letters" id="sLetterp" onclick="sLetterSisp();">p</div>
+              <div class="first-letters" id="sLetterq" onclick="sLetterSisq();">q</div>
+              <div class="first-letters" id="sLetterr" onclick="sLetterSisr();">r</div>
+              <div class="first-letters" id="sLetters" onclick="sLetterSiss();">s</div>
+              <div class="first-letters" id="sLettert" onclick="sLetterSist();">t</div>
+              <div class="first-letters" id="sLetteru" onclick="sLetterSisu();">u</div>
+              <div class="first-letters" id="sLetterv" onclick="sLetterSisv();">v</div>
+              <div class="first-letters" id="sLetterw" onclick="sLetterSisw();">w</div>
+              <div class="first-letters" id="sLetterx" onclick="sLetterSisx();">x</div>
+              <div class="first-letters" id="sLettery" onclick="sLetterSisy();">y</div>
+              <div class="first-letters" id="sLetterz" onclick="sLetterSisz();">z</div>
+              <div class="first-letters" id="keyShiftFirst" onclick="sLetterSisShift();markedKeysActivedShift();">↑</div>
+              <div class="first-letters" id="sLetterSisEmpty" onclick="sLetterSisEmpty();">⨱</div>
+            </div>
+          </div>
+        </div>
+        <div id="firstDtab" class="first-content" style="display: none;"><!--Music Content-->
+          <h1 id="fDtLang" class="first-tabs-title">...</h1>
+          <div id="selectOptions" class="select-content">
+            <div onclick="selectMusicInFirsta();" class="first-music select" id="fMsa">Stable and Upbeat</div><br>
+            <div onclick="selectMusicInFirstb();" class="first-music select" id="fMsb">Acceleration Folding</div><br>
+            <div onclick="selectMusicInFirstc();" class="first-music select" id="fMsc">Alice the Dreamer: Accompaniment</div><br>
+            <div onclick="selectMusicInFirstd();" class="first-music select" id="fMsd">Alice the Dreamer</div><br>
+            <div onclick="selectMusicInFirste();" class="first-music select" id="fMse">All or Nothing - Ending Version</div><br>
+            <div onclick="selectMusicInFirstf();" class="first-music select" id="fMsf">All or Nothing</div><br>
+            <div onclick="selectMusicInFirstg();" class="first-music select" id="fMsg">Backtracking Journey</div><br>
+            <div onclick="selectMusicInFirsth();" class="first-music select" id="fMsh">Before the Storm</div><br>
+            <div onclick="selectMusicInFirsti();" class="first-music select" id="fMsi">Disillusionment Melody</div><br>
+            <div onclick="selectMusicInFirstj();" class="first-music select" id="fMsj">Explosive Halo</div><br>
+            <div onclick="selectMusicInFirstk();" class="first-music select" id="fMsk">Firestar</div><br>
+            <div onclick="selectMusicInFirstl();" class="first-music select" id="fMsl">Future Bounce</div><br>
+            <div onclick="selectMusicInFirstm();" class="first-music select" id="fMsm">Interlude Mojito</div><br>
+            <div onclick="selectMusicInFirstn();" class="first-music select" id="fMsn">Joyful Passion</div><br>
+            <div onclick="selectMusicInFirsto();" class="first-music select" id="fMso">Lunar</div><br>
+            <div onclick="selectMusicInFirstp();" class="first-music select" id="fMsp">Nyan Nyan</div><br>
+            <div onclick="selectMusicInFirstq();" class="first-music select" id="fMsq">Prelude of War</div><br>
+            <div onclick="selectMusicInFirstr();" class="first-music select" id="fMsr">Preparation Break</div><br>
+            <div onclick="selectMusicInFirsts();" class="first-music select" id="fMss">SMC Memory 2022</div><br>
+            <div onclick="selectMusicInFirstt();" class="first-music select" id="fMst">SMC Memory 2023</div><br>
+            <div onclick="selectMusicInFirstu();" class="first-music select" id="fMsu">Throbbing Beat</div><br>
+            <div onclick="selectMusicInFirstv();" class="first-music select" id="fMsv">Ultra Beast Force</div>
+          </div>
+        </div>
+        <div id="firstEtab" class="first-content" style="display: none;"><!--Walking Content-->
+          <h1 id="fEtLang" class="first-tabs-title">...</h1>
+          <div id="selectOptions" class="select-content">
+            <div onclick="mwAIlangFunction();" class="first-music select" id="fWsai">Akashic (Walk)</div><br>
+            <hr>
+            <div onclick="mwAlangFunction();" class="first-music select" id="fWsa">Alborada (Walk)</div><br>
+            <div onclick="mwBlangFunction();" class="first-music select" id="fWsb">Andromeda (Walk)</div><br>
+            <div onclick="mwClangFunction();" class="first-music select" id="fWsc">Arthur (Walk)</div><br>
+            <div onclick="mwDlangFunction();" class="first-music select" id="fWsd">Aurora (Walk)</div><br>
+            <div onclick="mwElangFunction();" class="first-music select" id="fWse">Boltus (Walk)</div><br>
+            <div onclick="mwFlangFunction();" class="first-music select" id="fWsf">Caramel (Walk)</div><br>
+            <div onclick="mwYlangFunction();" class="first-music select" id="fWsy">Death knell (Walk)</div><br>
+            <div onclick="mwGlangFunction();" class="first-music select" id="fWsg">Doomlight (Walk)</div><br>
+            <div onclick="mwZlangFunction();" class="first-music select" id="fWsz">Dreadwolf (Walk)</div><br>
+            <div onclick="mwHlangFunction();" class="first-music select" id="fWsh">Frefox (Walk)</div><br>
+            <div onclick="mwIlangFunction();" class="first-music select" id="fWsi">Firestar (Walk)</div><br>
+            <div onclick="mwJlangFunction();" class="first-music select" id="fWsj">Flamenco (Walk)</div><br>
+            <div onclick="mwKlangFunction();" class="first-music select" id="fWsk">Gabriel (Walk)</div><br>
+            <div onclick="mwAAlangFunction();" class="first-music select" id="fWsaa">Gaia (Walk)</div><br>
+            <div onclick="mwABlangFunction();" class="first-music select" id="fWsab">Guerilla Hunter (Walk)</div><br>
+            <div onclick="mwLlangFunction();" class="first-music select" id="fWsl">Hotsteel (Walk)</div><br>
+            <div onclick="mwMlangFunction();" class="first-music select" id="fWsm">Hurricane (Walk)</div><br>
+            <div onclick="mwNlangFunction();" class="first-music select" id="fWsn">Jojo (Walk)</div><br>
+            <div onclick="mwAClangFunction();" class="first-music select" id="fWsac">Lancelot (Walk)</div><br>
+            <div onclick="mwOlangFunction();" class="first-music select" id="fWso">Michael (Walk)</div><br>
+            <div onclick="mwADlangFunction();" class="first-music select" id="fWsad">Moon Rabbit (Walk)</div><br>
+            <div onclick="mwAElangFunction();" class="first-music select" id="fWsae">Nebula (Walk)</div><br>
+            <div onclick="mwPlangFunction();" class="first-music select" id="fWsp">Neutron Star (Walk)</div><br>
+            <div onclick="mwQlangFunction();" class="first-music select" id="fWsq">Northern Knight (Walk)</div><br>
+            <div onclick="mwRlangFunction();" class="first-music select" id="fWsr">Pulsar (Walk)</div><br>
+            <div onclick="mwSlangFunction();" class="first-music select" id="fWss">Ranger (Walk)</div><br>
+            <div onclick="mwTlangFunction();" class="first-music select" id="fWst">Raven (Walk)</div><br>
+            <div onclick="mwAFlangFunction();" class="first-music select" id="fWsaf">Shiranui (Walk)</div><br>
+            <div onclick="mwAJlangFunction();" class="first-music select" id="fWsaj">Skyfall (Walk)</div><br>
+            <div onclick="mwAGlangFunction();" class="first-music select" id="fWsag">Skyfire (Walk)</div><br>
+            <div onclick="mwUlangFunction();" class="first-music select" id="fWsu">Skylark (Walk)</div><br>
+            <div onclick="mwVlangFunction();" class="first-music select" id="fWsv">Snow Mirage (Walk)</div><br>
+            <div onclick="mwAKlangFunction();" class="first-music select" id="fWsak">Tempest (Walk)</div><br>
+            <div onclick="mwWlangFunction();" class="first-music select" id="fWsw">Trio of Enders (Walk)</div><br>
+            <div onclick="mwAHlangFunction();" class="first-music select" id="fWsah">Twilight (Walk)</div><br>
+            <div onclick="mwXlangFunction();" class="first-music select" id="fWsx">Ventorus (Walk)</div>
+          </div>
+        </div>
+      </div>
+      <button id="applyFirstSettings" class="apply-first-settings" onclick="localStorage.setItem('firstModal', 'exist');applySettings();" disabled>Complate</button>
+      <div id="firstTabsContiner" class="tab-first">
+        <button onclick="openFtab(event, 'firstAtab');pauseFirstMusic();selectionSound();" class="tablinks-first active" id="tabAfirst">Languages</button>
+        <button onclick="openFtab(event, 'firstBtab');pauseFirstMusic();selectionSound();" class="tablinks-first" id="tabBfirst" disabled>Game</button>
+        <button onclick="openFtab(event, 'firstCtab');pauseFirstMusic();selectionSound();" class="tablinks-first" id="tabCfirst" disabled>Snake</button>
+        <button onclick="openFtab(event, 'firstDtab');selectionSound();" class="tablinks-first" id="tabDfirst" disabled>Music</button>
+        <button onclick="openFtab(event, 'firstEtab');pauseFirstMusic();selectionSound();" class="tablinks-first" id="tabEfirst" disabled>Walking</button>
+      </div>
+    </div>
+    <div id="updateModal" class="modal" style="display: none;">
+      <div class="modal-content">
+      <div id="updateTitleLang">...</div>
+        <button class="reset-button" id="closeUpdate" onclick="markUpdateReaded();closeModalSound();"></button>
+        <div class="in-modal-content" id="updateNoticeContent"></div>
+      </div>
+    </div>
+    <div id="howToPlayModal" class="modal" style="display: none;">
+      <div class="modal-content">
+      <div id="howTitleLang">...</div>
+        <button class="reset-button" id="closeHowToPlay" onclick="document.getElementById('howToPlayModal').style.display='none';closeModalSound();"></button>
+        <div class="in-modal-content" id="howToPlayContent">
+          <div id="ifMobileLang">...</div><br>
+          <div id="txtAhow">...</div>
+          <hr>
+          <div id="ifOthersLang">...</div><br>
+          <div id="txtBhow">...</div>
+        </div>
+      </div>
     </div>
     <textarea name="text-area" id="textarea" style="position:fixed;display:none;"></textarea>
     <!-- Audio sources -->
@@ -1729,350 +1729,350 @@
     <!-- Item collected -->
     <audio muted preload="none" id="itemCollected" class="collect-background">
       <source type="audio/mp3" src="index_data/audio/game/item_taked.mp3">
-      <script src="index_data/scripts/item_taked.js"></script>
+      <script src="index_data/scripts/food/item_taked.js"></script>
     </audio>
     <!-- Movement Sounds -->
     <!-- Player Walk -->
     <audio muted preload="none" id="playerWalk" loop class="walk-background">
       <source type="audio/mp3" src="index_data/audio/walks/player_walk.mp3">
-      <script src="index_data/scripts/player_walk.js"></script>
+      <script src="index_data/scripts/walk/player_walk.js"></script>
     </audio>
     <!-- Akashic Walk -->
     <audio muted preload="none" id="akashicWalk" loop class="walk-background">
       <source type="audio/mp3" src="index_data/audio/walks/akashic_walk.mp3">
-      <script src="index_data/scripts/akashic_walk.js"></script>
+      <script src="index_data/scripts/walk/akashic_walk.js"></script>
     </audio>
     <!-- Alborada Walk -->
     <audio muted preload="none" id="alboradaWalk" loop class="walk-background">
       <source type="audio/mp3" src="index_data/audio/walks/alborada_walk.mp3">
-      <script src="index_data/scripts/alborada_walk.js"></script>
+      <script src="index_data/scripts/walk/alborada_walk.js"></script>
     </audio>
     <!-- Andromeda Walk -->
     <audio muted preload="none" id="andromedaWalk" loop class="walk-background">
       <source type="audio/mp3" src="index_data/audio/walks/andromeda_walk.mp3">
-      <script src="index_data/scripts/andromeda_walk.js"></script>
+      <script src="index_data/scripts/walk/andromeda_walk.js"></script>
     </audio>
     <!-- Arthur Walk -->
     <audio muted preload="none" id="arthurWalk" loop class="walk-background">
       <source type="audio/mp3" src="index_data/audio/walks/arthur_walk.mp3">
-      <script src="index_data/scripts/arthur_walk.js"></script>
+      <script src="index_data/scripts/walk/arthur_walk.js"></script>
     </audio>
     <!-- Aurora Walk -->
     <audio muted preload="none" id="auroraWalk" loop class="walk-background">
       <source type="audio/mp3" src="index_data/audio/walks/aurora_walk.mp3">
-      <script src="index_data/scripts/aurora_walk.js"></script>
+      <script src="index_data/scripts/walk/aurora_walk.js"></script>
     </audio>
     <!-- Boltus Walk -->
     <audio muted preload="none" id="boltusWalk" loop class="walk-background">
       <source type="audio/mp3" src="index_data/audio/walks/boltus_walk.mp3">
-      <script src="index_data/scripts/boltus_walk.js"></script>
+      <script src="index_data/scripts/walk/boltus_walk.js"></script>
     </audio>
     <!-- Caramel Walk -->
     <audio muted preload="none" id="caramelWalk" loop class="walk-background">
       <source type="audio/mp3" src="index_data/audio/walks/caramel_walk.mp3">
-      <script src="index_data/scripts/caramel_walk.js"></script>
+      <script src="index_data/scripts/walk/caramel_walk.js"></script>
     </audio>
     <!-- Death knell Walk -->
     <audio muted preload="none" id="deathKnellWalk" loop class="walk-background">
       <source type="audio/mp3" src="index_data/audio/walks/death_knell_walk.mp3">
-      <script src="index_data/scripts/death_knell_walk.js"></script>
+      <script src="index_data/scripts/walk/death_knell_walk.js"></script>
     </audio>
     <!-- Doomlight Walk -->
     <audio muted preload="none" id="doomlightlWalk" loop class="walk-background">
       <source type="audio/mp3" src="index_data/audio/walks/doomlight_walk.mp3">
-      <script src="index_data/scripts/doomlight_walk.js"></script>
+      <script src="index_data/scripts/walk/doomlight_walk.js"></script>
     </audio>
     <!-- Dreadwolf Walk -->
     <audio muted preload="none" id="dreadwolfWalk" loop class="walk-background">
       <source type="audio/mp3" src="index_data/audio/walks/dreadwolf_walk.mp3">
-      <script src="index_data/scripts/dreadwolf_walk.js"></script>
+      <script src="index_data/scripts/walk/dreadwolf_walk.js"></script>
     </audio>
     <!-- Frefox Walk -->
     <audio muted preload="none" id="firefoxWalk" loop class="walk-background">
       <source type="audio/mp3" src="index_data/audio/walks/firefox_walk.mp3">
-      <script src="index_data/scripts/firefox_walk.js"></script>
+      <script src="index_data/scripts/walk/firefox_walk.js"></script>
     </audio>
     <!-- Frestar Walk -->
     <audio muted preload="none" id="firestarWalk" loop class="walk-background">
       <source type="audio/mp3" src="index_data/audio/walks/firestar_walk.mp3">
-      <script src="index_data/scripts/firestar_walk.js"></script>
+      <script src="index_data/scripts/walk/firestar_walk.js"></script>
     </audio>
     <!-- Flamenco Walk -->
     <audio muted preload="none" id="flamencoWalk" loop class="walk-background">
       <source type="audio/mp3" src="index_data/audio/walks/flamenco_walk.mp3">
-      <script src="index_data/scripts/flamenco_walk.js"></script>
+      <script src="index_data/scripts/walk/flamenco_walk.js"></script>
     </audio>
     <!-- Gabriel Walk -->
     <audio muted preload="none" id="gabrielWalk" loop class="walk-background">
       <source type="audio/mp3" src="index_data/audio/walks/gabriel_walk.mp3">
-      <script src="index_data/scripts/gabriel_walk.js"></script>
+      <script src="index_data/scripts/walk/gabriel_walk.js"></script>
     </audio>
     <!-- Gaia Walk -->
     <audio muted preload="none" id="gaialWalk" loop class="walk-background">
       <source type="audio/mp3" src="index_data/audio/walks/gaia_walk.mp3">
-      <script src="index_data/scripts/gaia_walk.js"></script>
+      <script src="index_data/scripts/walk/gaia_walk.js"></script>
     </audio>
     <!-- Guerilla Hunter Walk -->
     <audio muted preload="none" id="guerillaHunterWalk" loop class="walk-background">
       <source type="audio/mp3" src="index_data/audio/walks/guerilla_hunter_walk.mp3">
-      <script src="index_data/scripts/guerilla_hunter_walk.js"></script>
+      <script src="index_data/scripts/walk/guerilla_hunter_walk.js"></script>
     </audio>
     <!-- Hotsteel Walk -->
     <audio muted preload="none" id="hotsteelWalk" loop class="walk-background">
       <source type="audio/mp3" src="index_data/audio/walks/hotsteel_walk.mp3">
-      <script src="index_data/scripts/hotsteel_walk.js"></script>
+      <script src="index_data/scripts/walk/hotsteel_walk.js"></script>
     </audio>
     <!-- Hurricane Walk -->
     <audio muted preload="none" id="hurricaneWalk" loop class="walk-background">
       <source type="audio/mp3" src="index_data/audio/walks/hurricane_walk.mp3">
-      <script src="index_data/scripts/hurricane_walk.js"></script>
+      <script src="index_data/scripts/walk/hurricane_walk.js"></script>
     </audio>
     <!-- Jojo Walk -->
     <audio muted preload="none" id="jojoWalk" loop class="walk-background">
       <source type="audio/mp3" src="index_data/audio/walks/jojo_walk.mp3">
-      <script src="index_data/scripts/jojo_walk.js"></script>
+      <script src="index_data/scripts/walk/jojo_walk.js"></script>
     </audio>
     <!-- Lancelot Walk -->
     <audio muted preload="none" id="lancelotWalk" loop class="walk-background">
       <source type="audio/mp3" src="index_data/audio/walks/lancelot_walk.mp3">
-      <script src="index_data/scripts/lancelot_walk.js"></script>
+      <script src="index_data/scripts/walk/lancelot_walk.js"></script>
     </audio>
     <!-- Michael Walk -->
     <audio muted preload="none" id="michaelWalk" loop class="walk-background">
       <source type="audio/mp3" src="index_data/audio/walks/michael_walk.mp3">
-      <script src="index_data/scripts/michael_walk.js"></script>
+      <script src="index_data/scripts/walk/michael_walk.js"></script>
     </audio>
     <!-- Moon Rabbit Walk -->
     <audio muted preload="none" id="moonRabbitWalk" loop class="walk-background">
       <source type="audio/mp3" src="index_data/audio/walks/moon_rabbit_walk.mp3">
-      <script src="index_data/scripts/moon_rabbit_walk.js"></script>
+      <script src="index_data/scripts/walk/moon_rabbit_walk.js"></script>
     </audio>
     <!-- Nebula Walk -->
     <audio muted preload="none" id="nebulaWalk" loop class="walk-background">
       <source type="audio/mp3" src="index_data/audio/walks/nebula_walk.mp3">
-      <script src="index_data/scripts/nebula_walk.js"></script>
+      <script src="index_data/scripts/walk/nebula_walk.js"></script>
     </audio>
     <!-- Neutron Walk -->
     <audio muted preload="none" id="neutronWalk" loop class="walk-background">
       <source type="audio/mp3" src="index_data/audio/walks/neutron_star_walk.mp3">
-      <script src="index_data/scripts/neutron_star_walk.js"></script>
+      <script src="index_data/scripts/walk/neutron_star_walk.js"></script>
     </audio>
     <!-- Northern Walk -->
     <audio muted preload="none" id="northernWalk" loop class="walk-background">
       <source type="audio/mp3" src="index_data/audio/walks/northern_knight_walk.mp3">
-      <script src="index_data/scripts/northern_knight_walk.js"></script>
+      <script src="index_data/scripts/walk/northern_knight_walk.js"></script>
     </audio>
     <!-- Pulsar Walk -->
     <audio muted preload="none" id="pulsarWalk" loop class="walk-background">
       <source type="audio/mp3" src="index_data/audio/walks/pulsar_walk.mp3">
-      <script src="index_data/scripts/pulsar_walk.js"></script>
+      <script src="index_data/scripts/walk/pulsar_walk.js"></script>
     </audio>
     <!-- Ranger Walk -->
     <audio muted preload="none" id="rangerWalk" loop class="walk-background">
       <source type="audio/mp3" src="index_data/audio/walks/ranger_walk.mp3">
-      <script src="index_data/scripts/ranger_walk.js"></script>
+      <script src="index_data/scripts/walk/ranger_walk.js"></script>
     </audio>
     <!-- Raven Walk -->
     <audio muted preload="none" id="ravenWalk" loop class="walk-background">
       <source type="audio/mp3" src="index_data/audio/walks/raven_walk.mp3">
-      <script src="index_data/scripts/raven_walk.js"></script>
+      <script src="index_data/scripts/walk/raven_walk.js"></script>
     </audio>
     <!-- Shiranui Walk -->
     <audio muted preload="none" id="shiranuiWalk" loop class="walk-background">
       <source type="audio/mp3" src="index_data/audio/walks/shiranui_walk.mp3">
-      <script src="index_data/scripts/shiranui_walk.js"></script>
+      <script src="index_data/scripts/walk/shiranui_walk.js"></script>
     </audio>
     <!-- Skyfall Walk -->
     <audio muted preload="none" id="skyfallWalk" loop class="walk-background">
       <source type="audio/mp3" src="index_data/audio/walks/skyfall_walk.mp3">
-      <script src="index_data/scripts/skyfall_walk.js"></script>
+      <script src="index_data/scripts/walk/skyfall_walk.js"></script>
     </audio>
     <!-- Skyfire Walk -->
     <audio muted preload="none" id="skyfireWalk" loop class="walk-background">
       <source type="audio/mp3" src="index_data/audio/walks/skyfire_walk.mp3">
-      <script src="index_data/scripts/skyfire_walk.js"></script>
+      <script src="index_data/scripts/walk/skyfire_walk.js"></script>
     </audio>
     <!-- Skylark Walk -->
     <audio muted preload="none" id="skylarkWalk" loop class="walk-background">
       <source type="audio/mp3" src="index_data/audio/walks/skylark_walk.mp3">
-      <script src="index_data/scripts/skylark_walk.js"></script>
+      <script src="index_data/scripts/walk/skylark_walk.js"></script>
     </audio>
     <!-- Snow Walk -->
     <audio muted preload="none" id="snowWalk" loop class="walk-background">
       <source type="audio/mp3" src="index_data/audio/walks/snow_mirage_walk.mp3">
-      <script src="index_data/scripts/snow_mirage_walk.js"></script>
+      <script src="index_data/scripts/walk/snow_mirage_walk.js"></script>
     </audio>
     <!-- Tempes Walk -->
     <audio muted preload="none" id="tempestWalk" loop class="walk-background">
       <source type="audio/mp3" src="index_data/audio/walks/tempest_walk.mp3">
-      <script src="index_data/scripts/tempest_walk.js"></script>
+      <script src="index_data/scripts/walk/tempest_walk.js"></script>
     </audio>
     <!-- Trio Walk -->
     <audio muted preload="none" id="trioWalk" loop class="walk-background">
       <source type="audio/mp3" src="index_data/audio/walks/trio_of_enders_walk.mp3">
-      <script src="index_data/scripts/trio_of_enders_walk.js"></script>
+      <script src="index_data/scripts/walk/trio_of_enders_walk.js"></script>
     </audio>
     <!-- Twilight Walk -->
     <audio muted preload="none" id="twilightWalk" loop class="walk-background">
       <source type="audio/mp3" src="index_data/audio/walks/twilight_walk.mp3">
-      <script src="index_data/scripts/twilight_walk.js"></script>
+      <script src="index_data/scripts/walk/twilight_walk.js"></script>
     </audio>
     <!-- Ventorus Walk -->
     <audio muted preload="none" id="ventorusWalk" loop class="walk-background">
       <source type="audio/mp3" src="index_data/audio/walks/ventorus_walk.mp3">
-      <script src="index_data/scripts/ventorus_walk.js"></script>
+      <script src="index_data/scripts/walk/ventorus_walk.js"></script>
     </audio>
     <script src="index_data/scripts/play_walk.js"></script>
     <script src="index_data/scripts/local_movement.js"></script>
     <!-- Default Click -->
     <audio muted preload="none" id="defaultClickSound">
       <source src="index_data/audio/interface/default_press.mp3" type="audio/mp3">
-      <script src="index_data/scripts/default_click.js"></script>
+      <script src="index_data/scripts/ui/default_click.js"></script>
     </audio>
     <!-- Close Settings -->
     <audio muted preload="none" id="closeSettingsSound">
       <source src="index_data/audio/interface/close_settings.mp3" type="audio/mp3">
-      <script src="index_data/scripts/close_settings.js"></script>
+      <script src="index_data/scripts/ui/close_settings.js"></script>
     </audio>
     <!-- Cancel -->
     <audio muted preload="none" id="cancelSound">
       <source src="index_data/audio/interface/cancel.mp3" type="audio/mp3">
-      <script src="index_data/scripts/cancel.js"></script>
+      <script src="index_data/scripts/ui/cancel.js"></script>
     </audio>
     <!-- Open Settings -->
     <audio muted preload="none" id="openSettingsSound">
       <source src="index_data/audio/interface/open_settings.mp3" type="audio/mp3">
-      <script src="index_data/scripts/open_settings.js"></script>
+      <script src="index_data/scripts/ui/open_settings.js"></script>
     </audio>
     <!-- Tab Select & Select Buttons -->
     <audio muted preload="none" id="selectionSound">
       <source src="index_data/audio/interface/tab_select.mp3" type="audio/mp3">
-      <script src="index_data/scripts/tab_select.js"></script>
+      <script src="index_data/scripts/ui/tab_select.js"></script>
     </audio>
     <!-- Close Modals -->
     <audio muted preload="none" id="closeModalSound">
       <source src="index_data/audio/interface/notice_close.mp3" type="audio/mp3">
-      <script src="index_data/scripts/notice_close.js"></script>
+      <script src="index_data/scripts/ui/notice_close.js"></script>
     </audio>
     <!-- Background Music 1 -->
     <audio muted preload="none" id="musicAbgSound" loop class="music-background">
       <source type="audio/mp3" src="index_data/audio/music/stable_and_upbeat.mp3">
-      <script src="index_data/scripts/stable_and_upbeat.js"></script>
+      <script src="index_data/scripts/music/stable_and_upbeat.js"></script>
     </audio>
     <!-- Background Music 2 -->
     <audio muted preload="none" id="musicBbgSound" loop class="music-background">
       <source type="audio/mp3" src="index_data/audio/music/acceleration_folding.mp3">
-      <script src="index_data/scripts/acceleration_folding.js"></script>
+      <script src="index_data/scripts/music/acceleration_folding.js"></script>
     </audio>
     <!-- Background Music 3 -->
     <audio muted preload="none" id="musicCbgSound" loop class="music-background">
       <source type="audio/mp3" src="index_data/audio/music/alice_the_dreamer_accompaniment.mp3">
-      <script src="index_data/scripts/alice_the_dreamer_accompaniment.js"></script>
+      <script src="index_data/scripts/music/alice_the_dreamer_accompaniment.js"></script>
     </audio>
     <!-- Background Music 4 -->
     <audio muted preload="none" id="musicDbgSound" loop class="music-background">
       <source type="audio/mp3" src="index_data/audio/music/alice_the_dreamer.mp3">
-      <script src="index_data/scripts/alice_the_dreamer.js"></script>
+      <script src="index_data/scripts/music/alice_the_dreamer.js"></script>
     </audio>
     <!-- Background Music 5 -->
     <audio muted preload="none" id="musicEbgSound" loop class="music-background">
       <source type="audio/mp3" src="index_data/audio/music/all_or_nothing_ending_version.mp3">
-      <script src="index_data/scripts/all_or_nothing_ending_version.js"></script>
+      <script src="index_data/scripts/music/all_or_nothing_ending_version.js"></script>
     </audio>
     <!-- Background Music 6 -->
     <audio muted preload="none" id="musicFbgSound" loop class="music-background">
       <source type="audio/mp3" src="index_data/audio/music/all_or_nothing.mp3">
-      <script src="index_data/scripts/all_or_nothing.js"></script>
+      <script src="index_data/scripts/music/all_or_nothing.js"></script>
     </audio>
     <!-- Background Music 7 -->
     <audio muted preload="none" id="musicGbgSound" loop class="music-background">
       <source type="audio/mp3" src="index_data/audio/music/backtracking_journey.mp3">
-      <script src="index_data/scripts/backtracking_journey.js"></script>
+      <script src="index_data/scripts/music/backtracking_journey.js"></script>
     </audio>
     <!-- Background Music 8 -->
     <audio muted preload="none" id="musicHbgSound" loop class="music-background">
       <source type="audio/mp3" src="index_data/audio/music/before_the_storm.mp3">
-      <script src="index_data/scripts/before_the_storm.js"></script>
+      <script src="index_data/scripts/music/before_the_storm.js"></script>
     </audio>
     <!-- Background Music 9 -->
     <audio muted preload="none" id="musicIbgSound" loop class="music-background">
       <source type="audio/mp3" src="index_data/audio/music/disillusionment_melody.mp3">
-      <script src="index_data/scripts/disillusionment_melody.js"></script>
+      <script src="index_data/scripts/music/disillusionment_melody.js"></script>
     </audio>
     <!-- Background Music 10 -->
     <audio muted preload="none" id="musicJbgSound" loop class="music-background">
       <source type="audio/mp3" src="index_data/audio/music/explosive_halo.mp3">
-      <script src="index_data/scripts/explosive_halo.js"></script>
+      <script src="index_data/scripts/music/explosive_halo.js"></script>
     </audio>
     <!-- Background Music 11 -->
     <audio muted preload="none" id="musicKbgSound" loop class="music-background">
       <source type="audio/mp3" src="index_data/audio/music/firestar.mp3">
-      <script src="index_data/scripts/firestar.js"></script>
+      <script src="index_data/scripts/music/firestar.js"></script>
     </audio>
     <!-- Background Music 12 -->
     <audio muted preload="none" id="musicLbgSound" loop class="music-background">
       <source type="audio/mp3" src="index_data/audio/music/future_bounce.mp3">
-      <script src="index_data/scripts/future_bounce.js"></script>
+      <script src="index_data/scripts/music/future_bounce.js"></script>
     </audio>
     <!-- Background Music 13 -->
     <audio muted preload="none" id="musicMbgSound" loop class="music-background">
       <source type="audio/mp3" src="index_data/audio/music/interlude_mojito.mp3">
-      <script src="index_data/scripts/interlude_mojito.js"></script>
+      <script src="index_data/scripts/music/interlude_mojito.js"></script>
     </audio>
     <!-- Background Music 14 -->
     <audio muted preload="none" id="musicNbgSound" loop class="music-background">
       <source type="audio/mp3" src="index_data/audio/music/joyful_passion.mp3">
-      <script src="index_data/scripts/joyful_passion.js"></script>
+      <script src="index_data/scripts/music/joyful_passion.js"></script>
     </audio>
     <!-- Background Music 15 -->
     <audio muted preload="none" id="musicObgSound" loop class="music-background">
       <source type="audio/mp3" src="index_data/audio/music/lunar.mp3">
-      <script src="index_data/scripts/lunar.js"></script>
+      <script src="index_data/scripts/music/lunar.js"></script>
     </audio>
     <!-- Background Music 16 -->
     <audio muted preload="none" id="musicPbgSound" loop class="music-background">
       <source type="audio/mp3" src="index_data/audio/music/nyan_nyan.mp3">
-      <script src="index_data/scripts/nyan_nyan.js"></script>
+      <script src="index_data/scripts/music/nyan_nyan.js"></script>
     </audio>
     <!-- Background Music 17 -->
     <audio muted preload="none" id="musicQbgSound" loop class="music-background">
       <source type="audio/mp3" src="index_data/audio/music/prelude_of_war.mp3">
-      <script src="index_data/scripts/prelude_of_war.js"></script>
+      <script src="index_data/scripts/music/prelude_of_war.js"></script>
     </audio>
     <!-- Background Music 18 -->
     <audio muted preload="none" id="musicRbgSound" loop class="music-background">
       <source type="audio/mp3" src="index_data/audio/music/preparation_break.mp3">
-      <script src="index_data/scripts/preparation_break.js"></script>
+      <script src="index_data/scripts/music/preparation_break.js"></script>
     </audio>
     <!-- Background Music 19 -->
     <audio muted preload="none" id="musicSbgSound" loop class="music-background">
       <source type="audio/mp3" src="index_data/audio/music/smc_memory_2022.mp3">
-      <script src="index_data/scripts/smc_memory_2022.js"></script>
+      <script src="index_data/scripts/music/smc_memory_2022.js"></script>
     </audio>
     <!-- Background Music 20 -->
     <audio muted preload="none" id="musicTbgSound" loop class="music-background">
       <source type="audio/mp3" src="index_data/audio/music/smc_memory_2023.mp3">
-      <script src="index_data/scripts/smc_memory_2023.js"></script>
+      <script src="index_data/scripts/music/smc_memory_2023.js"></script>
     </audio>
     <!-- Background Music 21 -->
     <audio muted preload="none" id="musicUbgSound" loop class="music-background">
       <source type="audio/mp3" src="index_data/audio/music/throbbing_beat.mp3">
-      <script src="index_data/scripts/throbbing_beat.js"></script>
+      <script src="index_data/scripts/music/throbbing_beat.js"></script>
     </audio>
     <!-- Background Music 22 -->
     <audio muted preload="none" id="musicVbgSound" loop class="music-background">
       <source type="audio/mp3" src="index_data/audio/music/ultra_beast_force.mp3">
-      <script src="index_data/scripts/ultra_beast_force.js"></script>
+      <script src="index_data/scripts/music/ultra_beast_force.js"></script>
     </audio>
     <!-- Game Over Fireworks -->
     <audio muted preload="none" id="goFireworksSound" class="go-background">
       <source type="audio/mp3" src="index_data/audio/game/fireworks_sound.mp3">
-      <script src="index_data/scripts/goFireworksSound.js"></script>
+      <script src="index_data/scripts/ambient/goFireworksSound.js"></script>
     </audio>
     <!-- Game Over Fireworks -->
     <audio muted preload="none" id="basicAmbientSound" loop class="ambient-background">
       <source type="audio/mp3" src="index_data/audio/game/ambient_sounds.ogg">
-      <script src="index_data/scripts/ambient.js"></script>
+      <script src="index_data/scripts/ambient/ambient.js"></script>
     </audio>
     <!-- Scripts -->
     <script src="index_data/scripts/scripts.js"></script>
