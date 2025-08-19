@@ -1,4 +1,4 @@
-let basicVersion = "1.1.8-v2";
+let basicVersion = "1.1.9-v2";
 function markUpdateReaded() {
   var modal = document.getElementById("updateModal");
   modal.style.display = "none";
