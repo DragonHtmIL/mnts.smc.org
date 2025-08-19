@@ -1750,8 +1750,8 @@ a {
   color: var(--white);
   filter: grayscale(0.5);
 }
-.select-content .select.activet,
-.select-content .select-img.activet {
+.select-content .select.active,
+.select-content .select-img.active {
   background-position: bottom right !important;
   color: var(--white) !important;
   cursor: var(--cur-def) !important;
@@ -1767,7 +1767,7 @@ a {
   background-size: 125% 125%;
   background-position: center center;
 }
-.select-content .select-img.activet .select-icon-frame {
+.select-content .select-img.active .select-icon-frame {
   background-image: var(--actived-frame-cube);
 }
 .select-content .select.difficulty {
@@ -1786,7 +1786,7 @@ a {
 .select-content .select.difficulty:first-child {
   margin: 5px 5px 5px 25px;
 }
-.select-content .difficulty.activet {
+.select-content .difficulty.active {
   filter: brightness(1) grayscale(0) !important;
   cursor: var(--cur-def) !important;
 }
@@ -1815,8 +1815,8 @@ a {
 #languageHe {
   margin-left: 32px;
 }
-.select-content .language.activet,
-.select-content .controllerpostype.activet {
+.select-content .language.active,
+.select-content .controllerpostype.active {
   background-image: var(--toggled-on);
   background-position: center center !important;
   cursor: var(--cur-def) !important;
@@ -1841,8 +1841,8 @@ a {
 }
 .select:hover .select-icon,
 .select-img:hover .select-icon-img,
-.activet .select-icon,
-.activet .select-icon-img  {
+.active .select-icon,
+.active .select-icon-img  {
   transform: scale(1.05);
 }
 .select-content #alphaMapImage {
@@ -1857,7 +1857,7 @@ a {
 .select-content #board000img {
   background-image: var(--board-0-image);
 }
-.select-content.activet #board000img {
+.select-content.active #board000img {
   background-image: var(--board-0-image), var(--actived-frame-cube);
 }
 .select-content #board001img {
