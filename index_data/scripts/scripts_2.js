@@ -406,42 +406,42 @@ function iconAllLoad() {
 }
 iconAllLoad();
 function centerController() {
-  document.getElementById("ccLang").classList.add("activet");
-  document.getElementById("clLang").classList.remove("activet");
-  document.getElementById("crLang").classList.remove("activet");
+  document.getElementById("ccLang").classList.add("active");
+  document.getElementById("clLang").classList.remove("active");
+  document.getElementById("crLang").classList.remove("active");
   selectionSound();
 };
 function leftController() {
-  document.getElementById("ccLang").classList.remove("activet");
-  document.getElementById("clLang").classList.add("activet");
-  document.getElementById("crLang").classList.remove("activet");
+  document.getElementById("ccLang").classList.remove("active");
+  document.getElementById("clLang").classList.add("active");
+  document.getElementById("crLang").classList.remove("active");
   selectionSound();
 };
 function rightController() {
-  document.getElementById("ccLang").classList.remove("activet");
-  document.getElementById("clLang").classList.remove("activet");
-  document.getElementById("crLang").classList.add("activet");
+  document.getElementById("ccLang").classList.remove("active");
+  document.getElementById("clLang").classList.remove("active");
+  document.getElementById("crLang").classList.add("active");
   selectionSound();
 };
 function positioningController() {
   if(localStorage.getItem("controllerPosition") === "center") {
-    document.getElementById("ccLang").classList.add("activet");
-    document.getElementById("clLang").classList.remove("activet");
-    document.getElementById("crLang").classList.remove("activet");
+    document.getElementById("ccLang").classList.add("active");
+    document.getElementById("clLang").classList.remove("active");
+    document.getElementById("crLang").classList.remove("active");
     document.getElementById("controller").style.left = "auto";
     document.getElementById("controller").style.right = "auto";
   }else
   if(localStorage.getItem("controllerPosition") === "left") {
-    document.getElementById("ccLang").classList.remove("activet");
-    document.getElementById("clLang").classList.add("activet");
-    document.getElementById("crLang").classList.remove("activet");
+    document.getElementById("ccLang").classList.remove("active");
+    document.getElementById("clLang").classList.add("active");
+    document.getElementById("crLang").classList.remove("active");
     document.getElementById("controller").style.left = "0";
     document.getElementById("controller").style.right = "auto";
   }else
   if(localStorage.getItem("controllerPosition") === "right") {
-    document.getElementById("ccLang").classList.remove("activet");
-    document.getElementById("clLang").classList.remove("activet");
-    document.getElementById("crLang").classList.add("activet");
+    document.getElementById("ccLang").classList.remove("active");
+    document.getElementById("clLang").classList.remove("active");
+    document.getElementById("crLang").classList.add("active");
     document.getElementById("controller").style.left = "auto";
     document.getElementById("controller").style.right = "0";
   }
@@ -2746,85 +2746,85 @@ function handleInterval() {
   }
 };
 function loadingClassic() {
-  document.getElementById("loadClassicCon").classList.add("activet");
-  document.getElementById("loadAnimeCon").classList.remove("activet");
-  document.getElementById("loadMikuCon").classList.remove("activet");
-  document.getElementById("loadNakanoCon").classList.remove("activet");
-  document.getElementById("loadAnimeCon2").classList.remove("activet");
-  document.getElementById("loadAnimeCon3").classList.remove("activet");
+  document.getElementById("loadClassicCon").classList.add("active");
+  document.getElementById("loadAnimeCon").classList.remove("active");
+  document.getElementById("loadMikuCon").classList.remove("active");
+  document.getElementById("loadNakanoCon").classList.remove("active");
+  document.getElementById("loadAnimeCon2").classList.remove("active");
+  document.getElementById("loadAnimeCon3").classList.remove("active");
   selectionSound();
 };
 function loadingAnime() {
-  document.getElementById("loadClassicCon").classList.remove("activet");
-  document.getElementById("loadAnimeCon").classList.add("activet");
-  document.getElementById("loadMikuCon").classList.remove("activet");
-  document.getElementById("loadNakanoCon").classList.remove("activet");
-  document.getElementById("loadAnimeCon2").classList.remove("activet");
-  document.getElementById("loadAnimeCon3").classList.remove("activet");
+  document.getElementById("loadClassicCon").classList.remove("active");
+  document.getElementById("loadAnimeCon").classList.add("active");
+  document.getElementById("loadMikuCon").classList.remove("active");
+  document.getElementById("loadNakanoCon").classList.remove("active");
+  document.getElementById("loadAnimeCon2").classList.remove("active");
+  document.getElementById("loadAnimeCon3").classList.remove("active");
   selectionSound();
 };
 function loadingMiku() {
-  document.getElementById("loadClassicCon").classList.remove("activet");
-  document.getElementById("loadAnimeCon").classList.remove("activet");
-  document.getElementById("loadMikuCon").classList.add("activet");
-  document.getElementById("loadNakanoCon").classList.remove("activet");
-  document.getElementById("loadAnimeCon2").classList.remove("activet");
-  document.getElementById("loadAnimeCon3").classList.remove("activet");
+  document.getElementById("loadClassicCon").classList.remove("active");
+  document.getElementById("loadAnimeCon").classList.remove("active");
+  document.getElementById("loadMikuCon").classList.add("active");
+  document.getElementById("loadNakanoCon").classList.remove("active");
+  document.getElementById("loadAnimeCon2").classList.remove("active");
+  document.getElementById("loadAnimeCon3").classList.remove("active");
   selectionSound();
 };
 function loadingNakano() {
-  document.getElementById("loadClassicCon").classList.remove("activet");
-  document.getElementById("loadAnimeCon").classList.remove("activet");
-  document.getElementById("loadMikuCon").classList.remove("activet");
-  document.getElementById("loadNakanoCon").classList.add("activet");
-  document.getElementById("loadAnimeCon2").classList.remove("activet");
-  document.getElementById("loadAnimeCon3").classList.remove("activet");
+  document.getElementById("loadClassicCon").classList.remove("active");
+  document.getElementById("loadAnimeCon").classList.remove("active");
+  document.getElementById("loadMikuCon").classList.remove("active");
+  document.getElementById("loadNakanoCon").classList.add("active");
+  document.getElementById("loadAnimeCon2").classList.remove("active");
+  document.getElementById("loadAnimeCon3").classList.remove("active");
   selectionSound();
 };
 function loadingAnime2() {
-  document.getElementById("loadClassicCon").classList.remove("activet");
-  document.getElementById("loadAnimeCon").classList.remove("activet");
-  document.getElementById("loadMikuCon").classList.remove("activet");
-  document.getElementById("loadNakanoCon").classList.remove("activet");
-  document.getElementById("loadAnimeCon2").classList.add("activet");
-  document.getElementById("loadAnimeCon3").classList.remove("activet");
+  document.getElementById("loadClassicCon").classList.remove("active");
+  document.getElementById("loadAnimeCon").classList.remove("active");
+  document.getElementById("loadMikuCon").classList.remove("active");
+  document.getElementById("loadNakanoCon").classList.remove("active");
+  document.getElementById("loadAnimeCon2").classList.add("active");
+  document.getElementById("loadAnimeCon3").classList.remove("active");
   selectionSound();
 };
 function loadingAnime3() {
-  document.getElementById("loadClassicCon").classList.remove("activet");
-  document.getElementById("loadAnimeCon").classList.remove("activet");
-  document.getElementById("loadMikuCon").classList.remove("activet");
-  document.getElementById("loadNakanoCon").classList.remove("activet");
-  document.getElementById("loadAnimeCon2").classList.remove("activet");
-  document.getElementById("loadAnimeCon3").classList.add("activet");
+  document.getElementById("loadClassicCon").classList.remove("active");
+  document.getElementById("loadAnimeCon").classList.remove("active");
+  document.getElementById("loadMikuCon").classList.remove("active");
+  document.getElementById("loadNakanoCon").classList.remove("active");
+  document.getElementById("loadAnimeCon2").classList.remove("active");
+  document.getElementById("loadAnimeCon3").classList.add("active");
   selectionSound();
 };
 function loadingAnimationLoader() {
   if(localStorage.getItem("loadingStyle") === "classic") {
     document.getElementById("animateImg").classList.add("classicload");
-    document.getElementById("loadClassicCon").classList.add("activet");
+    document.getElementById("loadClassicCon").classList.add("active");
   }else
   if(localStorage.getItem("loadingStyle") === "anime") {
     document.getElementById("animateImg").classList.add("animeload");
-    document.getElementById("loadAnimeCon").classList.add("activet");
+    document.getElementById("loadAnimeCon").classList.add("active");
   }else
   if(localStorage.getItem("loadingStyle") === "miku") {
     document.getElementById("animateImg").classList.add("mikuload");
-    document.getElementById("loadMikuCon").classList.add("activet");
+    document.getElementById("loadMikuCon").classList.add("active");
     document.getElementById("loadingContiner").style.height = "192px";
   }else
   if(localStorage.getItem("loadingStyle") === "nakano") {
     document.getElementById("animateImg").classList.add("nakanoload");
-    document.getElementById("loadNakanoCon").classList.add("activet");
+    document.getElementById("loadNakanoCon").classList.add("active");
     document.getElementById("loadingContiner").style.height = "192px";
   }else
   if(localStorage.getItem("loadingStyle") === "anime2") {
     document.getElementById("animateImg").classList.add("anime2load");
-    document.getElementById("loadAnimeCon2").classList.add("activet");
+    document.getElementById("loadAnimeCon2").classList.add("active");
   }else
   if(localStorage.getItem("loadingStyle") === "anime3") {
     document.getElementById("animateImg").classList.add("anime3load");
-    document.getElementById("loadAnimeCon3").classList.add("activet");
+    document.getElementById("loadAnimeCon3").classList.add("active");
   }
 }
 loadingAnimationLoader();
@@ -2992,361 +2992,314 @@ function loadCdisplatFPS() {
   }
 };
 function checkSettingsChanges() {
-    let settingsChanged = false; // Flag to track if any setting has changed
-
-    // Helper function to check a category of settings
-    function checkSettingCategory(elementsMap, inputType, localStorageKey) {
-        for (const item of elementsMap) {
-            const element = document.getElementById(item.id);
-            if (!element) {
-                console.warn(`Element with ID "${item.id}" not found.`);
-                continue; // Skip if element doesn't exist
-            }
-
-            let currentValue;
-            if (inputType === 'className') {
-                currentValue = element.className;
-            } else if (inputType === 'value') {
-                currentValue = element.value;
-            }
-
-            // Check if the current active/selected item matches localStorage
-            if ((inputType === 'className' && currentValue === "select activet" && localStorage.getItem(localStorageKey) === item.localStorageValue) ||
-                (inputType === 'value' && currentValue === item.localStorageValue && localStorage.getItem(localStorageKey) === item.localStorageValue)) {
-                // This specific setting matches, but we need to know if ANY setting changed.
-                // We'll set settingsChanged to true if a mismatch is found below.
-            } else if ((inputType === 'className' && currentValue === "select activet" && localStorage.getItem(localStorageKey) !== item.localStorageValue) ||
-                       (inputType === 'value' && currentValue === item.localStorageValue && localStorage.getItem(localStorageKey) !== item.localStorageValue)) {
-                // A selected/active item exists, but its value doesn't match localStorage for this category.
-                settingsChanged = true;
-                return; // No need to check other items in this category if a mismatch is found
-            }
-        }
-        // If we went through all items in a category and none were "select activet"
-        // or the active one didn't match the localStorage, then a change happened.
-        // This is where the original logic was tricky. The goal is to show the button
-        // if *any* currently selected setting *differs* from its stored value,
-        // or if a setting is selected but *no* value is stored.
-
-        // Re-evaluate the logic here for subtle edge cases:
-        // If NO option is active (e.g., "select activet" is not found for any element in the map),
-        // or if the *active* option's localStorage value doesn't match, then settings have changed.
-        // The current loop only sets settingsChanged if an *active* element *doesn't match*.
-        // We also need to consider if an element is active, but localStorage for that key is null/undefined.
-        // Or if localStorage exists, but no element is active with that value.
-
-        // A more robust approach would be to first find the *currently active* item in this category,
-        // then compare *its* value with the `localStorage` value.
-        let currentActiveElementValue = null;
-        for (const item of elementsMap) {
-            const element = document.getElementById(item.id);
-            if (element && ((inputType === 'className' && element.className.includes("activet")) || (inputType === 'value' && element.value === item.localStorageValue))) {
-                currentActiveElementValue = item.localStorageValue;
-                break;
-            }
-        }
-
-        const storedValue = localStorage.getItem(localStorageKey);
-
-        if (currentActiveElementValue !== storedValue) {
-            settingsChanged = true;
-        }
-    }
-
-
-    // --- Board Style Settings ---
-    checkSettingCategory([
-        { id: "origoMap", localStorageValue: "imgOrigo" },
-        { id: "alphaMap2", localStorageValue: "imgAlpha2" },
-        { id: "alphaMap", localStorageValue: "imgAlpha" },
-        { id: "conBoard000img", localStorageValue: "img000board" },
-        { id: "conBoard001img", localStorageValue: "img001board" },
-        { id: "conBoard002img", localStorageValue: "img002board" },
-        { id: "conBoard003img", localStorageValue: "img003board" },
-        { id: "conBoard004img", localStorageValue: "img004board" },
-        { id: "conBoard005img", localStorageValue: "img005board" },
-        { id: "conBoard006img", localStorageValue: "img006board" },
-        { id: "conBoard007img", localStorageValue: "img007board" },
-        { id: "conBoard008img", localStorageValue: "img008board" },
-        { id: "conBoard009img", localStorageValue: "img009board" },
-        { id: "conBoard010img", localStorageValue: "img010board" },
-        { id: "conBoard011img", localStorageValue: "img011board" },
-        { id: "conBoard012img", localStorageValue: "img012board" },
-        { id: "conBoard013img", localStorageValue: "img013board" },
-        { id: "conBoard014img", localStorageValue: "img014board" },
-        { id: "conBoard015img", localStorageValue: "img015board" },
-        { id: "conBoard016img", localStorageValue: "img016board" },
-        { id: "conBoard017img", localStorageValue: "img017board" },
-        { id: "conBoard018img", localStorageValue: "img018board" },
-        { id: "conBoard019img", localStorageValue: "img019board" },
-        { id: "conBoard020img", localStorageValue: "img020board" },
-        { id: "conBoard021img", localStorageValue: "img021board" },
-        { id: "conBoard022img", localStorageValue: "img022board" },
-        { id: "conBoard023img", localStorageValue: "img023board" },
-        { id: "conBoard024img", localStorageValue: "img024board" },
-        { id: "conBoard025img", localStorageValue: "img025board" },
-        { id: "conBoard026img", localStorageValue: "img026board" },
-        { id: "conBoard027img", localStorageValue: "img027board" },
-        { id: "conBoard028img", localStorageValue: "img028board" },
-        { id: "conBoard029img", localStorageValue: "img029board" },
-        { id: "conBoard030img", localStorageValue: "img030board" },
-        { id: "conBoard031img", localStorageValue: "img031board" },
-        { id: "conBoard032img", localStorageValue: "img032board" },
-        { id: "conBoard033img", localStorageValue: "img033board" },
-        { id: "conBoard034img", localStorageValue: "img034board" },
-        { id: "conBoard035img", localStorageValue: "img035board" },
-        { id: "conBoard036img", localStorageValue: "img036board" },
-        { id: "conBoard037img", localStorageValue: "img037board" },
-        { id: "conBoard038img", localStorageValue: "img038board" },
-        { id: "conBoard039img", localStorageValue: "img039board" },
-        { id: "conBoard040img", localStorageValue: "img040board" },
-        { id: "conBoard041img", localStorageValue: "img041board" },
-        { id: "conBoard042img", localStorageValue: "img042board" },
-        { id: "conBoard043img", localStorageValue: "img043board" },
-        { id: "conBoard044img", localStorageValue: "img044board" },
-        { id: "conBoard045img", localStorageValue: "img045board" },
-        { id: "conBoard046img", localStorageValue: "img046board" },
-        { id: "conBoard047img", localStorageValue: "img047board" },
-        { id: "conBoard048img", localStorageValue: "img048board" },
-        { id: "conBoard049img", localStorageValue: "img049board" },
-        { id: "conBoard050img", localStorageValue: "img050board" },
-        { id: "conBoard051img", localStorageValue: "img051board" },
-        { id: "conBoard052img", localStorageValue: "img052board" },
-        { id: "conBoard053img", localStorageValue: "img053board" },
-        { id: "conBoard054img", localStorageValue: "img054board" },
-        { id: "conBoard055img", localStorageValue: "img055board" },
-        { id: "conBoard056img", localStorageValue: "img056board" },
-        { id: "conBoard057img", localStorageValue: "img057board" },
-        { id: "conBoard058img", localStorageValue: "img058board" },
-        { id: "conBoard059img", localStorageValue: "img059board" },
-        { id: "conBoard060img", localStorageValue: "img060board" },
-        { id: "conBoard061img", localStorageValue: "img061board" },
-        { id: "conBoard062img", localStorageValue: "img062board" },
-        { id: "conBoard063img", localStorageValue: "img063board" },
-        { id: "conBoard064img", localStorageValue: "img064board" },
-        { id: "conBoard065img", localStorageValue: "img065board" },
-        { id: "conBoard066img", localStorageValue: "img066board" },
-        { id: "conBoard067img", localStorageValue: "img067board" },
-        { id: "conBoard068img", localStorageValue: "img068board" },
-        { id: "conBoard069img", localStorageValue: "img069board" },
-        { id: "conBoard070img", localStorageValue: "img070board" },
-        { id: "conBoard071img", localStorageValue: "img071board" },
-        { id: "conBoard072img", localStorageValue: "img072board" },
-        { id: "conBoard073img", localStorageValue: "img073board" }
-    ], 'className', "boardStyle");
-    if (settingsChanged) { // If a change is detected in this category, no need to check further
-        document.getElementById("applySettings").style.display = "block";
+  let settingsChanged = false;
+  function checkSettingCategory(elementsMap, inputType, localStorageKey) {
+    for (const item of elementsMap) {
+      const element = document.getElementById(item.id);
+      if (!element) {
+        console.warn(`Element with ID "${item.id}" not found.`);
+      }
+      let currentValue;
+      if (inputType === 'className') {
+        currentValue = element.className;
+      } else if (inputType === 'value') {
+        currentValue = element.value;
+      }
+      if ((inputType === 'className' && currentValue === "select active" && localStorage.getItem(localStorageKey) === item.localStorageValue) ||
+        (inputType === 'value' && currentValue === item.localStorageValue && localStorage.getItem(localStorageKey) === item.localStorageValue)) {
+      } else if ((inputType === 'className' && currentValue === "select active" && localStorage.getItem(localStorageKey) !== item.localStorageValue) ||
+             (inputType === 'value' && currentValue === item.localStorageValue && localStorage.getItem(localStorageKey) !== item.localStorageValue)) {
+        settingsChanged = true;
         return;
+      }
     }
-
-    // --- Food Style Settings ---
-    checkSettingCategory([
-        { id: "meowItem", localStorageValue: "imgMeow" },
-        { id: "goldItem", localStorageValue: "imgGold" },
-        { id: "alphacoinItem", localStorageValue: "imgAlphacoin" },
-        { id: "crystalItem", localStorageValue: "imgCrystal" },
-        { id: "ticketItem", localStorageValue: "imgTicket" },
-        { id: "cTicketItem", localStorageValue: "imgCticket" },
-        { id: "pTicketItem", localStorageValue: "imgPticket" },
-        { id: "pTicket2Item", localStorageValue: "imgPticket2" },
-        { id: "virtualTokenItem", localStorageValue: "imgVirtualToken" },
-        { id: "food000Item0", localStorageValue: "img000food" },
-        { id: "food001Item0", localStorageValue: "img001food" },
-        { id: "food002Item0", localStorageValue: "img002food" },
-        { id: "food003Item0", localStorageValue: "img003food" },
-        { id: "food004Item0", localStorageValue: "img004food" },
-        { id: "food005Item0", localStorageValue: "img005food" },
-        { id: "food006Item0", localStorageValue: "img006food" },
-        { id: "food007Item0", localStorageValue: "img007food" },
-        { id: "food008Item0", localStorageValue: "img008food" },
-        { id: "food009Item0", localStorageValue: "img009food" },
-        { id: "food010Item0", localStorageValue: "img010food" },
-        { id: "food011Item0", localStorageValue: "img011food" },
-        { id: "food012Item0", localStorageValue: "img012food" },
-        { id: "food013Item0", localStorageValue: "img013food" },
-        { id: "food014Item0", localStorageValue: "img014food" },
-        { id: "food015Item0", localStorageValue: "img015food" },
-        { id: "food016Item0", localStorageValue: "img016food" },
-        { id: "food017Item0", localStorageValue: "img017food" },
-        { id: "food018Item0", localStorageValue: "img018food" },
-        { id: "food019Item0", localStorageValue: "img019food" },
-        { id: "food020Item0", localStorageValue: "img020food" },
-        { id: "food021Item0", localStorageValue: "img021food" },
-        { id: "food022Item0", localStorageValue: "img022food" },
-        { id: "food023Item0", localStorageValue: "img023food" },
-        { id: "food024Item0", localStorageValue: "img024food" },
-        { id: "food025Item0", localStorageValue: "img025food" },
-        { id: "food026Item0", localStorageValue: "img026food" },
-        { id: "food027Item0", localStorageValue: "img027food" },
-        { id: "food028Item0", localStorageValue: "img028food" },
-        { id: "food029Item0", localStorageValue: "img029food" },
-        { id: "food030Item0", localStorageValue: "img030food" },
-        { id: "food031Item0", localStorageValue: "img031food" },
-        { id: "food032Item0", localStorageValue: "img032food" },
-        { id: "food033Item0", localStorageValue: "img033food" },
-        { id: "food034Item0", localStorageValue: "img034food" },
-        { id: "food035Item0", localStorageValue: "img035food" },
-        { id: "food036Item0", localStorageValue: "img036food" },
-        { id: "food037Item0", localStorageValue: "img037food" },
-        { id: "food038Item0", localStorageValue: "img038food" },
-        { id: "food039Item0", localStorageValue: "img039food" },
-        { id: "food040Item0", localStorageValue: "img040food" },
-        { id: "food041Item0", localStorageValue: "img041food" },
-        { id: "food042Item0", localStorageValue: "img042food" },
-        { id: "food043Item0", localStorageValue: "img043food" },
-        { id: "food044Item0", localStorageValue: "img044food" },
-        { id: "food045Item0", localStorageValue: "img045food" },
-        { id: "food046Item0", localStorageValue: "img046food" },
-        { id: "food047Item0", localStorageValue: "img047food" },
-        { id: "food048Item0", localStorageValue: "img048food" },
-        { id: "food049Item0", localStorageValue: "img049food" },
-        { id: "food050Item0", localStorageValue: "img050food" },
-        { id: "food051Item0", localStorageValue: "img051food" },
-        { id: "food052Item0", localStorageValue: "img052food" },
-        { id: "food053Item0", localStorageValue: "img053food" },
-        { id: "food054Item0", localStorageValue: "img054food" },
-        { id: "food055Item0", localStorageValue: "img055food" },
-        { id: "food056Item0", localStorageValue: "img056food" },
-        { id: "food057Item0", localStorageValue: "img057food" },
-        { id: "food058Item0", localStorageValue: "img058food" },
-        { id: "food059Item0", localStorageValue: "img059food" },
-        { id: "food060Item0", localStorageValue: "img060food" },
-        { id: "food061Item0", localStorageValue: "img061food" },
-        { id: "food062Item0", localStorageValue: "img062food" },
-        { id: "food063Item0", localStorageValue: "img063food" },
-        { id: "food064Item0", localStorageValue: "img064food" },
-        { id: "food065Item0", localStorageValue: "img065food" },
-        { id: "food066Item0", localStorageValue: "img066food" },
-        { id: "food067Item0", localStorageValue: "img067food" },
-        { id: "food068Item0", localStorageValue: "img068food" },
-        { id: "food069Item0", localStorageValue: "img069food" },
-        { id: "food070Item0", localStorageValue: "img070food" },
-        { id: "food071Item0", localStorageValue: "img071food" },
-        { id: "food072Item0", localStorageValue: "img072food" },
-        { id: "food073Item0", localStorageValue: "img073food" },
-        { id: "food074Item0", localStorageValue: "img074food" },
-        { id: "food075Item0", localStorageValue: "img075food" },
-        { id: "food076Item0", localStorageValue: "img076food" },
-        { id: "food077Item0", localStorageValue: "img077food" }
-    ], 'className', "foodStyle");
-    if (settingsChanged) {
-        document.getElementById("applySettings").style.display = "block";
-        return;
+    let currentActiveElementValue = null;
+    for (const item of elementsMap) {
+      const element = document.getElementById(item.id);
+      if (element && ((inputType === 'className' && element.className.includes("active")) || (inputType === 'value' && element.value === item.localStorageValue))) {
+        currentActiveElementValue = item.localStorageValue;
+        break;
+      }
     }
-
-    // --- Difficulty Settings ---
-    checkSettingCategory([
-        { id: "normalDif", localStorageValue: "normal" },
-        { id: "hardDif", localStorageValue: "hard" },
-        { id: "hellDif", localStorageValue: "hell" }
-    ], 'className', "difficulty");
-    if (settingsChanged) {
-        document.getElementById("applySettings").style.display = "block";
-        return;
+    const storedValue = localStorage.getItem(localStorageKey);
+    if (currentActiveElementValue !== storedValue) {
+      settingsChanged = true;
     }
-
-    // --- Language Settings ---
-    checkSettingCategory([
-        { id: "languageEn", localStorageValue: "en" },
-        { id: "languageRu", localStorageValue: "ru" },
-        { id: "languageJa", localStorageValue: "ja" },
-        { id: "languageChs", localStorageValue: "chs" },
-        { id: "languageCht", localStorageValue: "cht" },
-        { id: "languageKo", localStorageValue: "ko" },
-        { id: "languageHe", localStorageValue: "he" },
-        { id: "languageDe", localStorageValue: "de" }
-    ], 'className', "lang");
-    if (settingsChanged) {
-        document.getElementById("applySettings").style.display = "block";
-        return;
-    }
-
-    // --- Controller Position Settings ---
-    checkSettingCategory([
-        { id: "ccLang", localStorageValue: "center" },
-        { id: "clLang", localStorageValue: "left" },
-        { id: "crLang", localStorageValue: "right" }
-    ], 'className', "controllerPosition");
-    if (settingsChanged) {
-        document.getElementById("applySettings").style.display = "block";
-        return;
-    }
-
-    // --- Controller Type Settings (using value instead of class) ---
-    checkSettingCategory([
-        { id: "cTypeChenger", localStorageValue: "dynamic" },
-        { id: "cTypeChenger", localStorageValue: "classic" },
-        { id: "cTypeChenger", localStorageValue: "swap" }
-    ], 'value', "controllerTypeDev");
-    if (settingsChanged) {
-        document.getElementById("applySettings").style.display = "block";
-        return;
-    }
-
-
-    // --- Movement Background Settings ---
-    checkSettingCategory([
-        { id: "pwAlang", localStorageValue: "playerWalk" },
-        { id: "mwAlang", localStorageValue: "alboradaWalk" },
-        { id: "mwBlang", localStorageValue: "andromedaWalk" },
-        { id: "mwClang", localStorageValue: "arthurWalk" },
-        { id: "mwDlang", localStorageValue: "auroraWalk" },
-        { id: "mwElang", localStorageValue: "boltusWalk" },
-        { id: "mwFlang", localStorageValue: "caramelWalk" },
-        { id: "mwGlang", localStorageValue: "doomlightlWalk" },
-        { id: "mwHlang", localStorageValue: "firefoxWalk" },
-        { id: "mwIlang", localStorageValue: "firestarWalk" },
-        { id: "mwJlang", localStorageValue: "flamencoWalk" },
-        { id: "mwKlang", localStorageValue: "gabrielWalk" },
-        { id: "mwLlang", localStorageValue: "hotsteelWalk" },
-        { id: "mwMlang", localStorageValue: "hurricaneWalk" },
-        { id: "mwNlang", localStorageValue: "jojoWalk" },
-        { id: "mwOlang", localStorageValue: "michaelWalk" },
-        { id: "mwPlang", localStorageValue: "neutronWalk" },
-        { id: "mwQlang", localStorageValue: "northernWalk" },
-        { id: "mwRlang", localStorageValue: "pulsarWalk" },
-        { id: "mwSlang", localStorageValue: "rangerWalk" },
-        { id: "mwTlang", localStorageValue: "ravenWalk" },
-        { id: "mwUlang", localStorageValue: "skylarkWalk" },
-        { id: "mwVlang", localStorageValue: "snowWalk" },
-        { id: "mwWlang", localStorageValue: "trioWalk" },
-        { id: "mwXlang", localStorageValue: "ventorusWalk" },
-        { id: "mwYlang", localStorageValue: "deathKnellWalk" },
-        { id: "mwZlang", localStorageValue: "dreadwolfWalk" },
-        { id: "mwAAlang", localStorageValue: "gaialWalk" },
-        { id: "mwABlang", localStorageValue: "guerillaHunterWalk" },
-        { id: "mwAClang", localStorageValue: "lancelotWalk" },
-        { id: "mwADlang", localStorageValue: "moonRabbitWalk" },
-        { id: "mwAElang", localStorageValue: "nebulaWalk" },
-        { id: "mwAFlang", localStorageValue: "shiranuiWalk" },
-        { id: "mwAGlang", localStorageValue: "skyfireWalk" },
-        { id: "mwAHlang", localStorageValue: "twilightWalk" },
-        { id: "mwAIlang", localStorageValue: "akashicWalk" },
-        { id: "mwAJlang", localStorageValue: "skyfallWalk" },
-        { id: "mwAKlang", localStorageValue: "tempestWalk" }
-    ], 'className', "movementbg");
-    if (settingsChanged) {
-        document.getElementById("applySettings").style.display = "block";
-        return;
-    }
-
-    // --- Loading Style Settings ---
-    checkSettingCategory([
-        { id: "loadClassicCon", localStorageValue: "classic" },
-        { id: "loadAnimeCon", localStorageValue: "anime" },
-        { id: "loadMikuCon", localStorageValue: "miku" },
-        { id: "loadNakanoCon", localStorageValue: "nakano" },
-        { id: "loadAnimeCon2", localStorageValue: "anime2" },
-        { id: "loadAnimeCon3", localStorageValue: "anime3" }
-    ], 'className', "loadingStyle");
-    if (settingsChanged) {
-        document.getElementById("applySettings").style.display = "block";
-        return;
-    }
-
-    // --- Final Decision ---
-    // If we reached here, no changes were detected in any category.
-    document.getElementById("applySettings").style.display = "none";
+  }
+  checkSettingCategory([
+    { id: "origoMap", localStorageValue: "imgOrigo" },
+    { id: "alphaMap2", localStorageValue: "imgAlpha2" },
+    { id: "alphaMap", localStorageValue: "imgAlpha" },
+    { id: "conBoard000img", localStorageValue: "img000board" },
+    { id: "conBoard001img", localStorageValue: "img001board" },
+    { id: "conBoard002img", localStorageValue: "img002board" },
+    { id: "conBoard003img", localStorageValue: "img003board" },
+    { id: "conBoard004img", localStorageValue: "img004board" },
+    { id: "conBoard005img", localStorageValue: "img005board" },
+    { id: "conBoard006img", localStorageValue: "img006board" },
+    { id: "conBoard007img", localStorageValue: "img007board" },
+    { id: "conBoard008img", localStorageValue: "img008board" },
+    { id: "conBoard009img", localStorageValue: "img009board" },
+    { id: "conBoard010img", localStorageValue: "img010board" },
+    { id: "conBoard011img", localStorageValue: "img011board" },
+    { id: "conBoard012img", localStorageValue: "img012board" },
+    { id: "conBoard013img", localStorageValue: "img013board" },
+    { id: "conBoard014img", localStorageValue: "img014board" },
+    { id: "conBoard015img", localStorageValue: "img015board" },
+    { id: "conBoard016img", localStorageValue: "img016board" },
+    { id: "conBoard017img", localStorageValue: "img017board" },
+    { id: "conBoard018img", localStorageValue: "img018board" },
+    { id: "conBoard019img", localStorageValue: "img019board" },
+    { id: "conBoard020img", localStorageValue: "img020board" },
+    { id: "conBoard021img", localStorageValue: "img021board" },
+    { id: "conBoard022img", localStorageValue: "img022board" },
+    { id: "conBoard023img", localStorageValue: "img023board" },
+    { id: "conBoard024img", localStorageValue: "img024board" },
+    { id: "conBoard025img", localStorageValue: "img025board" },
+    { id: "conBoard026img", localStorageValue: "img026board" },
+    { id: "conBoard027img", localStorageValue: "img027board" },
+    { id: "conBoard028img", localStorageValue: "img028board" },
+    { id: "conBoard029img", localStorageValue: "img029board" },
+    { id: "conBoard030img", localStorageValue: "img030board" },
+    { id: "conBoard031img", localStorageValue: "img031board" },
+    { id: "conBoard032img", localStorageValue: "img032board" },
+    { id: "conBoard033img", localStorageValue: "img033board" },
+    { id: "conBoard034img", localStorageValue: "img034board" },
+    { id: "conBoard035img", localStorageValue: "img035board" },
+    { id: "conBoard036img", localStorageValue: "img036board" },
+    { id: "conBoard037img", localStorageValue: "img037board" },
+    { id: "conBoard038img", localStorageValue: "img038board" },
+    { id: "conBoard039img", localStorageValue: "img039board" },
+    { id: "conBoard040img", localStorageValue: "img040board" },
+    { id: "conBoard041img", localStorageValue: "img041board" },
+    { id: "conBoard042img", localStorageValue: "img042board" },
+    { id: "conBoard043img", localStorageValue: "img043board" },
+    { id: "conBoard044img", localStorageValue: "img044board" },
+    { id: "conBoard045img", localStorageValue: "img045board" },
+    { id: "conBoard046img", localStorageValue: "img046board" },
+    { id: "conBoard047img", localStorageValue: "img047board" },
+    { id: "conBoard048img", localStorageValue: "img048board" },
+    { id: "conBoard049img", localStorageValue: "img049board" },
+    { id: "conBoard050img", localStorageValue: "img050board" },
+    { id: "conBoard051img", localStorageValue: "img051board" },
+    { id: "conBoard052img", localStorageValue: "img052board" },
+    { id: "conBoard053img", localStorageValue: "img053board" },
+    { id: "conBoard054img", localStorageValue: "img054board" },
+    { id: "conBoard055img", localStorageValue: "img055board" },
+    { id: "conBoard056img", localStorageValue: "img056board" },
+    { id: "conBoard057img", localStorageValue: "img057board" },
+    { id: "conBoard058img", localStorageValue: "img058board" },
+    { id: "conBoard059img", localStorageValue: "img059board" },
+    { id: "conBoard060img", localStorageValue: "img060board" },
+    { id: "conBoard061img", localStorageValue: "img061board" },
+    { id: "conBoard062img", localStorageValue: "img062board" },
+    { id: "conBoard063img", localStorageValue: "img063board" },
+    { id: "conBoard064img", localStorageValue: "img064board" },
+    { id: "conBoard065img", localStorageValue: "img065board" },
+    { id: "conBoard066img", localStorageValue: "img066board" },
+    { id: "conBoard067img", localStorageValue: "img067board" },
+    { id: "conBoard068img", localStorageValue: "img068board" },
+    { id: "conBoard069img", localStorageValue: "img069board" },
+    { id: "conBoard070img", localStorageValue: "img070board" },
+    { id: "conBoard071img", localStorageValue: "img071board" },
+    { id: "conBoard072img", localStorageValue: "img072board" },
+    { id: "conBoard073img", localStorageValue: "img073board" }
+  ], 'className', "boardStyle");
+  if (settingsChanged) {
+    document.getElementById("applySettings").style.display = "block";
+    return;
+  }
+  checkSettingCategory([
+    { id: "meowItem", localStorageValue: "imgMeow" },
+    { id: "goldItem", localStorageValue: "imgGold" },
+    { id: "alphacoinItem", localStorageValue: "imgAlphacoin" },
+    { id: "crystalItem", localStorageValue: "imgCrystal" },
+    { id: "ticketItem", localStorageValue: "imgTicket" },
+    { id: "cTicketItem", localStorageValue: "imgCticket" },
+    { id: "pTicketItem", localStorageValue: "imgPticket" },
+    { id: "pTicket2Item", localStorageValue: "imgPticket2" },
+    { id: "virtualTokenItem", localStorageValue: "imgVirtualToken" },
+    { id: "food000Item0", localStorageValue: "img000food" },
+    { id: "food001Item0", localStorageValue: "img001food" },
+    { id: "food002Item0", localStorageValue: "img002food" },
+    { id: "food003Item0", localStorageValue: "img003food" },
+    { id: "food004Item0", localStorageValue: "img004food" },
+    { id: "food005Item0", localStorageValue: "img005food" },
+    { id: "food006Item0", localStorageValue: "img006food" },
+    { id: "food007Item0", localStorageValue: "img007food" },
+    { id: "food008Item0", localStorageValue: "img008food" },
+    { id: "food009Item0", localStorageValue: "img009food" },
+    { id: "food010Item0", localStorageValue: "img010food" },
+    { id: "food011Item0", localStorageValue: "img011food" },
+    { id: "food012Item0", localStorageValue: "img012food" },
+    { id: "food013Item0", localStorageValue: "img013food" },
+    { id: "food014Item0", localStorageValue: "img014food" },
+    { id: "food015Item0", localStorageValue: "img015food" },
+    { id: "food016Item0", localStorageValue: "img016food" },
+    { id: "food017Item0", localStorageValue: "img017food" },
+    { id: "food018Item0", localStorageValue: "img018food" },
+    { id: "food019Item0", localStorageValue: "img019food" },
+    { id: "food020Item0", localStorageValue: "img020food" },
+    { id: "food021Item0", localStorageValue: "img021food" },
+    { id: "food022Item0", localStorageValue: "img022food" },
+    { id: "food023Item0", localStorageValue: "img023food" },
+    { id: "food024Item0", localStorageValue: "img024food" },
+    { id: "food025Item0", localStorageValue: "img025food" },
+    { id: "food026Item0", localStorageValue: "img026food" },
+    { id: "food027Item0", localStorageValue: "img027food" },
+    { id: "food028Item0", localStorageValue: "img028food" },
+    { id: "food029Item0", localStorageValue: "img029food" },
+    { id: "food030Item0", localStorageValue: "img030food" },
+    { id: "food031Item0", localStorageValue: "img031food" },
+    { id: "food032Item0", localStorageValue: "img032food" },
+    { id: "food033Item0", localStorageValue: "img033food" },
+    { id: "food034Item0", localStorageValue: "img034food" },
+    { id: "food035Item0", localStorageValue: "img035food" },
+    { id: "food036Item0", localStorageValue: "img036food" },
+    { id: "food037Item0", localStorageValue: "img037food" },
+    { id: "food038Item0", localStorageValue: "img038food" },
+    { id: "food039Item0", localStorageValue: "img039food" },
+    { id: "food040Item0", localStorageValue: "img040food" },
+    { id: "food041Item0", localStorageValue: "img041food" },
+    { id: "food042Item0", localStorageValue: "img042food" },
+    { id: "food043Item0", localStorageValue: "img043food" },
+    { id: "food044Item0", localStorageValue: "img044food" },
+    { id: "food045Item0", localStorageValue: "img045food" },
+    { id: "food046Item0", localStorageValue: "img046food" },
+    { id: "food047Item0", localStorageValue: "img047food" },
+    { id: "food048Item0", localStorageValue: "img048food" },
+    { id: "food049Item0", localStorageValue: "img049food" },
+    { id: "food050Item0", localStorageValue: "img050food" },
+    { id: "food051Item0", localStorageValue: "img051food" },
+    { id: "food052Item0", localStorageValue: "img052food" },
+    { id: "food053Item0", localStorageValue: "img053food" },
+    { id: "food054Item0", localStorageValue: "img054food" },
+    { id: "food055Item0", localStorageValue: "img055food" },
+    { id: "food056Item0", localStorageValue: "img056food" },
+    { id: "food057Item0", localStorageValue: "img057food" },
+    { id: "food058Item0", localStorageValue: "img058food" },
+    { id: "food059Item0", localStorageValue: "img059food" },
+    { id: "food060Item0", localStorageValue: "img060food" },
+    { id: "food061Item0", localStorageValue: "img061food" },
+    { id: "food062Item0", localStorageValue: "img062food" },
+    { id: "food063Item0", localStorageValue: "img063food" },
+    { id: "food064Item0", localStorageValue: "img064food" },
+    { id: "food065Item0", localStorageValue: "img065food" },
+    { id: "food066Item0", localStorageValue: "img066food" },
+    { id: "food067Item0", localStorageValue: "img067food" },
+    { id: "food068Item0", localStorageValue: "img068food" },
+    { id: "food069Item0", localStorageValue: "img069food" },
+    { id: "food070Item0", localStorageValue: "img070food" },
+    { id: "food071Item0", localStorageValue: "img071food" },
+    { id: "food072Item0", localStorageValue: "img072food" },
+    { id: "food073Item0", localStorageValue: "img073food" },
+    { id: "food074Item0", localStorageValue: "img074food" },
+    { id: "food075Item0", localStorageValue: "img075food" },
+    { id: "food076Item0", localStorageValue: "img076food" },
+    { id: "food077Item0", localStorageValue: "img077food" }
+  ], 'className', "foodStyle");
+  if (settingsChanged) {
+    document.getElementById("applySettings").style.display = "block";
+    return;
+  }
+  checkSettingCategory([
+    { id: "normalDif", localStorageValue: "normal" },
+    { id: "hardDif", localStorageValue: "hard" },
+    { id: "hellDif", localStorageValue: "hell" }
+  ], 'className', "difficulty");
+  if (settingsChanged) {
+    document.getElementById("applySettings").style.display = "block";
+    return;
+  }
+  checkSettingCategory([
+    { id: "languageEn", localStorageValue: "en" },
+    { id: "languageRu", localStorageValue: "ru" },
+    { id: "languageJa", localStorageValue: "ja" },
+    { id: "languageChs", localStorageValue: "chs" },
+    { id: "languageCht", localStorageValue: "cht" },
+    { id: "languageKo", localStorageValue: "ko" },
+    { id: "languageHe", localStorageValue: "he" },
+    { id: "languageDe", localStorageValue: "de" }
+  ], 'className', "lang");
+  if (settingsChanged) {
+    document.getElementById("applySettings").style.display = "block";
+    return;
+  }
+  checkSettingCategory([
+    { id: "ccLang", localStorageValue: "center" },
+    { id: "clLang", localStorageValue: "left" },
+    { id: "crLang", localStorageValue: "right" }
+  ], 'className', "controllerPosition");
+  if (settingsChanged) {
+    document.getElementById("applySettings").style.display = "block";
+    return;
+  }
+  checkSettingCategory([
+    { id: "cTypeChenger", localStorageValue: "dynamic" },
+    { id: "cTypeChenger", localStorageValue: "classic" },
+    { id: "cTypeChenger", localStorageValue: "swap" }
+  ], 'value', "controllerTypeDev");
+  if (settingsChanged) {
+    document.getElementById("applySettings").style.display = "block";
+    return;
+  }
+  checkSettingCategory([
+    { id: "pwAlang", localStorageValue: "playerWalk" },
+    { id: "mwAlang", localStorageValue: "alboradaWalk" },
+    { id: "mwBlang", localStorageValue: "andromedaWalk" },
+    { id: "mwClang", localStorageValue: "arthurWalk" },
+    { id: "mwDlang", localStorageValue: "auroraWalk" },
+    { id: "mwElang", localStorageValue: "boltusWalk" },
+    { id: "mwFlang", localStorageValue: "caramelWalk" },
+    { id: "mwGlang", localStorageValue: "doomlightlWalk" },
+    { id: "mwHlang", localStorageValue: "firefoxWalk" },
+    { id: "mwIlang", localStorageValue: "firestarWalk" },
+    { id: "mwJlang", localStorageValue: "flamencoWalk" },
+    { id: "mwKlang", localStorageValue: "gabrielWalk" },
+    { id: "mwLlang", localStorageValue: "hotsteelWalk" },
+    { id: "mwMlang", localStorageValue: "hurricaneWalk" },
+    { id: "mwNlang", localStorageValue: "jojoWalk" },
+    { id: "mwOlang", localStorageValue: "michaelWalk" },
+    { id: "mwPlang", localStorageValue: "neutronWalk" },
+    { id: "mwQlang", localStorageValue: "northernWalk" },
+    { id: "mwRlang", localStorageValue: "pulsarWalk" },
+    { id: "mwSlang", localStorageValue: "rangerWalk" },
+    { id: "mwTlang", localStorageValue: "ravenWalk" },
+    { id: "mwUlang", localStorageValue: "skylarkWalk" },
+    { id: "mwVlang", localStorageValue: "snowWalk" },
+    { id: "mwWlang", localStorageValue: "trioWalk" },
+    { id: "mwXlang", localStorageValue: "ventorusWalk" },
+    { id: "mwYlang", localStorageValue: "deathKnellWalk" },
+    { id: "mwZlang", localStorageValue: "dreadwolfWalk" },
+    { id: "mwAAlang", localStorageValue: "gaialWalk" },
+    { id: "mwABlang", localStorageValue: "guerillaHunterWalk" },
+    { id: "mwAClang", localStorageValue: "lancelotWalk" },
+    { id: "mwADlang", localStorageValue: "moonRabbitWalk" },
+    { id: "mwAElang", localStorageValue: "nebulaWalk" },
+    { id: "mwAFlang", localStorageValue: "shiranuiWalk" },
+    { id: "mwAGlang", localStorageValue: "skyfireWalk" },
+    { id: "mwAHlang", localStorageValue: "twilightWalk" },
+    { id: "mwAIlang", localStorageValue: "akashicWalk" },
+    { id: "mwAJlang", localStorageValue: "skyfallWalk" },
+    { id: "mwAKlang", localStorageValue: "tempestWalk" }
+  ], 'className', "movementbg");
+  if (settingsChanged) {
+    document.getElementById("applySettings").style.display = "block";
+    return;
+  }
+  checkSettingCategory([
+    { id: "loadClassicCon", localStorageValue: "classic" },
+    { id: "loadAnimeCon", localStorageValue: "anime" },
+    { id: "loadMikuCon", localStorageValue: "miku" },
+    { id: "loadNakanoCon", localStorageValue: "nakano" },
+    { id: "loadAnimeCon2", localStorageValue: "anime2" },
+    { id: "loadAnimeCon3", localStorageValue: "anime3" }
+  ], 'className', "loadingStyle");
+  if (settingsChanged) {
+    document.getElementById("applySettings").style.display = "block";
+    return;
+  }
+  document.getElementById("applySettings").style.display = "none";
 }
 window.addEventListener('load', function() {
   languagesContents();
