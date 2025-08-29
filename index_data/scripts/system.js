@@ -105,24 +105,9 @@ if(localStorage.getItem("lang") === "en") {
 if(localStorage.getItem("lang") === "ru") {
   highScoreElement.innerText = `Высокий счет: ${highScore}`;
 }else
-if(localStorage.getItem("lang") === "ja") {
-  highScoreElement.innerText = `ハイスコ​​ア: ${highScore}`;
-}else
-if(localStorage.getItem("lang") === "chs") {
-  highScoreElement.innerText = `高分： ${highScore}`;
-}else
-if(localStorage.getItem("lang") === "cht") {
-  highScoreElement.innerText = `高分： ${highScore}`;
-}else
-if(localStorage.getItem("lang") === "ko") {
-  highScoreElement.innerText = `높은 점수: ${highScore}`;
-}else
 if(localStorage.getItem("lang") === "he") {
   highScoreElement.innerText = `ציון גבוהה: ${highScore}`;
   highScoreElement.style.textAlign = "right";
-}else
-if(localStorage.getItem("lang") === "de") {
-  highScoreElement.innerText = `hohes punktzahl: ${highScore}`;
 };
 const updateFoodPosition = () => {
   foodX = Math.floor(Math.random() * 30) + 1;
@@ -143,24 +128,9 @@ const handleGameOver = () => {
     if(localStorage.getItem("lang") === "ru") {
       document.getElementById("loseNewRecordScore").innerHTML = "Так близко к новому рекорду!";
     }else
-    if(localStorage.getItem("lang") === "ja") {
-      document.getElementById("loseNewRecordScore").innerHTML = "新記録にかなり近づいています!";
-    }else
-    if(localStorage.getItem("lang") === "chs") {
-      document.getElementById("loseNewRecordScore").innerHTML = "距离新纪录仅一步之遥！";
-    }else
-    if(localStorage.getItem("lang") === "cht") {
-      document.getElementById("loseNewRecordScore").innerHTML = "距離新紀錄只有一步之遙！";
-    }else
-    if(localStorage.getItem("lang") === "ko") {
-      document.getElementById("loseNewRecordScore").innerHTML = "새로운 기록에 정말 가까워요!";
-    }else
     if(localStorage.getItem("lang") === "he") {
       document.getElementById("loseNewRecordScore").innerHTML = "קרוב להשג חדש!";
       document.getElementById("loseNewRecordScore").style.direction = "rtl";
-    }else
-    if(localStorage.getItem("lang") === "de") {
-      document.getElementById("loseNewRecordScore").innerHTML = "so nah dran, einen neuen Rekord aufzustellen!";
     }
   }else
   if(score >= localStorage.getItem("steelScore")) {
@@ -170,24 +140,9 @@ const handleGameOver = () => {
     if(localStorage.getItem("lang") === "ru") {
       document.getElementById("loseNewRecordScore").innerHTML = "Поздравляем, вы установили новый рекорд!";
     }else
-    if(localStorage.getItem("lang") === "ja") {
-      document.getElementById("loseNewRecordScore").innerHTML = "おめでとうございます、新記録を達成しました！";
-    }else
-    if(localStorage.getItem("lang") === "chs") {
-      document.getElementById("loseNewRecordScore").innerHTML = "恭喜您，创造了新纪录！";
-    }else
-    if(localStorage.getItem("lang") === "cht") {
-      document.getElementById("loseNewRecordScore").innerHTML = "恭喜您，創造了新紀錄！";
-    }else
-    if(localStorage.getItem("lang") === "ko") {
-      document.getElementById("loseNewRecordScore").innerHTML = "축하합니다! 새로운 기록을 달성했습니다!";
-    }else
     if(localStorage.getItem("lang") === "he") {
       document.getElementById("loseNewRecordScore").innerHTML = "מזל טוב, השגת שיא חדש!";
       document.getElementById("loseNewRecordScore").style.direction = "rtl";
-    }else
-    if(localStorage.getItem("lang") === "de") {
-      document.getElementById("loseNewRecordScore").innerHTML = "Glückwunsch, Sie haben einen neuen Rekord aufgestellt!";
     }
   };
   if(localStorage.getItem("movementbg") === "playerWalk") {
@@ -513,31 +468,11 @@ const initGame = () => {
       scoreElement.innerText = `Счет: ${score}`;
       highScoreElement.innerText = `Высокий счет: ${highScore}`;
     }else
-    if(localStorage.getItem("lang") === "ja") {
-      scoreElement.innerText = `チェック： ${score}`;
-      highScoreElement.innerText = `ハイスコ​​ア: ${highScore}`;
-    }else
-    if(localStorage.getItem("lang") === "chs") {
-      scoreElement.innerText = `分数： ${score}`;
-      highScoreElement.innerText = `高分： ${highScore}`;
-    }else
-    if(localStorage.getItem("lang") === "cht") {
-      scoreElement.innerText = `分數： ${score}`;
-      highScoreElement.innerText = `高分： ${highScore}`;
-    }else
-    if(localStorage.getItem("lang") === "ko") {
-      scoreElement.innerText = `점수: ${score}`;
-      highScoreElement.innerText = `높은 점수: ${highScore}`;
-    }else
     if(localStorage.getItem("lang") === "he") {
       scoreElement.innerText = `ציון: ${score}`;
       highScoreElement.innerText = `ציון גבוהה: ${highScore}`;
       document.getElementById("getscore").style.textAlign = "right";
       document.getElementById("gethighscore").style.textAlign = "right";
-    }else
-    if(localStorage.getItem("lang") === "de") {
-      scoreElement.innerText = `punktzahl: ${score}`;
-      highScoreElement.innerText = `hohes punktzahl: ${highScore}`;
     }
     if(localStorage.getItem("foodStyle") === "imgMeow") {
       meaw_token_item++;

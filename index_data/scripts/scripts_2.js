@@ -15,23 +15,8 @@ document.getElementById("reset").onclick = function() {
   if(localStorage.getItem("lang") === "ru") {
     scoreElement.innerText = `Счет: ${score}`;
   }else
-  if(localStorage.getItem("lang") === "ja") {
-    scoreElement.innerText = `チェック： ${score}`;
-  }else
-  if(localStorage.getItem("lang") === "chs") {
-    scoreElement.innerText = `分数： ${score}`;
-  }else
-  if(localStorage.getItem("lang") === "cht") {
-    scoreElement.innerText = `分數： ${score}`;
-  }else
-  if(localStorage.getItem("lang") === "ko") {
-    scoreElement.innerText = `점수: ${score}`;
-  }else
   if(localStorage.getItem("lang") === "he") {
     scoreElement.innerText = `ציון: ${score}`;
-  }else
-  if(localStorage.getItem("lang") === "de") {
-    scoreElement.innerText = `punktzahl: ${score}`;
   };
   localStorage.setItem("steelScore", localStorage.getItem("high-score"));
   fireworksIntervalId = setInterval(playFireworksSounds, 1000);
@@ -88,86 +73,6 @@ function pauseGame() {
       }
       alertconfirm.value = "Продолжать";
     }else
-    if(localStorage.getItem("lang") === "ja") {
-      if(navigator.userAgent.match(/mobile/i)) {
-        document.getElementById("alertText").innerHTML = "ゲームは一時停止されています。続行するには「再開」をタップしてください。";
-      }else{
-        document.getElementById("alertText").innerHTML = "ゲームは一時停止されています。続行するには「続行」をクリックしてください。";
-      };
-      if(velocityY === -1) {
-        document.getElementById("alertText").innerHTML += "<br>" + "上へ進み続けます。";
-      }else
-      if(velocityY === 1) {
-        document.getElementById("alertText").innerHTML += "<br>" + "下へ進み続けます。";
-      }else
-      if(velocityX === -1) {
-        document.getElementById("alertText").innerHTML += "<br>" + "左へ進み続けます。";
-      }else
-      if(velocityX === 1) {
-        document.getElementById("alertText").innerHTML += "<br>" + "右へ進み続けます。";
-      }
-      alertconfirm.value = "続く";
-    }else
-    if(localStorage.getItem("lang") === "chs") {
-      if(navigator.userAgent.match(/mobile/i)) {
-        document.getElementById("alertText").innerHTML = "游戏暂停，按“继续”继续。";
-      }else{
-        document.getElementById("alertText").innerHTML = "游戏暂停，点击“继续”继续。";
-      };
-      if(velocityY === -1) {
-        document.getElementById("alertText").innerHTML += "<br>" + "你继续向上。";
-      }else
-      if(velocityY === 1) {
-        document.getElementById("alertText").innerHTML += "<br>" + "你继续向下。";
-      }else
-      if(velocityX === -1) {
-        document.getElementById("alertText").innerHTML += "<br>" + "你继续向左。";
-      }else
-      if(velocityX === 1) {
-        document.getElementById("alertText").innerHTML += "<br>" + "你继续向右。";
-      }
-      alertconfirm.value = "继续";
-    }else
-    if(localStorage.getItem("lang") === "cht") {
-      if(navigator.userAgent.match(/mobile/i)) {
-        document.getElementById("alertText").innerHTML = "遊戲暫停，按「繼續」繼續。";
-      }else{
-        document.getElementById("alertText").innerHTML = "遊戲暫停，點選「繼續」繼續。";
-      };
-      if(velocityY === -1) {
-        document.getElementById("alertText").innerHTML += "<br>" + "你繼續往上走吧。";
-      }else
-      if(velocityY === 1) {
-        document.getElementById("alertText").innerHTML += "<br>" + "你繼續往下走吧。";
-      }else
-      if(velocityX === -1) {
-        document.getElementById("alertText").innerHTML += "<br>" + "你繼續往左走。";
-      }else
-      if(velocityX === 1) {
-        document.getElementById("alertText").innerHTML += "<br>" + "你繼續做對吧。";
-      }
-      alertconfirm.value = "繼續";
-    }else
-    if(localStorage.getItem("lang") === "ko") {
-      if(navigator.userAgent.match(/mobile/i)) {
-        document.getElementById("alertText").innerHTML = "게임이 일시 정지되었습니다. 계속하려면 ''계속''을 누르세요.";
-      }else{
-        document.getElementById("alertText").innerHTML = "게임이 일시 정지되었습니다. 계속하려면 ''계속''을 클릭하세요.";
-      };
-      if(velocityY === -1) {
-        document.getElementById("alertText").innerHTML += "<br>" + "계속 위로 가세요.";
-      }else
-      if(velocityY === 1) {
-        document.getElementById("alertText").innerHTML += "<br>" + "계속 아래로 가세요.";
-      }else
-      if(velocityX === -1) {
-        document.getElementById("alertText").innerHTML += "<br>" + "계속 왼쪽으로 가세요.";
-      }else
-      if(velocityX === 1) {
-        document.getElementById("alertText").innerHTML += "<br>" + "계속 오른쪽으로 가세요.";
-      }
-      alertconfirm.value = "계속하다";
-    }else
     if(localStorage.getItem("lang") === "he") {
       if(navigator.userAgent.match(/mobile/i)) {
         document.getElementById("alertText").innerHTML = "משחק נעצר, גע ''המשך'' בכדי להמשיך.";
@@ -187,26 +92,6 @@ function pauseGame() {
         document.getElementById("alertText").innerHTML += "<br>" + "אתם תמשיכו ימינה.";
       }
       alertconfirm.value = "המשך";
-    }else
-    if(localStorage.getItem("lang") === "de") {
-      if(navigator.userAgent.match(/mobile/i)) {
-        document.getElementById("alertText").innerHTML = "Spiel pausiert. Drücken Sie auf „Weiter“, um fortzufahren.";
-      }else{
-        document.getElementById("alertText").innerHTML = "Spiel pausiert. Klicken Sie auf „Weiter“, um fortzufahren.";
-      };
-      if(velocityY === -1) {
-        document.getElementById("alertText").innerHTML += "<br>" + "Du gehst weiter nach oben.";
-      }else
-      if(velocityY === 1) {
-        document.getElementById("alertText").innerHTML += "<br>" + "Du gehst weiter nach unten.";
-      }else
-      if(velocityX === -1) {
-        document.getElementById("alertText").innerHTML += "<br>" + "Du gehst weiter nach links.";
-      }else
-      if(velocityX === 1) {
-        document.getElementById("alertText").innerHTML += "<br>" + "Du gehst weiter nach rechts.";
-      }
-      alertconfirm.value = "Weiter";
     }
     alertconfirm.onclick = function() {
       document.getElementById('chechboxPausing').click();
@@ -220,23 +105,8 @@ function pauseGame() {
     if(localStorage.getItem("lang") === "ru") {
       document.getElementById("alertText").innerHTML = "Готово продолжить через...";
     }else
-    if(localStorage.getItem("lang") === "ja") {
-      document.getElementById("alertText").innerHTML = "続行する準備ができました...";
-    }else
-    if(localStorage.getItem("lang") === "chs") {
-      document.getElementById("alertText").innerHTML = "准备继续...";
-    }else
-    if(localStorage.getItem("lang") === "cht") {
-      document.getElementById("alertText").innerHTML = "準備繼續...";
-    }else
-    if(localStorage.getItem("lang") === "ko") {
-      document.getElementById("alertText").innerHTML = "계속할 준비가 되었습니다...";
-    }else
     if(localStorage.getItem("lang") === "he") {
       document.getElementById("alertText").innerHTML = "מוכן להמשיך בעוד...";
-    }else
-    if(localStorage.getItem("lang") === "de") {
-      document.getElementById("alertText").innerHTML = "Bereit, weiterzumachen in...";
     }
     setTimeout(() => {
       document.getElementById("alertText").innerHTML = "3";
@@ -1789,31 +1659,9 @@ function levelsSystem() {
       document.getElementById("leaguelevel").innerHTML = "5 (МАКС)";
       document.getElementById("subleaguelevel").innerHTML = "5 (МАКС)";
     }else
-    if(localStorage.getItem("lang") === "ja") {
-      document.getElementById("leaguelevel").innerHTML = "5 （マックス）";
-      document.getElementById("subleaguelevel").innerHTML = "5 （マックス）";
-    }else
-    if(localStorage.getItem("lang") === "chs") {
-      document.getElementById("leaguelevel").innerHTML = "5 （最大限度）";
-      document.getElementById("subleaguelevel").innerHTML = "5 （最大限度）";
-    }else
-    if(localStorage.getItem("lang") === "cht") {
-      document.getElementById("leaguelevel").innerHTML = "5 （最大限度）";
-      document.getElementById("subleaguelevel").innerHTML = "5 （最大限度）";
-    }else
-    if(localStorage.getItem("lang") === "ko") {
-      document.getElementById("leaguelevel").innerHTML = "5 (MAX)";
-      document.getElementById("subleaguelevel").innerHTML = "5 (MAX)";
-      document.getElementById("leagueType").innerHTML = "알파 나이트 (최대)";
-      document.getElementById("subleagueType").innerHTML = "알파 나이트 (최대)";
-    }else
     if(localStorage.getItem("lang") === "he") {
       document.getElementById("leaguelevel").innerHTML = "5 (מקס)";
       document.getElementById("subleaguelevel").innerHTML = "5 (מקס)";
-    }else
-    if(localStorage.getItem("lang") === "de") {
-      document.getElementById("leaguelevel").innerHTML = "5 (MAX)";
-      document.getElementById("subleaguelevel").innerHTML = "5 (MAX)";
     }
   }
 }
@@ -1830,29 +1678,9 @@ function leagueSystem() {
       document.getElementById("leagueType").innerHTML = "Нет лиге";
       document.getElementById("subleagueType").innerHTML = "Нет лиге";
     }else
-    if(localStorage.getItem("lang") === "ja") {
-      document.getElementById("leagueType").innerHTML = "非リーグ";
-      document.getElementById("subleagueType").innerHTML = "非リーグ";
-    }else
-    if(localStorage.getItem("lang") === "chs") {
-      document.getElementById("leagueType").innerHTML = "非联赛";
-      document.getElementById("subleagueType").innerHTML = "非联赛";
-    }else
-    if(localStorage.getItem("lang") === "cht") {
-      document.getElementById("leagueType").innerHTML = "非聯賽";
-      document.getElementById("subleagueType").innerHTML = "非聯賽";
-    }else
-    if(localStorage.getItem("lang") === "ko") {
-      document.getElementById("leagueType").innerHTML = "비리그";
-      document.getElementById("subleagueType").innerHTML = "비리그";
-    }else
     if(localStorage.getItem("lang") === "he") {
       document.getElementById("leagueType").innerHTML = "לא בליגה";
       document.getElementById("subleagueType").innerHTML = "לא בליגה";
-    }else
-    if(localStorage.getItem("lang") === "de") {
-      document.getElementById("leagueType").innerHTML = "Nicht-Liga";
-      document.getElementById("subleagueType").innerHTML = "Nicht-Liga";
     }
   }else
   if(localStorage.getItem("high-score") == "1" || localStorage.getItem("high-score") == "2" || localStorage.getItem("high-score") == "3" || localStorage.getItem("high-score") == "4" || localStorage.getItem("high-score") == "5" || localStorage.getItem("high-score") == "6" || localStorage.getItem("high-score") == "7" || localStorage.getItem("high-score") == "8" || localStorage.getItem("high-score") == "9" || localStorage.getItem("high-score") == "10") {
@@ -1868,29 +1696,9 @@ function leagueSystem() {
       document.getElementById("leagueType").innerHTML = "Бронзовая лига";
       document.getElementById("subleagueType").innerHTML = "Бронзовая лига";
     }else
-    if(localStorage.getItem("lang") === "ja") {
-      document.getElementById("leagueType").innerHTML = "ブロンズリーグ";
-      document.getElementById("subleagueType").innerHTML = "ブロンズリーグ";
-    }else
-    if(localStorage.getItem("lang") === "chs") {
-      document.getElementById("leagueType").innerHTML = "青铜联赛";
-      document.getElementById("subleagueType").innerHTML = "青铜联赛";
-    }else
-    if(localStorage.getItem("lang") === "cht") {
-      document.getElementById("leagueType").innerHTML = "青銅聯賽";
-      document.getElementById("subleagueType").innerHTML = "青銅聯賽";
-    }else
-    if(localStorage.getItem("lang") === "ko") {
-      document.getElementById("leagueType").innerHTML = "브론즈 리그";
-      document.getElementById("subleagueType").innerHTML = "브론즈 리그";
-    }else
     if(localStorage.getItem("lang") === "he") {
       document.getElementById("leagueType").innerHTML = "ליגת הארד";
       document.getElementById("subleagueType").innerHTML = "ליגת הארד";
-    }else
-    if(localStorage.getItem("lang") === "de") {
-      document.getElementById("leagueType").innerHTML = "Bronze-Liga";
-      document.getElementById("subleagueType").innerHTML = "Bronze-Liga";
     }
     star.classList.remove("null-league");
     substar.classList.remove("null-league");
@@ -1910,29 +1718,9 @@ function leagueSystem() {
       document.getElementById("leagueType").innerHTML = "Серебряная лига";
       document.getElementById("subleagueType").innerHTML = "Серебряная лига";
     }else
-    if(localStorage.getItem("lang") === "ja") {
-      document.getElementById("leagueType").innerHTML = "シルバーリーグ";
-      document.getElementById("subleagueType").innerHTML = "シルバーリーグ";
-    }else
-    if(localStorage.getItem("lang") === "chs") {
-      document.getElementById("leagueType").innerHTML = "银级联赛";
-      document.getElementById("subleagueType").innerHTML = "银级联赛";
-    }else
-    if(localStorage.getItem("lang") === "cht") {
-      document.getElementById("leagueType").innerHTML = "銀牌聯賽";
-      document.getElementById("subleagueType").innerHTML = "銀牌聯賽";
-    }else
-    if(localStorage.getItem("lang") === "ko") {
-      document.getElementById("leagueType").innerHTML = "실버 리그";
-      document.getElementById("subleagueType").innerHTML = "실버 리그";
-    }else
     if(localStorage.getItem("lang") === "he") {
       document.getElementById("leagueType").innerHTML = "ליגת הכסף";
       document.getElementById("subleagueType").innerHTML = "ליגת הכסף";
-    }else
-    if(localStorage.getItem("lang") === "de") {
-      document.getElementById("leagueType").innerHTML = "Silberliga";
-      document.getElementById("subleagueType").innerHTML = "Silberliga";
     }
     star.classList.remove("bronze");
     substar.classList.remove("bronze");
@@ -1952,29 +1740,9 @@ function leagueSystem() {
       document.getElementById("leagueType").innerHTML = "Золотая лига";
       document.getElementById("subleagueType").innerHTML = "Золотая лига";
     }else
-    if(localStorage.getItem("lang") === "ja") {
-      document.getElementById("leagueType").innerHTML = "ゴールドリーグ";
-      document.getElementById("subleagueType").innerHTML = "ゴールドリーグ";
-    }else
-    if(localStorage.getItem("lang") === "chs") {
-      document.getElementById("leagueType").innerHTML = "金牌联赛";
-      document.getElementById("subleagueType").innerHTML = "金牌联赛";
-    }else
-    if(localStorage.getItem("lang") === "cht") {
-      document.getElementById("leagueType").innerHTML = "金牌聯賽";
-      document.getElementById("subleagueType").innerHTML = "金牌聯賽";
-    }else
-    if(localStorage.getItem("lang") === "ko") {
-      document.getElementById("leagueType").innerHTML = "골드 리그";
-      document.getElementById("subleagueType").innerHTML = "골드 리그";
-    }else
     if(localStorage.getItem("lang") === "he") {
       document.getElementById("leagueType").innerHTML = "ליגת הזהב";
       document.getElementById("subleagueType").innerHTML = "ליגת הזהב";
-    }else
-    if(localStorage.getItem("lang") === "de") {
-      document.getElementById("leagueType").innerHTML = "Goldene Liga";
-      document.getElementById("subleagueType").innerHTML = "Goldene Liga";
     }
     star.classList.remove("silver");
     substar.classList.remove("silver");
@@ -1994,29 +1762,9 @@ function leagueSystem() {
       document.getElementById("leagueType").innerHTML = "Платиновая лига";
       document.getElementById("subleagueType").innerHTML = "Платиновая лига";
     }else
-    if(localStorage.getItem("lang") === "ja") {
-      document.getElementById("leagueType").innerHTML = "プラチナリーグ";
-      document.getElementById("subleagueType").innerHTML = "プラチナリーグ";
-    }else
-    if(localStorage.getItem("lang") === "chs") {
-      document.getElementById("leagueType").innerHTML = "白金联赛";
-      document.getElementById("subleagueType").innerHTML = "白金联赛";
-    }else
-    if(localStorage.getItem("lang") === "cht") {
-      document.getElementById("leagueType").innerHTML = "白金聯賽";
-      document.getElementById("subleagueType").innerHTML = "白金聯賽";
-    }else
-    if(localStorage.getItem("lang") === "ko") {
-      document.getElementById("leagueType").innerHTML = "플래티넘 리그";
-      document.getElementById("subleagueType").innerHTML = "플래티넘 리그";
-    }else
     if(localStorage.getItem("lang") === "he") {
       document.getElementById("leagueType").innerHTML = "ליגת פלטינה";
       document.getElementById("subleagueType").innerHTML = "ליגת פלטינה";
-    }else
-    if(localStorage.getItem("lang") === "de") {
-      document.getElementById("leagueType").innerHTML = "Platin-Liga";
-      document.getElementById("subleagueType").innerHTML = "Platin-Liga";
     }
     star.classList.remove("goldleague");
     substar.classList.remove("goldleague");
@@ -2036,29 +1784,9 @@ function leagueSystem() {
       document.getElementById("leagueType").innerHTML = "Алмазная лига";
       document.getElementById("subleagueType").innerHTML = "Алмазная лига";
     }else
-    if(localStorage.getItem("lang") === "ja") {
-      document.getElementById("leagueType").innerHTML = "ダイヤモンドリーグ";
-      document.getElementById("subleagueType").innerHTML = "ダイヤモンドリーグ";
-    }else
-    if(localStorage.getItem("lang") === "chs") {
-      document.getElementById("leagueType").innerHTML = "钻石联赛";
-      document.getElementById("subleagueType").innerHTML = "钻石联赛";
-    }else
-    if(localStorage.getItem("lang") === "cht") {
-      document.getElementById("leagueType").innerHTML = "鑽石聯賽";
-      document.getElementById("subleagueType").innerHTML = "鑽石聯賽";
-    }else
-    if(localStorage.getItem("lang") === "ko") {
-      document.getElementById("leagueType").innerHTML = "다이아몬드 리그";
-      document.getElementById("subleagueType").innerHTML = "다이아몬드 리그";
-    }else
     if(localStorage.getItem("lang") === "he") {
       document.getElementById("leagueType").innerHTML = "ליגת היהלום";
       document.getElementById("subleagueType").innerHTML = "ליגת היהלום";
-    }else
-    if(localStorage.getItem("lang") === "de") {
-      document.getElementById("leagueType").innerHTML = "Diamant-Liga";
-      document.getElementById("subleagueType").innerHTML = "Diamant-Liga";
     }
     star.classList.remove("platinium");
     substar.classList.remove("platinium");
@@ -2078,29 +1806,9 @@ function leagueSystem() {
       document.getElementById("leagueType").innerHTML = "Супер лига";
       document.getElementById("subleagueType").innerHTML = "Супер лига";
     }else
-    if(localStorage.getItem("lang") === "ja") {
-      document.getElementById("leagueType").innerHTML = "スーパーリーグ";
-      document.getElementById("subleagueType").innerHTML = "スーパーリーグ";
-    }else
-    if(localStorage.getItem("lang") === "chs") {
-      document.getElementById("leagueType").innerHTML = "超级联赛";
-      document.getElementById("subleagueType").innerHTML = "超级联赛";
-    }else
-    if(localStorage.getItem("lang") === "cht") {
-      document.getElementById("leagueType").innerHTML = "超級聯賽";
-      document.getElementById("subleagueType").innerHTML = "超級聯賽";
-    }else
-    if(localStorage.getItem("lang") === "ko") {
-      document.getElementById("leagueType").innerHTML = "슈퍼리그";
-      document.getElementById("subleagueType").innerHTML = "슈퍼리그";
-    }else
     if(localStorage.getItem("lang") === "he") {
       document.getElementById("leagueType").innerHTML = "ליגת העל";
       document.getElementById("subleagueType").innerHTML = "ליגת העל";
-    }else
-    if(localStorage.getItem("lang") === "de") {
-      document.getElementById("leagueType").innerHTML = "Superliga";
-      document.getElementById("subleagueType").innerHTML = "Superliga";
     }
     star.classList.remove("diamond");
     substar.classList.remove("diamond");
@@ -2120,29 +1828,9 @@ function leagueSystem() {
       document.getElementById("leagueType").innerHTML = "Легендарная лига";
       document.getElementById("subleagueType").innerHTML = "Легендарная лига";
     }else
-    if(localStorage.getItem("lang") === "ja") {
-      document.getElementById("leagueType").innerHTML = "レジェンダリーリーグ";
-      document.getElementById("subleagueType").innerHTML = "レジェンダリーリーグ";
-    }else
-    if(localStorage.getItem("lang") === "chs") {
-      document.getElementById("leagueType").innerHTML = "传奇联盟";
-      document.getElementById("subleagueType").innerHTML = "传奇联盟";
-    }else
-    if(localStorage.getItem("lang") === "cht") {
-      document.getElementById("leagueType").innerHTML = "傳奇聯盟";
-      document.getElementById("subleagueType").innerHTML = "傳奇聯盟";
-    }else
-    if(localStorage.getItem("lang") === "ko") {
-      document.getElementById("leagueType").innerHTML = "전설의 리그";
-      document.getElementById("subleagueType").innerHTML = "전설의 리그";
-    }else
     if(localStorage.getItem("lang") === "he") {
       document.getElementById("leagueType").innerHTML = "ליגה האגדית";
       document.getElementById("subleagueType").innerHTML = "ליגה האגדית";
-    }else
-    if(localStorage.getItem("lang") === "de") {
-      document.getElementById("leagueType").innerHTML = "Legendäre Liga";
-      document.getElementById("subleagueType").innerHTML = "Legendäre Liga";
     }
     star.classList.remove("super");
     substar.classList.remove("super");
@@ -2162,29 +1850,9 @@ function leagueSystem() {
       document.getElementById("leagueType").innerHTML = "Альфа Рыцарь";
       document.getElementById("subleagueType").innerHTML = "Альфа Рыцарь";
     }else
-    if(localStorage.getItem("lang") === "ja") {
-      document.getElementById("leagueType").innerHTML = "アルファナイト";
-      document.getElementById("subleagueType").innerHTML = "アルファナイト";
-    }else
-    if(localStorage.getItem("lang") === "chs") {
-      document.getElementById("leagueType").innerHTML = "阿尔法骑士";
-      document.getElementById("subleagueType").innerHTML = "阿尔法骑士";
-    }else
-    if(localStorage.getItem("lang") === "cht") {
-      document.getElementById("leagueType").innerHTML = "阿爾法騎士";
-      document.getElementById("subleagueType").innerHTML = "阿爾法騎士";
-    }else
-    if(localStorage.getItem("lang") === "ko") {
-      document.getElementById("leagueType").innerHTML = "알파 나이트";
-      document.getElementById("subleagueType").innerHTML = "알파 나이트";
-    }else
     if(localStorage.getItem("lang") === "he") {
       document.getElementById("leagueType").innerHTML = "אביר אלפא";
       document.getElementById("subleagueType").innerHTML = "אביר אלפא";
-    }else
-    if(localStorage.getItem("lang") === "de") {
-      document.getElementById("leagueType").innerHTML = "Alpha-Ritter";
-      document.getElementById("subleagueType").innerHTML = "Alpha-Ritter";
     }
     star.classList.remove("legendary");
     substar.classList.remove("legendary");
@@ -2202,29 +1870,9 @@ function leagueSystem() {
       document.getElementById("leagueType").innerHTML = "Альфа Рыцарь (МАКС)";
       document.getElementById("subleagueType").innerHTML = "Альфа Рыцарь (МАКС)";
     }else
-    if(localStorage.getItem("lang") === "ja") {
-      document.getElementById("leagueType").innerHTML = "アルファナイト （マックス）";
-      document.getElementById("subleagueType").innerHTML = "アルファナイト （マックス）";
-    }else
-    if(localStorage.getItem("lang") === "chs") {
-      document.getElementById("leagueType").innerHTML = "阿尔法骑士 （最大限度）";
-      document.getElementById("subleagueType").innerHTML = "阿尔法骑士 （最大限度）";
-    }else
-    if(localStorage.getItem("lang") === "cht") {
-      document.getElementById("leagueType").innerHTML = "阿爾法騎士 （最大限度）";
-      document.getElementById("subleagueType").innerHTML = "阿爾法騎士 （最大限度）";
-    }else
-    if(localStorage.getItem("lang") === "ko") {
-      document.getElementById("leagueType").innerHTML = "알파 나이트 (최대)";
-      document.getElementById("subleagueType").innerHTML = "알파 나이트 (최대)";
-    }else
     if(localStorage.getItem("lang") === "he") {
       document.getElementById("leagueType").innerHTML = "אביר אלפא (מקס)";
       document.getElementById("subleagueType").innerHTML = "אביר אלפא (מקס)";
-    }else
-    if(localStorage.getItem("lang") === "de") {
-      document.getElementById("leagueType").innerHTML = "Alpha-Ritter (MAX)";
-      document.getElementById("subleagueType").innerHTML = "Alpha-Ritter (MAX)";
     }
     star.classList.add("alphaknight");
     substar.classList.add("alphaknight");
@@ -2668,30 +2316,10 @@ function handleDownloadAC() {
       document.getElementById("alertText").innerHTML = "Приложение уже загружено или запущено в полноэкранном режиме.";
       alertconfirm.value = "Подтвердить";
     }else
-    if(localStorage.getItem("lang") === "ja") {
-      document.getElementById("alertText").innerHTML = "アプリケーションはすでにダウンロードされているか、全画面で実行されています。";
-      alertconfirm.value = "確認する";
-    }else
-    if(localStorage.getItem("lang") === "chs") {
-      document.getElementById("alertText").innerHTML = "该应用程序已下载或全屏运行。";
-      alertconfirm.value = "确认";
-    }else
-    if(localStorage.getItem("lang") === "cht") {
-      document.getElementById("alertText").innerHTML = "該應用程式已下載或全螢幕運行。";
-      alertconfirm.value = "確認";
-    }else
-    if(localStorage.getItem("lang") === "ko") {
-      document.getElementById("alertText").innerHTML = "해당 애플리케이션은 이미 다운로드되었거나 전체 화면으로 실행 중입니다.";
-      alertconfirm.value = "확인하다";
-    }else
     if(localStorage.getItem("lang") === "he") {
       document.getElementById("alertText").innerHTML = "האפליקציה כבר הורדה או פועלת במסך מלא.";
       document.getElementById("alertText").style.direction = "rtl";
       alertconfirm.value = "אישור";
-    }else
-    if(localStorage.getItem("lang") === "de") {
-      document.getElementById("alertText").innerHTML = "Die Anwendung ist bereits heruntergeladen oder wird im Vollbildmodus ausgeführt.";
-      alertconfirm.value = "Bestätigen";
     }
     alertconfirm.onclick = function() {
       document.getElementById("alert").style.display = "none";
@@ -2991,6 +2619,69 @@ function loadCdisplatFPS() {
     checkbox.checked = false;
   }
 };
+function openWIDmModalDelProg() {
+  var modal = document.getElementById("miniModal");
+  var title = document.getElementById("mmTitle");
+  var content = document.getElementById("mmBottom");
+  modal.style.display = "block";
+  if(localStorage.getItem("lang") === "en") {
+    title.innerHTML = "Delete Progress";
+    content.innerHTML = "This function will delete all collected foods from inventory also saved score and high score. <br>";
+    content.innerHTML += "[✓]Many think about it, if you want start new game from 0.";
+  }else
+  if(localStorage.getItem("lang") === "ru") {
+    title.innerHTML = "Удалить прогресс";
+    content.innerHTML = "Эта функция удалит все собранные еды из инвентаря, а также сохраненные очки и рекорды. <br>";
+    content.innerHTML += "[✓]Много подумайте об этом, если вы хотите начать новую игру с 0.";
+  }else
+  if(localStorage.getItem("lang") === "he") {
+    title.innerHTML = "מחיקת התקדמות";
+    content.innerHTML = "פונקציה זו תמחק את כל סוגי האוכל שנאספו מהלאי, גם ציון שנישמר וציון גבוה. <br>";
+    content.innerHTML += "[✓]הרבה תחשבום על זה, אם אתם רוצים להתחיל משחק חדש מ- 0.";
+    title.style.textAlign = "right";
+    content.style.direction = "rtl";
+    content.style.textAlign = "right";
+  }
+};
+function openWIDmModalSavDat() {
+  var modal = document.getElementById("miniModal");
+  var title = document.getElementById("mmTitle");
+  var content = document.getElementById("mmBottom");
+  modal.style.display = "block";
+  if(localStorage.getItem("lang") === "en") {
+    title.innerHTML = "Data from saved data";
+    content.innerHTML = "This give you save all progress in .js file and load your progress again. <br>";
+    content.innerHTML += "also you can use it for copy data to other devices if you don't want start game from 0 again. <br>";
+    content.innerHTML += " [1]Save data. <br>";
+    content.innerHTML += " [2]Click/press on ''Upload(.js)'': Upload the file. <br>";
+    content.innerHTML += " [3]Click/press on ''Load'': Be load all content inside the file. <br>";
+    content.innerHTML += "[✓]You also can cheat with this file. <br>";
+    content.innerHTML += "[!]Take a risk if you get bugs from changing content in file.";
+  }else
+  if(localStorage.getItem("lang") === "ru") {
+    title.innerHTML = "Данные из сохраненных данных";
+    content.innerHTML = "Это дает вам сохранить весь прогресс в файле .js и загрузит ваш прогресс. <br>";
+    content.innerHTML += "Кроме того, вы можете использовать его для копирования данных для другие устройства, если вы не хотите начать игру с 0 снова. <br>";
+    content.innerHTML += " [1]Сохраните данные. <br>";
+    content.innerHTML += " [2]Нажмите/коснитесь на «Загрузить(.js)»: загрузит файл. <br>";
+    content.innerHTML += " [3]Нажмите/коснитесь «Загрузить»: загрузите все содержимое внутри файла. <br>";
+    content.innerHTML += "[✓]Вы также можете жульничать с этим файлом. <br>";
+    content.innerHTML += "[!]Возьмите риск, если вы получите ошибки от изменениe контент в файле.";
+  }else
+  if(localStorage.getItem("lang") === "he") {
+    title.innerHTML = "נתונים מנתונים שנשמרו";
+    content.innerHTML = "זה נותן לכם לשמור את כל ההתקדמות בקובץ .js ולטעון שוב את ההתקדמות שלם. <br>";
+    content.innerHTML += "כמו כן אתם יכולים להשתמש בו בכדי להעתיק נתוני למכשירים אחרים אם אינכם רוצים להתחיל לשחק מתחלה מ- 0 שוב. <br>";
+    content.innerHTML += " [1]שמור נתונים. <br>";
+    content.innerHTML += " [2]לחץ/גע ב- '' העלאה (.js) '': העלה את הקובץ. <br>";
+    content.innerHTML += " [3]לחץ/גע ב- '' טעינה '': כל התוכן בתוך הקובץ יטען. <br>";
+    content.innerHTML += "[✓]אתה יכול גם לרמות עם הקובץ הזה. <br>";
+    content.innerHTML += "[!]קח סיכון אם אתה מקבל באגים משינוי תוכן בקובץ.";
+    title.style.textAlign = "right";
+    content.style.direction = "rtl";
+    content.style.textAlign = "right";
+  }
+};
 function checkSettingsChanges() {
   let settingsChanged = false;
   function checkSettingCategory(elementsMap, inputType, localStorageKey) {
@@ -3214,12 +2905,7 @@ function checkSettingsChanges() {
   checkSettingCategory([
     { id: "languageEn", localStorageValue: "en" },
     { id: "languageRu", localStorageValue: "ru" },
-    { id: "languageJa", localStorageValue: "ja" },
-    { id: "languageChs", localStorageValue: "chs" },
-    { id: "languageCht", localStorageValue: "cht" },
-    { id: "languageKo", localStorageValue: "ko" },
-    { id: "languageHe", localStorageValue: "he" },
-    { id: "languageDe", localStorageValue: "de" }
+    { id: "languageHe", localStorageValue: "he" }
   ], 'className', "lang");
   if (settingsChanged) {
     document.getElementById("applySettings").style.display = "block";
@@ -3300,7 +2986,7 @@ function checkSettingsChanges() {
     return;
   }
   document.getElementById("applySettings").style.display = "none";
-}
+};
 window.addEventListener('load', function() {
   languagesContents();
   loadTextures();
@@ -3518,25 +3204,10 @@ window.addEventListener('load', function() {
     if(localStorage.getItem("lang") === "ru") {
       scoreElement.innerText = `Счет: ${score}`;
     }else
-    if(localStorage.getItem("lang") === "ja") {
-      scoreElement.innerText = `チェック： ${score}`;
-    }else
-    if(localStorage.getItem("lang") === "chs") {
-      scoreElement.innerText = `分数： ${score}`;
-    }else
-    if(localStorage.getItem("lang") === "cht") {
-      scoreElement.innerText = `分數： ${score}`;
-    }else
-    if(localStorage.getItem("lang") === "ko") {
-      scoreElement.innerText = `점수: ${score}`;
-    }else
     if(localStorage.getItem("lang") === "he") {
       scoreElement.innerText = `ציון: ${score}`;
       document.getElementById("getscore").style.textAlign = "right";
       document.getElementById("gethighscore").style.textAlign = "right";
-    }else
-    if(localStorage.getItem("lang") === "de") {
-      scoreElement.innerText = `punktzahl: ${score}`;
     }
   }else{
     document.getElementById("autoSaveScoreCheck").checked = false;
@@ -3558,19 +3229,7 @@ window.onerror=function(){
   if(localStorage.getItem("lang") === "ru") {
     alert("Произошла ошибка.. Сообщите нам, если отображается это оповещение.");
   }else
-  if(localStorage.getItem("lang") === "ja") {
-    alert("エラーが発生しました。このアラートが表示されるかどうかを教えてください。");
-  }else
-  if(localStorage.getItem("lang") === "chs") {
-    alert("出现错误..，请告诉我们此警报是否跳转。");
-  }else
-  if(localStorage.getItem("lang") === "cht") {
-    alert("出現錯誤..，請告訴我們此警報是否跳轉。");
-  }else
-  if(localStorage.getItem("lang") === "ko") {
-    alert("오류가 발생했습니다. 이 알림이 점프인지 알려주세요.");
-  }else
-  if(localStorage.getItem("lang") === "ko") {
+  if(localStorage.getItem("lang") === "he") {
     alert("נמצאה שגיאה... ספרו לנו אם ההתראה הזו קופצת.");
   }
 };
