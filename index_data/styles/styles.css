@@ -17,12 +17,7 @@
   --battery-main-prog-charging: url('../textures/system/battery_main_charging.png');
   --google-translate: url('../textures/system/Google_en.png');
   --google-perevodchick: url('../textures/system/Google_ru.png');
-  --google-honyaku: url('../textures/system/Google_ja.png');
-  --google-fanyi-s: url('../textures/system/Google_chs.png');
-  --google-fanyi-t: url('../textures/system/Google_cht.png');
-  --google-beon-yeog: url('../textures/system/Google_ko.png');
   --google-targum: url('../textures/system/Google_he.png');
-  --google-ubersetzer: url('../textures/system/Google_de.png');
   --discord: url('../textures/system/discord.png');
   /* Food */
   --meaw-token: url('../textures/foods/meaw_token.png');
@@ -200,20 +195,10 @@
   --up-hover: url('../textures/gui/btn_control_up_hover.png');
   --menu-en: url('../textures/gui/nav_menu_en.png');
   --menu-ru: url('../textures/gui/nav_menu_ru.png');
-  --menu-ja: url('../textures/gui/nav_menu_ja.png');
-  --menu-chs: url('../textures/gui/nav_menu_chs.png');
-  --menu-cht: url('../textures/gui/nav_menu_cht.png');
-  --menu-ko: url('../textures/gui/nav_menu_ko.png');
   --menu-he: url('../textures/gui/nav_menu_he.png');
-  --menu-de: url('../textures/gui/nav_menu_de.png');
   --menu-en-hover: url('../textures/gui/nav_menu_en_hover.png');
   --menu-ru-hover: url('../textures/gui/nav_menu_ru_hover.png');
-  --menu-ja-hover: url('../textures/gui/nav_menu_ja_hover.png');
-  --menu-chs-hover: url('../textures/gui/nav_menu_chs_hover.png');
-  --menu-cht-hover: url('../textures/gui/nav_menu_cht_hover.png');
-  --menu-ko-hover: url('../textures/gui/nav_menu_ko_hover.png');
   --menu-he-hover: url('../textures/gui/nav_menu_he_hover.png');
-  --menu-de-hover: url('../textures/gui/nav_menu_de_hover.png');
   --left: url('../textures/gui/btn_control_lt.png');
   --left-hover: url('../textures/gui/btn_control_lt_hover.png');
   --down: url('../textures/gui/btn_control_dn.png');
@@ -258,6 +243,9 @@
   --close-menu: url('../textures/gui/menu_close.png');
   --services-bg: url('../textures/gui/services_bg.png');
   --windows-bg: url('../textures/gui/windows_bg.png');
+  --mini-modal: url('../textures/gui/mini_modal.png');
+  --mm-opener: url('../textures/gui/what_it_do.png');
+  --mm-closer: url('../textures/gui/mini_modal_close.png');
   /* League */
   --league-0: url('../textures/league/non.png');
   --league-1: url('../textures/league/league_1_bronze.png');
@@ -1455,46 +1443,6 @@ a {
   var(--border),
   var(--menu-ru-hover);
 }
-#btn002.ja-lang {background-image:
-  var(--border),
-  var(--menu-ja);
-  position: relative;
-  display: block;
-}
-#btn002.ja-lang:hover {background-image:
-  var(--border),
-  var(--menu-ja-hover);
-}
-#btn002.chs-lang {background-image:
-  var(--border),
-  var(--menu-chs);
-  position: relative;
-  display: block;
-}
-#btn002.chs-lang:hover {background-image:
-  var(--border),
-  var(--menu-chs-hover);
-}
-#btn002.cht-lang {background-image:
-  var(--border),
-  var(--menu-cht);
-  position: relative;
-  display: block;
-}
-#btn002.cht-lang:hover {background-image:
-  var(--border),
-  var(--menu-cht-hover);
-}
-#btn002.ko-lang {background-image:
-  var(--border),
-  var(--menu-ko);
-  position: relative;
-  display: block;
-}
-#btn002.ko-lang:hover {background-image:
-  var(--border),
-  var(--menu-ko-hover);
-}
 #btn002.he-lang {background-image:
   var(--border),
   var(--menu-he);
@@ -1504,16 +1452,6 @@ a {
 #btn002.he-lang:hover {background-image:
   var(--border),
   var(--menu-he-hover);
-}
-#btn002.de-lang {background-image:
-  var(--border),
-  var(--menu-de);
-  position: relative;
-  display: block;
-}
-#btn002.de-lang:hover {background-image:
-  var(--border),
-  var(--menu-de-hover);
 }
 #btn003 {background-image:
   var(--border),
@@ -1570,23 +1508,8 @@ a {
 #navBtn.ru-lang {
   background-image: var(--menu-ru);
 }
-#navBtn.ja-lang {
-  background-image: var(--menu-ja);
-}
-#navBtn.chs-lang {
-  background-image: var(--menu-chs);
-}
-#navBtn.cht-lang {
-  background-image: var(--menu-cht);
-}
-#navBtn.ko-lang {
-  background-image: var(--menu-ko);
-}
 #navBtn.he-lang {
   background-image: var(--menu-he);
-}
-#navBtn.de-lang {
-  background-image: var(--menu-de);
 }
 #navBtn.en-lang:hover {
   background-image: var(--menu-en-hover);
@@ -1594,23 +1517,8 @@ a {
 #navBtn.ru-lang:hover {
   background-image: var(--menu-ru-hover);
 }
-#navBtn.ja-lang:hover {
-  background-image: var(--menu-ja-hover);
-}
-#navBtn.chs-lang:hover {
-  background-image: var(--menu-chs-hover);
-}
-#navBtn.cht-lang:hover {
-  background-image: var(--menu-cht-hover);
-}
-#navBtn.ko-lang:hover {
-  background-image: var(--menu-ko-hover);
-}
 #navBtn.he-lang:hover {
   background-image: var(--menu-he-hover);
-}
-#navBtn.de-lang:hover {
-  background-image: var(--menu-de-hover);
 }
 .tab {
   float: left;
@@ -1809,10 +1717,6 @@ a {
 }
 .select-content .select.language:first-child,
 .select-content .select.controllerpostype:first-child {
-  margin-left: 32px;
-}
-#languageChs,
-#languageHe {
   margin-left: 32px;
 }
 .select-content .language.active,
@@ -2715,23 +2619,8 @@ input[type="range"]::-webkit-slider-thumb {
 #translate.g-t-ru {
   background-image: var(--google-perevodchick);
 }
-#translate.g-t-ja {
-  background-image: var(--google-honyaku);
-}
-#translate.g-t-chs {
-  background-image: var(--google-fanyi-s);
-}
-#translate.g-t-cht {
-  background-image: var(--google-fanyi-t);
-}
-#translate.g-t-ko {
-  background-image: var(--google-beon-yeog);
-}
 #translate.g-t-he {
   background-image: var(--google-targum);
-}
-#translate.g-t-de {
-  background-image: var(--google-ubersetzer);
 }
 .totopelement {
   width: 100% !important;
@@ -2970,41 +2859,11 @@ hr.acc {
 .r-star.ru::after {
   content: ' Звезда';
 }
-.r-stars.ja::after {
-  content: ' 星';
-}
-.r-star.ja::after {
-  content: ' 星';
-}
-.r-stars.chs::after {
-  content: ' 明星';
-}
-.r-star.chs::after {
-  content: ' 星星';
-}
-.r-stars.cht::after {
-  content: ' 明星';
-}
-.r-star.cht::after {
-  content: ' 星星';
-}
-.r-stars.ko::after {
-  content: ' 별';
-}
-.r-star.ko::after {
-  content: ' 별';
-}
 .r-stars.he::after {
   content: ' כוכבים';
 }
 .r-star.he::after {
   content: ' כוכב';
-}
-.r-stars.de::after {
-  content: ' Sterne';
-}
-.r-star.de::after {
-  content: ' Stern';
 }
 .sub-device-inpo-indicator {
   position: absolute;
@@ -3680,6 +3539,63 @@ input[type="color"]::-webkit-color-swatch {
   border-radius: 5px;
   display: none;
 }
+.mini-modal {
+  position: absolute;
+  top: 45px;
+  background-image: var(--mini-modal);
+  background-size: 350px auto;
+  background-position: -26px -40px;
+  width: 299px;
+  height: 182px;
+  margin-left: calc(50% - 149.5px);
+  display: none;
+  z-index: 5;
+}
+.mini-modal-top {
+  width: 100%;
+  height: 25px;
+}
+#mmTitle {
+  width: 100%;
+  padding: 0px 25px;
+  color: var(--white);
+}
+.mini-modal-close {
+  width: 25px;
+  height: 25px;
+  background-image: var(--mm-closer);
+  background-position: 0 0;
+  background-size: 100% auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: url('../animations/cursour/clickable/0.png'), pointer;
+  -webkit-animation: cursorlnk 0.4s infinite;
+  animation: cursorlnk 0.4s infinite;
+}
+.mini-modal-bottom {
+  width: 100%;
+  height: 156px;
+  padding: 5px 10px;
+  overflow: auto;
+}
+.con-continer-for-help {
+  position: relative;
+}
+.mini-modal-opener {
+  width: 42px;
+  height: 100%;
+  background-image: var(--mm-opener);
+  background-size: auto 100%;
+  background-position: 0px -2px;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -2px;
+  right: 22%;
+  cursor: url('../animations/cursour/clickable/0.png'), pointer;
+  -webkit-animation: cursorlnk 0.4s infinite;
+  animation: cursorlnk 0.4s infinite;
+}
 @font-face {
   font-family: miSans;
   src: url('../fonts/MiSans.ttf');
@@ -3782,10 +3698,6 @@ input[type="color"]::-webkit-color-swatch {
   }
   .select-content .select.language:first-child,
   .select-content .select.controllerpostype:first-child {
-    margin-left: 17px;
-  }
-  #languageChs,
-  #languageHe {
     margin-left: 17px;
   }
   .select-content .select.controllerpostype[locked="true"] {
@@ -3970,6 +3882,9 @@ input[type="color"]::-webkit-color-swatch {
   #fpsDisplay {
     left: auto;
     top: 5px;
+  }
+  .mini-modal-opener {
+    right: 6%;
   }
 }
 @media screen and (min-width: 1545px) {
