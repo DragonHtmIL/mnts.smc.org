@@ -20,23 +20,8 @@
       if(localStorage.getItem("lang") === "ru") {
         document.documentElement.setAttribute("lang", "ru");
       }else
-      if(localStorage.getItem("lang") === "ja") {
-        document.documentElement.setAttribute("lang", "ja");
-      }else
-      if(localStorage.getItem("lang") === "chs") {
-        document.documentElement.setAttribute("lang", "zhs");
-      }else
-      if(localStorage.getItem("lang") === "cht") {
-        document.documentElement.setAttribute("lang", "zht");
-      }else
-      if(localStorage.getItem("lang") === "ko") {
-        document.documentElement.setAttribute("lang", "ko");
-      }else
       if(localStorage.getItem("lang") === "he") {
         document.documentElement.setAttribute("lang", "he");
-      }else
-      if(localStorage.getItem("lang") === "de") {
-        document.documentElement.setAttribute("lang", "de");
       }
     </script>
   </head>
@@ -451,18 +436,19 @@
             <div id="selectOptions" class="select-content">
               <div onclick="englishLanguage();checkSettingsChanges();" id="languageEn" class="language select">English</div>
               <div onclick="russianLanguage();checkSettingsChanges();" id="languageRu" class="language select">Русский</div>
-              <div onclick="japaneseLanguage();checkSettingsChanges();" id="languageJa" class="language select">日本語</div>
-              <div onclick="ChineseSimplifiedLanguage();checkSettingsChanges();" id="languageChs" class="language select">简体中文</div>
-              <div onclick="ChineseTraditionalLanguage();checkSettingsChanges();" id="languageCht" class="language select">繁體中文</div>
-              <div onclick="koreanLanguage();checkSettingsChanges();" id="languageKo" class="language select">한국어</div>
               <div onclick="hebrewLanguage();checkSettingsChanges();" id="languageHe" class="language select">עברית</div>
-              <div onclick="germanLanguage();checkSettingsChanges();" id="languageDe" class="language select">Deutsche</div>
               <div class="important-text" id="langImportantLang">...</div>
             </div>
             <hr>
             <div class="categores moresettingscontent">...</div>
-            <input type="button" id="deleteprogbutton" onclick="alertDeleteProgress();" value="...">
-            <input type="button" id="saveProgDataViafile" onclick="saveProgressViaFile();" value="...">
+            <div class="con-continer-for-help">
+              <input type="button" id="deleteprogbutton" onclick="alertDeleteProgress();" value="...">
+              <span class="mini-modal-opener" onclick="openWIDmModalDelProg();defaultClickSound();"></span>
+            </div>
+            <div class="con-continer-for-help">
+              <input type="button" id="saveProgDataViafile" onclick="saveProgressViaFile();" value="...">
+              <span class="mini-modal-opener" onclick="openWIDmModalSavDat();defaultClickSound();"></span>
+            </div>
             <form action="javascript:loadDataSaved();" method="post">
               <label for="dataLocalUpload" id="uploadDataLang">...</label><br>
               <input type="file" name="saveProgDataViafile" id="dataLocalUpload" style="display:none;" required>
@@ -515,7 +501,7 @@
             <div class="categores settingscontent">...</div>
             <div class="categores" id="controllerSettingsLangs">...</div>
             <div class="range-content" id="devCheck">
-              <select name="controllerTypes" id="cTypeChenger" onchange="changeControllerType();" onclick="selectionSound();">
+              <select name="controllerTypes" id="cTypeChenger" onchange="changeControllerType();checkSettingsChanges();" onclick="selectionSound();">
                 <option value="classic" id="defOptionLang">...</option>
                 <option value="dynamic" id="dynOptionLang">...</option>
                 <option value="swap" id="swaOptionLang">...</option>
@@ -1558,12 +1544,7 @@
           <div id="selectOptions" class="select-content">
             <div onclick="selectLangInFirstEn();" class="first-language select" id="fLsa">English</div><br>
             <div onclick="selectLangInFirstRu();" class="first-language select" id="fLsb">Русский</div><br>
-            <div onclick="selectLangInFirstJa();" class="first-language select" id="fLsc">日本語</div><br>
-            <div onclick="selectLangInFirstChs();" class="first-language select" id="fLsd">简体中文</div><br>
-            <div onclick="selectLangInFirstCht();" class="first-language select" id="fLse">繁體中文</div><br>
-            <div onclick="selectLangInFirstKo();" class="first-language select" id="fLsf">한국어</div><br>
             <div onclick="selectLangInFirstHe();" class="first-language select" id="fLsg">עברית</div><br>
-            <div onclick="selectLangInFirstDe();" class="first-language select" id="fLsh">Deutsche</div>
           </div>
           <div id="nc100l"></div>
         </div>
@@ -1618,7 +1599,7 @@
               <div class="first-letters" id="sLetterx" onclick="sLetterSisx();">x</div>
               <div class="first-letters" id="sLettery" onclick="sLetterSisy();">y</div>
               <div class="first-letters" id="sLetterz" onclick="sLetterSisz();">z</div>
-              <div class="first-letters" id="keyShiftFirst" onclick="sLetterSisShift();markedKeysActivedShift();">↑</div>
+              <div class="first-letters" id="keyShiftFirst" onclick="sLetterSisShift();">↑</div>
               <div class="first-letters" id="sLetterSisEmpty" onclick="sLetterSisEmpty();">⨱</div>
             </div>
           </div>
@@ -1722,6 +1703,13 @@
           <div id="txtBhow">...</div>
         </div>
       </div>
+    </div>
+    <div class="mini-modal" id="miniModal">
+      <div class="mini-modal-top" id="mmTop">
+        <h3 id="mmTitle">...</h3>
+        <span class="mini-modal-close" onclick="document.getElementById('miniModal').style.display = 'none';"></span>
+      </div>
+      <div class="mini-modal-bottom" id="mmBottom">...</div>
     </div>
     <textarea name="text-area" id="textarea" style="position:fixed;display:none;"></textarea>
     <!-- Audio sources -->
