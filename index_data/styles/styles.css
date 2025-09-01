@@ -246,6 +246,8 @@
   --mini-modal: url('../textures/gui/mini_modal.png');
   --mm-opener: url('../textures/gui/what_it_do.png');
   --mm-closer: url('../textures/gui/mini_modal_close.png');
+  --minus-0: url('../textures/gui/minus_cube.png');
+  --plus-0: url('../textures/gui/plus_cube.png');
   /* League */
   --league-0: url('../textures/league/non.png');
   --league-1: url('../textures/league/league_1_bronze.png');
@@ -3595,6 +3597,46 @@ input[type="color"]::-webkit-color-swatch {
   cursor: url('../animations/cursour/clickable/0.png'), pointer;
   -webkit-animation: cursorlnk 0.4s infinite;
   animation: cursorlnk 0.4s infinite;
+}
+input[type="number"] {
+  width: 100%;
+  text-align: center;
+  height: 20px;
+  width: calc(100% - 60px);
+  -moz-appearance: textfield;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.pos-controll-setting {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.pos-pluse,
+.pos-minus {
+  width: 20px;
+  height: 20px;
+  margin: 0px 5px;
+  cursor: url('../animations/cursour/clickable/0.png'), pointer;
+  -webkit-animation: cursorlnk 0.4s infinite;
+  animation: cursorlnk 0.4s infinite;
+  background-size: 100% 100%;
+  background-position: 0% 0%;
+}
+.pos-pluse:hover,
+.pos-minus:hover {
+  background-size: 102% 102%;
+  background-position: -1% -1%;
+}
+.pos-pluse {
+  background-image: var(--plus-0);
+}
+.pos-minus {
+  background-image: var(--minus-0);
 }
 @font-face {
   font-family: miSans;
