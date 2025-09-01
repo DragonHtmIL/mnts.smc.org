@@ -56,7 +56,7 @@ function languagesContents() {
   var a054 = document.getElementById("txtAhow");
   var a055 = document.getElementById("loadingText");
   var a056 = document.getElementById("loadClassic");
-//  var a057 = document.getElementById("");
+  var a057 = document.getElementById("randomSnakeLang");
   var a058 = document.getElementById("loadingLangStyle");
   var a059 = document.getElementById("boardMapAlpha2Lang");
   var a060 = document.getElementById("adminToolsLang");
@@ -76,6 +76,8 @@ function languagesContents() {
   var a074 = document.getElementById("swaOptionLang");
   var a075 = document.getElementById("servicesLang");
   var a076 = document.getElementById("displayFpsLang");
+  var a077 = document.getElementById("xSnakeValueLang");
+  var a078 = document.getElementById("ySnakeValueLang");
   const a000_all = document.getElementsByClassName('settingscontent');
   const a001_all = document.getElementsByClassName('stylescontent');
   const a002_all = document.getElementsByClassName('coming-soon');
@@ -157,7 +159,7 @@ function languagesContents() {
       a055.innerHTML = "Loading…";
     }
     a056.innerHTML = "Classic";
-//    a057.innerHTML = "";
+    a057.innerHTML = "Snake position";
     a058.innerHTML = "Loading Animation";
     a059.innerHTML = "Alpha City Map 2";
     a060.innerHTML = "Developments";
@@ -182,6 +184,8 @@ function languagesContents() {
     a074.innerHTML = "Touch Screen Gestures";
     a075.innerHTML = "Services";
     a076.innerHTML = "Show FPS (BETA)";
+    a077.innerHTML = "Horizontally Snake Position";
+    a078.innerHTML = "Vertically Snake Position";
     for (let i = 0; i < a000_all.length; i++) {
       a000_all[i].textContent = 'Settings:';
     };
@@ -283,7 +287,7 @@ function languagesContents() {
       a055.innerHTML = "Загрузка…";
     }
     a056.innerHTML = "Классический";
-//    a057.innerHTML = "";
+    a057.innerHTML = "Положение змеи";
     a058.innerHTML = "Анимация загрузки";
     a059.innerHTML = "Карта города Альфа 2";
     a060.innerHTML = "Разработки";
@@ -308,6 +312,8 @@ function languagesContents() {
     a074.innerHTML = "Жесты сенсорного экрана";
     a075.innerHTML = "Услуги";
     a076.innerHTML = "Показать FPS (БЕТА)";
+    a077.innerHTML = "Горизонтальное положение змеи";
+    a077.innerHTML = "Вертикальная положение змеи";
     for (let i = 0; i < a000_all.length; i++) {
       a000_all[i].textContent = 'Настройки:';
     };
@@ -439,7 +445,9 @@ function languagesContents() {
     }
     a055.style.direction = "rtl";
     a056.innerHTML = "קלאסי";
-//    a057.innerHTML = "";
+    a057.innerHTML = "תנוחה של הנחש";
+     a057.style.direction = "rtl";
+     a057.style.textAlign = "right";
     a058.innerHTML = "אנימציית טעינה";
     a059.innerHTML = "מפת עיר אלפא 2";
     a060.innerHTML = "התפתחויות";
@@ -476,6 +484,8 @@ function languagesContents() {
     a075.innerHTML = "שרותים";
     a076.innerHTML = "הצג FPS (בטא)";
      a076.style.direction = "rtl";
+    a077.innerHTML = "תנוחת נחש אופקית";
+    a078.innerHTML = "תנוחת נחש אנכית";
     for (let i = 0; i < a000_all.length; i++) {
       a000_all[i].textContent = 'הגדרות:';
       a000_all[i].style.direction = "rtl";

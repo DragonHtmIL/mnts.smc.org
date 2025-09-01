@@ -15570,6 +15570,11 @@ function applySettings() {
   if(document.getElementById("loadAnimeCon3").className === "select active") {
     localStorage.setItem("loadingStyle", "anime3");
   };
+  if(document.getElementById("randomSnakePos").checked === true) {
+    localStorage.setItem("snakePosType", "random");
+  }else{
+    localStorage.setItem("snakePosType", "custom");
+  };
   window.location.reload();
 };
 function alertReloadLater() {

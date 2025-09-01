@@ -2,23 +2,21 @@ document.getElementById("reset").onclick = function() {
   closeModalSound();
   document.getElementById("loseModal").style.display = "none";
   gameOver = false;
-  foodX, foodY;
-  snakeX = Math.floor(Math.random() * 30) + 1, snakeY = Math.floor(Math.random() * 30) + 1;
-  velocityX = 0, velocityY = 0;
+  updateFoodPosition();
+  updateSnakePosition();
+  velocityX = 0;
+  velocityY = 0;
   snakeBody = [];
-  setIntervalId;
-  fireworksIntervalId;
   score = 0;
   if(localStorage.getItem("lang") === "en") {
     scoreElement.innerText = `Score: ${score}`;
-  }else
-  if(localStorage.getItem("lang") === "ru") {
+  } else if(localStorage.getItem("lang") === "ru") {
     scoreElement.innerText = `Счет: ${score}`;
-  }else
-  if(localStorage.getItem("lang") === "he") {
+  } else if(localStorage.getItem("lang") === "he") {
     scoreElement.innerText = `ציון: ${score}`;
-  };
+  }
   localStorage.setItem("steelScore", localStorage.getItem("high-score"));
+  clearInterval(fireworksIntervalId);
   fireworksIntervalId = setInterval(playFireworksSounds, 1000);
 };
 function pauseGame() {
@@ -330,6 +328,7 @@ function checkDeviceType() {
     document.getElementById("chechboxPausing").style.bottom = "100px";
     document.getElementById("devCheck").style.display = "block";
     document.getElementById("hr0hiddenTuggle").style.display = "block";
+    document.getElementById("hideInMobileAdminTools").style.display = "none";
   }else{
     document.getElementById("controller").style.display = "none";
     document.getElementById("selectOptionsControllerPosition").style.display = "none";
@@ -341,6 +340,7 @@ function checkDeviceType() {
     document.getElementById("chechboxPausing").style.display = "block";
     document.getElementById("devCheck").style.display = "none";
     document.getElementById("hr0hiddenTuggle").style.display = "none";
+    document.getElementById("hideInMobileAdminTools").style.display = "block";
   }
 };
 checkDeviceType();
@@ -1622,6 +1622,42 @@ function autoSnakeLettersLoadNew() {
     return false;
   }
 };
+function autoSnakePosLoadNew() {
+  if(localStorage.getItem("snakePosType") === null) {
+    localStorage.setItem("snakePosType", "custom");
+    window.location.reload();
+  }else
+  if(localStorage.getItem("snakePosType") === "") {
+    localStorage.setItem("snakePosType", "custom");
+    window.location.reload();
+  }else{
+    return false;
+  }
+};
+function autoSnakePosXLoadNew() {
+  if(localStorage.getItem("snakePosX") === null) {
+    localStorage.setItem("snakePosX", "5");
+    window.location.reload();
+  }else
+  if(localStorage.getItem("snakePosX") === "") {
+    localStorage.setItem("snakePosX", "5");
+    window.location.reload();
+  }else{
+    return false;
+  }
+};
+function autoSnakePosYLoadNew() {
+  if(localStorage.getItem("snakePosY") === null) {
+    localStorage.setItem("snakePosY", "5");
+    window.location.reload();
+  }else
+  if(localStorage.getItem("snakePosY") === "") {
+    localStorage.setItem("snakePosY", "5");
+    window.location.reload();
+  }else{
+    return false;
+  }
+};
 function levelsSystem() {
   var star = document.getElementById("star");
   var substar = document.getElementById("substar");
@@ -2582,21 +2618,23 @@ function saveAutoScoreCheckboxPhasa() {
 function openDiscordService() {
   window.open("https://discord.gg/9qapnUDKsW",'_blank');
 };
+const fpsDisplay = document.getElementById('fpsDisplay');
+let frameCount = 0;
+let lastTime = performance.now();
+const updateInterval = 1000;
 function fpsDisplaying() {
-  const fpsDisplay = document.getElementById('fpsDisplay');
-  let frames = 0;
-  let lastTime = performance.now();
-  function updateFPS() {
-    const currentTime = performance.now();
-    const deltaTime = currentTime - lastTime;
-    const currentFPS = Math.round(1000 / deltaTime);
-    fpsDisplay.textContent = `FPS: ${currentFPS}`;
-    frames++;
-    lastTime = currentTime;
-    requestAnimationFrame(updateFPS);
-  }
-  requestAnimationFrame(updateFPS);
-};
+    const now = performance.now();
+    const deltaTime = now - lastTime;
+    frameCount++;
+    if (deltaTime >= updateInterval) {
+        const fps = Math.round((frameCount * 1000) / deltaTime);
+        fpsDisplay.textContent = `FPS: ${fps}`;
+        frameCount = 0;
+        lastTime = now;
+    }
+    requestAnimationFrame(fpsDisplaying);
+}
+requestAnimationFrame(fpsDisplaying);
 function showFpsDisplaying() {
   var checkbox = document.getElementById("cFpsDisplay");
   var fps = document.getElementById("fpsDisplay");
@@ -2685,16 +2723,24 @@ function openWIDmModalSavDat() {
 function checkSettingsChanges() {
   let settingsChanged = false;
   function checkSettingCategory(elementsMap, inputType, localStorageKey) {
+    const storedValue = localStorage.getItem(localStorageKey);
+      let currentValue;
     for (const item of elementsMap) {
       const element = document.getElementById(item.id);
       if (!element) {
         console.warn(`Element with ID "${item.id}" not found.`);
       }
-      let currentValue;
       if (inputType === 'className') {
         currentValue = element.className;
       } else if (inputType === 'value') {
         currentValue = element.value;
+      } else if (inputType === 'checked') {
+        currentValue = element.checked.toString();
+      }
+      if (currentValue === storedValue) {
+      } else {
+        settingsChanged = true;
+        return;
       }
       if ((inputType === 'className' && currentValue === "select active" && localStorage.getItem(localStorageKey) === item.localStorageValue) ||
         (inputType === 'value' && currentValue === item.localStorageValue && localStorage.getItem(localStorageKey) === item.localStorageValue)) {
@@ -2712,10 +2758,16 @@ function checkSettingsChanges() {
         break;
       }
     }
-    const storedValue = localStorage.getItem(localStorageKey);
     if (currentActiveElementValue !== storedValue) {
       settingsChanged = true;
     }
+  }
+  checkSettingCategory([
+    { id: "randomSnakePos", localStorageValue: "random" }
+  ], 'checked', "snakePosType");
+  if (settingsChanged) {
+    document.getElementById("applySettings").style.display = "block";
+    return;
   }
   checkSettingCategory([
     { id: "origoMap", localStorageValue: "imgOrigo" },
@@ -2987,6 +3039,104 @@ function checkSettingsChanges() {
   }
   document.getElementById("applySettings").style.display = "none";
 };
+function randomSnakePosChange() {
+  var checkbox = document.getElementById("randomSnakePos");
+  if(checkbox.checked) {
+    document.getElementById("xSnakeValue").disabled = true;
+    document.getElementById("ySnakeValue").disabled = true;
+    if(localStorage.getItem("lang") === "en") {
+      document.getElementById("randomSnakePosLang").innerHTML = "Random Position";
+    }else
+    if(localStorage.getItem("lang") === "ru") {
+      document.getElementById("randomSnakePosLang").innerHTML = "Случайная позиция";
+    }else
+    if(localStorage.getItem("lang") === "he") {
+      document.getElementById("randomSnakePosLang").innerHTML = "מיקום אקראי";
+    }
+  }else{
+    document.getElementById("xSnakeValue").disabled = false;
+    document.getElementById("ySnakeValue").disabled = false;
+    if(localStorage.getItem("lang") === "en") {
+      document.getElementById("randomSnakePosLang").innerHTML = "Custom Position";
+    }else
+    if(localStorage.getItem("lang") === "ru") {
+      document.getElementById("randomSnakePosLang").innerHTML = "Пользовательская позиция";
+    }else
+    if(localStorage.getItem("lang") === "he") {
+      document.getElementById("randomSnakePosLang").innerHTML = "מיקום מותאם אישית";
+    }
+  }
+};
+function randomSnakePosXInput() {
+  var input = document.getElementById("xSnakeValue");
+  localStorage.setItem("snakePosX", input.value);
+  var numValue = parseInt(input.value, 10);
+  if(numValue > 30) {
+    input.value = 30;
+    cancelSound();
+  } else if(numValue < 0) {
+    input.value = 0;
+    cancelSound();
+  }
+};
+function randomSnakePosYInput() {
+  var input = document.getElementById("ySnakeValue");
+  localStorage.setItem("snakePosY", input.value);
+  var numValue = parseInt(input.value, 10);
+  if(numValue > 30) {
+    input.value = 30;
+    cancelSound();
+  } else if(numValue < 0) {
+    input.value = 0;
+    cancelSound();
+  }
+};
+function plusPosX() {
+  const input = document.getElementById('xSnakeValue');
+  let currentValue = parseInt(input.value);
+  if (currentValue < 30) {
+    input.value = currentValue + 1;
+    defaultClickSound();
+  } else {
+    cancelSound();
+  }
+  localStorage.setItem("snakePosX", input.value);
+};
+function minusPosX() {
+  const input = document.getElementById('xSnakeValue');
+  let currentValue = parseInt(input.value);
+  if (currentValue > 1) {
+    input.value = currentValue - 1;
+    defaultClickSound();
+  } else {
+    input.value = 1;
+    cancelSound();
+  }
+  localStorage.setItem("snakePosX", input.value);
+};
+function plusPosY() {
+  const input = document.getElementById('ySnakeValue');
+  let currentValue = parseInt(input.value);
+  if (currentValue < 30) {
+    input.value = currentValue + 1;
+    defaultClickSound();
+  } else {
+    cancelSound();
+  }
+  localStorage.setItem("snakePosY", input.value);
+};
+function minusPosY() {
+  const input = document.getElementById('ySnakeValue');
+  let currentValue = parseInt(input.value);
+  if (currentValue > 1) {
+    input.value = currentValue - 1;
+    defaultClickSound();
+  } else {
+    input.value = 1;
+    cancelSound();
+  }
+  localStorage.setItem("snakePosY", input.value);
+};
 window.addEventListener('load', function() {
   languagesContents();
   loadTextures();
@@ -3016,6 +3166,9 @@ window.addEventListener('load', function() {
   autoAmbientCheckLoadNew();
   autoSnakeColorerLoadNew();
   autoSnakeLettersLoadNew();
+  autoSnakePosLoadNew();
+  autoSnakePosXLoadNew();
+  autoSnakePosYLoadNew();
   autoFood000StorageLoadNew();
   autoFood001StorageLoadNew();
   autoFood002StorageLoadNew();
@@ -3096,10 +3249,17 @@ window.addEventListener('load', function() {
   autoFood077StorageLoadNew();
   snakeColorerValueLoad();
   mouseBoard();
-  fpsDisplaying();
   loadCdisplatFPS();
   changeControllerType();
   keysRegistering();
+  randomSnakePosChange();
+  if(localStorage.getItem("snakePosType") === "random") {
+    document.getElementById("randomSnakePos").checked = true;
+  }else{
+    document.getElementById("randomSnakePos").checked = false;
+  }
+  document.getElementById("xSnakeValue").value = localStorage.getItem("snakePosX");
+  document.getElementById("ySnakeValue").value = localStorage.getItem("snakePosY");
   localStorage.setItem("steelScore", localStorage.getItem("high-score"));
   document.getElementById("collectedMeow").innerHTML = localStorage.getItem("meawTokenStorage");
   document.getElementById("collectedGold").innerHTML = localStorage.getItem("goldStorage");
@@ -3218,6 +3378,8 @@ window.addEventListener('load', function() {
   }else{
     console.log("Saved score = " + localStorage.getItem("currentScore"));
   };
+  updateFoodPosition();
+  updateSnakePosition();
 });
 window.oncontextmenu=function(){
   return false

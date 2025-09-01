@@ -4,7 +4,7 @@ const highScoreElement = document.querySelector(".high-score");
 const controls = document.querySelectorAll(".controls i");
 let gameOver = false;
 let foodX, foodY;
-let snakeX = Math.floor(Math.random() * 30) + 1, snakeY = Math.floor(Math.random() * 30) + 1;
+let snakeX, snakeY;
 let velocityX = 0, velocityY = 0;
 let snakeBody = [];
 let setIntervalId;
@@ -113,6 +113,18 @@ const updateFoodPosition = () => {
   foodX = Math.floor(Math.random() * 30) + 1;
   foodY = Math.floor(Math.random() * 30) + 1;
 };
+const updateSnakePosition = () => {
+  const checkbox = document.getElementById("randomSnakePos");
+  const xInput = document.getElementById("xSnakeValue");
+  const yInput = document.getElementById("ySnakeValue");
+  if (checkbox.checked) {
+    snakeX = Math.floor(Math.random() * 30) + 1;
+    snakeY = Math.floor(Math.random() * 30) + 1;
+  } else {
+    snakeX = parseInt(xInput.value);
+    snakeY = parseInt(yInput.value);
+  }
+};
 const handleGameOver = () => {
   document.getElementById("loseModal").style.display = "block";
   document.getElementById("loseScore").innerHTML = scoreElement.innerText;
@@ -143,7 +155,7 @@ const handleGameOver = () => {
     if(localStorage.getItem("lang") === "he") {
       document.getElementById("loseNewRecordScore").innerHTML = "מזל טוב, השגת שיא חדש!";
       document.getElementById("loseNewRecordScore").style.direction = "rtl";
-    }
+    };
   };
   if(localStorage.getItem("movementbg") === "playerWalk") {
     document.getElementById("playerWalk").pause();
@@ -929,7 +941,6 @@ const initGame = () => {
   levelsSystem();
   leagueSystem();
 };
-updateFoodPosition();
 if(localStorage.getItem("difficulty") === "normal") {
   setIntervalId = setInterval(initGame, 140);
   if(localStorage.getItem("movementbg") === "playerWalk") {
