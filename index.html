@@ -469,7 +469,7 @@
                 <div class="dl-av-view" onclick="window.open('index_data/textures/screenshots/VirusTotal.png', '_blank');">VirusTotal</div>
               </button>
             </div>
-            <div class="checkbox-content">
+            <div class="checkbox-content" id="hideInMobileAdminTools">
               <input type="checkbox" id="administratorTools" onclick="selectionSound();">
               <label class="label-checkbox" for="administratorTools" id="adminToolsLang">...</label>
             </div>
@@ -850,13 +850,31 @@
           </div>
           <div id="snake" class="content">
             <div class="categores settingscontent">...</div>
+            <div class="categores" id="randomSnakeLang">...</div>
+            <div class="checkbox-content">
+              <input type="checkbox" id="randomSnakePos" onchange="updateSnakePosition();randomSnakePosChange();checkSettingsChanges();" onclick="defaultClickSound();">
+              <label class="label-checkbox" for="randomSnakePos" id="randomSnakePosLang">...</label>
+              <hr>
+              <div class="pos-controll-setting">
+                <label for="xSnakeValue" id="xSnakeValueLang">...</label><!--horizontally-->
+                <input type="number" id="xSnakeValue" value="5" oninput="updateSnakePosition();randomSnakePosXInput();defaultClickSound();" min="1" max="30"><br>
+                <div class="pos-pluse" onclick="plusPosX();"></div>
+                <div class="pos-minus" onclick="minusPosX();"></div>
+              </div>
+              <div class="pos-controll-setting">
+                <label for="ySnakeValue" id="ySnakeValueLang">...</label><!--vertically-->
+                <input type="number" id="ySnakeValue" value="5" oninput="updateSnakePosition();randomSnakePosYInput();defaultClickSound();" min="1" max="30">
+                <div class="pos-pluse" onclick="plusPosY();"></div>
+                <div class="pos-minus" onclick="minusPosY();"></div>
+              </div>
+            </div>
             <hr>
             <div class="categores stylescontent">...</div>
             <div id="snakePreview">
               <div id="snakeLatter"></div>
             </div>
             <div id="snakeColorLang">...</div>
-            <input type="color" id="snakeColor" oninput="snakeDecoloring();" value="#ddaaff">
+            <input type="color" id="snakeColor" oninput="snakeDecoloring();cancelSound();" onchange="selectionSound();" value="#ddaaff">
             <div id="keypad">
               <div class="keypad numpad">
                 <div class="keyOboard" id="key1" onclick="letterLoad1();defaultClickSound();keysRegistering();">1</div>
