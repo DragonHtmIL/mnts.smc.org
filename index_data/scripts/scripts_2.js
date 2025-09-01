@@ -2675,7 +2675,7 @@ function openWIDmModalDelProg() {
   if(localStorage.getItem("lang") === "he") {
     title.innerHTML = "מחיקת התקדמות";
     content.innerHTML = "פונקציה זו תמחק את כל סוגי האוכל שנאספו מהלאי, גם ציון שנישמר וציון גבוה. <br>";
-    content.innerHTML += "[✓]הרבה תחשבום על זה, אם אתם רוצים להתחיל משחק חדש מ- 0.";
+    content.innerHTML += "[✓]תחשבו על זה הרבה, אם אתם רוצים להתחיל משחק חדש מ- 0.";
     title.style.textAlign = "right";
     content.style.direction = "rtl";
     content.style.textAlign = "right";
@@ -2709,12 +2709,12 @@ function openWIDmModalSavDat() {
   if(localStorage.getItem("lang") === "he") {
     title.innerHTML = "נתונים מנתונים שנשמרו";
     content.innerHTML = "זה נותן לכם לשמור את כל ההתקדמות בקובץ .js ולטעון שוב את ההתקדמות שלם. <br>";
-    content.innerHTML += "כמו כן אתם יכולים להשתמש בו בכדי להעתיק נתוני למכשירים אחרים אם אינכם רוצים להתחיל לשחק מתחלה מ- 0 שוב. <br>";
-    content.innerHTML += " [1]שמור נתונים. <br>";
-    content.innerHTML += " [2]לחץ/גע ב- '' העלאה (.js) '': העלה את הקובץ. <br>";
-    content.innerHTML += " [3]לחץ/גע ב- '' טעינה '': כל התוכן בתוך הקובץ יטען. <br>";
-    content.innerHTML += "[✓]אתה יכול גם לרמות עם הקובץ הזה. <br>";
-    content.innerHTML += "[!]קח סיכון אם אתה מקבל באגים משינוי תוכן בקובץ.";
+    content.innerHTML += "כמו כן אתם יכולים להשתמש בו בכדי להעתיק נתונים למכשירים אחרים אם אינכם רוצים להתחיל לשחק מהתחלה מ- 0 שוב. <br>";
+    content.innerHTML += " [1]שימורו נתונים. <br>";
+    content.innerHTML += " [2]לחצו/געו ב- '' העלאה (.js) '': העלו את הקובץ. <br>";
+    content.innerHTML += " [3]לחצו/געו ב- '' טעינה '': כל התוכן בתוך הקובץ יטען. <br>";
+    content.innerHTML += "[✓]אתם יכולים גם לרמות עם הקובץ הזה. <br>";
+    content.innerHTML += "[!]קחו סיכון אם אתם מקבלים באגים משינוי תוכן בקובץ.";
     title.style.textAlign = "right";
     content.style.direction = "rtl";
     content.style.textAlign = "right";
