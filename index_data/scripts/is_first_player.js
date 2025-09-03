@@ -4,12 +4,7 @@ function selectLangInFirstEn() {
       document.getElementById('languageEn').click();
       document.getElementById('fLsa').classList.add('active');
       document.getElementById('fLsb').classList.remove('active');
-      document.getElementById('fLsc').classList.remove('active');
-      document.getElementById('fLsd').classList.remove('active');
-      document.getElementById('fLse').classList.remove('active');
-      document.getElementById('fLsf').classList.remove('active');
       document.getElementById('fLsg').classList.remove('active');
-      document.getElementById('fLsh').classList.remove('active');
       document.getElementById("fAtLang").innerHTML = "First select a Language";
       document.getElementById("fBtLang").innerHTML = "Now select difficulty";
       document.getElementById("fDsa").innerHTML = "Normal";
@@ -37,12 +32,7 @@ function selectLangInFirstRu() {
       document.getElementById('languageRu').click();
       document.getElementById('fLsa').classList.remove('active');
       document.getElementById('fLsb').classList.add('active');
-      document.getElementById('fLsc').classList.remove('active');
-      document.getElementById('fLsd').classList.remove('active');
-      document.getElementById('fLse').classList.remove('active');
-      document.getElementById('fLsf').classList.remove('active');
       document.getElementById('fLsg').classList.remove('active');
-      document.getElementById('fLsh').classList.remove('active');
       document.getElementById("fAtLang").innerHTML = "Сначала выберите язык";
       document.getElementById("fBtLang").innerHTML = "Теперь выберите сложность";
       document.getElementById("fDsa").innerHTML = "Нормальная";
@@ -70,12 +60,7 @@ function selectLangInFirstHe() {
       document.getElementById('languageHe').click();
       document.getElementById('fLsa').classList.remove('active');
       document.getElementById('fLsb').classList.remove('active');
-      document.getElementById('fLsc').classList.remove('active');
-      document.getElementById('fLsd').classList.remove('active');
-      document.getElementById('fLse').classList.remove('active');
-      document.getElementById('fLsf').classList.remove('active');
       document.getElementById('fLsg').classList.add('active');
-      document.getElementById('fLsh').classList.remove('active');
       document.getElementById("fAtLang").innerHTML = "ראשית בחר שפה";
       document.getElementById("fBtLang").innerHTML = "עכשיו בחר רמת קושי";
       document.getElementById("fDsa").innerHTML = "רגילה";

@@ -2708,7 +2708,7 @@ function openWIDmModalSavDat() {
   }else
   if(localStorage.getItem("lang") === "he") {
     title.innerHTML = "נתונים מנתונים שנשמרו";
-    content.innerHTML = "זה נותן לכם לשמור את כל ההתקדמות בקובץ .js ולטעון שוב את ההתקדמות שלם. <br>";
+    content.innerHTML = "זה נותן לכם לשמור את כל ההתקדמות בקובץ .js ולטעון שוב את ההתקדמות שלכם. <br>";
     content.innerHTML += "כמו כן אתם יכולים להשתמש בו בכדי להעתיק נתונים למכשירים אחרים אם אינכם רוצים להתחיל לשחק מהתחלה מ- 0 שוב. <br>";
     content.innerHTML += " [1]שימורו נתונים. <br>";
     content.innerHTML += " [2]לחצו/געו ב- '' העלאה (.js) '': העלו את הקובץ. <br>";

@@ -1,6 +1,6 @@
 
-let basicVersion = "1.2.3-v2";
-let dateVersion = "[02/09/2025]";
+let basicVersion = "1.2.4-v2";
+let dateVersion = "[03/09/2025]";
 let bugFixEn = "Some fixes.";
 let bugFixRu = "Некоторые исправления.";
 let bugFixHe = "כמה תיקונים.";
@@ -9,9 +9,9 @@ function markUpdateReaded() {
   modal.style.display = "none";
   localStorage.setItem("updateRead", basicVersion);
 }
-let text0en = "Now players can self select the Snake position in board.";
-let text0ru = "Теперь игроки могут самостоятельно выбирать позицию Змеи на доске.";
-let text0he = "כעת שחקנים יכולים לבחור בעצמם את מיקומו של הנחש בלוח.";
+let text0en = "In newbie window and in texts.";
+let text0ru = "В окне новичка и втекстах.";
+let text0he = "בחלון למשתמשים חדשים ובטקסטים.";
 function updateTextLangs() {
   var updateTitle = document.getElementById("updateTitleLang");
   var updateContent = document.getElementById("updateNoticeContent");
