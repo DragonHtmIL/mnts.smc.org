@@ -22,13 +22,6 @@ Languages<br>
   Russian<br>
   Hebrew<br>
 <hr>
-In plans:<br>
-Add a more languages<br>
-Add store<br>
-Add cores like ability, bufs and debufs<br>
-Add profile with achivements and stor data<br>
-Add better comforable
-<hr>
 Game is downlodable for Android(WebAPK), Windows(directory [!]No automatically update), i/Mac OS and Linux;
 <hr>
 <img src="https://github.com/user-attachments/assets/9fc9ef63-7696-4ee0-9cb1-be625d87cf9b" style="width: 55px; height: 55px">
