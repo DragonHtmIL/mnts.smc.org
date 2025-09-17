@@ -1,6 +1,6 @@
 <h3><a href="https://dragonhtmil.github.io/mnts.smc.org/">Open the game</a></h3>
 There is a classic Snake Game but with SMC styles.<br>
-MNTS make this minigame with love SMC by coding in from 30 minutes to 1-2 hourse through <a href="https://code.visualstudio.com">Visual Studio Code</a>.
+ArthurVesta code this minigame with love SMC by coding alot from 30 minutes-1~2 hourse through <a href="https://code.visualstudio.com">Visual Studio Code</a>.
 <hr>
 Supports keyboard buttons<br>
 Supports Mouse Gestures<br>
@@ -35,3 +35,4 @@ Game is downlodable for Android(WebAPK), Windows(directory [!]No automatically u
 This site is with copyrights!<br>
 Do not distribute any of content out share the game link to friends or peoples!<br>
 and this site is free usage;
+<h1>Have fun!</h1>
