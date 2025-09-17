@@ -1,4 +1,4 @@
-English<br>
+<h4>English</h4><br>
 <h1>Snake Mecha Collector 1.2.5-17092025</h1>
 Some fixes and changes.
 <hr>
@@ -33,7 +33,7 @@ This site is with copyrights!<br>
 Do not distribute any of content, only share the game link to friends or peoples!<br>
 and this site is free usage;
 <h1>Have fun!</h1>
-Русский<br>
+<h4>Русский</h4><br>
 Некоторые исправление и изменение.
 <hr>
 <h3><a href="https://dragonhtmil.github.io/mnts.smc.org/">Открыть игру</a></h3>
@@ -68,7 +68,7 @@ ArthurVesta создал эту мини-игру с любовью к SMC на�
 и этот сайт бесплатный для использования;
 <h1>Веселиться!</h1>
 <div style="direction:rtl;">
-עברית<br>
+<h4>עברית</h4><br>
 כמה תיקונים ושינויים.
 <hr>
 <h3><a href="https://dragonhtmil.github.io/mnts.smc.org/">פתח את המשחק</a></h3>
