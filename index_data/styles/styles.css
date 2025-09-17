@@ -1,360 +1,8 @@
-:root {/* Default */
-  --black: #000000ff;
-  --black-a: #000000aa;
-  --black-b: #00000011;
-  --white: #ffffffff;
-  --shadow: #3457dc33;
-  --filter-shadow: #b8c6dcff;
-  --gray: #7c8089ff;
-  --light-blue: #11f4ffff;
-  /* Imageres */
-  /* System */
-  --battery-prog-normal: url('../textures/system/battery_normal.png');
-  --battery-prog-low: url('../textures/system/battery_low.png');
-  --battery-prog-charging: url('../textures/system/battery_charging.png');
-  --battery-main-prog-normal: url('../textures/system/battery_main_normal.png');
-  --battery-main-prog-low: url('../textures/system/battery_main_low.png');
-  --battery-main-prog-charging: url('../textures/system/battery_main_charging.png');
-  --google-translate: url('../textures/system/Google_en.png');
-  --google-perevodchick: url('../textures/system/Google_ru.png');
-  --google-targum: url('../textures/system/Google_he.png');
-  --discord: url('../textures/system/discord.png');
-  /* Food */
-  --meaw-token: url('../textures/foods/meaw_token.png');
-  --gold: url('../textures/foods/gold.png');
-  --alpha-coin: url('../textures/foods/alpha_coin.png');
-  --crystal: url('../textures/foods/crystal.png');
-  --ticket: url('../textures/foods/ticket.png');
-  --ticket-cheomatic: url('../textures/foods/ticket_chromatic.png');
-  --ticket-premium: url('../textures/foods/ticket_premium.png');
-  --ticket-premium-2: url('../textures/foods/ticket_premium_2.png');
-  --virtual-token: url('../textures/foods/virtual_token.png');
-  --food-0-image: url('../textures/foods/img_0_000.png');
-  --food-1-image: url('../textures/foods/img_0_001.png');
-  --food-2-image: url('../textures/foods/img_0_002.png');
-  --food-3-image: url('../textures/foods/img_0_003.png');
-  --food-4-image: url('../textures/foods/img_0_004.png');
-  --food-5-image: url('../textures/foods/img_0_005.png');
-  --food-6-image: url('../textures/foods/img_0_006.png');
-  --food-7-image: url('../textures/foods/img_0_007.png');
-  --food-8-image: url('../textures/foods/img_0_008.png');
-  --food-9-image: url('../textures/foods/img_0_009.png');
-  --food-10-image: url('../textures/foods/img_0_010.png');
-  --food-11-image: url('../textures/foods/img_0_011.png');
-  --food-12-image: url('../textures/foods/img_0_012.png');
-  --food-13-image: url('../textures/foods/img_0_013.png');
-  --food-14-image: url('../textures/foods/img_0_014.png');
-  --food-15-image: url('../textures/foods/img_0_015.png');
-  --food-16-image: url('../textures/foods/img_0_016.png');
-  --food-17-image: url('../textures/foods/img_0_017.png');
-  --food-18-image: url('../textures/foods/img_0_018.png');
-  --food-19-image: url('../textures/foods/img_0_019.png');
-  --food-20-image: url('../textures/foods/img_0_020.png');
-  --food-21-image: url('../textures/foods/img_0_021.png');
-  --food-22-image: url('../textures/foods/img_0_022.png');
-  --food-23-image: url('../textures/foods/img_0_023.png');
-  --food-24-image: url('../textures/foods/img_0_024.png');
-  --food-25-image: url('../textures/foods/img_0_025.png');
-  --food-26-image: url('../textures/foods/img_0_026.png');
-  --food-27-image: url('../textures/foods/img_0_027.png');
-  --food-28-image: url('../textures/foods/img_0_028.png');
-  --food-29-image: url('../textures/foods/img_0_029.png');
-  --food-30-image: url('../textures/foods/img_0_030.png');
-  --food-31-image: url('../textures/foods/img_0_031.png');
-  --food-32-image: url('../textures/foods/img_0_032.png');
-  --food-33-image: url('../textures/foods/img_0_033.png');
-  --food-34-image: url('../textures/foods/img_0_034.png');
-  --food-35-image: url('../textures/foods/img_0_035.png');
-  --food-36-image: url('../textures/foods/img_0_036.png');
-  --food-37-image: url('../textures/foods/img_0_037.png');
-  --food-38-image: url('../textures/foods/img_0_038.png');
-  --food-39-image: url('../textures/foods/img_0_039.png');
-  --food-40-image: url('../textures/foods/img_0_040.png');
-  --food-41-image: url('../textures/foods/img_0_041.png');
-  --food-42-image: url('../textures/foods/img_0_042.png');
-  --food-43-image: url('../textures/foods/img_0_043.png');
-  --food-44-image: url('../textures/foods/img_0_044.png');
-  --food-45-image: url('../textures/foods/img_0_045.png');
-  --food-46-image: url('../textures/foods/img_0_046.png');
-  --food-47-image: url('../textures/foods/img_0_047.png');
-  --food-48-image: url('../textures/foods/img_0_048.png');
-  --food-49-image: url('../textures/foods/img_0_049.png');
-  --food-50-image: url('../textures/foods/img_0_050.png');
-  --food-51-image: url('../textures/foods/img_0_051.png');
-  --food-52-image: url('../textures/foods/img_0_052.png');
-  --food-53-image: url('../textures/foods/img_0_053.png');
-  --food-54-image: url('../textures/foods/img_0_054.png');
-  --food-55-image: url('../textures/foods/img_0_055.png');
-  --food-56-image: url('../textures/foods/img_0_056.png');
-  --food-57-image: url('../textures/foods/img_0_057.png');
-  --food-58-image: url('../textures/foods/img_0_058.png');
-  --food-59-image: url('../textures/foods/img_0_059.png');
-  --food-60-image: url('../textures/foods/img_0_060.png');
-  --food-61-image: url('../textures/foods/img_0_061.png');
-  --food-62-image: url('../textures/foods/img_0_062.png');
-  --food-63-image: url('../textures/foods/img_0_063.png');
-  --food-64-image: url('../textures/foods/img_0_064.png');
-  --food-65-image: url('../textures/foods/img_0_065.png');
-  --food-66-image: url('../textures/foods/img_0_066.png');
-  --food-67-image: url('../textures/foods/img_0_067.png');
-  --food-68-image: url('../textures/foods/img_0_068.png');
-  --food-69-image: url('../textures/foods/img_0_069.png');
-  --food-70-image: url('../textures/foods/img_0_070.png');
-  --food-71-image: url('../textures/foods/img_0_071.png');
-  --food-72-image: url('../textures/foods/img_0_072.png');
-  --food-73-image: url('../textures/foods/img_0_073.png');
-  --food-74-image: url('../textures/foods/img_0_074.png');
-  --food-75-image: url('../textures/foods/img_0_075.png');
-  --food-76-image: url('../textures/foods/img_0_076.png');
-  --food-77-image: url('../textures/foods/img_0_077.png');
-  /* Board */
-  --alpha: url('../textures/boards/alpha_map.png');
-  --alpha2: url('../textures/boards/alpha_map_2.png');
-  --origo: url('../textures/boards/origo_map.png');
-  --board-0-image: url('../textures/boards/img_000.png');
-  --board-1-image: url('../textures/boards/img_001.png');
-  --board-2-image: url('../textures/boards/img_002.png');
-  --board-3-image: url('../textures/boards/img_003.png');
-  --board-4-image: url('../textures/boards/img_004.png');
-  --board-5-image: url('../textures/boards/img_005.png');
-  --board-6-image: url('../textures/boards/img_006.png');
-  --board-7-image: url('../textures/boards/img_007.png');
-  --board-8-image: url('../textures/boards/img_008.png');
-  --board-9-image: url('../textures/boards/img_009.png');
-  --board-10-image: url('../textures/boards/img_010.png');
-  --board-11-image: url('../textures/boards/img_011.png');
-  --board-12-image: url('../textures/boards/img_012.png');
-  --board-13-image: url('../textures/boards/img_013.png');
-  --board-14-image: url('../textures/boards/img_014.png');
-  --board-15-image: url('../textures/boards/img_015.png');
-  --board-16-image: url('../textures/boards/img_016.png');
-  --board-17-image: url('../textures/boards/img_017.png');
-  --board-18-image: url('../textures/boards/img_018.png');
-  --board-19-image: url('../textures/boards/img_019.png');
-  --board-20-image: url('../textures/boards/img_020.png');
-  --board-21-image: url('../textures/boards/img_021.png');
-  --board-22-image: url('../textures/boards/img_022.png');
-  --board-23-image: url('../textures/boards/img_023.png');
-  --board-24-image: url('../textures/boards/img_024.png');
-  --board-25-image: url('../textures/boards/img_025.png');
-  --board-26-image: url('../textures/boards/img_026.png');
-  --board-27-image: url('../textures/boards/img_027.png');
-  --board-28-image: url('../textures/boards/img_028.png');
-  --board-29-image: url('../textures/boards/img_029.png');
-  --board-30-image: url('../textures/boards/img_030.png');
-  --board-31-image: url('../textures/boards/img_031.png');
-  --board-32-image: url('../textures/boards/img_032.png');
-  --board-33-image: url('../textures/boards/img_033.png');
-  --board-34-image: url('../textures/boards/img_034.png');
-  --board-35-image: url('../textures/boards/img_035.png');
-  --board-36-image: url('../textures/boards/img_036.png');
-  --board-37-image: url('../textures/boards/img_037.png');
-  --board-38-image: url('../textures/boards/img_038.png');
-  --board-39-image: url('../textures/boards/img_039.png');
-  --board-40-image: url('../textures/boards/img_040.png');
-  --board-41-image: url('../textures/boards/img_041.png');
-  --board-42-image: url('../textures/boards/img_042.png');
-  --board-43-image: url('../textures/boards/img_043.png');
-  --board-44-image: url('../textures/boards/img_044.png');
-  --board-45-image: url('../textures/boards/img_045.png');
-  --board-46-image: url('../textures/boards/img_046.png');
-  --board-47-image: url('../textures/boards/img_047.png');
-  --board-48-image: url('../textures/boards/img_048.png');
-  --board-49-image: url('../textures/boards/img_049.png');
-  --board-50-image: url('../textures/boards/img_050.png');
-  --board-51-image: url('../textures/boards/img_051.png');
-  --board-52-image: url('../textures/boards/img_052.png');
-  --board-53-image: url('../textures/boards/img_053.png');
-  --board-54-image: url('../textures/boards/img_054.png');
-  --board-55-image: url('../textures/boards/img_055.png');
-  --board-56-image: url('../textures/boards/img_056.png');
-  --board-57-image: url('../textures/boards/img_057.png');
-  --board-58-image: url('../textures/boards/img_058.png');
-  --board-59-image: url('../textures/boards/img_059.png');
-  --board-60-image: url('../textures/boards/img_060.png');
-  --board-61-image: url('../textures/boards/img_061.png');
-  --board-62-image: url('../textures/boards/img_062.png');
-  --board-63-image: url('../textures/boards/img_063.png');
-  --board-64-image: url('../textures/boards/img_064.png');
-  --board-65-image: url('../textures/boards/img_065.png');
-  --board-66-image: url('../textures/boards/img_066.png');
-  --board-67-image: url('../textures/boards/img_067.png');
-  --board-68-image: url('../textures/boards/img_068.png');
-  --board-69-image: url('../textures/boards/img_069.png');
-  --board-70-image: url('../textures/boards/img_070.png');
-  --board-71-image: url('../textures/boards/img_071.png');
-  --board-72-image: url('../textures/boards/img_072.png');
-  --board-73-image: url('../textures/boards/img_073.png');
-  /* Gui */
-  --button-true: url('../textures/gui/button_true.png');
-  --first-back: url('../textures/gui/first_modal_bg.png');
-  --controller: url('../textures/gui/cube_bg.png');
-  --border: url('../textures/gui/border.png');
-  --pause: url('../textures/gui/btn_function_pe.png');
-  --up: url('../textures/gui/btn_control_up.png');
-  --up-hover: url('../textures/gui/btn_control_up_hover.png');
-  --menu-en: url('../textures/gui/nav_menu_en.png');
-  --menu-ru: url('../textures/gui/nav_menu_ru.png');
-  --menu-he: url('../textures/gui/nav_menu_he.png');
-  --menu-en-hover: url('../textures/gui/nav_menu_en_hover.png');
-  --menu-ru-hover: url('../textures/gui/nav_menu_ru_hover.png');
-  --menu-he-hover: url('../textures/gui/nav_menu_he_hover.png');
-  --left: url('../textures/gui/btn_control_lt.png');
-  --left-hover: url('../textures/gui/btn_control_lt_hover.png');
-  --down: url('../textures/gui/btn_control_dn.png');
-  --down-hover: url('../textures/gui/btn_control_dn_hover.png');
-  --right: url('../textures/gui/btn_control_rt.png');
-  --right-hover: url('../textures/gui/btn_control_rt_hover.png');
-  --tabs-audio: url('../textures/gui/tab_off.png');
-  --tabs-audio-hover: url('../textures/gui/tab_horizontal.png');
-  --toggled-off: url('../textures/gui/unselected.png');
-  --toggled-on: url('../textures/gui/selected.png');
-  --def-norm: url('../textures/gui/normal_on.png');
-  --def-hard: url('../textures/gui/hard_on.png');
-  --def-hell: url('../textures/gui/hell_on.png');
-  --button: url('../textures/gui/button.png');
-  --range: url('../textures/gui/range_bar.png');
-  --range-thumb: url('../textures/gui/range_thumb.png');
-  --button-long: url('../textures/gui/long_button.png');
-  --button-long-hover: url('../textures/gui/long_button_hover.png');
-  --play: url('../textures/gui/btn_function_py.png');
-  --exit: url('../textures/gui/exit.png');
-  --dl-windows: url('../textures/gui/download_windows_icon.png');
-  --dl-android: url('../textures/gui/download_android_icon.png');
-  --up-note: url('../textures/gui/up_note.png');
-  --key-bg:  url('../textures/gui/key_bg.png');
-  --key-bg-hover:  url('../textures/gui/key_bg_hover.png');
-  --how-to-play:  url('../textures/gui/htp_button.png');
-  --actived-frame-cube:  url('../textures/gui/actived_frame_cube.png');
-  --line: url('../textures/gui/line.png');
-  --loading-prog: url('../textures/gui/loading_progress.png');
-  --dl-background: url('../textures/gui/download.png');
-  --background-overlay: url('../textures/gui/bg_overlay.png');
-  --modal: url('../textures/gui/notice.png');
-  --menu: url('../textures/gui/menu.png');
-  --alert: url('../textures/gui/alert.png');
-  --tabs-menu: url('../textures/gui/tab_vertical.png');
-  --changed: url('../textures/gui/changed_bg.png');
-  --checkbox: url('../textures/gui/checkbox_off.png');
-  --checkbox-checked: url('../textures/gui/checkbox_on.png');
-  --icons: url('../textures/gui/icon_bg.png');
-  --wrapper: url('../textures/gui/wrapper_bg.png');
-  --close-notice: url('../textures/gui/close.png');
-  --close-menu: url('../textures/gui/menu_close.png');
-  --services-bg: url('../textures/gui/services_bg.png');
-  --windows-bg: url('../textures/gui/windows_bg.png');
-  --mini-modal: url('../textures/gui/mini_modal.png');
-  --mm-opener: url('../textures/gui/what_it_do.png');
-  --mm-closer: url('../textures/gui/mini_modal_close.png');
-  --minus-0: url('../textures/gui/minus_cube.png');
-  --plus-0: url('../textures/gui/plus_cube.png');
-  /* League */
-  --league-0: url('../textures/league/non.png');
-  --league-1: url('../textures/league/league_1_bronze.png');
-  --league-2: url('../textures/league/league_2_silver.png');
-  --league-3: url('../textures/league/league_3_gold.png');
-  --league-4: url('../textures/league/league_4_platinum.png');
-  --league-5: url('../textures/league/league_5_diamond.png');
-  --league-6: url('../textures/league/league_6_super.png');
-  --league-7: url('../textures/league/league_7_legendary.png');
-  --league-8: url('../textures/league/league_8_alpha_knight.png');
-  --league-0-star: url('../textures/league/non_star.png');
-  --league-1-star: url('../textures/league/league_1_bronze_star.png');
-  --league-2-star: url('../textures/league/league_2_silver_star.png');
-  --league-3-star: url('../textures/league/league_3_gold_star.png');
-  --league-4-star: url('../textures/league/league_4_platinum_star.png');
-  --league-5-star: url('../textures/league/league_5_diamond_star.png');
-  --league-6-star: url('../textures/league/league_6_super_star.png');
-  --league-7-star: url('../textures/league/league_7_legendary_star.png');
-  --league-8-star: url('../textures/league/league_8_alpha_knight_star.png');
-  /* System Scripts */
-  --battery-prog-normal-script: url('index_data/textures/system/battery_normal.png');
-  --battery-prog-low-script: url('index_data/textures/system/battery_low.png');
-  --battery-prog-charging-script: url('index_data/textures/system/battery_charging.png');
-  --battery-main-prog-normal-script: url('index_data/textures/system/battery_main_normal.png');
-  --battery-main-prog-low-script: url('index_data/textures/system/battery_main_low.png');
-  --battery-main-prog-charging-script: url('index_data/textures/system/battery_main_charging.png');
-  /* Snake */
-  --letter-a: url('../textures/snake/a.png');
-  --letter-A: url('../textures/snake/As.png');
-  --letter-b: url('../textures/snake/b.png');
-  --letter-B: url('../textures/snake/Bs.png');
-  --letter-c: url('../textures/snake/c.png');
-  --letter-C: url('../textures/snake/Cs.png');
-  --letter-d: url('../textures/snake/d.png');
-  --letter-D: url('../textures/snake/Ds.png');
-  --letter-e: url('../textures/snake/e.png');
-  --letter-E: url('../textures/snake/Es.png');
-  --letter-f: url('../textures/snake/f.png');
-  --letter-F: url('../textures/snake/Fs.png');
-  --letter-g: url('../textures/snake/g.png');
-  --letter-G: url('../textures/snake/Gs.png');
-  --letter-h: url('../textures/snake/h.png');
-  --letter-H: url('../textures/snake/Hs.png');
-  --letter-i: url('../textures/snake/i.png');
-  --letter-I: url('../textures/snake/Is.png');
-  --letter-j: url('../textures/snake/j.png');
-  --letter-J: url('../textures/snake/Js.png');
-  --letter-k: url('../textures/snake/k.png');
-  --letter-K: url('../textures/snake/Ks.png');
-  --letter-l: url('../textures/snake/l.png');
-  --letter-L: url('../textures/snake/Ls.png');
-  --letter-m: url('../textures/snake/m.png');
-  --letter-M: url('../textures/snake/Ms.png');
-  --letter-n: url('../textures/snake/n.png');
-  --letter-N: url('../textures/snake/Ns.png');
-  --letter-o: url('../textures/snake/o.png');
-  --letter-O: url('../textures/snake/Os.png');
-  --letter-p: url('../textures/snake/p.png');
-  --letter-P: url('../textures/snake/Ps.png');
-  --letter-q: url('../textures/snake/q.png');
-  --letter-Q: url('../textures/snake/Qs.png');
-  --letter-r: url('../textures/snake/r.png');
-  --letter-R: url('../textures/snake/Rs.png');
-  --letter-s: url('../textures/snake/s.png');
-  --letter-S: url('../textures/snake/Ss.png');
-  --letter-t: url('../textures/snake/t.png');
-  --letter-T: url('../textures/snake/Ts.png');
-  --letter-u: url('../textures/snake/u.png');
-  --letter-U: url('../textures/snake/Us.png');
-  --letter-v: url('../textures/snake/v.png');
-  --letter-V: url('../textures/snake/Vs.png');
-  --letter-w: url('../textures/snake/w.png');
-  --letter-W: url('../textures/snake/Ws.png');
-  --letter-x: url('../textures/snake/x.png');
-  --letter-X: url('../textures/snake/Xs.png');
-  --letter-y: url('../textures/snake/y.png');
-  --letter-Y: url('../textures/snake/Ys.png');
-  --letter-z: url('../textures/snake/z.png');
-  --letter-Z: url('../textures/snake/Zs.png');
-  --letter-0: url('../textures/snake/0.png');
-  --letter-0s: url('../textures/snake/0s.png');
-  --letter-1: url('../textures/snake/1.png');
-  --letter-1s: url('../textures/snake/1s.png');
-  --letter-2: url('../textures/snake/2.png');
-  --letter-2s: url('../textures/snake/2s.png');
-  --letter-3: url('../textures/snake/3.png');
-  --letter-3s: url('../textures/snake/3s.png');
-  --letter-4: url('../textures/snake/4.png');
-  --letter-4s: url('../textures/snake/4s.png');
-  --letter-5: url('../textures/snake/5.png');
-  --letter-5s: url('../textures/snake/5s.png');
-  --letter-6: url('../textures/snake/6.png');
-  --letter-6s: url('../textures/snake/6s.png');
-  --letter-7: url('../textures/snake/7.png');
-  --letter-7s: url('../textures/snake/7s.png');
-  --letter-8: url('../textures/snake/8.png');
-  --letter-8s: url('../textures/snake/8s.png');
-  --letter-9: url('../textures/snake/9.png');
-  --letter-9s: url('../textures/snake/9s.png');
-  /* Other */
-  --empty-image: url('../textures/empty.png');
-}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: miSans, arial;
+  font-family: gintocopilot, arial;
   user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
@@ -1425,35 +1073,22 @@ a {
   position: relative;
   display: block;
 }
-#btn002.en-lang {background-image:
+#btn002 {background-image:
   var(--border),
-  var(--menu-en);
+  var(--menu-bg);
   position: relative;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  width: 74px;
+  padding-bottom: 28px;
+  color: var(--light-blue);
 }
-#btn002.en-lang:hover {background-image:
+#btn002:hover {background-image:
   var(--border),
-  var(--menu-en-hover);
-}
-#btn002.ru-lang {background-image:
-  var(--border),
-  var(--menu-ru);
-  position: relative;
-  display: block;
-}
-#btn002.ru-lang:hover {background-image:
-  var(--border),
-  var(--menu-ru-hover);
-}
-#btn002.he-lang {background-image:
-  var(--border),
-  var(--menu-he);
-  position: relative;
-  display: block;
-}
-#btn002.he-lang:hover {background-image:
-  var(--border),
-  var(--menu-he-hover);
+  var(--menu-bg);
+  color: var(--yellow);
 }
 #btn003 {background-image:
   var(--border),
@@ -1495,6 +1130,7 @@ a {
   background-size: 100% 100%, auto 80%;
 }
 #navBtn {
+  background-image: var(--menu-bg);
   background-size: 100% 100%;
   position: fixed;
   top: auto;
@@ -1503,24 +1139,13 @@ a {
   height: 70px;
   width: 70px;
   z-index: 3;
+  color: var(--light-blue);
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 28px;
 }
-#navBtn.en-lang {
-  background-image: var(--menu-en);
-}
-#navBtn.ru-lang {
-  background-image: var(--menu-ru);
-}
-#navBtn.he-lang {
-  background-image: var(--menu-he);
-}
-#navBtn.en-lang:hover {
-  background-image: var(--menu-en-hover);
-}
-#navBtn.ru-lang:hover {
-  background-image: var(--menu-ru-hover);
-}
-#navBtn.he-lang:hover {
-  background-image: var(--menu-he-hover);
+#navBtn:hover {
+  color: var(--yellow);
 }
 .tab {
   float: left;
@@ -3639,8 +3264,8 @@ input[type="number"]::-webkit-inner-spin-button {
   background-image: var(--minus-0);
 }
 @font-face {
-  font-family: miSans;
-  src: url('../fonts/MiSans.ttf');
+  font-family: gintocopilot;
+  src: url('../fonts/gintocopilot.woff2');
 }
 @media screen and (max-width: 800px) {
   .wrapper {
@@ -3862,6 +3487,9 @@ input[type="number"]::-webkit-inner-spin-button {
     top: 0px;
     width: 280px;
     height: 24px;
+    display: flex;
+    align-items: center;
+    padding-bottom: 2px;
   }
   #subBatteryProgress {
     bottom: 0;
@@ -3877,16 +3505,20 @@ input[type="number"]::-webkit-inner-spin-button {
     font-size: 17px;
   }
   #subClock {
-    font-size: 17px;
+    font-size: 15px;
     padding-left: 6px;
     padding-right: 4px;
-    margin-top: -1.5px;
+    display: flex;
+    align-items: center;
+    height: 22px;
     border-right: solid 1px var(--black);
   }
   #subCalendar {
-    font-size: 17px;
+    font-size: 15px;
     padding-left: 4px;
-    margin-top: -1.5px;
+    display: flex;
+    align-items: center;
+    height: 22px;
     border-left: solid 2px var(--black);
   }
   .menuscroller {
