@@ -1,3 +1,6 @@
+<a href="https://github.com/DragonHtmIL/mnts.smc.org?tab=readme-ov-file#english">English</a>
+<a href="https://github.com/DragonHtmIL/mnts.smc.org?tab=readme-ov-file#%D1%80%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9">Русский</a>
+<a href="https://github.com/DragonHtmIL/mnts.smc.org?tab=readme-ov-file#%D7%A2%D7%91%D7%A8%D7%99%D7%AA">עברית</a>
 <h4>English</h4><br>
 <h1>Snake Mecha Collector 1.2.5-17092025</h1>
 Some fixes and changes.
