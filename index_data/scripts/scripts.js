@@ -17359,6 +17359,9 @@ function saveProgressViaFile() {
   text.value += "localStorage.setItem('firsttime','" + localStorage.getItem('firsttime') + "');\n";
   text.value += "localStorage.setItem('updateRead','" + localStorage.getItem('updateRead') + "');\n";
   text.value += "localStorage.setItem('currentScore','" + localStorage.getItem('currentScore') + "');\n";
+  text.value += "localStorage.setItem('snakePosY','" + localStorage.getItem('snakePosY') + "');\n";
+  text.value += "localStorage.setItem('snakePosX','" + localStorage.getItem('snakePosX') + "');\n";
+  text.value += "localStorage.setItem('snakePosType','" + localStorage.getItem('snakePosType') + "');\n";
   text.value += "window.location.reload();\n";
   text.value += "}";
   let valueinput = text.value;

@@ -334,7 +334,7 @@ function checkDeviceType() {
     document.getElementById("selectOptionsControllerPosition").style.display = "none";
     document.getElementById("cspLang").style.display = "none";
     document.getElementById("controllerSettingsLangs").style.display = "none";
-    document.getElementById("navBtn").style.display = "block";
+    document.getElementById("navBtn").style.display = "flex";
     document.getElementById("navBtn").style.top = "auto";
     document.getElementById("navBtn").style.bottom = "0";
     document.getElementById("chechboxPausing").style.display = "block";
@@ -1954,7 +1954,7 @@ function loadControllerType() {
   if(localStorage.getItem("controllerTypeDev") === "classic" && navigator.userAgent.match(/mobile/i)) {
     document.getElementById("cTypeChenger").value = "classic";
     document.getElementById("btn000").style.display = "block";
-    document.getElementById("btn002").style.display = "block";
+    document.getElementById("btn002").style.display = "flex";
     document.getElementById("chechboxPausing").style.display = "none";
     document.getElementById("navBtn").style.display = "none";
     document.getElementById("chechboxPausing").style.top = "auto";
@@ -1977,7 +1977,7 @@ function loadControllerType() {
     document.getElementById("btn000").style.display = "none";
     document.getElementById("btn002").style.display = "none";
     document.getElementById("chechboxPausing").style.display = "block";
-    document.getElementById("navBtn").style.display = "block";
+    document.getElementById("navBtn").style.display = "flex";
     document.getElementById("chechboxPausing").style.top = "auto";
     document.getElementById("navBtn").style.top = "auto";
     document.getElementById("navBtn").style.right = "35px";
@@ -2044,7 +2044,7 @@ function loadControllerType() {
     document.getElementById("chechboxPausing").style.display = "block";
     document.getElementById("chechboxPausing").style.bottom = "100px";
     document.getElementById("chechboxPausing").style.left = "10px";
-    document.getElementById("navBtn").style.display = "block";
+    document.getElementById("navBtn").style.display = "flex";
     document.getElementById("navBtn").style.bottom = "100px";
     document.getElementById("navBtn").style.right = "10px";
 
@@ -2623,16 +2623,16 @@ let frameCount = 0;
 let lastTime = performance.now();
 const updateInterval = 1000;
 function fpsDisplaying() {
-    const now = performance.now();
-    const deltaTime = now - lastTime;
-    frameCount++;
-    if (deltaTime >= updateInterval) {
-        const fps = Math.round((frameCount * 1000) / deltaTime);
-        fpsDisplay.textContent = `FPS: ${fps}`;
-        frameCount = 0;
-        lastTime = now;
-    }
-    requestAnimationFrame(fpsDisplaying);
+  const now = performance.now();
+  const deltaTime = now - lastTime;
+  frameCount++;
+  if (deltaTime >= updateInterval) {
+    const fps = Math.round((frameCount * 1000) / deltaTime);
+    fpsDisplay.textContent = `FPS: ${fps}`;
+    frameCount = 0;
+    lastTime = now;
+  }
+  requestAnimationFrame(fpsDisplaying);
 }
 requestAnimationFrame(fpsDisplaying);
 function showFpsDisplaying() {

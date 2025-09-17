@@ -134,8 +134,8 @@ function languagesContents() {
     a040.innerHTML = "Rating by " + rUsers + " Users";
     a041.innerHTML = "Background Music";
     a042.innerHTML = "Music";
-      a043.classList.add("en-lang");
-      a044.classList.add("en-lang");
+    a043.innerHTML = "MENU";
+    a044.innerHTML = "MENU";
     a045.value = "Delete Progress";
     a046.innerHTML = "(Language translations may not be 100% accurate)";
     a047.innerHTML = "If users use Mobiles (Android, iPhone, iPad, Tablets)";
@@ -262,8 +262,8 @@ function languagesContents() {
     a040.innerHTML = "Оценка " + rUsers + " пользователей";
     a041.innerHTML = "Фоновая музыка";
     a042.innerHTML = "Музыка";
-      a043.classList.add("ru-lang");
-      a044.classList.add("ru-lang");
+    a043.innerHTML = "МЕНЮ";
+    a044.innerHTML = "МЕНЮ";
     a045.value = "Удалить Прогресс";
     a046.innerHTML = "(Переводы могут содержать ошибки)";
     a047.innerHTML = "Если пользователи используют мобильные (Android, iPhone, iPad, планшеты)";
@@ -411,8 +411,8 @@ function languagesContents() {
      a041.style.width = "100%";
      a041.style.textAlign = "right";
     a042.innerHTML = "מוסיקה";
-      a043.classList.add("he-lang");
-      a044.classList.add("he-lang");
+    a043.innerHTML = "תפריט";
+    a044.innerHTML = "תפריט";
     a045.value = "מחיקת התקדמות";
     a046.innerHTML = "(ייתכן שתרגומי שפה לא יהיו מדויקים ב-100%)";
     a047.innerHTML = "אם משתמשים משתמשים בטלפונים ניידים (אנדרואיד, אייפון, אייפד, טאבלטים)";

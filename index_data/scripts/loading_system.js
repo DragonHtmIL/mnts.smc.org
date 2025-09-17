@@ -213,12 +213,7 @@ const tassetGuis = [
   "loading_yi_logo_2x",
   "long_button",
   "long_button_hover",
-  "nav_menu_en",
-  "nav_menu_en_hover",
-  "nav_menu_ru",
-  "nav_menu_ru_hover",
-  "nav_menu_he",
-  "nav_menu_he_hover",
+  "nav_menu",
   "new_modal_content",
   "normal_on",
   "range_bar",
@@ -871,7 +866,7 @@ function loadTextures() {
   };
 };
 function toDisplayNone() {
-  if(document.getElementById('widther').style.width === "45.2%") {
+  if(document.getElementById('widther').style.width === "44.7%") {
     if(localStorage.getItem("firstModal") === null) {
       document.getElementById("firstModal").style.display = "block";
     }else
