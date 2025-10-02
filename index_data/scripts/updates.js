@@ -1,14 +1,14 @@
 
-let basicVersion = "1.2.5-v2";
-let dateVersion = "[17/09/2025]";
+let basicVersion = "1.2.6-v2";
+let dateVersion = "[02/10/2025]";
 function markUpdateReaded() {
   var modal = document.getElementById("updateModal");
   modal.style.display = "none";
   localStorage.setItem("updateRead", basicVersion);
 }
-let text0en = "Some fixes and changes.";
-let text0ru = "Некоторые исправление и изменение.";
-let text0he = "כמה תיקונים ושינויים.";
+let text0en = "Some fixes and texts.";
+let text0ru = "Некоторые исправление и тексты.";
+let text0he = "כמה תיקונים וטקסטים.";
 function updateTextLangs() {
   var updateTitle = document.getElementById("updateTitleLang");
   var updateContent = document.getElementById("updateNoticeContent");
