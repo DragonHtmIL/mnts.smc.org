@@ -421,15 +421,15 @@
         <div class="menu-content" id="menucontent">
           <div id="SettingsTitleLang">...</div>
           <div class="close" id="menuCloseBtnBack"></div>
-          <div class="close-clickable" id="menuCloseBtn" onclick="handleInterval();document.getElementById('menu').style.display='none';closeSettingsSound();menuPauseWalkSound();"></div>
+          <div class="close-clickable" id="menuCloseBtn" onclick="handleInterval();document.getElementById('menu').style.display='none';closeSettingsSound();menuPauseWalkSound();miniModalClose();"></div>
           <div class="tab">
-            <button class="tablinks active" onclick="openRange(event, 'conOne');openTab(event, 'about');selectionSound();" id="aboutTab">...</button>
-            <button class="tablinks" onclick="openRange(event, 'conTwo');openTab(event, 'system');selectionSound();" id="systemTab">...</button>
-            <button class="tablinks" onclick="openRange(event, 'conSeven');openTab(event, 'game');selectionSound();" id="gameTab">...</button>
-            <button class="tablinks" onclick="openRange(event, 'conThree');openTab(event, 'snake');selectionSound();" id="snakeTab">...</button>
-            <button class="tablinks" onclick="openRange(event, 'conFour');openTab(event, 'food');selectionSound();" id="foodTab">...</button>
-            <button class="tablinks" onclick="openRange(event, 'conFive');openTab(event, 'board');selectionSound();" id="boardTab">...</button>
-            <button class="tablinks" onclick="openRange(event, 'conSix');openTab(event, 'audio');selectionSound();" id="audioTab">...</button>
+            <button class="tablinks active" onclick="openRange(event, 'conOne');openTab(event, 'about');selectionSound();miniModalClose();" id="aboutTab">...</button>
+            <button class="tablinks" onclick="openRange(event, 'conTwo');openTab(event, 'system');selectionSound();miniModalClose();" id="systemTab">...</button>
+            <button class="tablinks" onclick="openRange(event, 'conSeven');openTab(event, 'game');selectionSound();miniModalClose();" id="gameTab">...</button>
+            <button class="tablinks" onclick="openRange(event, 'conThree');openTab(event, 'snake');selectionSound();miniModalClose();" id="snakeTab">...</button>
+            <button class="tablinks" onclick="openRange(event, 'conFour');openTab(event, 'food');selectionSound();miniModalClose();" id="foodTab">...</button>
+            <button class="tablinks" onclick="openRange(event, 'conFive');openTab(event, 'board');selectionSound();miniModalClose();" id="boardTab">...</button>
+            <button class="tablinks" onclick="openRange(event, 'conSix');openTab(event, 'audio');selectionSound();miniModalClose();" id="audioTab">...</button>
           </div>
           <div id="system" class="content">
             <div class="categores settingscontent">...</div>
@@ -1346,7 +1346,7 @@
                 <div onclick="yaSetActiveMechaMoveSound();checkSettingsChanges();" id="mwYlang" class="select">Death knell (Walk)</div>
                 <div onclick="gaSetActiveMechaMoveSound();checkSettingsChanges();" id="mwGlang" class="select">Doomlight (Walk)</div>
                 <div onclick="zaSetActiveMechaMoveSound();checkSettingsChanges();" id="mwZlang" class="select">Dreadwolf (Walk)</div>
-                <div onclick="haSetActiveMechaMoveSound();checkSettingsChanges();" id="mwHlang" class="select">Frefox (Walk)</div>
+                <div onclick="haSetActiveMechaMoveSound();checkSettingsChanges();" id="mwHlang" class="select">Firefox (Walk)</div>
                 <div onclick="iaSetActiveMechaMoveSound();checkSettingsChanges();" id="mwIlang" class="select">Firestar (Walk)</div>
                 <div onclick="jaSetActiveMechaMoveSound();checkSettingsChanges();" id="mwJlang" class="select">Flamenco (Walk)</div>
                 <div onclick="kaSetActiveMechaMoveSound();checkSettingsChanges();" id="mwKlang" class="select">Gabriel (Walk)</div>
@@ -2106,7 +2106,7 @@
         if (window.location.protocol === 'file:') {
           // Potentially register service worker for local file access (USE WITH CAUTION)
           if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('/service-worker.js', { scope: '/' }) // Scope might need adjustment
+            navigator.serviceWorker.register('/sw.js', { scope: '/' }) // Scope might need adjustment
               .then(registration => {
                 console.log('Service Worker registered for local file with scope:', registration.scope);
               })
