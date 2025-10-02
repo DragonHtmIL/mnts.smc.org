@@ -3554,7 +3554,7 @@ input[type="number"]::-webkit-inner-spin-button {
     bottom: 27px;
   }
   #fpsDisplay {
-    left: auto;
+    left: 128px;
     top: 5px;
   }
   .mini-modal-opener {
