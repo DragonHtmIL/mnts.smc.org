@@ -329,6 +329,7 @@ function checkDeviceType() {
     document.getElementById("devCheck").style.display = "block";
     document.getElementById("hr0hiddenTuggle").style.display = "block";
     document.getElementById("hideInMobileAdminTools").style.display = "none";
+    document.getElementById("hideInMobileAdminTools").style.display = "none";
   }else{
     document.getElementById("controller").style.display = "none";
     document.getElementById("selectOptionsControllerPosition").style.display = "none";
@@ -340,6 +341,7 @@ function checkDeviceType() {
     document.getElementById("chechboxPausing").style.display = "block";
     document.getElementById("devCheck").style.display = "none";
     document.getElementById("hr0hiddenTuggle").style.display = "none";
+    document.getElementById("hideInMobileAdminTools").style.display = "block";
     document.getElementById("hideInMobileAdminTools").style.display = "block";
   }
 };
@@ -3136,6 +3138,12 @@ function minusPosY() {
     cancelSound();
   }
   localStorage.setItem("snakePosY", input.value);
+};
+function miniModalClose() {
+  var object = document.getElementById("miniModal");
+  if(object.style.display = "block") {
+    object.style.display = "none";
+  }
 };
 window.addEventListener('load', function() {
   languagesContents();
