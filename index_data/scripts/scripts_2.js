@@ -3044,8 +3044,8 @@ function checkSettingsChanges() {
 function randomSnakePosChange() {
   var checkbox = document.getElementById("randomSnakePos");
   if(checkbox.checked) {
-    document.getElementById("xSnakeValue").disabled = true;
-    document.getElementById("ySnakeValue").disabled = true;
+    document.getElementById("posCx").style.display = "none";
+    document.getElementById("posCy").style.display = "none";
     if(localStorage.getItem("lang") === "en") {
       document.getElementById("randomSnakePosLang").innerHTML = "Random Position";
     }else
@@ -3056,8 +3056,8 @@ function randomSnakePosChange() {
       document.getElementById("randomSnakePosLang").innerHTML = "מיקום אקראי";
     }
   }else{
-    document.getElementById("xSnakeValue").disabled = false;
-    document.getElementById("ySnakeValue").disabled = false;
+    document.getElementById("posCx").style.display = "flex";
+    document.getElementById("posCy").style.display = "flex";
     if(localStorage.getItem("lang") === "en") {
       document.getElementById("randomSnakePosLang").innerHTML = "Custom Position";
     }else
@@ -3263,8 +3263,30 @@ window.addEventListener('load', function() {
   randomSnakePosChange();
   if(localStorage.getItem("snakePosType") === "random") {
     document.getElementById("randomSnakePos").checked = true;
+    document.getElementById("posCx").style.display = "none";
+    document.getElementById("posCy").style.display = "none";
+    if(localStorage.getItem("lang") === "en") {
+      document.getElementById("randomSnakePosLang").innerHTML = "Random Position";
+    }else
+    if(localStorage.getItem("lang") === "ru") {
+      document.getElementById("randomSnakePosLang").innerHTML = "Случайная позиция";
+    }else
+    if(localStorage.getItem("lang") === "he") {
+      document.getElementById("randomSnakePosLang").innerHTML = "מיקום אקראי";
+    }
   }else{
     document.getElementById("randomSnakePos").checked = false;
+    document.getElementById("posCx").style.display = "flex";
+    document.getElementById("posCy").style.display = "flex";
+    if(localStorage.getItem("lang") === "en") {
+      document.getElementById("randomSnakePosLang").innerHTML = "Custom Position";
+    }else
+    if(localStorage.getItem("lang") === "ru") {
+      document.getElementById("randomSnakePosLang").innerHTML = "Пользовательская позиция";
+    }else
+    if(localStorage.getItem("lang") === "he") {
+      document.getElementById("randomSnakePosLang").innerHTML = "מיקום מותאם אישית";
+    }
   }
   document.getElementById("xSnakeValue").value = localStorage.getItem("snakePosX");
   document.getElementById("ySnakeValue").value = localStorage.getItem("snakePosY");
