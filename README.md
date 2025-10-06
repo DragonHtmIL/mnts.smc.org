@@ -3,7 +3,6 @@
 <a href="https://github.com/DragonHtmIL/mnts.smc.org?tab=readme-ov-file#%D7%A2%D7%91%D7%A8%D7%99%D7%AA">עברית</a>
 <h4>English</h4><br>
 <h1>Snake Mecha Collector 1.2.5-17092025</h1>
-Some fixes and changes.
 <hr>
 <h3><a href="https://dragonhtmil.github.io/mnts.smc.org/">Open the game</a></h3>
 This is a classic Snake Game but with SMC styles.<br>
@@ -37,7 +36,7 @@ Do not distribute any of content, only share the game link to friends or peoples
 and this site is free usage;
 <h1>Have fun!</h1>
 <h4>Русский</h4><br>
-Некоторые исправление и изменение.
+<h1>Змея Меха Сборщик 1.2.5-17092025</h1>
 <hr>
 <h3><a href="https://dragonhtmil.github.io/mnts.smc.org/">Открыть игру</a></h3>
 Это классическая игра «Змейка», но в стиле SMC.<br>
@@ -72,7 +71,7 @@ ArthurVesta создал эту мини-игру с любовью к SMC на�
 <h1>Веселиться!</h1>
 <div style="direction:rtl;">
 <h4>עברית</h4><br>
-כמה תיקונים ושינויים.
+<h1>מכה נחש אספן 1.2.5-17092025</h1>
 <hr>
 <h3><a href="https://dragonhtmil.github.io/mnts.smc.org/">פתח את המשחק</a></h3>
 זהו משחק נחש קלאסי אבל עם סגנונות SMC.<br>
