@@ -856,13 +856,13 @@
               <input type="checkbox" id="randomSnakePos" onchange="updateSnakePosition();randomSnakePosChange();checkSettingsChanges();" onclick="defaultClickSound();">
               <label class="label-checkbox" for="randomSnakePos" id="randomSnakePosLang">...</label>
               <hr>
-              <div class="pos-controll-setting">
+              <div class="pos-controll-setting" id="posCx">
                 <label for="xSnakeValue" id="xSnakeValueLang">...</label><!--horizontally-->
                 <input type="number" id="xSnakeValue" value="5" oninput="updateSnakePosition();randomSnakePosXInput();defaultClickSound();" min="1" max="30"><br>
                 <div class="pos-pluse" onclick="plusPosX();"></div>
                 <div class="pos-minus" onclick="minusPosX();"></div>
               </div>
-              <div class="pos-controll-setting">
+              <div class="pos-controll-setting" id="posCy">
                 <label for="ySnakeValue" id="ySnakeValueLang">...</label><!--vertically-->
                 <input type="number" id="ySnakeValue" value="5" oninput="updateSnakePosition();randomSnakePosYInput();defaultClickSound();" min="1" max="30">
                 <div class="pos-pluse" onclick="plusPosY();"></div>
@@ -1460,9 +1460,9 @@
           <input type="submit" id="defaultSettings" onclick="alertReloadLater();" value="..." />
           <input type="submit" id="applySettings" onclick="applySettings();" value="..." />
           <div id="menuButtonsChain">
-            <button onclick="alertExitSite();" class="site-exit" id="exitSiteLang">...</button>
-            <button onclick="document.getElementById('updateModal').style.display='block';defaultClickSound();" class="update-notice" id="noticeUpLang">...</button>
-            <button onclick="document.getElementById('howToPlayModal').style.display='block';defaultClickSound();" class="how-to-play" id="howToPlayLang"></button>
+            <button onclick="alertExitSite();" class="menu-btn site-exit" id="exitSiteLang">...</button>
+            <button onclick="document.getElementById('updateModal').style.display='block';defaultClickSound();" class="menu-btn update-notice" id="noticeUpLang">...</button>
+            <button onclick="document.getElementById('howToPlayModal').style.display='block';defaultClickSound();" class="menu-btn how-to-play" id="howToPlayLang"></button>
           </div>
           <div class="sub-device-inpo-indicator">
             <div id="subDateTimeIndicator">
