@@ -2339,61 +2339,6 @@ function menuPauseWalkSound() {
 function openProfileCenter() {
   document.getElementById("accenter").style.display = "block";
 };
-function handleDownloadAC() {
-  if (document.fullscreenElement) {
-    var alertconfirm = document.getElementById("alertRight");
-    document.getElementById("alert").style.display = "block";
-    document.getElementById("alert").style.zIndex = "5";
-    alertcancel.style.display = "none";
-    alertconfirm.style.display = "block";
-    if(localStorage.getItem("lang") === "en") {
-      document.getElementById("alertText").innerHTML = "The application is already downloaded or running in fullscreen.";
-      alertconfirm.value = "Confirm";
-    }else
-    if(localStorage.getItem("lang") === "ru") {
-      document.getElementById("alertText").innerHTML = "Приложение уже загружено или запущено в полноэкранном режиме.";
-      alertconfirm.value = "Подтвердить";
-    }else
-    if(localStorage.getItem("lang") === "he") {
-      document.getElementById("alertText").innerHTML = "האפליקציה כבר הורדה או פועלת במסך מלא.";
-      document.getElementById("alertText").style.direction = "rtl";
-      alertconfirm.value = "אישור";
-    }
-    alertconfirm.onclick = function() {
-      document.getElementById("alert").style.display = "none";
-      document.getElementById("alert").style.zIndex = "3";
-      defaultClickSound();
-    }
-  } else {
-    const apkUrl = 'index_data/external/snake.mecha.collector.auto-update.apk';
-    const link = document.createElement('a');
-    link.style.display = "none";
-    link.href = apkUrl;
-    link.download = 'snake.mecha.collector.auto-update.apk';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  }
-};
-function handleDownloadWZ() {
-  var host = "https";
-  var domine = "github.com";
-  var publisher = "DragonHtmIL";
-  var space = "mnts.smc.org";
-  var fileType = "archive";
-  var refs = "refs";
-  var heads = "heads";
-  var fileName = "main";
-  var fileFormat = "zip";
-  const apkUrl = host + "://" + domine + "/" + publisher + "/" + space + "/" + fileType + "/" + refs + "/" + heads + "/" + fileName + "." + fileFormat;
-  const link = document.createElement('a');
-  link.style.display = "none";
-  link.href = apkUrl;
-  link.download = 'snake.mecha.collector.no-auto-update.zip';
-  document.body.appendChild(link);
-  link.click();
-  document.body.removeChild(link);
-};
 function handleInterval() {
   if(velocityX === 0 && velocityY === 0) {
     if(localStorage.getItem("difficulty") === "normal") {

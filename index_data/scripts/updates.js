@@ -1,14 +1,14 @@
 
-let basicVersion = "1.2.7-v2";
-let dateVersion = "[06/10/2025]";
+let basicVersion = "1.2.8-v2";
+let dateVersion = "[15/10/2025]";
 function markUpdateReaded() {
   var modal = document.getElementById("updateModal");
   modal.style.display = "none";
   localStorage.setItem("updateRead", basicVersion);
 }
-let text0en = "Some fixes and style changes.";
-let text0ru = "Некоторые исправление и изменение стиль.";
-let text0he = "כמה תיקונים ושינויים במראה.";
+let text0en = "No more downloads, the offline is not be able to connecting to online storage.";
+let text0ru = "Больше никаких загрузок, в автономном режиме невозможно подключиться к онлайн-хранилищу.";
+let text0he = "אין עוד הורדות, במצב לא מקוון לא ניתן להתחבר לאחסון מקוון.";
 function updateTextLangs() {
   var updateTitle = document.getElementById("updateTitleLang");
   var updateContent = document.getElementById("updateNoticeContent");
