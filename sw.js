@@ -1,6 +1,6 @@
 var GHPATH = '/mnts.smc.org';
 var APP_PREFIX = 'gppwa_';
-let VERSIONNAME = "1.2.7-06102025";
+let VERSIONNAME = "1.2.8-15102025";
 var VERSION = VERSIONNAME;
 
 var URLS = [
@@ -278,9 +278,6 @@ var URLS = [
   `${GHPATH}/index_data/textures/gui/checkbox_off.png`,
   `${GHPATH}/index_data/textures/gui/checkbox_on.png`,
   `${GHPATH}/index_data/textures/gui/cube_bg.png`,
-  `${GHPATH}/index_data/textures/gui/download.png`,
-  `${GHPATH}/index_data/textures/gui/download_android_icon.png`,
-  `${GHPATH}/index_data/textures/gui/download_windows_icon.png`,
   `${GHPATH}/index_data/textures/gui/exit.png`,
   `${GHPATH}/index_data/textures/gui/first_modal_bg.png`,
   `${GHPATH}/index_data/textures/gui/hard_on.png`,
