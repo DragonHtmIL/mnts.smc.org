@@ -2346,13 +2346,6 @@ hr.acc {
   background-image: var(--how-to-play);
   background-position: center center;
 }
-.downloads-continer {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-evenly;
-  width: 100%;
-}
 .dl-button {
   background-image: var(--dl-background);
   background-size: auto 100%;
@@ -2369,40 +2362,6 @@ hr.acc {
   cursor: url('../animations/cursour/delault/0.png'), default;
   -webkit-animation: cursordef 0.4s infinite;
   animation: cursordef 0.4s infinite;
-}
-.dl-av-view {
-  position: absolute;
-  bottom: 17px;
-  right: 0;
-  border: solid 2px var(--white);
-  border-right: none;
-  border-bottom: none;
-  cursor: url('../animations/cursour/clickable/0.png'), pointer;
-  -webkit-animation: cursorlnk 0.4s infinite;
-  animation: cursorlnk 0.4s infinite;
-}
-.dlIcon {
-  width: 100%;
-  height: 84px;
-  background-position: center center;
-  background-size: auto 75%;
-  background-repeat: no-repeat;
-}
-#dlWindowsZip {
-  background-image: var(--dl-windows);
-}
-#dlAndroidChrome {
-  background-image: var(--dl-android);
-}
-.dlLabel {
-  color: var(--black);
-  height: 18px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: url('../animations/cursour/clickable/0.png'), pointer;
-  -webkit-animation: cursorlnk 0.4s infinite;
-  animation: cursorlnk 0.4s infinite;
 }
 .blocker {
   width: 100%;
