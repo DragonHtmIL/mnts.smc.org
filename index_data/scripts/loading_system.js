@@ -202,9 +202,6 @@ const tassetGuis = [
   "button",
   "button_true",
   "cube_bg",
-  "download",
-  "download_android_icon",
-  "download_windows_icon",
   "exit",
   "first_modal_bg",
   "hard_on",
@@ -866,7 +863,7 @@ function loadTextures() {
   };
 };
 function toDisplayNone() {
-  if(document.getElementById('widther').style.width === "44.7%") {
+  if(document.getElementById('widther').style.width === "44.5%") {
     if(localStorage.getItem("firstModal") === null) {
       document.getElementById("firstModal").style.display = "block";
     }else
