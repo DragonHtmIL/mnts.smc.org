@@ -863,7 +863,7 @@ function loadTextures() {
   };
 };
 function toDisplayNone() {
-  if(document.getElementById('widther').style.width === "44.5%") {
+  if(document.getElementById('widther').style.width === "44.4%") {
     if(localStorage.getItem("firstModal") === null) {
       document.getElementById("firstModal").style.display = "block";
     }else
