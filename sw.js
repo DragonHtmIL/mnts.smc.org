@@ -1,6 +1,6 @@
 var GHPATH = '/mnts.smc.org';
 var APP_PREFIX = 'gppwa_';
-let VERSIONNAME = "1.2.8-15102025";
+let VERSIONNAME = "1.2.9-16102025";
 var VERSION = VERSIONNAME;
 
 var URLS = [
@@ -259,6 +259,7 @@ var URLS = [
   `${GHPATH}/index_data/textures/foods/img_0_077.png`,
 
   `${GHPATH}/index_data/textures/gui`,
+  `${GHPATH}/index_data/textures/gui/actived_frame_cube.png`,
   `${GHPATH}/index_data/textures/gui/alert.png`,
   `${GHPATH}/index_data/textures/gui/bg_overlay.png`,
   `${GHPATH}/index_data/textures/gui/border.png`,
@@ -277,44 +278,42 @@ var URLS = [
   `${GHPATH}/index_data/textures/gui/changed_bg.png`,
   `${GHPATH}/index_data/textures/gui/checkbox_off.png`,
   `${GHPATH}/index_data/textures/gui/checkbox_on.png`,
+  `${GHPATH}/index_data/textures/gui/close.png`,
   `${GHPATH}/index_data/textures/gui/cube_bg.png`,
   `${GHPATH}/index_data/textures/gui/exit.png`,
   `${GHPATH}/index_data/textures/gui/first_modal_bg.png`,
   `${GHPATH}/index_data/textures/gui/hard_on.png`,
   `${GHPATH}/index_data/textures/gui/hell_on.png`,
+  `${GHPATH}/index_data/textures/gui/htp_button.png`,
   `${GHPATH}/index_data/textures/gui/icon_bg.png`,
+  `${GHPATH}/index_data/textures/gui/key_bg.png`,
+  `${GHPATH}/index_data/textures/gui/key_bg_hover.png`,
   `${GHPATH}/index_data/textures/gui/line.png`,
+  `${GHPATH}/index_data/textures/gui/loading_progress.png`,
   `${GHPATH}/index_data/textures/gui/loading_yi_logo_2x.png`,
   `${GHPATH}/index_data/textures/gui/long_button.png`,
   `${GHPATH}/index_data/textures/gui/long_button_hover.png`,
   `${GHPATH}/index_data/textures/gui/menu.png`,
   `${GHPATH}/index_data/textures/gui/menu_close.png`,
-  `${GHPATH}/index_data/textures/gui/nav_menu_en.png`,
-  `${GHPATH}/index_data/textures/gui/nav_menu_en_hover.png`,
-  `${GHPATH}/index_data/textures/gui/nav_menu_he.png`,
-  `${GHPATH}/index_data/textures/gui/nav_menu_he_hover.png`,
-  `${GHPATH}/index_data/textures/gui/nav_menu_ru.png`,
-  `${GHPATH}/index_data/textures/gui/nav_menu_ru_hover.png`,
-  `${GHPATH}/index_data/textures/gui/new_modal_content.png`,
+  `${GHPATH}/index_data/textures/gui/mini_modal.png`,
+  `${GHPATH}/index_data/textures/gui/mini_modal_close.png`,
+  `${GHPATH}/index_data/textures/gui/minus_cube.png`,
+  `${GHPATH}/index_data/textures/gui/nav_menu.png`,
   `${GHPATH}/index_data/textures/gui/normal_on.png`,
   `${GHPATH}/index_data/textures/gui/notice.png`,
+  `${GHPATH}/index_data/textures/gui/plus_cube.png`,
   `${GHPATH}/index_data/textures/gui/range_bar.png`,
   `${GHPATH}/index_data/textures/gui/range_thumb.png`,
   `${GHPATH}/index_data/textures/gui/selected.png`,
+  `${GHPATH}/index_data/textures/gui/services_bg.png`,
   `${GHPATH}/index_data/textures/gui/tab_horizontal.png`,
   `${GHPATH}/index_data/textures/gui/tab_off.png`,
   `${GHPATH}/index_data/textures/gui/tab_vertical.png`,
   `${GHPATH}/index_data/textures/gui/unselected.png`,
-  `${GHPATH}/index_data/textures/gui/wrapper_bg.png`,
   `${GHPATH}/index_data/textures/gui/up_note.png`,
-  `${GHPATH}/index_data/textures/gui/services_bg.png`,
-  `${GHPATH}/index_data/textures/gui/htp_button.png`,
-  `${GHPATH}/index_data/textures/gui/key_bg.png`,
-  `${GHPATH}/index_data/textures/gui/key_bg_hover.png`,
-  `${GHPATH}/index_data/textures/gui/actived_frame_cube.png`,
-  `${GHPATH}/index_data/textures/gui/actived_frame_cube.png`,
-  `${GHPATH}/index_data/textures/gui/loading_progress.png`,
+  `${GHPATH}/index_data/textures/gui/what_it_do.png`,
   `${GHPATH}/index_data/textures/gui/windows_bg.png`,
+  `${GHPATH}/index_data/textures/gui/wrapper_bg.png`,
 
   `${GHPATH}/index_data/textures/league`,
   `${GHPATH}/index_data/textures/league/league_1_bronze.png`,
@@ -418,9 +417,6 @@ var URLS = [
   `${GHPATH}/index_data/textures/system/battery_normal.png`,
   `${GHPATH}/index_data/textures/system/battery_main_normal.png`,
   `${GHPATH}/index_data/textures/system/discord.png`,
-  `${GHPATH}/index_data/textures/system/Google_en.png`,
-  `${GHPATH}/index_data/textures/system/Google_he.png`,
-  `${GHPATH}/index_data/textures/system/Google_ru.png`,
   `${GHPATH}/index_data/textures/system/icon_0.png`,
   `${GHPATH}/index_data/textures/system/icon_16.png`,
   `${GHPATH}/index_data/textures/system/icon_32.png`,
@@ -440,6 +436,10 @@ var URLS = [
   `${GHPATH}/index_data/textures/system/icon_300.png`,
   `${GHPATH}/index_data/textures/system/icon_384.png`,
   `${GHPATH}/index_data/textures/system/icon_512.png`,
+  `${GHPATH}/index_data/textures/system/game_logo.jpg`,
+
+  `${GHPATH}/index_data/textures/loading_screens`,
+  `${GHPATH}/index_data/textures/loading_screens/0.png`,
 
   `${GHPATH}/index_data/audio`,
 
@@ -521,7 +521,7 @@ var URLS = [
   `${GHPATH}/index_data/walks/ventorus_walk.mp3`,
 
   `${GHPATH}/index_data/fonts`,
-  `${GHPATH}/index_data/fonts/MiSans.ttf`,
+  `${GHPATH}/index_data/fonts/gintocopilot.woff2`,
 
   `${GHPATH}/index_data/animations`,
   `${GHPATH}/index_data/animations/classic.gif`,

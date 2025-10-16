@@ -14,7 +14,6 @@
     <link rel="stylesheet" id="styleDefault" href="index_data/styles/styles.css">
     <link rel="stylesheet" id="styleAnimation" href="index_data/styles/animations.css">
     <script>
-      var rUsers = "1";
       if(localStorage.getItem("lang") === "en") {
         document.documentElement.setAttribute("lang", "en");
       }else
@@ -36,6 +35,7 @@
           </div>
         </div>
         <div class="clickable-text" id="clickable0Lang">...</div>
+        <div id="fpsDisplay">FPS: 0</div>
       </div>
       <div id="accenter" class="modal" style="display: none;">
         <div class="modal-content">
@@ -1368,70 +1368,6 @@
             <p id="netEaseLang1">...</p>
             <p id="netEaseLang2">...</p>
             <hr>
-            <div id="translateUsage">
-              <div id="translate"></div>
-            </div>
-            <hr>
-            <span class="heading" id="heading">...</span>
-            <hr style="border:3px solid #f1f1f1;padding:0;margin:0;">
-            <div class="row">
-              <div class="middle">
-                <div class="bar-container">
-                  <div class="bar-5" style="width: 1%;"></div>
-                </div>
-              </div>
-              <div class="side left">
-                <div class="r-stars">5</div>
-              </div>
-              <div class="side right">
-                <div>1</div>
-              </div>
-              <div class="middle">
-                <div class="bar-container">
-                  <div class="bar-4" style="width: 0%;"></div>
-                </div>
-              </div>
-              <div class="side left">
-                <div class="r-stars">4</div>
-              </div>
-              <div class="side right">
-                <div>0</div>
-              </div>
-              <div class="middle">
-                <div class="bar-container">
-                  <div class="bar-3" style="width: 0%;"></div>
-                </div>
-              </div>
-              <div class="side left">
-                <div class="r-stars">3</div>
-              </div>
-              <div class="side right">
-                <div>0</div>
-              </div>
-              <div class="middle">
-                <div class="bar-container">
-                  <div class="bar-2" style="width: 0%;"></div>
-                </div>
-              </div>
-              <div class="side left">
-                <div class="r-stars">2</div>
-              </div>
-              <div class="side right">
-                <div>0</div>
-              </div>
-              <div class="middle">
-                <div class="bar-container">
-                  <div class="bar-1" style="width: 0%;"></div>
-                </div>
-              </div>
-              <div class="side left">
-                <div class="r-star">1</div>
-              </div>
-              <div class="side right">
-                <div>0</div>
-              </div>
-            </div>
-            <hr>
             <p id="coderLang">...</p>
             <p id="direction1"><span id="baseCodeLang">...</span><a href="https://www.codingnepalweb.com/create-snake-game-htm-css-javascript/" target="_blank">CodingNepal</a>;</p>
             <p><span id="cratedOn0Lang">...</span><a id="cratedOnLang" href="https://code.visualstudio.com" target="_blank">Visual Studio Code</a></p>
@@ -1493,18 +1429,24 @@
       </div>
       <div class="out-controller" id="touchBoard"></div>
       <div class="out-controller" id="mouseBoard"></div>
-      <div id="fpsDisplay">FPS: 0</div>
     </div>
     <div class="container" id="loading" style="display: flex;">
       <div class="loading">
         <div class="loading-img" id="loadingContiner">
-          <div class="text-logo"></div>
           <div class="animate-img" id="animateImg"></div>
         </div>
-        <h2 id="loadingText">...</h2>
       </div>
-        <div style="width:0;" id="widther"></div>
-        <div id="widthernum"></div>
+      <div class="text-logo"></div>
+      <div class="loading-footer" id="loadingFooter">
+        <div class="loading-texts">
+          <div id="loadingText">...</div>
+          <div id="assetCount">0</div>
+          <div id="widthernum">0</div>
+        </div>
+        <div class="widther">
+          <div style="width: 0;" id="widther"></div>
+        </div>
+      </div>
       <div id="loadedbar" class="loading-assets">
         <div class="blocker"></div>
       </div>
@@ -1514,6 +1456,10 @@
           <div class="service-name">Discord</div>
         </div>
       </div>
+    </div>
+    <div id="gameLogo">
+      <img src="index_data/textures/system/game_logo.jpg" alt="Game Logo">
+      <div></div>
     </div>
     <div class="alert" id="alert" style="display: none;">
       <div class="alert-content">
