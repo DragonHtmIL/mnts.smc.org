@@ -1,6 +1,8 @@
 let widthcont = 0.0;
 let loadedcont = 0;
 let errorscont = 0;
+var widths = "100%";
+var maxAssets = "444";
 const png = ".png";
 const gif = ".gif";
 
@@ -96,7 +98,7 @@ const tassetBoards = [
   "img_069",
   "img_070",
   "img_071",
-  "img_072",
+  "img_072"
 ];
 const tassetFoods = [
   "alpha_coin",
@@ -211,7 +213,6 @@ const tassetGuis = [
   "long_button",
   "long_button_hover",
   "nav_menu",
-  "new_modal_content",
   "normal_on",
   "range_bar",
   "range_thumb",
@@ -238,7 +239,12 @@ const tassetGuis = [
   "menu",
   "menu_close",
   "icon_bg",
-  "windows_bg"
+  "windows_bg",
+  "mini_modal",
+  "mini_modal_close",
+  "minus_cube",
+  "plus_cube",
+  "what_it_do"
 ];
 const tassetLeagues = [
   "league_1_bronze",
@@ -360,10 +366,7 @@ const tassetSystems = [
   "icon_300",
   "icon_384",
   "icon_512",
-  "discord",
-  "Google_en",
-  "Google_ru",
-  "Google_he"
+  "discord"
 ];
 const tassetLoadingLogos = [
   "anime",
@@ -418,9 +421,10 @@ function loadTextures() {
     assetboard.style.height = "1px";
     assetboard.style.opacity = "0";
     assetboard.addEventListener("load", function() {
-      widthcont = widthcont + 0.1;
+      widthcont = widthcont + 0.2247191011235955; // 444 assets
       document.getElementById('widther').style.width = widthcont + "%";
-      document.getElementById('widthernum').innerHTML = loadedcont++;
+      document.getElementById("assetCount").innerHTML = loadedcont++ + "/" + maxAssets;
+      document.getElementById('widthernum').innerHTML = document.getElementById('widther').style.width + "/" + widths;
       toDisplayNone();
     });
     assetboard.addEventListener("error", function() {
@@ -448,9 +452,10 @@ function loadTextures() {
     assetFood.style.height = "1px";
     assetFood.style.opacity = "0";
     assetFood.addEventListener("load", function() {
-      widthcont = widthcont + 0.1;
+      widthcont = widthcont + 0.2247191011235955; // 444 assets
       document.getElementById('widther').style.width = widthcont + "%";
-      document.getElementById('widthernum').innerHTML = loadedcont++;
+      document.getElementById("assetCount").innerHTML = loadedcont++ + "/" + maxAssets;
+      document.getElementById('widthernum').innerHTML = document.getElementById('widther').style.width + "/" + widths;
       toDisplayNone();
     });
     assetFood.addEventListener("error", function() {
@@ -478,9 +483,10 @@ function loadTextures() {
     assetGui.style.height = "1px";
     assetGui.style.opacity = "0";
     assetGui.addEventListener("load", function() {
-      widthcont = widthcont + 0.1;
+      widthcont = widthcont + 0.2247191011235955; // 444 assets
       document.getElementById('widther').style.width = widthcont + "%";
-      document.getElementById('widthernum').innerHTML = loadedcont++;
+      document.getElementById("assetCount").innerHTML = loadedcont++ + "/" + maxAssets;
+      document.getElementById('widthernum').innerHTML = document.getElementById('widther').style.width + "/" + widths;
       toDisplayNone();
     });
     assetGui.addEventListener("error", function() {
@@ -508,9 +514,10 @@ function loadTextures() {
     assetLeague.style.height = "1px";
     assetLeague.style.opacity = "0";
     assetLeague.addEventListener("load", function() {
-      widthcont = widthcont + 0.1;
+      widthcont = widthcont + 0.2247191011235955; // 444 assets
       document.getElementById('widther').style.width = widthcont + "%";
-      document.getElementById('widthernum').innerHTML = loadedcont++;
+      document.getElementById("assetCount").innerHTML = loadedcont++ + "/" + maxAssets;
+      document.getElementById('widthernum').innerHTML = document.getElementById('widther').style.width + "/" + widths;
       toDisplayNone();
     });
     assetLeague.addEventListener("error", function() {
@@ -538,9 +545,10 @@ function loadTextures() {
     assetSnake.style.height = "1px";
     assetSnake.style.opacity = "0";
     assetSnake.addEventListener("load", function() {
-      widthcont = widthcont + 0.1;
+      widthcont = widthcont + 0.2247191011235955; // 444 assets
       document.getElementById('widther').style.width = widthcont + "%";
-      document.getElementById('widthernum').innerHTML = loadedcont++;
+      document.getElementById("assetCount").innerHTML = loadedcont++ + "/" + maxAssets;
+      document.getElementById('widthernum').innerHTML = document.getElementById('widther').style.width + "/" + widths;
       toDisplayNone();
     });
     assetSnake.addEventListener("error", function() {
@@ -568,9 +576,10 @@ function loadTextures() {
     assetSystem.style.height = "1px";
     assetSystem.style.opacity = "0";
     assetSystem.addEventListener("load", function() {
-      widthcont = widthcont + 0.1;
+      widthcont = widthcont + 0.2247191011235955; // 444 assets
       document.getElementById('widther').style.width = widthcont + "%";
-      document.getElementById('widthernum').innerHTML = loadedcont++;
+      document.getElementById("assetCount").innerHTML = loadedcont++ + "/" + maxAssets;
+      document.getElementById('widthernum').innerHTML = document.getElementById('widther').style.width + "/" + widths;
       toDisplayNone();
     });
     assetSystem.addEventListener("error", function() {
@@ -598,9 +607,10 @@ function loadTextures() {
     assetLoadingLogo.style.height = "1px";
     assetLoadingLogo.style.opacity = "0";
     assetLoadingLogo.addEventListener("load", function() {
-      widthcont = widthcont + 0.1;
+      widthcont = widthcont + 0.2247191011235955; // 444 assets
       document.getElementById('widther').style.width = widthcont + "%";
-      document.getElementById('widthernum').innerHTML = loadedcont++;
+      document.getElementById("assetCount").innerHTML = loadedcont++ + "/" + maxAssets;
+      document.getElementById('widthernum').innerHTML = document.getElementById('widther').style.width + "/" + widths;
       toDisplayNone();
     });
     assetLoadingLogo.addEventListener("error", function() {
@@ -628,9 +638,10 @@ function loadTextures() {
     assetCursorDef.style.height = "1px";
     assetCursorDef.style.opacity = "0";
     assetCursorDef.addEventListener("load", function() {
-      widthcont = widthcont + 0.1;
+      widthcont = widthcont + 0.2247191011235955; // 444 assets
       document.getElementById('widther').style.width = widthcont + "%";
-      document.getElementById('widthernum').innerHTML = loadedcont++;
+      document.getElementById("assetCount").innerHTML = loadedcont++ + "/" + maxAssets;
+      document.getElementById('widthernum').innerHTML = document.getElementById('widther').style.width + "/" + widths;
       toDisplayNone();
     });
     assetCursorDef.addEventListener("error", function() {
@@ -658,9 +669,10 @@ function loadTextures() {
     assetCursorCli.style.height = "1px";
     assetCursorCli.style.opacity = "0";
     assetCursorCli.addEventListener("load", function() {
-      widthcont = widthcont + 0.1;
+      widthcont = widthcont + 0.2247191011235955; // 444 assets
       document.getElementById('widther').style.width = widthcont + "%";
-      document.getElementById('widthernum').innerHTML = loadedcont++;
+      document.getElementById("assetCount").innerHTML = loadedcont++ + "/" + maxAssets;
+      document.getElementById('widthernum').innerHTML = document.getElementById('widther').style.width + "/" + widths;
       toDisplayNone();
     });
     assetCursorCli.addEventListener("error", function() {
@@ -688,9 +700,10 @@ function loadTextures() {
     assetCursorDis.style.height = "1px";
     assetCursorDis.style.opacity = "0";
     assetCursorDis.addEventListener("load", function() {
-      widthcont = widthcont + 0.1;
+      widthcont = widthcont + 0.2247191011235955; // 444 assets
       document.getElementById('widther').style.width = widthcont + "%";
-      document.getElementById('widthernum').innerHTML = loadedcont++;
+      document.getElementById("assetCount").innerHTML = loadedcont++ + "/" + maxAssets;
+      document.getElementById('widthernum').innerHTML = document.getElementById('widther').style.width + "/" + widths;
       toDisplayNone();
     });
     assetCursorDis.addEventListener("error", function() {
@@ -718,9 +731,10 @@ function loadTextures() {
     assetCursorLeft.style.height = "1px";
     assetCursorLeft.style.opacity = "0";
     assetCursorLeft.addEventListener("load", function() {
-      widthcont = widthcont + 0.1;
+      widthcont = widthcont + 0.2247191011235955; // 444 assets
       document.getElementById('widther').style.width = widthcont + "%";
-      document.getElementById('widthernum').innerHTML = loadedcont++;
+      document.getElementById("assetCount").innerHTML = loadedcont++ + "/" + maxAssets;
+      document.getElementById('widthernum').innerHTML = document.getElementById('widther').style.width + "/" + widths;
       toDisplayNone();
     });
     assetCursorLeft.addEventListener("error", function() {
@@ -748,9 +762,10 @@ function loadTextures() {
     assetCursorRight.style.height = "1px";
     assetCursorRight.style.opacity = "0";
     assetCursorRight.addEventListener("load", function() {
-      widthcont = widthcont + 0.1;
+      widthcont = widthcont + 0.2247191011235955; // 444 assets
       document.getElementById('widther').style.width = widthcont + "%";
-      document.getElementById('widthernum').innerHTML = loadedcont++;
+      document.getElementById("assetCount").innerHTML = loadedcont++ + "/" + maxAssets;
+      document.getElementById('widthernum').innerHTML = document.getElementById('widther').style.width + "/" + widths;
       toDisplayNone();
     });
     assetCursorRight.addEventListener("error", function() {
@@ -778,9 +793,10 @@ function loadTextures() {
     assetCursorUp.style.height = "1px";
     assetCursorUp.style.opacity = "0";
     assetCursorUp.addEventListener("load", function() {
-      widthcont = widthcont + 0.1;
+      widthcont = widthcont + 0.2247191011235955; // 444 assets
       document.getElementById('widther').style.width = widthcont + "%";
-      document.getElementById('widthernum').innerHTML = loadedcont++;
+      document.getElementById("assetCount").innerHTML = loadedcont++ + "/" + maxAssets;
+      document.getElementById('widthernum').innerHTML = document.getElementById('widther').style.width + "/" + widths;
       toDisplayNone();
     });
     assetCursorUp.addEventListener("error", function() {
@@ -808,9 +824,10 @@ function loadTextures() {
     assetCursorDown.style.height = "1px";
     assetCursorDown.style.opacity = "0";
     assetCursorDown.addEventListener("load", function() {
-      widthcont = widthcont + 0.1;
+      widthcont = widthcont + 0.2247191011235955; // 444 assets
       document.getElementById('widther').style.width = widthcont + "%";
-      document.getElementById('widthernum').innerHTML = loadedcont++;
+      document.getElementById("assetCount").innerHTML = loadedcont++ + "/" + maxAssets;
+      document.getElementById('widthernum').innerHTML = document.getElementById('widther').style.width + "/" + widths;
       toDisplayNone();
     });
     assetCursorDown.addEventListener("error", function() {
@@ -838,9 +855,10 @@ function loadTextures() {
     assetOther.style.height = "1px";
     assetOther.style.opacity = "0";
     assetOther.addEventListener("load", function() {
-      widthcont = widthcont + 0.1;
+      widthcont = widthcont + 0.2247191011235955; // 444 assets
       document.getElementById('widther').style.width = widthcont + "%";
-      document.getElementById('widthernum').innerHTML = loadedcont++;
+      document.getElementById("assetCount").innerHTML = loadedcont++ + "/" + maxAssets;
+      document.getElementById('widthernum').innerHTML = document.getElementById('widther').style.width + "/" + widths;
       toDisplayNone();
     });
     assetOther.addEventListener("error", function() {
@@ -863,7 +881,7 @@ function loadTextures() {
   };
 };
 function toDisplayNone() {
-  if(document.getElementById('widther').style.width === "44.4%") {
+  if(document.getElementById('widther').style.width === widths) {
     if(localStorage.getItem("firstModal") === null) {
       document.getElementById("firstModal").style.display = "block";
     }else

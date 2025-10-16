@@ -3091,8 +3091,11 @@ function miniModalClose() {
   }
 };
 window.addEventListener('load', function() {
+  setTimeout(() => {
+    document.getElementById("gameLogo").style.display = "none";
+    loadTextures();
+  }, 1000);
   languagesContents();
-  loadTextures();
   updateTextLangs();
   autoSnakeLoadNew();
   autoDifficultyLoadNew();

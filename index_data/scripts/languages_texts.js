@@ -39,7 +39,7 @@ function languagesContents() {
   var a037 = document.getElementById("clLang");
   var a038 = document.getElementById("crLang");
   var a039 = document.getElementById("noticeTitleLang");
-  var a040 = document.getElementById("heading");
+//  var a040 = document.getElementById("");
   var a041 = document.getElementById("musicLang");
   var a042 = document.getElementById("musicstyleLang");
   var a043 = document.getElementById("navBtn");
@@ -47,7 +47,7 @@ function languagesContents() {
   var a045 = document.getElementById("deleteprogbutton");
   var a046 = document.getElementById("langImportantLang");
   var a047 = document.getElementById("ifMobileLang");
-  var a048 = document.getElementById("translate");
+//  var a048 = document.getElementById("");
   var a049 = document.getElementById("snakeTabsound");
   var a050 = document.getElementById("autoScoreLang");
   var a051 = document.getElementById("profileTitleLang");
@@ -119,7 +119,7 @@ function languagesContents() {
     a025.innerHTML = "SFX Volume";
     a026.innerHTML = "Privacy Policy, Terms and Conditions";
     a027.innerHTML = "©1997-2025 NetEase, Inc.All Rights Reserved";
-    a028.innerHTML = "Coding: " + "MNTS, DragonHtmIL;";
+    a028.innerHTML = "Coding: " + "ArthurVesta;";
     a029.innerHTML = "Base Code: From";
     a030.innerHTML = "Score: 0";
     a031.innerHTML = "Game Over!";
@@ -131,7 +131,7 @@ function languagesContents() {
     a037.innerHTML = "Left";
     a038.innerHTML = "Right";
     a039.innerHTML = "Notice";
-    a040.innerHTML = "Rating by " + rUsers + " Users";
+//    a040.innerHTML = "";
     a041.innerHTML = "Background Music";
     a042.innerHTML = "Music";
     a043.innerHTML = "MENU";
@@ -139,7 +139,7 @@ function languagesContents() {
     a045.value = "Delete Progress";
     a046.innerHTML = "(Language translations may not be 100% accurate)";
     a047.innerHTML = "If users use Mobiles (Android, iPhone, iPad, Tablets)";
-    a048.classList.add("g-t-en");
+//    a048.classList.add("");
     a049.innerHTML = "Snake";
     a050.innerHTML = "Auto load the saved score";
     a051.innerHTML = "Collection Center";
@@ -156,7 +156,7 @@ function languagesContents() {
     if(localStorage.getItem("loadingStyle") === "anime") {
       a055.innerHTML = "";
     }else{
-      a055.innerHTML = "Loading…";
+      a055.innerHTML = "Loading Assets…";
     }
     a056.innerHTML = "Classic";
     a057.innerHTML = "Snake position";
@@ -247,7 +247,7 @@ function languagesContents() {
     a025.innerHTML = "Громкость SFX";
     a026.innerHTML = "Политика конфиденциальности, положения и условия";
     a027.innerHTML = "©1997-2025 NetEase, Inc.Все права защищены";
-    a028.innerHTML = "Кодирование: " + "MNTS, DragonHtmIL;";
+    a028.innerHTML = "Кодирование: " + "ArthurVesta;";
     a029.innerHTML = "Базовый код: Из ";
     a030.innerHTML = "Счет: 0";
     a031.innerHTML = "Игра закончена!";
@@ -259,7 +259,7 @@ function languagesContents() {
     a037.innerHTML = "Левый";
     a038.innerHTML = "Правый";
     a039.innerHTML = "Уведомление";
-    a040.innerHTML = "Оценка " + rUsers + " пользователей";
+//    a040.innerHTML = "";
     a041.innerHTML = "Фоновая музыка";
     a042.innerHTML = "Музыка";
     a043.innerHTML = "МЕНЮ";
@@ -267,7 +267,7 @@ function languagesContents() {
     a045.value = "Удалить Прогресс";
     a046.innerHTML = "(Переводы могут содержать ошибки)";
     a047.innerHTML = "Если пользователи используют мобильные (Android, iPhone, iPad, планшеты)";
-    a048.classList.add("g-t-ru");
+//    a048.classList.add("");
     a049.innerHTML = "Змея";
     a050.innerHTML = "Автоматически загрузить сохраненного счета";
     a051.innerHTML = "Центр сбора";
@@ -284,7 +284,7 @@ function languagesContents() {
     if(localStorage.getItem("loadingStyle") === "anime") {
       a055.innerHTML = "";
     }else{
-      a055.innerHTML = "Загрузка…";
+      a055.innerHTML = "Загрузка Ресурсы…";
     }
     a056.innerHTML = "Классический";
     a057.innerHTML = "Положение змеи";
@@ -385,7 +385,7 @@ function languagesContents() {
     a026.innerHTML = "מדיניות פרטיות, תנאים והגבלות";
     a027.innerHTML = "©1997-2025 NetEase, Inc. כל הזכויות שמורות";
      a027.style.direction = "rtl";
-    a028.innerHTML = "קידוד: " + "MNTS, DragonHtmIL;";
+    a028.innerHTML = "קידוד: " + "ArthurVesta;";
      a028.style.direction = "rtl";
     a029.innerHTML = "קוד בסיס: מאת";
      a029.style.direction = "rtl";
@@ -406,7 +406,7 @@ function languagesContents() {
     a039.innerHTML = "הודעה";
      a039.style.textAlign = "right";
      a039.style.width = "75%";
-    a040.innerHTML = "דירוג על ידי " + rUsers + " משתמשים";
+//    a040.innerHTML = "";
     a041.innerHTML = "מוסיקת רקע";
      a041.style.width = "100%";
      a041.style.textAlign = "right";
@@ -417,7 +417,7 @@ function languagesContents() {
     a046.innerHTML = "(ייתכן שתרגומי שפה לא יהיו מדויקים ב-100%)";
     a047.innerHTML = "אם משתמשים משתמשים בטלפונים ניידים (אנדרואיד, אייפון, אייפד, טאבלטים)";
      a047.style.textAlign = "right";
-    a048.classList.add("g-t-he");
+//    a048.classList.add("");
     a049.innerHTML = "נחש";
     a050.innerHTML = "טעינה אוטומטית של הציון הנשמר";
      a050.style.width = "100%";
@@ -441,9 +441,8 @@ function languagesContents() {
     if(localStorage.getItem("loadingStyle") === "anime") {
       a055.innerHTML = "";
     }else{
-      a055.innerHTML = "טוען…";
+      a055.innerHTML = "טוען נכסים…";
     }
-    a055.style.direction = "rtl";
     a056.innerHTML = "קלאסי";
     a057.innerHTML = "תנוחה של הנחש";
      a057.style.direction = "rtl";
@@ -533,5 +532,6 @@ function languagesContents() {
       a011_all[i].textContent = 'אנימה';
     };
     document.title = "מכה נחש אספן";
+    document.getElementById("loadingFooter").style.direction = "rtl";
   }
 }
