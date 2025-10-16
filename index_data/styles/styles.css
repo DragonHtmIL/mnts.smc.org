@@ -2101,7 +2101,8 @@ input[type="range"]::-webkit-slider-thumb {
 #noticeTitleLang,
 #profileTitleLang,
 #updateTitleLang,
-#howTitleLang {
+#howTitleLang,
+.un-rate-title {
   position: absolute;
   top: 4px;
   left: 38px;
@@ -2372,63 +2373,6 @@ hr.acc {
   top: 0;
   left: 0;
 }
-.heading {
-  margin-right: 25px;
-}
-.side {
-  float: left;
-  width: 15%;
-  margin-top: 1px;
-}
-.middle {
-  margin-top: 1px;
-  float: right;
-  width: 70%;
-}
-.right {
-  text-align: right;
-  float: right;
-}
-.left {
-  text-align: left;
-  float: left;
-  text-wrap: nowrap;
-  width: 0px;
-}
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.bar-container {
-  width: 100%;
-  background-color: #f1f1f1;
-  text-align: center;
-  color: var(--white);
-}
-.bar-1,.bar-2,.bar-3,.bar-4,.bar-5 {
-  height: 18px;
-  background-image: var(--range);
-  background-size: auto 100%;
-}
-.r-stars.en::after {
-  content: ' Stars';
-}
-.r-star.en::after {
-  content: ' Star';
-}
-.r-stars.ru::after {
-  content: ' Звезды';
-}
-.r-star.ru::after {
-  content: ' Звезда';
-}
-.r-stars.he::after {
-  content: ' כוכבים';
-}
-.r-star.he::after {
-  content: ' כוכב';
-}
 .sub-device-inpo-indicator {
   position: absolute;
   left: 90px;
@@ -2606,28 +2550,12 @@ select {
   background-size: auto 200%;
   background-position: top right;
   border: none;
+  cursor: url('../animations/cursour/clickable/0.png'), pointer;
+  -webkit-animation: cursorlnk 0.4s infinite;
+  animation: cursorlnk 0.4s infinite;
 }
 select:hover {
   background-position: bottom right;
-}
-#widther {
-  background-image: var(--loading-prog);
-  outline: solid 2px var(--black-b);
-  background-size: 100% auto;
-  background-position: left center;
-  height: 5px;
-  position: absolute;
-  margin-top: 276px;
-  transition: 0s;
-  -o-transition: 0s;
-  -moz-transition: 0s;
-  -webkit-transition: 0s;
-}
-#widthernum {
-  text-align: center;
-  font-size: 17px;
-  position: absolute;
-  margin-top: 255px;
 }
 form input[type="submit"] {
   width: 100px;
@@ -3347,7 +3275,8 @@ input[type="number"]::-webkit-inner-spin-button {
   #noticeTitleLang,
   #profileTitleLang,
   #updateTitleLang,
-  #howTitleLang {
+  #howTitleLang,
+  .un-rate-title {
     top: 2px;
     left: 26px;
     font-size: 14px;
@@ -3394,9 +3323,6 @@ input[type="number"]::-webkit-inner-spin-button {
     margin-top: -17px;
     margin-left: 20px;
     width: calc(100% -20px);
-  }
-  .middle {
-    width: 100%;
   }
   .right {
   	display: block;
@@ -3477,11 +3403,17 @@ input[type="number"]::-webkit-inner-spin-button {
     bottom: 27px;
   }
   #fpsDisplay {
-    left: 128px;
-    top: 5px;
+    position: absolute;
+    left: auto;
+    right: -67px;
+    top: 0px;
+    border-radius: 0 0 5px 0;
   }
   .mini-modal-opener {
     right: 6%;
+  }
+  .rate-btns-container {
+    width: 378px;
   }
 }
 @media screen and (min-width: 1545px) {

@@ -16,9 +16,6 @@
   --battery-main-prog-normal: url('../textures/system/battery_main_normal.png');
   --battery-main-prog-low: url('../textures/system/battery_main_low.png');
   --battery-main-prog-charging: url('../textures/system/battery_main_charging.png');
-  --google-translate: url('../textures/system/Google_en.png');
-  --google-perevodchick: url('../textures/system/Google_ru.png');
-  --google-targum: url('../textures/system/Google_he.png');
   --discord: url('../textures/system/discord.png');
   /* Food */
   --meaw-token: url('../textures/foods/meaw_token.png');
@@ -221,7 +218,6 @@
   --how-to-play:  url('../textures/gui/htp_button.png');
   --actived-frame-cube:  url('../textures/gui/actived_frame_cube.png');
   --line: url('../textures/gui/line.png');
-  --loading-prog: url('../textures/gui/loading_progress.png');
   --dl-background: url('../textures/gui/download.png');
   --background-overlay: url('../textures/gui/bg_overlay.png');
   --modal: url('../textures/gui/notice.png');
