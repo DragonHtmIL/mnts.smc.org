@@ -2,7 +2,7 @@
 <a href="https://github.com/DragonHtmIL/mnts.smc.org?tab=readme-ov-file#%D1%80%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9">Русский</a>
 <a href="https://github.com/DragonHtmIL/mnts.smc.org?tab=readme-ov-file#%D7%A2%D7%91%D7%A8%D7%99%D7%AA">עברית</a>
 <h4>English</h4><br>
-<h1>Snake Mecha Collector 1.2.9-16102025</h1>
+<h1>Snake Mecha Collector 1.3.0-18102025</h1>
 <hr>
 <h3><a href="https://dragonhtmil.github.io/mnts.smc.org/">Open the game</a></h3>
 This is a classic Snake Game but with SMC styles.<br>
@@ -28,15 +28,13 @@ Languages<br>
   Russian<br>
   Hebrew<br>
 <hr>
-Game is downloadable for Android(WebAPK), Windows(directory [!]No automatically update), i/Mac OS and Linux;
-<hr>
 <img src="https://github.com/user-attachments/assets/9fc9ef63-7696-4ee0-9cb1-be625d87cf9b" style="width: 55px; height: 55px">
 This site is with copyrights!<br>
 Do not distribute any of content, only share the game link to friends or peoples!<br>
 and this site is free usage;
 <h1>Have fun!</h1>
 <h4>Русский</h4><br>
-<h1>Змея Меха Сборщик 1.2.9-16102025</h1>
+<h1>Змея Меха Сборщик 1.3.0-18102025</h1>
 <hr>
 <h3><a href="https://dragonhtmil.github.io/mnts.smc.org/">Открыть игру</a></h3>
 Это классическая игра «Змейка», но в стиле SMC.<br>
@@ -62,8 +60,6 @@ ArthurVesta создал эту мини-игру с любовью к SMC на�
   Русский<br>
   Иврит<br>
 <hr>
-Игра доступна для скачивания на Android(WebAPK), Windows(directory [!]Нет автоматического обновления), i/Mac OS и Linux;
-<hr>
 <img src="https://github.com/user-attachments/assets/9fc9ef63-7696-4ee0-9cb1-be625d87cf9b" style="width: 55px; height: 55px">
 Этот сайт защищен авторскими правами!<br>
 Не распространяйте никакой контент, только делитесь ссылкой на игру с друзьями или людьми.!<br>
@@ -71,7 +67,7 @@ ArthurVesta создал эту мини-игру с любовью к SMC на�
 <h1>Веселиться!</h1>
 <div style="direction:rtl;">
 <h4>עברית</h4><br>
-<h1>מכה נחש אספן 1.2.9-16102025</h1>
+<h1>מכה נחש אספן 1.3.0-18102025</h1>
 <hr>
 <h3><a href="https://dragonhtmil.github.io/mnts.smc.org/">פתח את המשחק</a></h3>
 זהו משחק נחש קלאסי אבל עם סגנונות SMC.<br>
@@ -96,8 +92,6 @@ ArthurVesta יצר את המיני-משחק הזה באהבה SMC על ידי ק
   אנגלית<br>
   רוסית<br>
   עברית<br>
-<hr>
-המשחק ניתן להורדה לAndroid(WebAPK), לWindows(directory [!]אין עדכון אוטומטי), לi/Mac OS ולLinux;
 <hr>
 <img src="https://github.com/user-attachments/assets/9fc9ef63-7696-4ee0-9cb1-be625d87cf9b" style="width: 55px; height: 55px">
 אתר זה מוגן בזכויות יוצרים!<br>
