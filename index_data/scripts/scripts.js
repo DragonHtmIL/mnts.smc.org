@@ -15753,6 +15753,7 @@ function alertDeleteProgress() {
   };
   alertconfirm.onclick = function() {
     localStorage.setItem("high-score", "0");
+    localStorage.setItem("steelScore", "0");
     localStorage.setItem("meawTokenStorage", "0");
     localStorage.setItem("goldStorage", "0");
     localStorage.setItem("alphaCoinStorage", "0");

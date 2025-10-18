@@ -1661,262 +1661,137 @@ function autoSnakePosYLoadNew() {
   }
 };
 function levelsSystem() {
-  var star = document.getElementById("star");
-  var substar = document.getElementById("substar");
-  if(localStorage.getItem("high-score") == "0" || localStorage.getItem("high-score") == null) {
-    document.getElementById("leaguelevel").innerHTML = "0";
-    star.classList.add("null-league");
-    substar.classList.add("null-league");
-  }else
-  if(localStorage.getItem("high-score") == "1" || localStorage.getItem("high-score") == "2" || localStorage.getItem("high-score") == "11" || localStorage.getItem("high-score") == "12" || localStorage.getItem("high-score") == "21" || localStorage.getItem("high-score") == "22" ||  localStorage.getItem("high-score") == "31" || localStorage.getItem("high-score") == "32" || localStorage.getItem("high-score") == "41" || localStorage.getItem("high-score") == "42" || localStorage.getItem("high-score") == "51" || localStorage.getItem("high-score") == "52" || localStorage.getItem("high-score") == "61" || localStorage.getItem("high-score") == "62" || localStorage.getItem("high-score") == "71" || localStorage.getItem("high-score") == "72") {
-    document.getElementById("leaguelevel").innerHTML = "1";
-    document.getElementById("subleaguelevel").innerHTML = "1";
-  }else
-  if(localStorage.getItem("high-score") == "3" || localStorage.getItem("high-score") == "4" || localStorage.getItem("high-score") == "13" || localStorage.getItem("high-score") == "14" || localStorage.getItem("high-score") == "23" || localStorage.getItem("high-score") == "24" || localStorage.getItem("high-score") == "33" || localStorage.getItem("high-score") == "34" || localStorage.getItem("high-score") == "43" || localStorage.getItem("high-score") == "44" || localStorage.getItem("high-score") == "53" || localStorage.getItem("high-score") == "54" || localStorage.getItem("high-score") == "63" || localStorage.getItem("high-score") == "64" || localStorage.getItem("high-score") == "73" || localStorage.getItem("high-score") == "74") {
-    document.getElementById("leaguelevel").innerHTML = "2";
-    document.getElementById("subleaguelevel").innerHTML = "2";
-  }else
-  if(localStorage.getItem("high-score") == "5" || localStorage.getItem("high-score") == "6" || localStorage.getItem("high-score") == "15" || localStorage.getItem("high-score") == "16" || localStorage.getItem("high-score") == "25" || localStorage.getItem("high-score") == "26" || localStorage.getItem("high-score") == "35" || localStorage.getItem("high-score") == "36" || localStorage.getItem("high-score") == "45" || localStorage.getItem("high-score") == "46" || localStorage.getItem("high-score") == "55" || localStorage.getItem("high-score") == "56" || localStorage.getItem("high-score") == "65" || localStorage.getItem("high-score") == "66" || localStorage.getItem("high-score") == "75" || localStorage.getItem("high-score") == "76") {
-    document.getElementById("leaguelevel").innerHTML = "3";
-    document.getElementById("subleaguelevel").innerHTML = "3";
-  }else
-  if(localStorage.getItem("high-score") == "7" || localStorage.getItem("high-score") == "8" || localStorage.getItem("high-score") == "17" || localStorage.getItem("high-score") == "18" || localStorage.getItem("high-score") == "27" || localStorage.getItem("high-score") == "28" || localStorage.getItem("high-score") == "37" || localStorage.getItem("high-score") == "38" || localStorage.getItem("high-score") == "47" || localStorage.getItem("high-score") == "48" || localStorage.getItem("high-score") == "57" || localStorage.getItem("high-score") == "58" || localStorage.getItem("high-score") == "67" || localStorage.getItem("high-score") == "68" || localStorage.getItem("high-score") == "77" || localStorage.getItem("high-score") == "78") {
-    document.getElementById("leaguelevel").innerHTML = "4";
-    document.getElementById("subleaguelevel").innerHTML = "4";
-  }else
-  if(localStorage.getItem("high-score") == "9" || localStorage.getItem("high-score") == "19" || localStorage.getItem("high-score") == "29" || localStorage.getItem("high-score") == "39" || localStorage.getItem("high-score") == "49" || localStorage.getItem("high-score") == "59" || localStorage.getItem("high-score") == "69" || localStorage.getItem("high-score") == "79" || localStorage.getItem("high-score") == "80" || localStorage.getItem("high-score") == "10" || localStorage.getItem("high-score") == "20" || localStorage.getItem("high-score") == "30" || localStorage.getItem("high-score") == "40" || localStorage.getItem("high-score") == "50" || localStorage.getItem("high-score") == "60" || localStorage.getItem("high-score") == "70") {
-    document.getElementById("leaguelevel").innerHTML = "5";
-    document.getElementById("subleaguelevel").innerHTML = "5";
-  }else
-  if(localStorage.getItem("high-score") > "80") {
-    if(localStorage.getItem("lang") === "en") {
-      document.getElementById("leaguelevel").innerHTML = "5 (MAX)";
-      document.getElementById("subleaguelevel").innerHTML = "5 (MAX)";
-    }else
-    if(localStorage.getItem("lang") === "ru") {
-      document.getElementById("leaguelevel").innerHTML = "5 (МАКС)";
-      document.getElementById("subleaguelevel").innerHTML = "5 (МАКС)";
-    }else
-    if(localStorage.getItem("lang") === "he") {
-      document.getElementById("leaguelevel").innerHTML = "5 (מקס)";
-      document.getElementById("subleaguelevel").innerHTML = "5 (מקס)";
-    }
+  const score = Number(localStorage.getItem("high-score"));
+  const league = document.getElementById("leaguelevel");
+  const subleague = document.getElementById("subleaguelevel");
+  const lang = localStorage.getItem("lang");
+  if (!score || score === 0) {
+    league.innerHTML = "0";
+    subleague.innerHTML = "0";
+    return;
+  }
+  if ([1,2,11,12,21,22,31,32,41,42,51,52,61,62,71,72].includes(score)) {
+    league.innerHTML = "1";
+    subleague.innerHTML = "1";
+  } else if ([3,4,13,14,23,24,33,34,43,44,53,54,63,64,73,74].includes(score)) {
+    league.innerHTML = "2";
+    subleague.innerHTML = "2";
+  } else if ([5,6,15,16,25,26,35,36,45,46,55,56,65,66,75,76].includes(score)) {
+    league.innerHTML = "3";
+    subleague.innerHTML = "3";
+  } else if ([7,8,17,18,27,28,37,38,47,48,57,58,67,68,77,78].includes(score)) {
+    league.innerHTML = "4";
+    subleague.innerHTML = "4";
+  } else if ([9,10,19,20,29,30,39,40,49,50,59,60,69,70,79,80].includes(score)) {
+    league.innerHTML = "5";
+    subleague.innerHTML = "5";
+  } else if (score > 80) {
+    const text = lang === "ru" ? "5 (МАКС)" : lang === "he" ? "5 (מקס)" : "5 (MAX)";
+    league.innerHTML = text;
+    subleague.innerHTML = text;
   }
 }
-levelsSystem();
 function leagueSystem() {
-  if(localStorage.getItem("high-score") == "0" || localStorage.getItem("high-score") == null) {
-    document.getElementById("leagueImage").classList.add("null-league");
-    document.getElementById("subleagueImage").classList.add("null-league");
-    if(localStorage.getItem("lang") === "en") {
-      document.getElementById("leagueType").innerHTML = "Non league";
-      document.getElementById("subleagueType").innerHTML = "Non league";
-    }else
-    if(localStorage.getItem("lang") === "ru") {
-      document.getElementById("leagueType").innerHTML = "Нет лиге";
-      document.getElementById("subleagueType").innerHTML = "Нет лиге";
-    }else
-    if(localStorage.getItem("lang") === "he") {
-      document.getElementById("leagueType").innerHTML = "לא בליגה";
-      document.getElementById("subleagueType").innerHTML = "לא בליגה";
-    }
-  }else
-  if(localStorage.getItem("high-score") == "1" || localStorage.getItem("high-score") == "2" || localStorage.getItem("high-score") == "3" || localStorage.getItem("high-score") == "4" || localStorage.getItem("high-score") == "5" || localStorage.getItem("high-score") == "6" || localStorage.getItem("high-score") == "7" || localStorage.getItem("high-score") == "8" || localStorage.getItem("high-score") == "9" || localStorage.getItem("high-score") == "10") {
-    document.getElementById("leagueImage").classList.add("bronze");
-    document.getElementById("leagueImage").classList.remove("null-league");
-    document.getElementById("subleagueImage").classList.add("bronze");
-    document.getElementById("subleagueImage").classList.remove("null-league");
-    if(localStorage.getItem("lang") === "en") {
-      document.getElementById("leagueType").innerHTML = "Bronze League";
-      document.getElementById("subleagueType").innerHTML = "Bronze League";
-    }else
-    if(localStorage.getItem("lang") === "ru") {
-      document.getElementById("leagueType").innerHTML = "Бронзовая лига";
-      document.getElementById("subleagueType").innerHTML = "Бронзовая лига";
-    }else
-    if(localStorage.getItem("lang") === "he") {
-      document.getElementById("leagueType").innerHTML = "ליגת הארד";
-      document.getElementById("subleagueType").innerHTML = "ליגת הארד";
-    }
-    star.classList.remove("null-league");
-    substar.classList.remove("null-league");
+  const score = Number(localStorage.getItem("high-score"));
+  const lang = localStorage.getItem("lang");
+  const leagueImg = document.getElementById("leagueImage");
+  const subleagueImg = document.getElementById("subleagueImage");
+  const leagueType = document.getElementById("leagueType");
+  const subleagueType = document.getElementById("subleagueType");
+  const star = document.getElementById("star");
+  const substar = document.getElementById("substar");
+  if (!score || score === 0) {
+    leagueImg.classList.add("null-league");
+    subleagueImg.classList.add("null-league");
+    const text = lang === "ru" ? "Нет лиге" : lang === "he" ? "לא בליגה" : "Non league";
+    leagueType.innerHTML = text;
+    subleagueType.innerHTML = text;
+    star.classList.add("null-league");
+    substar.classList.add("null-league");
+    return;
+  }
+  if(score >= 1 && score <= 10) {
+    leagueImg.classList.add("bronze");
+    subleagueImg.classList.add("bronze");
+    const text = lang === "ru" ? "Бронзовая лига" : lang === "he" ? "ליגת הארד" : "Bronze League";
+    leagueType.innerHTML = text;
+    subleagueType.innerHTML = text;
     star.classList.add("bronze");
     substar.classList.add("bronze");
   }else
-  if(localStorage.getItem("high-score") == "11" || localStorage.getItem("high-score") == "12" || localStorage.getItem("high-score") == "13" || localStorage.getItem("high-score") == "14" || localStorage.getItem("high-score") == "15" || localStorage.getItem("high-score") == "16" || localStorage.getItem("high-score") == "17" || localStorage.getItem("high-score") == "18" || localStorage.getItem("high-score") == "19" || localStorage.getItem("high-score") == "20") {
-    document.getElementById("leagueImage").classList.add("silver");
-    document.getElementById("leagueImage").classList.remove("bronze");
-    document.getElementById("subleagueImage").classList.add("silver");
-    document.getElementById("subleagueImage").classList.remove("bronze");
-    if(localStorage.getItem("lang") === "en") {
-      document.getElementById("leagueType").innerHTML = "Silver League";
-      document.getElementById("subleagueType").innerHTML = "Silver League";
-    }else
-    if(localStorage.getItem("lang") === "ru") {
-      document.getElementById("leagueType").innerHTML = "Серебряная лига";
-      document.getElementById("subleagueType").innerHTML = "Серебряная лига";
-    }else
-    if(localStorage.getItem("lang") === "he") {
-      document.getElementById("leagueType").innerHTML = "ליגת הכסף";
-      document.getElementById("subleagueType").innerHTML = "ליגת הכסף";
-    }
-    star.classList.remove("bronze");
-    substar.classList.remove("bronze");
+  if(score >= 11 && score <= 20) {
+    leagueImg.classList.add("silver");
+    subleagueImg.classList.add("silver");
+    const text = lang === "ru" ? "Серебряная лига" : lang === "he" ? "ליגת הכסף" : "Silver League";
+    leagueType.innerHTML = text;
+    subleagueType.innerHTML = text;
     star.classList.add("silver");
     substar.classList.add("silver");
   }else
-  if(localStorage.getItem("high-score") == "21" || localStorage.getItem("high-score") == "22" || localStorage.getItem("high-score") == "23" || localStorage.getItem("high-score") == "24" || localStorage.getItem("high-score") == "25" || localStorage.getItem("high-score") == "26" || localStorage.getItem("high-score") == "27" || localStorage.getItem("high-score") == "28" || localStorage.getItem("high-score") == "29" || localStorage.getItem("high-score") == "30") {
-    document.getElementById("leagueImage").classList.add("goldleague");
-    document.getElementById("leagueImage").classList.remove("silver");
-    document.getElementById("subleagueImage").classList.add("goldleague");
-    document.getElementById("subleagueImage").classList.remove("silver");
-    if(localStorage.getItem("lang") === "en") {
-      document.getElementById("leagueType").innerHTML = "Gold League";
-      document.getElementById("subleagueType").innerHTML = "Gold League";
-    }else
-    if(localStorage.getItem("lang") === "ru") {
-      document.getElementById("leagueType").innerHTML = "Золотая лига";
-      document.getElementById("subleagueType").innerHTML = "Золотая лига";
-    }else
-    if(localStorage.getItem("lang") === "he") {
-      document.getElementById("leagueType").innerHTML = "ליגת הזהב";
-      document.getElementById("subleagueType").innerHTML = "ליגת הזהב";
-    }
-    star.classList.remove("silver");
-    substar.classList.remove("silver");
+  if(score >= 21 && score <= 30) {
+    leagueImg.classList.add("goldleague");
+    subleagueImg.classList.add("goldleague");
+    const text = lang === "ru" ? "Серебряная лига" : lang === "he" ? "ליגת הכסף" : "Silver League";
+    leagueType.innerHTML = text;
+    subleagueType.innerHTML = text;
     star.classList.add("goldleague");
     substar.classList.add("goldleague");
   }else
-  if(localStorage.getItem("high-score") == "31" || localStorage.getItem("high-score") == "32" || localStorage.getItem("high-score") == "33" || localStorage.getItem("high-score") == "34" || localStorage.getItem("high-score") == "35" || localStorage.getItem("high-score") == "36" || localStorage.getItem("high-score") == "37" || localStorage.getItem("high-score") == "38" || localStorage.getItem("high-score") == "39" || localStorage.getItem("high-score") == "40") {
-    document.getElementById("leagueImage").classList.add("platinium");
-    document.getElementById("leagueImage").classList.remove("goldleague");
-    document.getElementById("subleagueImage").classList.add("platinium");
-    document.getElementById("subleagueImage").classList.remove("goldleague");
-    if(localStorage.getItem("lang") === "en") {
-      document.getElementById("leagueType").innerHTML = "Platinum League";
-      document.getElementById("subleagueType").innerHTML = "Platinum League";
-    }else
-    if(localStorage.getItem("lang") === "ru") {
-      document.getElementById("leagueType").innerHTML = "Платиновая лига";
-      document.getElementById("subleagueType").innerHTML = "Платиновая лига";
-    }else
-    if(localStorage.getItem("lang") === "he") {
-      document.getElementById("leagueType").innerHTML = "ליגת פלטינה";
-      document.getElementById("subleagueType").innerHTML = "ליגת פלטינה";
-    }
-    star.classList.remove("goldleague");
-    substar.classList.remove("goldleague");
+  if(score >= 31 && score <= 40) {
+    leagueImg.classList.add("platinium");
+    subleagueImg.classList.add("platinium");
+    const text = lang === "ru" ? "Платиновая лига" : lang === "he" ? "ליגת פלטינה" : "Platinum League";
+    leagueType.innerHTML = text;
+    subleagueType.innerHTML = text;
     star.classList.add("platinium");
     substar.classList.add("platinium");
   }else
-  if(localStorage.getItem("high-score") == "41" || localStorage.getItem("high-score") == "42" || localStorage.getItem("high-score") == "43" || localStorage.getItem("high-score") == "44" || localStorage.getItem("high-score") == "45" || localStorage.getItem("high-score") == "46" || localStorage.getItem("high-score") == "47" || localStorage.getItem("high-score") == "48" || localStorage.getItem("high-score") == "49" || localStorage.getItem("high-score") == "50") {
-    document.getElementById("leagueImage").classList.add("diamond");
-    document.getElementById("leagueImage").classList.remove("platinium");
-    document.getElementById("subleagueImage").classList.add("diamond");
-    document.getElementById("subleagueImage").classList.remove("platinium");
-    if(localStorage.getItem("lang") === "en") {
-      document.getElementById("leagueType").innerHTML = "Diamond League";
-      document.getElementById("subleagueType").innerHTML = "Diamond League";
-    }else
-    if(localStorage.getItem("lang") === "ru") {
-      document.getElementById("leagueType").innerHTML = "Алмазная лига";
-      document.getElementById("subleagueType").innerHTML = "Алмазная лига";
-    }else
-    if(localStorage.getItem("lang") === "he") {
-      document.getElementById("leagueType").innerHTML = "ליגת היהלום";
-      document.getElementById("subleagueType").innerHTML = "ליגת היהלום";
-    }
-    star.classList.remove("platinium");
-    substar.classList.remove("platinium");
+  if(score >= 41 && score <= 50) {
+    leagueImg.classList.add("diamond");
+    subleagueImg.classList.add("diamond");
+    const text = lang === "ru" ? "Алмазная лига" : lang === "he" ? "ליגת היהלום" : "Diamond League";
+    leagueType.innerHTML = text;
+    subleagueType.innerHTML = text;
     star.classList.add("diamond");
     substar.classList.add("diamond");
   }else
-  if(localStorage.getItem("high-score") == "51" || localStorage.getItem("high-score") == "52" || localStorage.getItem("high-score") == "53" || localStorage.getItem("high-score") == "54" || localStorage.getItem("high-score") == "55" || localStorage.getItem("high-score") == "56" || localStorage.getItem("high-score") == "57" || localStorage.getItem("high-score") == "58" || localStorage.getItem("high-score") == "59" || localStorage.getItem("high-score") == "60") {
-    document.getElementById("leagueImage").classList.add("super");
-    document.getElementById("leagueImage").classList.remove("diamond");
-    document.getElementById("subleagueImage").classList.add("super");
-    document.getElementById("subleagueImage").classList.remove("diamond");
-    if(localStorage.getItem("lang") === "en") {
-      document.getElementById("leagueType").innerHTML = "Super League";
-      document.getElementById("subleagueType").innerHTML = "Super League";
-    }else
-    if(localStorage.getItem("lang") === "ru") {
-      document.getElementById("leagueType").innerHTML = "Супер лига";
-      document.getElementById("subleagueType").innerHTML = "Супер лига";
-    }else
-    if(localStorage.getItem("lang") === "he") {
-      document.getElementById("leagueType").innerHTML = "ליגת העל";
-      document.getElementById("subleagueType").innerHTML = "ליגת העל";
-    }
-    star.classList.remove("diamond");
-    substar.classList.remove("diamond");
+  if(score >= 51 && score <= 60) {
+    leagueImg.classList.add("super");
+    subleagueImg.classList.add("super");
+    const text = lang === "ru" ? "Супер лига" : lang === "he" ? "ליגת העל" : "Super League";
+    leagueType.innerHTML = text;
+    subleagueType.innerHTML = text;
     star.classList.add("super");
     substar.classList.add("super");
   }else
-  if(localStorage.getItem("high-score") == "61" || localStorage.getItem("high-score") == "62" || localStorage.getItem("high-score") == "63" || localStorage.getItem("high-score") == "64" || localStorage.getItem("high-score") == "65" || localStorage.getItem("high-score") == "66" || localStorage.getItem("high-score") == "67" || localStorage.getItem("high-score") == "68" || localStorage.getItem("high-score") == "69" || localStorage.getItem("high-score") == "70") {
-    document.getElementById("leagueImage").classList.add("legendary");
-    document.getElementById("leagueImage").classList.remove("super");
-    document.getElementById("subleagueImage").classList.add("legendary");
-    document.getElementById("subleagueImage").classList.remove("super");
-    if(localStorage.getItem("lang") === "en") {
-      document.getElementById("leagueType").innerHTML = "Legendary League";
-      document.getElementById("subleagueType").innerHTML = "Legendary League";
-    }else
-    if(localStorage.getItem("lang") === "ru") {
-      document.getElementById("leagueType").innerHTML = "Легендарная лига";
-      document.getElementById("subleagueType").innerHTML = "Легендарная лига";
-    }else
-    if(localStorage.getItem("lang") === "he") {
-      document.getElementById("leagueType").innerHTML = "ליגה האגדית";
-      document.getElementById("subleagueType").innerHTML = "ליגה האגדית";
-    }
-    star.classList.remove("super");
-    substar.classList.remove("super");
+  if(score >= 61 && score <= 70) {
+    leagueImg.classList.add("legendary");
+    subleagueImg.classList.add("legendary");
+    const text = lang === "ru" ? "Легендарная лига" : lang === "he" ? "ליגה האגדית" : "Legendary League";
+    leagueType.innerHTML = text;
+    subleagueType.innerHTML = text;
     star.classList.add("legendary");
     substar.classList.add("legendary");
   }else
-  if(localStorage.getItem("high-score") == "71" || localStorage.getItem("high-score") == "72" || localStorage.getItem("high-score") == "73" || localStorage.getItem("high-score") == "74" || localStorage.getItem("high-score") == "75" || localStorage.getItem("high-score") == "76" || localStorage.getItem("high-score") == "77" || localStorage.getItem("high-score") == "78" || localStorage.getItem("high-score") == "79" || localStorage.getItem("high-score") == "80") {
-    document.getElementById("leagueImage").classList.add("alphaknight");
-    document.getElementById("leagueImage").classList.remove("legendary");
-    document.getElementById("subleagueImage").classList.add("alphaknight");
-    document.getElementById("subleagueImage").classList.remove("legendary");
-    if(localStorage.getItem("lang") === "en") {
-      document.getElementById("leagueType").innerHTML = "Alpha Knight";
-      document.getElementById("subleagueType").innerHTML = "Alpha Knight";
-    }else
-    if(localStorage.getItem("lang") === "ru") {
-      document.getElementById("leagueType").innerHTML = "Альфа Рыцарь";
-      document.getElementById("subleagueType").innerHTML = "Альфа Рыцарь";
-    }else
-    if(localStorage.getItem("lang") === "he") {
-      document.getElementById("leagueType").innerHTML = "אביר אלפא";
-      document.getElementById("subleagueType").innerHTML = "אביר אלפא";
-    }
-    star.classList.remove("legendary");
-    substar.classList.remove("legendary");
+  if(score >= 71 && score <= 80) {
+    leagueImg.classList.add("alphaknight");
+    subleagueImg.classList.add("alphaknight");
+    const text = lang === "ru" ? "Альфа Рыцарь" : lang === "he" ? "אביר אלפא" : "Alpha Knight";
+    leagueType.innerHTML = text;
+    subleagueType.innerHTML = text;
     star.classList.add("alphaknight");
     substar.classList.add("alphaknight");
   }else
-  if(localStorage.getItem("high-score") > "80") {
-    document.getElementById("leagueImage").classList.add("alphaknight");
-    document.getElementById("subleagueImage").classList.add("alphaknight");
-    if(localStorage.getItem("lang") === "en") {
-      document.getElementById("leagueType").innerHTML = "Alpha Knight (MAX)";
-      document.getElementById("subleagueType").innerHTML = "Alpha Knight (MAX)";
-    }else
-    if(localStorage.getItem("lang") === "ru") {
-      document.getElementById("leagueType").innerHTML = "Альфа Рыцарь (МАКС)";
-      document.getElementById("subleagueType").innerHTML = "Альфа Рыцарь (МАКС)";
-    }else
-    if(localStorage.getItem("lang") === "he") {
-      document.getElementById("leagueType").innerHTML = "אביר אלפא (מקס)";
-      document.getElementById("subleagueType").innerHTML = "אביר אלפא (מקס)";
-    }
+  if (score > 80) {
+    leagueImg.classList.add("alphaknight");
+    subleagueImg.classList.add("alphaknight");
+    const text = lang === "ru" ? "Альфа Рыцарь (МАКС)" : lang === "he" ? "אביר אלפא (מקס)" : "Alpha Knight (MAX)";
+    leagueType.innerHTML = text;
+    subleagueType.innerHTML = text;
     star.classList.add("alphaknight");
     substar.classList.add("alphaknight");
   }
-}
-leagueSystem();
+};
 function changeControllerType() {
   if(document.getElementById("cTypeChenger").value === localStorage.getItem("controllerTypeDev")) {
     if(document.getElementById("cTypeChenger").value === "classic") {
@@ -3209,6 +3084,8 @@ window.addEventListener('load', function() {
   changeControllerType();
   keysRegistering();
   randomSnakePosChange();
+  levelsSystem();
+  leagueSystem();
   if(localStorage.getItem("snakePosType") === "random") {
     document.getElementById("randomSnakePos").checked = true;
     document.getElementById("posCx").style.display = "none";
