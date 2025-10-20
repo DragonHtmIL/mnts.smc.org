@@ -457,9 +457,16 @@
               <input type="submit" id="dataRunner" value="...">
             </form>
             <br>
-            <div class="checkbox-content" id="hideInMobileAdminTools">
-              <input type="checkbox" id="administratorTools" onclick="selectionSound();">
+            <div class="checkbox-content" id="administratorToolsContent">
+              <input type="checkbox" id="administratorTools" onclick="selectionSound();" onchange="collpaceDrowerAdmins();">
               <label class="label-checkbox" for="administratorTools" id="adminToolsLang">...</label>
+              <div id="devToolsDrower">
+                <div class="checkbox-content">
+                  <input type="checkbox" id="f12Tool" onchange="f12Active();" onclick="selectionSound();">
+                  <label class="label-checkbox" for="f12Tool" id="f12ToolLang">...</label>
+                  <span class="mini-modal-opener" onclick="openWIDmModalF12();defaultClickSound();"></span>
+                </div>
+              </div>
             </div>
             <hr>
             <div class="categores stylescontent">...</div>
@@ -1379,6 +1386,10 @@
                 <div class="service-name">Discord</div>
               </div>
             </div>
+            <!--hr>
+            <div id="deBug">DeBugs Info</div>
+            <div id="userAgent">...</div>
+            <script>document.getElementById("userAgent").innerHTML = "UserAgent: " + navigator.userAgent;</script-->
           </div>
           <input type="submit" id="defaultSettings" onclick="alertReloadLater();" value="..." />
           <input type="submit" id="applySettings" onclick="applySettings();" value="..." />
