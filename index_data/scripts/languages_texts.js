@@ -39,7 +39,7 @@ function languagesContents() {
   var a037 = document.getElementById("clLang");
   var a038 = document.getElementById("crLang");
   var a039 = document.getElementById("noticeTitleLang");
-//  var a040 = document.getElementById("");
+  var a040 = document.getElementById("f12ToolLang");
   var a041 = document.getElementById("musicLang");
   var a042 = document.getElementById("musicstyleLang");
   var a043 = document.getElementById("navBtn");
@@ -131,7 +131,7 @@ function languagesContents() {
     a037.innerHTML = "Left";
     a038.innerHTML = "Right";
     a039.innerHTML = "Notice";
-//    a040.innerHTML = "";
+    a040.innerHTML = "Developer tools";
     a041.innerHTML = "Background Music";
     a042.innerHTML = "Music";
     a043.innerHTML = "MENU";
@@ -139,7 +139,7 @@ function languagesContents() {
     a045.value = "Delete Progress";
     a046.innerHTML = "(Language translations may not be 100% accurate)";
     a047.innerHTML = "If users use Mobiles (Android, iPhone, iPad, Tablets)";
-//    a048.classList.add("");
+//    a048.innerHTML = "";
     a049.innerHTML = "Snake";
     a050.innerHTML = "Auto load the saved score";
     a051.innerHTML = "Collection Center";
@@ -259,7 +259,7 @@ function languagesContents() {
     a037.innerHTML = "Левый";
     a038.innerHTML = "Правый";
     a039.innerHTML = "Уведомление";
-//    a040.innerHTML = "";
+    a040.innerHTML = "";
     a041.innerHTML = "Фоновая музыка";
     a042.innerHTML = "Музыка";
     a043.innerHTML = "МЕНЮ";
@@ -267,7 +267,7 @@ function languagesContents() {
     a045.value = "Удалить Прогресс";
     a046.innerHTML = "(Переводы могут содержать ошибки)";
     a047.innerHTML = "Если пользователи используют мобильные (Android, iPhone, iPad, планшеты)";
-//    a048.classList.add("");
+//    a048.innerHTML = "";
     a049.innerHTML = "Змея";
     a050.innerHTML = "Автоматически загрузить сохраненного счета";
     a051.innerHTML = "Центр сбора";
@@ -406,7 +406,7 @@ function languagesContents() {
     a039.innerHTML = "הודעה";
      a039.style.textAlign = "right";
      a039.style.width = "75%";
-//    a040.innerHTML = "";
+    a040.innerHTML = "כלי פיתוח";
     a041.innerHTML = "מוסיקת רקע";
      a041.style.width = "100%";
      a041.style.textAlign = "right";
@@ -417,7 +417,7 @@ function languagesContents() {
     a046.innerHTML = "(ייתכן שתרגומי שפה לא יהיו מדויקים ב-100%)";
     a047.innerHTML = "אם משתמשים משתמשים בטלפונים ניידים (אנדרואיד, אייפון, אייפד, טאבלטים)";
      a047.style.textAlign = "right";
-//    a048.classList.add("");
+//    a048.innerHTML = "";
     a049.innerHTML = "נחש";
     a050.innerHTML = "טעינה אוטומטית של הציון הנשמר";
      a050.style.width = "100%";

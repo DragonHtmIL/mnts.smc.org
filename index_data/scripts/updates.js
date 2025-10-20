@@ -1,14 +1,14 @@
 
-let basicVersion = "1.3.0-v2";
-let dateVersion = "[18/10/2025]";
+let basicVersion = "1.3.1-v2";
+let dateVersion = "[20/10/2025]";
 function markUpdateReaded() {
   var modal = document.getElementById("updateModal");
   modal.style.display = "none";
   localStorage.setItem("updateRead", basicVersion);
 }
-let text0en = "Some fixes.";
-let text0ru = "Некоторые исправления.";
-let text0he = "כמה תיקונים.";
+let text0en = "devTools is updated and fixed iPads and Tablets support.";
+let text0ru = "Инструменты разработчика обновлены и исправлена ​​поддержка iPadы и планшетов.";
+let text0he = "כלי הפיתוח עודכנו ותוקן תמיכה בiPadים ובטאבלטים.";
 
 let text1en = "";
 let text1ru = "";

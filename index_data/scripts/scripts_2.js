@@ -32,7 +32,7 @@ function pauseGame() {
     alertcancel.value = "...";
     alertcancel.style.display = "none";
     if(localStorage.getItem("lang") === "en") {
-      if(navigator.userAgent.match(/mobile/i)) {
+      if(navigator.userAgent.match(/mobile|Tablet|iPad|android|bSurface/i)) {
         document.getElementById("alertText").innerHTML = "Game paused, press ''Continue'' to continue.";
       }else{
         document.getElementById("alertText").innerHTML = "Game paused, click ''Continue'' to continue.";
@@ -52,7 +52,7 @@ function pauseGame() {
       alertconfirm.value = "Continue";
     }else
     if(localStorage.getItem("lang") === "ru") {
-      if(navigator.userAgent.match(/mobile/i)) {
+      if(navigator.userAgent.match(/mobile|Tablet|iPad|android|bSurface/i)) {
         document.getElementById("alertText").innerHTML = "Игра приостановлена, коснитесь ''Продолжить'', чтобы продолжить.";
       }else{
         document.getElementById("alertText").innerHTML = "Игра приостановлена, нажмите ''Продолжить'', чтобы продолжить.";
@@ -72,7 +72,7 @@ function pauseGame() {
       alertconfirm.value = "Продолжать";
     }else
     if(localStorage.getItem("lang") === "he") {
-      if(navigator.userAgent.match(/mobile/i)) {
+      if(navigator.userAgent.match(/mobile|Tablet|iPad|android|bSurface/i)) {
         document.getElementById("alertText").innerHTML = "משחק נעצר, גע ''המשך'' בכדי להמשיך.";
       }else{
         document.getElementById("alertText").innerHTML = "משחק נעצר, לחץ ''המשך'' בכדי להמשיך.";
@@ -316,7 +316,7 @@ function positioningController() {
 };
 positioningController();
 function checkDeviceType() {
-  if(navigator.userAgent.match(/mobile/i)) {
+  if(navigator.userAgent.match(/mobile|Tablet|iPad|android|bSurface/i)) {
     document.getElementById("controller").style.display = "grid";
     document.getElementById("selectOptionsControllerPosition").style.display = "flex";
     document.getElementById("cspLang").style.display = "block";
@@ -328,8 +328,7 @@ function checkDeviceType() {
     document.getElementById("chechboxPausing").style.bottom = "100px";
     document.getElementById("devCheck").style.display = "block";
     document.getElementById("hr0hiddenTuggle").style.display = "block";
-    document.getElementById("hideInMobileAdminTools").style.display = "none";
-    document.getElementById("hideInMobileAdminTools").style.display = "none";
+    document.getElementById("administratorToolsContent").style.display = "none";
   }else{
     document.getElementById("controller").style.display = "none";
     document.getElementById("selectOptionsControllerPosition").style.display = "none";
@@ -341,8 +340,7 @@ function checkDeviceType() {
     document.getElementById("chechboxPausing").style.display = "block";
     document.getElementById("devCheck").style.display = "none";
     document.getElementById("hr0hiddenTuggle").style.display = "none";
-    document.getElementById("hideInMobileAdminTools").style.display = "block";
-    document.getElementById("hideInMobileAdminTools").style.display = "block";
+    document.getElementById("administratorToolsContent").style.display = "block";
   }
 };
 checkDeviceType();
@@ -1828,7 +1826,7 @@ function changeControllerType() {
   }
 };
 function loadControllerType() {
-  if(localStorage.getItem("controllerTypeDev") === "classic" && navigator.userAgent.match(/mobile/i)) {
+  if(localStorage.getItem("controllerTypeDev") === "classic" && navigator.userAgent.match(/mobile|Tablet|iPad|android|bSurface/i)) {
     document.getElementById("cTypeChenger").value = "classic";
     document.getElementById("btn000").style.display = "block";
     document.getElementById("btn002").style.display = "flex";
@@ -1849,7 +1847,7 @@ function loadControllerType() {
     document.getElementById("btn005").style.bottom = "auto";
     document.getElementById("btn005").style.right = "auto";
   } else
-  if(localStorage.getItem("controllerTypeDev") === "dynamic" && navigator.userAgent.match(/mobile/i)) {
+  if(localStorage.getItem("controllerTypeDev") === "dynamic" && navigator.userAgent.match(/mobile|Tablet|iPad|android|bSurface/i)) {
     document.getElementById("cTypeChenger").value = "dynamic";
     document.getElementById("btn000").style.display = "none";
     document.getElementById("btn002").style.display = "none";
@@ -1872,7 +1870,7 @@ function loadControllerType() {
     document.getElementById("btn005").style.bottom = "0";
     document.getElementById("btn005").style.right = "35px";
   } else
-  if(localStorage.getItem("controllerTypeDev") === "swap" && navigator.userAgent.match(/mobile/i)) {
+  if(localStorage.getItem("controllerTypeDev") === "swap" && navigator.userAgent.match(/mobile|Tablet|iPad|android|bSurface/i)) {
     let touchStartX = null;
     let touchStartY = null;
     const SWIPE_THRESHOLD = 20; // Adjust this value as needed
@@ -2085,7 +2083,7 @@ function loadControllerType() {
 }
 loadControllerType();
 function mouseBoard() {
-  if(navigator.userAgent.match(/mobile/i)) {
+  if(navigator.userAgent.match(/mobile|Tablet|iPad|android|bSurface/i)) {
     document.getElementById("mouseBoard").style.display = "none";
   }else{
     document.getElementById("mouseBoard").style.display = "block";
@@ -2542,6 +2540,30 @@ function openWIDmModalSavDat() {
     content.style.textAlign = "right";
   }
 };
+function openWIDmModalF12() {
+  var modal = document.getElementById("miniModal");
+  var title = document.getElementById("mmTitle");
+  var content = document.getElementById("mmBottom");
+  modal.style.display = "block";
+  if(localStorage.getItem("lang") === "en") {
+    title.innerHTML = "Developer tools";
+    content.innerHTML = "Allow open Developer tools with keyboard. <br>";
+    content.innerHTML += "[F12],<br>[Ctrl]+[Shift]+[i],<br>[Ctrl]+[Shift]+[c],<br>[Meta]+[Alt]+[i],<br>[Meta]+[Shift]+[c]. <br>";
+  }else
+  if(localStorage.getItem("lang") === "ru") {
+    title.innerHTML = "Средства разработчика";
+    content.innerHTML = "Позволяет открывать Средства разработчика с помощью клавиатуры. <br>";
+    content.innerHTML += "[F12],<br>[Ctrl]+[Shift]+[i],<br>[Ctrl]+[Shift]+[c],<br>[Meta]+[Alt]+[i],<br>[Meta]+[Shift]+[c]. <br>";
+  }else
+  if(localStorage.getItem("lang") === "he") {
+    title.innerHTML = "כלי פיתוח";
+    content.innerHTML = "מאפשר פתיחת כלי פיתוח עם המקלדת. <br>";
+    content.innerHTML += "[F12],<br>[Ctrl]+[Shift]+[i],<br>[Ctrl]+[Shift]+[c],<br>[Meta]+[Alt]+[i],<br>[Meta]+[Shift]+[c]. <br>";
+    title.style.textAlign = "right";
+    content.style.direction = "rtl";
+    content.style.textAlign = "right";
+  }
+};
 function checkSettingsChanges() {
   let settingsChanged = false;
   function checkSettingCategory(elementsMap, inputType, localStorageKey) {
@@ -2965,6 +2987,22 @@ function miniModalClose() {
     object.style.display = "none";
   }
 };
+function collpaceDrowerAdmins() {
+  if(document.getElementById("administratorTools").checked) {
+    document.getElementById("administratorToolsContent").style.height = "auto";
+    localStorage.setItem("adminTools", "true");
+  }else{
+    document.getElementById("administratorToolsContent").style.height = "36px";
+    localStorage.setItem("adminTools", "false");
+  }
+};
+function f12Active() {
+  if(document.getElementById("f12Tool").checked) {
+    localStorage.setItem("devTools", "true");
+  }else{
+    localStorage.setItem("devTools", "false");
+  }
+};
 window.addEventListener('load', function() {
   setTimeout(() => {
     document.getElementById("gameLogo").style.display = "none";
@@ -3205,6 +3243,13 @@ window.addEventListener('load', function() {
   document.getElementById("collected077Food").innerHTML = localStorage.getItem("food077Storage");
   document.getElementById("snakeColor").value = localStorage.getItem("snakeColor");
   document.getElementById("snakeLatter").className = "ltr" + localStorage.getItem("snakeLetter");
+  if(localStorage.getItem("adminTools") === "true") {
+    document.getElementById("administratorToolsContent").style.height = "auto";
+    document.getElementById("administratorTools").checked = true;
+  };
+  if(localStorage.getItem("devTools") === "true") {
+    document.getElementById("f12Tool").checked = true;
+  };
   if(localStorage.getItem("ambients") === "true") {
     document.getElementById("ambientChecker").checked = true;
   }else{

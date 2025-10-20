@@ -43,7 +43,9 @@ document.onkeydown = function (event) {
     (event.metaKey && event.altKey && event.key === 'I') ||
     (event.metaKey && event.shiftKey && event.key === 'C')
   ) {
-    if(document.getElementById("administratorTools").checked === false) {
+    if(document.getElementById("f12Tool").checked === false && document.getElementById("administratorTools").checked === false
+    || document.getElementById("f12Tool").checked === false && document.getElementById("administratorTools").checked === true
+    || document.getElementById("f12Tool").checked === true && document.getElementById("administratorTools").checked === false) {
       event.preventDefault();
     }
   }else
