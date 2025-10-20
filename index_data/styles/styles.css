@@ -975,6 +975,9 @@ a {
   padding: 0px;
   display: block;
 }
+button {
+  background-color: transparent;
+}
 .modal .modal-content .reset-button {
   width: 60px;
   height: 37px;
@@ -2066,6 +2069,9 @@ input[type="range"]::-webkit-slider-thumb {
   background-color: var(--black-b);
   padding: 10px;
   margin: 10px 0px;
+  height: 36px;
+  position: relative;
+  overflow: hidden;
 }
 .range-content .checkbox-content {
   background-color: transparent;
@@ -3128,6 +3134,17 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 .pos-minus {
   background-image: var(--minus-0);
+}
+.checkbox-content .checkbox-content {
+  margin-left: -10px;
+  margin-right: -10px;
+  margin-bottom: -10px;
+}
+#administratorToolsContent.drowed {
+  height: auto;
+}
+.checkbox-content .mini-modal-opener {
+  right: 0;
 }
 @font-face {
   font-family: gintocopilot;
