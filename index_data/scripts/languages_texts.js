@@ -86,7 +86,7 @@ function languagesContents() {
   const a005_all = document.getElementsByClassName('serviceLang');
   const a006_all = document.getElementsByClassName('r-stars');
   const a007_all = document.getElementsByClassName('r-star');
-  const a008_all = document.getElementsByClassName('checkbox-content');
+//  const a008_all = document.getElementsByClassName('');
   const a009_all = document.getElementsByClassName('label-range');
   const a010_all = document.getElementsByClassName('dlLabel');
   const a011_all = document.getElementsByClassName('lasbLang');
@@ -407,6 +407,9 @@ function languagesContents() {
      a039.style.textAlign = "right";
      a039.style.width = "75%";
     a040.innerHTML = "כלי פיתוח";
+     a040.style.width = "100%";
+     a040.style.textAlign = "right";
+     a040.style.paddingRight = "45px";
     a041.innerHTML = "מוסיקת רקע";
      a041.style.width = "100%";
      a041.style.textAlign = "right";
@@ -518,10 +521,10 @@ function languagesContents() {
     for (let i = 0; i < a007_all.length; i++) {
       a007_all[i].classList.add("he");
     };
-    for (let i = 0; i < a008_all.length; i++) {
-      a008_all[i].style.display = "flex";
-      a008_all[i].style.justifyContent = "space-between";
-    };
+//    for (let i = 0; i < a008_all.length; i++) {
+//      a008_all[i].style.display = "flex";
+//      a008_all[i].style.justifyContent = "space-between";
+//    };
     for (let i = 0; i < a009_all.length; i++) {
       a009_all[i].style.textAlign = "right";
     };

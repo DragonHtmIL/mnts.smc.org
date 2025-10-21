@@ -2886,8 +2886,7 @@ function checkSettingsChanges() {
 function randomSnakePosChange() {
   var checkbox = document.getElementById("randomSnakePos");
   if(checkbox.checked) {
-    document.getElementById("posCx").style.display = "none";
-    document.getElementById("posCy").style.display = "none";
+    document.getElementById("snakePositionContainer").classList.remove("drowed");
     if(localStorage.getItem("lang") === "en") {
       document.getElementById("randomSnakePosLang").innerHTML = "Random Position";
     }else
@@ -2898,8 +2897,7 @@ function randomSnakePosChange() {
       document.getElementById("randomSnakePosLang").innerHTML = "מיקום אקראי";
     }
   }else{
-    document.getElementById("posCx").style.display = "flex";
-    document.getElementById("posCy").style.display = "flex";
+    document.getElementById("snakePositionContainer").classList.add("drowed");
     if(localStorage.getItem("lang") === "en") {
       document.getElementById("randomSnakePosLang").innerHTML = "Custom Position";
     }else
@@ -2989,10 +2987,10 @@ function miniModalClose() {
 };
 function collpaceDrowerAdmins() {
   if(document.getElementById("administratorTools").checked) {
-    document.getElementById("administratorToolsContent").style.height = "auto";
+    document.getElementById("administratorToolsContent").classList.add("drowed");
     localStorage.setItem("adminTools", "true");
   }else{
-    document.getElementById("administratorToolsContent").style.height = "36px";
+    document.getElementById("administratorToolsContent").classList.remove("drowed");
     localStorage.setItem("adminTools", "false");
   }
 };
@@ -3126,8 +3124,7 @@ window.addEventListener('load', function() {
   leagueSystem();
   if(localStorage.getItem("snakePosType") === "random") {
     document.getElementById("randomSnakePos").checked = true;
-    document.getElementById("posCx").style.display = "none";
-    document.getElementById("posCy").style.display = "none";
+    document.getElementById("snakePositionContainer").classList.remove("drowed");
     if(localStorage.getItem("lang") === "en") {
       document.getElementById("randomSnakePosLang").innerHTML = "Random Position";
     }else
@@ -3139,8 +3136,7 @@ window.addEventListener('load', function() {
     }
   }else{
     document.getElementById("randomSnakePos").checked = false;
-    document.getElementById("posCx").style.display = "flex";
-    document.getElementById("posCy").style.display = "flex";
+    document.getElementById("snakePositionContainer").classList.add("drowed");
     if(localStorage.getItem("lang") === "en") {
       document.getElementById("randomSnakePosLang").innerHTML = "Custom Position";
     }else
@@ -3244,7 +3240,7 @@ window.addEventListener('load', function() {
   document.getElementById("snakeColor").value = localStorage.getItem("snakeColor");
   document.getElementById("snakeLatter").className = "ltr" + localStorage.getItem("snakeLetter");
   if(localStorage.getItem("adminTools") === "true") {
-    document.getElementById("administratorToolsContent").style.height = "auto";
+    document.getElementById("administratorToolsContent").classList.add("drowed");
     document.getElementById("administratorTools").checked = true;
   };
   if(localStorage.getItem("devTools") === "true") {
