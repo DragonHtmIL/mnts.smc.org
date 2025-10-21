@@ -55,7 +55,6 @@
   height: 132px;
   position: relative;
   margin: 0 auto;
-  filter: invert(100%) drop-shadow(0 0 20px black);
 }
 .text-logo {
   width: 60px;
@@ -79,6 +78,7 @@
   background: var(--loading-classic) no-repeat;
   -webkit-background-size: 100% 100%;
   background-size: 100% 100%;
+  filter: invert(100%) drop-shadow(0 0 20px black);
 }
 .animeload {
   width: 165px;

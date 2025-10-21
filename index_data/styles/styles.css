@@ -2069,7 +2069,7 @@ input[type="range"]::-webkit-slider-thumb {
   background-color: var(--black-b);
   padding: 10px;
   margin: 10px 0px;
-  height: 36px;
+  max-height: 38px;
   position: relative;
   overflow: hidden;
 }
@@ -3108,6 +3108,7 @@ input[type="number"]::-webkit-inner-spin-button {
   margin: 0;
 }
 .pos-controll-setting {
+  position: relative;
   display: flex;
   justify-content: space-evenly;
   flex-direction: row;
@@ -3135,16 +3136,26 @@ input[type="number"]::-webkit-inner-spin-button {
 .pos-minus {
   background-image: var(--minus-0);
 }
+.checkbox-content hr {
+  margin-top: 10px;
+}
 .checkbox-content .checkbox-content {
-  margin-left: -10px;
-  margin-right: -10px;
-  margin-bottom: -10px;
+  margin: -10px;
+  background-color: transparent;
+}
+.checkbox-content .checkbox-content:first-child {
+  margin-top: -5px;
 }
 #administratorToolsContent.drowed {
-  height: auto;
+  max-height: 93px;
+}
+#snakePositionContainer.drowed {
+  max-height: 132px;
+  padding-bottom: 0px;
 }
 .checkbox-content .mini-modal-opener {
   right: 0;
+  top: 0;
 }
 @font-face {
   font-family: gintocopilot;
