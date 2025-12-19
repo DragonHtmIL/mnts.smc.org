@@ -3,7 +3,7 @@ function closeSettingsSound() {
     document.getElementById("closeSettingsSound").muted = true;
   }else{
     document.getElementById("closeSettingsSound").muted = false;
+    document.getElementById("closeSettingsSound").currentTime = 0;
+    document.getElementById("closeSettingsSound").play();
   }
-  document.getElementById("closeSettingsSound").currentTime = 0;
-  document.getElementById("closeSettingsSound").play();
 }

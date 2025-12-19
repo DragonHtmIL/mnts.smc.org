@@ -14,10 +14,6 @@ let meaw_token_item = localStorage.getItem("meawTokenStorage") || 0;
 let gold_item = localStorage.getItem("goldStorage") || 0;
 let alpha_coin_item = localStorage.getItem("alphaCoinStorage") || 0;
 let crystal_item = localStorage.getItem("crystalStorage") || 0;
-let ticket_item = localStorage.getItem("ticketStorage") || 0;
-let ticket_chromatic_item = localStorage.getItem("ticketChromaticStorage") || 0;
-let ticket_premium_item = localStorage.getItem("ticketPremiumStorage") || 0;
-let ticket_premium_2_item = localStorage.getItem("ticketPremium2Storage") || 0;
 let virtual_Token_item = localStorage.getItem("virtualTokenStorage") || 0;
 let food_id_000 = localStorage.getItem("food000Storage") || 0;
 let food_id_001 = localStorage.getItem("food001Storage") || 0;
@@ -283,6 +279,8 @@ const changeDirection = e => {
   const win6 = document.getElementById("loading");
   const win7 = document.getElementById("menu");
   const win8 = document.getElementById("accenter");
+  const win9 = document.getElementById("gachaContent");
+  const win10 = document.getElementById("shopPlace");
   if(win1.style.display === "none" &&
     win2.style.display === "none" &&
     win3.style.display === "none" &&
@@ -290,7 +288,9 @@ const changeDirection = e => {
     win5.style.display === "none" &&
     win6.style.display === "none" &&
     win7.style.display === "none" &&
-    win8.style.display === "none") {
+    win8.style.display === "none" &&
+    win9.style.display === "none" &&
+    win10.style.display === "none") {
     if(e.key === "ArrowUp" && velocityY != 1) {
       velocityX = 0;
       velocityY = -1;
@@ -372,7 +372,9 @@ const changeDirection = e => {
     win5.style.display === "none" &&
     win6.style.display === "none" &&
     win7.style.display === "none" &&
-    win8.style.display === "none") {
+    win8.style.display === "none" &&
+    win9.style.display === "none" &&
+    win10.style.display === "none") {
     console.log("Cannot walk whene any window is opened...");
   }else
   if(win1.style.display === "none" &&
@@ -382,7 +384,9 @@ const changeDirection = e => {
     win5.style.display === "none" &&
     win6.style.display === "none" &&
     win7.style.display === "none" &&
-    win8.style.display === "none") {
+    win8.style.display === "none" &&
+    win9.style.display === "none" &&
+    win10.style.display === "none") {
     console.log("Cannot walk whene any window is opened...");
   }else
   if(win1.style.display === "none" &&
@@ -392,7 +396,9 @@ const changeDirection = e => {
     win5.style.display === "none" &&
     win6.style.display === "none" &&
     win7.style.display === "none" &&
-    win8.style.display === "none") {
+    win8.style.display === "none" &&
+    win9.style.display === "none" &&
+    win10.style.display === "none") {
     console.log("Cannot walk whene any window is opened...");
   }else
   if(win1.style.display === "none" &&
@@ -402,7 +408,9 @@ const changeDirection = e => {
     win5.style.display === "none" &&
     win6.style.display === "none" &&
     win7.style.display === "none" &&
-    win8.style.display === "none") {
+    win8.style.display === "none" &&
+    win9.style.display === "none" &&
+    win10.style.display === "none") {
     console.log("Cannot walk whene any window is opened...");
   }else
   if(win1.style.display === "none" &&
@@ -412,7 +420,9 @@ const changeDirection = e => {
     win5.style.display === "block" &&
     win6.style.display === "none" &&
     win7.style.display === "none" &&
-    win8.style.display === "none") {
+    win8.style.display === "none" &&
+    win9.style.display === "none" &&
+    win10.style.display === "none") {
     console.log("Cannot walk whene any window is opened...");
   }else
   if(win1.style.display === "none" &&
@@ -422,7 +432,9 @@ const changeDirection = e => {
     win5.style.display === "none" &&
     win6.style.display === "flex" &&
     win7.style.display === "none" &&
-    win8.style.display === "none") {
+    win8.style.display === "none" &&
+    win9.style.display === "none" &&
+    win10.style.display === "none") {
     console.log("Cannot walk whene any window is opened...");
   }else
   if(win1.style.display === "none" &&
@@ -432,7 +444,9 @@ const changeDirection = e => {
     win5.style.display === "none" &&
     win6.style.display === "none" &&
     win7.style.display === "block" &&
-    win8.style.display === "none") {
+    win8.style.display === "none" &&
+    win9.style.display === "none" &&
+    win10.style.display === "none") {
     console.log("Cannot walk whene any window is opened...");
   }else
   if(win1.style.display === "none" &&
@@ -442,7 +456,9 @@ const changeDirection = e => {
     win5.style.display === "none" &&
     win6.style.display === "none" &&
     win7.style.display === "none" &&
-    win8.style.display === "block") {
+    win8.style.display === "block" &&
+    win9.style.display === "none" &&
+    win10.style.display === "none") {
     console.log("Cannot walk whene any window is opened...");
   }else
   if(win1.style.display === "none" &&
@@ -452,7 +468,21 @@ const changeDirection = e => {
     win5.style.display === "none" &&
     win6.style.display === "none" &&
     win7.style.display === "none" &&
-    win8.style.display === "none") {
+    win8.style.display === "none" &&
+    win9.style.display === "block" &&
+    win10.style.display === "none") {
+    console.log("Cannot walk whene any window is opened...");
+  }else
+  if(win1.style.display === "none" &&
+    win2.style.display === "none" &&
+    win3.style.display === "none" &&
+    win4.style.display === "none" &&
+    win5.style.display === "none" &&
+    win6.style.display === "none" &&
+    win7.style.display === "none" &&
+    win8.style.display === "none" &&
+    win9.style.display === "none" &&
+    win10.style.display === "flex") {
     console.log("Cannot walk whene any window is opened...");
   }
 };
@@ -505,26 +535,6 @@ const initGame = () => {
       crystal_item++;
       document.getElementById("collectedCrystal").innerHTML = crystal_item;
       localStorage.setItem("crystalStorage", crystal_item);
-    }else
-    if(localStorage.getItem("foodStyle") === "imgTicket") {
-      ticket_item++;
-      document.getElementById("collectedTicket").innerHTML = ticket_item;
-      localStorage.setItem("ticketStorage", ticket_item);
-    }else
-    if(localStorage.getItem("foodStyle") === "imgCticket") {
-      ticket_chromatic_item++;
-      document.getElementById("collectedCticket").innerHTML = ticket_chromatic_item;
-      localStorage.setItem("ticketChromaticStorage", ticket_chromatic_item);
-    }else
-    if(localStorage.getItem("foodStyle") === "imgPticket") {
-      ticket_premium_item++;
-      document.getElementById("collectedPticket").innerHTML = ticket_premium_item;
-      localStorage.setItem("ticketPremiumStorage", ticket_premium_item);
-    }else
-    if(localStorage.getItem("foodStyle") === "imgPticket2") {
-      ticket_premium_2_item++;
-      document.getElementById("collectedPticket2").innerHTML = ticket_premium_2_item;
-      localStorage.setItem("ticketPremium2Storage", ticket_premium_2_item);
     }else
     if(localStorage.getItem("foodStyle") === "imgVirtualToken") {
       virtual_Token_item++;

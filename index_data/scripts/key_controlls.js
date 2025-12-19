@@ -4,7 +4,11 @@ document.onkeydown = function (event) {
     if(document.getElementById('menu').style.display === 'block') {
       document.getElementById('menuCloseBtn').click();
     }else{
-      if(document.getElementById('accenter').style.display === 'block' || document.getElementById('alert').style.display === 'block') {
+      if(document.getElementById('accenter').style.display === 'block'
+      || document.getElementById('alert').style.display === 'block'
+      || document.getElementById('loading').style.display === 'flex'
+      || document.getElementById('loseModal').style.display === 'block'
+      || document.getElementById('shopPlace').style.display === 'flex') {
         return false;
       } else {
         document.getElementById('navBtn').click();
@@ -30,7 +34,9 @@ document.onkeydown = function (event) {
     if(document.getElementById('accenter').style.display === 'block') {
       document.getElementById("closeacc").click();
     } else {
-      if(document.getElementById('menu').style.display === 'block' || document.getElementById('alert').style.display === 'block') {
+      if(document.getElementById('menu').style.display === 'block'
+      || document.getElementById('alert').style.display === 'block'
+      || document.getElementById('loading').style.display === 'flex') {
         return false;
       } else {
         document.getElementById("profileOpener").click();

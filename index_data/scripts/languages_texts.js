@@ -20,9 +20,9 @@ function languagesContents() {
   var a018 = document.getElementById("goldLang");
   var a019 = document.getElementById("alphaLang");
   var a020 = document.getElementById("crystalLang");
-  var a021 = document.getElementById("ticketLang");
-  var a022 = document.getElementById("cTicketLang");
-  var a023 = document.getElementById("pTicketLang");
+  var a021 = document.getElementById("allTools");
+  var a022 = document.getElementById("gachaWindowLang");
+  var a023 = document.getElementById("closeGacha");
   var a024 = document.getElementById("muteLang");
   var a025 = document.getElementById("sfxLang");
   var a026 = document.getElementById("netEaseLang1");
@@ -47,7 +47,7 @@ function languagesContents() {
   var a045 = document.getElementById("deleteprogbutton");
   var a046 = document.getElementById("langImportantLang");
   var a047 = document.getElementById("ifMobileLang");
-//  var a048 = document.getElementById("");
+  var a048 = document.getElementById("pilotCollectionGallery");
   var a049 = document.getElementById("snakeTabsound");
   var a050 = document.getElementById("autoScoreLang");
   var a051 = document.getElementById("profileTitleLang");
@@ -66,7 +66,7 @@ function languagesContents() {
   var a064 = document.getElementById("howTitleLang");
   var a065 = document.getElementById("ifOthersLang");
   var a066 = document.getElementById("txtBhow");
-  var a067 = document.getElementById("pTicket2Lang");
+  var a067 = document.getElementById("shopWindowLang");
   var a068 = document.getElementById("virtualTokenLang");
   var a069 = document.getElementById("subButton");
   var a070 = document.getElementById("dataRunner");
@@ -78,6 +78,10 @@ function languagesContents() {
   var a076 = document.getElementById("displayFpsLang");
   var a077 = document.getElementById("xSnakeValueLang");
   var a078 = document.getElementById("ySnakeValueLang");
+  var a079 = document.getElementById("mechaCollectionGallery");
+  var a080 = document.getElementById("mechaDefaultEvent");
+  var a081 = document.getElementById("pilotDefaultEvent");
+  var a082 = document.getElementById("shopTitle");
   const a000_all = document.getElementsByClassName('settingscontent');
   const a001_all = document.getElementsByClassName('stylescontent');
   const a002_all = document.getElementsByClassName('coming-soon');
@@ -86,11 +90,88 @@ function languagesContents() {
   const a005_all = document.getElementsByClassName('serviceLang');
   const a006_all = document.getElementsByClassName('r-stars');
   const a007_all = document.getElementsByClassName('r-star');
-//  const a008_all = document.getElementsByClassName('');
+  const a008_all = document.getElementsByClassName('opone');
   const a009_all = document.getElementsByClassName('label-range');
   const a010_all = document.getElementsByClassName('dlLabel');
   const a011_all = document.getElementsByClassName('lasbLang');
+  const a012_all = document.getElementsByClassName('opten');
+  const m000 = document.getElementsByClassName('name-akashic');
+  const m001 = document.getElementsByClassName('name-alborada');
+  const m002 = document.getElementsByClassName('name-andromeda');
+  const m003 = document.getElementsByClassName('name-arthur');
+  const m004 = document.getElementsByClassName('name-aurora');
+  const m005 = document.getElementsByClassName('name-boltus');
+  const m006 = document.getElementsByClassName('name-caramel');
+  const m007 = document.getElementsByClassName('name-death-knell');
+  const m008 = document.getElementsByClassName('name-doomlight');
+  const m009 = document.getElementsByClassName('name-dreadwolf');
+  const m010 = document.getElementsByClassName('name-firefox');
+  const m011 = document.getElementsByClassName('name-firestar');
+  const m012 = document.getElementsByClassName('name-flamenco');
+  const m013 = document.getElementsByClassName('name-gabriel');
+  const m014 = document.getElementsByClassName('name-gaia');
+  const m015 = document.getElementsByClassName('name-guerilla-hunter');
+  const m016 = document.getElementsByClassName('name-hotsteel');
+  const m017 = document.getElementsByClassName('name-hurricane');
+  const m018 = document.getElementsByClassName('name-jojo');
+  const m019 = document.getElementsByClassName('name-lancelot');
+  const m020 = document.getElementsByClassName('name-michael');
+  const m021 = document.getElementsByClassName('name-moon-rabbit');
+  const m022 = document.getElementsByClassName('name-nebula');
+  const m023 = document.getElementsByClassName('name-neutron-star');
+  const m024 = document.getElementsByClassName('name-northern-knight');
+  const m025 = document.getElementsByClassName('name-pulsar');
+  const m026 = document.getElementsByClassName('name-ranger');
+  const m027 = document.getElementsByClassName('name-raven');
+  const m028 = document.getElementsByClassName('name-shiranui');
+  const m029 = document.getElementsByClassName('name-skyfall');
+  const m030 = document.getElementsByClassName('name-skyfire');
+  const m031 = document.getElementsByClassName('name-skylark');
+  const m032 = document.getElementsByClassName('name-snow-mirage');
+  const m033 = document.getElementsByClassName('name-tempest');
+  const m034 = document.getElementsByClassName('name-trio-of-enders');
+  const m035 = document.getElementsByClassName('name-twilight');
+  const m036 = document.getElementsByClassName('name-ventorus');
+  const p000 = document.getElementsByClassName('name-aya');
+  const p001 = document.getElementsByClassName('name-belladonna');
+  const p002 = document.getElementsByClassName('name-cyrus');
+  const p003 = document.getElementsByClassName('name-fran');
+  const p004 = document.getElementsByClassName('name-furanku');
+  const p005 = document.getElementsByClassName('name-iori');
+  const p006 = document.getElementsByClassName('name-ivan');
+  const p007 = document.getElementsByClassName('name-jaka');
+  const p008 = document.getElementsByClassName('name-jiu-chong');
+  const p009 = document.getElementsByClassName('name-joanna');
+  const p010 = document.getElementsByClassName('name-kije');
+  const p011 = document.getElementsByClassName('name-kikina');
+  const p012 = document.getElementsByClassName('name-kizuna-ai');
+  const p013 = document.getElementsByClassName('name-lillian');
+  const p014 = document.getElementsByClassName('name-lysa');
+  const p015 = document.getElementsByClassName('name-matilda');
+  const p016 = document.getElementsByClassName('name-mia');
+  const p017 = document.getElementsByClassName('name-mila');
+  const p018 = document.getElementsByClassName('name-mobius');
+  const p019 = document.getElementsByClassName('name-nighthawk');
+  const p020 = document.getElementsByClassName('name-ning');
+  const p021 = document.getElementsByClassName('name-norma');
+  const p022 = document.getElementsByClassName('name-opal');
+  const p023 = document.getElementsByClassName('name-purity');
+  const p024 = document.getElementsByClassName('name-r-e-d');
+  const p025 = document.getElementsByClassName('name-riko');
+  const p026 = document.getElementsByClassName('name-rom');
+  const p027 = document.getElementsByClassName('name-serena');
+  const p028 = document.getElementsByClassName('name-shin');
+  const p029 = document.getElementsByClassName('name-silver-deacon');
+  const p030 = document.getElementsByClassName('name-tarantula');
+  const p031 = document.getElementsByClassName('name-vanessa');
+  const p032 = document.getElementsByClassName('name-villar');
+  const p033 = document.getElementsByClassName('name-vita');
+  const p034 = document.getElementsByClassName('name-yang');
+  const p035 = document.getElementsByClassName('name-yulia');
+  const p036 = document.getElementsByClassName('name-yutong');
+  const p037 = document.getElementsByClassName('name-zoe');
   if(localStorage.getItem("lang") === "en") {
+    document.title = "Snake Mecha Collector";
     a000.innerHTML = "Settings";
     a001.innerHTML = "About";
     a002.innerHTML = "System";
@@ -112,9 +193,9 @@ function languagesContents() {
     a018.innerHTML = "Gold";
     a019.innerHTML = "Alpha Coin";
     a020.innerHTML = "Crystal";
-    a021.innerHTML = "Ticket";
-    a022.innerHTML = "Chromatic Ticket";
-    a023.innerHTML = "Premium Ticket";
+    a021.innerHTML = "More";
+    a022.innerHTML = "Gacha";
+    a023.innerHTML = "Back";
     a024.innerHTML = "Mute Audio";
     a025.innerHTML = "SFX Volume";
     a026.innerHTML = "Privacy Policy, Terms and Conditions";
@@ -139,7 +220,7 @@ function languagesContents() {
     a045.value = "Delete Progress";
     a046.innerHTML = "(Language translations may not be 100% accurate)";
     a047.innerHTML = "If users use Mobiles (Android, iPhone, iPad, Tablets)";
-//    a048.innerHTML = "";
+    a048.innerHTML = "Pilot";
     a049.innerHTML = "Snake";
     a050.innerHTML = "Auto load the saved score";
     a051.innerHTML = "Collection Center";
@@ -174,7 +255,7 @@ function languagesContents() {
     a066.innerHTML += "ESC: Open/close menu.<br>";
     a066.innerHTML += "E: Open/close collection center.<br>";
     a066.innerHTML += "Enter: Continue if alert is open and close the ''Game Over'' Window.";
-    a067.innerHTML = "Premium Ticket";
+    a067.innerHTML = "Store";
     a068.innerHTML = "Virtual Token";
     a069.value = "Upload(.js)";
     a070.value = "Load";
@@ -186,6 +267,10 @@ function languagesContents() {
     a076.innerHTML = "Show FPS (BETA)";
     a077.innerHTML = "Horizontally Snake Position";
     a078.innerHTML = "Vertically Snake Position";
+    a079.innerHTML = "Mecha";
+    a080.innerHTML = "Mecha";
+    a081.innerHTML = "Pilot";
+    a082.innerHTML = "Store";
     for (let i = 0; i < a000_all.length; i++) {
       a000_all[i].textContent = 'Settings:';
     };
@@ -210,15 +295,246 @@ function languagesContents() {
     for (let i = 0; i < a007_all.length; i++) {
       a007_all[i].classList.add("en");
     };
+    for (let i = 0; i < a008_all.length; i++) {
+      a008_all[i].textContent = "Open x1";
+    };
     for (let i = 0; i < a010_all.length; i++) {
       a010_all[i].textContent = 'Download';
     };
     for (let i = 0; i < a011_all.length; i++) {
       a011_all[i].textContent = 'Anime';
     };
-    document.title = "Snake Mecha Collector";
+    for (let i = 0; i < a012_all.length; i++) {
+      a012_all[i].textContent = 'Open x10';
+    };
+    for (let i = 0; i < m000.length; i++) {
+      m000[i].textContent = 'Akashic';
+    };
+    for (let i = 0; i < m001.length; i++) {
+      m001[i].textContent = 'Alborada';
+    };
+    for (let i = 0; i < m002.length; i++) {
+      m002[i].textContent = 'Andromeda';
+    };
+    for (let i = 0; i < m003.length; i++) {
+      m003[i].textContent = 'Arthur';
+    };
+    for (let i = 0; i < m004.length; i++) {
+      m004[i].textContent = 'Aurora';
+    };
+    for (let i = 0; i < m005.length; i++) {
+      m005[i].textContent = 'Boltus';
+    };
+    for (let i = 0; i < m006.length; i++) {
+      m006[i].textContent = 'Caramel';
+    };
+    for (let i = 0; i < m007.length; i++) {
+      m007[i].textContent = 'Death Knell';
+    };
+    for (let i = 0; i < m008.length; i++) {
+      m008[i].textContent = 'Doomlight';
+    };
+    for (let i = 0; i < m009.length; i++) {
+      m009[i].textContent = 'Dreadwolf';
+    };
+    for (let i = 0; i < m010.length; i++) {
+      m010[i].textContent = 'Firefox';
+    };
+    for (let i = 0; i < m011.length; i++) {
+      m011[i].textContent = 'Firestar';
+    };
+    for (let i = 0; i < m012.length; i++) {
+      m012[i].textContent = 'Flamenco';
+    };
+    for (let i = 0; i < m013.length; i++) {
+      m013[i].textContent = 'Gabriel';
+    };
+    for (let i = 0; i < m014.length; i++) {
+      m014[i].textContent = 'Gaia';
+    };
+    for (let i = 0; i < m015.length; i++) {
+      m015[i].textContent = 'Guerilla Hunter';
+    };
+    for (let i = 0; i < m016.length; i++) {
+      m016[i].textContent = 'Hotsteel';
+    };
+    for (let i = 0; i < m017.length; i++) {
+      m017[i].textContent = 'Hurricane';
+    };
+    for (let i = 0; i < m018.length; i++) {
+      m018[i].textContent = 'JOJO';
+    };
+    for (let i = 0; i < m019.length; i++) {
+      m019[i].textContent = 'Lancelot';
+    };
+    for (let i = 0; i < m020.length; i++) {
+      m020[i].textContent = 'Michael';
+    };
+    for (let i = 0; i < m021.length; i++) {
+      m021[i].textContent = 'Moon Rabbit';
+    };
+    for (let i = 0; i < m022.length; i++) {
+      m022[i].textContent = 'Nebula';
+    };
+    for (let i = 0; i < m023.length; i++) {
+      m023[i].textContent = 'Neutron Star';
+    };
+    for (let i = 0; i < m024.length; i++) {
+      m024[i].textContent = 'Northern Knight';
+    };
+    for (let i = 0; i < m025.length; i++) {
+      m025[i].textContent = 'Pulsar';
+    };
+    for (let i = 0; i < m026.length; i++) {
+      m026[i].textContent = 'Ranger';
+    };
+    for (let i = 0; i < m027.length; i++) {
+      m027[i].textContent = 'Raven';
+    };
+    for (let i = 0; i < m028.length; i++) {
+      m028[i].textContent = 'Shiranui';
+    };
+    for (let i = 0; i < m029.length; i++) {
+      m029[i].textContent = 'Skyfall';
+    };
+    for (let i = 0; i < m030.length; i++) {
+      m030[i].textContent = 'Skyfire';
+    };
+    for (let i = 0; i < m031.length; i++) {
+      m031[i].textContent = 'Skylark';
+    };
+    for (let i = 0; i < m032.length; i++) {
+      m032[i].textContent = 'Snow Mirage';
+    };
+    for (let i = 0; i < m033.length; i++) {
+      m033[i].textContent = 'Tempest';
+    };
+    for (let i = 0; i < m034.length; i++) {
+      m034[i].textContent = 'Trio of Enders';
+    };
+    for (let i = 0; i < m035.length; i++) {
+      m035[i].textContent = 'Twilight';
+    };
+    for (let i = 0; i < m036.length; i++) {
+      m036[i].textContent = 'Ventorus';
+    };
+    for (let i = 0; i < p000.length; i++) {
+      p000[i].textContent = 'Aya';
+    };
+    for (let i = 0; i < p001.length; i++) {
+      p001[i].textContent = 'Belladonna';
+    };
+    for (let i = 0; i < p002.length; i++) {
+      p002[i].textContent = 'Cyrus';
+    };
+    for (let i = 0; i < p003.length; i++) {
+      p003[i].textContent = 'Fran';
+    };
+    for (let i = 0; i < p004.length; i++) {
+      p004[i].textContent = 'Furanku';
+    };
+    for (let i = 0; i < p005.length; i++) {
+      p005[i].textContent = 'Iori';
+    };
+    for (let i = 0; i < p006.length; i++) {
+      p006[i].textContent = 'Ivan';
+    };
+    for (let i = 0; i < p007.length; i++) {
+      p007[i].textContent = 'Jaka';
+    };
+    for (let i = 0; i < p008.length; i++) {
+      p008[i].textContent = 'Jiu Chong';
+    };
+    for (let i = 0; i < p009.length; i++) {
+      p009[i].textContent = 'Joanna';
+    };
+    for (let i = 0; i < p010.length; i++) {
+      p010[i].textContent = 'Kije';
+    };
+    for (let i = 0; i < p011.length; i++) {
+      p011[i].textContent = 'Kikina';
+    };
+    for (let i = 0; i < p012.length; i++) {
+      p012[i].textContent = 'Kizuna Ai';
+    };
+    for (let i = 0; i < p013.length; i++) {
+      p013[i].textContent = 'Lillian';
+    };
+    for (let i = 0; i < p014.length; i++) {
+      p014[i].textContent = 'Lysa';
+    };
+    for (let i = 0; i < p015.length; i++) {
+      p015[i].textContent = 'Matilda';
+    };
+    for (let i = 0; i < p016.length; i++) {
+      p016[i].textContent = 'Mia';
+    };
+    for (let i = 0; i < p017.length; i++) {
+      p017[i].textContent = 'Mila';
+    };
+    for (let i = 0; i < p018.length; i++) {
+      p018[i].textContent = 'Mobius';
+    };
+    for (let i = 0; i < p019.length; i++) {
+      p019[i].textContent = 'Nighthawk';
+    };
+    for (let i = 0; i < p020.length; i++) {
+      p020[i].textContent = 'Ning';
+    };
+    for (let i = 0; i < p021.length; i++) {
+      p021[i].textContent = 'Norma';
+    };
+    for (let i = 0; i < p022.length; i++) {
+      p022[i].textContent = 'Opal';
+    };
+    for (let i = 0; i < p023.length; i++) {
+      p023[i].textContent = 'Purity';
+    };
+    for (let i = 0; i < p024.length; i++) {
+      p024[i].textContent = 'R.E.D';
+    };
+    for (let i = 0; i < p025.length; i++) {
+      p025[i].textContent = 'Riko';
+    };
+    for (let i = 0; i < p026.length; i++) {
+      p026[i].textContent = 'Rom';
+    };
+    for (let i = 0; i < p027.length; i++) {
+      p027[i].textContent = 'Serena';
+    };
+    for (let i = 0; i < p028.length; i++) {
+      p028[i].textContent = 'Shin';
+    };
+    for (let i = 0; i < p029.length; i++) {
+      p029[i].textContent = 'Silver Deacon';
+    };
+    for (let i = 0; i < p030.length; i++) {
+      p030[i].textContent = 'Tarantula';
+    };
+    for (let i = 0; i < p031.length; i++) {
+      p031[i].textContent = 'Vanessa';
+    };
+    for (let i = 0; i < p032.length; i++) {
+      p032[i].textContent = 'Villar';
+    };
+    for (let i = 0; i < p033.length; i++) {
+      p033[i].textContent = 'Vita';
+    };
+    for (let i = 0; i < p034.length; i++) {
+      p034[i].textContent = 'Yang';
+    };
+    for (let i = 0; i < p035.length; i++) {
+      p035[i].textContent = 'Yulia';
+    };
+    for (let i = 0; i < p036.length; i++) {
+      p036[i].textContent = 'Yutong';
+    };
+    for (let i = 0; i < p037.length; i++) {
+      p037[i].textContent = 'Zoe';
+    };
   }else
   if(localStorage.getItem("lang") === "ru") {
+    document.title = "Змея Меха Сборщик";
     a000.innerHTML = "Настр'";
     a001.innerHTML = "О";
     a002.innerHTML = "Система";
@@ -240,9 +556,9 @@ function languagesContents() {
     a018.innerHTML = "Золото";
     a019.innerHTML = "Альфа-монета";
     a020.innerHTML = "Кристалл";
-    a021.innerHTML = "Билет";
-    a022.innerHTML = "Хроматический билет";
-    a023.innerHTML = "Премиум-билет";
+    a021.innerHTML = "Еше";
+    a022.innerHTML = "Гача";
+    a023.innerHTML = "Назад";
     a024.innerHTML = "Отключить звук";
     a025.innerHTML = "Громкость SFX";
     a026.innerHTML = "Политика конфиденциальности, положения и условия";
@@ -259,7 +575,7 @@ function languagesContents() {
     a037.innerHTML = "Левый";
     a038.innerHTML = "Правый";
     a039.innerHTML = "Уведомление";
-    a040.innerHTML = "";
+    a040.innerHTML = "Инструменты Разработчика";
     a041.innerHTML = "Фоновая музыка";
     a042.innerHTML = "Музыка";
     a043.innerHTML = "МЕНЮ";
@@ -267,7 +583,7 @@ function languagesContents() {
     a045.value = "Удалить Прогресс";
     a046.innerHTML = "(Переводы могут содержать ошибки)";
     a047.innerHTML = "Если пользователи используют мобильные (Android, iPhone, iPad, планшеты)";
-//    a048.innerHTML = "";
+    a048.innerHTML = "Пилот";
     a049.innerHTML = "Змея";
     a050.innerHTML = "Автоматически загрузить сохраненного счета";
     a051.innerHTML = "Центр сбора";
@@ -302,7 +618,7 @@ function languagesContents() {
     a066.innerHTML += "ESC: Открыть/закрыть меню.<br>";
     a066.innerHTML += "E: Открыть/закрыть центр сбора.<br>";
     a066.innerHTML += "Enter: Продолжить, если открыто оповещение, и закрыть окно «Игра окончена».";
-    a067.innerHTML = "Премиум-билет";
+    a067.innerHTML = "Магазин";
     a068.innerHTML = "Виртуальный токен";
     a069.value = "Загрузить(.js)";
     a070.value = "Загрузить";
@@ -313,7 +629,11 @@ function languagesContents() {
     a075.innerHTML = "Услуги";
     a076.innerHTML = "Показать FPS (БЕТА)";
     a077.innerHTML = "Горизонтальное положение змеи";
-    a077.innerHTML = "Вертикальная положение змеи";
+    a078.innerHTML = "Вертикальная положение змеи";
+    a079.innerHTML = "Меха";
+    a080.innerHTML = "Меха";
+    a081.innerHTML = "Пилот";
+    a082.innerHTML = "Магазин";
     for (let i = 0; i < a000_all.length; i++) {
       a000_all[i].textContent = 'Настройки:';
     };
@@ -338,15 +658,247 @@ function languagesContents() {
     for (let i = 0; i < a007_all.length; i++) {
       a007_all[i].classList.add("ru");
     };
+    for (let i = 0; i < a008_all.length; i++) {
+      a008_all[i].textContent = "Открыть x1";
+    };
     for (let i = 0; i < a010_all.length; i++) {
       a010_all[i].textContent = 'Скачать';
     };
     for (let i = 0; i < a011_all.length; i++) {
       a011_all[i].textContent = 'Аниме';
     };
-    document.title = "Змея Меха Сборщик";
+    for (let i = 0; i < a012_all.length; i++) {
+      a012_all[i].textContent = 'Открыть x10';
+    };
+    for (let i = 0; i < m000.length; i++) {
+      m000[i].textContent = 'Акашик';
+    };
+    for (let i = 0; i < m001.length; i++) {
+      m001[i].textContent = 'Альборада';
+    };
+    for (let i = 0; i < m002.length; i++) {
+      m002[i].textContent = 'Андромеда';
+    };
+    for (let i = 0; i < m003.length; i++) {
+      m003[i].textContent = 'Артур';
+    };
+    for (let i = 0; i < m004.length; i++) {
+      m004[i].textContent = 'Аврора';
+    };
+    for (let i = 0; i < m005.length; i++) {
+      m005[i].textContent = 'Болтус';
+    };
+    for (let i = 0; i < m006.length; i++) {
+      m006[i].textContent = 'Карамель';
+    };
+    for (let i = 0; i < m007.length; i++) {
+      m007[i].textContent = 'Погребальный звон';
+    };
+    for (let i = 0; i < m008.length; i++) {
+      m008[i].textContent = 'Думлайт';
+    };
+    for (let i = 0; i < m009.length; i++) {
+      m009[i].textContent = 'Дредвулф';
+    };
+    for (let i = 0; i < m010.length; i++) {
+      m010[i].textContent = 'файрфокс';
+    };
+    for (let i = 0; i < m011.length; i++) {
+      m011[i].textContent = 'файрстар';
+    };
+    for (let i = 0; i < m012.length; i++) {
+      m012[i].textContent = 'Фламенко';
+    };
+    for (let i = 0; i < m013.length; i++) {
+      m013[i].textContent = 'Габриэль';
+    };
+    for (let i = 0; i < m014.length; i++) {
+      m014[i].textContent = 'Гайя';
+    };
+    for (let i = 0; i < m015.length; i++) {
+      m015[i].textContent = 'Партизан Охотник';
+    };
+    for (let i = 0; i < m016.length; i++) {
+      m016[i].textContent = 'Хотстил';
+    };
+    for (let i = 0; i < m017.length; i++) {
+      m017[i].textContent = 'Ураган';
+    };
+    for (let i = 0; i < m018.length; i++) {
+      m018[i].textContent = 'ДЖОДЖО';
+    };
+    for (let i = 0; i < m019.length; i++) {
+      m019[i].textContent = 'Ланселот';
+    };
+    for (let i = 0; i < m020.length; i++) {
+      m020[i].textContent = 'Михаэль';
+    };
+    for (let i = 0; i < m021.length; i++) {
+      m021[i].textContent = 'Лунный Кролик';
+    };
+    for (let i = 0; i < m022.length; i++) {
+      m022[i].textContent = 'Небула';
+    };
+    for (let i = 0; i < m023.length; i++) {
+      m023[i].textContent = 'Нейтронная Звезда';
+    };
+    for (let i = 0; i < m024.length; i++) {
+      m024[i].textContent = 'Северный Рыцарь';
+    };
+    for (let i = 0; i < m025.length; i++) {
+      m025[i].textContent = 'Пульсар';
+    };
+    for (let i = 0; i < m026.length; i++) {
+      m026[i].textContent = 'Рейнджер';
+    };
+    for (let i = 0; i < m027.length; i++) {
+      m027[i].textContent = 'Ворон';
+    };
+    for (let i = 0; i < m028.length; i++) {
+      m028[i].textContent = 'Ширануи';
+    };
+    for (let i = 0; i < m029.length; i++) {
+      m029[i].textContent = 'Скайфолл';
+    };
+    for (let i = 0; i < m030.length; i++) {
+      m030[i].textContent = 'Скайфайр';
+    };
+    for (let i = 0; i < m031.length; i++) {
+      m031[i].textContent = 'Скайларк';
+    };
+    for (let i = 0; i < m032.length; i++) {
+      m032[i].textContent = 'Снежный Мираж';
+    };
+    for (let i = 0; i < m033.length; i++) {
+      m033[i].textContent = 'Темпест';
+    };
+    for (let i = 0; i < m034.length; i++) {
+      m034[i].textContent = 'Трио Эндеров';
+    };
+    for (let i = 0; i < m035.length; i++) {
+      m035[i].textContent = 'Сумерки';
+    };
+    for (let i = 0; i < m036.length; i++) {
+      m036[i].textContent = 'Венторус';
+    };
+    for (let i = 0; i < p000.length; i++) {
+      p000[i].textContent = 'Ая';
+    };
+    for (let i = 0; i < p001.length; i++) {
+      p001[i].textContent = 'Белладонна';
+    };
+    for (let i = 0; i < p002.length; i++) {
+      p002[i].textContent = 'Сайрус';
+    };
+    for (let i = 0; i < p003.length; i++) {
+      p003[i].textContent = 'Фран';
+    };
+    for (let i = 0; i < p004.length; i++) {
+      p004[i].textContent = 'Фуранку';
+    };
+    for (let i = 0; i < p005.length; i++) {
+      p005[i].textContent = 'Иори';
+    };
+    for (let i = 0; i < p006.length; i++) {
+      p006[i].textContent = 'Иван';
+    };
+    for (let i = 0; i < p007.length; i++) {
+      p007[i].textContent = 'Джака';
+    };
+    for (let i = 0; i < p008.length; i++) {
+      p008[i].textContent = 'Джю Чонг';
+    };
+    for (let i = 0; i < p009.length; i++) {
+      p009[i].textContent = 'Джоанна';
+    };
+    for (let i = 0; i < p010.length; i++) {
+      p010[i].textContent = 'Каидж';
+    };
+    for (let i = 0; i < p011.length; i++) {
+      p011[i].textContent = 'Кикина';
+    };
+    for (let i = 0; i < p012.length; i++) {
+      p012[i].textContent = 'Кизуна Аи';
+    };
+    for (let i = 0; i < p013.length; i++) {
+      p013[i].textContent = 'Лилиан';
+    };
+    for (let i = 0; i < p014.length; i++) {
+      p014[i].textContent = 'Лиза';
+    };
+    for (let i = 0; i < p015.length; i++) {
+      p015[i].textContent = 'Матильда';
+    };
+    for (let i = 0; i < p016.length; i++) {
+      p016[i].textContent = 'Миа';
+    };
+    for (let i = 0; i < p017.length; i++) {
+      p017[i].textContent = 'Мила';
+    };
+    for (let i = 0; i < p018.length; i++) {
+      p018[i].textContent = 'Мобиус';
+    };
+    for (let i = 0; i < p019.length; i++) {
+      p019[i].textContent = 'Ночной Ястреб';
+    };
+    for (let i = 0; i < p020.length; i++) {
+      p020[i].textContent = 'Нинг';
+    };
+    for (let i = 0; i < p021.length; i++) {
+      p021[i].textContent = 'Норма';
+    };
+    for (let i = 0; i < p022.length; i++) {
+      p022[i].textContent = 'Опал';
+    };
+    for (let i = 0; i < p023.length; i++) {
+      p023[i].textContent = 'Пурити';
+    };
+    for (let i = 0; i < p024.length; i++) {
+      p024[i].textContent = 'Р.Э.Д';
+    };
+    for (let i = 0; i < p025.length; i++) {
+      p025[i].textContent = 'Рико';
+    };
+    for (let i = 0; i < p026.length; i++) {
+      p026[i].textContent = 'Ром';
+    };
+    for (let i = 0; i < p027.length; i++) {
+      p027[i].textContent = 'Серена';
+    };
+    for (let i = 0; i < p028.length; i++) {
+      p028[i].textContent = 'Шин';
+    };
+    for (let i = 0; i < p029.length; i++) {
+      p029[i].textContent = 'Серебряный Дьякон';
+    };
+    for (let i = 0; i < p030.length; i++) {
+      p030[i].textContent = 'Тарантул';
+    };
+    for (let i = 0; i < p031.length; i++) {
+      p031[i].textContent = 'Ванесса';
+    };
+    for (let i = 0; i < p032.length; i++) {
+      p032[i].textContent = 'Виллар';
+    };
+    for (let i = 0; i < p033.length; i++) {
+      p033[i].textContent = 'Вита';
+    };
+    for (let i = 0; i < p034.length; i++) {
+      p034[i].textContent = 'Янг';
+    };
+    for (let i = 0; i < p035.length; i++) {
+      p035[i].textContent = 'Юлия';
+    };
+    for (let i = 0; i < p036.length; i++) {
+      p036[i].textContent = 'Ютонг';
+    };
+    for (let i = 0; i < p037.length; i++) {
+      p037[i].textContent = 'Зои';
+    };
   }else
   if(localStorage.getItem("lang") === "he") {
+    document.title = "מכה נחש אספן";
+    document.getElementById("loadingFooter").style.direction = "rtl";
     a000.innerHTML = "הגדרות";
     a001.innerHTML = "אודות";
     a002.innerHTML = "מערכת";
@@ -373,9 +925,9 @@ function languagesContents() {
     a018.innerHTML = "זהב";
     a019.innerHTML = "מתבעת אלפא";
     a020.innerHTML = "גביש";
-    a021.innerHTML = "כרטיס";
-    a022.innerHTML = "כרטיס כרומטי";
-    a023.innerHTML = "כרטיס פרימיום";
+    a021.innerHTML = "עוד";
+    a022.innerHTML = "גצ'ה";
+    a023.innerHTML = "חזרה";
     a024.innerHTML = "השתקת שמע";
      a024.style.width = "100%";
      a024.style.textAlign = "right";
@@ -420,7 +972,7 @@ function languagesContents() {
     a046.innerHTML = "(ייתכן שתרגומי שפה לא יהיו מדויקים ב-100%)";
     a047.innerHTML = "אם משתמשים משתמשים בטלפונים ניידים (אנדרואיד, אייפון, אייפד, טאבלטים)";
      a047.style.textAlign = "right";
-//    a048.innerHTML = "";
+    a048.innerHTML = "טייס";
     a049.innerHTML = "נחש";
     a050.innerHTML = "טעינה אוטומטית של הציון הנשמר";
      a050.style.width = "100%";
@@ -474,7 +1026,7 @@ function languagesContents() {
     a066.innerHTML += "Enter: המשך אם ההתראה פתוחה וסגירת חלון 'המשחק נגמר'.";
      a066.style.direction = "rtl";
      a066.style.textAlign = "right";
-    a067.innerHTML = "כרטיס פרימיום";
+    a067.innerHTML = "חנות";
     a068.innerHTML = "אסימון וירטואלי";
     a069.value = "העלאה(.js)";
      a069.style.direction = "rtl";
@@ -488,6 +1040,12 @@ function languagesContents() {
      a076.style.direction = "rtl";
     a077.innerHTML = "תנוחת נחש אופקית";
     a078.innerHTML = "תנוחת נחש אנכית";
+    a079.innerHTML = "מכה";
+    a080.innerHTML = "מכה";
+    a081.innerHTML = "טייס";
+    a082.innerHTML = "חנות";
+     a082.style.textAlign = "right";
+     a082.style.direction = "rtl";
     for (let i = 0; i < a000_all.length; i++) {
       a000_all[i].textContent = 'הגדרות:';
       a000_all[i].style.direction = "rtl";
@@ -521,10 +1079,10 @@ function languagesContents() {
     for (let i = 0; i < a007_all.length; i++) {
       a007_all[i].classList.add("he");
     };
-//    for (let i = 0; i < a008_all.length; i++) {
-//      a008_all[i].style.display = "flex";
-//      a008_all[i].style.justifyContent = "space-between";
-//    };
+    for (let i = 0; i < a008_all.length; i++) {
+      a008_all[i].textContent = "לפתוח x1";
+      a008_all[i].style.direction = 'rtl';
+    };
     for (let i = 0; i < a009_all.length; i++) {
       a009_all[i].style.textAlign = "right";
     };
@@ -534,7 +1092,235 @@ function languagesContents() {
     for (let i = 0; i < a011_all.length; i++) {
       a011_all[i].textContent = 'אנימה';
     };
-    document.title = "מכה נחש אספן";
-    document.getElementById("loadingFooter").style.direction = "rtl";
+    for (let i = 0; i < a012_all.length; i++) {
+      a012_all[i].textContent = 'לפתוח x10';
+      a012_all[i].style.direction = 'rtl';
+    };
+    for (let i = 0; i < m000.length; i++) {
+      m000[i].textContent = 'אקשיכ';
+    };
+    for (let i = 0; i < m001.length; i++) {
+      m001[i].textContent = 'אלבורדה';
+    };
+    for (let i = 0; i < m002.length; i++) {
+      m002[i].textContent = 'אנדרומדה';
+    };
+    for (let i = 0; i < m003.length; i++) {
+      m003[i].textContent = 'ארתור';
+    };
+    for (let i = 0; i < m004.length; i++) {
+      m004[i].textContent = 'אורורה';
+    };
+    for (let i = 0; i < m005.length; i++) {
+      m005[i].textContent = 'בולטוס';
+    };
+    for (let i = 0; i < m006.length; i++) {
+      m006[i].textContent = 'קרמל';
+    };
+    for (let i = 0; i < m007.length; i++) {
+      m007[i].textContent = 'קת המוות';
+    };
+    for (let i = 0; i < m008.length; i++) {
+      m008[i].textContent = 'דומלייט';
+    };
+    for (let i = 0; i < m009.length; i++) {
+      m009[i].textContent = 'דרידוולף';
+    };
+    for (let i = 0; i < m010.length; i++) {
+      m010[i].textContent = 'פיירפוקס';
+    };
+    for (let i = 0; i < m011.length; i++) {
+      m011[i].textContent = 'פיירסטאר';
+    };
+    for (let i = 0; i < m012.length; i++) {
+      m012[i].textContent = 'פלמנקו';
+    };
+    for (let i = 0; i < m013.length; i++) {
+      m013[i].textContent = 'גבריאל';
+    };
+    for (let i = 0; i < m014.length; i++) {
+      m014[i].textContent = 'גאיה';
+    };
+    for (let i = 0; i < m015.length; i++) {
+      m015[i].textContent = 'צייד גרילה';
+    };
+    for (let i = 0; i < m016.length; i++) {
+      m016[i].textContent = 'הוטסטיל';
+    };
+    for (let i = 0; i < m017.length; i++) {
+      m017[i].textContent = 'הוריקן';
+    };
+    for (let i = 0; i < m018.length; i++) {
+      m018[i].textContent = "ג'וג'ו";
+    };
+    for (let i = 0; i < m019.length; i++) {
+      m019[i].textContent = 'לנסלוט';
+    };
+    for (let i = 0; i < m020.length; i++) {
+      m020[i].textContent = 'מיכאל';
+    };
+    for (let i = 0; i < m021.length; i++) {
+      m021[i].textContent = 'ארנב ירח';
+    };
+    for (let i = 0; i < m022.length; i++) {
+      m022[i].textContent = 'נבולה';
+    };
+    for (let i = 0; i < m023.length; i++) {
+      m023[i].textContent = 'כוכב ניוטרון';
+    };
+    for (let i = 0; i < m024.length; i++) {
+      m024[i].textContent = 'אביר צפוני';
+    };
+    for (let i = 0; i < m025.length; i++) {
+      m025[i].textContent = 'פולסר';
+    };
+    for (let i = 0; i < m026.length; i++) {
+      m026[i].textContent = "ריינג'ר";
+    };
+    for (let i = 0; i < m027.length; i++) {
+      m027[i].textContent = 'עורב';
+    };
+    for (let i = 0; i < m028.length; i++) {
+      m028[i].textContent = 'שיראנוי';
+    };
+    for (let i = 0; i < m029.length; i++) {
+      m029[i].textContent = 'סקייפול';
+    };
+    for (let i = 0; i < m030.length; i++) {
+      m030[i].textContent = 'סקייפייר';
+    };
+    for (let i = 0; i < m031.length; i++) {
+      m031[i].textContent = 'סקיילארק';
+    };
+    for (let i = 0; i < m032.length; i++) {
+      m032[i].textContent = "מיראז' השלג";
+    };
+    for (let i = 0; i < m033.length; i++) {
+      m033[i].textContent = 'טמפסט';
+    };
+    for (let i = 0; i < m034.length; i++) {
+      m034[i].textContent = 'שלישייה של אנדרים';
+    };
+    for (let i = 0; i < m035.length; i++) {
+      m035[i].textContent = 'דמדום';
+    };
+    for (let i = 0; i < m036.length; i++) {
+      m036[i].textContent = 'ונטורוס';
+    };
+    for (let i = 0; i < p000.length; i++) {
+      p000[i].textContent = 'איה';
+    };
+    for (let i = 0; i < p001.length; i++) {
+      p001[i].textContent = 'בלדונה';
+    };
+    for (let i = 0; i < p002.length; i++) {
+      p002[i].textContent = 'סיירוס';
+    };
+    for (let i = 0; i < p003.length; i++) {
+      p003[i].textContent = 'פרן';
+    };
+    for (let i = 0; i < p004.length; i++) {
+      p004[i].textContent = 'פורנקו';
+    };
+    for (let i = 0; i < p005.length; i++) {
+      p005[i].textContent = 'איורי';
+    };
+    for (let i = 0; i < p006.length; i++) {
+      p006[i].textContent = 'איוון';
+    };
+    for (let i = 0; i < p007.length; i++) {
+      p007[i].textContent = "ג'קה";
+    };
+    for (let i = 0; i < p008.length; i++) {
+      p008[i].textContent = "ג'יו צ'ונג";
+    };
+    for (let i = 0; i < p009.length; i++) {
+      p009[i].textContent = "ג'ואנה";
+    };
+    for (let i = 0; i < p010.length; i++) {
+      p010[i].textContent = "קייג'";
+      p010[i].style.direction = "rtl";
+    };
+    for (let i = 0; i < p011.length; i++) {
+      p011[i].textContent = 'קיקינה';
+    };
+    for (let i = 0; i < p012.length; i++) {
+      p012[i].textContent = 'קיזונה איי';
+    };
+    for (let i = 0; i < p013.length; i++) {
+      p013[i].textContent = 'ליליאן';
+    };
+    for (let i = 0; i < p014.length; i++) {
+      p014[i].textContent = 'ליסה';
+    };
+    for (let i = 0; i < p015.length; i++) {
+      p015[i].textContent = 'מטילדה';
+    };
+    for (let i = 0; i < p016.length; i++) {
+      p016[i].textContent = 'מיה';
+    };
+    for (let i = 0; i < p017.length; i++) {
+      p017[i].textContent = 'מילה';
+    };
+    for (let i = 0; i < p018.length; i++) {
+      p018[i].textContent = 'מוביוס';
+    };
+    for (let i = 0; i < p019.length; i++) {
+      p019[i].textContent = 'נץ ליילי';
+    };
+    for (let i = 0; i < p020.length; i++) {
+      p020[i].textContent = 'נינג';
+    };
+    for (let i = 0; i < p021.length; i++) {
+      p021[i].textContent = 'נורמה';
+    };
+    for (let i = 0; i < p022.length; i++) {
+      p022[i].textContent = 'אופל';
+    };
+    for (let i = 0; i < p023.length; i++) {
+      p023[i].textContent = 'פוריטי';
+    };
+    for (let i = 0; i < p024.length; i++) {
+      p024[i].textContent = 'ר.א.ד';
+    };
+    for (let i = 0; i < p025.length; i++) {
+      p025[i].textContent = 'ריקו';
+    };
+    for (let i = 0; i < p026.length; i++) {
+      p026[i].textContent = 'רום';
+    };
+    for (let i = 0; i < p027.length; i++) {
+      p027[i].textContent = 'סרנה';
+    };
+    for (let i = 0; i < p028.length; i++) {
+      p028[i].textContent = 'שין';
+    };
+    for (let i = 0; i < p029.length; i++) {
+      p029[i].textContent = 'דיקון כסף';
+    };
+    for (let i = 0; i < p030.length; i++) {
+      p030[i].textContent = 'טרנטולה';
+    };
+    for (let i = 0; i < p031.length; i++) {
+      p031[i].textContent = 'ונסה';
+    };
+    for (let i = 0; i < p032.length; i++) {
+      p032[i].textContent = 'וילאר';
+    };
+    for (let i = 0; i < p033.length; i++) {
+      p033[i].textContent = 'ויטה';
+    };
+    for (let i = 0; i < p034.length; i++) {
+      p034[i].textContent = 'יאנג';
+    };
+    for (let i = 0; i < p035.length; i++) {
+      p035[i].textContent = 'יוליה';
+    };
+    for (let i = 0; i < p036.length; i++) {
+      p036[i].textContent = 'יוטונג';
+    };
+    for (let i = 0; i < p037.length; i++) {
+      p037[i].textContent = 'זואי';
+    };
   }
 }

@@ -3,7 +3,7 @@ function openSettingsSound() {
     document.getElementById("openSettingsSound").muted = true;
   }else{
     document.getElementById("openSettingsSound").muted = false;
+    document.getElementById("openSettingsSound").currentTime = 0;
+    document.getElementById("openSettingsSound").play();
   }
-  document.getElementById("openSettingsSound").currentTime = 0;
-  document.getElementById("openSettingsSound").play();
 }

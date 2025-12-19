@@ -2329,6 +2329,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const scrollableElementE = document.getElementById('board');
   const scrollableElementF = document.getElementById('audio');
   const scrollableElementG = document.getElementById('game');
+  const scrollableElementH = document.getElementById('tools');
   const scrollRangeA = document.getElementById('conOne');
   const scrollRangeB = document.getElementById('conTwo');
   const scrollRangeC = document.getElementById('conThree');
@@ -2336,6 +2337,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const scrollRangeE = document.getElementById('conFive');
   const scrollRangeF = document.getElementById('conSix');
   const scrollRangeG = document.getElementById('conSeven');
+  const scrollRangeH = document.getElementById('conEight');
   scrollRangeA.addEventListener('input', function() {
     const percentage = this.value;
     const maxScrollTop = scrollableElementA.scrollHeight - scrollableElementA.clientHeight;
@@ -2378,6 +2380,12 @@ document.addEventListener('DOMContentLoaded', function() {
     const scrollTopPosition = (percentage / 100) * maxScrollTop;
     scrollableElementG.scrollTop = scrollTopPosition;
   });
+  scrollRangeH.addEventListener('input', function() {
+    const percentage = this.value;
+    const maxScrollTop = scrollableElementH.scrollHeight - scrollableElementH.clientHeight;
+    const scrollTopPosition = (percentage / 100) * maxScrollTop;
+    scrollableElementH.scrollTop = scrollTopPosition;
+  });
   scrollableElementA.addEventListener('scroll', function() {
     const maxScrollTop = this.scrollHeight - this.clientHeight;
     const currentScrollTop = this.scrollTop;
@@ -2419,6 +2427,12 @@ document.addEventListener('DOMContentLoaded', function() {
     const currentScrollTop = this.scrollTop;
     const scrollPercentage = (currentScrollTop / maxScrollTop) * 100;
     scrollRangeG.value = scrollPercentage;
+  });
+  scrollableElementH.addEventListener('scroll', function() {
+    const maxScrollTop = this.scrollHeight - this.clientHeight;
+    const currentScrollTop = this.scrollTop;
+    const scrollPercentage = (currentScrollTop / maxScrollTop) * 100;
+    scrollRangeH.value = scrollPercentage;
   });
 });
 function saveAmbientChecker() {
@@ -2701,10 +2715,6 @@ function checkSettingsChanges() {
     { id: "goldItem", localStorageValue: "imgGold" },
     { id: "alphacoinItem", localStorageValue: "imgAlphacoin" },
     { id: "crystalItem", localStorageValue: "imgCrystal" },
-    { id: "ticketItem", localStorageValue: "imgTicket" },
-    { id: "cTicketItem", localStorageValue: "imgCticket" },
-    { id: "pTicketItem", localStorageValue: "imgPticket" },
-    { id: "pTicket2Item", localStorageValue: "imgPticket2" },
     { id: "virtualTokenItem", localStorageValue: "imgVirtualToken" },
     { id: "food000Item0", localStorageValue: "img000food" },
     { id: "food001Item0", localStorageValue: "img001food" },
@@ -3001,286 +3011,412 @@ function f12Active() {
     localStorage.setItem("devTools", "false");
   }
 };
-window.addEventListener('load', function() {
-  setTimeout(() => {
-    document.getElementById("gameLogo").style.display = "none";
-    loadTextures();
-  }, 1000);
-  languagesContents();
-  updateTextLangs();
-  autoSnakeLoadNew();
-  autoDifficultyLoadNew();
-  autoFoodsLoadNew();
-  autoBoardsLoadNew();
-  autoControllerPoseLoadNew();
-  autoLanguageLoadNew();
-  autoMusicLoadNew();
-  autoDynamicControllerLoadNew();
-  autoMusicCheckLoadNew();
-  autoSfxProgLoadNew();
-  autoMusicProgLoadNew();
-  autoMovementLoadNew();
-  autoMeawStorageLoadNew();
-  autoGoldStorageLoadNew();
-  autoAlphaStorageLoadNew();
-  autoCrystalStorageLoadNew();
-  autoTicketStorageLoadNew();
-  autoTicketChStorageLoadNew();
-  autoTicketPrStorageLoadNew();
-  autoTicketP2rStorageLoadNew();
-  autoVirtualTokenrStorageLoadNew();
-  autoLoadingAnimLogoLoadNew();
-  autoAmbientCheckLoadNew();
-  autoSnakeColorerLoadNew();
-  autoSnakeLettersLoadNew();
-  autoSnakePosLoadNew();
-  autoSnakePosXLoadNew();
-  autoSnakePosYLoadNew();
-  autoFood000StorageLoadNew();
-  autoFood001StorageLoadNew();
-  autoFood002StorageLoadNew();
-  autoFood003StorageLoadNew();
-  autoFood004StorageLoadNew();
-  autoFood005StorageLoadNew();
-  autoFood006StorageLoadNew();
-  autoFood007StorageLoadNew();
-  autoFood008StorageLoadNew();
-  autoFood009StorageLoadNew();
-  autoFood010StorageLoadNew();
-  autoFood011StorageLoadNew();
-  autoFood012StorageLoadNew();
-  autoFood013StorageLoadNew();
-  autoFood014StorageLoadNew();
-  autoFood015StorageLoadNew();
-  autoFood016StorageLoadNew();
-  autoFood017StorageLoadNew();
-  autoFood018StorageLoadNew();
-  autoFood019StorageLoadNew();
-  autoFood020StorageLoadNew();
-  autoFood021StorageLoadNew();
-  autoFood022StorageLoadNew();
-  autoFood023StorageLoadNew();
-  autoFood024StorageLoadNew();
-  autoFood025StorageLoadNew();
-  autoFood026StorageLoadNew();
-  autoFood027StorageLoadNew();
-  autoFood028StorageLoadNew();
-  autoFood029StorageLoadNew();
-  autoFood030StorageLoadNew();
-  autoFood031StorageLoadNew();
-  autoFood032StorageLoadNew();
-  autoFood033StorageLoadNew();
-  autoFood034StorageLoadNew();
-  autoFood035StorageLoadNew();
-  autoFood036StorageLoadNew();
-  autoFood037StorageLoadNew();
-  autoFood038StorageLoadNew();
-  autoFood039StorageLoadNew();
-  autoFood040StorageLoadNew();
-  autoFood041StorageLoadNew();
-  autoFood042StorageLoadNew();
-  autoFood043StorageLoadNew();
-  autoFood044StorageLoadNew();
-  autoFood045StorageLoadNew();
-  autoFood046StorageLoadNew();
-  autoFood047StorageLoadNew();
-  autoFood048StorageLoadNew();
-  autoFood049StorageLoadNew();
-  autoFood050StorageLoadNew();
-  autoFood051StorageLoadNew();
-  autoFood052StorageLoadNew();
-  autoFood053StorageLoadNew();
-  autoFood054StorageLoadNew();
-  autoFood055StorageLoadNew();
-  autoFood056StorageLoadNew();
-  autoFood057StorageLoadNew();
-  autoFood058StorageLoadNew();
-  autoFood059StorageLoadNew();
-  autoFood060StorageLoadNew();
-  autoFood061StorageLoadNew();
-  autoFood062StorageLoadNew();
-  autoFood063StorageLoadNew();
-  autoFood064StorageLoadNew();
-  autoFood065StorageLoadNew();
-  autoFood066StorageLoadNew();
-  autoFood067StorageLoadNew();
-  autoFood068StorageLoadNew();
-  autoFood069StorageLoadNew();
-  autoFood070StorageLoadNew();
-  autoFood071StorageLoadNew();
-  autoFood072StorageLoadNew();
-  autoFood073StorageLoadNew();
-  autoFood074StorageLoadNew();
-  autoFood075StorageLoadNew();
-  autoFood076StorageLoadNew();
-  autoFood077StorageLoadNew();
-  snakeColorerValueLoad();
-  mouseBoard();
-  loadCdisplatFPS();
-  changeControllerType();
-  keysRegistering();
-  randomSnakePosChange();
-  levelsSystem();
-  leagueSystem();
-  if(localStorage.getItem("snakePosType") === "random") {
-    document.getElementById("randomSnakePos").checked = true;
-    document.getElementById("snakePositionContainer").classList.remove("drowed");
-    if(localStorage.getItem("lang") === "en") {
-      document.getElementById("randomSnakePosLang").innerHTML = "Random Position";
-    }else
-    if(localStorage.getItem("lang") === "ru") {
-      document.getElementById("randomSnakePosLang").innerHTML = "Случайная позиция";
-    }else
-    if(localStorage.getItem("lang") === "he") {
-      document.getElementById("randomSnakePosLang").innerHTML = "מיקום אקראי";
-    }
-  }else{
-    document.getElementById("randomSnakePos").checked = false;
-    document.getElementById("snakePositionContainer").classList.add("drowed");
-    if(localStorage.getItem("lang") === "en") {
-      document.getElementById("randomSnakePosLang").innerHTML = "Custom Position";
-    }else
-    if(localStorage.getItem("lang") === "ru") {
-      document.getElementById("randomSnakePosLang").innerHTML = "Пользовательская позиция";
-    }else
-    if(localStorage.getItem("lang") === "he") {
-      document.getElementById("randomSnakePosLang").innerHTML = "מיקום מותאם אישית";
-    }
+let indexMecha = 1;
+const slidemechaimages = [
+  'Akashic.png','Alborada.png','Andromeda.png','Arthur.png','Aurora.png','Boltus.png',
+  'Caramel.png','Death Knell.png','Doomlight.png','Dreadwolf.png','Firefox.png','Firestar.png',
+  'Flamenco.png','Gabriel.png','Gaia.png','Guerilla Hunter.png','Hotsteel.png','Hurricane.png',
+  'Jojo.png','Lancelot.png','Michael.png','Moon Rabbit.png','Nebula.png','Neutron Star.png',
+  'Northern Knight.png','Pulsar.png','Ranger.png','Raven.png','Shiranui.png','Skyfall.png',
+  'Skyfire.png','Skylark.png','Snow Mirage.png','Tempest.png','Trio of Enders.png','Twilight.png',
+  'Ventorus.png'
+];
+const basePathMecha = 'index_data/textures/images/views/def_mecha/';
+const mechacontent = document.getElementById('mechacontent');
+function changeBackgroundMecha() {
+  mechacontent.style.backgroundImage = `url('${basePathMecha}${slidemechaimages[indexMecha]}')`;
+  indexMecha = (indexMecha + 1) % slidemechaimages.length;
+};
+let indexPilot = 1;
+const slidepilotimages = [
+  'Aya.png','Belladonna.png','Cyrus.png','Fran.png','Furanku.png','Iori.png',
+  'Ivan.png','Jaka.png','Jiu Chong.png','Joanna.png','Kije.png','Kikina.png',
+  'Kizuna Ai.png','Lillian.png','Lysa.png','Matilda.png','Mia.png','Mila.png',
+  'Mobius.png','Nighthawk.png','Ning.png','Norma.png','Opal.png','Purity.png',
+  'RED.png','Riko.png','Rom.png','Serena.png','Shin.png','Silver Deacon.png',
+  'Tarantula.png','Vanessa.png','Villar.png','Vita.png','Yang.png','Yulia.png',
+  'Yutong.png','Zoe'
+];
+const basePathPilot = 'index_data/textures/images/views/def_pilot/';
+const pilotcontent = document.getElementById('pilotcontent');
+function changeBackgroundPilot() {
+  pilotcontent.style.backgroundImage = `url('${basePathPilot}${slidepilotimages[indexPilot]}')`;
+  indexPilot = (indexPilot + 1) % slidepilotimages.length;
+};
+function checkObtineds() {
+  if(localStorage.getItem("Akashic") === "geted") {
+    document.getElementById("imgLockAkashic").classList.remove("locked");
+    document.getElementById("classesAkashic").classList.remove("locked");
+  };
+  if(localStorage.getItem("Alborada") === "geted") {
+    document.getElementById("imgLockAlborada").classList.remove("locked");
+    document.getElementById("classesAlborada").classList.remove("locked");
+  };
+  if(localStorage.getItem("Andromeda") === "geted") {
+    document.getElementById("imgLockAndromeda").classList.remove("locked");
+    document.getElementById("classesAndromeda").classList.remove("locked");
+  };
+  if(localStorage.getItem("Arthur") === "geted") {
+    document.getElementById("imgLockArthur").classList.remove("locked");
+    document.getElementById("classesArthur").classList.remove("locked");
+  };
+  if(localStorage.getItem("Aurora") === "geted") {
+    document.getElementById("imgLockAurora").classList.remove("locked");
+    document.getElementById("classesAurora").classList.remove("locked");
+  };
+  if(localStorage.getItem("Boltus") === "geted") {
+    document.getElementById("imgLockBoltus").classList.remove("locked");
+    document.getElementById("classesBoltus").classList.remove("locked");
+  };
+  if(localStorage.getItem("Caramel") === "geted") {
+    document.getElementById("imgLockCaramel").classList.remove("locked");
+    document.getElementById("classesCaramel").classList.remove("locked");
+  };
+  if(localStorage.getItem("Death Knell") === "geted") {
+    document.getElementById("imgLockDeathKnell").classList.remove("locked");
+    document.getElementById("classesDeathKnell").classList.remove("locked");
+  };
+  if(localStorage.getItem("Doomlight") === "geted") {
+    document.getElementById("imgLockDoomlight").classList.remove("locked");
+    document.getElementById("classesDoomlight").classList.remove("locked");
+  };
+  if(localStorage.getItem("Dreadwolf") === "geted") {
+    document.getElementById("imgLockDreadwolf").classList.remove("locked");
+    document.getElementById("classesDreadwolf").classList.remove("locked");
+  };
+  if(localStorage.getItem("Firefox") === "geted") {
+    document.getElementById("imgLockFirefox").classList.remove("locked");
+    document.getElementById("classesFirefox").classList.remove("locked");
+  };
+  if(localStorage.getItem("Firestar") === "geted") {
+    document.getElementById("imgLockFirestar").classList.remove("locked");
+    document.getElementById("classesFirestar").classList.remove("locked");
+  };
+  if(localStorage.getItem("Flamenco") === "geted") {
+    document.getElementById("imgLockFlamenco").classList.remove("locked");
+    document.getElementById("classesFlamenco").classList.remove("locked");
+  };
+  if(localStorage.getItem("Gabriel") === "geted") {
+    document.getElementById("imgLockGabriel").classList.remove("locked");
+    document.getElementById("classesGabriel").classList.remove("locked");
+  };
+  if(localStorage.getItem("Gaia") === "geted") {
+    document.getElementById("imgLockGaia").classList.remove("locked");
+    document.getElementById("classesGaia").classList.remove("locked");
+  };
+  if(localStorage.getItem("Guerilla Hunter") === "geted") {
+    document.getElementById("imgLockGuerillaHunter").classList.remove("locked");
+    document.getElementById("classesGuerillaHunter").classList.remove("locked");
+  };
+  if(localStorage.getItem("Hotsteel") === "geted") {
+    document.getElementById("imgLockHotsteel").classList.remove("locked");
+    document.getElementById("classesHotsteel").classList.remove("locked");
+  };
+  if(localStorage.getItem("Hurricane") === "geted") {
+    document.getElementById("imgLockHurricane").classList.remove("locked");
+    document.getElementById("classesHurricane").classList.remove("locked");
+  };
+  if(localStorage.getItem("JOJO") === "geted") {
+    document.getElementById("imgLockJOJO").classList.remove("locked");
+    document.getElementById("classesJOJO").classList.remove("locked");
+  };
+  if(localStorage.getItem("Lancelot") === "geted") {
+    document.getElementById("imgLockLancelot").classList.remove("locked");
+    document.getElementById("classesLancelot").classList.remove("locked");
+  };
+  if(localStorage.getItem("Michael") === "geted") {
+    document.getElementById("imgLockMichael").classList.remove("locked");
+    document.getElementById("classesMichael").classList.remove("locked");
+  };
+  if(localStorage.getItem("Moon Rabbit") === "geted") {
+    document.getElementById("imgLockMoonRabbit").classList.remove("locked");
+    document.getElementById("classesMoonRabbit").classList.remove("locked");
+  };
+  if(localStorage.getItem("Nebula") === "geted") {
+    document.getElementById("imgLockNebula").classList.remove("locked");
+    document.getElementById("classesNebula").classList.remove("locked");
+  };
+  if(localStorage.getItem("Neutron Star") === "geted") {
+    document.getElementById("imgLockNeutronStar").classList.remove("locked");
+    document.getElementById("classesNeutronStar").classList.remove("locked");
+  };
+  if(localStorage.getItem("Northern Knight") === "geted") {
+    document.getElementById("imgLockNorthernKnight").classList.remove("locked");
+    document.getElementById("classesNorthernKnight").classList.remove("locked");
+  };
+  if(localStorage.getItem("Pulsar") === "geted") {
+    document.getElementById("imgLockPulsar").classList.remove("locked");
+    document.getElementById("classesPulsar").classList.remove("locked");
+  };
+  if(localStorage.getItem("Ranger") === "geted") {
+    document.getElementById("imgLockRanger").classList.remove("locked");
+    document.getElementById("classesRanger").classList.remove("locked");
+  };
+  if(localStorage.getItem("Raven") === "geted") {
+    document.getElementById("imgLockRaven").classList.remove("locked");
+    document.getElementById("classesRaven").classList.remove("locked");
+  };
+  if(localStorage.getItem("Shiranui") === "geted") {
+    document.getElementById("imgLockShiranui").classList.remove("locked");
+    document.getElementById("classesShiranui").classList.remove("locked");
+  };
+  if(localStorage.getItem("Skyfall") === "geted") {
+    document.getElementById("imgLockSkyfall").classList.remove("locked");
+    document.getElementById("classesSkyfall").classList.remove("locked");
+  };
+  if(localStorage.getItem("Skyfire") === "geted") {
+    document.getElementById("imgLockSkyfire").classList.remove("locked");
+    document.getElementById("classesSkyfire").classList.remove("locked");
+  };
+  if(localStorage.getItem("Skylark") === "geted") {
+    document.getElementById("imgLockSkylark").classList.remove("locked");
+    document.getElementById("classesSkylark").classList.remove("locked");
+  };
+  if(localStorage.getItem("Snow Mirage") === "geted") {
+    document.getElementById("imgLockSnowMirage").classList.remove("locked");
+    document.getElementById("classesSnowMirage").classList.remove("locked");
+  };
+  if(localStorage.getItem("Tempest") === "geted") {
+    document.getElementById("imgLockTempest").classList.remove("locked");
+    document.getElementById("classesTempest").classList.remove("locked");
+  };
+  if(localStorage.getItem("Trio of Enders") === "geted") {
+    document.getElementById("imgLockTrioofEnders").classList.remove("locked");
+    document.getElementById("classesTrioofEnders").classList.remove("locked");
+  };
+  if(localStorage.getItem("Twilight") === "geted") {
+    document.getElementById("imgLockTwilight").classList.remove("locked");
+    document.getElementById("classesTwilight").classList.remove("locked");
+  };
+  if(localStorage.getItem("Ventorus") === "geted") {
+    document.getElementById("imgLockVentorus").classList.remove("locked");
+    document.getElementById("classesVentorus").classList.remove("locked");
+  };
+  if(localStorage.getItem("Aya") === "geted") {
+    document.getElementById("imgLockAya").classList.remove("locked");
+    document.getElementById("classesAya").classList.remove("locked");
+  };
+  if(localStorage.getItem("Belladonna") === "geted") {
+    document.getElementById("imgLockBelladonna").classList.remove("locked");
+    document.getElementById("classesBelladonna").classList.remove("locked");
+  };
+  if(localStorage.getItem("Cyrus") === "geted") {
+    document.getElementById("imgLockCyrus").classList.remove("locked");
+    document.getElementById("classesCyrus").classList.remove("locked");
+  };
+  if(localStorage.getItem("Fran") === "geted") {
+    document.getElementById("imgLockFran").classList.remove("locked");
+    document.getElementById("classesFran").classList.remove("locked");
+  };
+  if(localStorage.getItem("Furanku") === "geted") {
+    document.getElementById("imgLockFuranku").classList.remove("locked");
+    document.getElementById("classesFuranku").classList.remove("locked");
+  };
+  if(localStorage.getItem("Iori") === "geted") {
+    document.getElementById("imgLockIori").classList.remove("locked");
+    document.getElementById("classesIori").classList.remove("locked");
+  };
+  if(localStorage.getItem("Ivan") === "geted") {
+    document.getElementById("imgLockIvan").classList.remove("locked");
+    document.getElementById("classesIvan").classList.remove("locked");
+  };
+  if(localStorage.getItem("Jaka") === "geted") {
+    document.getElementById("imgLockJaka").classList.remove("locked");
+    document.getElementById("classesJaka").classList.remove("locked");
+  };
+  if(localStorage.getItem("Jiu Chong") === "geted") {
+    document.getElementById("imgLockJiuChong").classList.remove("locked");
+    document.getElementById("classesJiuChong").classList.remove("locked");
+  };
+  if(localStorage.getItem("Joanna") === "geted") {
+    document.getElementById("imgLockJoanna").classList.remove("locked");
+    document.getElementById("classesJoanna").classList.remove("locked");
+  };
+  if(localStorage.getItem("Kije") === "geted") {
+    document.getElementById("imgLockKije").classList.remove("locked");
+    document.getElementById("classesKije").classList.remove("locked");
+  };
+  if(localStorage.getItem("Kikina") === "geted") {
+    document.getElementById("imgLockKikina").classList.remove("locked");
+    document.getElementById("classesKikina").classList.remove("locked");
+  };
+  if(localStorage.getItem("Kizuna Ai") === "geted") {
+    document.getElementById("imgLockKizunaAi").classList.remove("locked");
+    document.getElementById("classesKizunaAi").classList.remove("locked");
+  };
+  if(localStorage.getItem("Lillian") === "geted") {
+    document.getElementById("imgLockLillian").classList.remove("locked");
+    document.getElementById("classesLillian").classList.remove("locked");
+  };
+  if(localStorage.getItem("Lysa") === "geted") {
+    document.getElementById("imgLockLysa").classList.remove("locked");
+    document.getElementById("classesLysa").classList.remove("locked");
+  };
+  if(localStorage.getItem("Matilda") === "geted") {
+    document.getElementById("imgLockMatilda").classList.remove("locked");
+    document.getElementById("classesMatilda").classList.remove("locked");
+  };
+  if(localStorage.getItem("Mia") === "geted") {
+    document.getElementById("imgLockMia").classList.remove("locked");
+    document.getElementById("classesMia").classList.remove("locked");
+  };
+  if(localStorage.getItem("Mila") === "geted") {
+    document.getElementById("imgLockMila").classList.remove("locked");
+    document.getElementById("classesMila").classList.remove("locked");
+  };
+  if(localStorage.getItem("Mobius") === "geted") {
+    document.getElementById("imgLockMobius").classList.remove("locked");
+    document.getElementById("classesMobius").classList.remove("locked");
+  };
+  if(localStorage.getItem("Nighthawk") === "geted") {
+    document.getElementById("imgLockNighthawk").classList.remove("locked");
+    document.getElementById("classesNighthawk").classList.remove("locked");
+  };
+  if(localStorage.getItem("Ning") === "geted") {
+    document.getElementById("imgLockNing").classList.remove("locked");
+    document.getElementById("classesNing").classList.remove("locked");
+  };
+  if(localStorage.getItem("Norma") === "geted") {
+    document.getElementById("imgLockNorma").classList.remove("locked");
+    document.getElementById("classesNorma").classList.remove("locked");
+  };
+  if(localStorage.getItem("Opal") === "geted") {
+    document.getElementById("imgLockOpal").classList.remove("locked");
+    document.getElementById("classesOpal").classList.remove("locked");
+  };
+  if(localStorage.getItem("Purity") === "geted") {
+    document.getElementById("imgLockPurity").classList.remove("locked");
+    document.getElementById("classesPurity").classList.remove("locked");
+  };
+  if(localStorage.getItem("RED") === "geted") {
+    document.getElementById("imgLockRED").classList.remove("locked");
+    document.getElementById("classesRED").classList.remove("locked");
+  };
+  if(localStorage.getItem("Riko") === "geted") {
+    document.getElementById("imgLockRiko").classList.remove("locked");
+    document.getElementById("classesRiko").classList.remove("locked");
+  };
+  if(localStorage.getItem("Rom") === "geted") {
+    document.getElementById("imgLockRom").classList.remove("locked");
+    document.getElementById("classesRom").classList.remove("locked");
+  };
+  if(localStorage.getItem("Serena") === "geted") {
+    document.getElementById("imgLockSerena").classList.remove("locked");
+    document.getElementById("classesSerena").classList.remove("locked");
+  };
+  if(localStorage.getItem("Shin") === "geted") {
+    document.getElementById("imgLockShin").classList.remove("locked");
+    document.getElementById("classesShin").classList.remove("locked");
+  };
+  if(localStorage.getItem("Silver Deacon") === "geted") {
+    document.getElementById("imgLockSilverDeacon").classList.remove("locked");
+    document.getElementById("classesSilverDeacon").classList.remove("locked");
+  };
+  if(localStorage.getItem("Tarantula") === "geted") {
+    document.getElementById("imgLockTarantula").classList.remove("locked");
+    document.getElementById("classesTarantula").classList.remove("locked");
+  };
+  if(localStorage.getItem("Vanessa") === "geted") {
+    document.getElementById("imgLockVanessa").classList.remove("locked");
+    document.getElementById("classesVanessa").classList.remove("locked");
+  };
+  if(localStorage.getItem("Villar") === "geted") {
+    document.getElementById("imgLockVillar").classList.remove("locked");
+    document.getElementById("classesVillar").classList.remove("locked");
+  };
+  if(localStorage.getItem("Vita") === "geted") {
+    document.getElementById("imgLockVita").classList.remove("locked");
+    document.getElementById("classesVita").classList.remove("locked");
+  };
+  if(localStorage.getItem("Yang") === "geted") {
+    document.getElementById("imgLockYang").classList.remove("locked");
+    document.getElementById("classesYang").classList.remove("locked");
+  };
+  if(localStorage.getItem("Yulia") === "geted") {
+    document.getElementById("imgLockYulia").classList.remove("locked");
+    document.getElementById("classesYulia").classList.remove("locked");
+  };
+  if(localStorage.getItem("Yutong") === "geted") {
+    document.getElementById("imgLockYutong").classList.remove("locked");
+    document.getElementById("classesYutong").classList.remove("locked");
+  };
+  if(localStorage.getItem("Zoe") === "geted") {
+    document.getElementById("imgLockZoe").classList.remove("locked");
+    document.getElementById("classesZoe").classList.remove("locked");
+  };
+};
+function costGoldShows() {
+  const goldsLabels = document.querySelectorAll(".cost-have-gold");
+  for(var i = 0; i < goldsLabels.length; i++) {
+    goldsLabels[i].innerHTML = localStorage.getItem("goldStorage");
   }
-  document.getElementById("xSnakeValue").value = localStorage.getItem("snakePosX");
-  document.getElementById("ySnakeValue").value = localStorage.getItem("snakePosY");
-  localStorage.setItem("steelScore", localStorage.getItem("high-score"));
-  document.getElementById("collectedMeow").innerHTML = localStorage.getItem("meawTokenStorage");
-  document.getElementById("collectedGold").innerHTML = localStorage.getItem("goldStorage");
-  document.getElementById("collectedAlphacoin").innerHTML = localStorage.getItem("alphaCoinStorage");
-  document.getElementById("collectedCrystal").innerHTML = localStorage.getItem("crystalStorage");
-  document.getElementById("collectedTicket").innerHTML = localStorage.getItem("ticketStorage");
-  document.getElementById("collectedCticket").innerHTML = localStorage.getItem("ticketChromaticStorage");
-  document.getElementById("collectedPticket").innerHTML = localStorage.getItem("ticketPremiumStorage");
-  document.getElementById("collectedPticket2").innerHTML = localStorage.getItem("ticketPremium2Storage");
-  document.getElementById("collectedVirtualToken").innerHTML = localStorage.getItem("virtualTokenStorage");
-  document.getElementById("collected000Food").innerHTML = localStorage.getItem("food000Storage");
-  document.getElementById("collected001Food").innerHTML = localStorage.getItem("food001Storage");
-  document.getElementById("collected002Food").innerHTML = localStorage.getItem("food002Storage");
-  document.getElementById("collected003Food").innerHTML = localStorage.getItem("food003Storage");
-  document.getElementById("collected004Food").innerHTML = localStorage.getItem("food004Storage");
-  document.getElementById("collected005Food").innerHTML = localStorage.getItem("food005Storage");
-  document.getElementById("collected006Food").innerHTML = localStorage.getItem("food006Storage");
-  document.getElementById("collected007Food").innerHTML = localStorage.getItem("food007Storage");
-  document.getElementById("collected008Food").innerHTML = localStorage.getItem("food008Storage");
-  document.getElementById("collected009Food").innerHTML = localStorage.getItem("food009Storage");
-  document.getElementById("collected010Food").innerHTML = localStorage.getItem("food010Storage");
-  document.getElementById("collected011Food").innerHTML = localStorage.getItem("food011Storage");
-  document.getElementById("collected012Food").innerHTML = localStorage.getItem("food012Storage");
-  document.getElementById("collected013Food").innerHTML = localStorage.getItem("food013Storage");
-  document.getElementById("collected014Food").innerHTML = localStorage.getItem("food014Storage");
-  document.getElementById("collected015Food").innerHTML = localStorage.getItem("food015Storage");
-  document.getElementById("collected016Food").innerHTML = localStorage.getItem("food016Storage");
-  document.getElementById("collected017Food").innerHTML = localStorage.getItem("food017Storage");
-  document.getElementById("collected018Food").innerHTML = localStorage.getItem("food018Storage");
-  document.getElementById("collected019Food").innerHTML = localStorage.getItem("food019Storage");
-  document.getElementById("collected020Food").innerHTML = localStorage.getItem("food020Storage");
-  document.getElementById("collected021Food").innerHTML = localStorage.getItem("food021Storage");
-  document.getElementById("collected022Food").innerHTML = localStorage.getItem("food022Storage");
-  document.getElementById("collected023Food").innerHTML = localStorage.getItem("food023Storage");
-  document.getElementById("collected024Food").innerHTML = localStorage.getItem("food024Storage");
-  document.getElementById("collected025Food").innerHTML = localStorage.getItem("food025Storage");
-  document.getElementById("collected026Food").innerHTML = localStorage.getItem("food026Storage");
-  document.getElementById("collected027Food").innerHTML = localStorage.getItem("food027Storage");
-  document.getElementById("collected028Food").innerHTML = localStorage.getItem("food028Storage");
-  document.getElementById("collected029Food").innerHTML = localStorage.getItem("food029Storage");
-  document.getElementById("collected030Food").innerHTML = localStorage.getItem("food030Storage");
-  document.getElementById("collected031Food").innerHTML = localStorage.getItem("food031Storage");
-  document.getElementById("collected032Food").innerHTML = localStorage.getItem("food032Storage");
-  document.getElementById("collected033Food").innerHTML = localStorage.getItem("food033Storage");
-  document.getElementById("collected034Food").innerHTML = localStorage.getItem("food034Storage");
-  document.getElementById("collected035Food").innerHTML = localStorage.getItem("food035Storage");
-  document.getElementById("collected036Food").innerHTML = localStorage.getItem("food036Storage");
-  document.getElementById("collected037Food").innerHTML = localStorage.getItem("food037Storage");
-  document.getElementById("collected038Food").innerHTML = localStorage.getItem("food038Storage");
-  document.getElementById("collected039Food").innerHTML = localStorage.getItem("food039Storage");
-  document.getElementById("collected040Food").innerHTML = localStorage.getItem("food040Storage");
-  document.getElementById("collected041Food").innerHTML = localStorage.getItem("food041Storage");
-  document.getElementById("collected042Food").innerHTML = localStorage.getItem("food042Storage");
-  document.getElementById("collected043Food").innerHTML = localStorage.getItem("food043Storage");
-  document.getElementById("collected044Food").innerHTML = localStorage.getItem("food044Storage");
-  document.getElementById("collected045Food").innerHTML = localStorage.getItem("food045Storage");
-  document.getElementById("collected046Food").innerHTML = localStorage.getItem("food046Storage");
-  document.getElementById("collected047Food").innerHTML = localStorage.getItem("food047Storage");
-  document.getElementById("collected048Food").innerHTML = localStorage.getItem("food048Storage");
-  document.getElementById("collected049Food").innerHTML = localStorage.getItem("food049Storage");
-  document.getElementById("collected050Food").innerHTML = localStorage.getItem("food050Storage");
-  document.getElementById("collected051Food").innerHTML = localStorage.getItem("food051Storage");
-  document.getElementById("collected052Food").innerHTML = localStorage.getItem("food052Storage");
-  document.getElementById("collected053Food").innerHTML = localStorage.getItem("food053Storage");
-  document.getElementById("collected054Food").innerHTML = localStorage.getItem("food054Storage");
-  document.getElementById("collected055Food").innerHTML = localStorage.getItem("food055Storage");
-  document.getElementById("collected056Food").innerHTML = localStorage.getItem("food056Storage");
-  document.getElementById("collected057Food").innerHTML = localStorage.getItem("food057Storage");
-  document.getElementById("collected058Food").innerHTML = localStorage.getItem("food058Storage");
-  document.getElementById("collected059Food").innerHTML = localStorage.getItem("food059Storage");
-  document.getElementById("collected060Food").innerHTML = localStorage.getItem("food060Storage");
-  document.getElementById("collected061Food").innerHTML = localStorage.getItem("food061Storage");
-  document.getElementById("collected062Food").innerHTML = localStorage.getItem("food062Storage");
-  document.getElementById("collected063Food").innerHTML = localStorage.getItem("food063Storage");
-  document.getElementById("collected064Food").innerHTML = localStorage.getItem("food064Storage");
-  document.getElementById("collected065Food").innerHTML = localStorage.getItem("food065Storage");
-  document.getElementById("collected066Food").innerHTML = localStorage.getItem("food066Storage");
-  document.getElementById("collected067Food").innerHTML = localStorage.getItem("food067Storage");
-  document.getElementById("collected068Food").innerHTML = localStorage.getItem("food068Storage");
-  document.getElementById("collected069Food").innerHTML = localStorage.getItem("food069Storage");
-  document.getElementById("collected070Food").innerHTML = localStorage.getItem("food070Storage");
-  document.getElementById("collected071Food").innerHTML = localStorage.getItem("food071Storage");
-  document.getElementById("collected072Food").innerHTML = localStorage.getItem("food072Storage");
-  document.getElementById("collected073Food").innerHTML = localStorage.getItem("food073Storage");
-  document.getElementById("collected074Food").innerHTML = localStorage.getItem("food074Storage");
-  document.getElementById("collected075Food").innerHTML = localStorage.getItem("food075Storage");
-  document.getElementById("collected076Food").innerHTML = localStorage.getItem("food076Storage");
-  document.getElementById("collected077Food").innerHTML = localStorage.getItem("food077Storage");
-  document.getElementById("snakeColor").value = localStorage.getItem("snakeColor");
-  document.getElementById("snakeLatter").className = "ltr" + localStorage.getItem("snakeLetter");
-  if(localStorage.getItem("adminTools") === "true") {
-    document.getElementById("administratorToolsContent").classList.add("drowed");
-    document.getElementById("administratorTools").checked = true;
+  const ticketsLabels = document.querySelectorAll(".cost-have-ticket");
+  for(var i = 0; i < ticketsLabels.length; i++) {
+    ticketsLabels[i].innerHTML = localStorage.getItem("ticketStorage");
+  }
+};
+function skipVidAnim() {
+  const animFrame = document.getElementById("animFrame");
+  const gachaAud = document.getElementById("gachaAudionation");
+  gachaAud.removeAttribute("loop");
+  gachaAud.pause();
+  animFrame.style.display = "none";
+  document.getElementById("gachaPrises").style.display = "block";
+};
+function openGacha(evt, gachaName) {
+  var i, gachacontiner, gachatab;
+  gachacontiner = document.getElementsByClassName("gacha-continer");
+  for (i = 0; i < gachacontiner.length; i++) {
+    gachacontiner[i].style.right = "-100%";
+  }
+  gachatab = document.getElementsByClassName("gachatab");
+  for (i = 0; i < gachatab.length; i++) {
+    gachatab[i].className = gachatab[i].className.replace(" active", "");
+  }
+  document.getElementById(gachaName).style.right = "0%";
+  evt.currentTarget.className += " active";
+};
+function openCollection(evt, collectionName) {
+  var i, collectioncontiner, collectiontab;
+  collectioncontiner = document.getElementsByClassName("collection-continer");
+  for (i = 0; i < collectioncontiner.length; i++) {
+    collectioncontiner[i].style.right = "-100%";
+  }
+  collectiontab = document.getElementsByClassName("collectiontab");
+  for (i = 0; i < collectiontab.length; i++) {
+    collectiontab[i].className = collectiontab[i].className.replace(" active", "");
+  }
+  document.getElementById(collectionName).style.right = "0%";
+  evt.currentTarget.className += " active";
+};
+function continueTo() {
+  document.getElementById("gachaPrises").style.display = "none";
+  document.getElementById("priceOneBase").style.display = "none";
+};
+function buyTicketByGold() {
+  let gold = parseInt(localStorage.getItem("goldStorage")) || 0;
+  let ticket = parseInt(localStorage.getItem("ticketStorage")) || 0;
+  if (gold < 10) {
+    return;
   };
-  if(localStorage.getItem("devTools") === "true") {
-    document.getElementById("f12Tool").checked = true;
-  };
-  if(localStorage.getItem("ambients") === "true") {
-    document.getElementById("ambientChecker").checked = true;
-  }else{
-    document.getElementById("ambientChecker").checked = false;
-  };
-  if(localStorage.getItem("autoSaveScoreCheck") === "true") {
-    document.getElementById("autoSaveScoreCheck").checked = true;
-    score = localStorage.getItem("currentScore");
-    if(localStorage.getItem("lang") === "en") {
-      scoreElement.innerText = `Score: ${score}`;
-    }else
-    if(localStorage.getItem("lang") === "ru") {
-      scoreElement.innerText = `Счет: ${score}`;
-    }else
-    if(localStorage.getItem("lang") === "he") {
-      scoreElement.innerText = `ציון: ${score}`;
-      document.getElementById("getscore").style.textAlign = "right";
-      document.getElementById("gethighscore").style.textAlign = "right";
-    }
-  }else{
-    document.getElementById("autoSaveScoreCheck").checked = false;
-    localStorage.setItem("currentScore", "0");
-  };
-  if(document.getElementById("autoSaveScoreCheck").checked === true) {
-    score = localStorage.getItem("currentScore");
-  }else{
-    console.log("Saved score = " + localStorage.getItem("currentScore"));
-  };
-  updateFoodPosition();
-  updateSnakePosition();
-});
-window.oncontextmenu=function(){
+  if (gold >= 10) {
+    ticket += 1;
+    gold -= 10;
+    localStorage.setItem("ticketStorage", ticket);
+    localStorage.setItem("goldStorage", gold);
+  }
+};
+function openShopModalTickets() {
+  var modal = document.getElementById("shopPlace");
+  var ticketTab = document.getElementById("goldsLang");
+  modal.style.display = "flex";
+  ticketTab.click();
+  defaultClickSound();
+};
+window.oncontextmenu = function() {
   return false
 };
-window.onerror=function(){
+window.onerror = function() {
   if(localStorage.getItem("lang") === "en") {
     alert("Something error.., Tell us if this alert is jump.");
   }else

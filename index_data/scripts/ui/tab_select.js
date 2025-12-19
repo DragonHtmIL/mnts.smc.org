@@ -3,7 +3,7 @@ function selectionSound() {
     document.getElementById("selectionSound").muted = true;
   }else{
     document.getElementById("selectionSound").muted = false;
+    document.getElementById("selectionSound").currentTime = 0;
+    document.getElementById("selectionSound").play();
   }
-  document.getElementById("selectionSound").currentTime = 0;
-  document.getElementById("selectionSound").play();
 }
