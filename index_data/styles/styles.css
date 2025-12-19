@@ -117,18 +117,6 @@ a {
 .play-board .food.crystal {
   background-image: var(--crystal);
 }
-.play-board .food.ticket {
-  background-image: var(--ticket);
-}
-.play-board .food.c-ticket {
-  background-image: var(--ticket-cheomatic);
-}
-.play-board .food.p-ticket {
-  background-image: var(--ticket-premium);
-}
-.play-board .food.p-ticket-2 {
-  background-image: var(--ticket-premium-2);
-}
 .play-board .food.virtual-token {
   background-image: var(--virtual-token);
 }
@@ -373,6 +361,7 @@ a {
   border: solid 2px var(--white);
   overflow: hidden;
   padding: 0;
+  transition: grid-area 0.1s linear !important;
 }
 .play-board > .head ~ .head {
   background-image: none;
@@ -862,7 +851,8 @@ a {
 }
 .modal .modal-content,
 .menu .menu-content,
-.alert .alert-content {
+.alert .alert-content,
+.modal .modal-shop-content {
   margin: auto;
   padding: 10px;
   word-wrap: normal;
@@ -1629,22 +1619,6 @@ button {
 #crystalIcon {
   background-image: var(--crystal);
 }
-.select-content #ticketItemImage,
-#ticketIcon {
-  background-image: var(--ticket);
-}
-.select-content #cTicketItemImage,
-#cTicketIcon {
-  background-image: var(--ticket-cheomatic);
-}
-.select-content #pTicketItemImage,
-#pTicketIcon {
-  background-image: var(--ticket-premium);
-}
-.select-content #pTicket2ItemImage,
-#pTicket2Icon {
-  background-image: var(--ticket-premium-2);
-}
 .select-content #virtualTokenItemImage,
 #virtualTokenIcon {
   background-image: var(--virtual-token);
@@ -2324,7 +2298,7 @@ hr.acc {
   bottom: 28px;
   text-align: center;
 }
-.menu-btn {
+.tools-menu {
   position: relative;
   height: 41px;
   width: 70px;
@@ -2343,32 +2317,46 @@ hr.acc {
   align-items: flex-end;
   justify-content: center;
 }
+.menu-btn {
+  position: relative;
+  height: 70px;
+  width: 70px;
+  background-color: var(--black-b);
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  cursor: url('../animations/cursour/clickable/0.png'), pointer;
+  -webkit-animation: cursorlnk 0.4s infinite;
+  animation: cursorlnk 0.4s infinite;
+  border: none;
+  padding: 0;
+  background-position: 0 10px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  float: left;
+  margin: 5px;
+}
 .site-exit {
   background-image: var(--exit);
-}
-.update-notice {
-  background-image: var(--up-note);
 }
 .how-to-play {
   background-image: var(--how-to-play);
   background-position: center center;
 }
-.dl-button {
-  background-image: var(--dl-background);
-  background-size: auto 100%;
-  height: 120px;
-  width: 100px;
-  border: none;
-  background-color: transparent;
-  font-size: 11px;
-  color: var(--white);
-  transform: scale(1.0);
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  cursor: url('../animations/cursour/delault/0.png'), default;
-  -webkit-animation: cursordef 0.4s infinite;
-  animation: cursordef 0.4s infinite;
+.site-exit {
+  background-image: var(--exit);
+}
+.menu-btns {
+  background-image: var(--more-icon);
+}
+.update-notice {
+  background-image: var(--up-note);
+}
+.shop-window {
+  background-image: var(--shop-window);
+}
+.gacha-window {
+  background-image: var(--gacha-window);
 }
 .blocker {
   width: 100%;
@@ -3001,7 +2989,7 @@ input[type="color"]::-webkit-color-swatch {
 .services .service-type {
   display: flex;
   width: 100px;
-  height: 34px;
+  height: 33px;
   background-image: var(--services-bg);
   background-size: 100% auto;
   background-position: center center;
@@ -3040,7 +3028,7 @@ input[type="color"]::-webkit-color-swatch {
 }
 .mini-modal {
   position: absolute;
-  top: 45px;
+  top: 1vmax;
   background-image: var(--mini-modal);
   background-size: 350px auto;
   background-position: -26px -40px;
@@ -3137,7 +3125,7 @@ input[type="number"]::-webkit-inner-spin-button {
   background-image: var(--minus-0);
 }
 .checkbox-content hr {
-  margin-top: 10px;
+  margin-top: 12px;
 }
 .checkbox-content .checkbox-content {
   margin: -10px;
@@ -3156,6 +3144,641 @@ input[type="number"]::-webkit-inner-spin-button {
 .checkbox-content .mini-modal-opener {
   right: 0;
   top: 0;
+}
+.taxt-content-on-white {
+  background-color: var(--black-b);
+  color: var(--black);
+}
+.gacha-btn-container {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+.gacha-btn-container button {
+  width: 184px;
+  height: 31px;
+  border: none;
+  margin-left: 20px;
+  cursor: url('../animations/cursour/clickable/0.png'), pointer;
+  -webkit-animation: cursorlnk 0.4s infinite;
+  animation: cursorlnk 0.4s infinite;
+}
+.gacha-btn-container button:hover {
+  transform: scale(1.05);
+}
+.gacha-btn-container .btnclicked {
+  transform: scale(1.0) !important;
+  filter: brightness(50%) !important;
+}
+.gacha-btn-container .opone {
+  background-image: var(--blue-button);
+  background-size: auto;
+  background-position: -6px -2px;
+  filter: drop-shadow(0px 2px 5px rgba(0, 0, 255, 0.5));
+  color: var(--white);
+}
+.gacha-btn-container .opten {
+  background-image: var(--yellow-button);
+  background-size: auto;
+  background-position: -6px -2px;
+  filter: drop-shadow(0px 2px 5px rgba(255, 255, 0, 0.5));
+  color: var(--black);
+}
+.gacha-btn-container .opten.null {
+  background-image: var(--red-button);
+  background-size: auto;
+  background-position: -6px -2px;
+  filter: drop-shadow(0px 2px 5px rgba(255, 0, 0, 0.5));
+}
+.header {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 58px;
+  background-image: var(--header-bg);
+  background-position: 0 0;
+  background-size: 100% 100%;
+  background-repeat: repeat-x;
+  backdrop-filter: blur(5px);
+  display: flex;
+}
+.game-logo {
+  position: relative;
+  margin-left: 20px;
+  margin-bottom: 0px;
+  height: 100%;
+  width: 147px;
+  background-image: var(--game-logo);
+  background-position: 0px -6px;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+}
+.tab-gacha {
+  position: relative;
+  width: 95px;
+  height: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  background-image: var(--tabs-continer);
+  background-size: 85.5px 100%;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  align-items: flex-start;
+  align-content: flex-start;
+  z-index: 1;
+}
+.tab-gacha button {
+  width: 100%;
+  height: auto;
+  background-size: 126% auto;
+  background-position: -106px 2px;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: url('../animations/cursour/clickable/0.png'), pointer;
+  -webkit-animation: cursorlnk 0.4s infinite;
+  animation: cursorlnk 0.4s infinite;
+  padding: 14px 16px;
+  font-size: 2vh;
+  color: var(--white);
+}
+.tab-gacha .gachatab {
+  background-image: var(--tab-vert);
+}
+.tab-gacha .gachatab.active {
+  background-image: var(--tab-vert);
+  background-position: -10px 2px;
+}
+.gacha-continer,
+.collection-continer {
+  position: fixed;
+  top: 58px;
+  right: -100%;
+  width: calc(100% - 95px);
+  height: 85.7%;
+}
+.collection-continer {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  padding-top: 10px;
+  overflow: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  transition: 1s !important;
+  -o-transition: 1s !important;
+  -moz-transition: 1s !important;
+  -webkit-transition: 1s !important;
+}
+#sourceGachaAnimation {
+  width: 100%;
+  position: relative;
+  cursor: url('../animations/cursour/clickable/0.png'), pointer;
+  -webkit-animation: cursorlnk 0.4s infinite;
+  animation: cursorlnk 0.4s infinite;
+  background-color: var(--black);
+}
+#animationBlocker {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  z-index: 1;
+}
+.gacha-praices {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background-image: var(--gacha-bg);
+  background-position: 0 0;
+  background-size: 100% 102%;
+}
+.prices-container {
+  overflow-x: auto;
+  overflow-y: hidden;
+  height: 100%;
+  width: 100%;
+  margin-top: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 10px 0px;
+  align-content: center;
+}
+#continueBtn {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  color: var(--white);
+}
+p {
+  color: var(--white);
+  text-align: center;
+}
+.card-continer {
+  position: relative;
+  width: 60px;
+  height: 200px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  background-size: 100% 100%;
+  margin: 6px;
+}
+.card-continer.Default {
+  background-image: var(--card-def);
+}
+.card-continer.C {
+  background-image: var(--card-c);
+}
+.card-continer.B {
+  background-image: var(--card-b);
+}
+.card-continer.A {
+  background-image: var(--card-a);
+}
+.card-continer.S {
+  background-image: var(--card-s);
+}
+.card-continer.SP {
+  background-image: var(--card-sp);
+}
+.card-continer.SS {
+  background-image: var(--card-ss);
+}
+.img-blocker {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.navigationinventory {
+  width: calc(100% - 167px);
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
+}
+.navigationinventory .header-btns {
+  width: 50px;
+  height: 50px;
+  margin: -5px 1% 0px 1%;
+  color: transparent;
+  background-size: 100% auto;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  cursor: url('../animations/cursour/clickable/0.png'), pointer;
+  -webkit-animation: cursorlnk 0.4s infinite;
+  animation: cursorlnk 0.4s infinite;
+}
+#mechaInventory {
+  background-image: var(--mecha-icon);
+}
+#pilotInventory {
+  background-image: var(--pilot-icon);
+}
+.tab-gallery {
+  width: 95px;
+  height: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  background-image: var(--tabs-continer);
+  background-size: 85.5px 100%;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  align-items: flex-start;
+  align-content: flex-start;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  backdrop-filter: blur(5px);
+}
+.tab-gallery button {
+  width: 100%;
+  height: auto;
+  background-size: 126% auto;
+  background-position: -106px 2px;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: url('../animations/cursour/clickable/0.png'), pointer;
+  -webkit-animation: cursorlnk 0.4s infinite;
+  animation: cursorlnk 0.4s infinite;
+  padding: 14px 16px;
+  font-size: 2vh;
+  color: var(--white);
+}
+.tab-gallery .collectiontab {
+  background-image: var(--tab-vert);
+}
+.tab-gallery .collectiontab.active {
+  background-image: var(--tab-vert);
+  background-position: -10px 2px;
+}
+.collection-center {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  display: none;
+}
+.collection-center::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--coll-bg) center/cover no-repeat;
+  filter: blur(5px);
+  transform: scale(1.1);
+  z-index: -1;
+}
+.gallery-card {
+  background-image: var(--bg-coll-d);
+  background-size: auto 108%;
+  background-position: center;
+  height: 100px;
+  width: 234px;
+  overflow: hidden;
+  position: relative;
+  cursor: url('../animations/cursour/clickable/0.png'), pointer;
+  -webkit-animation: cursorlnk 0.4s infinite;
+  animation: cursorlnk 0.4s infinite;
+}
+.item-image {
+  width: 100%;
+  height: 69px;
+  background-size: 100% auto;
+}
+.item-image.locked {
+  filter: blur(5px) grayscale(1) brightness(0);
+}
+.class {
+  position: absolute;
+  background-repeat: no-repeat;
+  left: 0;
+  bottom: 0;
+  width: 85px;
+  height: 31px;
+}
+.class.locked {
+  background-image: var(--class-locked) !important;
+  background-position: 24px -7px !important;
+  background-size: auto 127% !important;
+}
+.class.ddd {
+  background-image: var(--def-class-icon);
+  background-position: 2px -25px;
+  background-size: auto 252%;
+}
+.name {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 151px;
+  height: 32px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+}
+.items-title {
+  width: 100%;
+  font-size: 25px;
+  color: var(--white);
+  text-align: center;
+}
+.close-full-window {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 50px;
+  height: 50px;
+  background-image: var(--close-notice);
+  background-size: auto 134%;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: url('../animations/cursour/clickable/0.png'), pointer;
+  -webkit-animation: cursorlnk 0.4s infinite;
+  animation: cursorlnk 0.4s infinite;
+  z-index: 2;
+}
+.skip-vid-gacha {
+  width: 126px;
+  height: 50px;
+  position: absolute;
+  bottom: 5%;
+  left: calc(50% - 63px);
+  right: calc(50% - 63px);
+  margin: auto;
+  color: transparent;
+  background-image: var(--skip-vid);
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+  cursor: url('../animations/cursour/clickable/0.png'), pointer;
+  -webkit-animation: cursorlnk 0.4s infinite;
+  animation: cursorlnk 0.4s infinite;
+  z-index: 2;
+}
+.animation-frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  display: none;
+  background-color: var(--black);
+  justify-content: center;
+  align-items: center;
+}
+.item-info {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  background-position: center;
+  background-size: cover;
+  z-index: 3;
+  align-items: center;
+}
+.item-info::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  transform: scale(1.1);
+  z-index: -1;
+}
+.image-preview {
+  width: 50vw;
+  height: 50vw;
+  background-position: center;
+  background-size: 100% 100%;
+}
+.side-content {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  width: 30%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+.item-info.def-bg::before {
+  background: var(--coll-bg) center/cover no-repeat;
+}
+.item-name {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 25px;
+  color: var(--white);
+}
+#textInfoBelong {
+  color: var(--white);
+  font-size: 25px;
+  text-align: center;
+}
+.gacha-continer.locked::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  filter: blur(5px);
+  z-index: -1;
+}
+.costs-container {
+  width: 100%;
+  display: flex;
+  margin-top: 20px;
+  justify-content: flex-end;
+}
+.cost-container {
+  position: relative;
+  overflow: hidden;
+}
+.cost-have-gold,
+.cost-have-ticket {
+  width: auto;
+  min-width: 50px;
+  background-color: var(--black-a);
+  border-radius: 5px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  padding: 2px 2px 0px 20px;
+  margin: 0 20px 0 0;
+  color: var(--white);
+}
+.cost-have-gold {
+  background-image: var(--gold);
+}
+.cost-have-ticket {
+  background-image: var(--ticket);
+  padding: 2px 15px 0px 20px;
+}
+.gacha-continer {
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+}
+#mechacontent {
+  background-image: var(--akashic-img-preview);
+  background-position: center;
+  background-size: auto 72%;
+  background-repeat: no-repeat;
+}
+#pilotcontent {
+  background-image: var(--aya-img-preview);
+  background-position: center;
+  background-size: auto 72%;
+  background-repeat: no-repeat;
+}
+.add-more {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: right;
+  top: 0;
+  left: -20px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  font-size: 25px;
+  color: var(--white);
+  cursor: url('../animations/cursour/clickable/0.png'), pointer;
+  -webkit-animation: cursorlnk 0.4s infinite;
+  animation: cursorlnk 0.4s infinite;
+}
+.shop-title {
+  color: var(--white);
+  width: auto;
+  height: 29px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-left: 22px;
+  padding-right: 90px;
+  display: flex;
+  align-items: center;
+}
+.modal-shop-content {
+  background-image: var(--shop-bg);
+  width: 600px;
+  height: 265px;
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.shop-tabs-container {
+  position: absolute;
+  width: 71px;
+  bottom: 0;
+  left: -10px;
+  height: 236px;
+  overflow: auto;
+}
+.shop-tabs-container button {
+  border: none;
+  background-image: var(--shop-button);
+  background-color: transparent;
+  background-size: 120% auto;
+  background-position: 65px 3px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 15px;
+  padding: 11px 0;
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: url('../animations/cursour/clickable/0.png'), pointer;
+  -webkit-animation: cursorlnk 0.4s infinite;
+  animation: cursorlnk 0.4s infinite;
+}
+.shop-tabs-container button.active {
+  background-position: -7px 3px;
+  cursor: default;
+}
+.shop-close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  width: 56px;
+  height: 29px;
+  cursor: url('../animations/cursour/clickable/0.png'), pointer;
+  -webkit-animation: cursorlnk 0.4s infinite;
+  animation: cursorlnk 0.4s infinite;
+}
+.i-gacha {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(5px);
+  z-index: 3;
+  background-color: var(--black-a);
+  background-image: var(--background-overlay);
+}
+.close-gacha {
+  border: none;
+  width: 100px;
+  height: 34px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: var(--toggled-off);
+  background-size: 99% auto;
+  background-position: 0.5px -10.5px;
+  background-repeat: no-repeat;
+  cursor: url('../animations/cursour/clickable/0.png'), pointer;
+  -webkit-animation: cursorlnk 0.4s infinite;
+  animation: cursorlnk 0.4s infinite;
+}
+.close-gacha:hover {
+  background-image: var(--toggled-on);
+}
+.footer {
+  display: flex;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  z-index: 1;
 }
 @font-face {
   font-family: gintocopilot;
@@ -3339,7 +3962,7 @@ input[type="number"]::-webkit-inner-spin-button {
     width: 56px;
     height: 56px;
   }
-  .menu-btn {
+  .tools-menu {
     height: 23px;
     width: 54px;
     background-position: 17px 0px;
@@ -3443,6 +4066,87 @@ input[type="number"]::-webkit-inner-spin-button {
   }
   .rate-btns-container {
     width: 378px;
+  }
+  .tab-gacha {
+    width: 100%;
+    height: auto;
+    flex-wrap: nowrap;
+    background-image: none;
+  }
+  .tab-gacha button {
+    font-size: 25px;
+    background-size: 100% auto;
+    background-position: center center;
+  }
+  .tab-gacha .gachatab {
+    background-image: var(--tabs-audio);
+  }
+  .tab-gacha .gachatab.active {
+    background-image: var(--tabs-audio-hover);
+    background-position: center center;
+  }
+  .tab-gallery {
+    width: 100%;
+    height: auto;
+    flex-wrap: nowrap;
+    background-image: none;
+    position: absolute;
+    bottom: 5px;
+  }
+  .tab-gallery button {
+    font-size: 6vw;
+    background-size: 100% auto;
+    background-position: center center;
+  }
+  .tab-gallery .collectiontab {
+    background-image: var(--tabs-audio);
+  }
+  .tab-gallery .collectiontab.active {
+    background-image: var(--tabs-audio-hover);
+    background-position: center center;
+  }
+  .gacha-btn-container {
+    right: 20px;
+    bottom: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+  .gacha-continer,
+  .collection-continer {
+    top: 100px;
+    width: 100%;
+    height: 80.8%;
+  }
+  .collection-continer {
+    top: 0;
+    padding-top: 50px;
+    padding-bottom: 60px;
+    height: 100%;
+  }
+  .side-content {
+    bottom: 0;
+    height: 30%;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .image-preview {
+    width: 100vw;
+    height: 100vw;
+    margin-top: -40%;
+  }
+  .modal-converter-content {
+    width: 378px;
+    height: 167px;
+  }
+  .modal-shop-content {
+    width: 378px;
+    height: 167px;
+  }
+  .shop-title {
+    height: 17px;
+    padding-left: 20px;
+    padding-right: 57px;
   }
 }
 @media screen and (min-width: 1545px) {

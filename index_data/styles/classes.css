@@ -1,0 +1,1209 @@
+img[alt="Akashic"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.akashic {
+  background-image: var(--akashic-img);
+  background-position: 0 -41px;
+}
+.name.akashic {
+  font-size: 16px;
+}
+.image-preview.akashic {
+  background-image: var(--akashic-img-preview);
+}
+.gacha-continer.akashic.locked::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var() center/cover no-repeat;
+  filter: blur(5px);
+  z-index: -1;
+}
+img[alt="Alborada"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.alborada {
+  background-image: var(--alborada-img);
+  background-position: 0 -63px;
+}
+.name.alborada {
+  font-size: 16px;
+}
+.image-preview.alborada {
+  background-image: var(--alborada-img-preview);
+}
+img[alt="Andromeda"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.andromeda {
+  background-image: var(--andromeda-img);
+  background-position: 0 -39px;
+}
+.name.andromeda {
+  font-size: 16px;
+}
+.image-preview.andromeda {
+  background-image: var(--andromeda-img-preview);
+}
+img[alt="Arthur"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.arthur {
+  background-image: var(--arthur-img);
+  background-position: 0 -35px;
+}
+.name.arthur {
+  font-size: 16px;
+}
+.image-preview.arthur {
+  background-image: var(--arthur-img-preview);
+}
+img[alt="Aurora"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.aurora {
+  background-image: var(--aurora-img);
+  background-position: 0 -63px;
+}
+.name.aurora {
+  font-size: 16px;
+}
+.image-preview.aurora {
+  background-image: var(--aurora-img-preview);
+}
+img[alt="Boltus"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.boltus {
+  background-image: var(--boltus-img);
+  background-position: 0 -59px;
+}
+.name.boltus {
+  font-size: 16px;
+}
+.image-preview.boltus {
+  background-image: var(--boltus-img-preview);
+}
+img[alt="Caramel"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.caramel {
+  background-image: var(--caramel-img);
+  background-position: 0 -49px;
+}
+.name.caramel {
+  font-size: 16px;
+}
+.image-preview.caramel {
+  background-image: var(--caramel-img-preview);
+}
+img[alt="Death Knell"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.death-knell {
+  background-image: var(--death-knell-img);
+  background-position: 0 -35px;
+}
+.name.death-knell {
+  font-size: 16px;
+}
+.image-preview.death-knell {
+  background-image: var(--death-knell-img-preview);
+}
+img[alt="Doomlight"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.doomlight {
+  background-image: var(--doomlight-img);
+  background-position: 0 -47px;
+}
+.name.doomlight {
+  font-size: 16px;
+}
+.image-preview.doomlight {
+  background-image: var(--doomlight-img-preview);
+}
+img[alt="Dreadwolf"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.dreadwolf {
+  background-image: var(--dreadwolf-img);
+  background-position: 0 -13px;
+}
+.name.dreadwolf {
+  font-size: 16px;
+}
+.image-preview.dreadwolf {
+  background-image: var(--dreadwolf-img-preview);
+}
+img[alt="Firefox"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.firefox {
+  background-image: var(--firefox-img);
+  background-position: 0 -72px;
+}
+.name.firefox {
+  font-size: 16px;
+}
+.image-preview.firefox {
+  background-image: var(--firefox-img-preview);
+}
+img[alt="Firestar"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.firestar {
+  background-image: var(--firestar-img);
+  background-position: 0 -52px;
+}
+.name.firestar {
+  font-size: 16px;
+}
+.image-preview.firestar {
+  background-image: var(--firestar-img-preview);
+}
+img[alt="Flamenco"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.flamenco {
+  background-image: var(--flamenco-img);
+  background-position: 0 -44px;
+}
+.name.flamenco {
+  font-size: 16px;
+}
+.image-preview.flamenco {
+  background-image: var(--flamenco-img-preview);
+}
+img[alt="Gabriel"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.gabriel {
+  background-image: var(--gabriel-img);
+  background-position: 0 -21px;
+}
+.name.gabriel {
+  font-size: 16px;
+}
+.image-preview.gabriel {
+  background-image: var(--gabriel-img-preview);
+}
+img[alt="Gaia"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.gaia {
+  background-image: var(--gaia-img);
+  background-position: 0 -35px;
+}
+.name.gaia {
+  font-size: 16px;
+}
+.image-preview.gaia {
+  background-image: var(--gaia-img-preview);
+}
+img[alt="Guerilla Hunter"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.guerilla-hunter {
+  background-image: var(--guerilla-hunter-img);
+  background-position: 0 -35px;
+}
+.name.guerilla-hunter {
+  font-size: 16px;
+}
+.image-preview.guerilla-hunter {
+  background-image: var(--guerilla-hunter-img-preview);
+}
+img[alt="Hotsteel"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.hotsteel {
+  background-image: var(--hotsteel-img);
+  background-position: 0px -55px;
+}
+.name.hotsteel {
+  font-size: 16px;
+}
+.image-preview.hotsteel {
+  background-image: var(--hotsteel-img-preview);
+}
+img[alt="Hurricane"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.hurricane {
+  background-image: var(--hurricane-img);
+  background-position: 0 -35px;
+}
+.name.hurricane {
+  font-size: 16px;
+}
+.image-preview.hurricane {
+  background-image: var(--hurricane-img-preview);
+}
+img[alt="JOJO"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.jojo {
+  background-image: var(--jojo-img);
+  background-position: 0 -72px;
+}
+.name.jojo {
+  font-size: 16px;
+}
+.image-preview.jojo {
+  background-image: var(--jojo-img-preview);
+}
+img[alt="Lancelot"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.lancelot {
+  background-image: var(--lancelot-img);
+  background-position: 0 -35px;
+}
+.name.lancelot {
+  font-size: 16px;
+}
+.image-preview.lancelot {
+  background-image: var(--lancelot-img-preview);
+}
+img[alt="Michael"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.michael {
+  background-image: var(--michael-img);
+  background-position: 0 -46px;
+}
+.name.michael {
+  font-size: 16px;
+}
+.image-preview.michael {
+  background-image: var(--michael-img-preview);
+}
+img[alt="Moon Rabbit"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.moon-rabbit {
+  background-image: var(--moon-rabbit-img);
+  background-position: 0 -64px;
+}
+.name.moon-rabbit {
+  font-size: 16px;
+}
+.image-preview.moon-rabbit {
+  background-image: var(--moon-rabbit-img-preview);
+}
+img[alt="Nebula"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.nebula {
+  background-image: var(--nebula-img);
+  background-position: 0 -70px;
+}
+.name.nebula {
+  font-size: 16px;
+}
+.image-preview.nebula {
+  background-image: var(--nebula-img-preview);
+}
+img[alt="Neutron Star"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.neutron-star {
+  background-image: var(--neutron-star-img);
+  background-position: 0 -70px;
+}
+.name.neutron-star {
+  font-size: 16px;
+}
+.image-preview.neutron-star {
+  background-image: var(--neutron-star-img-preview);
+}
+img[alt="Northern Knight"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.northern-knight {
+  background-image: var(--northern-knight-img);
+  background-position: 0 -60px;
+}
+.name.northern-knight {
+  font-size: 16px;
+}
+.image-preview.northern-knight {
+  background-image: var(--northern-knight-img-preview);
+}
+img[alt="Pulsar"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.pulsar {
+  background-image: var(--pulsar-img);
+  background-position: 0 -54px;
+}
+.name.pulsar {
+  font-size: 16px;
+}
+.image-preview.pulsar {
+  background-image: var(--pulsar-img-preview);
+}
+img[alt="Ranger"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.ranger {
+  background-image: var(--ranger-img);
+  background-position: 0 -57px;
+}
+.name.ranger {
+  font-size: 16px;
+}
+.image-preview.ranger {
+  background-image: var(--ranger-img-preview);
+}
+img[alt="Raven"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.raven {
+  background-image: var(--raven-img);
+  background-position: 0 -30px;
+}
+.name.raven {
+  font-size: 16px;
+}
+.image-preview.raven {
+  background-image: var(--raven-img-preview);
+}
+img[alt="Shiranui"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.shiranui {
+  background-image: var(--shiranui-img);
+  background-position: 0 -60px;
+}
+.name.shiranui {
+  font-size: 16px;
+}
+.image-preview.shiranui {
+  background-image: var(--shiranui-img-preview);
+}
+img[alt="Skyfall"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.skyfall {
+  background-image: var(--skyfall-img);
+  background-position: 0 -50px;
+}
+.name.skyfall {
+  font-size: 16px;
+}
+.image-preview.skyfall {
+  background-image: var(--skyfall-img-preview);
+}
+img[alt="Skyfire"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.skyfire {
+  background-image: var(--skyfire-img);
+  background-position: 0 -41px;
+}
+.name.skyfire {
+  font-size: 16px;
+}
+.image-preview.skyfire {
+  background-image: var(--skyfire-img-preview);
+}
+img[alt="Skylark"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.skylark {
+  background-image: var(--skylark-img);
+  background-position: 0 -60px;
+}
+.name.skylark {
+  font-size: 16px;
+}
+.image-preview.skylark {
+  background-image: var(--skylark-img-preview);
+}
+img[alt="Snow Mirage"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.snow-mirage {
+  background-image: var(--snow-mirage-img);
+  background-position: 0 -46px;
+}
+.name.snow-mirage {
+  font-size: 16px;
+}
+.image-preview.snow-mirage {
+  background-image: var(--snow-mirage-img-preview);
+}
+img[alt="Tempest"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.tempest {
+  background-image: var(--tempest-img);
+  background-position: 0 -38px;
+}
+.name.tempest {
+  font-size: 16px;
+}
+.image-preview.tempest {
+  background-image: var(--tempest-img-preview);
+}
+img[alt="Trio of Enders"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.trio-of-enders {
+  background-image: var(--trio-of-enders-img);
+  background-position: 0 -50px;
+}
+.name.trio-of-enders {
+  font-size: 16px;
+}
+.image-preview.trio-of-enders {
+  background-image: var(--trio-of-enders-img-preview);
+}
+img[alt="Twilight"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.twilight {
+  background-image: var(--twilight-img);
+  background-position: 0 -72px;
+}
+.name.twilight {
+  font-size: 16px;
+}
+.image-preview.twilight {
+  background-image: var(--twilight-img-preview);
+}
+img[alt="Ventorus"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.ventorus {
+  background-image: var(--ventorus-img);
+  background-position: 0 -72px;
+}
+.name.ventorus {
+  font-size: 16px;
+}
+.image-preview.ventorus {
+  background-image: var(--ventorus-img-preview);
+}
+img[alt="Aya"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.aya {
+  background-image: var(--aya-img);
+  background-position: 0 -55px;
+}
+.name.aya {
+  font-size: 16px;
+}
+.image-preview.aya {
+  background-image: var(--aya-img-preview);
+}
+img[alt="Belladonna"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.belladonna {
+  background-image: var(--belladonna-img);
+  background-position: 0 -52px;
+}
+.name.belladonna {
+  font-size: 16px;
+}
+.image-preview.belladonna {
+  background-image: var(--belladonna-img-preview);
+}
+img[alt="Cyrus"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.cyrus {
+  background-image: var(--cyrus-img);
+  background-position: 0 -86px;
+}
+.name.cyrus {
+  font-size: 16px;
+}
+.image-preview.cyrus {
+  background-image: var(--cyrus-img-preview);
+}
+img[alt="Fran"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.fran {
+  background-image: var(--fran-img);
+  background-position: 0 -36px;
+}
+.name.fran {
+  font-size: 16px;
+}
+.image-preview.fran {
+  background-image: var(--fran-img-preview);
+}
+img[alt="Furanku"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.furanku {
+  background-image: var(--furanku-img);
+  background-position: 0 -67px;
+}
+.name.furanku {
+  font-size: 16px;
+}
+.image-preview.furanku {
+  background-image: var(--furanku-img-preview);
+}
+img[alt="Iori"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.iori {
+  background-image: var(--iori-img);
+  background-position: 0 -62px;
+}
+.name.iori {
+  font-size: 16px;
+}
+.image-preview.iori {
+  background-image: var(--iori-img-preview);
+}
+img[alt="Ivan"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.ivan {
+  background-image: var(--ivan-img);
+  background-position: 0 -49px;
+}
+.name.ivan {
+  font-size: 16px;
+}
+.image-preview.ivan {
+  background-image: var(--ivan-img-preview);
+}
+img[alt="Jaka"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.jaka {
+  background-image: var(--jaka-img);
+  background-position: 0 -51px;
+}
+.name.jaka {
+  font-size: 16px;
+}
+.image-preview.jaka {
+  background-image: var(--jaka-img-preview);
+}
+img[alt="Jiu Chong"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.jiu-chong {
+  background-image: var(--jiu-chong-img);
+  background-position: 0 -47px;
+}
+.name.jiu-chong {
+  font-size: 16px;
+}
+.image-preview.jiu-chong {
+  background-image: var(--jiu-chong-img-preview);
+}
+img[alt="Joanna"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.joanna {
+  background-image: var(--joanna-img);
+  background-position: 0 -66px;
+}
+.name.joanna {
+  font-size: 16px;
+}
+.image-preview.joanna {
+  background-image: var(--joanna-img-preview);
+}
+img[alt="Kije"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.kije {
+  background-image: var(--kije-img);
+  background-position: 0 -91px;
+}
+.name.kije {
+  font-size: 16px;
+}
+.image-preview.kije {
+  background-image: var(--kije-img-preview);
+}
+img[alt="Kikina"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.kikina {
+  background-image: var(--kikina-img);
+  background-position: 0 -55px;
+}
+.name.kikina {
+  font-size: 16px;
+}
+.image-preview.kikina {
+  background-image: var(--kikina-img-preview);
+}
+img[alt="Kizuna Ai"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.kizuna-ai {
+  background-image: var(--kizuna-ai-img);
+  background-position: 0 -72px;
+}
+.name.kizuna-ai {
+  font-size: 16px;
+}
+.image-preview.kizuna-ai {
+  background-image: var(--kizuna-ai-img-preview);
+}
+img[alt="Lillian"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.lillian {
+  background-image: var(--lillian-img);
+  background-position: 0 -62px;
+}
+.name.lillian {
+  font-size: 16px;
+}
+.image-preview.lillian {
+  background-image: var(--lillian-img-preview);
+}
+img[alt="Lysa"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.lysa {
+  background-image: var(--lysa-img);
+  background-position: 0 -57px;
+}
+.name.lysa {
+  font-size: 16px;
+}
+.image-preview.lysa {
+  background-image: var(--lysa-img-preview);
+}
+img[alt="Matilda"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.matilda {
+  background-image: var(--matilda-img);
+  background-position: 0 -47px;
+}
+.name.matilda {
+  font-size: 16px;
+}
+.image-preview.matilda {
+  background-image: var(--matilda-img-preview);
+}
+img[alt="Mia"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.mia {
+  background-image: var(--mia-img);
+  background-position: 0 -70px;
+}
+.name.mia {
+  font-size: 16px;
+}
+.image-preview.mia {
+  background-image: var(--mia-img-preview);
+}
+img[alt="Mila"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.mila {
+  background-image: var(--mila-img);
+  background-position: 0 -46px;
+}
+.name.mila {
+  font-size: 16px;
+}
+.image-preview.mila {
+  background-image: var(--mila-img-preview);
+}
+img[alt="Mobius"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.mobius {
+  background-image: var(--mobius-img);
+  background-position: 0 -51px;
+}
+.name.mobius {
+  font-size: 16px;
+}
+.image-preview.mobius {
+  background-image: var(--mobius-img-preview);
+}
+img[alt="Nighthawk"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.nighthawk {
+  background-image: var(--nighthawk-img);
+  background-position: 0 -59px;
+}
+.name.nighthawk {
+  font-size: 16px;
+}
+.image-preview.nighthawk {
+  background-image: var(--nighthawk-img-preview);
+}
+img[alt="Ning"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.ning {
+  background-image: var(--ning-img);
+  background-position: 0 -44px;
+}
+.name.ning {
+  font-size: 16px;
+}
+.image-preview.ning {
+  background-image: var(--ning-img-preview);
+}
+img[alt="Norma"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.norma {
+  background-image: var(--norma-img);
+  background-position: 0 -58px;
+}
+.name.norma {
+  content: 'Norma';
+  font-size: 16px;
+}
+.image-preview.norma {
+  background-image: var(--norma-img-preview);
+}
+img[alt="Opal"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.opal {
+  background-image: var(--opal-img);
+  background-position: 0 -77px;
+}
+.name.opal {
+  font-size: 16px;
+}
+.image-preview.opal {
+  background-image: var(--opal-img-preview);
+}
+img[alt="Purity"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.purity {
+  background-image: var(--purity-img);
+  background-position: 0 -63px;
+}
+.name.purity {
+  font-size: 16px;
+}
+.image-preview.purity {
+  background-image: var(--purity-img-preview);
+}
+img[alt="RED"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.red {
+  background-image: var(--red-img);
+  background-position: 0 -50px;
+}
+.name.red {
+  font-size: 16px;
+}
+.image-preview.red {
+  background-image: var(--red-img-preview);
+}
+img[alt="Riko"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.riko {
+  background-image: var(--riko-img);
+  background-position: 0 -94px;
+}
+.name.riko {
+  font-size: 16px;
+}
+.image-preview.riko {
+  background-image: var(--riko-img-preview);
+}
+img[alt="Rom"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.rom {
+  background-image: var(--rom-img);
+  background-position: 0 -69px;
+}
+.name.rom {
+  font-size: 16px;
+}
+.image-preview.rom {
+  background-image: var(--rom-img-preview);
+}
+img[alt="Serena"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.serena {
+  background-image: var(--serena-img);
+  background-position: 0 -85px;
+}
+.name.serena {
+  font-size: 16px;
+}
+.image-preview.serena {
+  background-image: var(--serena-img-preview);
+}
+img[alt="Shin"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.shin {
+  background-image: var(--shin-img);
+  background-position: 0 -59px;
+}
+.name.shin {
+  font-size: 16px;
+}
+.image-preview.shin {
+  background-image: var(--shin-img-preview);
+}
+img[alt="Silver Deacon"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.silver-deacon {
+  background-image: var(--silver-deacon-img);
+  background-position: 0 -51px;
+}
+.name.silver-deacon {
+  font-size: 16px;
+}
+.image-preview.silver-deacon {
+  background-image: var(--silver-deacon-img-preview);
+}
+img[alt="Tarantula"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.tarantula {
+  background-image: var(--tarantula-img);
+  background-position: 0 -69px;
+}
+.name.tarantula {
+  font-size: 16px;
+}
+.image-preview.tarantula {
+  background-image: var(--tarantula-img-preview);
+}
+img[alt="Vanessa"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.vanessa {
+  background-image: var(--vanessa-img);
+  background-position: 0 -60px;
+}
+.name.vanessa {
+  font-size: 16px;
+}
+.image-preview.vanessa {
+  background-image: var(--vanessa-img-preview);
+}
+img[alt="Villar"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.villar {
+  background-image: var(--villar-img);
+  background-position: 0 -64px;
+}
+.name.villar {
+  font-size: 16px;
+}
+.image-preview.villar {
+  background-image: var(--villar-img-preview);
+}
+img[alt="Vita"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.vita {
+  background-image: var(--vita-img);
+  background-position: 0 -54px;
+}
+.name.vita {
+  font-size: 16px;
+}
+.image-preview.vita {
+  background-image: var(--vita-img-preview);
+}
+img[alt="Yang"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.yang {
+  background-image: var(--yang-img);
+  background-position: 0 -62px;
+}
+.name.yang {
+  font-size: 16px;
+}
+.image-preview.yang {
+  background-image: var(--yang-img-preview);
+}
+img[alt="Yulia"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.yulia {
+  background-image: var(--yulia-img);
+  background-position: 0 -56px;
+}
+.name.yulia {
+  font-size: 16px;
+}
+.image-preview.yulia {
+  background-image: var(--yulia-img-preview);
+}
+img[alt="Yutong"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.yutong {
+  background-image: var(--yutong-img);
+  background-position: 0 -61px;
+}
+.name.yutong {
+  font-size: 16px;
+}
+.image-preview.yutong {
+  background-image: var(--yutong-img-preview);
+}
+img[alt="Zoe"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.zoe {
+  background-image: var(--zoe-img);
+  background-position: 0 -67px;
+}
+.name.zoe {
+  font-size: 16px;
+}
+.image-preview.zoe {
+  background-image: var(--zoe-img-preview);
+}
