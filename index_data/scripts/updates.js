@@ -1,6 +1,6 @@
 
 let basicVersion = "1.3.3-v2";
-let dateVersion = "[25/10/2025]";
+let dateVersion = "[19/12/2025]";
 function markUpdateReaded() {
   var modal = document.getElementById("updateModal");
   modal.style.display = "none";
@@ -56,4 +56,5 @@ function updateTextLangs() {
     updateContent.innerHTML += text2he;
     updateContent.innerHTML += text3he;
   }
+
 }
