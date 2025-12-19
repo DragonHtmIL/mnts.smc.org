@@ -13,6 +13,7 @@
     <link rel="stylesheet" id="styleRoot" href="index_data/styles/root.css">
     <link rel="stylesheet" id="styleDefault" href="index_data/styles/styles.css">
     <link rel="stylesheet" id="styleAnimation" href="index_data/styles/animations.css">
+    <link rel="stylesheet" id="styleGachaClasses" href="index_data/styles/classes.css">
     <script>
       if(localStorage.getItem("lang") === "en") {
         document.documentElement.setAttribute("lang", "en");
@@ -64,22 +65,6 @@
               <div class="item-cont crystal">
                 <div class="item-cont-icon" id="crystalIcon"></div>
                 <div class="item-cont-label" id="collectedCrystal">0</div>
-              </div>
-              <div class="item-cont ticket">
-                <div class="item-cont-icon" id="ticketIcon"></div>
-                <div class="item-cont-label" id="collectedTicket">0</div>
-              </div>
-              <div class="item-cont cticket">
-                <div class="item-cont-icon" id="cTicketIcon"></div>
-                <div class="item-cont-label" id="collectedCticket">0</div>
-              </div>
-              <div class="item-cont pticket">
-                <div class="item-cont-icon" id="pTicketIcon"></div>
-                <div class="item-cont-label" id="collectedPticket">0</div>
-              </div>
-              <div class="item-cont pticket2">
-                <div class="item-cont-icon" id="pTicket2Icon"></div>
-                <div class="item-cont-label" id="collectedPticket2">0</div>
               </div>
               <div class="item-cont virtualToken">
                 <div class="item-cont-icon" id="virtualTokenIcon"></div>
@@ -937,22 +922,6 @@
                 <div class="select-icon i-op-img" id="crystalItemImage"></div>
                 <span id="crystalLang">...</span>
               </div>
-              <div onclick="ticketItemLoad();checkSettingsChanges();" id="ticketItem" class="select">
-                <div class="select-icon" id="ticketItemImage"></div>
-                <span id="ticketLang">...</span>
-              </div>
-              <div onclick="cTicketItemLoad();checkSettingsChanges();" id="cTicketItem" class="select">
-                <div class="select-icon" id="cTicketItemImage"></div>
-                <span id="cTicketLang">...</span>
-              </div>
-              <div onclick="pTicketItemLoad();checkSettingsChanges();" id="pTicketItem" class="select">
-                <div class="select-icon" id="pTicketItemImage"></div>
-                <span id="pTicketLang">...</span>
-              </div>
-              <div onclick="pTicket2ItemLoad();checkSettingsChanges();" id="pTicket2Item" class="select">
-                <div class="select-icon" id="pTicket2ItemImage"></div>
-                <span id="pTicket2Lang">...</span>
-              </div>
               <div onclick="virtualTokenItemLoad();checkSettingsChanges();" id="virtualTokenItem" class="select">
                 <div class="select-icon" id="virtualTokenItemImage"></div>
                 <span id="virtualTokenLang">...</span>
@@ -1331,54 +1300,54 @@
               <div id="selectOptions" class="select-content">
                 <div onclick="aaSetActiveMoveSound();" id="pwAlang" class="select">Pilot Walk</div>
                 <hr class="hr-fix">
-                <div onclick="ibSetActiveMechaMoveSound();checkSettingsChanges();" id="mwAIlang" class="select">Akashic (Walk)</div>
-                <div onclick="aaSetActiveMechaMoveSound();checkSettingsChanges();" id="mwAlang" class="select">Alborada (Walk)</div>
-                <div onclick="baSetActiveMechaMoveSound();checkSettingsChanges();" id="mwBlang" class="select">Andromeda (Walk)</div>
-                <div onclick="caSetActiveMechaMoveSound();checkSettingsChanges();" id="mwClang" class="select">Arthur (Walk)</div>
-                <div onclick="daSetActiveMechaMoveSound();checkSettingsChanges();" id="mwDlang" class="select">Aurora (Walk)</div>
-                <div onclick="eaSetActiveMechaMoveSound();checkSettingsChanges();" id="mwElang" class="select">Boltus (Walk)</div>
-                <div onclick="faSetActiveMechaMoveSound();checkSettingsChanges();" id="mwFlang" class="select">Caramel (Walk)</div>
-                <div onclick="yaSetActiveMechaMoveSound();checkSettingsChanges();" id="mwYlang" class="select">Death knell (Walk)</div>
-                <div onclick="gaSetActiveMechaMoveSound();checkSettingsChanges();" id="mwGlang" class="select">Doomlight (Walk)</div>
-                <div onclick="zaSetActiveMechaMoveSound();checkSettingsChanges();" id="mwZlang" class="select">Dreadwolf (Walk)</div>
-                <div onclick="haSetActiveMechaMoveSound();checkSettingsChanges();" id="mwHlang" class="select">Firefox (Walk)</div>
-                <div onclick="iaSetActiveMechaMoveSound();checkSettingsChanges();" id="mwIlang" class="select">Firestar (Walk)</div>
-                <div onclick="jaSetActiveMechaMoveSound();checkSettingsChanges();" id="mwJlang" class="select">Flamenco (Walk)</div>
-                <div onclick="kaSetActiveMechaMoveSound();checkSettingsChanges();" id="mwKlang" class="select">Gabriel (Walk)</div>
-                <div onclick="abSetActiveMechaMoveSound();checkSettingsChanges();" id="mwAAlang" class="select">Gaia (Walk)</div>
-                <div onclick="bbSetActiveMechaMoveSound();checkSettingsChanges();" id="mwABlang" class="select">Guerilla Hunter (Walk)</div>
-                <div onclick="laSetActiveMechaMoveSound();checkSettingsChanges();" id="mwLlang" class="select">Hotsteel (Walk)</div>
-                <div onclick="maSetActiveMechaMoveSound();checkSettingsChanges();" id="mwMlang" class="select">Hurricane (Walk)</div>
-                <div onclick="naSetActiveMechaMoveSound();checkSettingsChanges();" id="mwNlang" class="select">Jojo (Walk)</div>
-                <div onclick="cbSetActiveMechaMoveSound();checkSettingsChanges();" id="mwAClang" class="select">Lancelot (Walk)</div>
-                <div onclick="oaSetActiveMechaMoveSound();checkSettingsChanges();" id="mwOlang" class="select">Michael (Walk)</div>
-                <div onclick="dbSetActiveMechaMoveSound();checkSettingsChanges();" id="mwADlang" class="select">Moon Rabbit (Walk)</div>
-                <div onclick="ebSetActiveMechaMoveSound();checkSettingsChanges();" id="mwAElang" class="select">Nebula (Walk)</div>
-                <div onclick="paSetActiveMechaMoveSound();checkSettingsChanges();" id="mwPlang" class="select">Neutron Star (Walk)</div>
-                <div onclick="qaSetActiveMechaMoveSound();checkSettingsChanges();" id="mwQlang" class="select">Northern Knight (Walk)</div>
-                <div onclick="raSetActiveMechaMoveSound();checkSettingsChanges();" id="mwRlang" class="select">Pulsar (Walk)</div>
-                <div onclick="saSetActiveMechaMoveSound();checkSettingsChanges();" id="mwSlang" class="select">Ranger (Walk)</div>
-                <div onclick="taSetActiveMechaMoveSound();checkSettingsChanges();" id="mwTlang" class="select">Raven (Walk)</div>
-                <div onclick="fbSetActiveMechaMoveSound();checkSettingsChanges();" id="mwAFlang" class="select">Shiranui (Walk)</div>
-                <div onclick="jbSetActiveMechaMoveSound();checkSettingsChanges();" id="mwAJlang" class="select">Skyfall (Walk)</div>
-                <div onclick="gbSetActiveMechaMoveSound();checkSettingsChanges();" id="mwAGlang" class="select">Skyfire (Walk)</div>
-                <div onclick="uaSetActiveMechaMoveSound();checkSettingsChanges();" id="mwUlang" class="select">Skylark (Walk)</div>
-                <div onclick="vaSetActiveMechaMoveSound();checkSettingsChanges();" id="mwVlang" class="select">Snow Mirage (Walk)</div>
-                <div onclick="kbSetActiveMechaMoveSound();checkSettingsChanges();" id="mwAKlang" class="select">Tempest (Walk)</div>
-                <div onclick="waSetActiveMechaMoveSound();checkSettingsChanges();" id="mwWlang" class="select">Trio of Enders (Walk)</div>
-                <div onclick="hbSetActiveMechaMoveSound();checkSettingsChanges();" id="mwAHlang" class="select">Twilight (Walk)</div>
-                <div onclick="xaSetActiveMechaMoveSound();checkSettingsChanges();" id="mwXlang" class="select">Ventorus (Walk)</div>
+                <div onclick="ibSetActiveMechaMoveSound();checkSettingsChanges();" id="mwAIlang" class="select name-akashic">...</div>
+                <div onclick="aaSetActiveMechaMoveSound();checkSettingsChanges();" id="mwAlang" class="select name-alborada">...</div>
+                <div onclick="baSetActiveMechaMoveSound();checkSettingsChanges();" id="mwBlang" class="select name-andromeda">...</div>
+                <div onclick="caSetActiveMechaMoveSound();checkSettingsChanges();" id="mwClang" class="select name-arthur">...</div>
+                <div onclick="daSetActiveMechaMoveSound();checkSettingsChanges();" id="mwDlang" class="select name-aurora">...</div>
+                <div onclick="eaSetActiveMechaMoveSound();checkSettingsChanges();" id="mwElang" class="select name-boltus">...</div>
+                <div onclick="faSetActiveMechaMoveSound();checkSettingsChanges();" id="mwFlang" class="select name-caramel">...</div>
+                <div onclick="yaSetActiveMechaMoveSound();checkSettingsChanges();" id="mwYlang" class="select name-death-knell">...</div>
+                <div onclick="gaSetActiveMechaMoveSound();checkSettingsChanges();" id="mwGlang" class="select name-doomlight">...</div>
+                <div onclick="zaSetActiveMechaMoveSound();checkSettingsChanges();" id="mwZlang" class="select name-dreadwolf">...</div>
+                <div onclick="haSetActiveMechaMoveSound();checkSettingsChanges();" id="mwHlang" class="select name-firefox">...</div>
+                <div onclick="iaSetActiveMechaMoveSound();checkSettingsChanges();" id="mwIlang" class="select name-firestar">...</div>
+                <div onclick="jaSetActiveMechaMoveSound();checkSettingsChanges();" id="mwJlang" class="select name-flamenco">...</div>
+                <div onclick="kaSetActiveMechaMoveSound();checkSettingsChanges();" id="mwKlang" class="select name-gabriel">...</div>
+                <div onclick="abSetActiveMechaMoveSound();checkSettingsChanges();" id="mwAAlang" class="select name-gaia">...</div>
+                <div onclick="bbSetActiveMechaMoveSound();checkSettingsChanges();" id="mwABlang" class="select name-guerilla-hunter">...</div>
+                <div onclick="laSetActiveMechaMoveSound();checkSettingsChanges();" id="mwLlang" class="select name-hotsteel">...</div>
+                <div onclick="maSetActiveMechaMoveSound();checkSettingsChanges();" id="mwMlang" class="select name-hurricane">...</div>
+                <div onclick="naSetActiveMechaMoveSound();checkSettingsChanges();" id="mwNlang" class="select name-jojo">...</div>
+                <div onclick="cbSetActiveMechaMoveSound();checkSettingsChanges();" id="mwAClang" class="select name-lancelot">...</div>
+                <div onclick="oaSetActiveMechaMoveSound();checkSettingsChanges();" id="mwOlang" class="select name-michael">...</div>
+                <div onclick="dbSetActiveMechaMoveSound();checkSettingsChanges();" id="mwADlang" class="select name-moon-rabbit">...</div>
+                <div onclick="ebSetActiveMechaMoveSound();checkSettingsChanges();" id="mwAElang" class="select name-nebula">...</div>
+                <div onclick="paSetActiveMechaMoveSound();checkSettingsChanges();" id="mwPlang" class="select name-neutron-star">...</div>
+                <div onclick="qaSetActiveMechaMoveSound();checkSettingsChanges();" id="mwQlang" class="select name-northern-knight">...</div>
+                <div onclick="raSetActiveMechaMoveSound();checkSettingsChanges();" id="mwRlang" class="select name-pulsar">...</div>
+                <div onclick="saSetActiveMechaMoveSound();checkSettingsChanges();" id="mwSlang" class="select name-ranger">...</div>
+                <div onclick="taSetActiveMechaMoveSound();checkSettingsChanges();" id="mwTlang" class="select name-raven">...</div>
+                <div onclick="fbSetActiveMechaMoveSound();checkSettingsChanges();" id="mwAFlang" class="select name-shiranui">...</div>
+                <div onclick="jbSetActiveMechaMoveSound();checkSettingsChanges();" id="mwAJlang" class="select name-skyfall">...</div>
+                <div onclick="gbSetActiveMechaMoveSound();checkSettingsChanges();" id="mwAGlang" class="select name-skyfire">...</div>
+                <div onclick="uaSetActiveMechaMoveSound();checkSettingsChanges();" id="mwUlang" class="select name-skylark">...</div>
+                <div onclick="vaSetActiveMechaMoveSound();checkSettingsChanges();" id="mwVlang" class="select name-snow-mirage">...</div>
+                <div onclick="kbSetActiveMechaMoveSound();checkSettingsChanges();" id="mwAKlang" class="select name-tempest">...</div>
+                <div onclick="waSetActiveMechaMoveSound();checkSettingsChanges();" id="mwWlang" class="select name-trio-of-enders">...</div>
+                <div onclick="hbSetActiveMechaMoveSound();checkSettingsChanges();" id="mwAHlang" class="select name-twilight">...</div>
+                <div onclick="xaSetActiveMechaMoveSound();checkSettingsChanges();" id="mwXlang" class="select name-ventorus">...</div>
                 <div onclick="goToScrollToIdElementMusicLang();selectionSound();" class="select active totopelement">...</div>
               </div>
             </div>
           </div>
           <div id="about" class="content" style="display: block;">
-            <p id="netEaseLang1">...</p>
-            <p id="netEaseLang2">...</p>
+            <p class="taxt-content-on-white" id="netEaseLang1">...</p>
+            <p class="taxt-content-on-white" id="netEaseLang2">...</p>
             <hr>
-            <p id="coderLang">...</p>
-            <p id="direction1"><span id="baseCodeLang">...</span><a href="https://www.codingnepalweb.com/create-snake-game-htm-css-javascript/" target="_blank">CodingNepal</a>;</p>
-            <p><span id="cratedOn0Lang">...</span><a id="cratedOnLang" href="https://code.visualstudio.com" target="_blank">Visual Studio Code</a></p>
+            <p class="taxt-content-on-white" id="coderLang">...</p>
+            <p class="taxt-content-on-white" id="direction1"><span id="baseCodeLang">...</span><a href="https://www.codingnepalweb.com/create-snake-game-htm-css-javascript/" target="_blank">CodingNepal</a>;</p>
+            <p class="taxt-content-on-white"><span id="cratedOn0Lang">...</span><a id="cratedOnLang" href="https://code.visualstudio.com" target="_blank">Visual Studio Code</a></p>
             <hr>
             <div id="servicesLang">...</div>
             <div id="aboutService" class="services">
@@ -1387,17 +1356,18 @@
                 <div class="service-name">Discord</div>
               </div>
             </div>
-            <!--hr>
-            <div id="deBug">DeBugs Info</div>
-            <div id="userAgent">...</div>
-            <script>document.getElementById("userAgent").innerHTML = "UserAgent: " + navigator.userAgent;</script-->
+          </div>
+          <div id="tools" class="content" style="display: none;">
+            <button onclick="document.getElementById('updateModal').style.display='block';defaultClickSound();" class="menu-btn update-notice" id="noticeUpLang">...</button>
+            <button onclick="document.getElementById('shopPlace').style.display='flex';defaultClickSound();" class="menu-btn shop-window" id="shopWindowLang">...</button>
+            <button onclick="document.getElementById('gachaContent').style.display='block';document.getElementById('menu').style.display='none';setInterval(changeBackgroundMecha, 5000);setInterval(changeBackgroundPilot, 5000);defaultClickSound();" class="menu-btn gacha-window" id="gachaWindowLang">...</button>
           </div>
           <input type="submit" id="defaultSettings" onclick="alertReloadLater();" value="..." />
           <input type="submit" id="applySettings" onclick="applySettings();" value="..." />
           <div id="menuButtonsChain">
-            <button onclick="alertExitSite();" class="menu-btn site-exit" id="exitSiteLang">...</button>
-            <button onclick="document.getElementById('updateModal').style.display='block';defaultClickSound();" class="menu-btn update-notice" id="noticeUpLang">...</button>
-            <button onclick="document.getElementById('howToPlayModal').style.display='block';defaultClickSound();" class="menu-btn how-to-play" id="howToPlayLang"></button>
+            <button onclick="alertExitSite();" class="tools-menu site-exit" id="exitSiteLang">...</button>
+            <button onclick="document.getElementById('howToPlayModal').style.display='block';defaultClickSound();" class="tools-menu how-to-play" id="howToPlayLang"></button>
+            <button class="tablinks tools-menu menu-btns" onclick="openRange(event, 'conEight');openTab(event, 'tools');selectionSound();miniModalClose();" id="allTools">...</button>
           </div>
           <div class="sub-device-inpo-indicator">
             <div id="subDateTimeIndicator">
@@ -1421,6 +1391,7 @@
         <input class="menuscroller" type="range" name="conFour" id="conFour" min="0" max="100" value="0" style="display:none;">
         <input class="menuscroller" type="range" name="conFive" id="conFive" min="0" max="100" value="0" style="display:none;">
         <input class="menuscroller" type="range" name="conSix" id="conSix" min="0" max="100" value="0" style="display:none;">
+        <input class="menuscroller" type="range" name="conEight" id="conEight" min="0" max="100" value="0" style="display:none;">
       </div>
       <div class="wrapper">
         <div class="play-board" id="playBoardId"></div>
@@ -1598,44 +1569,43 @@
         <div id="firstEtab" class="first-content" style="display: none;"><!--Walking Content-->
           <h1 id="fEtLang" class="first-tabs-title">...</h1>
           <div id="selectOptions" class="select-content">
-            <div onclick="mwAIlangFunction();" class="first-music select" id="fWsai">Akashic (Walk)</div><br>
-            <hr>
-            <div onclick="mwAlangFunction();" class="first-music select" id="fWsa">Alborada (Walk)</div><br>
-            <div onclick="mwBlangFunction();" class="first-music select" id="fWsb">Andromeda (Walk)</div><br>
-            <div onclick="mwClangFunction();" class="first-music select" id="fWsc">Arthur (Walk)</div><br>
-            <div onclick="mwDlangFunction();" class="first-music select" id="fWsd">Aurora (Walk)</div><br>
-            <div onclick="mwElangFunction();" class="first-music select" id="fWse">Boltus (Walk)</div><br>
-            <div onclick="mwFlangFunction();" class="first-music select" id="fWsf">Caramel (Walk)</div><br>
-            <div onclick="mwYlangFunction();" class="first-music select" id="fWsy">Death knell (Walk)</div><br>
-            <div onclick="mwGlangFunction();" class="first-music select" id="fWsg">Doomlight (Walk)</div><br>
-            <div onclick="mwZlangFunction();" class="first-music select" id="fWsz">Dreadwolf (Walk)</div><br>
-            <div onclick="mwHlangFunction();" class="first-music select" id="fWsh">Frefox (Walk)</div><br>
-            <div onclick="mwIlangFunction();" class="first-music select" id="fWsi">Firestar (Walk)</div><br>
-            <div onclick="mwJlangFunction();" class="first-music select" id="fWsj">Flamenco (Walk)</div><br>
-            <div onclick="mwKlangFunction();" class="first-music select" id="fWsk">Gabriel (Walk)</div><br>
-            <div onclick="mwAAlangFunction();" class="first-music select" id="fWsaa">Gaia (Walk)</div><br>
-            <div onclick="mwABlangFunction();" class="first-music select" id="fWsab">Guerilla Hunter (Walk)</div><br>
-            <div onclick="mwLlangFunction();" class="first-music select" id="fWsl">Hotsteel (Walk)</div><br>
-            <div onclick="mwMlangFunction();" class="first-music select" id="fWsm">Hurricane (Walk)</div><br>
-            <div onclick="mwNlangFunction();" class="first-music select" id="fWsn">Jojo (Walk)</div><br>
-            <div onclick="mwAClangFunction();" class="first-music select" id="fWsac">Lancelot (Walk)</div><br>
-            <div onclick="mwOlangFunction();" class="first-music select" id="fWso">Michael (Walk)</div><br>
-            <div onclick="mwADlangFunction();" class="first-music select" id="fWsad">Moon Rabbit (Walk)</div><br>
-            <div onclick="mwAElangFunction();" class="first-music select" id="fWsae">Nebula (Walk)</div><br>
-            <div onclick="mwPlangFunction();" class="first-music select" id="fWsp">Neutron Star (Walk)</div><br>
-            <div onclick="mwQlangFunction();" class="first-music select" id="fWsq">Northern Knight (Walk)</div><br>
-            <div onclick="mwRlangFunction();" class="first-music select" id="fWsr">Pulsar (Walk)</div><br>
-            <div onclick="mwSlangFunction();" class="first-music select" id="fWss">Ranger (Walk)</div><br>
-            <div onclick="mwTlangFunction();" class="first-music select" id="fWst">Raven (Walk)</div><br>
-            <div onclick="mwAFlangFunction();" class="first-music select" id="fWsaf">Shiranui (Walk)</div><br>
-            <div onclick="mwAJlangFunction();" class="first-music select" id="fWsaj">Skyfall (Walk)</div><br>
-            <div onclick="mwAGlangFunction();" class="first-music select" id="fWsag">Skyfire (Walk)</div><br>
-            <div onclick="mwUlangFunction();" class="first-music select" id="fWsu">Skylark (Walk)</div><br>
-            <div onclick="mwVlangFunction();" class="first-music select" id="fWsv">Snow Mirage (Walk)</div><br>
-            <div onclick="mwAKlangFunction();" class="first-music select" id="fWsak">Tempest (Walk)</div><br>
-            <div onclick="mwWlangFunction();" class="first-music select" id="fWsw">Trio of Enders (Walk)</div><br>
-            <div onclick="mwAHlangFunction();" class="first-music select" id="fWsah">Twilight (Walk)</div><br>
-            <div onclick="mwXlangFunction();" class="first-music select" id="fWsx">Ventorus (Walk)</div>
+            <div onclick="mwAIlangFunction();" class="first-music select name-akashic" id="fWsai">...</div><br>
+            <div onclick="mwAlangFunction();" class="first-music select name-alborada" id="fWsa">...</div><br>
+            <div onclick="mwBlangFunction();" class="first-music select name-andromeda" id="fWsb">...</div><br>
+            <div onclick="mwClangFunction();" class="first-music select name-arthur" id="fWsc">...</div><br>
+            <div onclick="mwDlangFunction();" class="first-music select name-aurora" id="fWsd">...</div><br>
+            <div onclick="mwElangFunction();" class="first-music select name-boltus" id="fWse">...</div><br>
+            <div onclick="mwFlangFunction();" class="first-music select name-caramel" id="fWsf">...</div><br>
+            <div onclick="mwYlangFunction();" class="first-music select name-death-knell" id="fWsy">...</div><br>
+            <div onclick="mwGlangFunction();" class="first-music select name-doomlight" id="fWsg">...</div><br>
+            <div onclick="mwZlangFunction();" class="first-music select name-dreadwolf" id="fWsz">...</div><br>
+            <div onclick="mwHlangFunction();" class="first-music select name-firefox" id="fWsh">...</div><br>
+            <div onclick="mwIlangFunction();" class="first-music select name-firestar" id="fWsi">...</div><br>
+            <div onclick="mwJlangFunction();" class="first-music select name-flamenco" id="fWsj">...</div><br>
+            <div onclick="mwKlangFunction();" class="first-music select name-gabriel" id="fWsk">...</div><br>
+            <div onclick="mwAAlangFunction();" class="first-music select name-gaia" id="fWsaa">...</div><br>
+            <div onclick="mwABlangFunction();" class="first-music select name-guerilla-hunter" id="fWsab">...</div><br>
+            <div onclick="mwLlangFunction();" class="first-music select name-hotsteel" id="fWsl">...</div><br>
+            <div onclick="mwMlangFunction();" class="first-music select name-hurricane" id="fWsm">...</div><br>
+            <div onclick="mwNlangFunction();" class="first-music select name-jojo" id="fWsn">...</div><br>
+            <div onclick="mwAClangFunction();" class="first-music select name-lancelot" id="fWsac">...</div><br>
+            <div onclick="mwOlangFunction();" class="first-music select name-michael" id="fWso">...</div><br>
+            <div onclick="mwADlangFunction();" class="first-music select name-moon-rabbit" id="fWsad">...</div><br>
+            <div onclick="mwAElangFunction();" class="first-music select name-nebula" id="fWsae">...</div><br>
+            <div onclick="mwPlangFunction();" class="first-music select name-neutron-star" id="fWsp">...</div><br>
+            <div onclick="mwQlangFunction();" class="first-music select name-northern-knight" id="fWsq">...</div><br>
+            <div onclick="mwRlangFunction();" class="first-music select name-pulsar" id="fWsr">...</div><br>
+            <div onclick="mwSlangFunction();" class="first-music select name-ranger" id="fWss">...</div><br>
+            <div onclick="mwTlangFunction();" class="first-music select name-raven" id="fWst">...</div><br>
+            <div onclick="mwAFlangFunction();" class="first-music select name-shiranui" id="fWsaf">...</div><br>
+            <div onclick="mwAJlangFunction();" class="first-music select name-skyfall" id="fWsaj">...</div><br>
+            <div onclick="mwAGlangFunction();" class="first-music select name-skyfire" id="fWsag">...</div><br>
+            <div onclick="mwUlangFunction();" class="first-music select name-skylark" id="fWsu">...</div><br>
+            <div onclick="mwVlangFunction();" class="first-music select name-snow-mirage" id="fWsv">...</div><br>
+            <div onclick="mwAKlangFunction();" class="first-music select name-tempest" id="fWsak">...</div><br>
+            <div onclick="mwWlangFunction();" class="first-music select name-trio-of-enders" id="fWsw">...</div><br>
+            <div onclick="mwAHlangFunction();" class="first-music select name-twilight" id="fWsah">...</div><br>
+            <div onclick="mwXlangFunction();" class="first-music select name-ventorus" id="fWsx">...</div>
           </div>
         </div>
       </div>
@@ -1674,6 +1644,618 @@
         <span class="mini-modal-close" onclick="document.getElementById('miniModal').style.display = 'none';"></span>
       </div>
       <div class="mini-modal-bottom" id="mmBottom">...</div>
+    </div>
+    <div class="modal" id="shopPlace" style="display: none;">
+      <div class="modal-shop-content">
+        <span class="shop-close" onclick="document.getElementById('shopPlace').style.display='none';handleInterval();menuPauseWalkSound();closeModalSound();"></span>
+        <div class="shop-title" id="shopTitle">...</div>
+        <div class="shop-tabs-container">
+          <button id="goldsLang">...</button>
+        </div>
+        <div id="golds" class="in-shop-content">
+          <div class="shop-item tickets" id="tickets" onclick="openItemInfoTickets()"></div>
+        </div>
+      </div>
+    </div>
+    <div id="gachaContent" class="i-gacha" style="display: none;">
+      <div class="header">
+        <div class="game-logo"></div>
+        <div class="navigationinventory">
+          <button class="header-btns" id="mechaInventory" onclick="document.getElementById('collectionCenter').style.display='block';document.getElementById('mechaCollectionGallery').click();checkObtineds();">M</button>
+          <button class="header-btns" id="pilotInventory" onclick="document.getElementById('collectionCenter').style.display='block';document.getElementById('pilotCollectionGallery').click();checkObtineds();">P</button>
+        </div>
+      </div>
+      <div class="collection-center" id="collectionCenter">
+        <span class="close-full-window" onclick="document.getElementById('collectionCenter').style.display='none';closeModalSound();"></span>
+        <div class="tab-gallery">
+          <button class="collectiontab mecha-gallery" onclick="openCollection(event, 'mechaGallery');selectionSound();" id="mechaCollectionGallery">...</button>
+          <button class="collectiontab pilot-gallery" onclick="openCollection(event, 'pilotGallery');selectionSound();" id="pilotCollectionGallery">...</button>
+        </div>
+        <div class="collection-continer" id="mechaGallery">
+          <div class="items-title name-akashic">...</div>
+          <div class="gallery-card default" onclick="showMechaAkashic();">
+            <div class="item-image akashic locked" id="imgLockAkashic"></div>
+            <div class="class ddd locked" id="classesAkashic"></div>
+            <div class="name akashic name-akashic">...</div>
+          </div>
+          <hr>
+          <div class="items-title name-alborada">...</div>
+          <div class="gallery-card default" onclick="showMechaAlborada();">
+            <div class="item-image alborada locked" id="imgLockAlborada"></div>
+            <div class="class ddd locked" id="classesAlborada"></div>
+            <div class="name alborada name-alborada">...</div>
+          </div>
+          <hr>
+          <div class="items-title name-andromeda">...</div>
+          <div class="gallery-card default" onclick="showMechaAndromeda();">
+            <div class="item-image andromeda locked" id="imgLockAndromeda"></div>
+            <div class="class ddd locked" id="classesAndromeda"></div>
+            <div class="name andromeda name-andromeda">...</div>
+          </div>
+          <hr>
+          <div class="items-title name-arthur">...</div>
+          <div class="gallery-card default" onclick="showMechaArthur();">
+            <div class="item-image arthur locked" id="imgLockArthur"></div>
+            <div class="class ddd locked" id="classesArthur"></div>
+            <div class="name arthur name-arthur">...</div>
+          </div>
+          <hr>
+          <div class="items-title name-aurora">...</div>
+          <div class="gallery-card default" onclick="showMechaAurora();">
+            <div class="item-image aurora locked" id="imgLockAurora"></div>
+            <div class="class ddd locked" id="classesAurora"></div>
+            <div class="name aurora name-aurora">...</div>
+          </div>
+          <hr>
+          <div class="items-title name-boltus">...</div>
+          <div class="gallery-card default" onclick="showMechaBoltus();">
+            <div class="item-image boltus locked" id="imgLockBoltus"></div>
+            <div class="class ddd locked" id="classesBoltus"></div>
+            <div class="name boltus name-boltus">...</div>
+          </div>
+          <hr>
+          <div class="items-title name-caramel">...</div>
+          <div class="gallery-card default" onclick="showMechaCaramel();">
+            <div class="item-image caramel locked" id="imgLockCaramel"></div>
+            <div class="class ddd locked" id="classesCaramel"></div>
+            <div class="name caramel name-caramel">...</div>
+          </div>
+          <hr>
+          <div class="items-title name-death-knell">...</div>
+          <div class="gallery-card default" onclick="showMechaDeathKnell();">
+            <div class="item-image death-knell locked" id="imgLockDeathKnell"></div>
+            <div class="class ddd locked" id="classesDeathKnell"></div>
+            <div class="name death-knell name-death-knell">...</div>
+          </div>
+          <hr>
+          <div class="items-title name-doomlight">...</div>
+          <div class="gallery-card default" onclick="showMechaDoomlight();">
+            <div class="item-image doomlight locked" id="imgLockDoomlight"></div>
+            <div class="class ddd locked" id="classesDoomlight"></div>
+            <div class="name doomlight name-doomlight">...</div>
+          </div>
+          <hr>
+          <div class="items-title name-dreadwolf">...</div>
+          <div class="gallery-card default" onclick="showMechaDreadwolf();">
+            <div class="item-image dreadwolf locked" id="imgLockDreadwolf"></div>
+            <div class="class ddd locked" id="classesDreadwolf"></div>
+            <div class="name dreadwolf name-dreadwolf">...</div>
+          </div>
+          <hr>
+          <div class="items-title name-firefox">...</div>
+          <div class="gallery-card default" onclick="showMechaFirefox();">
+            <div class="item-image firefox locked" id="imgLockFirefox"></div>
+            <div class="class ddd locked" id="classesFirefox"></div>
+            <div class="name firefox name-firefox">...</div>
+          </div>
+          <hr>
+          <div class="items-title name-firestar">...</div>
+          <div class="gallery-card default" onclick="showMechaFirestar();">
+            <div class="item-image firestar locked" id="imgLockFirestar"></div>
+            <div class="class ddd locked" id="classesFirestar"></div>
+            <div class="name firestar name-firestar">...</div>
+          </div>
+          <hr>
+          <div class="items-title name-flamenco">...</div>
+          <div class="gallery-card default" onclick="showMechaFlamenco();">
+            <div class="item-image flamenco locked" id="imgLockFlamenco"></div>
+            <div class="class ddd locked" id="classesFlamenco"></div>
+            <div class="name flamenco name-flamenco">...</div>
+          </div>
+          <hr>
+          <div class="items-title name-gabriel">...</div>
+          <div class="gallery-card default" onclick="showMechaGabriel();">
+            <div class="item-image gabriel locked" id="imgLockGabriel"></div>
+            <div class="class ddd locked" id="classesGabriel"></div>
+            <div class="name gabriel name-gabriel">...</div>
+          </div>
+          <hr>
+          <div class="items-title name-gaia">...</div>
+          <div class="gallery-card default" onclick="showMechaGaia();">
+            <div class="item-image gaia locked" id="imgLockGaia"></div>
+            <div class="class ddd locked" id="classesGaia"></div>
+            <div class="name gaia name-gaia">...</div>
+          </div>
+          <hr>
+          <div class="items-title name-guerilla-hunter">...</div>
+          <div class="gallery-card default" onclick="showMechaGuerillaHunter();">
+            <div class="item-image guerilla-hunter locked" id="imgLockGuerillaHunter"></div>
+            <div class="class ddd locked" id="classesGuerillaHunter"></div>
+            <div class="name guerilla-hunter name-guerilla-hunter">...</div>
+          </div>
+          <hr>
+          <div class="items-title name-hotsteel">...</div>
+          <div class="gallery-card default" onclick="showMechaHotsteel();">
+            <div class="item-image hotsteel locked" id="imgLockHotsteel"></div>
+            <div class="class ddd locked" id="classesHotsteel"></div>
+            <div class="name hotsteel name-hotsteel">...</div>
+          </div>
+          <hr>
+          <div class="items-title name-hurricane">...</div>
+          <div class="gallery-card default" onclick="showMechaHurricane();">
+            <div class="item-image hurricane locked" id="imgLockHurricane"></div>
+            <div class="class ddd locked" id="classesHurricane"></div>
+            <div class="name hurricane name-hurricane">...</div>
+          </div>
+          <hr>
+          <div class="items-title name-jojo">...</div>
+          <div class="gallery-card default" onclick="showMechaJOJO();">
+            <div class="item-image jojo locked" id="imgLockJOJO"></div>
+            <div class="class ddd locked" id="classesJOJO"></div>
+            <div class="name jojo name-jojo">...</div>
+          </div>
+          <hr>
+          <div class="items-title name-lancelot">...</div>
+          <div class="gallery-card default" onclick="showMechaLancelot();">
+            <div class="item-image lancelot locked" id="imgLockLancelot"></div>
+            <div class="class ddd locked" id="classesLancelot"></div>
+            <div class="name lancelot name-lancelot">...</div>
+          </div>
+          <hr>
+          <div class="items-title name-michael">...</div>
+          <div class="gallery-card default" onclick="showMechaMichael();">
+            <div class="item-image michael locked" id="imgLockMichael"></div>
+            <div class="class ddd locked" id="classesMichael"></div>
+            <div class="name michael name-michael">...</div>
+          </div>
+          <hr>
+          <div class="items-title name-moon-rabbit">...</div>
+          <div class="gallery-card default" onclick="showMechaMoonRabbit();">
+            <div class="item-image moon-rabbit locked" id="imgLockMoonRabbit"></div>
+            <div class="class ddd locked" id="classesMoonRabbit"></div>
+            <div class="name moon-rabbit name-moon-rabbit">...</div>
+          </div>
+          <hr>
+          <div class="items-title name-nebula">...</div>
+          <div class="gallery-card default" onclick="showMechaNebula();">
+            <div class="item-image nebula locked" id="imgLockNebula"></div>
+            <div class="class ddd locked" id="classesNebula"></div>
+            <div class="name nebula name-nebula">...</div>
+          </div>
+          <hr>
+          <div class="items-title name-neutron-star">...</div>
+          <div class="gallery-card default" onclick="showMechaNeutronStar();">
+            <div class="item-image neutron-star locked" id="imgLockNeutronStar"></div>
+            <div class="class ddd locked" id="classesNeutronStar"></div>
+            <div class="name neutron-star name-neutron-star">...</div>
+          </div>
+          <hr>
+          <div class="items-title name-northern-knight">...</div>
+          <div class="gallery-card default" onclick="showMechaNorthernKnight();">
+            <div class="item-image northern-knight locked" id="imgLockNorthernKnight"></div>
+            <div class="class ddd locked" id="classesNorthernKnight"></div>
+            <div class="name northern-knight name-northern-knight">...</div>
+          </div>
+          <hr>
+          <div class="items-title name-pulsar">...</div>
+          <div class="gallery-card default" onclick="showMechaPulsar();">
+            <div class="item-image pulsar locked" id="imgLockPulsar"></div>
+            <div class="class ddd locked" id="classesPulsar"></div>
+            <div class="name pulsar name-pulsar">...</div>
+          </div>
+          <hr>
+          <div class="items-title name-ranger">...</div>
+          <div class="gallery-card default" onclick="showMechaRanger();">
+            <div class="item-image ranger locked" id="imgLockRanger"></div>
+            <div class="class ddd locked" id="classesRanger"></div>
+            <div class="name ranger name-ranger">...</div>
+          </div>
+          <hr>
+          <div class="items-title name-raven">...</div>
+          <div class="gallery-card default" onclick="showMechaRaven();">
+            <div class="item-image raven locked" id="imgLockRaven"></div>
+            <div class="class ddd locked" id="classesRaven"></div>
+            <div class="name raven name-raven">...</div>
+          </div>
+          <hr>
+          <div class="items-title name-shiranui">...</div>
+          <div class="gallery-card default" onclick="showMechaShiranui();">
+            <div class="item-image shiranui locked" id="imgLockShiranui"></div>
+            <div class="class ddd locked" id="classesShiranui"></div>
+            <div class="name shiranui name-shiranui">...</div>
+          </div>
+          <hr>
+          <div class="items-title name-skyfall">...</div>
+          <div class="gallery-card default" onclick="showMechaSkyfall();">
+            <div class="item-image skyfall locked" id="imgLockSkyfall"></div>
+            <div class="class ddd locked" id="classesSkyfall"></div>
+            <div class="name skyfall name-skyfall">...</div>
+          </div>
+          <hr>
+          <div class="items-title name-skyfire">...</div>
+          <div class="gallery-card default" onclick="showMechaSkyfire();">
+            <div class="item-image skyfire locked" id="imgLockSkyfire"></div>
+            <div class="class ddd locked" id="classesSkyfire"></div>
+            <div class="name skyfire name-skyfire">...</div>
+          </div>
+          <hr>
+          <div class="items-title name-skylark">...</div>
+          <div class="gallery-card default" onclick="showMechaSkylark();">
+            <div class="item-image skylark locked" id="imgLockSkylark"></div>
+            <div class="class ddd locked" id="classesSkylark"></div>
+            <div class="name skylark name-skylark">...</div>
+          </div>
+          <hr>
+          <div class="items-title name-snow-mirage">...</div>
+          <div class="gallery-card default" onclick="showMechaSnowMirage();">
+            <div class="item-image snow-mirage locked" id="imgLockSnowMirage"></div>
+            <div class="class ddd locked" id="classesSnowMirage"></div>
+            <div class="name snow-mirage name-snow-mirage">...</div>
+          </div>
+          <hr>
+          <div class="items-title name-tempest">...</div>
+          <div class="gallery-card default" onclick="showMechaTempest();">
+            <div class="item-image tempest locked" id="imgLockTempest"></div>
+            <div class="class ddd locked" id="classesTempest"></div>
+            <div class="name tempest name-tempest">...</div>
+          </div>
+          <hr>
+          <div class="items-title name-trio-of-enders">...</div>
+          <div class="gallery-card default" onclick="showMechaTrioofEnders();">
+            <div class="item-image trio-of-enders locked" id="imgLockTrioofEnders"></div>
+            <div class="class ddd locked" id="classesTrioofEnders"></div>
+            <div class="name trio-of-enders name-trio-of-enders">...</div>
+          </div>
+          <hr>
+          <div class="items-title name-twilight">...</div>
+          <div class="gallery-card default" onclick="showMechaTwilight();">
+            <div class="item-image twilight locked" id="imgLockTwilight"></div>
+            <div class="class ddd locked" id="classesTwilight"></div>
+            <div class="name twilight name-twilight">...</div>
+          </div>
+          <hr>
+          <div class="items-title name-ventorus">...</div>
+          <div class="gallery-card default" onclick="showMechaVentorus();">
+            <div class="item-image ventorus locked" id="imgLockVentorus"></div>
+            <div class="class ddd locked" id="classesVentorus"></div>
+            <div class="name ventorus name-ventorus">...</div>
+          </div>
+          <hr>
+        </div>
+        <div class="collection-continer" id="pilotGallery">
+          <div class="items-title name-aya">...</div>
+          <div class="gallery-card default" onclick="showPilotAya();">
+            <div class="item-image aya locked" id="imgLockAya"></div>
+            <div class="class ddd locked" id="classesAya"></div>
+            <div class="name aya name-aya">...</div>
+          </div>
+          <hr>
+          <div class="items-title name-belladonna">...</div>
+          <div class="gallery-card default" onclick="showPilotBelladonna();">
+            <div class="item-image belladonna locked" id="imgLockBelladonna"></div>
+            <div class="class ddd locked" id="classesBelladonna"></div>
+            <div class="name belladonna name-belladonna">...</div>
+          </div>
+          <hr>
+          <div class="items-title name-cyrus">...</div>
+          <div class="gallery-card default" onclick="showPilotCyrus();">
+            <div class="item-image cyrus locked" id="imgLockCyrus"></div>
+            <div class="class ddd locked" id="classesCyrus"></div>
+            <div class="name cyrus name-cyrus">...</div>
+          </div>
+          <hr>
+          <div class="items-title name-fran">...</div>
+          <div class="gallery-card default" onclick="showPilotFran();">
+            <div class="item-image fran locked" id="imgLockFran"></div>
+            <div class="class ddd locked" id="classesFran"></div>
+            <div class="name fran name-fran">...</div>
+          </div>
+          <hr>
+          <div class="items-title name-furanku">...</div>
+          <div class="gallery-card default" onclick="showPilotFuranku();">
+            <div class="item-image furanku locked" id="imgLockFuranku"></div>
+            <div class="class ddd locked" id="classesFuranku"></div>
+            <div class="name furanku name-furanku">...</div>
+          </div>
+          <hr>
+          <div class="items-title name-iori">...</div>
+          <div class="gallery-card default" onclick="showPilotIori();">
+            <div class="item-image iori locked" id="imgLockIori"></div>
+            <div class="class ddd locked" id="classesIori"></div>
+            <div class="name iori name-iori">...</div>
+          </div>
+          <hr>
+          <div class="items-title name-ivan">...</div>
+          <div class="gallery-card default" onclick="showPilotIvan();">
+            <div class="item-image ivan locked" id="imgLockIvan"></div>
+            <div class="class ddd locked" id="classesIvan"></div>
+            <div class="name ivan name-ivan">...</div>
+          </div>
+          <hr>
+          <div class="items-title name-jaka">...</div>
+          <div class="gallery-card default" onclick="showPilotJaka();">
+            <div class="item-image jaka locked" id="imgLockJaka"></div>
+            <div class="class ddd locked" id="classesJaka"></div>
+            <div class="name jaka name-jaka">...</div>
+          </div>
+          <hr>
+          <div class="items-title name-jiu-chong">...</div>
+          <div class="gallery-card default" onclick="showPilotJiuChong();">
+            <div class="item-image jiu-chong locked" id="imgLockJiuChong"></div>
+            <div class="class ddd locked" id="classesJiuChong"></div>
+            <div class="name jiu-chong name-jiu-chong">...</div>
+          </div>
+          <hr>
+          <div class="items-title name-joanna">...</div>
+          <div class="gallery-card default" onclick="showPilotJoanna();">
+            <div class="item-image joanna locked" id="imgLockJoanna"></div>
+            <div class="class ddd locked" id="classesJoanna"></div>
+            <div class="name joanna name-joanna">...</div>
+          </div>
+          <hr>
+          <div class="items-title name-kije">...</div>
+          <div class="gallery-card default" onclick="showPilotKije();">
+            <div class="item-image kije locked" id="imgLockKije"></div>
+            <div class="class ddd locked" id="classesKije"></div>
+            <div class="name kije name-kije">...</div>
+          </div>
+          <hr>
+          <div class="items-title name-kikina">...</div>
+          <div class="gallery-card default" onclick="showPilotKikina();">
+            <div class="item-image kikina locked" id="imgLockKikina"></div>
+            <div class="class ddd locked" id="classesKikina"></div>
+            <div class="name kikina name-kikina">...</div>
+          </div>
+          <hr>
+          <div class="items-title name-kizuna-ai">...</div>
+          <div class="gallery-card default" onclick="showPilotKizunaAi();">
+            <div class="item-image kizuna-ai locked" id="imgLockKizunaAi"></div>
+            <div class="class ddd locked" id="classesKizunaAi"></div>
+            <div class="name kizuna-ai name-kizuna-ai">...</div>
+          </div>
+          <hr>
+          <div class="items-title name-lillian">...</div>
+          <div class="gallery-card default" onclick="showPilotLillian();">
+            <div class="item-image lillian locked" id="imgLockLillian"></div>
+            <div class="class ddd locked" id="classesLillian"></div>
+            <div class="name lillian name-lillian">...</div>
+          </div>
+          <hr>
+          <div class="items-title name-lysa">...</div>
+          <div class="gallery-card default" onclick="showPilotLysa();">
+            <div class="item-image lysa locked" id="imgLockLysa"></div>
+            <div class="class ddd locked" id="classesLysa"></div>
+            <div class="name lysa name-lysa">...</div>
+          </div>
+          <hr>
+          <div class="items-title name-matilda">...</div>
+          <div class="gallery-card default" onclick="showPilotMatilda();">
+            <div class="item-image matilda locked" id="imgLockMatilda"></div>
+            <div class="class ddd locked" id="classesMatilda"></div>
+            <div class="name matilda name-matilda">...</div>
+          </div>
+          <hr>
+          <div class="items-title name-mia">...</div>
+          <div class="gallery-card default" onclick="showPilotMia();">
+            <div class="item-image mia locked" id="imgLockMia"></div>
+            <div class="class ddd locked" id="classesMia"></div>
+            <div class="name mia name-mia">...</div>
+          </div>
+          <hr>
+          <div class="items-title name-mila">...</div>
+          <div class="gallery-card default" onclick="showPilotMila();">
+            <div class="item-image mila locked" id="imgLockMila"></div>
+            <div class="class ddd locked" id="classesMila"></div>
+            <div class="name mila name-mila">...</div>
+          </div>
+          <hr>
+          <div class="items-title name-mobius">...</div>
+          <div class="gallery-card default" onclick="showPilotMobius();">
+            <div class="item-image mobius locked" id="imgLockMobius"></div>
+            <div class="class ddd locked" id="classesMobius"></div>
+            <div class="name mobius name-mobius">...</div>
+          </div>
+          <hr>
+          <div class="items-title name-nighthawk">...</div>
+          <div class="gallery-card default" onclick="showPilotNighthawk();">
+            <div class="item-image nighthawk locked" id="imgLockNighthawk"></div>
+            <div class="class ddd locked" id="classesNighthawk"></div>
+            <div class="name nighthawk name-nighthawk">...</div>
+          </div>
+          <hr>
+          <div class="items-title name-ning">...</div>
+          <div class="gallery-card default" onclick="showPilotNing();">
+            <div class="item-image ning locked" id="imgLockNing"></div>
+            <div class="class ddd locked" id="classesNing"></div>
+            <div class="name ning name-ning">...</div>
+          </div>
+          <hr>
+          <div class="items-title name-norma">...</div>
+          <div class="gallery-card default" onclick="showPilotNorma();">
+            <div class="item-image norma locked" id="imgLockNorma"></div>
+            <div class="class ddd locked" id="classesNorma"></div>
+            <div class="name norma name-norma">...</div>
+          </div>
+          <hr>
+          <div class="items-title name-opal">...</div>
+          <div class="gallery-card default" onclick="showPilotOpal();">
+            <div class="item-image opal locked" id="imgLockOpal"></div>
+            <div class="class ddd locked" id="classesOpal"></div>
+            <div class="name opal name-opal">...</div>
+          </div>
+          <hr>
+          <div class="items-title name-purity">...</div>
+          <div class="gallery-card default" onclick="showPilotPurity();">
+            <div class="item-image purity locked" id="imgLockPurity"></div>
+            <div class="class ddd locked" id="classesPurity"></div>
+            <div class="name purity name-purity">...</div>
+          </div>
+          <hr>
+          <div class="items-title name-r-e-d">...</div>
+          <div class="gallery-card default" onclick="showPilotRED();">
+            <div class="item-image red locked" id="imgLockRED"></div>
+            <div class="class ddd locked" id="classesRED"></div>
+            <div class="name red name-r-e-d">...</div>
+          </div>
+          <hr>
+          <div class="items-title name-riko">...</div>
+          <div class="gallery-card default" onclick="showPilotRiko();">
+            <div class="item-image riko locked" id="imgLockRiko"></div>
+            <div class="class ddd locked" id="classesRiko"></div>
+            <div class="name riko name-riko">...</div>
+          </div>
+          <hr>
+          <div class="items-title name-rom">...</div>
+          <div class="gallery-card default" onclick="showPilotRom();">
+            <div class="item-image rom locked" id="imgLockRom"></div>
+            <div class="class ddd locked" id="classesRom"></div>
+            <div class="name rom name-rom">...</div>
+          </div>
+          <hr>
+          <div class="items-title name-serena">...</div>
+          <div class="gallery-card default" onclick="showPilotSerena();">
+            <div class="item-image serena locked" id="imgLockSerena"></div>
+            <div class="class ddd locked" id="classesSerena"></div>
+            <div class="name serena name-serena">...</div>
+          </div>
+          <hr>
+          <div class="items-title name-shin">...</div>
+          <div class="gallery-card default" onclick="showPilotShin();">
+            <div class="item-image shin locked" id="imgLockShin"></div>
+            <div class="class ddd locked" id="classesShin"></div>
+            <div class="name shin name-shin">...</div>
+          </div>
+          <hr>
+          <div class="items-title name-silver-deacon">...</div>
+          <div class="gallery-card default" onclick="showPilotSilverDeacon();">
+            <div class="item-image silver-deacon locked" id="imgLockSilverDeacon"></div>
+            <div class="class ddd locked" id="classesSilverDeacon"></div>
+            <div class="name silver-deacon name-silver-deacon">...</div>
+          </div>
+          <hr>
+          <div class="items-title name-tarantula">...</div>
+          <div class="gallery-card default" onclick="showPilotTarantula();">
+            <div class="item-image tarantula locked" id="imgLockTarantula"></div>
+            <div class="class ddd locked" id="classesTarantula"></div>
+            <div class="name tarantula name-tarantula"></div>
+          </div>
+          <hr>
+          <div class="items-title name-vanessa">...</div>
+          <div class="gallery-card default" onclick="showPilotVanessa();">
+            <div class="item-image vanessa locked" id="imgLockVanessa"></div>
+            <div class="class ddd locked" id="classesVanessa"></div>
+            <div class="name vanessa name-vanessa">...</div>
+          </div>
+          <hr>
+          <div class="items-title name-villar">...</div>
+          <div class="gallery-card default" onclick="showPilotVillar();">
+            <div class="item-image villar locked" id="imgLockVillar"></div>
+            <div class="class ddd locked" id="classesVillar"></div>
+            <div class="name villar name-villar">...</div>
+          </div>
+          <hr>
+          <div class="items-title name-vita">...</div>
+          <div class="gallery-card default" onclick="showPilotVita();">
+            <div class="item-image vita locked" id="imgLockVita"></div>
+            <div class="class ddd locked" id="classesVita"></div>
+            <div class="name vita name-vita">...</div>
+          </div>
+          <hr>
+          <div class="items-title name-yang">...</div>
+          <div class="gallery-card default" onclick="showPilotYang();">
+            <div class="item-image yang locked" id="imgLockYang"></div>
+            <div class="class ddd locked" id="classesYang"></div>
+            <div class="name yang name-yang">...</div>
+          </div>
+          <hr>
+          <div class="items-title name-yulia">...</div>
+          <div class="gallery-card default" onclick="showPilotYulia();">
+            <div class="item-image yulia locked" id="imgLockYulia"></div>
+            <div class="class ddd locked" id="classesYulia"></div>
+            <div class="name yulia name-yulia">...</div>
+          </div>
+          <hr>
+          <div class="items-title name-yutong">...</div>
+          <div class="gallery-card default" onclick="showPilotYutong();">
+            <div class="item-image yutong locked" id="imgLockYutong"></div>
+            <div class="class ddd locked" id="classesYutong"></div>
+            <div class="name yutong name-yutong">...</div>
+          </div>
+          <hr>
+          <div class="items-title name-zoe">...</div>
+          <div class="gallery-card default" onclick="showPilotZoe();">
+            <div class="item-image zoe locked" id="imgLockZoe"></div>
+            <div class="class ddd locked" id="classesZoe"></div>
+            <div class="name zoe name-zoe">...</div>
+          </div>
+          <hr>
+        </div>
+      </div>
+      <div class="tab-gacha">
+        <button class="gachatab mechatab" onclick="openGacha(event, 'mechacontent');selectionSound();" id="mechaDefaultEvent">...</button>
+        <button class="gachatab pilottab" onclick="openGacha(event, 'pilotcontent');selectionSound();" id="pilotDefaultEvent">...</button>
+      </div>
+      <div id="mechacontent" class="gacha-continer">
+        <div class="costs-container">
+          <div class="cost-have-gold">0</div>
+          <div class="cost-container">
+            <div class="cost-have-ticket">0</div>
+            <div class="add-more" onclick="openShopModalTickets();">+</div>
+          </div>
+        </div>
+        <div class="gacha-btn-container">
+          <button class="opone" id="oponebtnDefMechaOne" onclick="summonMechaOne();">...</button>
+          <button class="opten" id="oponebtnDefMechaTen" onclick="summonMechaTen();">...</button>
+        </div>
+      </div>
+      <div id="pilotcontent" class="gacha-continer">
+        <div class="costs-container">
+          <div class="cost-have-gold">0</div>
+          <div class="cost-container">
+            <div class="cost-have-ticket">0</div>
+            <div class="add-more" onclick="openShopModalTickets();">+</div>
+          </div>
+        </div>
+        <div class="gacha-btn-container">
+          <button class="opone" id="oponebtnDefPilotOne" onclick="summonPilotOne();">...</button>
+          <button class="opten" id="oponebtnDefPilotTen" onclick="summonPilotTen();">...</button>
+        </div>
+      </div>
+      <div class="animation-frame" id="animFrame">
+        <img id="sourceGachaAnimation" src="index_data/animations/gacha/gacha_vid_start.gif" ondragstart="return false;" onfocus="return false;">
+        <audio id="gachaAudionation">
+          <source id="sourceGachaAudionation" src="index_data/audio/interface/gacha/Gacha aud start.mp3" type="audio/mp3">
+        </audio>
+        <div id="animationBlocker"></div>
+        <button id="skipAnim" class="skip-vid-gacha" onclick="skipVidAnim();defaultClickSound();">Skip</button>
+      </div>
+      <div id="gachaPrises" class="gacha-praices">
+        <div class="prices-container" id="prices-display">
+          <div id="continueBtn"></div>
+        </div>
+      </div>
+      <div class="item-info" id="itemInfo">
+        <span class="close-full-window" onclick="document.getElementById('itemInfo').style.display='none';defaultClickSound();"></span>
+        <div class="item-name" id="itemName"></div>
+        <div class="image-preview" id="itemImage"></div>
+        <div class="side-content">
+          <div id="textInfoBelong"></div>
+        </div>
+      </div>
+      <div class="footer" id="gachaFooter">
+        <button class="close-gacha" id="closeGacha" onclick="handleInterval();document.getElementById('gachaContent').style.display='none';clearInterval(changeBackgroundMecha);clearInterval(changeBackgroundPilot);menuPauseWalkSound();defaultClickSound();">...</button>
+      </div>
+      <audio id="btnPress" src="index_data/audio/interface/gacha/press_btn.wav"></audio>
     </div>
     <textarea name="text-area" id="textarea" style="position:fixed;display:none;"></textarea>
     <!-- Audio sources -->
@@ -2027,6 +2609,15 @@
       <script src="index_data/scripts/ambient/ambient.js"></script>
     </audio>
     <!-- Scripts -->
+    <script src="index_data/scripts/lets.js"></script>
+    <script src="index_data/scripts/mecha/list.js"></script>
+    <script src="index_data/scripts/pilot/list.js"></script>
+    <script src="index_data/scripts/mecha/openx1.js"></script>
+    <script src="index_data/scripts/pilot/openx1.js"></script>
+    <script src="index_data/scripts/mecha/openx10.js"></script>
+    <script src="index_data/scripts/pilot/openx10.js"></script>
+    <script src="index_data/scripts/mecha/show_info.js"></script>
+    <script src="index_data/scripts/pilot/show_info.js"></script>
     <script src="index_data/scripts/scripts.js"></script>
     <script src="index_data/scripts/system.js" defer></script>
     <script src="index_data/scripts/loading_system.js">// Specific for load</script>
@@ -2036,6 +2627,7 @@
     <script src="index_data/scripts/updates.js"></script>
     <script src="index_data/scripts/scripts_2.js"></script>
     <script src="index_data/scripts/is_first_player.js"></script>
+    <script src="index_data/scripts/window_load.js"></script>
     <script>
       if(navigator.serviceWorker) {
         if(window.location.protocol === 'https:') {
