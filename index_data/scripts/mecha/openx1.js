@@ -28,8 +28,8 @@ function summonMechaOne() {
   document.getElementById("btnPress").removeAttribute("loop");
   // start gacha animation
   setTimeout( function() {
-    gachaAnim.src = "index_data/plugins/lucky_house/Index_data/animations/gacha_vid_start.gif";
-    gachaAud.src = "index_data/plugins/lucky_house/Index_data/audio/Gacha aud start.mp3";
+    gachaAnim.src = "index_data/animations/gacha/gacha_vid_start.gif";
+    gachaAud.src = "index_data/audio/interface/gacha/Gacha aud start.mp3";
     animFrame.style.display = "flex";
     animationBlocker.style.display = "block";
     gachaAud.onloadeddata = () => {
@@ -39,8 +39,8 @@ function summonMechaOne() {
   // video phaza for pressing
   setTimeout( function() {
     animationBlocker.style.display = "none";
-    gachaAnim.src = "index_data/plugins/lucky_house/Index_data/animations/gacha_vid_press.gif";
-    gachaAud.src = "index_data/plugins/lucky_house/Index_data/audio/Gacha aud press.mp3";
+    gachaAnim.src = "index_data/animations/gacha/gacha_vid_press.gif";
+    gachaAud.src = "index_data/audio/interface/gacha/Gacha aud press.mp3";
     gachaAud.setAttribute("loop","loop");
     gachaAud.onloadeddata = () => {
       gachaAud.play();
@@ -80,8 +80,8 @@ function displaymecha(mecha) {
   localStorage.setItem(mecha.name, "geted");
   gachaAnim.addEventListener('click', function() {
     if(mechaDiv.classList.contains("Default")) {
-      gachaAnim.src = "index_data/plugins/lucky_house/Index_data/animations/gacha_vid_pressed_0d.gif";
-      gachaAud.src = "index_data/plugins/lucky_house/Index_data/audio/Gacha aud pressed.mp3";
+      gachaAnim.src = "index_data/animations/gacha/gacha_vid_pressed_0d.gif";
+      gachaAud.src = "index_data/audio/interface/gacha/Gacha aud pressed.mp3";
     }else{
       console.log("class is not defined for video src display");
     }
