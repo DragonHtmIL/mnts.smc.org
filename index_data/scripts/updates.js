@@ -1,19 +1,15 @@
 
-let basicVersion = "1.3.4-v2";
-let dateVersion = "[23/12/2025]";
+let basicVersion = "1.3.5-v2";
+let dateVersion = "[26/12/2025]";
 function markUpdateReaded() {
   var modal = document.getElementById("updateModal");
   modal.style.display = "none";
   localStorage.setItem("updateRead", basicVersion);
 }
 
-let text3en = "Some Fixes and Changes.";
-let text3ru = "Некоторые Исправления и Изменение.";
-let text3he = "כמה תיקונים ושינויים.";
-
-let text0en = "" + "<br>";
-let text0ru = "" + "<br>";
-let text0he = "" + "<br>";
+let text0en = "Some Fixes and Changes." + "<br>";
+let text0ru = "Некоторые Исправления и Изменение." + "<br>";
+let text0he = "כמה תיקונים ושינויים." + "<br>";
 
 let text1en = "" + "<br>";
 let text1ru = "" + "<br>";
@@ -22,6 +18,10 @@ let text1he = "" + "<br>";
 let text2en = "" + "<br>";
 let text2ru = "" + "<br>";
 let text2he = "" + "<br>";
+
+let text3en = "";
+let text3ru = "";
+let text3he = "";
 
 function updateTextLangs() {
   var updateTitle = document.getElementById("updateTitleLang");
@@ -49,7 +49,6 @@ function updateTextLangs() {
     updateTitle.style.width = "75%";
     updateContent.style.direction = "rtl";
     updateContent.style.textAlign = "right";
-
     updateContent.innerHTML += "<h3>" + dateVersion + "</h3>" + "<br>";
     updateContent.innerHTML += text0he;
     updateContent.innerHTML += text1he;
