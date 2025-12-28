@@ -3329,13 +3329,13 @@ p {
 }
 .card-continer {
   position: relative;
-  width: 60px;
-  height: 200px;
+  width: 127px;
+  height: 361px;
   overflow: hidden;
   display: flex;
   align-items: center;
   background-size: 100% 100%;
-  margin: 6px;
+  margin: 13px;
 }
 .card-continer.Default {
   background-image: var(--card-def);
@@ -3439,7 +3439,7 @@ p {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 2;
+  z-index: 3;
   display: none;
 }
 .collection-center::before {
@@ -3563,7 +3563,7 @@ p {
   display: none;
   background-position: center;
   background-size: cover;
-  z-index: 3;
+  z-index: 5;
   align-items: center;
 }
 .item-info::before {
@@ -4147,6 +4147,11 @@ p {
     height: 17px;
     padding-left: 20px;
     padding-right: 57px;
+  }
+  .card-continer {
+    width: 60px;
+    height: 200px;
+    margin: 6px;
   }
 }
 @media screen and (min-width: 1545px) {
