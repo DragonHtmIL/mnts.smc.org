@@ -267,6 +267,5 @@ window.addEventListener('load', function() {
   };
   updateFoodPosition();
   updateSnakePosition();
-  document.getElementById("mechaDefaultEvent").click();
   costGoldShows();
 });

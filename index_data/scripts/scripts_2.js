@@ -2450,7 +2450,7 @@ function saveAutoScoreCheckboxPhasa() {
   }
 };
 function openDiscordService() {
-  window.open("https://discord.gg/9qapnUDKsW",'_blank');
+  window.open("https://" + "discord.gg/" + "GFEV2FJzMq",'_blank');
 };
 const fpsDisplay = document.getElementById('fpsDisplay');
 let frameCount = 0;
@@ -3035,7 +3035,7 @@ const slidepilotimages = [
   'Mobius.png','Nighthawk.png','Ning.png','Norma.png','Opal.png','Purity.png',
   'RED.png','Riko.png','Rom.png','Serena.png','Shin.png','Silver Deacon.png',
   'Tarantula.png','Vanessa.png','Villar.png','Vita.png','Yang.png','Yulia.png',
-  'Yutong.png','Zoe'
+  'Yutong.png','Zoe.png'
 ];
 const basePathPilot = 'index_data/textures/images/views/def_pilot/';
 const pilotcontent = document.getElementById('pilotcontent');
@@ -3411,6 +3411,28 @@ function openShopModalTickets() {
   var ticketTab = document.getElementById("goldsLang");
   modal.style.display = "flex";
   ticketTab.click();
+  defaultClickSound();
+};
+function openGachaWindow() {
+  document.getElementById('gachaContent').style.display = 'block';
+  document.getElementById("mechaDefaultEvent").click();
+  document.getElementById('menu').style.display = 'none';
+  if (!mechaInterval) {
+    mechaInterval = setInterval(changeBackgroundMecha, 5000);
+  }
+  if (!pilotInterval) {
+    pilotInterval = setInterval(changeBackgroundPilot, 5000);
+  }
+  defaultClickSound();
+};
+function closeGachaWindow() {
+  handleInterval();
+  document.getElementById('gachaContent').style.display = 'none';
+  clearInterval(mechaInterval);
+  clearInterval(pilotInterval);
+  mechaInterval = null;
+  pilotInterval = null;
+  menuPauseWalkSound();
   defaultClickSound();
 };
 window.oncontextmenu = function() {

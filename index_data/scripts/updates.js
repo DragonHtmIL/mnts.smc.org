@@ -1,6 +1,6 @@
 
-let basicVersion = "1.3.5-v2";
-let dateVersion = "[26/12/2025]";
+let basicVersion = "1.3.6-v2";
+let dateVersion = "[28/12/2025]";
 function markUpdateReaded() {
   var modal = document.getElementById("updateModal");
   modal.style.display = "none";
