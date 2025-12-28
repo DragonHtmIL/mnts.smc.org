@@ -1360,7 +1360,7 @@
           <div id="tools" class="content" style="display: none;">
             <button onclick="document.getElementById('updateModal').style.display='block';defaultClickSound();" class="menu-btn update-notice" id="noticeUpLang">...</button>
             <button onclick="document.getElementById('shopPlace').style.display='flex';defaultClickSound();" class="menu-btn shop-window" id="shopWindowLang">...</button>
-            <button onclick="document.getElementById('gachaContent').style.display='block';document.getElementById('menu').style.display='none';setInterval(changeBackgroundMecha, 5000);setInterval(changeBackgroundPilot, 5000);defaultClickSound();" class="menu-btn gacha-window" id="gachaWindowLang">...</button>
+            <button onclick="openGachaWindow();" class="menu-btn gacha-window" id="gachaWindowLang">...</button>
           </div>
           <input type="submit" id="defaultSettings" onclick="alertReloadLater();" value="..." />
           <input type="submit" id="applySettings" onclick="applySettings();" value="..." />
@@ -2253,7 +2253,7 @@
         </div>
       </div>
       <div class="footer" id="gachaFooter">
-        <button class="close-gacha" id="closeGacha" onclick="handleInterval();document.getElementById('gachaContent').style.display='none';clearInterval(changeBackgroundMecha);clearInterval(changeBackgroundPilot);menuPauseWalkSound();defaultClickSound();">...</button>
+        <button class="close-gacha" id="closeGacha" onclick="closeGachaWindow();">...</button>
       </div>
       <audio id="btnPress" src="index_data/audio/interface/gacha/press_btn.wav"></audio>
     </div>
