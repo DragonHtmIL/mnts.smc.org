@@ -106,7 +106,8 @@ const assets = {
     "img_069",
     "img_070",
     "img_071",
-    "img_072"
+    "img_072",
+    "img_073"
   ],
   foods: [
     "alpha_coin",
@@ -225,6 +226,7 @@ const assets = {
     "exit",
     "first_modal_bg",
     "floor",
+    "gacha",
     "hard_on",
     "hell_on",
     "htp_button",
@@ -246,6 +248,7 @@ const assets = {
     "mini_modal",
     "mini_modal_close",
     "minus_cube",
+    "more_in_menu",
     "nav_menu",
     "normal_on",
     "notice",
