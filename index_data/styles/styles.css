@@ -3396,7 +3396,7 @@ p {
 }
 .tab-gallery {
   width: 95px;
-  height: 100vw;
+  height: 100vh;
   display: flex;
   flex-wrap: wrap;
   background-image: var(--tabs-continer);
