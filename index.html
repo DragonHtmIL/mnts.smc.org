@@ -1665,542 +1665,6 @@
           <button class="header-btns" id="pilotInventory" onclick="document.getElementById('collectionCenter').style.display='block';document.getElementById('pilotCollectionGallery').click();checkObtineds();">P</button>
         </div>
       </div>
-      <div class="collection-center" id="collectionCenter">
-        <span class="close-full-window" onclick="document.getElementById('collectionCenter').style.display='none';closeModalSound();"></span>
-        <div class="tab-gallery">
-          <button class="collectiontab mecha-gallery" onclick="openCollection(event, 'mechaGallery');selectionSound();" id="mechaCollectionGallery">...</button>
-          <button class="collectiontab pilot-gallery" onclick="openCollection(event, 'pilotGallery');selectionSound();" id="pilotCollectionGallery">...</button>
-        </div>
-        <div class="collection-continer" id="mechaGallery">
-          <div class="items-title name-akashic">...</div>
-          <div class="gallery-card default" onclick="showMechaAkashic();">
-            <div class="item-image akashic locked" id="imgLockAkashic"></div>
-            <div class="class ddd locked" id="classesAkashic"></div>
-            <div class="name akashic name-akashic">...</div>
-          </div>
-          <hr>
-          <div class="items-title name-alborada">...</div>
-          <div class="gallery-card default" onclick="showMechaAlborada();">
-            <div class="item-image alborada locked" id="imgLockAlborada"></div>
-            <div class="class ddd locked" id="classesAlborada"></div>
-            <div class="name alborada name-alborada">...</div>
-          </div>
-          <hr>
-          <div class="items-title name-andromeda">...</div>
-          <div class="gallery-card default" onclick="showMechaAndromeda();">
-            <div class="item-image andromeda locked" id="imgLockAndromeda"></div>
-            <div class="class ddd locked" id="classesAndromeda"></div>
-            <div class="name andromeda name-andromeda">...</div>
-          </div>
-          <hr>
-          <div class="items-title name-arthur">...</div>
-          <div class="gallery-card default" onclick="showMechaArthur();">
-            <div class="item-image arthur locked" id="imgLockArthur"></div>
-            <div class="class ddd locked" id="classesArthur"></div>
-            <div class="name arthur name-arthur">...</div>
-          </div>
-          <hr>
-          <div class="items-title name-aurora">...</div>
-          <div class="gallery-card default" onclick="showMechaAurora();">
-            <div class="item-image aurora locked" id="imgLockAurora"></div>
-            <div class="class ddd locked" id="classesAurora"></div>
-            <div class="name aurora name-aurora">...</div>
-          </div>
-          <hr>
-          <div class="items-title name-boltus">...</div>
-          <div class="gallery-card default" onclick="showMechaBoltus();">
-            <div class="item-image boltus locked" id="imgLockBoltus"></div>
-            <div class="class ddd locked" id="classesBoltus"></div>
-            <div class="name boltus name-boltus">...</div>
-          </div>
-          <hr>
-          <div class="items-title name-caramel">...</div>
-          <div class="gallery-card default" onclick="showMechaCaramel();">
-            <div class="item-image caramel locked" id="imgLockCaramel"></div>
-            <div class="class ddd locked" id="classesCaramel"></div>
-            <div class="name caramel name-caramel">...</div>
-          </div>
-          <hr>
-          <div class="items-title name-death-knell">...</div>
-          <div class="gallery-card default" onclick="showMechaDeathKnell();">
-            <div class="item-image death-knell locked" id="imgLockDeathKnell"></div>
-            <div class="class ddd locked" id="classesDeathKnell"></div>
-            <div class="name death-knell name-death-knell">...</div>
-          </div>
-          <hr>
-          <div class="items-title name-doomlight">...</div>
-          <div class="gallery-card default" onclick="showMechaDoomlight();">
-            <div class="item-image doomlight locked" id="imgLockDoomlight"></div>
-            <div class="class ddd locked" id="classesDoomlight"></div>
-            <div class="name doomlight name-doomlight">...</div>
-          </div>
-          <hr>
-          <div class="items-title name-dreadwolf">...</div>
-          <div class="gallery-card default" onclick="showMechaDreadwolf();">
-            <div class="item-image dreadwolf locked" id="imgLockDreadwolf"></div>
-            <div class="class ddd locked" id="classesDreadwolf"></div>
-            <div class="name dreadwolf name-dreadwolf">...</div>
-          </div>
-          <hr>
-          <div class="items-title name-firefox">...</div>
-          <div class="gallery-card default" onclick="showMechaFirefox();">
-            <div class="item-image firefox locked" id="imgLockFirefox"></div>
-            <div class="class ddd locked" id="classesFirefox"></div>
-            <div class="name firefox name-firefox">...</div>
-          </div>
-          <hr>
-          <div class="items-title name-firestar">...</div>
-          <div class="gallery-card default" onclick="showMechaFirestar();">
-            <div class="item-image firestar locked" id="imgLockFirestar"></div>
-            <div class="class ddd locked" id="classesFirestar"></div>
-            <div class="name firestar name-firestar">...</div>
-          </div>
-          <hr>
-          <div class="items-title name-flamenco">...</div>
-          <div class="gallery-card default" onclick="showMechaFlamenco();">
-            <div class="item-image flamenco locked" id="imgLockFlamenco"></div>
-            <div class="class ddd locked" id="classesFlamenco"></div>
-            <div class="name flamenco name-flamenco">...</div>
-          </div>
-          <hr>
-          <div class="items-title name-gabriel">...</div>
-          <div class="gallery-card default" onclick="showMechaGabriel();">
-            <div class="item-image gabriel locked" id="imgLockGabriel"></div>
-            <div class="class ddd locked" id="classesGabriel"></div>
-            <div class="name gabriel name-gabriel">...</div>
-          </div>
-          <hr>
-          <div class="items-title name-gaia">...</div>
-          <div class="gallery-card default" onclick="showMechaGaia();">
-            <div class="item-image gaia locked" id="imgLockGaia"></div>
-            <div class="class ddd locked" id="classesGaia"></div>
-            <div class="name gaia name-gaia">...</div>
-          </div>
-          <hr>
-          <div class="items-title name-guerilla-hunter">...</div>
-          <div class="gallery-card default" onclick="showMechaGuerillaHunter();">
-            <div class="item-image guerilla-hunter locked" id="imgLockGuerillaHunter"></div>
-            <div class="class ddd locked" id="classesGuerillaHunter"></div>
-            <div class="name guerilla-hunter name-guerilla-hunter">...</div>
-          </div>
-          <hr>
-          <div class="items-title name-hotsteel">...</div>
-          <div class="gallery-card default" onclick="showMechaHotsteel();">
-            <div class="item-image hotsteel locked" id="imgLockHotsteel"></div>
-            <div class="class ddd locked" id="classesHotsteel"></div>
-            <div class="name hotsteel name-hotsteel">...</div>
-          </div>
-          <hr>
-          <div class="items-title name-hurricane">...</div>
-          <div class="gallery-card default" onclick="showMechaHurricane();">
-            <div class="item-image hurricane locked" id="imgLockHurricane"></div>
-            <div class="class ddd locked" id="classesHurricane"></div>
-            <div class="name hurricane name-hurricane">...</div>
-          </div>
-          <hr>
-          <div class="items-title name-jojo">...</div>
-          <div class="gallery-card default" onclick="showMechaJOJO();">
-            <div class="item-image jojo locked" id="imgLockJOJO"></div>
-            <div class="class ddd locked" id="classesJOJO"></div>
-            <div class="name jojo name-jojo">...</div>
-          </div>
-          <hr>
-          <div class="items-title name-lancelot">...</div>
-          <div class="gallery-card default" onclick="showMechaLancelot();">
-            <div class="item-image lancelot locked" id="imgLockLancelot"></div>
-            <div class="class ddd locked" id="classesLancelot"></div>
-            <div class="name lancelot name-lancelot">...</div>
-          </div>
-          <hr>
-          <div class="items-title name-michael">...</div>
-          <div class="gallery-card default" onclick="showMechaMichael();">
-            <div class="item-image michael locked" id="imgLockMichael"></div>
-            <div class="class ddd locked" id="classesMichael"></div>
-            <div class="name michael name-michael">...</div>
-          </div>
-          <hr>
-          <div class="items-title name-moon-rabbit">...</div>
-          <div class="gallery-card default" onclick="showMechaMoonRabbit();">
-            <div class="item-image moon-rabbit locked" id="imgLockMoonRabbit"></div>
-            <div class="class ddd locked" id="classesMoonRabbit"></div>
-            <div class="name moon-rabbit name-moon-rabbit">...</div>
-          </div>
-          <hr>
-          <div class="items-title name-nebula">...</div>
-          <div class="gallery-card default" onclick="showMechaNebula();">
-            <div class="item-image nebula locked" id="imgLockNebula"></div>
-            <div class="class ddd locked" id="classesNebula"></div>
-            <div class="name nebula name-nebula">...</div>
-          </div>
-          <hr>
-          <div class="items-title name-neutron-star">...</div>
-          <div class="gallery-card default" onclick="showMechaNeutronStar();">
-            <div class="item-image neutron-star locked" id="imgLockNeutronStar"></div>
-            <div class="class ddd locked" id="classesNeutronStar"></div>
-            <div class="name neutron-star name-neutron-star">...</div>
-          </div>
-          <hr>
-          <div class="items-title name-northern-knight">...</div>
-          <div class="gallery-card default" onclick="showMechaNorthernKnight();">
-            <div class="item-image northern-knight locked" id="imgLockNorthernKnight"></div>
-            <div class="class ddd locked" id="classesNorthernKnight"></div>
-            <div class="name northern-knight name-northern-knight">...</div>
-          </div>
-          <hr>
-          <div class="items-title name-pulsar">...</div>
-          <div class="gallery-card default" onclick="showMechaPulsar();">
-            <div class="item-image pulsar locked" id="imgLockPulsar"></div>
-            <div class="class ddd locked" id="classesPulsar"></div>
-            <div class="name pulsar name-pulsar">...</div>
-          </div>
-          <hr>
-          <div class="items-title name-ranger">...</div>
-          <div class="gallery-card default" onclick="showMechaRanger();">
-            <div class="item-image ranger locked" id="imgLockRanger"></div>
-            <div class="class ddd locked" id="classesRanger"></div>
-            <div class="name ranger name-ranger">...</div>
-          </div>
-          <hr>
-          <div class="items-title name-raven">...</div>
-          <div class="gallery-card default" onclick="showMechaRaven();">
-            <div class="item-image raven locked" id="imgLockRaven"></div>
-            <div class="class ddd locked" id="classesRaven"></div>
-            <div class="name raven name-raven">...</div>
-          </div>
-          <hr>
-          <div class="items-title name-shiranui">...</div>
-          <div class="gallery-card default" onclick="showMechaShiranui();">
-            <div class="item-image shiranui locked" id="imgLockShiranui"></div>
-            <div class="class ddd locked" id="classesShiranui"></div>
-            <div class="name shiranui name-shiranui">...</div>
-          </div>
-          <hr>
-          <div class="items-title name-skyfall">...</div>
-          <div class="gallery-card default" onclick="showMechaSkyfall();">
-            <div class="item-image skyfall locked" id="imgLockSkyfall"></div>
-            <div class="class ddd locked" id="classesSkyfall"></div>
-            <div class="name skyfall name-skyfall">...</div>
-          </div>
-          <hr>
-          <div class="items-title name-skyfire">...</div>
-          <div class="gallery-card default" onclick="showMechaSkyfire();">
-            <div class="item-image skyfire locked" id="imgLockSkyfire"></div>
-            <div class="class ddd locked" id="classesSkyfire"></div>
-            <div class="name skyfire name-skyfire">...</div>
-          </div>
-          <hr>
-          <div class="items-title name-skylark">...</div>
-          <div class="gallery-card default" onclick="showMechaSkylark();">
-            <div class="item-image skylark locked" id="imgLockSkylark"></div>
-            <div class="class ddd locked" id="classesSkylark"></div>
-            <div class="name skylark name-skylark">...</div>
-          </div>
-          <hr>
-          <div class="items-title name-snow-mirage">...</div>
-          <div class="gallery-card default" onclick="showMechaSnowMirage();">
-            <div class="item-image snow-mirage locked" id="imgLockSnowMirage"></div>
-            <div class="class ddd locked" id="classesSnowMirage"></div>
-            <div class="name snow-mirage name-snow-mirage">...</div>
-          </div>
-          <hr>
-          <div class="items-title name-tempest">...</div>
-          <div class="gallery-card default" onclick="showMechaTempest();">
-            <div class="item-image tempest locked" id="imgLockTempest"></div>
-            <div class="class ddd locked" id="classesTempest"></div>
-            <div class="name tempest name-tempest">...</div>
-          </div>
-          <hr>
-          <div class="items-title name-trio-of-enders">...</div>
-          <div class="gallery-card default" onclick="showMechaTrioofEnders();">
-            <div class="item-image trio-of-enders locked" id="imgLockTrioofEnders"></div>
-            <div class="class ddd locked" id="classesTrioofEnders"></div>
-            <div class="name trio-of-enders name-trio-of-enders">...</div>
-          </div>
-          <hr>
-          <div class="items-title name-twilight">...</div>
-          <div class="gallery-card default" onclick="showMechaTwilight();">
-            <div class="item-image twilight locked" id="imgLockTwilight"></div>
-            <div class="class ddd locked" id="classesTwilight"></div>
-            <div class="name twilight name-twilight">...</div>
-          </div>
-          <hr>
-          <div class="items-title name-ventorus">...</div>
-          <div class="gallery-card default" onclick="showMechaVentorus();">
-            <div class="item-image ventorus locked" id="imgLockVentorus"></div>
-            <div class="class ddd locked" id="classesVentorus"></div>
-            <div class="name ventorus name-ventorus">...</div>
-          </div>
-          <hr>
-        </div>
-        <div class="collection-continer" id="pilotGallery">
-          <div class="items-title name-aya">...</div>
-          <div class="gallery-card default" onclick="showPilotAya();">
-            <div class="item-image aya locked" id="imgLockAya"></div>
-            <div class="class ddd locked" id="classesAya"></div>
-            <div class="name aya name-aya">...</div>
-          </div>
-          <hr>
-          <div class="items-title name-belladonna">...</div>
-          <div class="gallery-card default" onclick="showPilotBelladonna();">
-            <div class="item-image belladonna locked" id="imgLockBelladonna"></div>
-            <div class="class ddd locked" id="classesBelladonna"></div>
-            <div class="name belladonna name-belladonna">...</div>
-          </div>
-          <hr>
-          <div class="items-title name-cyrus">...</div>
-          <div class="gallery-card default" onclick="showPilotCyrus();">
-            <div class="item-image cyrus locked" id="imgLockCyrus"></div>
-            <div class="class ddd locked" id="classesCyrus"></div>
-            <div class="name cyrus name-cyrus">...</div>
-          </div>
-          <hr>
-          <div class="items-title name-fran">...</div>
-          <div class="gallery-card default" onclick="showPilotFran();">
-            <div class="item-image fran locked" id="imgLockFran"></div>
-            <div class="class ddd locked" id="classesFran"></div>
-            <div class="name fran name-fran">...</div>
-          </div>
-          <hr>
-          <div class="items-title name-furanku">...</div>
-          <div class="gallery-card default" onclick="showPilotFuranku();">
-            <div class="item-image furanku locked" id="imgLockFuranku"></div>
-            <div class="class ddd locked" id="classesFuranku"></div>
-            <div class="name furanku name-furanku">...</div>
-          </div>
-          <hr>
-          <div class="items-title name-iori">...</div>
-          <div class="gallery-card default" onclick="showPilotIori();">
-            <div class="item-image iori locked" id="imgLockIori"></div>
-            <div class="class ddd locked" id="classesIori"></div>
-            <div class="name iori name-iori">...</div>
-          </div>
-          <hr>
-          <div class="items-title name-ivan">...</div>
-          <div class="gallery-card default" onclick="showPilotIvan();">
-            <div class="item-image ivan locked" id="imgLockIvan"></div>
-            <div class="class ddd locked" id="classesIvan"></div>
-            <div class="name ivan name-ivan">...</div>
-          </div>
-          <hr>
-          <div class="items-title name-jaka">...</div>
-          <div class="gallery-card default" onclick="showPilotJaka();">
-            <div class="item-image jaka locked" id="imgLockJaka"></div>
-            <div class="class ddd locked" id="classesJaka"></div>
-            <div class="name jaka name-jaka">...</div>
-          </div>
-          <hr>
-          <div class="items-title name-jiu-chong">...</div>
-          <div class="gallery-card default" onclick="showPilotJiuChong();">
-            <div class="item-image jiu-chong locked" id="imgLockJiuChong"></div>
-            <div class="class ddd locked" id="classesJiuChong"></div>
-            <div class="name jiu-chong name-jiu-chong">...</div>
-          </div>
-          <hr>
-          <div class="items-title name-joanna">...</div>
-          <div class="gallery-card default" onclick="showPilotJoanna();">
-            <div class="item-image joanna locked" id="imgLockJoanna"></div>
-            <div class="class ddd locked" id="classesJoanna"></div>
-            <div class="name joanna name-joanna">...</div>
-          </div>
-          <hr>
-          <div class="items-title name-kije">...</div>
-          <div class="gallery-card default" onclick="showPilotKije();">
-            <div class="item-image kije locked" id="imgLockKije"></div>
-            <div class="class ddd locked" id="classesKije"></div>
-            <div class="name kije name-kije">...</div>
-          </div>
-          <hr>
-          <div class="items-title name-kikina">...</div>
-          <div class="gallery-card default" onclick="showPilotKikina();">
-            <div class="item-image kikina locked" id="imgLockKikina"></div>
-            <div class="class ddd locked" id="classesKikina"></div>
-            <div class="name kikina name-kikina">...</div>
-          </div>
-          <hr>
-          <div class="items-title name-kizuna-ai">...</div>
-          <div class="gallery-card default" onclick="showPilotKizunaAi();">
-            <div class="item-image kizuna-ai locked" id="imgLockKizunaAi"></div>
-            <div class="class ddd locked" id="classesKizunaAi"></div>
-            <div class="name kizuna-ai name-kizuna-ai">...</div>
-          </div>
-          <hr>
-          <div class="items-title name-lillian">...</div>
-          <div class="gallery-card default" onclick="showPilotLillian();">
-            <div class="item-image lillian locked" id="imgLockLillian"></div>
-            <div class="class ddd locked" id="classesLillian"></div>
-            <div class="name lillian name-lillian">...</div>
-          </div>
-          <hr>
-          <div class="items-title name-lysa">...</div>
-          <div class="gallery-card default" onclick="showPilotLysa();">
-            <div class="item-image lysa locked" id="imgLockLysa"></div>
-            <div class="class ddd locked" id="classesLysa"></div>
-            <div class="name lysa name-lysa">...</div>
-          </div>
-          <hr>
-          <div class="items-title name-matilda">...</div>
-          <div class="gallery-card default" onclick="showPilotMatilda();">
-            <div class="item-image matilda locked" id="imgLockMatilda"></div>
-            <div class="class ddd locked" id="classesMatilda"></div>
-            <div class="name matilda name-matilda">...</div>
-          </div>
-          <hr>
-          <div class="items-title name-mia">...</div>
-          <div class="gallery-card default" onclick="showPilotMia();">
-            <div class="item-image mia locked" id="imgLockMia"></div>
-            <div class="class ddd locked" id="classesMia"></div>
-            <div class="name mia name-mia">...</div>
-          </div>
-          <hr>
-          <div class="items-title name-mila">...</div>
-          <div class="gallery-card default" onclick="showPilotMila();">
-            <div class="item-image mila locked" id="imgLockMila"></div>
-            <div class="class ddd locked" id="classesMila"></div>
-            <div class="name mila name-mila">...</div>
-          </div>
-          <hr>
-          <div class="items-title name-mobius">...</div>
-          <div class="gallery-card default" onclick="showPilotMobius();">
-            <div class="item-image mobius locked" id="imgLockMobius"></div>
-            <div class="class ddd locked" id="classesMobius"></div>
-            <div class="name mobius name-mobius">...</div>
-          </div>
-          <hr>
-          <div class="items-title name-nighthawk">...</div>
-          <div class="gallery-card default" onclick="showPilotNighthawk();">
-            <div class="item-image nighthawk locked" id="imgLockNighthawk"></div>
-            <div class="class ddd locked" id="classesNighthawk"></div>
-            <div class="name nighthawk name-nighthawk">...</div>
-          </div>
-          <hr>
-          <div class="items-title name-ning">...</div>
-          <div class="gallery-card default" onclick="showPilotNing();">
-            <div class="item-image ning locked" id="imgLockNing"></div>
-            <div class="class ddd locked" id="classesNing"></div>
-            <div class="name ning name-ning">...</div>
-          </div>
-          <hr>
-          <div class="items-title name-norma">...</div>
-          <div class="gallery-card default" onclick="showPilotNorma();">
-            <div class="item-image norma locked" id="imgLockNorma"></div>
-            <div class="class ddd locked" id="classesNorma"></div>
-            <div class="name norma name-norma">...</div>
-          </div>
-          <hr>
-          <div class="items-title name-opal">...</div>
-          <div class="gallery-card default" onclick="showPilotOpal();">
-            <div class="item-image opal locked" id="imgLockOpal"></div>
-            <div class="class ddd locked" id="classesOpal"></div>
-            <div class="name opal name-opal">...</div>
-          </div>
-          <hr>
-          <div class="items-title name-purity">...</div>
-          <div class="gallery-card default" onclick="showPilotPurity();">
-            <div class="item-image purity locked" id="imgLockPurity"></div>
-            <div class="class ddd locked" id="classesPurity"></div>
-            <div class="name purity name-purity">...</div>
-          </div>
-          <hr>
-          <div class="items-title name-r-e-d">...</div>
-          <div class="gallery-card default" onclick="showPilotRED();">
-            <div class="item-image red locked" id="imgLockRED"></div>
-            <div class="class ddd locked" id="classesRED"></div>
-            <div class="name red name-r-e-d">...</div>
-          </div>
-          <hr>
-          <div class="items-title name-riko">...</div>
-          <div class="gallery-card default" onclick="showPilotRiko();">
-            <div class="item-image riko locked" id="imgLockRiko"></div>
-            <div class="class ddd locked" id="classesRiko"></div>
-            <div class="name riko name-riko">...</div>
-          </div>
-          <hr>
-          <div class="items-title name-rom">...</div>
-          <div class="gallery-card default" onclick="showPilotRom();">
-            <div class="item-image rom locked" id="imgLockRom"></div>
-            <div class="class ddd locked" id="classesRom"></div>
-            <div class="name rom name-rom">...</div>
-          </div>
-          <hr>
-          <div class="items-title name-serena">...</div>
-          <div class="gallery-card default" onclick="showPilotSerena();">
-            <div class="item-image serena locked" id="imgLockSerena"></div>
-            <div class="class ddd locked" id="classesSerena"></div>
-            <div class="name serena name-serena">...</div>
-          </div>
-          <hr>
-          <div class="items-title name-shin">...</div>
-          <div class="gallery-card default" onclick="showPilotShin();">
-            <div class="item-image shin locked" id="imgLockShin"></div>
-            <div class="class ddd locked" id="classesShin"></div>
-            <div class="name shin name-shin">...</div>
-          </div>
-          <hr>
-          <div class="items-title name-silver-deacon">...</div>
-          <div class="gallery-card default" onclick="showPilotSilverDeacon();">
-            <div class="item-image silver-deacon locked" id="imgLockSilverDeacon"></div>
-            <div class="class ddd locked" id="classesSilverDeacon"></div>
-            <div class="name silver-deacon name-silver-deacon">...</div>
-          </div>
-          <hr>
-          <div class="items-title name-tarantula">...</div>
-          <div class="gallery-card default" onclick="showPilotTarantula();">
-            <div class="item-image tarantula locked" id="imgLockTarantula"></div>
-            <div class="class ddd locked" id="classesTarantula"></div>
-            <div class="name tarantula name-tarantula"></div>
-          </div>
-          <hr>
-          <div class="items-title name-vanessa">...</div>
-          <div class="gallery-card default" onclick="showPilotVanessa();">
-            <div class="item-image vanessa locked" id="imgLockVanessa"></div>
-            <div class="class ddd locked" id="classesVanessa"></div>
-            <div class="name vanessa name-vanessa">...</div>
-          </div>
-          <hr>
-          <div class="items-title name-villar">...</div>
-          <div class="gallery-card default" onclick="showPilotVillar();">
-            <div class="item-image villar locked" id="imgLockVillar"></div>
-            <div class="class ddd locked" id="classesVillar"></div>
-            <div class="name villar name-villar">...</div>
-          </div>
-          <hr>
-          <div class="items-title name-vita">...</div>
-          <div class="gallery-card default" onclick="showPilotVita();">
-            <div class="item-image vita locked" id="imgLockVita"></div>
-            <div class="class ddd locked" id="classesVita"></div>
-            <div class="name vita name-vita">...</div>
-          </div>
-          <hr>
-          <div class="items-title name-yang">...</div>
-          <div class="gallery-card default" onclick="showPilotYang();">
-            <div class="item-image yang locked" id="imgLockYang"></div>
-            <div class="class ddd locked" id="classesYang"></div>
-            <div class="name yang name-yang">...</div>
-          </div>
-          <hr>
-          <div class="items-title name-yulia">...</div>
-          <div class="gallery-card default" onclick="showPilotYulia();">
-            <div class="item-image yulia locked" id="imgLockYulia"></div>
-            <div class="class ddd locked" id="classesYulia"></div>
-            <div class="name yulia name-yulia">...</div>
-          </div>
-          <hr>
-          <div class="items-title name-yutong">...</div>
-          <div class="gallery-card default" onclick="showPilotYutong();">
-            <div class="item-image yutong locked" id="imgLockYutong"></div>
-            <div class="class ddd locked" id="classesYutong"></div>
-            <div class="name yutong name-yutong">...</div>
-          </div>
-          <hr>
-          <div class="items-title name-zoe">...</div>
-          <div class="gallery-card default" onclick="showPilotZoe();">
-            <div class="item-image zoe locked" id="imgLockZoe"></div>
-            <div class="class ddd locked" id="classesZoe"></div>
-            <div class="name zoe name-zoe">...</div>
-          </div>
-          <hr>
-        </div>
-      </div>
       <div class="tab-gacha">
         <button class="gachatab mechatab" onclick="openGacha(event, 'mechacontent');selectionSound();" id="mechaDefaultEvent">...</button>
         <button class="gachatab pilottab" onclick="openGacha(event, 'pilotcontent');selectionSound();" id="pilotDefaultEvent">...</button>
@@ -2256,6 +1720,542 @@
         <button class="close-gacha" id="closeGacha" onclick="closeGachaWindow();">...</button>
       </div>
       <audio id="btnPress" src="index_data/audio/interface/gacha/press_btn.wav"></audio>
+    </div>
+    <div class="collection-center" id="collectionCenter">
+      <span class="close-full-window" onclick="document.getElementById('collectionCenter').style.display='none';closeModalSound();"></span>
+      <div class="tab-gallery">
+        <button class="collectiontab mecha-gallery" onclick="openCollection(event, 'mechaGallery');selectionSound();" id="mechaCollectionGallery">...</button>
+        <button class="collectiontab pilot-gallery" onclick="openCollection(event, 'pilotGallery');selectionSound();" id="pilotCollectionGallery">...</button>
+      </div>
+      <div class="collection-continer" id="mechaGallery">
+        <div class="items-title name-akashic">...</div>
+        <div class="gallery-card default" onclick="showMechaAkashic();">
+          <div class="item-image akashic locked" id="imgLockAkashic"></div>
+          <div class="class ddd locked" id="classesAkashic"></div>
+          <div class="name akashic name-akashic">...</div>
+        </div>
+        <hr>
+        <div class="items-title name-alborada">...</div>
+        <div class="gallery-card default" onclick="showMechaAlborada();">
+          <div class="item-image alborada locked" id="imgLockAlborada"></div>
+          <div class="class ddd locked" id="classesAlborada"></div>
+          <div class="name alborada name-alborada">...</div>
+        </div>
+        <hr>
+        <div class="items-title name-andromeda">...</div>
+        <div class="gallery-card default" onclick="showMechaAndromeda();">
+          <div class="item-image andromeda locked" id="imgLockAndromeda"></div>
+          <div class="class ddd locked" id="classesAndromeda"></div>
+          <div class="name andromeda name-andromeda">...</div>
+        </div>
+        <hr>
+        <div class="items-title name-arthur">...</div>
+        <div class="gallery-card default" onclick="showMechaArthur();">
+          <div class="item-image arthur locked" id="imgLockArthur"></div>
+          <div class="class ddd locked" id="classesArthur"></div>
+          <div class="name arthur name-arthur">...</div>
+        </div>
+        <hr>
+        <div class="items-title name-aurora">...</div>
+        <div class="gallery-card default" onclick="showMechaAurora();">
+          <div class="item-image aurora locked" id="imgLockAurora"></div>
+          <div class="class ddd locked" id="classesAurora"></div>
+          <div class="name aurora name-aurora">...</div>
+        </div>
+        <hr>
+        <div class="items-title name-boltus">...</div>
+        <div class="gallery-card default" onclick="showMechaBoltus();">
+          <div class="item-image boltus locked" id="imgLockBoltus"></div>
+          <div class="class ddd locked" id="classesBoltus"></div>
+          <div class="name boltus name-boltus">...</div>
+        </div>
+        <hr>
+        <div class="items-title name-caramel">...</div>
+        <div class="gallery-card default" onclick="showMechaCaramel();">
+          <div class="item-image caramel locked" id="imgLockCaramel"></div>
+          <div class="class ddd locked" id="classesCaramel"></div>
+          <div class="name caramel name-caramel">...</div>
+        </div>
+        <hr>
+        <div class="items-title name-death-knell">...</div>
+        <div class="gallery-card default" onclick="showMechaDeathKnell();">
+          <div class="item-image death-knell locked" id="imgLockDeathKnell"></div>
+          <div class="class ddd locked" id="classesDeathKnell"></div>
+          <div class="name death-knell name-death-knell">...</div>
+        </div>
+        <hr>
+        <div class="items-title name-doomlight">...</div>
+        <div class="gallery-card default" onclick="showMechaDoomlight();">
+          <div class="item-image doomlight locked" id="imgLockDoomlight"></div>
+          <div class="class ddd locked" id="classesDoomlight"></div>
+          <div class="name doomlight name-doomlight">...</div>
+        </div>
+        <hr>
+        <div class="items-title name-dreadwolf">...</div>
+        <div class="gallery-card default" onclick="showMechaDreadwolf();">
+          <div class="item-image dreadwolf locked" id="imgLockDreadwolf"></div>
+          <div class="class ddd locked" id="classesDreadwolf"></div>
+          <div class="name dreadwolf name-dreadwolf">...</div>
+        </div>
+        <hr>
+        <div class="items-title name-firefox">...</div>
+        <div class="gallery-card default" onclick="showMechaFirefox();">
+          <div class="item-image firefox locked" id="imgLockFirefox"></div>
+          <div class="class ddd locked" id="classesFirefox"></div>
+          <div class="name firefox name-firefox">...</div>
+        </div>
+        <hr>
+        <div class="items-title name-firestar">...</div>
+        <div class="gallery-card default" onclick="showMechaFirestar();">
+          <div class="item-image firestar locked" id="imgLockFirestar"></div>
+          <div class="class ddd locked" id="classesFirestar"></div>
+          <div class="name firestar name-firestar">...</div>
+        </div>
+        <hr>
+        <div class="items-title name-flamenco">...</div>
+        <div class="gallery-card default" onclick="showMechaFlamenco();">
+          <div class="item-image flamenco locked" id="imgLockFlamenco"></div>
+          <div class="class ddd locked" id="classesFlamenco"></div>
+          <div class="name flamenco name-flamenco">...</div>
+        </div>
+        <hr>
+        <div class="items-title name-gabriel">...</div>
+        <div class="gallery-card default" onclick="showMechaGabriel();">
+          <div class="item-image gabriel locked" id="imgLockGabriel"></div>
+          <div class="class ddd locked" id="classesGabriel"></div>
+          <div class="name gabriel name-gabriel">...</div>
+        </div>
+        <hr>
+        <div class="items-title name-gaia">...</div>
+        <div class="gallery-card default" onclick="showMechaGaia();">
+          <div class="item-image gaia locked" id="imgLockGaia"></div>
+          <div class="class ddd locked" id="classesGaia"></div>
+          <div class="name gaia name-gaia">...</div>
+        </div>
+        <hr>
+        <div class="items-title name-guerilla-hunter">...</div>
+        <div class="gallery-card default" onclick="showMechaGuerillaHunter();">
+          <div class="item-image guerilla-hunter locked" id="imgLockGuerillaHunter"></div>
+          <div class="class ddd locked" id="classesGuerillaHunter"></div>
+          <div class="name guerilla-hunter name-guerilla-hunter">...</div>
+        </div>
+        <hr>
+        <div class="items-title name-hotsteel">...</div>
+        <div class="gallery-card default" onclick="showMechaHotsteel();">
+          <div class="item-image hotsteel locked" id="imgLockHotsteel"></div>
+          <div class="class ddd locked" id="classesHotsteel"></div>
+          <div class="name hotsteel name-hotsteel">...</div>
+        </div>
+        <hr>
+        <div class="items-title name-hurricane">...</div>
+        <div class="gallery-card default" onclick="showMechaHurricane();">
+          <div class="item-image hurricane locked" id="imgLockHurricane"></div>
+          <div class="class ddd locked" id="classesHurricane"></div>
+          <div class="name hurricane name-hurricane">...</div>
+        </div>
+        <hr>
+        <div class="items-title name-jojo">...</div>
+        <div class="gallery-card default" onclick="showMechaJOJO();">
+          <div class="item-image jojo locked" id="imgLockJOJO"></div>
+          <div class="class ddd locked" id="classesJOJO"></div>
+          <div class="name jojo name-jojo">...</div>
+        </div>
+        <hr>
+        <div class="items-title name-lancelot">...</div>
+        <div class="gallery-card default" onclick="showMechaLancelot();">
+          <div class="item-image lancelot locked" id="imgLockLancelot"></div>
+          <div class="class ddd locked" id="classesLancelot"></div>
+          <div class="name lancelot name-lancelot">...</div>
+        </div>
+        <hr>
+        <div class="items-title name-michael">...</div>
+        <div class="gallery-card default" onclick="showMechaMichael();">
+          <div class="item-image michael locked" id="imgLockMichael"></div>
+          <div class="class ddd locked" id="classesMichael"></div>
+          <div class="name michael name-michael">...</div>
+        </div>
+        <hr>
+        <div class="items-title name-moon-rabbit">...</div>
+        <div class="gallery-card default" onclick="showMechaMoonRabbit();">
+          <div class="item-image moon-rabbit locked" id="imgLockMoonRabbit"></div>
+          <div class="class ddd locked" id="classesMoonRabbit"></div>
+          <div class="name moon-rabbit name-moon-rabbit">...</div>
+        </div>
+        <hr>
+        <div class="items-title name-nebula">...</div>
+        <div class="gallery-card default" onclick="showMechaNebula();">
+          <div class="item-image nebula locked" id="imgLockNebula"></div>
+          <div class="class ddd locked" id="classesNebula"></div>
+          <div class="name nebula name-nebula">...</div>
+        </div>
+        <hr>
+        <div class="items-title name-neutron-star">...</div>
+        <div class="gallery-card default" onclick="showMechaNeutronStar();">
+          <div class="item-image neutron-star locked" id="imgLockNeutronStar"></div>
+          <div class="class ddd locked" id="classesNeutronStar"></div>
+          <div class="name neutron-star name-neutron-star">...</div>
+        </div>
+        <hr>
+        <div class="items-title name-northern-knight">...</div>
+        <div class="gallery-card default" onclick="showMechaNorthernKnight();">
+          <div class="item-image northern-knight locked" id="imgLockNorthernKnight"></div>
+          <div class="class ddd locked" id="classesNorthernKnight"></div>
+          <div class="name northern-knight name-northern-knight">...</div>
+        </div>
+        <hr>
+        <div class="items-title name-pulsar">...</div>
+        <div class="gallery-card default" onclick="showMechaPulsar();">
+          <div class="item-image pulsar locked" id="imgLockPulsar"></div>
+          <div class="class ddd locked" id="classesPulsar"></div>
+          <div class="name pulsar name-pulsar">...</div>
+        </div>
+        <hr>
+        <div class="items-title name-ranger">...</div>
+        <div class="gallery-card default" onclick="showMechaRanger();">
+          <div class="item-image ranger locked" id="imgLockRanger"></div>
+          <div class="class ddd locked" id="classesRanger"></div>
+          <div class="name ranger name-ranger">...</div>
+        </div>
+        <hr>
+        <div class="items-title name-raven">...</div>
+        <div class="gallery-card default" onclick="showMechaRaven();">
+          <div class="item-image raven locked" id="imgLockRaven"></div>
+          <div class="class ddd locked" id="classesRaven"></div>
+          <div class="name raven name-raven">...</div>
+        </div>
+        <hr>
+        <div class="items-title name-shiranui">...</div>
+        <div class="gallery-card default" onclick="showMechaShiranui();">
+          <div class="item-image shiranui locked" id="imgLockShiranui"></div>
+          <div class="class ddd locked" id="classesShiranui"></div>
+          <div class="name shiranui name-shiranui">...</div>
+        </div>
+        <hr>
+        <div class="items-title name-skyfall">...</div>
+        <div class="gallery-card default" onclick="showMechaSkyfall();">
+          <div class="item-image skyfall locked" id="imgLockSkyfall"></div>
+          <div class="class ddd locked" id="classesSkyfall"></div>
+          <div class="name skyfall name-skyfall">...</div>
+        </div>
+        <hr>
+        <div class="items-title name-skyfire">...</div>
+        <div class="gallery-card default" onclick="showMechaSkyfire();">
+          <div class="item-image skyfire locked" id="imgLockSkyfire"></div>
+          <div class="class ddd locked" id="classesSkyfire"></div>
+          <div class="name skyfire name-skyfire">...</div>
+        </div>
+        <hr>
+        <div class="items-title name-skylark">...</div>
+        <div class="gallery-card default" onclick="showMechaSkylark();">
+          <div class="item-image skylark locked" id="imgLockSkylark"></div>
+          <div class="class ddd locked" id="classesSkylark"></div>
+          <div class="name skylark name-skylark">...</div>
+        </div>
+        <hr>
+        <div class="items-title name-snow-mirage">...</div>
+        <div class="gallery-card default" onclick="showMechaSnowMirage();">
+          <div class="item-image snow-mirage locked" id="imgLockSnowMirage"></div>
+          <div class="class ddd locked" id="classesSnowMirage"></div>
+          <div class="name snow-mirage name-snow-mirage">...</div>
+        </div>
+        <hr>
+        <div class="items-title name-tempest">...</div>
+        <div class="gallery-card default" onclick="showMechaTempest();">
+          <div class="item-image tempest locked" id="imgLockTempest"></div>
+          <div class="class ddd locked" id="classesTempest"></div>
+          <div class="name tempest name-tempest">...</div>
+        </div>
+        <hr>
+        <div class="items-title name-trio-of-enders">...</div>
+        <div class="gallery-card default" onclick="showMechaTrioofEnders();">
+          <div class="item-image trio-of-enders locked" id="imgLockTrioofEnders"></div>
+          <div class="class ddd locked" id="classesTrioofEnders"></div>
+          <div class="name trio-of-enders name-trio-of-enders">...</div>
+        </div>
+        <hr>
+        <div class="items-title name-twilight">...</div>
+        <div class="gallery-card default" onclick="showMechaTwilight();">
+          <div class="item-image twilight locked" id="imgLockTwilight"></div>
+          <div class="class ddd locked" id="classesTwilight"></div>
+          <div class="name twilight name-twilight">...</div>
+        </div>
+        <hr>
+        <div class="items-title name-ventorus">...</div>
+        <div class="gallery-card default" onclick="showMechaVentorus();">
+          <div class="item-image ventorus locked" id="imgLockVentorus"></div>
+          <div class="class ddd locked" id="classesVentorus"></div>
+          <div class="name ventorus name-ventorus">...</div>
+        </div>
+        <hr>
+      </div>
+      <div class="collection-continer" id="pilotGallery">
+        <div class="items-title name-aya">...</div>
+        <div class="gallery-card default" onclick="showPilotAya();">
+          <div class="item-image aya locked" id="imgLockAya"></div>
+          <div class="class ddd locked" id="classesAya"></div>
+          <div class="name aya name-aya">...</div>
+        </div>
+        <hr>
+        <div class="items-title name-belladonna">...</div>
+        <div class="gallery-card default" onclick="showPilotBelladonna();">
+          <div class="item-image belladonna locked" id="imgLockBelladonna"></div>
+          <div class="class ddd locked" id="classesBelladonna"></div>
+          <div class="name belladonna name-belladonna">...</div>
+        </div>
+        <hr>
+        <div class="items-title name-cyrus">...</div>
+        <div class="gallery-card default" onclick="showPilotCyrus();">
+          <div class="item-image cyrus locked" id="imgLockCyrus"></div>
+          <div class="class ddd locked" id="classesCyrus"></div>
+          <div class="name cyrus name-cyrus">...</div>
+        </div>
+        <hr>
+        <div class="items-title name-fran">...</div>
+        <div class="gallery-card default" onclick="showPilotFran();">
+          <div class="item-image fran locked" id="imgLockFran"></div>
+          <div class="class ddd locked" id="classesFran"></div>
+          <div class="name fran name-fran">...</div>
+        </div>
+        <hr>
+        <div class="items-title name-furanku">...</div>
+        <div class="gallery-card default" onclick="showPilotFuranku();">
+          <div class="item-image furanku locked" id="imgLockFuranku"></div>
+          <div class="class ddd locked" id="classesFuranku"></div>
+          <div class="name furanku name-furanku">...</div>
+        </div>
+        <hr>
+        <div class="items-title name-iori">...</div>
+        <div class="gallery-card default" onclick="showPilotIori();">
+          <div class="item-image iori locked" id="imgLockIori"></div>
+          <div class="class ddd locked" id="classesIori"></div>
+          <div class="name iori name-iori">...</div>
+        </div>
+        <hr>
+        <div class="items-title name-ivan">...</div>
+        <div class="gallery-card default" onclick="showPilotIvan();">
+          <div class="item-image ivan locked" id="imgLockIvan"></div>
+          <div class="class ddd locked" id="classesIvan"></div>
+          <div class="name ivan name-ivan">...</div>
+        </div>
+        <hr>
+        <div class="items-title name-jaka">...</div>
+        <div class="gallery-card default" onclick="showPilotJaka();">
+          <div class="item-image jaka locked" id="imgLockJaka"></div>
+          <div class="class ddd locked" id="classesJaka"></div>
+          <div class="name jaka name-jaka">...</div>
+        </div>
+        <hr>
+        <div class="items-title name-jiu-chong">...</div>
+        <div class="gallery-card default" onclick="showPilotJiuChong();">
+          <div class="item-image jiu-chong locked" id="imgLockJiuChong"></div>
+          <div class="class ddd locked" id="classesJiuChong"></div>
+          <div class="name jiu-chong name-jiu-chong">...</div>
+        </div>
+        <hr>
+        <div class="items-title name-joanna">...</div>
+        <div class="gallery-card default" onclick="showPilotJoanna();">
+          <div class="item-image joanna locked" id="imgLockJoanna"></div>
+          <div class="class ddd locked" id="classesJoanna"></div>
+          <div class="name joanna name-joanna">...</div>
+        </div>
+        <hr>
+        <div class="items-title name-kije">...</div>
+        <div class="gallery-card default" onclick="showPilotKije();">
+          <div class="item-image kije locked" id="imgLockKije"></div>
+          <div class="class ddd locked" id="classesKije"></div>
+          <div class="name kije name-kije">...</div>
+        </div>
+        <hr>
+        <div class="items-title name-kikina">...</div>
+        <div class="gallery-card default" onclick="showPilotKikina();">
+          <div class="item-image kikina locked" id="imgLockKikina"></div>
+          <div class="class ddd locked" id="classesKikina"></div>
+          <div class="name kikina name-kikina">...</div>
+        </div>
+        <hr>
+        <div class="items-title name-kizuna-ai">...</div>
+        <div class="gallery-card default" onclick="showPilotKizunaAi();">
+          <div class="item-image kizuna-ai locked" id="imgLockKizunaAi"></div>
+          <div class="class ddd locked" id="classesKizunaAi"></div>
+          <div class="name kizuna-ai name-kizuna-ai">...</div>
+        </div>
+        <hr>
+        <div class="items-title name-lillian">...</div>
+        <div class="gallery-card default" onclick="showPilotLillian();">
+          <div class="item-image lillian locked" id="imgLockLillian"></div>
+          <div class="class ddd locked" id="classesLillian"></div>
+          <div class="name lillian name-lillian">...</div>
+        </div>
+        <hr>
+        <div class="items-title name-lysa">...</div>
+        <div class="gallery-card default" onclick="showPilotLysa();">
+          <div class="item-image lysa locked" id="imgLockLysa"></div>
+          <div class="class ddd locked" id="classesLysa"></div>
+          <div class="name lysa name-lysa">...</div>
+        </div>
+        <hr>
+        <div class="items-title name-matilda">...</div>
+        <div class="gallery-card default" onclick="showPilotMatilda();">
+          <div class="item-image matilda locked" id="imgLockMatilda"></div>
+          <div class="class ddd locked" id="classesMatilda"></div>
+          <div class="name matilda name-matilda">...</div>
+        </div>
+        <hr>
+        <div class="items-title name-mia">...</div>
+        <div class="gallery-card default" onclick="showPilotMia();">
+          <div class="item-image mia locked" id="imgLockMia"></div>
+          <div class="class ddd locked" id="classesMia"></div>
+          <div class="name mia name-mia">...</div>
+        </div>
+        <hr>
+        <div class="items-title name-mila">...</div>
+        <div class="gallery-card default" onclick="showPilotMila();">
+          <div class="item-image mila locked" id="imgLockMila"></div>
+          <div class="class ddd locked" id="classesMila"></div>
+          <div class="name mila name-mila">...</div>
+        </div>
+        <hr>
+        <div class="items-title name-mobius">...</div>
+        <div class="gallery-card default" onclick="showPilotMobius();">
+          <div class="item-image mobius locked" id="imgLockMobius"></div>
+          <div class="class ddd locked" id="classesMobius"></div>
+          <div class="name mobius name-mobius">...</div>
+        </div>
+        <hr>
+        <div class="items-title name-nighthawk">...</div>
+        <div class="gallery-card default" onclick="showPilotNighthawk();">
+          <div class="item-image nighthawk locked" id="imgLockNighthawk"></div>
+          <div class="class ddd locked" id="classesNighthawk"></div>
+          <div class="name nighthawk name-nighthawk">...</div>
+        </div>
+        <hr>
+        <div class="items-title name-ning">...</div>
+        <div class="gallery-card default" onclick="showPilotNing();">
+          <div class="item-image ning locked" id="imgLockNing"></div>
+          <div class="class ddd locked" id="classesNing"></div>
+          <div class="name ning name-ning">...</div>
+        </div>
+        <hr>
+        <div class="items-title name-norma">...</div>
+        <div class="gallery-card default" onclick="showPilotNorma();">
+          <div class="item-image norma locked" id="imgLockNorma"></div>
+          <div class="class ddd locked" id="classesNorma"></div>
+          <div class="name norma name-norma">...</div>
+        </div>
+        <hr>
+        <div class="items-title name-opal">...</div>
+        <div class="gallery-card default" onclick="showPilotOpal();">
+          <div class="item-image opal locked" id="imgLockOpal"></div>
+          <div class="class ddd locked" id="classesOpal"></div>
+          <div class="name opal name-opal">...</div>
+        </div>
+        <hr>
+        <div class="items-title name-purity">...</div>
+        <div class="gallery-card default" onclick="showPilotPurity();">
+          <div class="item-image purity locked" id="imgLockPurity"></div>
+          <div class="class ddd locked" id="classesPurity"></div>
+          <div class="name purity name-purity">...</div>
+        </div>
+        <hr>
+        <div class="items-title name-r-e-d">...</div>
+        <div class="gallery-card default" onclick="showPilotRED();">
+          <div class="item-image red locked" id="imgLockRED"></div>
+          <div class="class ddd locked" id="classesRED"></div>
+          <div class="name red name-r-e-d">...</div>
+        </div>
+        <hr>
+        <div class="items-title name-riko">...</div>
+        <div class="gallery-card default" onclick="showPilotRiko();">
+          <div class="item-image riko locked" id="imgLockRiko"></div>
+          <div class="class ddd locked" id="classesRiko"></div>
+          <div class="name riko name-riko">...</div>
+        </div>
+        <hr>
+        <div class="items-title name-rom">...</div>
+        <div class="gallery-card default" onclick="showPilotRom();">
+          <div class="item-image rom locked" id="imgLockRom"></div>
+          <div class="class ddd locked" id="classesRom"></div>
+          <div class="name rom name-rom">...</div>
+        </div>
+        <hr>
+        <div class="items-title name-serena">...</div>
+        <div class="gallery-card default" onclick="showPilotSerena();">
+          <div class="item-image serena locked" id="imgLockSerena"></div>
+          <div class="class ddd locked" id="classesSerena"></div>
+          <div class="name serena name-serena">...</div>
+        </div>
+        <hr>
+        <div class="items-title name-shin">...</div>
+        <div class="gallery-card default" onclick="showPilotShin();">
+          <div class="item-image shin locked" id="imgLockShin"></div>
+          <div class="class ddd locked" id="classesShin"></div>
+          <div class="name shin name-shin">...</div>
+        </div>
+        <hr>
+        <div class="items-title name-silver-deacon">...</div>
+        <div class="gallery-card default" onclick="showPilotSilverDeacon();">
+          <div class="item-image silver-deacon locked" id="imgLockSilverDeacon"></div>
+          <div class="class ddd locked" id="classesSilverDeacon"></div>
+          <div class="name silver-deacon name-silver-deacon">...</div>
+        </div>
+        <hr>
+        <div class="items-title name-tarantula">...</div>
+        <div class="gallery-card default" onclick="showPilotTarantula();">
+          <div class="item-image tarantula locked" id="imgLockTarantula"></div>
+          <div class="class ddd locked" id="classesTarantula"></div>
+          <div class="name tarantula name-tarantula"></div>
+        </div>
+        <hr>
+        <div class="items-title name-vanessa">...</div>
+        <div class="gallery-card default" onclick="showPilotVanessa();">
+          <div class="item-image vanessa locked" id="imgLockVanessa"></div>
+          <div class="class ddd locked" id="classesVanessa"></div>
+          <div class="name vanessa name-vanessa">...</div>
+        </div>
+        <hr>
+        <div class="items-title name-villar">...</div>
+        <div class="gallery-card default" onclick="showPilotVillar();">
+          <div class="item-image villar locked" id="imgLockVillar"></div>
+          <div class="class ddd locked" id="classesVillar"></div>
+          <div class="name villar name-villar">...</div>
+        </div>
+        <hr>
+        <div class="items-title name-vita">...</div>
+        <div class="gallery-card default" onclick="showPilotVita();">
+          <div class="item-image vita locked" id="imgLockVita"></div>
+          <div class="class ddd locked" id="classesVita"></div>
+          <div class="name vita name-vita">...</div>
+        </div>
+        <hr>
+        <div class="items-title name-yang">...</div>
+        <div class="gallery-card default" onclick="showPilotYang();">
+          <div class="item-image yang locked" id="imgLockYang"></div>
+          <div class="class ddd locked" id="classesYang"></div>
+          <div class="name yang name-yang">...</div>
+        </div>
+        <hr>
+        <div class="items-title name-yulia">...</div>
+        <div class="gallery-card default" onclick="showPilotYulia();">
+          <div class="item-image yulia locked" id="imgLockYulia"></div>
+          <div class="class ddd locked" id="classesYulia"></div>
+          <div class="name yulia name-yulia">...</div>
+        </div>
+        <hr>
+        <div class="items-title name-yutong">...</div>
+        <div class="gallery-card default" onclick="showPilotYutong();">
+          <div class="item-image yutong locked" id="imgLockYutong"></div>
+          <div class="class ddd locked" id="classesYutong"></div>
+          <div class="name yutong name-yutong">...</div>
+        </div>
+        <hr>
+        <div class="items-title name-zoe">...</div>
+        <div class="gallery-card default" onclick="showPilotZoe();">
+          <div class="item-image zoe locked" id="imgLockZoe"></div>
+          <div class="class ddd locked" id="classesZoe"></div>
+          <div class="name zoe name-zoe">...</div>
+        </div>
+        <hr>
+      </div>
     </div>
     <textarea name="text-area" id="textarea" style="position:fixed;display:none;"></textarea>
     <!-- Audio sources -->
