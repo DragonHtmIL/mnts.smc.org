@@ -41,7 +41,7 @@
       <div id="accenter" class="modal" style="display: none;">
         <div class="modal-content">
           <div id="profileTitleLang">...</div>
-          <button class="reset-button" id="closeacc" onclick="document.getElementById('accenter').style.display='none';handleInterval();closeModalSound();"></button>
+          <button class="reset-button" id="closeacc" onclick="document.getElementById('accenter').style.display='none';handleIntervalModals();closeModalSound();"></button>
           <div class="in-modal-content" id="accontent">
             <div class="left-modal-acc">
               <div id="leagueImage"></div>
@@ -1403,7 +1403,7 @@
         </div>
       </div>
       <div class="sub-controls" id="controller">
-        <div id="btn000" onclick="document.getElementById('chechboxPausing').click();" ondblclick="return false;">#</div>
+        <div id="btn000" onclick="checkMenusOpen();" ondblclick="return false;">#</div>
         <div onclick="document.getElementById('up').click();defaultClickSound();" id="btn001">#</div>
         <div onclick="document.getElementById('navBtn').click();" id="btn002" ondblclick="return false;">#</div>
         <div onclick="document.getElementById('left').click();defaultClickSound();" id="btn003">#</div>
@@ -1647,7 +1647,7 @@
     </div>
     <div class="modal" id="shopPlace" style="display: none;">
       <div class="modal-shop-content">
-        <span class="shop-close" onclick="document.getElementById('shopPlace').style.display='none';handleInterval();menuPauseWalkSound();closeModalSound();"></span>
+        <span class="shop-close" onclick="document.getElementById('shopPlace').style.display='none';handleIntervalModals();menuPauseWalkSound();closeModalSound();"></span>
         <div class="shop-title" id="shopTitle">...</div>
         <div class="shop-tabs-container">
           <button id="goldsLang">...</button>
@@ -1661,8 +1661,8 @@
       <div class="header">
         <div class="game-logo"></div>
         <div class="navigationinventory">
-          <button class="header-btns" id="mechaInventory" onclick="document.getElementById('collectionCenter').style.display='block';document.getElementById('mechaCollectionGallery').click();checkObtineds();">M</button>
-          <button class="header-btns" id="pilotInventory" onclick="document.getElementById('collectionCenter').style.display='block';document.getElementById('pilotCollectionGallery').click();checkObtineds();">P</button>
+          <button class="header-btns" id="mechaInventory" onclick="document.getElementById('gachaContent').style.display='none';document.getElementById('collectionCenter').style.display='block';document.getElementById('mechaCollectionGallery').click();checkObtineds();">M</button>
+          <button class="header-btns" id="pilotInventory" onclick="document.getElementById('gachaContent').style.display='none';document.getElementById('collectionCenter').style.display='block';document.getElementById('pilotCollectionGallery').click();checkObtineds();">P</button>
         </div>
       </div>
       <div class="tab-gacha">
@@ -1701,19 +1701,11 @@
           <source id="sourceGachaAudionation" src="index_data/audio/interface/gacha/Gacha aud start.mp3" type="audio/mp3">
         </audio>
         <div id="animationBlocker"></div>
-        <button id="skipAnim" class="skip-vid-gacha" onclick="skipVidAnim();defaultClickSound();">Skip</button>
+        <button id="skipAnim" class="skip-vid-gacha" onclick="skipVidAnim();defaultClickSound();" style="display: none;">Skip</button>
       </div>
       <div id="gachaPrises" class="gacha-praices">
         <div class="prices-container" id="prices-display">
           <div id="continueBtn"></div>
-        </div>
-      </div>
-      <div class="item-info" id="itemInfo">
-        <span class="close-full-window" onclick="document.getElementById('itemInfo').style.display='none';defaultClickSound();"></span>
-        <div class="item-name" id="itemName"></div>
-        <div class="image-preview" id="itemImage"></div>
-        <div class="side-content">
-          <div id="textInfoBelong"></div>
         </div>
       </div>
       <div class="footer" id="gachaFooter">
@@ -1721,8 +1713,8 @@
       </div>
       <audio id="btnPress" src="index_data/audio/interface/gacha/press_btn.wav"></audio>
     </div>
-    <div class="collection-center" id="collectionCenter">
-      <span class="close-full-window" onclick="document.getElementById('collectionCenter').style.display='none';closeModalSound();"></span>
+    <div class="collection-center" id="collectionCenter" style="display: none;">
+      <span class="close-full-window" onclick="document.getElementById('collectionCenter').style.display='none';document.getElementById('gachaContent').style.display='block';closeModalSound();"></span>
       <div class="tab-gallery">
         <button class="collectiontab mecha-gallery" onclick="openCollection(event, 'mechaGallery');selectionSound();" id="mechaCollectionGallery">...</button>
         <button class="collectiontab pilot-gallery" onclick="openCollection(event, 'pilotGallery');selectionSound();" id="pilotCollectionGallery">...</button>
@@ -2074,9 +2066,9 @@
         </div>
         <hr>
         <div class="items-title name-kizuna-ai">...</div>
-        <div class="gallery-card default" onclick="showPilotKizunaAi();">
+        <div class="gallery-card a-rank" onclick="showPilotKizunaAi();">
           <div class="item-image kizuna-ai locked" id="imgLockKizunaAi"></div>
-          <div class="class ddd locked" id="classesKizunaAi"></div>
+          <div class="class aaa locked" id="classesKizunaAi"></div>
           <div class="name kizuna-ai name-kizuna-ai">...</div>
         </div>
         <hr>
@@ -2165,9 +2157,9 @@
         </div>
         <hr>
         <div class="items-title name-riko">...</div>
-        <div class="gallery-card default" onclick="showPilotRiko();">
+        <div class="gallery-card a-rank" onclick="showPilotRiko();">
           <div class="item-image riko locked" id="imgLockRiko"></div>
-          <div class="class ddd locked" id="classesRiko"></div>
+          <div class="class aaa locked" id="classesRiko"></div>
           <div class="name riko name-riko">...</div>
         </div>
         <hr>
@@ -2255,6 +2247,14 @@
           <div class="name zoe name-zoe">...</div>
         </div>
         <hr>
+      </div>
+    </div>
+    <div class="item-info" id="itemInfo" style="display: none;">
+      <span class="close-full-window" onclick="document.getElementById('itemInfo').style.display='none';document.getElementById('collectionCenter').style.display='block';defaultClickSound();"></span>
+      <div class="item-name" id="itemName"></div>
+      <div class="image-preview" id="itemImage"></div>
+      <div class="side-content">
+        <div id="textInfoBelong"></div>
       </div>
     </div>
     <textarea name="text-area" id="textarea" style="position:fixed;display:none;"></textarea>
