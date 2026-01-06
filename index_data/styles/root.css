@@ -258,11 +258,13 @@
   --tabs-continer: url('../textures/gui/tabs_continer.png');
   --coll-bg: url('../textures/gui/collection_bg.png');
   --bg-coll-d: url('../textures/gui/inventory/item_bg_1d.png');
+  --bg-coll-a: url('../textures/gui/inventory/item_bg_4a.png');
   --skip-vid: url('../textures/gui/skip.png');
   --shop-bg: url('../textures/gui/shop_window.png');
   --shop-button: url('../textures/gui/shop_tab_vertical.png');
   --class-locked: url('../textures/gui/inventory/lock.png');
-  --def-class-icon: url('../textures/gui/inventory/item_ic_1d.png');
+  --d-class-icon: url('../textures/gui/inventory/item_ic_1d.png');
+  --a-class-icon: url('../textures/gui/inventory/item_ic_4a.png');
   --gacha-window: url('../textures/gui/gacha.png');
   --more-icon: url('../textures/gui/more_in_menu.png');
   --shop-window: url('../textures/gui/icon_shop.png');
