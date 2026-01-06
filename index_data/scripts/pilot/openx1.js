@@ -18,8 +18,7 @@ function summonPilotOne() {
   const gachaAnim = document.getElementById("sourceGachaAnimation");
   const gachaAud = document.getElementById("gachaAudionation");
   const animationBlocker = document.getElementById("animationBlocker");
-  const randomNumber = Math.random() * pilots.length;
-  let pilot;
+  const skipBtn = document.getElementById("skipAnim");
   // for pressed button
   document.getElementById("btnPress").currentTime = 0;
   document.getElementById("oponebtnDefPilotOne").disabled = true;
@@ -45,25 +44,30 @@ function summonPilotOne() {
     gachaAud.onloadeddata = () => {
       gachaAud.play();
     };
+    skipBtn.style.display = "block";
   },5150);
-  // Simplified rarity system (adjust probabilities as needed)
-  if (randomNumber < 1.00) {
-    pilot = pilots.find(c => c.rarity === Math.floor(Math.random() * pilots.length));
-  } else {
-    pilot = pilots.find(c => c.rarity === Math.floor(Math.random() * pilots.length));
+  // generate 1 pilots
+  const results = [];
+  let containsArank = false;
+  const availableCommons = pilots.filter(p => p.rarity === "Default");
+  const availableArank = pilots.filter(p => p.rarity === "Arank");
+  for (let i = 0; i < 1; i++) {
+    let pilot;
+    const roll = Math.random();
+    if (roll < 0.97) {
+      pilot = availableCommons[Math.floor(Math.random() * availableCommons.length)];
+    } else {
+      pilot = availableArank[Math.floor(Math.random() * availableArank.length)];
+    }
+    if (!pilot) {
+      pilot = availableCommons[0]; 
+    }
+    if (pilot.rarity === "Arank") containsArank = true;
+    results.push(pilot);
   }
-  if (!pilot) {
-     // Handle cases where a pilot of a certain rarity is not found.
-     const availableCommons = pilots.filter(c => c.rarity === "Default");
-     pilot = availableCommons[Math.floor(Math.random() * availableCommons.length)];
-     if(!pilot) {
-        console.error("No pilots found for summoning!");
-        return;
-     }
-  }
-  displaypilot(pilot);
+  results.forEach(pilot => displaypilot(pilot, containsArank));
 }
-function displaypilot(pilot) {
+function displaypilot(pilot, isArankPull) {
   const displayArea = document.getElementById("prices-display");
   const pilotDiv = document.createElement("div");
   const imgBlocker = document.createElement("div");
@@ -71,6 +75,7 @@ function displaypilot(pilot) {
   const gachaAnim = document.getElementById("sourceGachaAnimation");
   const gachaAud = document.getElementById("gachaAudionation");
   const animationBlocker = document.getElementById("animationBlocker");
+  const skipBtn = document.getElementById("skipAnim");
   pilotDiv.classList.add("card-continer");
   pilotDiv.classList.add(pilot.rarity);
   pilotDiv.innerHTML = `
@@ -78,13 +83,13 @@ function displaypilot(pilot) {
   `;
   imgBlocker.classList.add("img-blocker");
   localStorage.setItem(pilot.name, "geted");
-  gachaAnim.addEventListener('click', function() {
-    if(pilotDiv.classList.contains("Default")) {
+  gachaAnim.onclick = function() {
+    if(isArankPull) {
+      gachaAnim.src = "index_data/animations/gacha/gacha_vid_pressed_3a.gif";
+    } else {
       gachaAnim.src = "index_data/animations/gacha/gacha_vid_pressed_0d.gif";
-      gachaAud.src = "index_data/audio/interface/gacha/Gacha aud pressed.mp3";
-    }else{
-      console.log("class is not defined for video src display");
-    }
+    };
+    gachaAud.src = "index_data/audio/interface/gacha/Gacha aud pressed.mp3";
     defaultClickSound();
     gachaAud.onloadeddata = () => {
       gachaAud.play();
@@ -96,16 +101,20 @@ function displaypilot(pilot) {
       animFrame.style.display = "none";
       document.getElementById("gachaPrises").style.display = "block";
     },2550);
-  });
+  };
   document.getElementById("gachaPrises").addEventListener('click', function() {
     if(summonType === "m1") {
-      displayArea.removeChild(mechaDiv);
-      document.getElementById("oponebtnDefMechaOne").classList.remove("btnclicked");
-      document.getElementById("oponebtnDefMechaOne").disabled = false;
+      if (displayArea.contains(mechaDiv)) {
+        displayArea.removeChild(mechaDiv);
+      }
+      document.getElementById("oponebtnDefPilotOne").classList.remove("btnclicked");
+      document.getElementById("oponebtnDefPilotOne").disabled = false;
       document.getElementById("gachaPrises").style.display = "none";
     }else
     if(summonType === "p1") {
-      displayArea.removeChild(pilotDiv);
+      if (displayArea.contains(pilotDiv)) {
+        displayArea.removeChild(pilotDiv);
+      }
       document.getElementById("oponebtnDefPilotOne").classList.remove("btnclicked");
       document.getElementById("oponebtnDefPilotOne").disabled = false;
       document.getElementById("gachaPrises").style.display = "none";
@@ -126,6 +135,7 @@ function displaypilot(pilot) {
     }
     defaultClickSound();
     summonType = "none";
+    skipBtn.style.display = "none";
   });
   displayArea.appendChild(pilotDiv);
   pilotDiv.appendChild(imgBlocker);

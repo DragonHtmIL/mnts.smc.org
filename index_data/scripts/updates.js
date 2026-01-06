@@ -1,15 +1,15 @@
 
-let basicVersion = "1.3.7-v2";
-let dateVersion = "[29/12/2025]";
+let basicVersion = "1.3.8-v2";
+let dateVersion = "[06/01/2026]";
 function markUpdateReaded() {
   var modal = document.getElementById("updateModal");
   modal.style.display = "none";
   localStorage.setItem("updateRead", basicVersion);
 }
 
-let text0en = "Some Fixes." + "<br>";
-let text0ru = "Некоторые Исправления." + "<br>";
-let text0he = "כמה תיקונים." + "<br>";
+let text0en = "Some Fixes for Android users." + "<br>";
+let text0ru = "Некоторые Исправления для ползеватели Android." + "<br>";
+let text0he = "כמה תיקונים למשתמשי Android." + "<br>";
 
 let text1en = "" + "<br>";
 let text1ru = "" + "<br>";

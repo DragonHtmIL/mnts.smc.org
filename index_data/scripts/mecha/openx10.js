@@ -18,6 +18,7 @@ function summonMechaTen() {
   const gachaAnim = document.getElementById("sourceGachaAnimation");
   const gachaAud = document.getElementById("gachaAudionation");
   const animationBlocker = document.getElementById("animationBlocker");
+  const skipBtn = document.getElementById("skipAnim");
   // for pressed button
   document.getElementById("btnPress").currentTime = 0;
   document.getElementById("oponebtnDefMechaTen").disabled = true;
@@ -43,6 +44,7 @@ function summonMechaTen() {
     gachaAud.onloadeddata = () => {
       gachaAud.play();
     };
+    skipBtn.style.display = "block";
   },5150);
   // generate 10 mechas
   const results = [];
@@ -70,6 +72,7 @@ function displaymecha(mecha) {
   const gachaAnim = document.getElementById("sourceGachaAnimation");
   const gachaAud = document.getElementById("gachaAudionation");
   const animationBlocker = document.getElementById("animationBlocker");
+  const skipBtn = document.getElementById("skipAnim");
   mechaDiv.classList.add("card-continer");
   mechaDiv.classList.add(mecha.rarity);
   mechaDiv.innerHTML = `
@@ -125,6 +128,7 @@ function displaymecha(mecha) {
     }
     defaultClickSound();
     summonType = "none";
+    skipBtn.style.display = "none";
   });
   displayArea.appendChild(mechaDiv);
   mechaDiv.appendChild(imgBlocker);

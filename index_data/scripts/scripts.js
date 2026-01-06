@@ -14943,68 +14943,66 @@ function goToScrollToIdElementMusicLang() {
   element.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
 };
 function alertAccept() {
-  var alertcancel = document.getElementById("alertLeft");
-  var alertconfirm = document.getElementById("alertRight");
-  document.getElementById("alert").style.display = "block";
-  if(localStorage.getItem("lang") === "en") {
-    document.getElementById("alertText").innerHTML = "Needed your accepting to load audio resources for disable audio delay.";
-    alertconfirm.value = "Confirm";
-  }else
-  if(localStorage.getItem("lang") === "ru") {
-    document.getElementById("alertText").innerHTML = "Необходимо ваше согласие на загрузку аудио ресурсов для отключения задержки аудио.";
-    alertconfirm.value = "Подтвердить";
-  }else
-  if(localStorage.getItem("lang") === "he") {
-    document.getElementById("alertText").innerHTML = "נדרשת הסכמתך לטעינת משאבי אודיו לצורך השבתת עיכוב של האודיו.";
-    document.getElementById("alertText").style.direction = "rtl";
-    alertconfirm.value = "אישור";
-  }
-  alertcancel.value = "...";
-  alertcancel.style.display = "none";
-  alertcancel.onclick = function() {
-  if(localStorage.getItem("lang") === "en") {
-    alert("How you clicked on it!?");
-  }else
-  if(localStorage.getItem("lang") === "ru") {
-    alert("Как вы нажали на это!?");
-  }else
-  if(localStorage.getItem("lang") === "he") {
-    alert("איך לחצתם על זה!?");
-  }
+  const alertBox = document.getElementById("alert");
+  const alertText = document.getElementById("alertText");
+  const alertCancel = document.getElementById("alertLeft");
+  const alertConfirm = document.getElementById("alertRight");
+  const lang = localStorage.getItem("lang");
+  const texts = {
+    en: {
+      message: "Needed your accepting to load audio resources for disable audio delay.",
+      confirm: "Confirm",
+      loading: "Loading…",
+      cancelMsg: "How you clicked on it!?"
+    },
+    ru: {
+      message: "Необходимо ваше согласие на загрузку аудио ресурсов для отключения задержки аудио.",
+      confirm: "Подтвердить",
+      loading: "Загрузка…",
+      cancelMsg: "Как вы нажали на это!?"
+    },
+    he: {
+      message: "נדרשת הסכמתך לטעינת משאבי אודיו לצורך השבתת עיכוב של האודיו.",
+      confirm: "אישור",
+      loading: "טוען…",
+      cancelMsg: "איך לחצתם על זה!?",
+      rtl: true
+    }
   };
-  alertconfirm.onclick = function() {
+  const t = texts[lang] || texts.en;
+  alertBox.style.display = "block";
+  alertText.textContent = t.message;
+  alertText.style.direction = t.rtl ? "rtl" : "ltr";
+  alertConfirm.value = t.confirm;
+  alertCancel.style.display = "none";
+  alertCancel.value = "...";
+  alertCancel.onclick = () => alert(t.cancelMsg);
+  alertConfirm.onclick = () => {
+    alertConfirm.style.display = "none";
     defaultClickSound();
     musicBackground();
     loadMusicPlay();
     ambientSound();
     checkObtineds();
-    document.getElementById("defaultClickSound").play();
-    document.getElementById("closeSettingsSound").play();
-    document.getElementById("cancelSound").play();
-    document.getElementById("openSettingsSound").play();
-    document.getElementById("selectionSound").play();
-    document.getElementById("itemCollected").play();
-    document.getElementById("closeModalSound").play();
-    if(localStorage.getItem("lang") === "en") {
-      document.getElementById("alertText").innerHTML = "Loading…";
-    }else
-    if(localStorage.getItem("lang") === "ru") {
-      document.getElementById("alertText").innerHTML = "Загрузка…";
-    }else
-    if(localStorage.getItem("lang") === "he") {
-      document.getElementById("alertText").innerHTML = "טוען…";
-      document.getElementById("alertText").style.direction = "rtl";
-    };
-    if(localStorage.getItem("updateRead") === basicVersion) {
-      document.getElementById("updateModal").style.display = "none";
-    }else{
-      document.getElementById("updateModal").style.display = "block";
-    }
-    setTimeout(function() {
-      document.getElementById("alert").style.display = "none";
-      alertcancel.style.display = "inline";
-    },1000);
-  }
+    [
+      "defaultClickSound",
+      "closeSettingsSound",
+      "cancelSound",
+      "openSettingsSound",
+      "selectionSound",
+      "itemCollected",
+      "closeModalSound"
+    ].forEach(id => document.getElementById(id)?.play());
+    alertText.textContent = t.loading;
+    setTimeout(() => {
+      alertBox.style.display = "none";
+      alertCancel.style.display = "inline";
+      document.getElementById("updateModal").style.display =
+        localStorage.getItem("updateRead") === basicVersion
+          ? "none"
+          : "block";
+    }, 1000);
+  };
 };
 function alertDeleteProgress() {
   var alertcancel = document.getElementById("alertLeft");

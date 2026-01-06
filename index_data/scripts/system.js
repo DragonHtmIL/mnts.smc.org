@@ -281,6 +281,8 @@ const changeDirection = e => {
   const win8 = document.getElementById("accenter");
   const win9 = document.getElementById("gachaContent");
   const win10 = document.getElementById("shopPlace");
+  const win11 = document.getElementById("collectionCenter");
+  const win12 = document.getElementById("collectionCenter");
   if(win1.style.display === "none" &&
     win2.style.display === "none" &&
     win3.style.display === "none" &&
@@ -290,7 +292,9 @@ const changeDirection = e => {
     win7.style.display === "none" &&
     win8.style.display === "none" &&
     win9.style.display === "none" &&
-    win10.style.display === "none") {
+    win10.style.display === "none" &&
+    win11.style.display === "none" &&
+    win12.style.display === "none") {
     if(e.key === "ArrowUp" && velocityY != 1) {
       velocityX = 0;
       velocityY = -1;
@@ -374,8 +378,10 @@ const changeDirection = e => {
     win7.style.display === "none" &&
     win8.style.display === "none" &&
     win9.style.display === "none" &&
-    win10.style.display === "none") {
-    console.log("Cannot walk whene any window is opened...");
+    win10.style.display === "none" &&
+    win11.style.display === "none" &&
+    win12.style.display === "none") {
+    console.log("Cannot walk whene any 1 is opened...");
   }else
   if(win1.style.display === "none" &&
     win2.style.display === "block" &&
@@ -386,8 +392,10 @@ const changeDirection = e => {
     win7.style.display === "none" &&
     win8.style.display === "none" &&
     win9.style.display === "none" &&
-    win10.style.display === "none") {
-    console.log("Cannot walk whene any window is opened...");
+    win10.style.display === "none" &&
+    win11.style.display === "none" &&
+    win12.style.display === "none") {
+    console.log("Cannot walk whene any 2 is opened...");
   }else
   if(win1.style.display === "none" &&
     win2.style.display === "none" &&
@@ -398,8 +406,10 @@ const changeDirection = e => {
     win7.style.display === "none" &&
     win8.style.display === "none" &&
     win9.style.display === "none" &&
-    win10.style.display === "none") {
-    console.log("Cannot walk whene any window is opened...");
+    win10.style.display === "none" &&
+    win11.style.display === "none" &&
+    win12.style.display === "none") {
+    console.log("Cannot walk whene any 3 is opened...");
   }else
   if(win1.style.display === "none" &&
     win2.style.display === "none" &&
@@ -410,8 +420,10 @@ const changeDirection = e => {
     win7.style.display === "none" &&
     win8.style.display === "none" &&
     win9.style.display === "none" &&
-    win10.style.display === "none") {
-    console.log("Cannot walk whene any window is opened...");
+    win10.style.display === "none" &&
+    win11.style.display === "none" &&
+    win12.style.display === "none") {
+    console.log("Cannot walk whene any 4 is opened...");
   }else
   if(win1.style.display === "none" &&
     win2.style.display === "none" &&
@@ -422,8 +434,10 @@ const changeDirection = e => {
     win7.style.display === "none" &&
     win8.style.display === "none" &&
     win9.style.display === "none" &&
-    win10.style.display === "none") {
-    console.log("Cannot walk whene any window is opened...");
+    win10.style.display === "none" &&
+    win11.style.display === "none" &&
+    win12.style.display === "none") {
+    console.log("Cannot walk whene any 5 is opened...");
   }else
   if(win1.style.display === "none" &&
     win2.style.display === "none" &&
@@ -434,8 +448,10 @@ const changeDirection = e => {
     win7.style.display === "none" &&
     win8.style.display === "none" &&
     win9.style.display === "none" &&
-    win10.style.display === "none") {
-    console.log("Cannot walk whene any window is opened...");
+    win10.style.display === "none" &&
+    win11.style.display === "none" &&
+    win12.style.display === "none") {
+    console.log("Cannot walk whene any 6 is opened...");
   }else
   if(win1.style.display === "none" &&
     win2.style.display === "none" &&
@@ -446,8 +462,10 @@ const changeDirection = e => {
     win7.style.display === "block" &&
     win8.style.display === "none" &&
     win9.style.display === "none" &&
-    win10.style.display === "none") {
-    console.log("Cannot walk whene any window is opened...");
+    win10.style.display === "none" &&
+    win11.style.display === "none" &&
+    win12.style.display === "none") {
+    console.log("Cannot walk whene any 7 is opened...");
   }else
   if(win1.style.display === "none" &&
     win2.style.display === "none" &&
@@ -458,8 +476,10 @@ const changeDirection = e => {
     win7.style.display === "none" &&
     win8.style.display === "block" &&
     win9.style.display === "none" &&
-    win10.style.display === "none") {
-    console.log("Cannot walk whene any window is opened...");
+    win10.style.display === "none" &&
+    win11.style.display === "none" &&
+    win12.style.display === "none") {
+    console.log("Cannot walk whene any 8 is opened...");
   }else
   if(win1.style.display === "none" &&
     win2.style.display === "none" &&
@@ -470,8 +490,10 @@ const changeDirection = e => {
     win7.style.display === "none" &&
     win8.style.display === "none" &&
     win9.style.display === "block" &&
-    win10.style.display === "none") {
-    console.log("Cannot walk whene any window is opened...");
+    win10.style.display === "none" &&
+    win11.style.display === "none" &&
+    win12.style.display === "none") {
+    console.log("Cannot walk whene any 9 is opened...");
   }else
   if(win1.style.display === "none" &&
     win2.style.display === "none" &&
@@ -482,8 +504,38 @@ const changeDirection = e => {
     win7.style.display === "none" &&
     win8.style.display === "none" &&
     win9.style.display === "none" &&
-    win10.style.display === "flex") {
-    console.log("Cannot walk whene any window is opened...");
+    win10.style.display === "flex" &&
+    win11.style.display === "none" &&
+    win12.style.display === "none") {
+    console.log("Cannot walk whene any 10 is opened...");
+  }else
+  if(win1.style.display === "none" &&
+    win2.style.display === "none" &&
+    win3.style.display === "none" &&
+    win4.style.display === "none" &&
+    win5.style.display === "none" &&
+    win6.style.display === "none" &&
+    win7.style.display === "none" &&
+    win8.style.display === "none" &&
+    win9.style.display === "none" &&
+    win10.style.display === "none" &&
+    win11.style.display === "block" &&
+    win12.style.display === "none") {
+    console.log("Cannot walk whene any 11 is opened...");
+  }else
+  if(win1.style.display === "none" &&
+    win2.style.display === "none" &&
+    win3.style.display === "none" &&
+    win4.style.display === "none" &&
+    win5.style.display === "none" &&
+    win6.style.display === "none" &&
+    win7.style.display === "none" &&
+    win8.style.display === "none" &&
+    win9.style.display === "none" &&
+    win10.style.display === "none" &&
+    win11.style.display === "none" &&
+    win12.style.display === "flex") {
+    console.log("Cannot walk whene any 12 is opened...");
   }
 };
 controls.forEach(button => button.addEventListener("click", () => changeDirection({ key: button.dataset.key })));

@@ -20,6 +20,7 @@ document.getElementById("reset").onclick = function() {
   fireworksIntervalId = setInterval(playFireworksSounds, 1000);
 };
 function pauseGame() {
+  var alert = document.getElementById("alert");
   var checkbox = document.getElementById("chechboxPausing");
   var alertcancel = document.getElementById("alertLeft");
   var alertconfirm = document.getElementById("alertRight");
@@ -28,14 +29,14 @@ function pauseGame() {
     clearInterval(setIntervalId);
     checkbox.classList.add("pauser");
     document.getElementById("btn000").classList.add("pauser");
-    document.getElementById("alert").style.display = "block";
+    alert.style.display = "block";
     alertcancel.value = "...";
     alertcancel.style.display = "none";
     if(localStorage.getItem("lang") === "en") {
       if(navigator.userAgent.match(/mobile|Tablet|iPad|android|bSurface/i)) {
-        document.getElementById("alertText").innerHTML = "Game paused, press ''Continue'' to continue.";
+        document.getElementById("alertText").innerHTML = "Game paused, touch ''Continue'' to continue.";
       }else{
-        document.getElementById("alertText").innerHTML = "Game paused, click ''Continue'' to continue.";
+        document.getElementById("alertText").innerHTML = "Game paused, press ''Continue'' to continue.";
       };
       if(velocityY === -1) {
         document.getElementById("alertText").innerHTML += "<br>" + "You be continue to up.";
@@ -125,10 +126,8 @@ function pauseGame() {
       }else
       if(localStorage.getItem("difficulty") === "hell") {
         setIntervalId = setInterval(initGame, 50);
-      }else{
-        console.log("An error running in this script");
-      }
-      document.getElementById("alert").style.display = "none";
+      };
+      alert.style.display = "none";
       checkbox.classList.remove("pauser");
       document.getElementById("btn000").classList.remove("pauser");
       playActiveMoveSound();
@@ -2226,6 +2225,32 @@ function handleInterval() {
       console.log("An error running with this script")
     }
   }else{
+    if(
+      document.getElementById("collectionCenter").style.display === "none"
+    && document.getElementById("itemInfo").style.display === "none"
+    && document.getElementById("shopPlace").style.display === "none"
+    && document.getElementById("accenter").style.display === "none"
+    && document.getElementById("loseModal").style.display === "none"
+    && document.getElementById("shopPlace").style.display === "none"
+  ) {
+      document.getElementById("chechboxPausing").click();
+    }
+  }
+};
+function handleIntervalModals() {
+  if(velocityX === 0 && velocityY === 0) {
+    if(localStorage.getItem("difficulty") === "normal") {
+      setIntervalId = setInterval(initGame, 140);
+    }else
+    if(localStorage.getItem("difficulty") === "hard") {
+      setIntervalId = setInterval(initGame, 100);
+    }else
+    if(localStorage.getItem("difficulty") === "hell") {
+      setIntervalId = setInterval(initGame, 50);
+    }else{
+      console.log("An error running with this script")
+    }
+  }else{
     document.getElementById("chechboxPausing").click();
   }
 };
@@ -2525,8 +2550,8 @@ function openWIDmModalSavDat() {
     content.innerHTML = "This give you save all progress in .js file and load your progress again. <br>";
     content.innerHTML += "also you can use it for copy data to other devices if you don't want start game from 0 again. <br>";
     content.innerHTML += " [1]Save data. <br>";
-    content.innerHTML += " [2]Click/press on ''Upload(.js)'': Upload the file. <br>";
-    content.innerHTML += " [3]Click/press on ''Load'': Be load all content inside the file. <br>";
+    content.innerHTML += " [2]Press/touch on ''Upload(.js)'': Upload the file. <br>";
+    content.innerHTML += " [3]Press/touch on ''Load'': Be load all content inside the file. <br>";
     content.innerHTML += "[✓]You also can cheat with this file. <br>";
     content.innerHTML += "[!]Take a risk if you get bugs from changing content in file.";
   }else
@@ -3426,7 +3451,21 @@ function openGachaWindow() {
   defaultClickSound();
 };
 function closeGachaWindow() {
-  handleInterval();
+  if(velocityX === 0 && velocityY === 0) {
+    if(localStorage.getItem("difficulty") === "normal") {
+      setIntervalId = setInterval(initGame, 140);
+    }else
+    if(localStorage.getItem("difficulty") === "hard") {
+      setIntervalId = setInterval(initGame, 100);
+    }else
+    if(localStorage.getItem("difficulty") === "hell") {
+      setIntervalId = setInterval(initGame, 50);
+    }else{
+      console.log("An error running with this script")
+    }
+  }else{
+    document.getElementById("chechboxPausing").click();
+  };
   document.getElementById('gachaContent').style.display = 'none';
   clearInterval(mechaInterval);
   clearInterval(pilotInterval);

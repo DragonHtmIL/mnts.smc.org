@@ -31,6 +31,7 @@ function showMechaAkashic() {
     textInfoBelong.style.direction = "rtl"
   }
   itemImage.className = "image-preview " + mecha0;
+  document.getElementById('collectionCenter').style.display = "none";
 };
 function showMechaAlborada() {
   var itemInfo = document.getElementById("itemInfo");
@@ -65,6 +66,7 @@ function showMechaAlborada() {
     textInfoBelong.style.direction = "rtl"
   }
   itemImage.className = "image-preview " + mecha0;
+  document.getElementById('collectionCenter').style.display = "none";
 };
 function showMechaAndromeda() {
   var itemInfo = document.getElementById("itemInfo");
@@ -99,6 +101,7 @@ function showMechaAndromeda() {
     textInfoBelong.style.direction = "rtl"
   }
   itemImage.className = "image-preview " + mecha0;
+  document.getElementById('collectionCenter').style.display = "none";
 };
 function showMechaArthur() {
   var itemInfo = document.getElementById("itemInfo");
@@ -133,6 +136,7 @@ function showMechaArthur() {
     textInfoBelong.style.direction = "rtl"
   }
   itemImage.className = "image-preview " + mecha0;
+  document.getElementById('collectionCenter').style.display = "none";
 };
 function showMechaAurora() {
   var itemInfo = document.getElementById("itemInfo");
@@ -167,6 +171,7 @@ function showMechaAurora() {
     textInfoBelong.style.direction = "rtl"
   }
   itemImage.className = "image-preview " + mecha0;
+  document.getElementById('collectionCenter').style.display = "none";
 };
 function showMechaBoltus() {
   var itemInfo = document.getElementById("itemInfo");
@@ -201,6 +206,7 @@ function showMechaBoltus() {
     textInfoBelong.style.direction = "rtl"
   }
   itemImage.className = "image-preview " + mecha0;
+  document.getElementById('collectionCenter').style.display = "none";
 };
 function showMechaCaramel() {
   var itemInfo = document.getElementById("itemInfo");
@@ -235,6 +241,7 @@ function showMechaCaramel() {
     textInfoBelong.style.direction = "rtl"
   }
   itemImage.className = "image-preview " + mecha0;
+  document.getElementById('collectionCenter').style.display = "none";
 };
 function showMechaDeathKnell() {
   var itemInfo = document.getElementById("itemInfo");
@@ -269,6 +276,7 @@ function showMechaDeathKnell() {
     textInfoBelong.style.direction = "rtl"
   }
   itemImage.className = "image-preview " + mecha0;
+  document.getElementById('collectionCenter').style.display = "none";
 };
 function showMechaDoomlight() {
   var itemInfo = document.getElementById("itemInfo");
@@ -303,6 +311,7 @@ function showMechaDoomlight() {
     textInfoBelong.style.direction = "rtl"
   }
   itemImage.className = "image-preview " + mecha0;
+  document.getElementById('collectionCenter').style.display = "none";
 };
 function showMechaDreadwolf() {
   var itemInfo = document.getElementById("itemInfo");
@@ -337,6 +346,7 @@ function showMechaDreadwolf() {
     textInfoBelong.style.direction = "rtl"
   }
   itemImage.className = "image-preview " + mecha0;
+  document.getElementById('collectionCenter').style.display = "none";
 };
 function showMechaFirefox() {
   var itemInfo = document.getElementById("itemInfo");
@@ -371,6 +381,7 @@ function showMechaFirefox() {
     textInfoBelong.style.direction = "rtl"
   }
   itemImage.className = "image-preview " + mecha0;
+  document.getElementById('collectionCenter').style.display = "none";
 };
 function showMechaFirestar() {
   var itemInfo = document.getElementById("itemInfo");
@@ -405,6 +416,7 @@ function showMechaFirestar() {
     textInfoBelong.style.direction = "rtl"
   }
   itemImage.className = "image-preview " + mecha0;
+  document.getElementById('collectionCenter').style.display = "none";
 };
 function showMechaFlamenco() {
   var itemInfo = document.getElementById("itemInfo");
@@ -439,6 +451,7 @@ function showMechaFlamenco() {
     textInfoBelong.style.direction = "rtl"
   }
   itemImage.className = "image-preview " + mecha0;
+  document.getElementById('collectionCenter').style.display = "none";
 };
 function showMechaGabriel() {
   var itemInfo = document.getElementById("itemInfo");
@@ -473,6 +486,7 @@ function showMechaGabriel() {
     textInfoBelong.style.direction = "rtl"
   }
   itemImage.className = "image-preview " + mecha0;
+  document.getElementById('collectionCenter').style.display = "none";
 };
 function showMechaGaia() {
   var itemInfo = document.getElementById("itemInfo");
@@ -507,6 +521,7 @@ function showMechaGaia() {
     textInfoBelong.style.direction = "rtl"
   }
   itemImage.className = "image-preview " + mecha0;
+  document.getElementById('collectionCenter').style.display = "none";
 };
 function showMechaGuerillaHunter() {
   var itemInfo = document.getElementById("itemInfo");
@@ -541,6 +556,7 @@ function showMechaGuerillaHunter() {
     textInfoBelong.style.direction = "rtl"
   }
   itemImage.className = "image-preview " + mecha0;
+  document.getElementById('collectionCenter').style.display = "none";
 };
 function showMechaHotsteel() {
   var itemInfo = document.getElementById("itemInfo");
@@ -575,6 +591,7 @@ function showMechaHotsteel() {
     textInfoBelong.style.direction = "rtl"
   }
   itemImage.className = "image-preview " + mecha0;
+  document.getElementById('collectionCenter').style.display = "none";
 };
 function showMechaHurricane() {
   var itemInfo = document.getElementById("itemInfo");
@@ -609,6 +626,7 @@ function showMechaHurricane() {
     textInfoBelong.style.direction = "rtl"
   }
   itemImage.className = "image-preview " + mecha0;
+  document.getElementById('collectionCenter').style.display = "none";
 };
 function showMechaJOJO() {
   var itemInfo = document.getElementById("itemInfo");
@@ -643,6 +661,7 @@ function showMechaJOJO() {
     textInfoBelong.style.direction = "rtl"
   }
   itemImage.className = "image-preview " + mecha0;
+  document.getElementById('collectionCenter').style.display = "none";
 };
 function showMechaLancelot() {
   var itemInfo = document.getElementById("itemInfo");
@@ -677,6 +696,7 @@ function showMechaLancelot() {
     textInfoBelong.style.direction = "rtl"
   }
   itemImage.className = "image-preview " + mecha0;
+  document.getElementById('collectionCenter').style.display = "none";
 };
 function showMechaMichael() {
   var itemInfo = document.getElementById("itemInfo");
@@ -711,6 +731,7 @@ function showMechaMichael() {
     textInfoBelong.style.direction = "rtl"
   }
   itemImage.className = "image-preview " + mecha0;
+  document.getElementById('collectionCenter').style.display = "none";
 };
 function showMechaMoonRabbit() {
   var itemInfo = document.getElementById("itemInfo");
@@ -745,6 +766,7 @@ function showMechaMoonRabbit() {
     textInfoBelong.style.direction = "rtl"
   }
   itemImage.className = "image-preview " + mecha0;
+  document.getElementById('collectionCenter').style.display = "none";
 };
 function showMechaNebula() {
   var itemInfo = document.getElementById("itemInfo");
@@ -779,6 +801,7 @@ function showMechaNebula() {
     textInfoBelong.style.direction = "rtl"
   }
   itemImage.className = "image-preview " + mecha0;
+  document.getElementById('collectionCenter').style.display = "none";
 };
 function showMechaNeutronStar() {
   var itemInfo = document.getElementById("itemInfo");
@@ -813,6 +836,7 @@ function showMechaNeutronStar() {
     textInfoBelong.style.direction = "rtl"
   }
   itemImage.className = "image-preview " + mecha0;
+  document.getElementById('collectionCenter').style.display = "none";
 };
 function showMechaNorthernKnight() {
   var itemInfo = document.getElementById("itemInfo");
@@ -847,6 +871,7 @@ function showMechaNorthernKnight() {
     textInfoBelong.style.direction = "rtl"
   }
   itemImage.className = "image-preview " + mecha0;
+  document.getElementById('collectionCenter').style.display = "none";
 };
 function showMechaPulsar() {
   var itemInfo = document.getElementById("itemInfo");
@@ -881,6 +906,7 @@ function showMechaPulsar() {
     textInfoBelong.style.direction = "rtl"
   }
   itemImage.className = "image-preview " + mecha0;
+  document.getElementById('collectionCenter').style.display = "none";
 };
 function showMechaRanger() {
   var itemInfo = document.getElementById("itemInfo");
@@ -915,6 +941,7 @@ function showMechaRanger() {
     textInfoBelong.style.direction = "rtl"
   }
   itemImage.className = "image-preview " + mecha0;
+  document.getElementById('collectionCenter').style.display = "none";
 };
 function showMechaRaven() {
   var itemInfo = document.getElementById("itemInfo");
@@ -949,6 +976,7 @@ function showMechaRaven() {
     textInfoBelong.style.direction = "rtl"
   }
   itemImage.className = "image-preview " + mecha0;
+  document.getElementById('collectionCenter').style.display = "none";
 };
 function showMechaShiranui() {
   var itemInfo = document.getElementById("itemInfo");
@@ -983,6 +1011,7 @@ function showMechaShiranui() {
     textInfoBelong.style.direction = "rtl"
   }
   itemImage.className = "image-preview " + mecha0;
+  document.getElementById('collectionCenter').style.display = "none";
 };
 function showMechaSkyfall() {
   var itemInfo = document.getElementById("itemInfo");
@@ -1017,6 +1046,7 @@ function showMechaSkyfall() {
     textInfoBelong.style.direction = "rtl"
   }
   itemImage.className = "image-preview " + mecha0;
+  document.getElementById('collectionCenter').style.display = "none";
 };
 function showMechaSkyfire() {
   var itemInfo = document.getElementById("itemInfo");
@@ -1051,6 +1081,7 @@ function showMechaSkyfire() {
     textInfoBelong.style.direction = "rtl"
   }
   itemImage.className = "image-preview " + mecha0;
+  document.getElementById('collectionCenter').style.display = "none";
 };
 function showMechaSkylark() {
   var itemInfo = document.getElementById("itemInfo");
@@ -1085,6 +1116,7 @@ function showMechaSkylark() {
     textInfoBelong.style.direction = "rtl"
   }
   itemImage.className = "image-preview " + mecha0;
+  document.getElementById('collectionCenter').style.display = "none";
 };
 function showMechaSnowMirage() {
   var itemInfo = document.getElementById("itemInfo");
@@ -1119,6 +1151,7 @@ function showMechaSnowMirage() {
     textInfoBelong.style.direction = "rtl"
   }
   itemImage.className = "image-preview " + mecha0;
+  document.getElementById('collectionCenter').style.display = "none";
 };
 function showMechaTempest() {
   var itemInfo = document.getElementById("itemInfo");
@@ -1153,6 +1186,7 @@ function showMechaTempest() {
     textInfoBelong.style.direction = "rtl"
   }
   itemImage.className = "image-preview " + mecha0;
+  document.getElementById('collectionCenter').style.display = "none";
 };
 function showMechaTrioofEnders() {
   var itemInfo = document.getElementById("itemInfo");
@@ -1187,6 +1221,7 @@ function showMechaTrioofEnders() {
     textInfoBelong.style.direction = "rtl"
   }
   itemImage.className = "image-preview " + mecha0;
+  document.getElementById('collectionCenter').style.display = "none";
 };
 function showMechaTwilight() {
   var itemInfo = document.getElementById("itemInfo");
@@ -1221,6 +1256,7 @@ function showMechaTwilight() {
     textInfoBelong.style.direction = "rtl"
   }
   itemImage.className = "image-preview " + mecha0;
+  document.getElementById('collectionCenter').style.display = "none";
 };
 function showMechaVentorus() {
   var itemInfo = document.getElementById("itemInfo");
@@ -1255,4 +1291,5 @@ function showMechaVentorus() {
     textInfoBelong.style.direction = "rtl"
   }
   itemImage.className = "image-preview " + mecha0;
+  document.getElementById('collectionCenter').style.display = "none";
 };

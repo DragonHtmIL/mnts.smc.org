@@ -783,11 +783,11 @@ const assets = {
     "item_bg_7ss",
     "item_ic_1d",
     "item_ic_2b",
-    "item_ic_4s",
-    "item_ic_5sp",
-    "item_ic_6ex",
+    "item_ic_5s",
     "item_ic_6sp",
-    "item_ic_6ss",
+    "item_ic_7ex",
+    "item_ic_7sp",
+    "item_ic_7ss",
     "lock"
   ],
   gachaAnimations: [

@@ -30,6 +30,7 @@ function showPilotAya() {
     textInfoBelong.innerHTML = "מכה: " + mecha1he;
   }
   itemImage.className = "image-preview " + pilot0;
+  document.getElementById('collectionCenter').style.display = "none";
 };
 function showPilotBelladonna() {
   var itemInfo = document.getElementById("itemInfo");
@@ -63,6 +64,7 @@ function showPilotBelladonna() {
     textInfoBelong.innerHTML = "מכה: " + mecha1he;
   }
   itemImage.className = "image-preview " + pilot0;
+  document.getElementById('collectionCenter').style.display = "none";
 };
 function showPilotCyrus() {
   var itemInfo = document.getElementById("itemInfo");
@@ -96,6 +98,7 @@ function showPilotCyrus() {
     textInfoBelong.innerHTML = "מכה: " + mecha1he;
   }
   itemImage.className = "image-preview " + pilot0;
+  document.getElementById('collectionCenter').style.display = "none";
 };
 function showPilotFran() {
   var itemInfo = document.getElementById("itemInfo");
@@ -129,6 +132,7 @@ function showPilotFran() {
     textInfoBelong.innerHTML = "מכה: " + mecha1he;
   }
   itemImage.className = "image-preview " + pilot0;
+  document.getElementById('collectionCenter').style.display = "none";
 };
 function showPilotFuranku() {
   var itemInfo = document.getElementById("itemInfo");
@@ -162,6 +166,7 @@ function showPilotFuranku() {
     textInfoBelong.innerHTML = "מכה: " + mecha1he;
   }
   itemImage.className = "image-preview " + pilot0;
+  document.getElementById('collectionCenter').style.display = "none";
 };
 function showPilotIori() {
   var itemInfo = document.getElementById("itemInfo");
@@ -195,6 +200,7 @@ function showPilotIori() {
     textInfoBelong.innerHTML = "מכה: " + mecha1he;
   }
   itemImage.className = "image-preview " + pilot0;
+  document.getElementById('collectionCenter').style.display = "none";
 };
 function showPilotIvan() {
   var itemInfo = document.getElementById("itemInfo");
@@ -228,6 +234,7 @@ function showPilotIvan() {
     textInfoBelong.innerHTML = "מכה: " + mecha1he;
   }
   itemImage.className = "image-preview " + pilot0;
+  document.getElementById('collectionCenter').style.display = "none";
 };
 function showPilotJaka() {
   var itemInfo = document.getElementById("itemInfo");
@@ -261,6 +268,7 @@ function showPilotJaka() {
     textInfoBelong.innerHTML = "מכה: " + mecha1he;
   }
   itemImage.className = "image-preview " + pilot0;
+  document.getElementById('collectionCenter').style.display = "none";
 };
 function showPilotJoanna() {
   var itemInfo = document.getElementById("itemInfo");
@@ -294,6 +302,7 @@ function showPilotJoanna() {
     textInfoBelong.innerHTML = "מכה: " + mecha1he;
   }
   itemImage.className = "image-preview " + pilot0;
+  document.getElementById('collectionCenter').style.display = "none";
 };
 function showPilotKije() {
   var itemInfo = document.getElementById("itemInfo");
@@ -327,6 +336,7 @@ function showPilotKije() {
     textInfoBelong.innerHTML = "מכה: " + mecha1he;
   }
   itemImage.className = "image-preview " + pilot0;
+  document.getElementById('collectionCenter').style.display = "none";
 };
 function showPilotKikina() {
   var itemInfo = document.getElementById("itemInfo");
@@ -360,6 +370,7 @@ function showPilotKikina() {
     textInfoBelong.innerHTML = "מכה: " + mecha1he;
   }
   itemImage.className = "image-preview " + pilot0;
+  document.getElementById('collectionCenter').style.display = "none";
 };
 function showPilotKizunaAi() {
   var itemInfo = document.getElementById("itemInfo");
@@ -393,6 +404,7 @@ function showPilotKizunaAi() {
     textInfoBelong.innerHTML = "מכה: " + mecha1he;
   }
   itemImage.className = "image-preview " + pilot0;
+  document.getElementById('collectionCenter').style.display = "none";
 };
 function showPilotLillian() {
   var itemInfo = document.getElementById("itemInfo");
@@ -426,6 +438,7 @@ function showPilotLillian() {
     textInfoBelong.innerHTML = "מכה: " + mecha1he;
   }
   itemImage.className = "image-preview " + pilot0;
+  document.getElementById('collectionCenter').style.display = "none";
 };
 function showPilotLysa() {
   var itemInfo = document.getElementById("itemInfo");
@@ -459,6 +472,7 @@ function showPilotLysa() {
     textInfoBelong.innerHTML = "מכה: " + mecha1he;
   }
   itemImage.className = "image-preview " + pilot0;
+  document.getElementById('collectionCenter').style.display = "none";
 };
 function showPilotMatilda() {
   var itemInfo = document.getElementById("itemInfo");
@@ -492,6 +506,7 @@ function showPilotMatilda() {
     textInfoBelong.innerHTML = "מכה: " + mecha1he;
   }
   itemImage.className = "image-preview " + pilot0;
+  document.getElementById('collectionCenter').style.display = "none";
 };
 function showPilotMia() {
   var itemInfo = document.getElementById("itemInfo");
@@ -525,6 +540,7 @@ function showPilotMia() {
     textInfoBelong.innerHTML = "מכה: " + mecha1he;
   }
   itemImage.className = "image-preview " + pilot0;
+  document.getElementById('collectionCenter').style.display = "none";
 };
 function showPilotMila() {
   var itemInfo = document.getElementById("itemInfo");
@@ -558,6 +574,7 @@ function showPilotMila() {
     textInfoBelong.innerHTML = "מכה: " + mecha1he;
   }
   itemImage.className = "image-preview " + pilot0;
+  document.getElementById('collectionCenter').style.display = "none";
 };
 function showPilotMobius() {
   var itemInfo = document.getElementById("itemInfo");
@@ -591,6 +608,7 @@ function showPilotMobius() {
     textInfoBelong.innerHTML = "מכה: " + mecha1he;
   }
   itemImage.className = "image-preview " + pilot0;
+  document.getElementById('collectionCenter').style.display = "none";
 };
 function showPilotNighthawk() {
   var itemInfo = document.getElementById("itemInfo");
@@ -624,6 +642,7 @@ function showPilotNighthawk() {
     textInfoBelong.innerHTML = "מכה: " + mecha1he;
   }
   itemImage.className = "image-preview " + pilot0;
+  document.getElementById('collectionCenter').style.display = "none";
 };
 function showPilotNing() {
   var itemInfo = document.getElementById("itemInfo");
@@ -657,6 +676,7 @@ function showPilotNing() {
     textInfoBelong.innerHTML = "מכה: " + mecha1he;
   }
   itemImage.className = "image-preview " + pilot0;
+  document.getElementById('collectionCenter').style.display = "none";
 };
 function showPilotNorma() {
   var itemInfo = document.getElementById("itemInfo");
@@ -690,6 +710,7 @@ function showPilotNorma() {
     textInfoBelong.innerHTML = "מכה: " + mecha1he;
   }
   itemImage.className = "image-preview " + pilot0;
+  document.getElementById('collectionCenter').style.display = "none";
 };
 function showPilotOpal() {
   var itemInfo = document.getElementById("itemInfo");
@@ -723,6 +744,7 @@ function showPilotOpal() {
     textInfoBelong.innerHTML = "מכה: " + mecha1he;
   }
   itemImage.className = "image-preview " + pilot0;
+  document.getElementById('collectionCenter').style.display = "none";
 };
 function showPilotPurity() {
   var itemInfo = document.getElementById("itemInfo");
@@ -756,6 +778,7 @@ function showPilotPurity() {
     textInfoBelong.innerHTML = "מכה: " + mecha1he;
   }
   itemImage.className = "image-preview " + pilot0;
+  document.getElementById('collectionCenter').style.display = "none";
 };
 function showPilotRED() {
   var itemInfo = document.getElementById("itemInfo");
@@ -789,6 +812,7 @@ function showPilotRED() {
     textInfoBelong.innerHTML = "מכה: " + mecha1he;
   }
   itemImage.className = "image-preview " + pilot0;
+  document.getElementById('collectionCenter').style.display = "none";
 };
 function showPilotRiko() {
   var itemInfo = document.getElementById("itemInfo");
@@ -822,6 +846,7 @@ function showPilotRiko() {
     textInfoBelong.innerHTML = "מכה: " + mecha1he;
   }
   itemImage.className = "image-preview " + pilot0;
+  document.getElementById('collectionCenter').style.display = "none";
 };
 function showPilotRom() {
   var itemInfo = document.getElementById("itemInfo");
@@ -855,6 +880,7 @@ function showPilotRom() {
     textInfoBelong.innerHTML = "מכה: " + mecha1he;
   }
   itemImage.className = "image-preview " + pilot0;
+  document.getElementById('collectionCenter').style.display = "none";
 };
 function showPilotSerena() {
   var itemInfo = document.getElementById("itemInfo");
@@ -888,6 +914,7 @@ function showPilotSerena() {
     textInfoBelong.innerHTML = "מכה: " + mecha1he;
   }
   itemImage.className = "image-preview " + pilot0;
+  document.getElementById('collectionCenter').style.display = "none";
 };
 function showPilotShin() {
   var itemInfo = document.getElementById("itemInfo");
@@ -921,6 +948,7 @@ function showPilotShin() {
     textInfoBelong.innerHTML = "מכה: " + mecha1he;
   }
   itemImage.className = "image-preview " + pilot0;
+  document.getElementById('collectionCenter').style.display = "none";
 };
 function showPilotSilverDeacon() {
   var itemInfo = document.getElementById("itemInfo");
@@ -954,6 +982,7 @@ function showPilotSilverDeacon() {
     textInfoBelong.innerHTML = "מכה: " + mecha1he;
   }
   itemImage.className = "image-preview " + pilot0;
+  document.getElementById('collectionCenter').style.display = "none";
 };
 function showPilotTarantula() {
   var itemInfo = document.getElementById("itemInfo");
@@ -987,6 +1016,7 @@ function showPilotTarantula() {
     textInfoBelong.innerHTML = "מכה: " + mecha1he;
   }
   itemImage.className = "image-preview " + pilot0;
+  document.getElementById('collectionCenter').style.display = "none";
 };
 function showPilotVanessa() {
   var itemInfo = document.getElementById("itemInfo");
@@ -1020,6 +1050,7 @@ function showPilotVanessa() {
     textInfoBelong.innerHTML = "מכה: " + mecha1he;
   }
   itemImage.className = "image-preview " + pilot0;
+  document.getElementById('collectionCenter').style.display = "none";
 };
 function showPilotVillar() {
   var itemInfo = document.getElementById("itemInfo");
@@ -1053,6 +1084,7 @@ function showPilotVillar() {
     textInfoBelong.innerHTML = "מכה: " + mecha1he;
   }
   itemImage.className = "image-preview " + pilot0;
+  document.getElementById('collectionCenter').style.display = "none";
 };
 function showPilotVita() {
   var itemInfo = document.getElementById("itemInfo");
@@ -1086,6 +1118,7 @@ function showPilotVita() {
     textInfoBelong.innerHTML = "מכה: " + mecha1he;
   }
   itemImage.className = "image-preview " + pilot0;
+  document.getElementById('collectionCenter').style.display = "none";
 };
 function showPilotYang() {
   var itemInfo = document.getElementById("itemInfo");
@@ -1119,6 +1152,7 @@ function showPilotYang() {
     textInfoBelong.innerHTML = "מכה: " + mecha1he;
   }
   itemImage.className = "image-preview " + pilot0;
+  document.getElementById('collectionCenter').style.display = "none";
 };
 function showPilotYulia() {
   var itemInfo = document.getElementById("itemInfo");
@@ -1152,6 +1186,7 @@ function showPilotYulia() {
     textInfoBelong.innerHTML = "מכה: " + mecha1he;
   }
   itemImage.className = "image-preview " + pilot0;
+  document.getElementById('collectionCenter').style.display = "none";
 };
 function showPilotYutong() {
   var itemInfo = document.getElementById("itemInfo");
@@ -1185,6 +1220,7 @@ function showPilotYutong() {
     textInfoBelong.innerHTML = "מכה: " + mecha1he;
   }
   itemImage.className = "image-preview " + pilot0;
+  document.getElementById('collectionCenter').style.display = "none";
 };
 function showPilotZoe() {
   var itemInfo = document.getElementById("itemInfo");
@@ -1218,4 +1254,5 @@ function showPilotZoe() {
     textInfoBelong.innerHTML = "מכה: " + mecha1he;
   }
   itemImage.className = "image-preview " + pilot0;
+  document.getElementById('collectionCenter').style.display = "none";
 };

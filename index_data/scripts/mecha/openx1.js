@@ -18,6 +18,7 @@ function summonMechaOne() {
   const gachaAnim = document.getElementById("sourceGachaAnimation");
   const gachaAud = document.getElementById("gachaAudionation");
   const animationBlocker = document.getElementById("animationBlocker");
+  const skipBtn = document.getElementById("skipAnim");
   const randomNumber = Math.random() * mechas.length;
   let mecha;
   // for pressed button
@@ -45,6 +46,7 @@ function summonMechaOne() {
     gachaAud.onloadeddata = () => {
       gachaAud.play();
     };
+    skipBtn.style.display = "block";
   },5150);
   // Simplified rarity system (adjust probabilities as needed)
   if (randomNumber < 1.00) {
@@ -71,6 +73,7 @@ function displaymecha(mecha) {
   const gachaAnim = document.getElementById("sourceGachaAnimation");
   const gachaAud = document.getElementById("gachaAudionation");
   const animationBlocker = document.getElementById("animationBlocker");
+  const skipBtn = document.getElementById("skipAnim");
   mechaDiv.classList.add("card-continer");
   mechaDiv.classList.add(mecha.rarity);
   mechaDiv.innerHTML = `
@@ -126,6 +129,7 @@ function displaymecha(mecha) {
     }
     defaultClickSound();
     summonType = "none";
+    skipBtn.style.display = "none";
   });
   displayArea.appendChild(mechaDiv);
   mechaDiv.appendChild(imgBlocker);
