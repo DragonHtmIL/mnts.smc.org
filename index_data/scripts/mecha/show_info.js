@@ -1,5 +1,6 @@
 function showMechaAkashic() {
   var itemInfo = document.getElementById("itemInfo");
+  var itemInfoBg = document.getElementById("bgItemInfo");
   var itemImage = document.getElementById("itemImage");
   var itemName = document.getElementById("itemName");
   var textInfoBelong = document.getElementById("textInfoBelong");
@@ -16,7 +17,7 @@ function showMechaAkashic() {
   }else{
     cancelSound();
   }
-  itemInfo.className = "item-info def-bg";
+  itemInfoBg.className = "item-info-bg def-bg";
   if(localStorage.getItem("lang") === "en") {
     itemName.innerHTML = mecha1en;
     textInfoBelong.innerHTML = "Pilot: " + pilot1en;
@@ -35,6 +36,7 @@ function showMechaAkashic() {
 };
 function showMechaAlborada() {
   var itemInfo = document.getElementById("itemInfo");
+  var itemInfoBg = document.getElementById("bgItemInfo");
   var itemImage = document.getElementById("itemImage");
   var itemName = document.getElementById("itemName");
   var textInfoBelong = document.getElementById("textInfoBelong");
@@ -51,7 +53,7 @@ function showMechaAlborada() {
   }else{
     cancelSound();
   }
-  itemInfo.className = "item-info def-bg";
+  itemInfoBg.className = "item-info-bg def-bg";
   if(localStorage.getItem("lang") === "en") {
     itemName.innerHTML = mecha1en;
     textInfoBelong.innerHTML = "Pilot: " + pilot1en;
@@ -70,6 +72,7 @@ function showMechaAlborada() {
 };
 function showMechaAndromeda() {
   var itemInfo = document.getElementById("itemInfo");
+  var itemInfoBg = document.getElementById("bgItemInfo");
   var itemImage = document.getElementById("itemImage");
   var itemName = document.getElementById("itemName");
   var textInfoBelong = document.getElementById("textInfoBelong");
@@ -86,7 +89,7 @@ function showMechaAndromeda() {
   }else{
     cancelSound();
   }
-  itemInfo.className = "item-info def-bg";
+  itemInfoBg.className = "item-info-bg def-bg";
   if(localStorage.getItem("lang") === "en") {
     itemName.innerHTML = mecha1en;
     textInfoBelong.innerHTML = "Pilot: " + pilot1en;
@@ -105,6 +108,7 @@ function showMechaAndromeda() {
 };
 function showMechaArthur() {
   var itemInfo = document.getElementById("itemInfo");
+  var itemInfoBg = document.getElementById("bgItemInfo");
   var itemImage = document.getElementById("itemImage");
   var itemName = document.getElementById("itemName");
   var textInfoBelong = document.getElementById("textInfoBelong");
@@ -121,7 +125,7 @@ function showMechaArthur() {
   }else{
     cancelSound();
   }
-  itemInfo.className = "item-info def-bg";
+  itemInfoBg.className = "item-info-bg def-bg";
   if(localStorage.getItem("lang") === "en") {
     itemName.innerHTML = mecha1en;
     textInfoBelong.innerHTML = "Pilot: " + pilot1en;
@@ -140,6 +144,7 @@ function showMechaArthur() {
 };
 function showMechaAurora() {
   var itemInfo = document.getElementById("itemInfo");
+  var itemInfoBg = document.getElementById("bgItemInfo");
   var itemImage = document.getElementById("itemImage");
   var itemName = document.getElementById("itemName");
   var textInfoBelong = document.getElementById("textInfoBelong");
@@ -156,7 +161,7 @@ function showMechaAurora() {
   }else{
     cancelSound();
   }
-  itemInfo.className = "item-info def-bg";
+  itemInfoBg.className = "item-info-bg def-bg";
   if(localStorage.getItem("lang") === "en") {
     itemName.innerHTML = mecha1en;
     textInfoBelong.innerHTML = "Pilot: " + pilot1en;
@@ -175,6 +180,7 @@ function showMechaAurora() {
 };
 function showMechaBoltus() {
   var itemInfo = document.getElementById("itemInfo");
+  var itemInfoBg = document.getElementById("bgItemInfo");
   var itemImage = document.getElementById("itemImage");
   var itemName = document.getElementById("itemName");
   var textInfoBelong = document.getElementById("textInfoBelong");
@@ -191,7 +197,7 @@ function showMechaBoltus() {
   }else{
     cancelSound();
   }
-  itemInfo.className = "item-info def-bg";
+  itemInfoBg.className = "item-info-bg def-bg";
   if(localStorage.getItem("lang") === "en") {
     itemName.innerHTML = mecha1en;
     textInfoBelong.innerHTML = "Pilot: " + pilot1en;
@@ -210,6 +216,7 @@ function showMechaBoltus() {
 };
 function showMechaCaramel() {
   var itemInfo = document.getElementById("itemInfo");
+  var itemInfoBg = document.getElementById("bgItemInfo");
   var itemImage = document.getElementById("itemImage");
   var itemName = document.getElementById("itemName");
   var textInfoBelong = document.getElementById("textInfoBelong");
@@ -226,7 +233,7 @@ function showMechaCaramel() {
   }else{
     cancelSound();
   }
-  itemInfo.className = "item-info def-bg";
+  itemInfoBg.className = "item-info-bg def-bg";
   if(localStorage.getItem("lang") === "en") {
     itemName.innerHTML = mecha1en;
     textInfoBelong.innerHTML = "Pilot: " + pilot1en;
@@ -245,6 +252,7 @@ function showMechaCaramel() {
 };
 function showMechaDeathKnell() {
   var itemInfo = document.getElementById("itemInfo");
+  var itemInfoBg = document.getElementById("bgItemInfo");
   var itemImage = document.getElementById("itemImage");
   var itemName = document.getElementById("itemName");
   var textInfoBelong = document.getElementById("textInfoBelong");
@@ -261,7 +269,7 @@ function showMechaDeathKnell() {
   }else{
     cancelSound();
   }
-  itemInfo.className = "item-info def-bg";
+  itemInfoBg.className = "item-info-bg def-bg";
   if(localStorage.getItem("lang") === "en") {
     itemName.innerHTML = mecha1en;
     textInfoBelong.innerHTML = "Pilot: " + pilot1en;
@@ -280,6 +288,7 @@ function showMechaDeathKnell() {
 };
 function showMechaDoomlight() {
   var itemInfo = document.getElementById("itemInfo");
+  var itemInfoBg = document.getElementById("bgItemInfo");
   var itemImage = document.getElementById("itemImage");
   var itemName = document.getElementById("itemName");
   var textInfoBelong = document.getElementById("textInfoBelong");
@@ -296,7 +305,7 @@ function showMechaDoomlight() {
   }else{
     cancelSound();
   }
-  itemInfo.className = "item-info def-bg";
+  itemInfoBg.className = "item-info-bg def-bg";
   if(localStorage.getItem("lang") === "en") {
     itemName.innerHTML = mecha1en;
     textInfoBelong.innerHTML = "Pilot: " + pilot1en;
@@ -315,6 +324,7 @@ function showMechaDoomlight() {
 };
 function showMechaDreadwolf() {
   var itemInfo = document.getElementById("itemInfo");
+  var itemInfoBg = document.getElementById("bgItemInfo");
   var itemImage = document.getElementById("itemImage");
   var itemName = document.getElementById("itemName");
   var textInfoBelong = document.getElementById("textInfoBelong");
@@ -331,7 +341,7 @@ function showMechaDreadwolf() {
   }else{
     cancelSound();
   }
-  itemInfo.className = "item-info def-bg";
+  itemInfoBg.className = "item-info-bg def-bg";
   if(localStorage.getItem("lang") === "en") {
     itemName.innerHTML = mecha1en;
     textInfoBelong.innerHTML = "Pilot: " + pilot1en;
@@ -350,6 +360,7 @@ function showMechaDreadwolf() {
 };
 function showMechaFirefox() {
   var itemInfo = document.getElementById("itemInfo");
+  var itemInfoBg = document.getElementById("bgItemInfo");
   var itemImage = document.getElementById("itemImage");
   var itemName = document.getElementById("itemName");
   var textInfoBelong = document.getElementById("textInfoBelong");
@@ -366,7 +377,7 @@ function showMechaFirefox() {
   }else{
     cancelSound();
   }
-  itemInfo.className = "item-info def-bg";
+  itemInfoBg.className = "item-info-bg def-bg";
   if(localStorage.getItem("lang") === "en") {
     itemName.innerHTML = mecha1en;
     textInfoBelong.innerHTML = "Pilot: " + pilot1en;
@@ -385,6 +396,7 @@ function showMechaFirefox() {
 };
 function showMechaFirestar() {
   var itemInfo = document.getElementById("itemInfo");
+  var itemInfoBg = document.getElementById("bgItemInfo");
   var itemImage = document.getElementById("itemImage");
   var itemName = document.getElementById("itemName");
   var textInfoBelong = document.getElementById("textInfoBelong");
@@ -401,7 +413,7 @@ function showMechaFirestar() {
   }else{
     cancelSound();
   }
-  itemInfo.className = "item-info def-bg";
+  itemInfoBg.className = "item-info-bg def-bg";
   if(localStorage.getItem("lang") === "en") {
     itemName.innerHTML = mecha1en;
     textInfoBelong.innerHTML = "Pilot: " + pilot1en;
@@ -420,6 +432,7 @@ function showMechaFirestar() {
 };
 function showMechaFlamenco() {
   var itemInfo = document.getElementById("itemInfo");
+  var itemInfoBg = document.getElementById("bgItemInfo");
   var itemImage = document.getElementById("itemImage");
   var itemName = document.getElementById("itemName");
   var textInfoBelong = document.getElementById("textInfoBelong");
@@ -436,7 +449,7 @@ function showMechaFlamenco() {
   }else{
     cancelSound();
   }
-  itemInfo.className = "item-info def-bg";
+  itemInfoBg.className = "item-info-bg def-bg";
   if(localStorage.getItem("lang") === "en") {
     itemName.innerHTML = mecha1en;
     textInfoBelong.innerHTML = "Pilot: " + pilot1en;
@@ -455,6 +468,7 @@ function showMechaFlamenco() {
 };
 function showMechaGabriel() {
   var itemInfo = document.getElementById("itemInfo");
+  var itemInfoBg = document.getElementById("bgItemInfo");
   var itemImage = document.getElementById("itemImage");
   var itemName = document.getElementById("itemName");
   var textInfoBelong = document.getElementById("textInfoBelong");
@@ -471,7 +485,7 @@ function showMechaGabriel() {
   }else{
     cancelSound();
   }
-  itemInfo.className = "item-info def-bg";
+  itemInfoBg.className = "item-info-bg def-bg";
   if(localStorage.getItem("lang") === "en") {
     itemName.innerHTML = mecha1en;
     textInfoBelong.innerHTML = "Pilot: " + pilot1en;
@@ -490,6 +504,7 @@ function showMechaGabriel() {
 };
 function showMechaGaia() {
   var itemInfo = document.getElementById("itemInfo");
+  var itemInfoBg = document.getElementById("bgItemInfo");
   var itemImage = document.getElementById("itemImage");
   var itemName = document.getElementById("itemName");
   var textInfoBelong = document.getElementById("textInfoBelong");
@@ -506,7 +521,7 @@ function showMechaGaia() {
   }else{
     cancelSound();
   }
-  itemInfo.className = "item-info def-bg";
+  itemInfoBg.className = "item-info-bg def-bg";
   if(localStorage.getItem("lang") === "en") {
     itemName.innerHTML = mecha1en;
     textInfoBelong.innerHTML = "Pilot: " + pilot1en;
@@ -525,6 +540,7 @@ function showMechaGaia() {
 };
 function showMechaGuerillaHunter() {
   var itemInfo = document.getElementById("itemInfo");
+  var itemInfoBg = document.getElementById("bgItemInfo");
   var itemImage = document.getElementById("itemImage");
   var itemName = document.getElementById("itemName");
   var textInfoBelong = document.getElementById("textInfoBelong");
@@ -541,7 +557,7 @@ function showMechaGuerillaHunter() {
   }else{
     cancelSound();
   }
-  itemInfo.className = "item-info def-bg";
+  itemInfoBg.className = "item-info-bg def-bg";
   if(localStorage.getItem("lang") === "en") {
     itemName.innerHTML = mecha1en;
     textInfoBelong.innerHTML = "Pilot: " + pilot1en;
@@ -560,6 +576,7 @@ function showMechaGuerillaHunter() {
 };
 function showMechaHotsteel() {
   var itemInfo = document.getElementById("itemInfo");
+  var itemInfoBg = document.getElementById("bgItemInfo");
   var itemImage = document.getElementById("itemImage");
   var itemName = document.getElementById("itemName");
   var textInfoBelong = document.getElementById("textInfoBelong");
@@ -576,7 +593,7 @@ function showMechaHotsteel() {
   }else{
     cancelSound();
   }
-  itemInfo.className = "item-info def-bg";
+  itemInfoBg.className = "item-info-bg def-bg";
   if(localStorage.getItem("lang") === "en") {
     itemName.innerHTML = mecha1en;
     textInfoBelong.innerHTML = "Pilot: " + pilot1en;
@@ -595,6 +612,7 @@ function showMechaHotsteel() {
 };
 function showMechaHurricane() {
   var itemInfo = document.getElementById("itemInfo");
+  var itemInfoBg = document.getElementById("bgItemInfo");
   var itemImage = document.getElementById("itemImage");
   var itemName = document.getElementById("itemName");
   var textInfoBelong = document.getElementById("textInfoBelong");
@@ -611,7 +629,7 @@ function showMechaHurricane() {
   }else{
     cancelSound();
   }
-  itemInfo.className = "item-info def-bg";
+  itemInfoBg.className = "item-info-bg def-bg";
   if(localStorage.getItem("lang") === "en") {
     itemName.innerHTML = mecha1en;
     textInfoBelong.innerHTML = "Pilot: " + pilot1en;
@@ -630,6 +648,7 @@ function showMechaHurricane() {
 };
 function showMechaJOJO() {
   var itemInfo = document.getElementById("itemInfo");
+  var itemInfoBg = document.getElementById("bgItemInfo");
   var itemImage = document.getElementById("itemImage");
   var itemName = document.getElementById("itemName");
   var textInfoBelong = document.getElementById("textInfoBelong");
@@ -646,7 +665,7 @@ function showMechaJOJO() {
   }else{
     cancelSound();
   }
-  itemInfo.className = "item-info def-bg";
+  itemInfoBg.className = "item-info-bg def-bg";
   if(localStorage.getItem("lang") === "en") {
     itemName.innerHTML = mecha1en;
     textInfoBelong.innerHTML = "Pilot: " + pilot1en;
@@ -665,6 +684,7 @@ function showMechaJOJO() {
 };
 function showMechaLancelot() {
   var itemInfo = document.getElementById("itemInfo");
+  var itemInfoBg = document.getElementById("bgItemInfo");
   var itemImage = document.getElementById("itemImage");
   var itemName = document.getElementById("itemName");
   var textInfoBelong = document.getElementById("textInfoBelong");
@@ -681,7 +701,7 @@ function showMechaLancelot() {
   }else{
     cancelSound();
   }
-  itemInfo.className = "item-info def-bg";
+  itemInfoBg.className = "item-info-bg def-bg";
   if(localStorage.getItem("lang") === "en") {
     itemName.innerHTML = mecha1en;
     textInfoBelong.innerHTML = "Pilot: " + pilot1en;
@@ -700,6 +720,7 @@ function showMechaLancelot() {
 };
 function showMechaMichael() {
   var itemInfo = document.getElementById("itemInfo");
+  var itemInfoBg = document.getElementById("bgItemInfo");
   var itemImage = document.getElementById("itemImage");
   var itemName = document.getElementById("itemName");
   var textInfoBelong = document.getElementById("textInfoBelong");
@@ -716,7 +737,7 @@ function showMechaMichael() {
   }else{
     cancelSound();
   }
-  itemInfo.className = "item-info def-bg";
+  itemInfoBg.className = "item-info-bg def-bg";
   if(localStorage.getItem("lang") === "en") {
     itemName.innerHTML = mecha1en;
     textInfoBelong.innerHTML = "Pilot: " + pilot1en;
@@ -735,6 +756,7 @@ function showMechaMichael() {
 };
 function showMechaMoonRabbit() {
   var itemInfo = document.getElementById("itemInfo");
+  var itemInfoBg = document.getElementById("bgItemInfo");
   var itemImage = document.getElementById("itemImage");
   var itemName = document.getElementById("itemName");
   var textInfoBelong = document.getElementById("textInfoBelong");
@@ -751,7 +773,7 @@ function showMechaMoonRabbit() {
   }else{
     cancelSound();
   }
-  itemInfo.className = "item-info def-bg";
+  itemInfoBg.className = "item-info-bg def-bg";
   if(localStorage.getItem("lang") === "en") {
     itemName.innerHTML = mecha1en;
     textInfoBelong.innerHTML = "Pilot: " + pilot1en;
@@ -770,6 +792,7 @@ function showMechaMoonRabbit() {
 };
 function showMechaNebula() {
   var itemInfo = document.getElementById("itemInfo");
+  var itemInfoBg = document.getElementById("bgItemInfo");
   var itemImage = document.getElementById("itemImage");
   var itemName = document.getElementById("itemName");
   var textInfoBelong = document.getElementById("textInfoBelong");
@@ -786,7 +809,7 @@ function showMechaNebula() {
   }else{
     cancelSound();
   }
-  itemInfo.className = "item-info def-bg";
+  itemInfoBg.className = "item-info-bg def-bg";
   if(localStorage.getItem("lang") === "en") {
     itemName.innerHTML = mecha1en;
     textInfoBelong.innerHTML = "Pilot: " + pilot1en;
@@ -805,6 +828,7 @@ function showMechaNebula() {
 };
 function showMechaNeutronStar() {
   var itemInfo = document.getElementById("itemInfo");
+  var itemInfoBg = document.getElementById("bgItemInfo");
   var itemImage = document.getElementById("itemImage");
   var itemName = document.getElementById("itemName");
   var textInfoBelong = document.getElementById("textInfoBelong");
@@ -821,7 +845,7 @@ function showMechaNeutronStar() {
   }else{
     cancelSound();
   }
-  itemInfo.className = "item-info def-bg";
+  itemInfoBg.className = "item-info-bg def-bg";
   if(localStorage.getItem("lang") === "en") {
     itemName.innerHTML = mecha1en;
     textInfoBelong.innerHTML = "Pilot: " + pilot1en;
@@ -840,6 +864,7 @@ function showMechaNeutronStar() {
 };
 function showMechaNorthernKnight() {
   var itemInfo = document.getElementById("itemInfo");
+  var itemInfoBg = document.getElementById("bgItemInfo");
   var itemImage = document.getElementById("itemImage");
   var itemName = document.getElementById("itemName");
   var textInfoBelong = document.getElementById("textInfoBelong");
@@ -856,7 +881,7 @@ function showMechaNorthernKnight() {
   }else{
     cancelSound();
   }
-  itemInfo.className = "item-info def-bg";
+  itemInfoBg.className = "item-info-bg def-bg";
   if(localStorage.getItem("lang") === "en") {
     itemName.innerHTML = mecha1en;
     textInfoBelong.innerHTML = "Pilot: " + pilot1en;
@@ -875,6 +900,7 @@ function showMechaNorthernKnight() {
 };
 function showMechaPulsar() {
   var itemInfo = document.getElementById("itemInfo");
+  var itemInfoBg = document.getElementById("bgItemInfo");
   var itemImage = document.getElementById("itemImage");
   var itemName = document.getElementById("itemName");
   var textInfoBelong = document.getElementById("textInfoBelong");
@@ -891,7 +917,7 @@ function showMechaPulsar() {
   }else{
     cancelSound();
   }
-  itemInfo.className = "item-info def-bg";
+  itemInfoBg.className = "item-info-bg def-bg";
   if(localStorage.getItem("lang") === "en") {
     itemName.innerHTML = mecha1en;
     textInfoBelong.innerHTML = "Pilot: " + pilot1en;
@@ -910,6 +936,7 @@ function showMechaPulsar() {
 };
 function showMechaRanger() {
   var itemInfo = document.getElementById("itemInfo");
+  var itemInfoBg = document.getElementById("bgItemInfo");
   var itemImage = document.getElementById("itemImage");
   var itemName = document.getElementById("itemName");
   var textInfoBelong = document.getElementById("textInfoBelong");
@@ -926,7 +953,7 @@ function showMechaRanger() {
   }else{
     cancelSound();
   }
-  itemInfo.className = "item-info def-bg";
+  itemInfoBg.className = "item-info-bg def-bg";
   if(localStorage.getItem("lang") === "en") {
     itemName.innerHTML = mecha1en;
     textInfoBelong.innerHTML = "Pilot: " + pilot1en;
@@ -945,6 +972,7 @@ function showMechaRanger() {
 };
 function showMechaRaven() {
   var itemInfo = document.getElementById("itemInfo");
+  var itemInfoBg = document.getElementById("bgItemInfo");
   var itemImage = document.getElementById("itemImage");
   var itemName = document.getElementById("itemName");
   var textInfoBelong = document.getElementById("textInfoBelong");
@@ -961,7 +989,7 @@ function showMechaRaven() {
   }else{
     cancelSound();
   }
-  itemInfo.className = "item-info def-bg";
+  itemInfoBg.className = "item-info-bg def-bg";
   if(localStorage.getItem("lang") === "en") {
     itemName.innerHTML = mecha1en;
     textInfoBelong.innerHTML = "Pilot: " + pilot1en;
@@ -980,6 +1008,7 @@ function showMechaRaven() {
 };
 function showMechaShiranui() {
   var itemInfo = document.getElementById("itemInfo");
+  var itemInfoBg = document.getElementById("bgItemInfo");
   var itemImage = document.getElementById("itemImage");
   var itemName = document.getElementById("itemName");
   var textInfoBelong = document.getElementById("textInfoBelong");
@@ -996,7 +1025,7 @@ function showMechaShiranui() {
   }else{
     cancelSound();
   }
-  itemInfo.className = "item-info def-bg";
+  itemInfoBg.className = "item-info-bg def-bg";
   if(localStorage.getItem("lang") === "en") {
     itemName.innerHTML = mecha1en;
     textInfoBelong.innerHTML = "Pilot: " + pilot1en;
@@ -1015,6 +1044,7 @@ function showMechaShiranui() {
 };
 function showMechaSkyfall() {
   var itemInfo = document.getElementById("itemInfo");
+  var itemInfoBg = document.getElementById("bgItemInfo");
   var itemImage = document.getElementById("itemImage");
   var itemName = document.getElementById("itemName");
   var textInfoBelong = document.getElementById("textInfoBelong");
@@ -1031,7 +1061,7 @@ function showMechaSkyfall() {
   }else{
     cancelSound();
   }
-  itemInfo.className = "item-info def-bg";
+  itemInfoBg.className = "item-info-bg def-bg";
   if(localStorage.getItem("lang") === "en") {
     itemName.innerHTML = mecha1en;
     textInfoBelong.innerHTML = "Pilot: " + pilot1en;
@@ -1050,6 +1080,7 @@ function showMechaSkyfall() {
 };
 function showMechaSkyfire() {
   var itemInfo = document.getElementById("itemInfo");
+  var itemInfoBg = document.getElementById("bgItemInfo");
   var itemImage = document.getElementById("itemImage");
   var itemName = document.getElementById("itemName");
   var textInfoBelong = document.getElementById("textInfoBelong");
@@ -1066,7 +1097,7 @@ function showMechaSkyfire() {
   }else{
     cancelSound();
   }
-  itemInfo.className = "item-info def-bg";
+  itemInfoBg.className = "item-info-bg def-bg";
   if(localStorage.getItem("lang") === "en") {
     itemName.innerHTML = mecha1en;
     textInfoBelong.innerHTML = "Pilot: " + pilot1en;
@@ -1085,6 +1116,7 @@ function showMechaSkyfire() {
 };
 function showMechaSkylark() {
   var itemInfo = document.getElementById("itemInfo");
+  var itemInfoBg = document.getElementById("bgItemInfo");
   var itemImage = document.getElementById("itemImage");
   var itemName = document.getElementById("itemName");
   var textInfoBelong = document.getElementById("textInfoBelong");
@@ -1101,7 +1133,7 @@ function showMechaSkylark() {
   }else{
     cancelSound();
   }
-  itemInfo.className = "item-info def-bg";
+  itemInfoBg.className = "item-info-bg def-bg";
   if(localStorage.getItem("lang") === "en") {
     itemName.innerHTML = mecha1en;
     textInfoBelong.innerHTML = "Pilot: " + pilot1en;
@@ -1120,6 +1152,7 @@ function showMechaSkylark() {
 };
 function showMechaSnowMirage() {
   var itemInfo = document.getElementById("itemInfo");
+  var itemInfoBg = document.getElementById("bgItemInfo");
   var itemImage = document.getElementById("itemImage");
   var itemName = document.getElementById("itemName");
   var textInfoBelong = document.getElementById("textInfoBelong");
@@ -1136,7 +1169,7 @@ function showMechaSnowMirage() {
   }else{
     cancelSound();
   }
-  itemInfo.className = "item-info def-bg";
+  itemInfoBg.className = "item-info-bg def-bg";
   if(localStorage.getItem("lang") === "en") {
     itemName.innerHTML = mecha1en;
     textInfoBelong.innerHTML = "Pilot: " + pilot1en;
@@ -1155,6 +1188,7 @@ function showMechaSnowMirage() {
 };
 function showMechaTempest() {
   var itemInfo = document.getElementById("itemInfo");
+  var itemInfoBg = document.getElementById("bgItemInfo");
   var itemImage = document.getElementById("itemImage");
   var itemName = document.getElementById("itemName");
   var textInfoBelong = document.getElementById("textInfoBelong");
@@ -1171,7 +1205,7 @@ function showMechaTempest() {
   }else{
     cancelSound();
   }
-  itemInfo.className = "item-info def-bg";
+  itemInfoBg.className = "item-info-bg def-bg";
   if(localStorage.getItem("lang") === "en") {
     itemName.innerHTML = mecha1en;
     textInfoBelong.innerHTML = "Pilot: " + pilot1en;
@@ -1190,6 +1224,7 @@ function showMechaTempest() {
 };
 function showMechaTrioofEnders() {
   var itemInfo = document.getElementById("itemInfo");
+  var itemInfoBg = document.getElementById("bgItemInfo");
   var itemImage = document.getElementById("itemImage");
   var itemName = document.getElementById("itemName");
   var textInfoBelong = document.getElementById("textInfoBelong");
@@ -1206,7 +1241,7 @@ function showMechaTrioofEnders() {
   }else{
     cancelSound();
   }
-  itemInfo.className = "item-info def-bg";
+  itemInfoBg.className = "item-info-bg def-bg";
   if(localStorage.getItem("lang") === "en") {
     itemName.innerHTML = mecha1en;
     textInfoBelong.innerHTML = "Pilot: " + pilot1en;
@@ -1225,6 +1260,7 @@ function showMechaTrioofEnders() {
 };
 function showMechaTwilight() {
   var itemInfo = document.getElementById("itemInfo");
+  var itemInfoBg = document.getElementById("bgItemInfo");
   var itemImage = document.getElementById("itemImage");
   var itemName = document.getElementById("itemName");
   var textInfoBelong = document.getElementById("textInfoBelong");
@@ -1241,7 +1277,7 @@ function showMechaTwilight() {
   }else{
     cancelSound();
   }
-  itemInfo.className = "item-info def-bg";
+  itemInfoBg.className = "item-info-bg def-bg";
   if(localStorage.getItem("lang") === "en") {
     itemName.innerHTML = mecha1en;
     textInfoBelong.innerHTML = "Pilot: " + pilot1en;
@@ -1260,6 +1296,7 @@ function showMechaTwilight() {
 };
 function showMechaVentorus() {
   var itemInfo = document.getElementById("itemInfo");
+  var itemInfoBg = document.getElementById("bgItemInfo");
   var itemImage = document.getElementById("itemImage");
   var itemName = document.getElementById("itemName");
   var textInfoBelong = document.getElementById("textInfoBelong");
@@ -1276,7 +1313,7 @@ function showMechaVentorus() {
   }else{
     cancelSound();
   }
-  itemInfo.className = "item-info def-bg";
+  itemInfoBg.className = "item-info-bg def-bg";
   if(localStorage.getItem("lang") === "en") {
     itemName.innerHTML = mecha1en;
     textInfoBelong.innerHTML = "Pilot: " + pilot1en;

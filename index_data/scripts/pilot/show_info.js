@@ -1,5 +1,6 @@
 function showPilotAya() {
   var itemInfo = document.getElementById("itemInfo");
+  var itemInfoBg = document.getElementById("bgItemInfo");
   var itemImage = document.getElementById("itemImage");
   var itemName = document.getElementById("itemName");
   var textInfoBelong = document.getElementById("textInfoBelong");
@@ -16,7 +17,7 @@ function showPilotAya() {
   }else{
     cancelSound();
   }
-  itemInfo.className = "item-info def-bg";
+  itemInfoBg.className = "item-info-bg def-bg";
   if(localStorage.getItem("lang") === "en") {
     itemName.innerHTML = pilot1en;
     textInfoBelong.innerHTML = "Mecha: " + mecha1en;
@@ -34,6 +35,7 @@ function showPilotAya() {
 };
 function showPilotBelladonna() {
   var itemInfo = document.getElementById("itemInfo");
+  var itemInfoBg = document.getElementById("bgItemInfo");
   var itemImage = document.getElementById("itemImage");
   var itemName = document.getElementById("itemName");
   var textInfoBelong = document.getElementById("textInfoBelong");
@@ -50,7 +52,7 @@ function showPilotBelladonna() {
   }else{
     cancelSound();
   }
-  itemInfo.className = "item-info def-bg";
+  itemInfoBg.className = "item-info-bg def-bg";
   if(localStorage.getItem("lang") === "en") {
     itemName.innerHTML = pilot1en;
     textInfoBelong.innerHTML = "Mecha: " + mecha1en;
@@ -68,6 +70,7 @@ function showPilotBelladonna() {
 };
 function showPilotCyrus() {
   var itemInfo = document.getElementById("itemInfo");
+  var itemInfoBg = document.getElementById("bgItemInfo");
   var itemImage = document.getElementById("itemImage");
   var itemName = document.getElementById("itemName");
   var textInfoBelong = document.getElementById("textInfoBelong");
@@ -84,7 +87,7 @@ function showPilotCyrus() {
   }else{
     cancelSound();
   }
-  itemInfo.className = "item-info def-bg";
+  itemInfoBg.className = "item-info-bg def-bg";
   if(localStorage.getItem("lang") === "en") {
     itemName.innerHTML = pilot1en;
     textInfoBelong.innerHTML = "Mecha: " + mecha1en;
@@ -102,6 +105,7 @@ function showPilotCyrus() {
 };
 function showPilotFran() {
   var itemInfo = document.getElementById("itemInfo");
+  var itemInfoBg = document.getElementById("bgItemInfo");
   var itemImage = document.getElementById("itemImage");
   var itemName = document.getElementById("itemName");
   var textInfoBelong = document.getElementById("textInfoBelong");
@@ -118,7 +122,7 @@ function showPilotFran() {
   }else{
     cancelSound();
   }
-  itemInfo.className = "item-info def-bg";
+  itemInfoBg.className = "item-info-bg def-bg";
   if(localStorage.getItem("lang") === "en") {
     itemName.innerHTML = pilot1en;
     textInfoBelong.innerHTML = "Mecha: " + mecha1en;
@@ -136,6 +140,7 @@ function showPilotFran() {
 };
 function showPilotFuranku() {
   var itemInfo = document.getElementById("itemInfo");
+  var itemInfoBg = document.getElementById("bgItemInfo");
   var itemImage = document.getElementById("itemImage");
   var itemName = document.getElementById("itemName");
   var textInfoBelong = document.getElementById("textInfoBelong");
@@ -152,7 +157,7 @@ function showPilotFuranku() {
   }else{
     cancelSound();
   }
-  itemInfo.className = "item-info def-bg";
+  itemInfoBg.className = "item-info-bg def-bg";
   if(localStorage.getItem("lang") === "en") {
     itemName.innerHTML = pilot1en;
     textInfoBelong.innerHTML = "Mecha: " + mecha1en;
@@ -170,6 +175,7 @@ function showPilotFuranku() {
 };
 function showPilotIori() {
   var itemInfo = document.getElementById("itemInfo");
+  var itemInfoBg = document.getElementById("bgItemInfo");
   var itemImage = document.getElementById("itemImage");
   var itemName = document.getElementById("itemName");
   var textInfoBelong = document.getElementById("textInfoBelong");
@@ -186,7 +192,7 @@ function showPilotIori() {
   }else{
     cancelSound();
   }
-  itemInfo.className = "item-info def-bg";
+  itemInfoBg.className = "item-info-bg def-bg";
   if(localStorage.getItem("lang") === "en") {
     itemName.innerHTML = pilot1en;
     textInfoBelong.innerHTML = "Mecha: " + mecha1en;
@@ -204,6 +210,7 @@ function showPilotIori() {
 };
 function showPilotIvan() {
   var itemInfo = document.getElementById("itemInfo");
+  var itemInfoBg = document.getElementById("bgItemInfo");
   var itemImage = document.getElementById("itemImage");
   var itemName = document.getElementById("itemName");
   var textInfoBelong = document.getElementById("textInfoBelong");
@@ -220,7 +227,7 @@ function showPilotIvan() {
   }else{
     cancelSound();
   }
-  itemInfo.className = "item-info def-bg";
+  itemInfoBg.className = "item-info-bg def-bg";
   if(localStorage.getItem("lang") === "en") {
     itemName.innerHTML = pilot1en;
     textInfoBelong.innerHTML = "Mecha: " + mecha1en;
@@ -238,6 +245,7 @@ function showPilotIvan() {
 };
 function showPilotJaka() {
   var itemInfo = document.getElementById("itemInfo");
+  var itemInfoBg = document.getElementById("bgItemInfo");
   var itemImage = document.getElementById("itemImage");
   var itemName = document.getElementById("itemName");
   var textInfoBelong = document.getElementById("textInfoBelong");
@@ -254,7 +262,7 @@ function showPilotJaka() {
   }else{
     cancelSound();
   }
-  itemInfo.className = "item-info def-bg";
+  itemInfoBg.className = "item-info-bg def-bg";
   if(localStorage.getItem("lang") === "en") {
     itemName.innerHTML = pilot1en;
     textInfoBelong.innerHTML = "Mecha: " + mecha1en;
@@ -272,6 +280,7 @@ function showPilotJaka() {
 };
 function showPilotJoanna() {
   var itemInfo = document.getElementById("itemInfo");
+  var itemInfoBg = document.getElementById("bgItemInfo");
   var itemImage = document.getElementById("itemImage");
   var itemName = document.getElementById("itemName");
   var textInfoBelong = document.getElementById("textInfoBelong");
@@ -288,7 +297,7 @@ function showPilotJoanna() {
   }else{
     cancelSound();
   }
-  itemInfo.className = "item-info def-bg";
+  itemInfoBg.className = "item-info-bg def-bg";
   if(localStorage.getItem("lang") === "en") {
     itemName.innerHTML = pilot1en;
     textInfoBelong.innerHTML = "Mecha: " + mecha1en;
@@ -306,6 +315,7 @@ function showPilotJoanna() {
 };
 function showPilotKije() {
   var itemInfo = document.getElementById("itemInfo");
+  var itemInfoBg = document.getElementById("bgItemInfo");
   var itemImage = document.getElementById("itemImage");
   var itemName = document.getElementById("itemName");
   var textInfoBelong = document.getElementById("textInfoBelong");
@@ -322,7 +332,7 @@ function showPilotKije() {
   }else{
     cancelSound();
   }
-  itemInfo.className = "item-info def-bg";
+  itemInfoBg.className = "item-info-bg def-bg";
   if(localStorage.getItem("lang") === "en") {
     itemName.innerHTML = pilot1en;
     textInfoBelong.innerHTML = "Mecha: " + mecha1en;
@@ -340,6 +350,7 @@ function showPilotKije() {
 };
 function showPilotKikina() {
   var itemInfo = document.getElementById("itemInfo");
+  var itemInfoBg = document.getElementById("bgItemInfo");
   var itemImage = document.getElementById("itemImage");
   var itemName = document.getElementById("itemName");
   var textInfoBelong = document.getElementById("textInfoBelong");
@@ -356,7 +367,7 @@ function showPilotKikina() {
   }else{
     cancelSound();
   }
-  itemInfo.className = "item-info def-bg";
+  itemInfoBg.className = "item-info-bg def-bg";
   if(localStorage.getItem("lang") === "en") {
     itemName.innerHTML = pilot1en;
     textInfoBelong.innerHTML = "Mecha: " + mecha1en;
@@ -374,6 +385,7 @@ function showPilotKikina() {
 };
 function showPilotKizunaAi() {
   var itemInfo = document.getElementById("itemInfo");
+  var itemInfoBg = document.getElementById("bgItemInfo");
   var itemImage = document.getElementById("itemImage");
   var itemName = document.getElementById("itemName");
   var textInfoBelong = document.getElementById("textInfoBelong");
@@ -390,7 +402,7 @@ function showPilotKizunaAi() {
   }else{
     cancelSound();
   }
-  itemInfo.className = "item-info def-bg";
+  itemInfoBg.className = "item-info-bg def-bg";
   if(localStorage.getItem("lang") === "en") {
     itemName.innerHTML = pilot1en;
     textInfoBelong.innerHTML = "Mecha: " + mecha1en;
@@ -408,6 +420,7 @@ function showPilotKizunaAi() {
 };
 function showPilotLillian() {
   var itemInfo = document.getElementById("itemInfo");
+  var itemInfoBg = document.getElementById("bgItemInfo");
   var itemImage = document.getElementById("itemImage");
   var itemName = document.getElementById("itemName");
   var textInfoBelong = document.getElementById("textInfoBelong");
@@ -424,7 +437,7 @@ function showPilotLillian() {
   }else{
     cancelSound();
   }
-  itemInfo.className = "item-info def-bg";
+  itemInfoBg.className = "item-info-bg def-bg";
   if(localStorage.getItem("lang") === "en") {
     itemName.innerHTML = pilot1en;
     textInfoBelong.innerHTML = "Mecha: " + mecha1en;
@@ -442,6 +455,7 @@ function showPilotLillian() {
 };
 function showPilotLysa() {
   var itemInfo = document.getElementById("itemInfo");
+  var itemInfoBg = document.getElementById("bgItemInfo");
   var itemImage = document.getElementById("itemImage");
   var itemName = document.getElementById("itemName");
   var textInfoBelong = document.getElementById("textInfoBelong");
@@ -458,7 +472,7 @@ function showPilotLysa() {
   }else{
     cancelSound();
   }
-  itemInfo.className = "item-info def-bg";
+  itemInfoBg.className = "item-info-bg def-bg";
   if(localStorage.getItem("lang") === "en") {
     itemName.innerHTML = pilot1en;
     textInfoBelong.innerHTML = "Mecha: " + mecha1en;
@@ -476,6 +490,7 @@ function showPilotLysa() {
 };
 function showPilotMatilda() {
   var itemInfo = document.getElementById("itemInfo");
+  var itemInfoBg = document.getElementById("bgItemInfo");
   var itemImage = document.getElementById("itemImage");
   var itemName = document.getElementById("itemName");
   var textInfoBelong = document.getElementById("textInfoBelong");
@@ -492,7 +507,7 @@ function showPilotMatilda() {
   }else{
     cancelSound();
   }
-  itemInfo.className = "item-info def-bg";
+  itemInfoBg.className = "item-info-bg def-bg";
   if(localStorage.getItem("lang") === "en") {
     itemName.innerHTML = pilot1en;
     textInfoBelong.innerHTML = "Mecha: " + mecha1en;
@@ -510,6 +525,7 @@ function showPilotMatilda() {
 };
 function showPilotMia() {
   var itemInfo = document.getElementById("itemInfo");
+  var itemInfoBg = document.getElementById("bgItemInfo");
   var itemImage = document.getElementById("itemImage");
   var itemName = document.getElementById("itemName");
   var textInfoBelong = document.getElementById("textInfoBelong");
@@ -526,7 +542,7 @@ function showPilotMia() {
   }else{
     cancelSound();
   }
-  itemInfo.className = "item-info def-bg";
+  itemInfoBg.className = "item-info-bg def-bg";
   if(localStorage.getItem("lang") === "en") {
     itemName.innerHTML = pilot1en;
     textInfoBelong.innerHTML = "Mecha: " + mecha1en;
@@ -544,6 +560,7 @@ function showPilotMia() {
 };
 function showPilotMila() {
   var itemInfo = document.getElementById("itemInfo");
+  var itemInfoBg = document.getElementById("bgItemInfo");
   var itemImage = document.getElementById("itemImage");
   var itemName = document.getElementById("itemName");
   var textInfoBelong = document.getElementById("textInfoBelong");
@@ -560,7 +577,7 @@ function showPilotMila() {
   }else{
     cancelSound();
   }
-  itemInfo.className = "item-info def-bg";
+  itemInfoBg.className = "item-info-bg def-bg";
   if(localStorage.getItem("lang") === "en") {
     itemName.innerHTML = pilot1en;
     textInfoBelong.innerHTML = "Mecha: " + mecha1en;
@@ -578,6 +595,7 @@ function showPilotMila() {
 };
 function showPilotMobius() {
   var itemInfo = document.getElementById("itemInfo");
+  var itemInfoBg = document.getElementById("bgItemInfo");
   var itemImage = document.getElementById("itemImage");
   var itemName = document.getElementById("itemName");
   var textInfoBelong = document.getElementById("textInfoBelong");
@@ -594,7 +612,7 @@ function showPilotMobius() {
   }else{
     cancelSound();
   }
-  itemInfo.className = "item-info def-bg";
+  itemInfoBg.className = "item-info-bg def-bg";
   if(localStorage.getItem("lang") === "en") {
     itemName.innerHTML = pilot1en;
     textInfoBelong.innerHTML = "Mecha: " + mecha1en;
@@ -612,6 +630,7 @@ function showPilotMobius() {
 };
 function showPilotNighthawk() {
   var itemInfo = document.getElementById("itemInfo");
+  var itemInfoBg = document.getElementById("bgItemInfo");
   var itemImage = document.getElementById("itemImage");
   var itemName = document.getElementById("itemName");
   var textInfoBelong = document.getElementById("textInfoBelong");
@@ -628,7 +647,7 @@ function showPilotNighthawk() {
   }else{
     cancelSound();
   }
-  itemInfo.className = "item-info def-bg";
+  itemInfoBg.className = "item-info-bg def-bg";
   if(localStorage.getItem("lang") === "en") {
     itemName.innerHTML = pilot1en;
     textInfoBelong.innerHTML = "Mecha: " + mecha1en;
@@ -646,6 +665,7 @@ function showPilotNighthawk() {
 };
 function showPilotNing() {
   var itemInfo = document.getElementById("itemInfo");
+  var itemInfoBg = document.getElementById("bgItemInfo");
   var itemImage = document.getElementById("itemImage");
   var itemName = document.getElementById("itemName");
   var textInfoBelong = document.getElementById("textInfoBelong");
@@ -662,7 +682,7 @@ function showPilotNing() {
   }else{
     cancelSound();
   }
-  itemInfo.className = "item-info def-bg";
+  itemInfoBg.className = "item-info-bg def-bg";
   if(localStorage.getItem("lang") === "en") {
     itemName.innerHTML = pilot1en;
     textInfoBelong.innerHTML = "Mecha: " + mecha1en;
@@ -680,6 +700,7 @@ function showPilotNing() {
 };
 function showPilotNorma() {
   var itemInfo = document.getElementById("itemInfo");
+  var itemInfoBg = document.getElementById("bgItemInfo");
   var itemImage = document.getElementById("itemImage");
   var itemName = document.getElementById("itemName");
   var textInfoBelong = document.getElementById("textInfoBelong");
@@ -696,7 +717,7 @@ function showPilotNorma() {
   }else{
     cancelSound();
   }
-  itemInfo.className = "item-info def-bg";
+  itemInfoBg.className = "item-info-bg def-bg";
   if(localStorage.getItem("lang") === "en") {
     itemName.innerHTML = pilot1en;
     textInfoBelong.innerHTML = "Mecha: " + mecha1en;
@@ -714,6 +735,7 @@ function showPilotNorma() {
 };
 function showPilotOpal() {
   var itemInfo = document.getElementById("itemInfo");
+  var itemInfoBg = document.getElementById("bgItemInfo");
   var itemImage = document.getElementById("itemImage");
   var itemName = document.getElementById("itemName");
   var textInfoBelong = document.getElementById("textInfoBelong");
@@ -730,7 +752,7 @@ function showPilotOpal() {
   }else{
     cancelSound();
   }
-  itemInfo.className = "item-info def-bg";
+  itemInfoBg.className = "item-info-bg def-bg";
   if(localStorage.getItem("lang") === "en") {
     itemName.innerHTML = pilot1en;
     textInfoBelong.innerHTML = "Mecha: " + mecha1en;
@@ -748,6 +770,7 @@ function showPilotOpal() {
 };
 function showPilotPurity() {
   var itemInfo = document.getElementById("itemInfo");
+  var itemInfoBg = document.getElementById("bgItemInfo");
   var itemImage = document.getElementById("itemImage");
   var itemName = document.getElementById("itemName");
   var textInfoBelong = document.getElementById("textInfoBelong");
@@ -764,7 +787,7 @@ function showPilotPurity() {
   }else{
     cancelSound();
   }
-  itemInfo.className = "item-info def-bg";
+  itemInfoBg.className = "item-info-bg def-bg";
   if(localStorage.getItem("lang") === "en") {
     itemName.innerHTML = pilot1en;
     textInfoBelong.innerHTML = "Mecha: " + mecha1en;
@@ -782,6 +805,7 @@ function showPilotPurity() {
 };
 function showPilotRED() {
   var itemInfo = document.getElementById("itemInfo");
+  var itemInfoBg = document.getElementById("bgItemInfo");
   var itemImage = document.getElementById("itemImage");
   var itemName = document.getElementById("itemName");
   var textInfoBelong = document.getElementById("textInfoBelong");
@@ -798,7 +822,7 @@ function showPilotRED() {
   }else{
     cancelSound();
   }
-  itemInfo.className = "item-info def-bg";
+  itemInfoBg.className = "item-info-bg def-bg";
   if(localStorage.getItem("lang") === "en") {
     itemName.innerHTML = pilot1en;
     textInfoBelong.innerHTML = "Mecha: " + mecha1en;
@@ -816,6 +840,7 @@ function showPilotRED() {
 };
 function showPilotRiko() {
   var itemInfo = document.getElementById("itemInfo");
+  var itemInfoBg = document.getElementById("bgItemInfo");
   var itemImage = document.getElementById("itemImage");
   var itemName = document.getElementById("itemName");
   var textInfoBelong = document.getElementById("textInfoBelong");
@@ -832,7 +857,7 @@ function showPilotRiko() {
   }else{
     cancelSound();
   }
-  itemInfo.className = "item-info def-bg";
+  itemInfoBg.className = "item-info-bg def-bg";
   if(localStorage.getItem("lang") === "en") {
     itemName.innerHTML = pilot1en;
     textInfoBelong.innerHTML = "Mecha: " + mecha1en;
@@ -850,6 +875,7 @@ function showPilotRiko() {
 };
 function showPilotRom() {
   var itemInfo = document.getElementById("itemInfo");
+  var itemInfoBg = document.getElementById("bgItemInfo");
   var itemImage = document.getElementById("itemImage");
   var itemName = document.getElementById("itemName");
   var textInfoBelong = document.getElementById("textInfoBelong");
@@ -866,7 +892,7 @@ function showPilotRom() {
   }else{
     cancelSound();
   }
-  itemInfo.className = "item-info def-bg";
+  itemInfoBg.className = "item-info-bg def-bg";
   if(localStorage.getItem("lang") === "en") {
     itemName.innerHTML = pilot1en;
     textInfoBelong.innerHTML = "Mecha: " + mecha1en;
@@ -884,6 +910,7 @@ function showPilotRom() {
 };
 function showPilotSerena() {
   var itemInfo = document.getElementById("itemInfo");
+  var itemInfoBg = document.getElementById("bgItemInfo");
   var itemImage = document.getElementById("itemImage");
   var itemName = document.getElementById("itemName");
   var textInfoBelong = document.getElementById("textInfoBelong");
@@ -900,7 +927,7 @@ function showPilotSerena() {
   }else{
     cancelSound();
   }
-  itemInfo.className = "item-info def-bg";
+  itemInfoBg.className = "item-info-bg def-bg";
   if(localStorage.getItem("lang") === "en") {
     itemName.innerHTML = pilot1en;
     textInfoBelong.innerHTML = "Mecha: " + mecha1en;
@@ -918,6 +945,7 @@ function showPilotSerena() {
 };
 function showPilotShin() {
   var itemInfo = document.getElementById("itemInfo");
+  var itemInfoBg = document.getElementById("bgItemInfo");
   var itemImage = document.getElementById("itemImage");
   var itemName = document.getElementById("itemName");
   var textInfoBelong = document.getElementById("textInfoBelong");
@@ -934,7 +962,7 @@ function showPilotShin() {
   }else{
     cancelSound();
   }
-  itemInfo.className = "item-info def-bg";
+  itemInfoBg.className = "item-info-bg def-bg";
   if(localStorage.getItem("lang") === "en") {
     itemName.innerHTML = pilot1en;
     textInfoBelong.innerHTML = "Mecha: " + mecha1en;
@@ -952,6 +980,7 @@ function showPilotShin() {
 };
 function showPilotSilverDeacon() {
   var itemInfo = document.getElementById("itemInfo");
+  var itemInfoBg = document.getElementById("bgItemInfo");
   var itemImage = document.getElementById("itemImage");
   var itemName = document.getElementById("itemName");
   var textInfoBelong = document.getElementById("textInfoBelong");
@@ -968,7 +997,7 @@ function showPilotSilverDeacon() {
   }else{
     cancelSound();
   }
-  itemInfo.className = "item-info def-bg";
+  itemInfoBg.className = "item-info-bg def-bg";
   if(localStorage.getItem("lang") === "en") {
     itemName.innerHTML = pilot1en;
     textInfoBelong.innerHTML = "Mecha: " + mecha1en;
@@ -986,6 +1015,7 @@ function showPilotSilverDeacon() {
 };
 function showPilotTarantula() {
   var itemInfo = document.getElementById("itemInfo");
+  var itemInfoBg = document.getElementById("bgItemInfo");
   var itemImage = document.getElementById("itemImage");
   var itemName = document.getElementById("itemName");
   var textInfoBelong = document.getElementById("textInfoBelong");
@@ -1002,7 +1032,7 @@ function showPilotTarantula() {
   }else{
     cancelSound();
   }
-  itemInfo.className = "item-info def-bg";
+  itemInfoBg.className = "item-info-bg def-bg";
   if(localStorage.getItem("lang") === "en") {
     itemName.innerHTML = pilot1en;
     textInfoBelong.innerHTML = "Mecha: " + mecha1en;
@@ -1020,6 +1050,7 @@ function showPilotTarantula() {
 };
 function showPilotVanessa() {
   var itemInfo = document.getElementById("itemInfo");
+  var itemInfoBg = document.getElementById("bgItemInfo");
   var itemImage = document.getElementById("itemImage");
   var itemName = document.getElementById("itemName");
   var textInfoBelong = document.getElementById("textInfoBelong");
@@ -1036,7 +1067,7 @@ function showPilotVanessa() {
   }else{
     cancelSound();
   }
-  itemInfo.className = "item-info def-bg";
+  itemInfoBg.className = "item-info-bg def-bg";
   if(localStorage.getItem("lang") === "en") {
     itemName.innerHTML = pilot1en;
     textInfoBelong.innerHTML = "Mecha: " + mecha1en;
@@ -1054,6 +1085,7 @@ function showPilotVanessa() {
 };
 function showPilotVillar() {
   var itemInfo = document.getElementById("itemInfo");
+  var itemInfoBg = document.getElementById("bgItemInfo");
   var itemImage = document.getElementById("itemImage");
   var itemName = document.getElementById("itemName");
   var textInfoBelong = document.getElementById("textInfoBelong");
@@ -1070,7 +1102,7 @@ function showPilotVillar() {
   }else{
     cancelSound();
   }
-  itemInfo.className = "item-info def-bg";
+  itemInfoBg.className = "item-info-bg def-bg";
   if(localStorage.getItem("lang") === "en") {
     itemName.innerHTML = pilot1en;
     textInfoBelong.innerHTML = "Mecha: " + mecha1en;
@@ -1088,6 +1120,7 @@ function showPilotVillar() {
 };
 function showPilotVita() {
   var itemInfo = document.getElementById("itemInfo");
+  var itemInfoBg = document.getElementById("bgItemInfo");
   var itemImage = document.getElementById("itemImage");
   var itemName = document.getElementById("itemName");
   var textInfoBelong = document.getElementById("textInfoBelong");
@@ -1104,7 +1137,7 @@ function showPilotVita() {
   }else{
     cancelSound();
   }
-  itemInfo.className = "item-info def-bg";
+  itemInfoBg.className = "item-info-bg def-bg";
   if(localStorage.getItem("lang") === "en") {
     itemName.innerHTML = pilot1en;
     textInfoBelong.innerHTML = "Mecha: " + mecha1en;
@@ -1122,6 +1155,7 @@ function showPilotVita() {
 };
 function showPilotYang() {
   var itemInfo = document.getElementById("itemInfo");
+  var itemInfoBg = document.getElementById("bgItemInfo");
   var itemImage = document.getElementById("itemImage");
   var itemName = document.getElementById("itemName");
   var textInfoBelong = document.getElementById("textInfoBelong");
@@ -1138,7 +1172,7 @@ function showPilotYang() {
   }else{
     cancelSound();
   }
-  itemInfo.className = "item-info def-bg";
+  itemInfoBg.className = "item-info-bg def-bg";
   if(localStorage.getItem("lang") === "en") {
     itemName.innerHTML = pilot1en;
     textInfoBelong.innerHTML = "Mecha: " + mecha1en;
@@ -1156,6 +1190,7 @@ function showPilotYang() {
 };
 function showPilotYulia() {
   var itemInfo = document.getElementById("itemInfo");
+  var itemInfoBg = document.getElementById("bgItemInfo");
   var itemImage = document.getElementById("itemImage");
   var itemName = document.getElementById("itemName");
   var textInfoBelong = document.getElementById("textInfoBelong");
@@ -1172,7 +1207,7 @@ function showPilotYulia() {
   }else{
     cancelSound();
   }
-  itemInfo.className = "item-info def-bg";
+  itemInfoBg.className = "item-info-bg def-bg";
   if(localStorage.getItem("lang") === "en") {
     itemName.innerHTML = pilot1en;
     textInfoBelong.innerHTML = "Mecha: " + mecha1en;
@@ -1190,6 +1225,7 @@ function showPilotYulia() {
 };
 function showPilotYutong() {
   var itemInfo = document.getElementById("itemInfo");
+  var itemInfoBg = document.getElementById("bgItemInfo");
   var itemImage = document.getElementById("itemImage");
   var itemName = document.getElementById("itemName");
   var textInfoBelong = document.getElementById("textInfoBelong");
@@ -1206,7 +1242,7 @@ function showPilotYutong() {
   }else{
     cancelSound();
   }
-  itemInfo.className = "item-info def-bg";
+  itemInfoBg.className = "item-info-bg def-bg";
   if(localStorage.getItem("lang") === "en") {
     itemName.innerHTML = pilot1en;
     textInfoBelong.innerHTML = "Mecha: " + mecha1en;
@@ -1224,6 +1260,7 @@ function showPilotYutong() {
 };
 function showPilotZoe() {
   var itemInfo = document.getElementById("itemInfo");
+  var itemInfoBg = document.getElementById("bgItemInfo");
   var itemImage = document.getElementById("itemImage");
   var itemName = document.getElementById("itemName");
   var textInfoBelong = document.getElementById("textInfoBelong");
@@ -1240,7 +1277,7 @@ function showPilotZoe() {
   }else{
     cancelSound();
   }
-  itemInfo.className = "item-info def-bg";
+  itemInfoBg.className = "item-info-bg def-bg";
   if(localStorage.getItem("lang") === "en") {
     itemName.innerHTML = pilot1en;
     textInfoBelong.innerHTML = "Mecha: " + mecha1en;
