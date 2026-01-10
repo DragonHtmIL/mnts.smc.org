@@ -845,7 +845,6 @@ function loadTextures() {
     }
     for (const name of list) {
       const img = document.createElement("img");
-      img.style.cssText = "width:1px;height:1px;opacity:0;";
       img.dataset.folder = folder;
       img.dataset.name = name;
       img.dataset.extIndex = 0;
