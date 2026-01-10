@@ -1714,6 +1714,7 @@
       <audio id="btnPress" src="index_data/audio/interface/gacha/press_btn.wav"></audio>
     </div>
     <div class="collection-center" id="collectionCenter" style="display: none;">
+    <div class="coliction-c-bg-blur"></div>
       <span class="close-full-window" onclick="document.getElementById('collectionCenter').style.display='none';document.getElementById('gachaContent').style.display='block';closeModalSound();"></span>
       <div class="tab-gallery">
         <button class="collectiontab mecha-gallery" onclick="openCollection(event, 'mechaGallery');selectionSound();" id="mechaCollectionGallery">...</button>
@@ -2250,6 +2251,7 @@
       </div>
     </div>
     <div class="item-info" id="itemInfo" style="display: none;">
+      <div class="item-info-bg" id="bgItemInfo"></div>
       <span class="close-full-window" onclick="document.getElementById('itemInfo').style.display='none';document.getElementById('collectionCenter').style.display='block';defaultClickSound();"></span>
       <div class="item-name" id="itemName"></div>
       <div class="image-preview" id="itemImage"></div>

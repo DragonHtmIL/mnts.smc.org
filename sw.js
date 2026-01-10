@@ -1,8 +1,6 @@
 var GHPATH = '/mnts.smc.org';
 var APP_PREFIX = 'gppwa_';
-let VERSIONNAME = "1.3.8-06012026";
-var VERSION = VERSIONNAME;
-
+var VERSION = "1.3.9-10012026";
 var URLS = [
   `${GHPATH}/index_data/animations/anime.gif`,
   `${GHPATH}/index_data/animations/anime_2.gif`,
@@ -950,7 +948,6 @@ var URLS = [
   `${GHPATH}/index_data`,
   `${GHPATH}/index.html`
 ];
-
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(VERSION).then(cache => cache.addAll(URLS)));
 });
