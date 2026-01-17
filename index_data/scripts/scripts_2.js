@@ -343,22 +343,6 @@ function checkDeviceType() {
   }
 };
 checkDeviceType();
-function autoSnakeLoadNew() {
-  if(localStorage.getItem("snakeStyle") === null) {
-    // load snake
-    localStorage.setItem("snakeStyle", "imgSnakeOne");
-    localStorage.setItem("number","one");
-    window.location.reload();
-  }else
-  if(localStorage.getItem("snakeStyle") === "") {
-    // load snake
-    localStorage.setItem("snakeStyle", "imgSnakeOne");
-    localStorage.setItem("number","one");
-    window.location.reload();
-  }else{
-    return false;
-  }
-};
 function autoDifficultyLoadNew() {
   if(localStorage.getItem("difficulty") === null) {
     // load difficulty
@@ -426,22 +410,6 @@ function autoLanguageLoadNew() {
   if(localStorage.getItem("lang") === "") {
     // load language
     localStorage.setItem("lang", "en");
-    window.location.reload();
-  }else{
-    return false;
-  }
-};
-function autoMusicLoadNew() {
-  if(localStorage.getItem("musicbg") === null) {
-    // load music
-    localStorage.setItem("musicbg", "sauMusic");
-    document.getElementById("checkMusicMute").click();
-    window.location.reload();
-  }else
-  if(localStorage.getItem("musicbg") === "") {
-    // load music
-    localStorage.setItem("musicbg", "sauMusic");
-    document.getElementById("checkMusicMute").click();
     window.location.reload();
   }else{
     return false;
@@ -1599,11 +1567,11 @@ function autoAmbientCheckLoadNew() {
 };
 function autoSnakeColorerLoadNew() {
   if(localStorage.getItem("snakeColor") === null) {
-    localStorage.setItem("snakeColor", "#ddaaff");
+    localStorage.setItem("snakeColor", "#2855f9");
     window.location.reload();
   }else
   if(localStorage.getItem("snakeColor") === "") {
-    localStorage.setItem("snakeColor", "#ddaaff");
+    localStorage.setItem("snakeColor", "#2855f9");
     window.location.reload();
   }else{
     return false;
@@ -1611,11 +1579,11 @@ function autoSnakeColorerLoadNew() {
 };
 function autoSnakeLettersLoadNew() {
   if(localStorage.getItem("snakeLetter") === null) {
-    localStorage.setItem("snakeLetter", " ");
+    localStorage.setItem("snakeLetter", "1");
     window.location.reload();
   }else
   if(localStorage.getItem("snakeLetter") === "") {
-    localStorage.setItem("snakeLetter", " ");
+    localStorage.setItem("snakeLetter", "1");
     window.location.reload();
   }else{
     return false;
@@ -2492,7 +2460,7 @@ function fpsDisplaying() {
     lastTime = now;
   }
   requestAnimationFrame(fpsDisplaying);
-}
+};
 requestAnimationFrame(fpsDisplaying);
 function showFpsDisplaying() {
   var checkbox = document.getElementById("cFpsDisplay");

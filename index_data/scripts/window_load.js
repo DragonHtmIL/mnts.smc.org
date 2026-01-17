@@ -5,13 +5,11 @@ window.addEventListener('load', function() {
   }, 1000);
   languagesContents();
   updateTextLangs();
-  autoSnakeLoadNew();
   autoDifficultyLoadNew();
   autoFoodsLoadNew();
   autoBoardsLoadNew();
   autoControllerPoseLoadNew();
   autoLanguageLoadNew();
-  autoMusicLoadNew();
   autoDynamicControllerLoadNew();
   autoMusicCheckLoadNew();
   autoSfxProgLoadNew();
