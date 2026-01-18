@@ -22,7 +22,8 @@ document.getElementById("reset").onclick = function() {
 function pauseGame() {
   var alert = document.getElementById("alert");
   var checkbox = document.getElementById("chechboxPausing");
-  var alertcancel = document.getElementById("alertLeft");
+  var alertcancel = document.getElementById("alertCenter");
+  var alertnull = document.getElementById("alertLeft");
   var alertconfirm = document.getElementById("alertRight");
   alertconfirm.style.display = "block";
   if(checkbox.checked === true) {
@@ -32,6 +33,8 @@ function pauseGame() {
     alert.style.display = "block";
     alertcancel.value = "...";
     alertcancel.style.display = "none";
+    alertnull.value = "...";
+    alertnull.style.display = "none";
     if(localStorage.getItem("lang") === "en") {
       if(navigator.userAgent.match(/mobile|Tablet|iPad|android|bSurface/i)) {
         document.getElementById("alertText").innerHTML = "Game paused, touch ''Continue'' to continue.";
@@ -2323,6 +2326,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const scrollableElementF = document.getElementById('audio');
   const scrollableElementG = document.getElementById('game');
   const scrollableElementH = document.getElementById('tools');
+  const scrollableElementI = document.getElementById('profileItemsContent');
   const scrollRangeA = document.getElementById('conOne');
   const scrollRangeB = document.getElementById('conTwo');
   const scrollRangeC = document.getElementById('conThree');
@@ -2331,6 +2335,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const scrollRangeF = document.getElementById('conSix');
   const scrollRangeG = document.getElementById('conSeven');
   const scrollRangeH = document.getElementById('conEight');
+  const scrollRangeI = document.getElementById('conNine');
   scrollRangeA.addEventListener('input', function() {
     const percentage = this.value;
     const maxScrollTop = scrollableElementA.scrollHeight - scrollableElementA.clientHeight;
@@ -2379,6 +2384,12 @@ document.addEventListener('DOMContentLoaded', function() {
     const scrollTopPosition = (percentage / 100) * maxScrollTop;
     scrollableElementH.scrollTop = scrollTopPosition;
   });
+  scrollRangeI.addEventListener('input', function() {
+    const percentage = this.value;
+    const maxScrollTop = scrollableElementI.scrollHeight - scrollableElementI.clientHeight;
+    const scrollTopPosition = (percentage / 100) * maxScrollTop;
+    scrollableElementI.scrollTop = scrollTopPosition;
+  });
   scrollableElementA.addEventListener('scroll', function() {
     const maxScrollTop = this.scrollHeight - this.clientHeight;
     const currentScrollTop = this.scrollTop;
@@ -2426,6 +2437,12 @@ document.addEventListener('DOMContentLoaded', function() {
     const currentScrollTop = this.scrollTop;
     const scrollPercentage = (currentScrollTop / maxScrollTop) * 100;
     scrollRangeH.value = scrollPercentage;
+  });
+  scrollableElementI.addEventListener('scroll', function() {
+    const maxScrollTop = this.scrollHeight - this.clientHeight;
+    const currentScrollTop = this.scrollTop;
+    const scrollPercentage = (currentScrollTop / maxScrollTop) * 100;
+    scrollRangeI.value = scrollPercentage;
   });
 });
 function saveAmbientChecker() {
@@ -2525,6 +2542,8 @@ function openWIDmModalSavDat() {
   }else
   if(localStorage.getItem("lang") === "ru") {
     title.innerHTML = "Данные из сохраненных данных";
+    title.style.fontSize = "15px";
+    title.style.marginTop = "3px";
     content.innerHTML = "Это дает вам сохранить весь прогресс в файле .js и загрузит ваш прогресс. <br>";
     content.innerHTML += "Кроме того, вы можете использовать его для копирования данных для другие устройства, если вы не хотите начать игру с 0 снова. <br>";
     content.innerHTML += " [1]Сохраните данные. <br>";
@@ -3440,7 +3459,7 @@ function closeGachaWindow() {
   mechaInterval = null;
   pilotInterval = null;
   menuPauseWalkSound();
-  defaultClickSound();
+  closeModalSound();
 };
 window.oncontextmenu = function() {
   return false

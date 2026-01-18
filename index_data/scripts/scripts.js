@@ -1576,11 +1576,13 @@ function applySettings() {
   window.location.reload();
 };
 function alertReloadLater() {
-  var alertcancel = document.getElementById("alertLeft");
-  var alertconfirm = document.getElementById("alertRight");
+  const alertcancel = document.getElementById("alertCenter");
+  const alertnull = document.getElementById("alertLeft");
+  const alertconfirm = document.getElementById("alertRight");
   document.getElementById("alert").style.display = "block";
   alertcancel.style.display = "block";
   alertconfirm.style.display = "block";
+  alertnull.style.display = "none";
   if(localStorage.getItem("lang") === "en") {
     document.getElementById("alertText").innerHTML = "Set to default?";
     alertcancel.value = "Cancel";
@@ -1626,26 +1628,31 @@ function alertReloadLater() {
   defaultClickSound();
 };
 function alertExitSite() {
-  var alertcancel = document.getElementById("alertLeft");
-  var alertconfirm = document.getElementById("alertRight");
+  const alertcancel = document.getElementById("alertCenter");
+  const alertconfirm = document.getElementById("alertRight");
+  const alertnull = document.getElementById("alertLeft");
   document.getElementById("alert").style.display = "block";
   alertcancel.style.display = "block";
   alertconfirm.style.display = "block";
+  alertnull.style.display = "block";
   if(localStorage.getItem("lang") === "en") {
     document.getElementById("alertText").innerHTML = "You go?";
     alertcancel.value = "No";
     alertconfirm.value = "Yes";
+    alertnull.value = "Reload";
   }else
   if(localStorage.getItem("lang") === "ru") {
     document.getElementById("alertText").innerHTML = "Вы уходите?";
     alertcancel.value = "Нет";
     alertconfirm.value = "Да";
+    alertnull.value = "Перезагрузить";
   }else
   if(localStorage.getItem("lang") === "he") {
     document.getElementById("alertText").innerHTML = "אתם הולכים?";
     document.getElementById("alertText").style.direction = "rtl";
     alertcancel.value = "לא";
     alertconfirm.value = "כן";
+    alertnull.value = "טען מחדש";
   }
   alertcancel.onclick = function() {
     document.getElementById("alert").style.display = "none";
@@ -1653,7 +1660,10 @@ function alertExitSite() {
   };
   alertconfirm.onclick = function() {
     window.close();
-  }
+  };
+  alertnull.onclick = function() {
+    window.location.reload();
+  };
   defaultClickSound();
 };
 function goToScrollToIdElementMusicLang() {
@@ -1663,8 +1673,9 @@ function goToScrollToIdElementMusicLang() {
 function alertAccept() {
   const alertBox = document.getElementById("alert");
   const alertText = document.getElementById("alertText");
-  const alertCancel = document.getElementById("alertLeft");
+  const alertCancel = document.getElementById("alertCenter");
   const alertConfirm = document.getElementById("alertRight");
+  const alertNull = document.getElementById("alertLeft");
   const lang = localStorage.getItem("lang");
   const texts = {
     en: {
@@ -1694,6 +1705,7 @@ function alertAccept() {
   alertConfirm.value = t.confirm;
   alertCancel.style.display = "none";
   alertCancel.value = "...";
+  alertNull.style.display = "none";
   alertCancel.onclick = () => alert(t.cancelMsg);
   alertConfirm.onclick = () => {
     alertConfirm.style.display = "none";

@@ -199,7 +199,7 @@ function languagesContents() {
     a024.innerHTML = "Mute Audio";
     a025.innerHTML = "SFX Volume";
     a026.innerHTML = "Privacy Policy, Terms and Conditions";
-    a027.innerHTML = "©1997-2025 NetEase, Inc.All Rights Reserved";
+    a027.innerHTML = "©1997-2026 NetEase, Inc.All Rights Reserved";
     a028.innerHTML = "Coding: " + "ArthurVesta;";
     a029.innerHTML = "Base Code: From";
     a030.innerHTML = "Score: 0";
@@ -227,7 +227,7 @@ function languagesContents() {
     a052.innerHTML = "> Clickable <";
     a053.innerHTML = "Coded on: ";
     a054.innerHTML = "Can be selected 3 types of game controlling:<br>";
-    a054.innerHTML += "(open menu/System)<br>";
+    a054.innerHTML += "(open menu/Game)<br>";
     a054.innerHTML += "Classic.<br>";
     a054.innerHTML += "Dynamic.<br>";
     a054.innerHTML += "Touch.<br>";
@@ -261,7 +261,7 @@ function languagesContents() {
     a070.value = "Load";
     a071.innerHTML = "Snake color";
     a072.innerHTML = "Classic controller";
-    a073.innerHTML = "DYnamic controller";
+    a073.innerHTML = "Dynamic controller";
     a074.innerHTML = "Touch Screen Gestures";
     a075.innerHTML = "Services";
     a076.innerHTML = "Show FPS (BETA)";
@@ -562,7 +562,7 @@ function languagesContents() {
     a024.innerHTML = "Отключить звук";
     a025.innerHTML = "Громкость SFX";
     a026.innerHTML = "Политика конфиденциальности, положения и условия";
-    a027.innerHTML = "©1997-2025 NetEase, Inc.Все права защищены";
+    a027.innerHTML = "©1997-2026 NetEase, Inc.Все права защищены";
     a028.innerHTML = "Кодирование: " + "ArthurVesta;";
     a029.innerHTML = "Базовый код: Из ";
     a030.innerHTML = "Счет: 0";
@@ -590,7 +590,7 @@ function languagesContents() {
     a052.innerHTML = "> Нажемной <";
     a053.innerHTML = "Кодировано на: ";
     a054.innerHTML = "Можно выбрать 3 типа управления игрой:<br>";
-    a054.innerHTML += "(откройте меню/Система)<br>";
+    a054.innerHTML += "(откройте меню/Игра)<br>";
     a054.innerHTML += "Классический.<br>";
     a054.innerHTML += "Динамичный.<br>";
     a054.innerHTML += "Прикосновение.<br>";
@@ -935,7 +935,7 @@ function languagesContents() {
      a025.style.direction = "rtl";
      a025.style.textAlign = "right";
     a026.innerHTML = "מדיניות פרטיות, תנאים והגבלות";
-    a027.innerHTML = "©1997-2025 NetEase, Inc. כל הזכויות שמורות";
+    a027.innerHTML = "©1997-2026 NetEase, Inc. כל הזכויות שמורות";
      a027.style.direction = "rtl";
     a028.innerHTML = "קידוד: " + "ArthurVesta;";
      a028.style.direction = "rtl";
@@ -984,7 +984,7 @@ function languagesContents() {
     a053.innerHTML = "קודד על: ";
      a053.style.direction = "rtl";
     a054.innerHTML = "ניתן לבחור 3 סוגים של שליטה במשחק:<br>";
-    a054.innerHTML += "(פתח תפריט/מערכת)<br>";
+    a054.innerHTML += "(פתח תפריט/משחק)<br>";
     a054.innerHTML += "קלאסי.<br>";
     a054.innerHTML += "דינמי.<br>";
     a054.innerHTML += "מגע.<br>";
@@ -1038,6 +1038,7 @@ function languagesContents() {
     a075.innerHTML = "שרותים";
     a076.innerHTML = "הצג FPS (בטא)";
      a076.style.direction = "rtl";
+     a076.style.textAlign = "right";
     a077.innerHTML = "תנוחת נחש אופקית";
     a078.innerHTML = "תנוחת נחש אנכית";
     a079.innerHTML = "מכה";

@@ -278,13 +278,48 @@ function showPilotJaka() {
   itemImage.className = "image-preview " + pilot0;
   document.getElementById('collectionCenter').style.display = "none";
 };
+function showPilotJiuChong() {
+  var itemInfo = document.getElementById("itemInfo");
+  var itemInfoBg = document.getElementById("bgItemInfo");
+  var itemImage = document.getElementById("itemImage");
+  var itemName = document.getElementById("itemName");
+  var textInfoBelong = document.getElementById("textInfoBelong");
+  var pilot0 = "jiu-chong";
+  var mecha1en = "Ventorus";
+  var mecha1ru = "Венторус";
+  var mecha1he = "ונטורוס";
+  var pilot1en = "Jiu Chong";
+  var pilot1ru = "Джу Чонг";
+  var pilot1he = "ג'יו צ'ונג";
+  if(localStorage.getItem(pilot1en) === "geted") {
+    itemInfo.style.display = "flex";
+    defaultClickSound();
+  }else{
+    cancelSound();
+  }
+  itemInfoBg.className = "item-info-bg def-bg";
+  if(localStorage.getItem("lang") === "en") {
+    itemName.innerHTML = pilot1en;
+    textInfoBelong.innerHTML = "Mecha: " + mecha1en;
+  }else
+  if(localStorage.getItem("lang") === "ru") {
+    itemName.innerHTML = pilot1ru;
+    textInfoBelong.innerHTML = "Меха: " + mecha1ru;
+  }else
+  if(localStorage.getItem("lang") === "he") {
+    itemName.innerHTML = pilot1he;
+    textInfoBelong.innerHTML = "מכה: " + mecha1he;
+  }
+  itemImage.className = "image-preview " + pilot0;
+  document.getElementById('collectionCenter').style.display = "none";
+};
 function showPilotJoanna() {
   var itemInfo = document.getElementById("itemInfo");
   var itemInfoBg = document.getElementById("bgItemInfo");
   var itemImage = document.getElementById("itemImage");
   var itemName = document.getElementById("itemName");
   var textInfoBelong = document.getElementById("textInfoBelong");
-  var pilot0 = "Joanna";
+  var pilot0 = "joanna";
   var mecha1en = "Andromeda";
   var mecha1ru = "Андромеда";
   var mecha1he = "אנדרומדה";
@@ -809,14 +844,14 @@ function showPilotRED() {
   var itemImage = document.getElementById("itemImage");
   var itemName = document.getElementById("itemName");
   var textInfoBelong = document.getElementById("textInfoBelong");
-  var pilot0 = "r-e-d";
+  var pilot0 = "red";
   var mecha1en = "Firestar";
-  var mecha1ru = "файрстар";
-  var mecha1he = "פיירסטאר";
+  var mecha1ru = "Пульсар";
+  var mecha1he = "פולסר";
   var pilot1en = "R.E.D";
   var pilot1ru = "Р.Э.Д";
   var pilot1he = "ר.א.ד";
-  if(localStorage.getItem(pilot1en) === "geted") {
+  if(localStorage.getItem("RED") === "geted") {
     itemInfo.style.display = "flex";
     defaultClickSound();
   }else{

@@ -1,15 +1,15 @@
 
-let basicVersion = "1.4.0-v2";
-let dateVersion = "[17/01/2026]";
+let basicVersion = "1.4.1-v2";
+let dateVersion = "[18/01/2026]";
 function markUpdateReaded() {
   var modal = document.getElementById("updateModal");
   modal.style.display = "none";
   localStorage.setItem("updateRead", basicVersion);
 }
 
-let text0en = "Fixed glitches collection center of Pilots and Mechs in Gacha for Android." + "<br>";
-let text0ru = "Исправлены ошибки в центре сбора пилотов и роботов в режиме Gacha для Андроид." + "<br>";
-let text0he = "תוקנו גליצ'ם במרכז איסוף של הטייסים והמכות בגאצ'ה לאנדרואיד." + "<br>";
+let text0en = "Fixed some errors." + "<br>";
+let text0ru = "Исправлены некоторые ошибки." + "<br>";
+let text0he = "תוקנו כמה שגיעות." + "<br>";
 
 let text1en = "" + "<br>";
 let text1ru = "" + "<br>";
