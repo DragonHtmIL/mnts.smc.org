@@ -501,6 +501,7 @@ var URLS = [
   `${GHPATH}/index_data/textures/gui/btn_function_pe.png`,
   `${GHPATH}/index_data/textures/gui/btn_function_py.png`,
   `${GHPATH}/index_data/textures/gui/button.png`,
+  `${GHPATH}/index_data/textures/gui/button_null.png`,
   `${GHPATH}/index_data/textures/gui/button_true.png`,
   `${GHPATH}/index_data/textures/gui/cards_continer.png`,
   `${GHPATH}/index_data/textures/gui/changed_bg.png`,
@@ -959,4 +960,5 @@ self.addEventListener('fetch', event => {
     return fetch(event.request);
     })
   );
+
 });
