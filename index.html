@@ -49,7 +49,7 @@
               <div class="leaguelevel"><span id="star">★</span><span id="leaguelevel">...</span></div>
             </div>
             <hr class="acc">
-            <div class="right-modal-acc">
+            <div class="right-modal-acc" id="profileItemsContent">
               <div class="item-cont meow">
                 <div class="item-cont-icon" id="meowIcon"></div>
                 <div class="item-cont-label" id="collectedMeow">0</div>
@@ -385,6 +385,7 @@
             </div>
           </div>
         </div>
+        <input class="menuscroller" type="range" name="conNine" id="conNine" min="0" max="100" value="0">
       </div>
       <div class="device-info-indicator">
         <div id="batteryProgress">
@@ -1449,6 +1450,7 @@
         <h2 id="alertText">...</h2>
         <div class="alert-btn-container">
           <input type="submit" id="alertLeft" value="...">
+          <input type="submit" id="alertCenter" value="...">
           <input type="submit" id="alertRight" value="...">
         </div>
       </div>
@@ -1641,7 +1643,7 @@
     <div class="mini-modal" id="miniModal">
       <div class="mini-modal-top" id="mmTop">
         <h3 id="mmTitle">...</h3>
-        <span class="mini-modal-close" onclick="document.getElementById('miniModal').style.display = 'none';"></span>
+        <span class="mini-modal-close" onclick="document.getElementById('miniModal').style.display = 'none';closeModalSound();"></span>
       </div>
       <div class="mini-modal-bottom" id="mmBottom">...</div>
     </div>
@@ -2252,7 +2254,7 @@
     </div>
     <div class="item-info" id="itemInfo" style="display: none;">
       <div class="item-info-bg" id="bgItemInfo"></div>
-      <span class="close-full-window" onclick="document.getElementById('itemInfo').style.display='none';document.getElementById('collectionCenter').style.display='block';defaultClickSound();"></span>
+      <span class="close-full-window" onclick="document.getElementById('itemInfo').style.display='none';document.getElementById('collectionCenter').style.display='block';closeModalSound();"></span>
       <div class="item-name" id="itemName"></div>
       <div class="image-preview" id="itemImage"></div>
       <div class="side-content">
