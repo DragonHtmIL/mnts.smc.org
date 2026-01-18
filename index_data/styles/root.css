@@ -185,6 +185,7 @@
   --board-73-image: url('../textures/boards/img_073.png');
   /* Gui */
   --button-true: url('../textures/gui/button_true.png');
+  --button-null: url('../textures/gui/button_null.png');
   --first-back: url('../textures/gui/first_modal_bg.png');
   --controller: url('../textures/gui/cube_bg.png');
   --border: url('../textures/gui/border.png');
