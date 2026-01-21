@@ -2452,13 +2452,6 @@ function saveAmbientChecker() {
     localStorage.setItem("ambients", "false");
   }
 };
-function saveAutoScoreCheckboxPhasa() {
-  if(document.getElementById("autoSaveScoreCheck").checked === true) {
-    localStorage.setItem("autoSaveScoreCheck", "true");
-  }else{
-    localStorage.setItem("autoSaveScoreCheck", "false");
-  }
-};
 function openDiscordService() {
   window.open("https://" + "discord.gg/" + "GFEV2FJzMq",'_blank');
 };
@@ -2594,51 +2587,40 @@ function checkSettingsChanges() {
   let settingsChanged = false;
   function checkSettingCategory(elementsMap, inputType, localStorageKey) {
     const storedValue = localStorage.getItem(localStorageKey);
-      let currentValue;
+    let activeValue = null;
     for (const item of elementsMap) {
       const element = document.getElementById(item.id);
-      if (!element) {
-        console.warn(`Element with ID "${item.id}" not found.`);
+      if (!element) continue;
+      if (inputType === "className") {
+        if (element.classList.contains("active")) {
+          activeValue = item.localStorageValue;
+          break;
+        }
       }
-      if (inputType === 'className') {
-        currentValue = element.className;
-      } else if (inputType === 'value') {
-        currentValue = element.value;
-      } else if (inputType === 'checked') {
-        currentValue = element.checked.toString();
+      if (inputType === "value") {
+        if (element.value === storedValue) {
+          activeValue = element.value;
+          break;
+        }
       }
-      if (currentValue === storedValue) {
-      } else {
-        settingsChanged = true;
-        return;
-      }
-      if ((inputType === 'className' && currentValue === "select active" && localStorage.getItem(localStorageKey) === item.localStorageValue) ||
-        (inputType === 'value' && currentValue === item.localStorageValue && localStorage.getItem(localStorageKey) === item.localStorageValue)) {
-      } else if ((inputType === 'className' && currentValue === "select active" && localStorage.getItem(localStorageKey) !== item.localStorageValue) ||
-             (inputType === 'value' && currentValue === item.localStorageValue && localStorage.getItem(localStorageKey) !== item.localStorageValue)) {
-        settingsChanged = true;
-        return;
+      if (inputType === "checked") {
+        if (element.checked) {
+          activeValue = item.localStorageValue;
+          break;
+        }
       }
     }
-    let currentActiveElementValue = null;
-    for (const item of elementsMap) {
-      const element = document.getElementById(item.id);
-      if (element && ((inputType === 'className' && element.className.includes("active")) || (inputType === 'value' && element.value === item.localStorageValue))) {
-        currentActiveElementValue = item.localStorageValue;
-        break;
-      }
-    }
-    if (currentActiveElementValue !== storedValue) {
+    if (activeValue !== storedValue) {
       settingsChanged = true;
     }
   }
   checkSettingCategory([
     { id: "randomSnakePos", localStorageValue: "random" }
-  ], 'checked', "snakePosType");
-  if (settingsChanged) {
-    document.getElementById("applySettings").style.display = "block";
-    return;
-  }
+  ],
+    "checked",
+    "snakePosType"
+  );
+  if (settingsChanged) return showApply();
   checkSettingCategory([
     { id: "origoMap", localStorageValue: "imgOrigo" },
     { id: "alphaMap2", localStorageValue: "imgAlpha2" },
@@ -2717,11 +2699,11 @@ function checkSettingsChanges() {
     { id: "conBoard071img", localStorageValue: "img071board" },
     { id: "conBoard072img", localStorageValue: "img072board" },
     { id: "conBoard073img", localStorageValue: "img073board" }
-  ], 'className', "boardStyle");
-  if (settingsChanged) {
-    document.getElementById("applySettings").style.display = "block";
-    return;
-  }
+  ],
+    "className",
+    "boardStyle"
+  );
+  if (settingsChanged) return showApply();
   checkSettingCategory([
     { id: "meowItem", localStorageValue: "imgMeow" },
     { id: "goldItem", localStorageValue: "imgGold" },
@@ -2806,47 +2788,47 @@ function checkSettingsChanges() {
     { id: "food075Item0", localStorageValue: "img075food" },
     { id: "food076Item0", localStorageValue: "img076food" },
     { id: "food077Item0", localStorageValue: "img077food" }
-  ], 'className', "foodStyle");
-  if (settingsChanged) {
-    document.getElementById("applySettings").style.display = "block";
-    return;
-  }
+  ],
+    "className",
+    "foodStyle"
+  );
+  if (settingsChanged) return showApply();
   checkSettingCategory([
     { id: "normalDif", localStorageValue: "normal" },
     { id: "hardDif", localStorageValue: "hard" },
     { id: "hellDif", localStorageValue: "hell" }
-  ], 'className', "difficulty");
-  if (settingsChanged) {
-    document.getElementById("applySettings").style.display = "block";
-    return;
-  }
+  ],
+    "className",
+    "difficulty"
+  );
+  if (settingsChanged) return showApply();
   checkSettingCategory([
     { id: "languageEn", localStorageValue: "en" },
     { id: "languageRu", localStorageValue: "ru" },
     { id: "languageHe", localStorageValue: "he" }
-  ], 'className', "lang");
-  if (settingsChanged) {
-    document.getElementById("applySettings").style.display = "block";
-    return;
-  }
+  ],
+    "className",
+    "lang"
+  );
+  if (settingsChanged) return showApply();
   checkSettingCategory([
     { id: "ccLang", localStorageValue: "center" },
     { id: "clLang", localStorageValue: "left" },
     { id: "crLang", localStorageValue: "right" }
-  ], 'className', "controllerPosition");
-  if (settingsChanged) {
-    document.getElementById("applySettings").style.display = "block";
-    return;
-  }
+  ],
+    "className",
+    "controllerPosition"
+  );
+  if (settingsChanged) return showApply();
   checkSettingCategory([
     { id: "cTypeChenger", localStorageValue: "dynamic" },
     { id: "cTypeChenger", localStorageValue: "classic" },
     { id: "cTypeChenger", localStorageValue: "swap" }
-  ], 'value', "controllerTypeDev");
-  if (settingsChanged) {
-    document.getElementById("applySettings").style.display = "block";
-    return;
-  }
+  ],
+    "value",
+    "controllerTypeDev"
+  );
+  if (settingsChanged) return showApply();
   checkSettingCategory([
     { id: "pwAlang", localStorageValue: "playerWalk" },
     { id: "mwAlang", localStorageValue: "alboradaWalk" },
@@ -2855,7 +2837,7 @@ function checkSettingsChanges() {
     { id: "mwDlang", localStorageValue: "auroraWalk" },
     { id: "mwElang", localStorageValue: "boltusWalk" },
     { id: "mwFlang", localStorageValue: "caramelWalk" },
-    { id: "mwGlang", localStorageValue: "doomlightlWalk" },
+    { id: "mwGlang", localStorageValue: "doomlightWalk" },
     { id: "mwHlang", localStorageValue: "firefoxWalk" },
     { id: "mwIlang", localStorageValue: "firestarWalk" },
     { id: "mwJlang", localStorageValue: "flamencoWalk" },
@@ -2875,7 +2857,7 @@ function checkSettingsChanges() {
     { id: "mwXlang", localStorageValue: "ventorusWalk" },
     { id: "mwYlang", localStorageValue: "deathKnellWalk" },
     { id: "mwZlang", localStorageValue: "dreadwolfWalk" },
-    { id: "mwAAlang", localStorageValue: "gaialWalk" },
+    { id: "mwAAlang", localStorageValue: "gaiaWalk" },
     { id: "mwABlang", localStorageValue: "guerillaHunterWalk" },
     { id: "mwAClang", localStorageValue: "lancelotWalk" },
     { id: "mwADlang", localStorageValue: "moonRabbitWalk" },
@@ -2886,11 +2868,11 @@ function checkSettingsChanges() {
     { id: "mwAIlang", localStorageValue: "akashicWalk" },
     { id: "mwAJlang", localStorageValue: "skyfallWalk" },
     { id: "mwAKlang", localStorageValue: "tempestWalk" }
-  ], 'className', "movementbg");
-  if (settingsChanged) {
-    document.getElementById("applySettings").style.display = "block";
-    return;
-  }
+  ],
+    "className",
+    "movementbg"
+  );
+  if (settingsChanged) return showApply();
   checkSettingCategory([
     { id: "loadClassicCon", localStorageValue: "classic" },
     { id: "loadAnimeCon", localStorageValue: "anime" },
@@ -2898,12 +2880,14 @@ function checkSettingsChanges() {
     { id: "loadNakanoCon", localStorageValue: "nakano" },
     { id: "loadAnimeCon2", localStorageValue: "anime2" },
     { id: "loadAnimeCon3", localStorageValue: "anime3" }
-  ], 'className', "loadingStyle");
-  if (settingsChanged) {
-    document.getElementById("applySettings").style.display = "block";
-    return;
+  ],
+    "className",
+    "loadingStyle"
+  );
+  showApply();
+  function showApply() {
+    document.getElementById("applySettings").style.display = settingsChanged ? "block" : "none";
   }
-  document.getElementById("applySettings").style.display = "none";
 };
 function randomSnakePosChange() {
   var checkbox = document.getElementById("randomSnakePos");
@@ -3367,14 +3351,6 @@ function costGoldShows() {
     ticketsLabels[i].innerHTML = localStorage.getItem("ticketStorage");
   }
 };
-function skipVidAnim() {
-  const animFrame = document.getElementById("animFrame");
-  const gachaAud = document.getElementById("gachaAudionation");
-  gachaAud.removeAttribute("loop");
-  gachaAud.pause();
-  animFrame.style.display = "none";
-  document.getElementById("gachaPrises").style.display = "block";
-};
 function openGacha(evt, gachaName) {
   var i, gachacontiner, gachatab;
   gachacontiner = document.getElementsByClassName("gacha-continer");
@@ -3426,15 +3402,23 @@ function openShopModalTickets() {
   defaultClickSound();
 };
 function openGachaWindow() {
+  const costGoldLabels = document.querySelectorAll(".cost-have-gold");
+  const costTicketLabels = document.querySelectorAll(".cost-have-ticket");
   document.getElementById('gachaContent').style.display = 'block';
   document.getElementById("mechaDefaultEvent").click();
   document.getElementById('menu').style.display = 'none';
+  for(var i = 0; i < costGoldLabels.length; i++) {
+    costGoldLabels[i].innerHTML = localStorage.getItem("goldStorage");
+  };
+  for(var i = 0; i < costTicketLabels.length; i++) {
+    costTicketLabels[i].innerHTML = localStorage.getItem("ticketStorage");
+  };
   if (!mechaInterval) {
     mechaInterval = setInterval(changeBackgroundMecha, 5000);
-  }
+  };
   if (!pilotInterval) {
     pilotInterval = setInterval(changeBackgroundPilot, 5000);
-  }
+  };
   defaultClickSound();
 };
 function closeGachaWindow() {

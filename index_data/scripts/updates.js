@@ -1,6 +1,6 @@
 
-let basicVersion = "1.4.1-v2";
-let dateVersion = "[18/01/2026]";
+let basicVersion = "1.4.2-v2";
+let dateVersion = "[21/01/2026]";
 function markUpdateReaded() {
   var modal = document.getElementById("updateModal");
   modal.style.display = "none";
@@ -11,9 +11,9 @@ let text0en = "Fixed some errors." + "<br>";
 let text0ru = "Исправлены некоторые ошибки." + "<br>";
 let text0he = "תוקנו כמה שגיעות." + "<br>";
 
-let text1en = "" + "<br>";
-let text1ru = "" + "<br>";
-let text1he = "" + "<br>";
+let text1en = "Removed auto save score." + "<br>";
+let text1ru = "Удалено автоматическое сохранение счета." + "<br>";
+let text1he = "הוסר שמירת ניקוד אוטומטית." + "<br>";
 
 let text2en = "" + "<br>";
 let text2ru = "" + "<br>";

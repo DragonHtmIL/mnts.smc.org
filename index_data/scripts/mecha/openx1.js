@@ -1,8 +1,13 @@
 function summonMechaOne() {
   let gold = parseInt(localStorage.getItem("goldStorage")) || 0;
   let ticket = parseInt(localStorage.getItem("ticketStorage")) || 0;
-  summonType = "m1";
+  let skipedGachaAnim = "no";
   if (gold < 10 && ticket < 1) {
+    document.getElementById("oponebtnDefMechaOne").classList.add("null");
+    setTimeout( function() {
+      document.getElementById("oponebtnDefMechaOne").classList.remove("null");
+    },1000);
+    cancelSound();
     return;
   }
   if (ticket >= 1) {
@@ -25,7 +30,15 @@ function summonMechaOne() {
   document.getElementById("btnPress").currentTime = 0;
   document.getElementById("oponebtnDefMechaOne").disabled = true;
   document.getElementById("oponebtnDefMechaOne").classList.add("btnclicked");
-  document.getElementById("btnPress").play();
+  document.getElementById("oponebtnDefPilotOne").disabled = true;
+  document.getElementById("oponebtnDefPilotOne").classList.add("btnclicked");
+  document.getElementById("oponebtnDefMechaTen").disabled = true;
+  document.getElementById("oponebtnDefMechaTen").classList.add("btnclicked");
+  document.getElementById("oponebtnDefPilotTen").disabled = true;
+  document.getElementById("oponebtnDefPilotTen").classList.add("btnclicked");
+  if(document.getElementById("checkBaseVolum").checked === false) {
+    document.getElementById("btnPress").play();
+  };
   document.getElementById("btnPress").removeAttribute("loop");
   // start gacha animation
   setTimeout( function() {
@@ -34,9 +47,24 @@ function summonMechaOne() {
     animFrame.style.display = "flex";
     animationBlocker.style.display = "block";
     gachaAud.onloadeddata = () => {
-      gachaAud.play();
+      if(document.getElementById("checkBaseVolum").checked === false) {
+        gachaAud.play();
+      }
     };
   },700);
+  // Dislay skip button
+  setTimeout( function() {
+    skipBtn.style.display = "block";
+  },3000);
+  skipBtn.addEventListener('click', function() {
+    gachaAud.pause();
+    gachaAud.removeAttribute("loop");
+    gachaAud.currentTime = 0;
+    animFrame.style.display = "none";
+    document.getElementById("gachaPrises").style.display = "block";
+    skipedGachaAnim = "yes";
+    defaultClickSound();
+  });
   // video phaza for pressing
   setTimeout( function() {
     animationBlocker.style.display = "none";
@@ -44,9 +72,10 @@ function summonMechaOne() {
     gachaAud.src = "index_data/audio/interface/gacha/Gacha aud press.mp3";
     gachaAud.setAttribute("loop","loop");
     gachaAud.onloadeddata = () => {
-      gachaAud.play();
+      if(skipedGachaAnim === "no" && document.getElementById("checkBaseVolum").checked === false) {
+        gachaAud.play();
+      };
     };
-    skipBtn.style.display = "block";
   },5150);
   // Simplified rarity system (adjust probabilities as needed)
   if (randomNumber < 1.00) {
@@ -90,7 +119,9 @@ function displaymecha(mecha) {
     }
     defaultClickSound();
     gachaAud.onloadeddata = () => {
-      gachaAud.play();
+      if(document.getElementById("checkBaseVolum").checked === false) {
+        gachaAud.play();
+      }
     };
     animationBlocker.style.display = "block";
     setTimeout( function() {
@@ -101,35 +132,20 @@ function displaymecha(mecha) {
     },2550);
   });
   document.getElementById("gachaPrises").addEventListener('click', function() {
-    if(summonType === "m1") {
-      displayArea.removeChild(mechaDiv);
-      document.getElementById("oponebtnDefMechaOne").classList.remove("btnclicked");
-      document.getElementById("oponebtnDefMechaOne").disabled = false;
-      document.getElementById("gachaPrises").style.display = "none";
-    }else
-    if(summonType === "p1") {
-      displayArea.removeChild(pilotDiv);
-      document.getElementById("oponebtnDefPilotOne").classList.remove("btnclicked");
-      document.getElementById("oponebtnDefPilotOne").disabled = false;
-      document.getElementById("gachaPrises").style.display = "none";
-    }else
-    if(summonType === "m10") {
-      const cards = displayArea.querySelectorAll(".card-continer");
-      cards.forEach(card => card.remove());
-      document.getElementById("oponebtnDefMechaTen").classList.remove("btnclicked");
-      document.getElementById("oponebtnDefMechaTen").disabled = false;
-      document.getElementById("gachaPrises").style.display = "none";
-    }else
-    if(summonType === "p10") {
-      const cards = displayArea.querySelectorAll(".card-continer");
-      cards.forEach(card => card.remove());
-      document.getElementById("oponebtnDefPilotTen").classList.remove("btnclicked");
-      document.getElementById("oponebtnDefPilotTen").disabled = false;
-      document.getElementById("gachaPrises").style.display = "none";
-    }
+    const cards = displayArea.querySelectorAll(".card-continer");
+    document.getElementById("gachaPrises").style.display = "none";
+    cards.forEach(card => card.remove());
+    document.getElementById("oponebtnDefMechaOne").classList.remove("btnclicked");
+    document.getElementById("oponebtnDefMechaOne").disabled = false;
+    document.getElementById("oponebtnDefPilotOne").classList.remove("btnclicked");
+    document.getElementById("oponebtnDefPilotOne").disabled = false;
+    document.getElementById("oponebtnDefMechaTen").classList.remove("btnclicked");
+    document.getElementById("oponebtnDefMechaTen").disabled = false;
+    document.getElementById("oponebtnDefPilotTen").classList.remove("btnclicked");
+    document.getElementById("oponebtnDefPilotTen").disabled = false;
     defaultClickSound();
-    summonType = "none";
     skipBtn.style.display = "none";
+    gachaAnim.src = "index_data/textures/empty.png";
   });
   displayArea.appendChild(mechaDiv);
   mechaDiv.appendChild(imgBlocker);

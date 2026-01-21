@@ -49,7 +49,7 @@ function languagesContents() {
   var a047 = document.getElementById("ifMobileLang");
   var a048 = document.getElementById("pilotCollectionGallery");
   var a049 = document.getElementById("snakeTabsound");
-  var a050 = document.getElementById("autoScoreLang");
+//  var a050 = document.getElementById("");
   var a051 = document.getElementById("profileTitleLang");
   var a052 = document.getElementById("clickable0Lang");
   var a053 = document.getElementById("cratedOn0Lang");
@@ -222,7 +222,7 @@ function languagesContents() {
     a047.innerHTML = "If users use Mobiles (Android, iPhone, iPad, Tablets)";
     a048.innerHTML = "Pilot";
     a049.innerHTML = "Snake";
-    a050.innerHTML = "Auto load the saved score";
+//    a050.innerHTML = "";
     a051.innerHTML = "Collection Center";
     a052.innerHTML = "> Clickable <";
     a053.innerHTML = "Coded on: ";
@@ -585,7 +585,7 @@ function languagesContents() {
     a047.innerHTML = "Если пользователи используют мобильные (Android, iPhone, iPad, планшеты)";
     a048.innerHTML = "Пилот";
     a049.innerHTML = "Змея";
-    a050.innerHTML = "Автоматически загрузить сохраненного счета";
+//    a050.innerHTML = "";
     a051.innerHTML = "Центр сбора";
     a052.innerHTML = "> Нажемной <";
     a053.innerHTML = "Кодировано на: ";
@@ -974,9 +974,7 @@ function languagesContents() {
      a047.style.textAlign = "right";
     a048.innerHTML = "טייס";
     a049.innerHTML = "נחש";
-    a050.innerHTML = "טעינה אוטומטית של הציון הנשמר";
-     a050.style.width = "100%";
-     a050.style.textAlign = "right";
+//    a050.innerHTML = "";
     a051.innerHTML = "מרכז איסוף";
      a051.style.textAlign = "right";
      a051.style.width = "75%";

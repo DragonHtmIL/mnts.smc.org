@@ -179,6 +179,7 @@ function sFxVolume() {
   var audio6 = document.getElementById("goFireworksSound");
   var audio7 = document.getElementById("basicAmbientSound");
   var audio8 = document.getElementById("itemCollected");
+  var audio9 = document.getElementById("gachaAudionation");
   const audiow0 = document.getElementsByClassName("walk-background");
   localStorage.setItem("sfxvolumedata", input.value);
   audio0.volume = input.value;
@@ -190,6 +191,7 @@ function sFxVolume() {
   audio6.volume = input.value;
   audio7.volume = input.value;
   audio8.volume = input.value;
+  audio9.volume = input.value;
   for (var w = 0; w < audiow0.length; w++) {
     audiow0[w].volume = input.value;
   }
@@ -205,6 +207,7 @@ function checkSfXvolume() {
   var audio6 = document.getElementById("goFireworksSound");
   var audio7 = document.getElementById("basicAmbientSound");
   var audio8 = document.getElementById("itemCollected");
+  var audio9 = document.getElementById("gachaAudionation");
   const audiow0 = document.getElementsByClassName("walk-background");
   input.value = localStorage.getItem("sfxvolumedata");
   audio0.volume = input.value;
@@ -216,6 +219,7 @@ function checkSfXvolume() {
   audio6.volume = input.value;
   audio7.volume = input.value;
   audio8.volume = input.value;
+  audio9.volume = input.value;
   for (var w = 0; w < audiow0.length; w++) {
     audiow0[w].volume = input.value;
   }
@@ -920,659 +924,250 @@ function boardBGloader() {
 }
 boardBGloader();
 function applySettings() {
-  if(document.getElementById("origoMap").className === "select board-wall active") {
-    localStorage.setItem("boardStyle", "imgOrigo");
-  }else
-  if(document.getElementById("alphaMap2").className === "select board-wall active") {
-    localStorage.setItem("boardStyle", "imgAlpha2");
-  }else
-  if(document.getElementById("alphaMap").className === "select board-wall active"){
-    localStorage.setItem("boardStyle", "imgAlpha");
-  }else
-  if(document.getElementById("conBoard000img").className === "select-img board-wall active"){
-    localStorage.setItem("boardStyle", "img000board");
-  }else
-  if(document.getElementById("conBoard001img").className === "select-img board-wall active"){
-    localStorage.setItem("boardStyle", "img001board");
-  }else
-  if(document.getElementById("conBoard002img").className === "select-img board-wall active"){
-    localStorage.setItem("boardStyle", "img002board");
-  }else
-  if(document.getElementById("conBoard003img").className === "select-img board-wall active"){
-    localStorage.setItem("boardStyle", "img003board");
-  }else
-  if(document.getElementById("conBoard004img").className === "select-img board-wall active"){
-    localStorage.setItem("boardStyle", "img004board");
-  }else
-  if(document.getElementById("conBoard005img").className === "select-img board-wall active"){
-    localStorage.setItem("boardStyle", "img005board");
-  }else
-  if(document.getElementById("conBoard006img").className === "select-img board-wall active"){
-    localStorage.setItem("boardStyle", "img006board");
-  }else
-  if(document.getElementById("conBoard007img").className === "select-img board-wall active"){
-    localStorage.setItem("boardStyle", "img007board");
-  }else
-  if(document.getElementById("conBoard008img").className === "select-img board-wall active"){
-    localStorage.setItem("boardStyle", "img008board");
-  }else
-  if(document.getElementById("conBoard009img").className === "select-img board-wall active"){
-    localStorage.setItem("boardStyle", "img009board");
-  }else
-  if(document.getElementById("conBoard010img").className === "select-img board-wall active"){
-    localStorage.setItem("boardStyle", "img010board");
-  }else
-  if(document.getElementById("conBoard011img").className === "select-img board-wall active"){
-    localStorage.setItem("boardStyle", "img011board");
-  }else
-  if(document.getElementById("conBoard012img").className === "select-img board-wall active"){
-    localStorage.setItem("boardStyle", "img012board");
-  }else
-  if(document.getElementById("conBoard013img").className === "select-img board-wall active"){
-    localStorage.setItem("boardStyle", "img013board");
-  }else
-  if(document.getElementById("conBoard014img").className === "select-img board-wall active"){
-    localStorage.setItem("boardStyle", "img014board");
-  }else
-  if(document.getElementById("conBoard015img").className === "select-img board-wall active"){
-    localStorage.setItem("boardStyle", "img015board");
-  }else
-  if(document.getElementById("conBoard016img").className === "select-img board-wall active"){
-    localStorage.setItem("boardStyle", "img016board");
-  }else
-  if(document.getElementById("conBoard017img").className === "select-img board-wall active"){
-    localStorage.setItem("boardStyle", "img017board");
-  }else
-  if(document.getElementById("conBoard018img").className === "select-img board-wall active"){
-    localStorage.setItem("boardStyle", "img018board");
-  }else
-  if(document.getElementById("conBoard019img").className === "select-img board-wall active"){
-    localStorage.setItem("boardStyle", "img019board");
-  }else
-  if(document.getElementById("conBoard020img").className === "select-img board-wall active"){
-    localStorage.setItem("boardStyle", "img020board");
-  }else
-  if(document.getElementById("conBoard021img").className === "select-img board-wall active"){
-    localStorage.setItem("boardStyle", "img021board");
-  }else
-  if(document.getElementById("conBoard022img").className === "select-img board-wall active"){
-    localStorage.setItem("boardStyle", "img022board");
-  }else
-  if(document.getElementById("conBoard023img").className === "select-img board-wall active"){
-    localStorage.setItem("boardStyle", "img023board");
-  }else
-  if(document.getElementById("conBoard024img").className === "select-img board-wall active"){
-    localStorage.setItem("boardStyle", "img024board");
-  }else
-  if(document.getElementById("conBoard025img").className === "select-img board-wall active"){
-    localStorage.setItem("boardStyle", "img025board");
-  }else
-  if(document.getElementById("conBoard026img").className === "select-img board-wall active"){
-    localStorage.setItem("boardStyle", "img026board");
-  }else
-  if(document.getElementById("conBoard027img").className === "select-img board-wall active"){
-    localStorage.setItem("boardStyle", "img027board");
-  }else
-  if(document.getElementById("conBoard028img").className === "select-img board-wall active"){
-    localStorage.setItem("boardStyle", "img028board");
-  }else
-  if(document.getElementById("conBoard029img").className === "select-img board-wall active"){
-    localStorage.setItem("boardStyle", "img029board");
-  }else
-  if(document.getElementById("conBoard030img").className === "select-img board-wall active"){
-    localStorage.setItem("boardStyle", "img030board");
-  }else
-  if(document.getElementById("conBoard031img").className === "select-img board-wall active"){
-    localStorage.setItem("boardStyle", "img031board");
-  }else
-  if(document.getElementById("conBoard032img").className === "select-img board-wall active"){
-    localStorage.setItem("boardStyle", "img032board");
-  }else
-  if(document.getElementById("conBoard033img").className === "select-img board-wall active"){
-    localStorage.setItem("boardStyle", "img033board");
-  }else
-  if(document.getElementById("conBoard034img").className === "select-img board-wall active"){
-    localStorage.setItem("boardStyle", "img034board");
-  }else
-  if(document.getElementById("conBoard035img").className === "select-img board-wall active"){
-    localStorage.setItem("boardStyle", "img035board");
-  }else
-  if(document.getElementById("conBoard036img").className === "select-img board-wall active"){
-    localStorage.setItem("boardStyle", "img036board");
-  }else
-  if(document.getElementById("conBoard037img").className === "select-img board-wall active"){
-    localStorage.setItem("boardStyle", "img037board");
-  }else
-  if(document.getElementById("conBoard038img").className === "select-img board-wall active"){
-    localStorage.setItem("boardStyle", "img038board");
-  }else
-  if(document.getElementById("conBoard039img").className === "select-img board-wall active"){
-    localStorage.setItem("boardStyle", "img039board");
-  }else
-  if(document.getElementById("conBoard040img").className === "select-img board-wall active"){
-    localStorage.setItem("boardStyle", "img040board");
-  }else
-  if(document.getElementById("conBoard041img").className === "select-img board-wall active"){
-    localStorage.setItem("boardStyle", "img041board");
-  }else
-  if(document.getElementById("conBoard042img").className === "select-img board-wall active"){
-    localStorage.setItem("boardStyle", "img042board");
-  }else
-  if(document.getElementById("conBoard043img").className === "select-img board-wall active"){
-    localStorage.setItem("boardStyle", "img043board");
-  }else
-  if(document.getElementById("conBoard044img").className === "select-img board-wall active"){
-    localStorage.setItem("boardStyle", "img044board");
-  }else
-  if(document.getElementById("conBoard045img").className === "select-img board-wall active"){
-    localStorage.setItem("boardStyle", "img045board");
-  }else
-  if(document.getElementById("conBoard046img").className === "select-img board-wall active"){
-    localStorage.setItem("boardStyle", "img046board");
-  }else
-  if(document.getElementById("conBoard047img").className === "select-img board-wall active"){
-    localStorage.setItem("boardStyle", "img047board");
-  }else
-  if(document.getElementById("conBoard048img").className === "select-img board-wall active"){
-    localStorage.setItem("boardStyle", "img048board");
-  }else
-  if(document.getElementById("conBoard049img").className === "select-img board-wall active"){
-    localStorage.setItem("boardStyle", "img049board");
-  }else
-  if(document.getElementById("conBoard050img").className === "select-img board-wall active"){
-    localStorage.setItem("boardStyle", "img050board");
-  }else
-  if(document.getElementById("conBoard051img").className === "select-img board-wall active"){
-    localStorage.setItem("boardStyle", "img051board");
-  }else
-  if(document.getElementById("conBoard052img").className === "select-img board-wall active"){
-    localStorage.setItem("boardStyle", "img052board");
-  }else
-  if(document.getElementById("conBoard053img").className === "select-img board-wall active"){
-    localStorage.setItem("boardStyle", "img053board");
-  }else
-  if(document.getElementById("conBoard054img").className === "select-img board-wall active"){
-    localStorage.setItem("boardStyle", "img054board");
-  }else
-  if(document.getElementById("conBoard055img").className === "select-img board-wall active"){
-    localStorage.setItem("boardStyle", "img055board");
-  }else
-  if(document.getElementById("conBoard056img").className === "select-img board-wall active"){
-    localStorage.setItem("boardStyle", "img056board");
-  }else
-  if(document.getElementById("conBoard057img").className === "select-img board-wall active"){
-    localStorage.setItem("boardStyle", "img057board");
-  }else
-  if(document.getElementById("conBoard058img").className === "select-img board-wall active"){
-    localStorage.setItem("boardStyle", "img058board");
-  }else
-  if(document.getElementById("conBoard059img").className === "select-img board-wall active"){
-    localStorage.setItem("boardStyle", "img059board");
-  }else
-  if(document.getElementById("conBoard060img").className === "select-img board-wall active"){
-    localStorage.setItem("boardStyle", "img060board");
-  }else
-  if(document.getElementById("conBoard061img").className === "select-img board-wall active"){
-    localStorage.setItem("boardStyle", "img061board");
-  }else
-  if(document.getElementById("conBoard062img").className === "select-img board-wall active"){
-    localStorage.setItem("boardStyle", "img062board");
-  }else
-  if(document.getElementById("conBoard063img").className === "select-img board-wall active"){
-    localStorage.setItem("boardStyle", "img063board");
-  }else
-  if(document.getElementById("conBoard064img").className === "select-img board-wall active"){
-    localStorage.setItem("boardStyle", "img064board");
-  }else
-  if(document.getElementById("conBoard065img").className === "select-img board-wall active"){
-    localStorage.setItem("boardStyle", "img065board");
-  }else
-  if(document.getElementById("conBoard066img").className === "select-img board-wall active"){
-    localStorage.setItem("boardStyle", "img066board");
-  }else
-  if(document.getElementById("conBoard067img").className === "select-img board-wall active"){
-    localStorage.setItem("boardStyle", "img067board");
-  }else
-  if(document.getElementById("conBoard068img").className === "select-img board-wall active"){
-    localStorage.setItem("boardStyle", "img068board");
-  }else
-  if(document.getElementById("conBoard069img").className === "select-img board-wall active"){
-    localStorage.setItem("boardStyle", "img069board");
-  }else
-  if(document.getElementById("conBoard070img").className === "select-img board-wall active"){
-    localStorage.setItem("boardStyle", "img070board");
-  }else
-  if(document.getElementById("conBoard071img").className === "select-img board-wall active"){
-    localStorage.setItem("boardStyle", "img071board");
-  }else
-  if(document.getElementById("conBoard072img").className === "select-img board-wall active"){
-    localStorage.setItem("boardStyle", "img072board");
-  }else
-  if(document.getElementById("conBoard073img").className === "select-img board-wall active"){
-    localStorage.setItem("boardStyle", "img073board");
-  };
-  if(document.getElementById("meowItem").className === "select item-food active") {
-    localStorage.setItem("foodStyle", "imgMeow");
-  }else
-  if(document.getElementById("goldItem").className === "select item-food active") {
-    localStorage.setItem("foodStyle", "imgGold");
-  }else
-  if(document.getElementById("alphacoinItem").className === "select item-food active") {
-    localStorage.setItem("foodStyle", "imgAlphacoin");
-  }else
-  if(document.getElementById("crystalItem").className === "select item-food active") {
-    localStorage.setItem("foodStyle", "imgCrystal");
-  }else
-  if(document.getElementById("virtualTokenItem").className === "select item-food active") {
-    localStorage.setItem("foodStyle", "imgVirtualToken");
-  }else
-  if(document.getElementById("food000Item0").className === "select-img item-food active") {
-    localStorage.setItem("foodStyle", "img000food");
-  }else
-  if(document.getElementById("food001Item0").className === "select-img item-food active") {
-    localStorage.setItem("foodStyle", "img001food");
-  }else
-  if(document.getElementById("food002Item0").className === "select-img item-food active") {
-    localStorage.setItem("foodStyle", "img002food");
-  }else
-  if(document.getElementById("food003Item0").className === "select-img item-food active") {
-    localStorage.setItem("foodStyle", "img003food");
-  }else
-  if(document.getElementById("food004Item0").className === "select-img item-food active") {
-    localStorage.setItem("foodStyle", "img004food");
-  }else
-  if(document.getElementById("food005Item0").className === "select-img item-food active") {
-    localStorage.setItem("foodStyle", "img005food");
-  }else
-  if(document.getElementById("food006Item0").className === "select-img item-food active") {
-    localStorage.setItem("foodStyle", "img006food");
-  }else
-  if(document.getElementById("food007Item0").className === "select-img item-food active") {
-    localStorage.setItem("foodStyle", "img007food");
-  }else
-  if(document.getElementById("food008Item0").className === "select-img item-food active") {
-    localStorage.setItem("foodStyle", "img008food");
-  }else
-  if(document.getElementById("food009Item0").className === "select-img item-food active") {
-    localStorage.setItem("foodStyle", "img009food");
-  }else
-  if(document.getElementById("food010Item0").className === "select-img item-food active") {
-    localStorage.setItem("foodStyle", "img010food");
-  }else
-  if(document.getElementById("food011Item0").className === "select-img item-food active") {
-    localStorage.setItem("foodStyle", "img011food");
-  }else
-  if(document.getElementById("food012Item0").className === "select-img item-food active") {
-    localStorage.setItem("foodStyle", "img012food");
-  }else
-  if(document.getElementById("food013Item0").className === "select-img item-food active") {
-    localStorage.setItem("foodStyle", "img013food");
-  }else
-  if(document.getElementById("food014Item0").className === "select-img item-food active") {
-    localStorage.setItem("foodStyle", "img014food");
-  }else
-  if(document.getElementById("food015Item0").className === "select-img item-food active") {
-    localStorage.setItem("foodStyle", "img015food");
-  }else
-  if(document.getElementById("food016Item0").className === "select-img item-food active") {
-    localStorage.setItem("foodStyle", "img016food");
-  }else
-  if(document.getElementById("food017Item0").className === "select-img item-food active") {
-    localStorage.setItem("foodStyle", "img017food");
-  }else
-  if(document.getElementById("food018Item0").className === "select-img item-food active") {
-    localStorage.setItem("foodStyle", "img018food");
-  }else
-  if(document.getElementById("food019Item0").className === "select-img item-food active") {
-    localStorage.setItem("foodStyle", "img019food");
-  }else
-  if(document.getElementById("food020Item0").className === "select-img item-food active") {
-    localStorage.setItem("foodStyle", "img020food");
-  }else
-  if(document.getElementById("food021Item0").className === "select-img item-food active") {
-    localStorage.setItem("foodStyle", "img021food");
-  }else
-  if(document.getElementById("food022Item0").className === "select-img item-food active") {
-    localStorage.setItem("foodStyle", "img022food");
-  }else
-  if(document.getElementById("food023Item0").className === "select-img item-food active") {
-    localStorage.setItem("foodStyle", "img023food");
-  }else
-  if(document.getElementById("food024Item0").className === "select-img item-food active") {
-    localStorage.setItem("foodStyle", "img024food");
-  }else
-  if(document.getElementById("food025Item0").className === "select-img item-food active") {
-    localStorage.setItem("foodStyle", "img025food");
-  }else
-  if(document.getElementById("food026Item0").className === "select-img item-food active") {
-    localStorage.setItem("foodStyle", "img026food");
-  }else
-  if(document.getElementById("food027Item0").className === "select-img item-food active") {
-    localStorage.setItem("foodStyle", "img027food");
-  }else
-  if(document.getElementById("food028Item0").className === "select-img item-food active") {
-    localStorage.setItem("foodStyle", "img028food");
-  }else
-  if(document.getElementById("food029Item0").className === "select-img item-food active") {
-    localStorage.setItem("foodStyle", "img029food");
-  }else
-  if(document.getElementById("food030Item0").className === "select-img item-food active") {
-    localStorage.setItem("foodStyle", "img030food");
-  }else
-  if(document.getElementById("food031Item0").className === "select-img item-food active") {
-    localStorage.setItem("foodStyle", "img031food");
-  }else
-  if(document.getElementById("food032Item0").className === "select-img item-food active") {
-    localStorage.setItem("foodStyle", "img032food");
-  }else
-  if(document.getElementById("food033Item0").className === "select-img item-food active") {
-    localStorage.setItem("foodStyle", "img033food");
-  }else
-  if(document.getElementById("food034Item0").className === "select-img item-food active") {
-    localStorage.setItem("foodStyle", "img034food");
-  }else
-  if(document.getElementById("food035Item0").className === "select-img item-food active") {
-    localStorage.setItem("foodStyle", "img035food");
-  }else
-  if(document.getElementById("food036Item0").className === "select-img item-food active") {
-    localStorage.setItem("foodStyle", "img036food");
-  }else
-  if(document.getElementById("food037Item0").className === "select-img item-food active") {
-    localStorage.setItem("foodStyle", "img037food");
-  }else
-  if(document.getElementById("food038Item0").className === "select-img item-food active") {
-    localStorage.setItem("foodStyle", "img038food");
-  }else
-  if(document.getElementById("food039Item0").className === "select-img item-food active") {
-    localStorage.setItem("foodStyle", "img039food");
-  }else
-  if(document.getElementById("food040Item0").className === "select-img item-food active") {
-    localStorage.setItem("foodStyle", "img040food");
-  }else
-  if(document.getElementById("food041Item0").className === "select-img item-food active") {
-    localStorage.setItem("foodStyle", "img041food");
-  }else
-  if(document.getElementById("food042Item0").className === "select-img item-food active") {
-    localStorage.setItem("foodStyle", "img042food");
-  }else
-  if(document.getElementById("food043Item0").className === "select-img item-food active") {
-    localStorage.setItem("foodStyle", "img043food");
-  }else
-  if(document.getElementById("food044Item0").className === "select-img item-food active") {
-    localStorage.setItem("foodStyle", "img044food");
-  }else
-  if(document.getElementById("food045Item0").className === "select-img item-food active") {
-    localStorage.setItem("foodStyle", "img045food");
-  }else
-  if(document.getElementById("food046Item0").className === "select-img item-food active") {
-    localStorage.setItem("foodStyle", "img046food");
-  }else
-  if(document.getElementById("food047Item0").className === "select-img item-food active") {
-    localStorage.setItem("foodStyle", "img047food");
-  }else
-  if(document.getElementById("food048Item0").className === "select-img item-food active") {
-    localStorage.setItem("foodStyle", "img048food");
-  }else
-  if(document.getElementById("food049Item0").className === "select-img item-food active") {
-    localStorage.setItem("foodStyle", "img049food");
-  }else
-  if(document.getElementById("food050Item0").className === "select-img item-food active") {
-    localStorage.setItem("foodStyle", "img050food");
-  }else
-  if(document.getElementById("food051Item0").className === "select-img item-food active") {
-    localStorage.setItem("foodStyle", "img051food");
-  }else
-  if(document.getElementById("food052Item0").className === "select-img item-food active") {
-    localStorage.setItem("foodStyle", "img052food");
-  }else
-  if(document.getElementById("food053Item0").className === "select-img item-food active") {
-    localStorage.setItem("foodStyle", "img053food");
-  }else
-  if(document.getElementById("food054Item0").className === "select-img item-food active") {
-    localStorage.setItem("foodStyle", "img054food");
-  }else
-  if(document.getElementById("food055Item0").className === "select-img item-food active") {
-    localStorage.setItem("foodStyle", "img055food");
-  }else
-  if(document.getElementById("food056Item0").className === "select-img item-food active") {
-    localStorage.setItem("foodStyle", "img056food");
-  }else
-  if(document.getElementById("food057Item0").className === "select-img item-food active") {
-    localStorage.setItem("foodStyle", "img057food");
-  }else
-  if(document.getElementById("food058Item0").className === "select-img item-food active") {
-    localStorage.setItem("foodStyle", "img058food");
-  }else
-  if(document.getElementById("food059Item0").className === "select-img item-food active") {
-    localStorage.setItem("foodStyle", "img059food");
-  }else
-  if(document.getElementById("food060Item0").className === "select-img item-food active") {
-    localStorage.setItem("foodStyle", "img060food");
-  }else
-  if(document.getElementById("food061Item0").className === "select-img item-food active") {
-    localStorage.setItem("foodStyle", "img061food");
-  }else
-  if(document.getElementById("food062Item0").className === "select-img item-food active") {
-    localStorage.setItem("foodStyle", "img062food");
-  }else
-  if(document.getElementById("food063Item0").className === "select-img item-food active") {
-    localStorage.setItem("foodStyle", "img063food");
-  }else
-  if(document.getElementById("food064Item0").className === "select-img item-food active") {
-    localStorage.setItem("foodStyle", "img064food");
-  }else
-  if(document.getElementById("food065Item0").className === "select-img item-food active") {
-    localStorage.setItem("foodStyle", "img065food");
-  }else
-  if(document.getElementById("food066Item0").className === "select-img item-food active") {
-    localStorage.setItem("foodStyle", "img066food");
-  }else
-  if(document.getElementById("food067Item0").className === "select-img item-food active") {
-    localStorage.setItem("foodStyle", "img067food");
-  }else
-  if(document.getElementById("food068Item0").className === "select-img item-food active") {
-    localStorage.setItem("foodStyle", "img068food");
-  }else
-  if(document.getElementById("food069Item0").className === "select-img item-food active") {
-    localStorage.setItem("foodStyle", "img069food");
-  }else
-  if(document.getElementById("food070Item0").className === "select-img item-food active") {
-    localStorage.setItem("foodStyle", "img070food");
-  }else
-  if(document.getElementById("food071Item0").className === "select-img item-food active") {
-    localStorage.setItem("foodStyle", "img071food");
-  }else
-  if(document.getElementById("food072Item0").className === "select-img item-food active") {
-    localStorage.setItem("foodStyle", "img072food");
-  }else
-  if(document.getElementById("food073Item0").className === "select-img item-food active") {
-    localStorage.setItem("foodStyle", "img073food");
-  }else
-  if(document.getElementById("food074Item0").className === "select-img item-food active") {
-    localStorage.setItem("foodStyle", "img074food");
-  }else
-  if(document.getElementById("food075Item0").className === "select-img item-food active") {
-    localStorage.setItem("foodStyle", "img075food");
-  }else
-  if(document.getElementById("food076Item0").className === "select-img item-food active") {
-    localStorage.setItem("foodStyle", "img076food");
-  }else
-  if(document.getElementById("food077Item0").className === "select-img item-food active") {
-    localStorage.setItem("foodStyle", "img077food");
-  };
-  if(document.getElementById("normalDif").className === "difficulty select active") {
-    localStorage.setItem("difficulty", "normal");
-  }else
-  if(document.getElementById("hardDif").className === "difficulty select active") {
-    localStorage.setItem("difficulty", "hard");
-  }else
-  if(document.getElementById("hellDif").className === "difficulty select active") {
-    localStorage.setItem("difficulty", "hell");
-  };
-  if(document.getElementById("languageEn").className === "language select active") {
-    localStorage.setItem("lang", "en");
-  }else
-  if(document.getElementById("languageRu").className === "language select active") {
-    localStorage.setItem("lang", "ru");
-  }else
-  if(document.getElementById("languageHe").className === "language select active") {
-    localStorage.setItem("lang", "he");
-  };
-  if(document.getElementById("ccLang").className === "controllerpostype select active") {
-    localStorage.setItem("controllerPosition", "center");
-  }else
-  if(document.getElementById("clLang").className === "controllerpostype select active") {
-    localStorage.setItem("controllerPosition", "left");
-  }else
-  if(document.getElementById("crLang").className === "controllerpostype select active") {
-    localStorage.setItem("controllerPosition", "right");
-  };
-  if(document.getElementById("cTypeChenger").value === "dynamic") {
-    localStorage.setItem("controllerTypeDev", "dynamic");
-  }else
-  if(document.getElementById("cTypeChenger").value === "classic") {
-    localStorage.setItem("controllerTypeDev", "classic");
-  }else
-  if(document.getElementById("cTypeChenger").value === "swap") {
-    localStorage.setItem("controllerTypeDev", "swap");
-  };
-  if(document.getElementById("pwAlang").className === "select active") {
-    localStorage.setItem("movementbg", "playerWalk");
-  }else
-  if(document.getElementById("mwAlang").className === "select active") {
-    localStorage.setItem("movementbg", "alboradaWalk");
-  }else
-  if(document.getElementById("mwBlang").className === "select active") {
-    localStorage.setItem("movementbg", "andromedaWalk");
-  }else
-  if(document.getElementById("mwClang").className === "select active") {
-    localStorage.setItem("movementbg", "arthurWalk");
-  }else
-  if(document.getElementById("mwDlang").className === "select active") {
-    localStorage.setItem("movementbg", "auroraWalk");
-  }else
-  if(document.getElementById("mwElang").className === "select active") {
-    localStorage.setItem("movementbg", "boltusWalk");
-  }else
-  if(document.getElementById("mwFlang").className === "select active") {
-    localStorage.setItem("movementbg", "caramelWalk");
-  }else
-  if(document.getElementById("mwGlang").className === "select active") {
-    localStorage.setItem("movementbg", "doomlightlWalk");
-  }else
-  if(document.getElementById("mwHlang").className === "select active") {
-    localStorage.setItem("movementbg", "firefoxWalk");
-  }else
-  if(document.getElementById("mwIlang").className === "select active") {
-    localStorage.setItem("movementbg", "firestarWalk");
-  }else
-  if(document.getElementById("mwJlang").className === "select active") {
-    localStorage.setItem("movementbg", "flamencoWalk");
-  }else
-  if(document.getElementById("mwKlang").className === "select active") {
-    localStorage.setItem("movementbg", "gabrielWalk");
-  }else
-  if(document.getElementById("mwLlang").className === "select active") {
-    localStorage.setItem("movementbg", "hotsteelWalk");
-  }else
-  if(document.getElementById("mwMlang").className === "select active") {
-    localStorage.setItem("movementbg", "hurricaneWalk");
-  }else
-  if(document.getElementById("mwNlang").className === "select active") {
-    localStorage.setItem("movementbg", "jojoWalk");
-  }else
-  if(document.getElementById("mwOlang").className === "select active") {
-    localStorage.setItem("movementbg", "michaelWalk");
-  }else
-  if(document.getElementById("mwPlang").className === "select active") {
-    localStorage.setItem("movementbg", "neutronWalk");
-  }else
-  if(document.getElementById("mwQlang").className === "select active") {
-    localStorage.setItem("movementbg", "northernWalk");
-  }else
-  if(document.getElementById("mwRlang").className === "select active") {
-    localStorage.setItem("movementbg", "pulsarWalk");
-  }else
-  if(document.getElementById("mwSlang").className === "select active") {
-    localStorage.setItem("movementbg", "rangerWalk");
-  }else
-  if(document.getElementById("mwTlang").className === "select active") {
-    localStorage.setItem("movementbg", "ravenWalk");
-  }else
-  if(document.getElementById("mwUlang").className === "select active") {
-    localStorage.setItem("movementbg", "skylarkWalk");
-  }else
-  if(document.getElementById("mwVlang").className === "select active") {
-    localStorage.setItem("movementbg", "snowWalk");
-  }else
-  if(document.getElementById("mwWlang").className === "select active") {
-    localStorage.setItem("movementbg", "trioWalk");
-  }else
-  if(document.getElementById("mwXlang").className === "select active") {
-    localStorage.setItem("movementbg", "ventorusWalk");
-  }else
-  if(document.getElementById("mwYlang").className === "select active") {
-    localStorage.setItem("movementbg", "deathKnellWalk");
-  }else
-  if(document.getElementById("mwZlang").className === "select active") {
-    localStorage.setItem("movementbg", "dreadwolfWalk");
-  }else
-  if(document.getElementById("mwAAlang").className === "select active") {
-    localStorage.setItem("movementbg", "gaialWalk");
-  }else
-  if(document.getElementById("mwABlang").className === "select active") {
-    localStorage.setItem("movementbg", "guerillaHunterWalk");
-  }else
-  if(document.getElementById("mwAClang").className === "select active") {
-    localStorage.setItem("movementbg", "lancelotWalk");
-  }else
-  if(document.getElementById("mwADlang").className === "select active") {
-    localStorage.setItem("movementbg", "moonRabbitWalk");
-  }else
-  if(document.getElementById("mwAElang").className === "select active") {
-    localStorage.setItem("movementbg", "nebulaWalk");
-  }else
-  if(document.getElementById("mwAFlang").className === "select active") {
-    localStorage.setItem("movementbg", "shiranuiWalk");
-  }else
-  if(document.getElementById("mwAGlang").className === "select active") {
-    localStorage.setItem("movementbg", "skyfireWalk");
-  }else
-  if(document.getElementById("mwAHlang").className === "select active") {
-    localStorage.setItem("movementbg", "twilightWalk");
-  }else
-  if(document.getElementById("mwAIlang").className === "select active") {
-    localStorage.setItem("movementbg", "akashicWalk");
-  }else
-  if(document.getElementById("mwAJlang").className === "select active") {
-    localStorage.setItem("movementbg", "skyfallWalk");
-  }else
-  if(document.getElementById("mwAKlang").className === "select active") {
-    localStorage.setItem("movementbg", "tempestWalk");
-  };
-  if(document.getElementById("loadClassicCon").className === "select active") {
-    localStorage.setItem("loadingStyle", "classic");
-  }else
-  if(document.getElementById("loadAnimeCon").className === "select active") {
-    localStorage.setItem("loadingStyle", "anime");
-  }else
-  if(document.getElementById("loadMikuCon").className === "select active") {
-    localStorage.setItem("loadingStyle", "miku");
-  }else
-  if(document.getElementById("loadNakanoCon").className === "select active") {
-    localStorage.setItem("loadingStyle", "nakano");
-  }else
-  if(document.getElementById("loadAnimeCon2").className === "select active") {
-    localStorage.setItem("loadingStyle", "anime2");
-  }else
-  if(document.getElementById("loadAnimeCon3").className === "select active") {
-    localStorage.setItem("loadingStyle", "anime3");
-  };
-  if(document.getElementById("randomSnakePos").checked === true) {
-    localStorage.setItem("snakePosType", "random");
-  }else{
-    localStorage.setItem("snakePosType", "custom");
-  };
+  function saveActive(elements, storageKey) {
+    for (const item of elements) {
+      const el = document.getElementById(item.id);
+      if (el && el.classList.contains("active")) {
+        localStorage.setItem(storageKey, item.value);
+        return;
+      }
+    }
+  }
+  saveActive([
+    { id: "origoMap", value: "imgOrigo" },
+    { id: "alphaMap2", value: "imgAlpha2" },
+    { id: "alphaMap", value: "imgAlpha" },
+    { id: "conBoard000img", value: "img000board" },
+    { id: "conBoard001img", value: "img001board" },
+    { id: "conBoard002img", value: "img002board" },
+    { id: "conBoard003img", value: "img003board" },
+    { id: "conBoard004img", value: "img004board" },
+    { id: "conBoard005img", value: "img005board" },
+    { id: "conBoard006img", value: "img006board" },
+    { id: "conBoard007img", value: "img007board" },
+    { id: "conBoard008img", value: "img008board" },
+    { id: "conBoard009img", value: "img009board" },
+    { id: "conBoard010img", value: "img010board" },
+    { id: "conBoard011img", value: "img011board" },
+    { id: "conBoard012img", value: "img012board" },
+    { id: "conBoard013img", value: "img013board" },
+    { id: "conBoard014img", value: "img014board" },
+    { id: "conBoard015img", value: "img015board" },
+    { id: "conBoard016img", value: "img016board" },
+    { id: "conBoard017img", value: "img017board" },
+    { id: "conBoard018img", value: "img018board" },
+    { id: "conBoard019img", value: "img019board" },
+    { id: "conBoard020img", value: "img020board" },
+    { id: "conBoard021img", value: "img021board" },
+    { id: "conBoard022img", value: "img022board" },
+    { id: "conBoard023img", value: "img023board" },
+    { id: "conBoard024img", value: "img024board" },
+    { id: "conBoard025img", value: "img025board" },
+    { id: "conBoard026img", value: "img026board" },
+    { id: "conBoard027img", value: "img027board" },
+    { id: "conBoard028img", value: "img028board" },
+    { id: "conBoard029img", value: "img029board" },
+    { id: "conBoard030img", value: "img030board" },
+    { id: "conBoard031img", value: "img031board" },
+    { id: "conBoard032img", value: "img032board" },
+    { id: "conBoard033img", value: "img033board" },
+    { id: "conBoard034img", value: "img034board" },
+    { id: "conBoard035img", value: "img035board" },
+    { id: "conBoard036img", value: "img036board" },
+    { id: "conBoard037img", value: "img037board" },
+    { id: "conBoard038img", value: "img038board" },
+    { id: "conBoard039img", value: "img039board" },
+    { id: "conBoard040img", value: "img040board" },
+    { id: "conBoard041img", value: "img041board" },
+    { id: "conBoard042img", value: "img042board" },
+    { id: "conBoard043img", value: "img043board" },
+    { id: "conBoard044img", value: "img044board" },
+    { id: "conBoard045img", value: "img045board" },
+    { id: "conBoard046img", value: "img046board" },
+    { id: "conBoard047img", value: "img047board" },
+    { id: "conBoard048img", value: "img048board" },
+    { id: "conBoard049img", value: "img049board" },
+    { id: "conBoard050img", value: "img050board" },
+    { id: "conBoard051img", value: "img051board" },
+    { id: "conBoard052img", value: "img052board" },
+    { id: "conBoard053img", value: "img053board" },
+    { id: "conBoard054img", value: "img054board" },
+    { id: "conBoard055img", value: "img055board" },
+    { id: "conBoard056img", value: "img056board" },
+    { id: "conBoard057img", value: "img057board" },
+    { id: "conBoard058img", value: "img058board" },
+    { id: "conBoard059img", value: "img059board" },
+    { id: "conBoard060img", value: "img060board" },
+    { id: "conBoard061img", value: "img061board" },
+    { id: "conBoard062img", value: "img062board" },
+    { id: "conBoard063img", value: "img063board" },
+    { id: "conBoard064img", value: "img064board" },
+    { id: "conBoard065img", value: "img065board" },
+    { id: "conBoard066img", value: "img066board" },
+    { id: "conBoard067img", value: "img067board" },
+    { id: "conBoard068img", value: "img068board" },
+    { id: "conBoard069img", value: "img069board" },
+    { id: "conBoard070img", value: "img070board" },
+    { id: "conBoard071img", value: "img071board" },
+    { id: "conBoard072img", value: "img072board" },
+    { id: "conBoard073img", value: "img073board" }
+  ], "boardStyle");
+  saveActive([
+    { id: "meowItem", value: "imgMeow" },
+    { id: "goldItem", value: "imgGold" },
+    { id: "alphacoinItem", value: "imgAlphacoin" },
+    { id: "crystalItem", value: "imgCrystal" },
+    { id: "virtualTokenItem", value: "imgVirtualToken" },
+    { id: "food000Item0", value: "img000food" },
+    { id: "food001Item0", value: "img001food" },
+    { id: "food002Item0", value: "img002food" },
+    { id: "food003Item0", value: "img003food" },
+    { id: "food004Item0", value: "img004food" },
+    { id: "food005Item0", value: "img005food" },
+    { id: "food006Item0", value: "img006food" },
+    { id: "food007Item0", value: "img007food" },
+    { id: "food008Item0", value: "img008food" },
+    { id: "food009Item0", value: "img009food" },
+    { id: "food010Item0", value: "img010food" },
+    { id: "food011Item0", value: "img011food" },
+    { id: "food012Item0", value: "img012food" },
+    { id: "food013Item0", value: "img013food" },
+    { id: "food014Item0", value: "img014food" },
+    { id: "food015Item0", value: "img015food" },
+    { id: "food016Item0", value: "img016food" },
+    { id: "food017Item0", value: "img017food" },
+    { id: "food018Item0", value: "img018food" },
+    { id: "food019Item0", value: "img019food" },
+    { id: "food020Item0", value: "img020food" },
+    { id: "food021Item0", value: "img021food" },
+    { id: "food022Item0", value: "img022food" },
+    { id: "food023Item0", value: "img023food" },
+    { id: "food024Item0", value: "img024food" },
+    { id: "food025Item0", value: "img025food" },
+    { id: "food026Item0", value: "img026food" },
+    { id: "food027Item0", value: "img027food" },
+    { id: "food028Item0", value: "img028food" },
+    { id: "food029Item0", value: "img029food" },
+    { id: "food030Item0", value: "img030food" },
+    { id: "food031Item0", value: "img031food" },
+    { id: "food032Item0", value: "img032food" },
+    { id: "food033Item0", value: "img033food" },
+    { id: "food034Item0", value: "img034food" },
+    { id: "food035Item0", value: "img035food" },
+    { id: "food036Item0", value: "img036food" },
+    { id: "food037Item0", value: "img037food" },
+    { id: "food038Item0", value: "img038food" },
+    { id: "food039Item0", value: "img039food" },
+    { id: "food040Item0", value: "img040food" },
+    { id: "food041Item0", value: "img041food" },
+    { id: "food042Item0", value: "img042food" },
+    { id: "food043Item0", value: "img043food" },
+    { id: "food044Item0", value: "img044food" },
+    { id: "food045Item0", value: "img045food" },
+    { id: "food046Item0", value: "img046food" },
+    { id: "food047Item0", value: "img047food" },
+    { id: "food048Item0", value: "img048food" },
+    { id: "food049Item0", value: "img049food" },
+    { id: "food050Item0", value: "img050food" },
+    { id: "food051Item0", value: "img051food" },
+    { id: "food052Item0", value: "img052food" },
+    { id: "food053Item0", value: "img053food" },
+    { id: "food054Item0", value: "img054food" },
+    { id: "food055Item0", value: "img055food" },
+    { id: "food056Item0", value: "img056food" },
+    { id: "food057Item0", value: "img057food" },
+    { id: "food058Item0", value: "img058food" },
+    { id: "food059Item0", value: "img059food" },
+    { id: "food060Item0", value: "img060food" },
+    { id: "food061Item0", value: "img061food" },
+    { id: "food062Item0", value: "img062food" },
+    { id: "food063Item0", value: "img063food" },
+    { id: "food064Item0", value: "img064food" },
+    { id: "food065Item0", value: "img065food" },
+    { id: "food066Item0", value: "img066food" },
+    { id: "food067Item0", value: "img067food" },
+    { id: "food068Item0", value: "img068food" },
+    { id: "food069Item0", value: "img069food" },
+    { id: "food070Item0", value: "img070food" },
+    { id: "food071Item0", value: "img071food" },
+    { id: "food072Item0", value: "img072food" },
+    { id: "food073Item0", value: "img073food" },
+    { id: "food074Item0", value: "img074food" },
+    { id: "food075Item0", value: "img075food" },
+    { id: "food076Item0", value: "img076food" },
+    { id: "food077Item0", value: "img077food" }
+  ], "foodStyle");
+  saveActive([
+    { id: "normalDif", value: "normal" },
+    { id: "hardDif", value: "hard" },
+    { id: "hellDif", value: "hell" }
+  ], "difficulty");
+  saveActive([
+    { id: "languageEn", value: "en" },
+    { id: "languageRu", value: "ru" },
+    { id: "languageHe", value: "he" }
+  ], "lang");
+  saveActive([
+    { id: "ccLang", value: "center" },
+    { id: "clLang", value: "left" },
+    { id: "crLang", value: "right" }
+  ], "controllerPosition");
+  const controllerType = document.getElementById("cTypeChenger")?.value;
+  if (controllerType) {
+    localStorage.setItem("controllerTypeDev", controllerType);
+  }
+  saveActive([
+    { id: "pwAlang", value: "playerWalk" },
+    { id: "mwAlang", value: "alboradaWalk" },
+    { id: "mwBlang", value: "andromedaWalk" },
+    { id: "mwClang", value: "arthurWalk" },
+    { id: "mwDlang", value: "auroraWalk" },
+    { id: "mwElang", value: "boltusWalk" },
+    { id: "mwFlang", value: "caramelWalk" },
+    { id: "mwGlang", value: "doomlightWalk" },
+    { id: "mwHlang", value: "firefoxWalk" },
+    { id: "mwIlang", value: "firestarWalk" },
+    { id: "mwJlang", value: "flamencoWalk" },
+    { id: "mwKlang", value: "gabrielWalk" },
+    { id: "mwLlang", value: "hotsteelWalk" },
+    { id: "mwMlang", value: "hurricaneWalk" },
+    { id: "mwNlang", value: "jojoWalk" },
+    { id: "mwOlang", value: "michaelWalk" },
+    { id: "mwPlang", value: "neutronWalk" },
+    { id: "mwQlang", value: "northernWalk" },
+    { id: "mwRlang", value: "pulsarWalk" },
+    { id: "mwSlang", value: "rangerWalk" },
+    { id: "mwTlang", value: "ravenWalk" },
+    { id: "mwUlang", value: "skylarkWalk" },
+    { id: "mwVlang", value: "snowWalk" },
+    { id: "mwWlang", value: "trioWalk" },
+    { id: "mwXlang", value: "ventorusWalk" },
+    { id: "mwYlang", value: "deathKnellWalk" },
+    { id: "mwZlang", value: "dreadwolfWalk" },
+    { id: "mwAAlang", value: "gaiaWalk" },
+    { id: "mwABlang", value: "guerillaHunterWalk" },
+    { id: "mwAClang", value: "lancelotWalk" },
+    { id: "mwADlang", value: "moonRabbitWalk" },
+    { id: "mwAElang", value: "nebulaWalk" },
+    { id: "mwAFlang", value: "shiranuiWalk" },
+    { id: "mwAGlang", value: "skyfireWalk" },
+    { id: "mwAHlang", value: "twilightWalk" },
+    { id: "mwAIlang", value: "akashicWalk" },
+    { id: "mwAJlang", value: "skyfallWalk" },
+    { id: "mwAKlang", value: "tempestWalk" }
+  ], "movementbg");
+  saveActive([
+    { id: "loadClassicCon", value: "classic" },
+    { id: "loadAnimeCon", value: "anime" },
+    { id: "loadMikuCon", value: "miku" },
+    { id: "loadNakanoCon", value: "nakano" },
+    { id: "loadAnimeCon2", value: "anime2" },
+    { id: "loadAnimeCon3", value: "anime3" }
+  ], "loadingStyle");
+  localStorage.setItem(
+    "snakePosType",
+    document.getElementById("randomSnakePos")?.checked ? "random" : "custom"
+  );
   window.location.reload();
 };
 function alertReloadLater() {
@@ -1619,9 +1214,8 @@ function alertReloadLater() {
     localStorage.setItem("movementbg", "playerWalk");
     localStorage.setItem("loadingStyle", "classic");
     localStorage.setItem("ambients", "true");
-    localStorage.setItem("snakeColor", "#ddaaff");
+    localStorage.setItem("snakeColor", "#2855f9");
     localStorage.setItem("snakeLetter", " ");
-    localStorage.setItem("autoSaveScoreCheck", "false");
     localStorage.setItem("showFPS", "false");
     window.location.reload();
   }

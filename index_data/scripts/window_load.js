@@ -242,27 +242,6 @@ window.addEventListener('load', function() {
   }else{
     document.getElementById("ambientChecker").checked = false;
   };
-  if(localStorage.getItem("autoSaveScoreCheck") === "true") {
-    document.getElementById("autoSaveScoreCheck").checked = true;
-    score = localStorage.getItem("currentScore");
-    if(localStorage.getItem("lang") === "en") {
-      scoreElement.innerText = `Score: ${score}`;
-    }else
-    if(localStorage.getItem("lang") === "ru") {
-      scoreElement.innerText = `Счет: ${score}`;
-    }else
-    if(localStorage.getItem("lang") === "he") {
-      scoreElement.innerText = `ציון: ${score}`;
-      document.getElementById("getscore").style.textAlign = "right";
-      document.getElementById("gethighscore").style.textAlign = "right";
-    }
-  }else{
-    document.getElementById("autoSaveScoreCheck").checked = false;
-    localStorage.setItem("currentScore", "0");
-  };
-  if(document.getElementById("autoSaveScoreCheck").checked === true) {
-    score = localStorage.getItem("currentScore");
-  };
   updateFoodPosition();
   updateSnakePosition();
   costGoldShows();
