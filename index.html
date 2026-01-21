@@ -385,7 +385,7 @@
             </div>
           </div>
         </div>
-        <input class="menuscroller" type="range" name="conNine" id="conNine" min="0" max="100" value="0">
+        <input class="collectscroller" type="range" name="conNine" id="conNine" min="0" max="100" value="0">
       </div>
       <div class="device-info-indicator">
         <div id="batteryProgress">
@@ -506,10 +506,6 @@
             <div class="checkbox-content">
               <input type="checkbox" id="cFpsDisplay" onclick="showFpsDisplaying();selectionSound();">
               <label class="label-checkbox" for="cFpsDisplay" id="displayFpsLang">...</label>
-            </div>
-            <div class="checkbox-content">
-              <input type="checkbox" id="autoSaveScoreCheck" onclick="saveAutoScoreCheckboxPhasa();selectionSound();">
-              <label class="label-checkbox" for="autoSaveScoreCheck" id="autoScoreLang">...</label>
             </div>
           </div>
           <div id="board" class="content">
@@ -1703,7 +1699,7 @@
           <source id="sourceGachaAudionation" src="index_data/audio/interface/gacha/Gacha aud start.mp3" type="audio/mp3">
         </audio>
         <div id="animationBlocker"></div>
-        <button id="skipAnim" class="skip-vid-gacha" onclick="skipVidAnim();defaultClickSound();" style="display: none;">Skip</button>
+        <button id="skipAnim" class="skip-vid-gacha" style="display: none;">Skip</button>
       </div>
       <div id="gachaPrises" class="gacha-praices">
         <div class="prices-container" id="prices-display">

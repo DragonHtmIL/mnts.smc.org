@@ -1,6 +1,6 @@
 var GHPATH = '/mnts.smc.org';
 var APP_PREFIX = 'gppwa_';
-var VERSION = "1.4.1-18012026";
+var VERSION = "1.4.2-21012026";
 var URLS = [
   `${GHPATH}/index_data/animations/anime.gif`,
   `${GHPATH}/index_data/animations/anime_2.gif`,
@@ -501,8 +501,8 @@ var URLS = [
   `${GHPATH}/index_data/textures/gui/btn_function_pe.png`,
   `${GHPATH}/index_data/textures/gui/btn_function_py.png`,
   `${GHPATH}/index_data/textures/gui/button.png`,
-  `${GHPATH}/index_data/textures/gui/button_null.png`,
   `${GHPATH}/index_data/textures/gui/button_true.png`,
+  `${GHPATH}/index_data/textures/gui/button_null.png`,
   `${GHPATH}/index_data/textures/gui/cards_continer.png`,
   `${GHPATH}/index_data/textures/gui/changed_bg.png`,
   `${GHPATH}/index_data/textures/gui/checkbox_off.png`,
@@ -537,12 +537,13 @@ var URLS = [
   `${GHPATH}/index_data/textures/gui/inventory/item_bg_6sp.png`,
   `${GHPATH}/index_data/textures/gui/inventory/item_bg_7ss.png`,
   `${GHPATH}/index_data/textures/gui/inventory/item_ic_1d.png`,
-  `${GHPATH}/index_data/textures/gui/inventory/item_ic_2b.png`,
-  `${GHPATH}/index_data/textures/gui/inventory/item_ic_4s.png`,
-  `${GHPATH}/index_data/textures/gui/inventory/item_ic_5sp.png`,
-  `${GHPATH}/index_data/textures/gui/inventory/item_ic_6ex.png`,
+  `${GHPATH}/index_data/textures/gui/inventory/item_ic_3b.png`,
+  `${GHPATH}/index_data/textures/gui/inventory/item_ic_4a.png`,
+  `${GHPATH}/index_data/textures/gui/inventory/item_ic_5s.png`,
   `${GHPATH}/index_data/textures/gui/inventory/item_ic_6sp.png`,
-  `${GHPATH}/index_data/textures/gui/inventory/item_ic_6ss.png`,
+  `${GHPATH}/index_data/textures/gui/inventory/item_ic_7ex.png`,
+  `${GHPATH}/index_data/textures/gui/inventory/item_ic_7sp.png`,
+  `${GHPATH}/index_data/textures/gui/inventory/item_ic_7ss.png`,
   `${GHPATH}/index_data/textures/gui/inventory/lock.png`,
   `${GHPATH}/index_data/textures/gui/inventory`,
   `${GHPATH}/index_data/textures/gui/key_bg.png`,
@@ -960,5 +961,4 @@ self.addEventListener('fetch', event => {
     return fetch(event.request);
     })
   );
-
 });
