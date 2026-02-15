@@ -244,5 +244,5 @@ window.addEventListener('load', function() {
   };
   updateFoodPosition();
   updateSnakePosition();
-  costGoldShows();
+  costShows();
 });

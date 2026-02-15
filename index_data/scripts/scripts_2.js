@@ -3341,7 +3341,7 @@ function checkObtineds() {
     document.getElementById("classesZoe").classList.remove("locked");
   };
 };
-function costGoldShows() {
+function costShows() {
   const goldsLabels = document.querySelectorAll(".cost-have-gold");
   for(var i = 0; i < goldsLabels.length; i++) {
     goldsLabels[i].innerHTML = localStorage.getItem("goldStorage");
@@ -3349,6 +3349,14 @@ function costGoldShows() {
   const ticketsLabels = document.querySelectorAll(".cost-have-ticket");
   for(var i = 0; i < ticketsLabels.length; i++) {
     ticketsLabels[i].innerHTML = localStorage.getItem("ticketStorage");
+  }
+  const crystalsLabels = document.querySelectorAll(".cost-have-crystal");
+  for(var i = 0; i < crystalsLabels.length; i++) {
+    crystalsLabels[i].innerHTML = localStorage.getItem("crystalStorage");
+  }
+  const premiumTicketsLabels = document.querySelectorAll(".cost-have-premium-ticket");
+  for(var i = 0; i < premiumTicketsLabels.length; i++) {
+    premiumTicketsLabels[i].innerHTML = localStorage.getItem("ticketPremiumStorage");
   }
 };
 function openGacha(evt, gachaName) {

@@ -17,8 +17,9 @@ function summonMechaOne() {
     gold -= 10;
     localStorage.setItem("goldStorage", gold);
   }
-  costGoldShows();
+  costShows();
   localStorage.setItem("goldStorage", gold);
+  localStorage.setItem("ticketStorage", ticket);
   const animFrame = document.getElementById("animFrame");
   const gachaAnim = document.getElementById("sourceGachaAnimation");
   const gachaAud = document.getElementById("gachaAudionation");
@@ -36,6 +37,10 @@ function summonMechaOne() {
   document.getElementById("oponebtnDefMechaTen").classList.add("btnclicked");
   document.getElementById("oponebtnDefPilotTen").disabled = true;
   document.getElementById("oponebtnDefPilotTen").classList.add("btnclicked");
+  document.getElementById("opshadowbtnOne").disabled = true;
+  document.getElementById("opshadowbtnOne").classList.add("btnclicked");
+  document.getElementById("opshadowbtnTen").disabled = true;
+  document.getElementById("opshadowbtnTen").classList.add("btnclicked");
   if(document.getElementById("checkBaseVolum").checked === false) {
     document.getElementById("btnPress").play();
   };
@@ -143,6 +148,10 @@ function displaymecha(mecha) {
     document.getElementById("oponebtnDefMechaTen").disabled = false;
     document.getElementById("oponebtnDefPilotTen").classList.remove("btnclicked");
     document.getElementById("oponebtnDefPilotTen").disabled = false;
+    document.getElementById("opshadowbtnOne").classList.remove("btnclicked");
+    document.getElementById("opshadowbtnOne").disabled = false;
+    document.getElementById("opshadowbtnTen").classList.remove("btnclicked");
+    document.getElementById("opshadowbtnTen").disabled = false;
     defaultClickSound();
     skipBtn.style.display = "none";
     gachaAnim.src = "index_data/textures/empty.png";

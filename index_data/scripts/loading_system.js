@@ -27,7 +27,8 @@ const basePaths = {
   gachas: "index_data/textures/gui/gacha/",
   inventorys: "index_data/textures/gui/inventory/",
   gachaAnimations: "index_data/animations/gacha/",
-  loadScreens: "index_data/textures/loading_screens/"
+  loadScreens: "index_data/textures/loading_screens/",
+  shadow: "index_data/gacha_events/shadow/"
 };
 const assets = {
   boards: [
@@ -804,6 +805,12 @@ const assets = {
   ],
   loadScreens: [
     "0"
+  ],
+  shadow: [
+    "card_shadow_watcher",
+    "card_yellow_dwarf",
+    "image_shadow_watcher",
+    "image_yellow_dwarf"
   ]
 };
 const extensions = {
@@ -831,7 +838,8 @@ const extensions = {
   inventorys: [".png"],
   loadScreens: [".png"],
   loadingLogos: [".gif"],
-  gachaAnimations: [".gif"]
+  gachaAnimations: [".gif"],
+  shadow: [".png"]
 };
 const maxAssets = Object.values(assets).reduce((a, arr) => a + arr.length, 0);
 function loadTextures() {
