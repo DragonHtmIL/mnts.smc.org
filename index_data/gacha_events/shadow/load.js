@@ -131,6 +131,10 @@ function eventId00000000() {
   mecha0.appendChild(img0);
   mecha0.appendChild(rank0);
   mecha0.appendChild(name0);
+  skin1.appendChild(mecha1);
+  mecha1.appendChild(img1);
+  mecha1.appendChild(rank1);
+  mecha1.appendChild(name1);
   head.appendChild(css0);
   scripts.appendChild(scriptList);
   scripts.appendChild(scriptInfo);
