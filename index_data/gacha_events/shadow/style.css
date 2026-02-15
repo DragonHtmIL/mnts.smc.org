@@ -1,0 +1,54 @@
+:root {
+  --shadow-watcher-img: url('card_shadow_watcher.png');
+  --shadow-watcher-img-preview: url('image_shadow_watcher.png');
+  --yellow-dwarf-img: url('card_yellow_dwarf.png');
+  --yellow-dwarf-img-preview: url('image_yellow_dwarf.png');
+}
+img[alt="Shadow Watcher"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.shadow-watcher {
+  background-image: var(--shadow-watcher-img);
+  background-position: 0 -41px;
+}
+.name.shadow-watcher {
+  font-size: 16px;
+}
+.image-preview.shadow-watcher {
+  background-image: var(--shadow-watcher-img-preview);
+}
+.gacha-continer.shadow-watcher.locked::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var() center/cover no-repeat;
+  filter: blur(5px);
+  z-index: -1;
+}
+img[alt="Yellow Dwarf"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.yellow-dwarf {
+  background-image: var(--yellow-dwarf-img);
+  background-position: 0 -41px;
+}
+.name.yellow-dwarf {
+  font-size: 16px;
+}
+.image-preview.yellow-dwarf {
+  background-image: var(--yellow-dwarf-img-preview);
+}
+.gacha-continer.yellow-dwarf.locked::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var() center/cover no-repeat;
+  filter: blur(5px);
+  z-index: -1;
+}
