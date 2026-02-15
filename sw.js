@@ -1,6 +1,6 @@
 var GHPATH = '/mnts.smc.org';
 var APP_PREFIX = 'gppwa_';
-var VERSION = "1.4.2-21012026";
+var VERSION = "1.4.3-15022026";
 var URLS = [
   `${GHPATH}/index_data/animations/anime.gif`,
   `${GHPATH}/index_data/animations/anime_2.gif`,
@@ -947,6 +947,18 @@ var URLS = [
   `${GHPATH}/index_data/textures/system/icon_96.png`,
   `${GHPATH}/index_data/textures/system`,
   `${GHPATH}/index_data/textures`,
+  `${GHPATH}/index_data/gacha_events/shadow/card_shadow_watcher.png`,
+  `${GHPATH}/index_data/gacha_events/shadow/card_yellow_dwarf.png`,
+  `${GHPATH}/index_data/gacha_events/shadow/image_shadow_watcher.png`,
+  `${GHPATH}/index_data/gacha_events/shadow/image_yellow_dwarf.png`,
+  `${GHPATH}/index_data/gacha_events/shadow/list.js`,
+  `${GHPATH}/index_data/gacha_events/shadow/load.js`,
+  `${GHPATH}/index_data/gacha_events/shadow/openx1.js`,
+  `${GHPATH}/index_data/gacha_events/shadow/openx10.js`,
+  `${GHPATH}/index_data/gacha_events/shadow/show_info.js`,
+  `${GHPATH}/index_data/gacha_events/shadow/style.css`,
+  `${GHPATH}/index_data/gacha_events/shadow`,
+  `${GHPATH}/index_data/gacha_events`,
   `${GHPATH}/index_data`,
   `${GHPATH}/index.html`
 ];
