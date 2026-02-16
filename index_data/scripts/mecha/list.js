@@ -1,5 +1,5 @@
 const mechas = [
-  { name: "Akashic", rarity: "Default", image: "index_data/textures/images/cards/def_mecha/Akashic.png" }, // Replace with actual image paths
+  { name: "Akashic", rarity: "Default", image: "index_data/textures/images/cards/def_mecha/Akashic.png" },
   { name: "Alborada", rarity: "Default", image: "index_data/textures/images/cards/def_mecha/Alborada.png" },
   { name: "Andromeda", rarity: "Default", image: "index_data/textures/images/cards/def_mecha/Andromeda.png" },
   { name: "Arthur", rarity: "Default", image: "index_data/textures/images/cards/def_mecha/Arthur.png" },
@@ -36,5 +36,4 @@ const mechas = [
   { name: "Trio of Enders", rarity: "Default", image: "index_data/textures/images/cards/def_mecha/Trio of Enders.png" },
   { name: "Twilight", rarity: "Default", image: "index_data/textures/images/cards/def_mecha/Twilight.png" },
   { name: "Ventorus", rarity: "Default", image: "index_data/textures/images/cards/def_mecha/Ventorus.png" }
-  // ... more mechas
 ];

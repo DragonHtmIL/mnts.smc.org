@@ -1,5 +1,5 @@
 const pilots = [
-  { name: "Aya", rarity: "Default", image: "index_data/textures/images/cards/def_pilot/Aya.png" }, // Replace with actual image paths
+  { name: "Aya", rarity: "Default", image: "index_data/textures/images/cards/def_pilot/Aya.png" },
   { name: "Belladonna", rarity: "Default", image: "index_data/textures/images/cards/def_pilot/Belladonna.png" },
   { name: "Cyrus", rarity: "Default", image: "index_data/textures/images/cards/def_pilot/Cyrus.png" },
   { name: "Fran", rarity: "Default", image: "index_data/textures/images/cards/def_pilot/Fran.png" },
@@ -37,5 +37,4 @@ const pilots = [
   { name: "Yulia", rarity: "Default", image: "index_data/textures/images/cards/def_pilot/Yulia.png" },
   { name: "Yutong", rarity: "Default", image: "index_data/textures/images/cards/def_pilot/Yutong.png" },
   { name: "Zoe", rarity: "Default", image: "index_data/textures/images/cards/def_pilot/Zoe.png" }
-  // ... more pilots
 ];

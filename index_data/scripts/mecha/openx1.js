@@ -27,7 +27,6 @@ function summonMechaOne() {
   const skipBtn = document.getElementById("skipAnim");
   const randomNumber = Math.random() * mechas.length;
   let mecha;
-  // for pressed button
   document.getElementById("btnPress").currentTime = 0;
   document.getElementById("oponebtnDefMechaOne").disabled = true;
   document.getElementById("oponebtnDefMechaOne").classList.add("btnclicked");
@@ -45,7 +44,6 @@ function summonMechaOne() {
     document.getElementById("btnPress").play();
   };
   document.getElementById("btnPress").removeAttribute("loop");
-  // start gacha animation
   setTimeout( function() {
     gachaAnim.src = "index_data/animations/gacha/gacha_vid_start.gif";
     gachaAud.src = "index_data/audio/interface/gacha/Gacha aud start.mp3";
@@ -57,7 +55,6 @@ function summonMechaOne() {
       }
     };
   },700);
-  // Dislay skip button
   setTimeout( function() {
     skipBtn.style.display = "block";
   },3000);
@@ -70,7 +67,6 @@ function summonMechaOne() {
     skipedGachaAnim = "yes";
     defaultClickSound();
   });
-  // video phaza for pressing
   setTimeout( function() {
     animationBlocker.style.display = "none";
     gachaAnim.src = "index_data/animations/gacha/gacha_vid_press.gif";
@@ -82,14 +78,12 @@ function summonMechaOne() {
       };
     };
   },5150);
-  // Simplified rarity system (adjust probabilities as needed)
   if (randomNumber < 1.00) {
     mecha = mechas.find(c => c.rarity === Math.floor(Math.random() * mechas.length));
   } else {
     mecha = mechas.find(c => c.rarity === Math.floor(Math.random() * mechas.length));
   }
   if (!mecha) {
-     // Handle cases where a mecha of a certain rarity is not found.
      const availableCommons = mechas.filter(c => c.rarity === "Default");
      mecha = availableCommons[Math.floor(Math.random() * availableCommons.length)];
      if(!mecha) {

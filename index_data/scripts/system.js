@@ -8,7 +8,6 @@ let snakeX, snakeY;
 let velocityX = 0, velocityY = 0;
 let snakeBody = [];
 let setIntervalId;
-// Scores
 let score = 0;
 let meaw_token_item = localStorage.getItem("meawTokenStorage") || 0;
 let gold_item = localStorage.getItem("goldStorage") || 0;
@@ -93,7 +92,6 @@ let food_id_074 = localStorage.getItem("food074Storage") || 0;
 let food_id_075 = localStorage.getItem("food075Storage") || 0;
 let food_id_076 = localStorage.getItem("food076Storage") || 0;
 let food_id_077 = localStorage.getItem("food077Storage") || 0;
-// End scores
 let highScore = localStorage.getItem("high-score") || 0;
 if(localStorage.getItem("lang") === "en") {
   highScoreElement.innerText = `High Score: ${highScore}`;

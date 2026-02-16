@@ -1611,7 +1611,6 @@ navigator.getBattery().then(function (battery) {
     var subInBatteryProg = document.getElementById("subInBatteryProgress");
     var baseInBatteryProg = document.getElementById("inBatteryProgress");
     var batteryLevel = battery.level * 100;
-    //var roundedBatteryLevel = Math.round(batteryLevel);
     var roundedBatteryLevel = batteryLevel.toFixed(0);
     subBatteryLevel.innerText = roundedBatteryLevel + "%";
     baseBatteryLevel.innerText = roundedBatteryLevel + "%";
@@ -1651,7 +1650,6 @@ navigator.getBattery().then(function (battery) {
     }
   };
 });
-// time & date
 setInterval(displayTime, 1);
 function displayTime() {
   if(localStorage.getItem("lang") == "en") {

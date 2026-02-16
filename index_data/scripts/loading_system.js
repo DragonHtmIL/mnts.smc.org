@@ -30,7 +30,7 @@ const basePaths = {
   loadScreens: "index_data/textures/loading_screens/",
   shadow: "index_data/gacha_events/shadow/"
 };
-const assets = {
+const images = {
   boards: [
     "alpha_map",
     "alpha_map_2",
@@ -256,6 +256,7 @@ const assets = {
     "notice",
     "opx1",
     "opx10",
+    "opxnull",
     "plus_cube",
     "range_bar",
     "range_thumb",
@@ -783,6 +784,7 @@ const assets = {
     "item_bg_5s",
     "item_bg_6sp",
     "item_bg_7ss",
+    "item_bg_hoverlay",
     "item_ic_1d",
     "item_ic_3b",
     "item_ic_5s",
@@ -810,7 +812,8 @@ const assets = {
     "card_shadow_watcher",
     "card_yellow_dwarf",
     "image_shadow_watcher",
-    "image_yellow_dwarf"
+    "image_yellow_dwarf",
+    "shadow_bg"
   ]
 };
 const extensions = {
@@ -841,11 +844,11 @@ const extensions = {
   gachaAnimations: [".gif"],
   shadow: [".png"]
 };
-const maxAssets = Object.values(assets).reduce((a, arr) => a + arr.length, 0);
+const maxImages = Object.values(images).reduce((a, arr) => a + arr.length, 0);
 function loadTextures() {
   const loadedBar = document.getElementById("loadedbar");
   if (!loadedBar) return console.error("Missing element: loadedbar");
-  for (const [folder, list] of Object.entries(assets)) {
+  for (const [folder, list] of Object.entries(images)) {
     const base = basePaths[folder];
     const exts = extensions[folder] || extensions.default;
     if (!base) {
@@ -875,12 +878,12 @@ function handleImageError(img, base, name, exts) {
 };
 function handleLoad() {
   loadedcont++;
-  widthcont = (loadedcont / maxAssets) * 100;
+  widthcont = (loadedcont / maxImages) * 100;
   const widther = document.getElementById("widther");
   if (widther) widther.style.width = widthcont + "%";
-  document.getElementById("assetCount").innerHTML = `${loadedcont}/${maxAssets}`;
+  document.getElementById("imageCount").innerHTML = `${loadedcont}/${maxImages}`;
   document.getElementById("widthernum").innerHTML = `${widthcont.toFixed(1)}% / ${widths}%`;
-  if (loadedcont === maxAssets) toDisplayNone();
+  if (loadedcont === maxImages) toDisplayNone();
 };
 function handleError() {
   errorscont++;
@@ -888,9 +891,9 @@ function handleError() {
   const el = document.getElementById("loadingText");
   if (!el) return;
   const messages = {
-    en: `Cant load ${errorscont} assets, not found or removed...<br>maybe try reload, if again not loaded tell us.`,
-    ru: `Невозможно загрузить ${errorscont} активов, они не найдены или удалены...<br>попробуйте перезагрузить, если снова не загрузится, сообщите нам.`,
-    he: `לא ניתן לטעון ${errorscont} נכסים, לא נמצאו או הוסרו...<br>אולי תנסה לטעון מחדש, אם שוב לא נטען הודיעו לנו.`
+    en: `Cant load ${errorscont} images, not found or removed...<br>maybe try reload, if again not loaded tell us.`,
+    ru: `Невозможно загрузить ${errorscont} изображения, они не найдены или удалены...<br>попробуйте перезагрузить, если снова не загрузится, сообщите нам.`,
+    he: `לא ניתן לטעון ${errorscont} תמונות, לא נמצאו או הוסרו...<br>אולי תנסה לטעון מחדש, אם שוב לא נטען הודיעו לנו.`
   };
   el.innerHTML = messages[lang] || messages.en;
   document.getElementById("loadingService").style.display = "flex";

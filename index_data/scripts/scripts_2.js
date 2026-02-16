@@ -348,12 +348,10 @@ function checkDeviceType() {
 checkDeviceType();
 function autoDifficultyLoadNew() {
   if(localStorage.getItem("difficulty") === null) {
-    // load difficulty
     localStorage.setItem("difficulty", "normal");
     window.location.reload();
   }else
   if(localStorage.getItem("difficulty") === "") {
-    // load difficulty
     localStorage.setItem("difficulty", "normal");
     window.location.reload();
   }else{
@@ -362,13 +360,11 @@ function autoDifficultyLoadNew() {
 };
 function autoFoodsLoadNew() {
   if(localStorage.getItem("foodStyle") === null) {
-    // load food
     localStorage.setItem("foodStyle", "imgMeow");
     localStorage.setItem("reapitfood","meow");
     window.location.reload();
   }else
   if(localStorage.getItem("foodStyle") === "") {
-    // load food
     localStorage.setItem("foodStyle", "imgMeow");
     localStorage.setItem("reapitfood","meow");
     window.location.reload();
@@ -378,12 +374,10 @@ function autoFoodsLoadNew() {
 };
 function autoBoardsLoadNew() {
   if(localStorage.getItem("boardStyle") === null) {
-    // load board
     localStorage.setItem("boardStyle", "imgAlpha");
     window.location.reload();
   }else
   if(localStorage.getItem("boardStyle") === "") {
-    // load board
     localStorage.setItem("boardStyle", "imgAlpha");
     window.location.reload();
   }else{
@@ -392,12 +386,10 @@ function autoBoardsLoadNew() {
 };
 function autoControllerPoseLoadNew() {
   if(localStorage.getItem("controllerPosition") === null) {
-    // load controller position
     localStorage.setItem("controllerPosition", "center");
     window.location.reload();
   }else
   if(localStorage.getItem("controllerPosition") === "") {
-    // load controller position
     localStorage.setItem("controllerPosition", "center");
     window.location.reload();
   }else{
@@ -406,12 +398,10 @@ function autoControllerPoseLoadNew() {
 };
 function autoLanguageLoadNew() {
   if(localStorage.getItem("lang") === null) {
-    // load language
     localStorage.setItem("lang", "en");
     window.location.reload();
   }else
   if(localStorage.getItem("lang") === "") {
-    // load language
     localStorage.setItem("lang", "en");
     window.location.reload();
   }else{
@@ -420,12 +410,10 @@ function autoLanguageLoadNew() {
 };
 function autoDynamicControllerLoadNew() {
   if(localStorage.getItem("controllerTypeDev") === null) {
-    // load music
     localStorage.setItem("controllerTypeDev", "classic");
     window.location.reload();
   }else
   if(localStorage.getItem("controllerTypeDev") === "") {
-    // load music
     localStorage.setItem("controllerTypeDev", "classic");
     window.location.reload();
   }else{
@@ -434,12 +422,10 @@ function autoDynamicControllerLoadNew() {
 };
 function autoMusicCheckLoadNew() {
   if(localStorage.getItem("musicPlay") === null) {
-    // load music checkbox
     localStorage.setItem("musicPlay", "true");
     window.location.reload();
   }else
   if(localStorage.getItem("musicPlay") === "") {
-    // load music checkbox
     localStorage.setItem("musicPlay", "true");
     window.location.reload();
   }else{
@@ -448,12 +434,10 @@ function autoMusicCheckLoadNew() {
 };
 function autoSfxProgLoadNew() {
   if(localStorage.getItem("sfxvolumedata") === null) {
-    // load sfx volume
     localStorage.setItem("sfxvolumedata", "1.0");
     window.location.reload();
   }else
   if(localStorage.getItem("sfxvolumedata") === "") {
-    // load sfx volume
     localStorage.setItem("sfxvolumedata", "1.0");
     window.location.reload();
   }else{
@@ -462,12 +446,10 @@ function autoSfxProgLoadNew() {
 };
 function autoMusicProgLoadNew() {
   if(localStorage.getItem("musicvolumedata") === null) {
-    // load music volume
     localStorage.setItem("musicvolumedata", "1.0");
     window.location.reload();
   }else
   if(localStorage.getItem("musicvolumedata") === "") {
-    // load music volume
     localStorage.setItem("musicvolumedata", "1.0");
     window.location.reload();
   }else{
@@ -476,12 +458,10 @@ function autoMusicProgLoadNew() {
 };
 function autoMovementLoadNew() {
   if(localStorage.getItem("movementbg") === null) {
-    // load walk
     localStorage.setItem("movementbg", "playerWalk");
     window.location.reload();
   }else
   if(localStorage.getItem("movementbg") === "") {
-    // load walk
     localStorage.setItem("movementbg", "playerWalk");
     window.location.reload();
   }else{
@@ -1843,9 +1823,8 @@ function loadControllerType() {
   if(localStorage.getItem("controllerTypeDev") === "swap" && navigator.userAgent.match(/mobile|Tablet|iPad|android|bSurface/i)) {
     let touchStartX = null;
     let touchStartY = null;
-    const SWIPE_THRESHOLD = 20; // Adjust this value as needed
-    // Get the game canvas or the element that will capture swipes
-    const gameCanvas = document.getElementById("touchBoard"); // Replace with your canvas ID
+    const SWIPE_THRESHOLD = 20;
+    const gameCanvas = document.getElementById("touchBoard");
     gameCanvas.addEventListener('touchstart', (event) => {
       touchStartX = event.touches[0].clientX;
       touchStartY = event.touches[0].clientY;
@@ -1860,27 +1839,19 @@ function loadControllerType() {
         const touchEndY = event.changedTouches[0].clientY;
         const deltaX = touchEndX - touchStartX;
         const deltaY = touchEndY - touchStartY;
-        // Determine the swipe direction based on the larger displacement
         if (Math.abs(deltaX) > Math.abs(deltaY) && Math.abs(deltaX) > SWIPE_THRESHOLD) {
-          // Horizontal swipe
           if (deltaX < 0) {
-            // Swiped Left
             document.getElementById("left").click();
           } else {
-            // Swiped Right
             document.getElementById("right").click();
           }
         } else if (Math.abs(deltaY) > Math.abs(deltaX) && Math.abs(deltaY) > SWIPE_THRESHOLD) {
-          // Vertical swipe
           if (deltaY < 0) {
-            // Swiped Up
             document.getElementById("up").click();
           } else {
-            // Swiped Down
             document.getElementById("down").click();
           }
         }
-        // Reset touch coordinates
         touchStartX = null;
         touchStartY = null;
       }

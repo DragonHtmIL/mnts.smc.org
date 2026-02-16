@@ -237,7 +237,7 @@ function languagesContents() {
     if(localStorage.getItem("loadingStyle") === "anime") {
       a055.innerHTML = "";
     }else{
-      a055.innerHTML = "Loading Assets…";
+      a055.innerHTML = "Loading Textures…";
     }
     a056.innerHTML = "Classic";
     a057.innerHTML = "Snake position";
@@ -600,7 +600,7 @@ function languagesContents() {
     if(localStorage.getItem("loadingStyle") === "anime") {
       a055.innerHTML = "";
     }else{
-      a055.innerHTML = "Загрузка Ресурсы…";
+      a055.innerHTML = "Загрузка текстур…";
     }
     a056.innerHTML = "Классический";
     a057.innerHTML = "Положение змеи";
@@ -994,7 +994,7 @@ function languagesContents() {
     if(localStorage.getItem("loadingStyle") === "anime") {
       a055.innerHTML = "";
     }else{
-      a055.innerHTML = "טוען נכסים…";
+      a055.innerHTML = "טוען טקסטורות…";
     }
     a056.innerHTML = "קלאסי";
     a057.innerHTML = "תנוחה של הנחש";

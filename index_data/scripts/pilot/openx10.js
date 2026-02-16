@@ -25,7 +25,6 @@ function summonPilotTen() {
   const gachaAud = document.getElementById("gachaAudionation");
   const animationBlocker = document.getElementById("animationBlocker");
   const skipBtn = document.getElementById("skipAnim");
-  // for pressed button
   document.getElementById("btnPress").currentTime = 0;
   document.getElementById("oponebtnDefMechaOne").disabled = true;
   document.getElementById("oponebtnDefMechaOne").classList.add("btnclicked");
@@ -43,7 +42,6 @@ function summonPilotTen() {
     document.getElementById("btnPress").play();
   };
   document.getElementById("btnPress").removeAttribute("loop");
-  // start gacha animation
   setTimeout( function() {
     gachaAnim.src = "index_data/animations/gacha/gacha_vid_start.gif";
     gachaAud.src = "index_data/audio/interface/gacha/Gacha aud start.mp3";
@@ -55,7 +53,6 @@ function summonPilotTen() {
       }
     };
   },700);
-  // Dislay skip button
   setTimeout( function() {
     skipBtn.style.display = "block";
   },3000);
@@ -68,7 +65,6 @@ function summonPilotTen() {
     skipedGachaAnim = "yes";
     defaultClickSound();
   });
-  // video phaza for pressing
   setTimeout( function() {
     animationBlocker.style.display = "none";
     gachaAnim.src = "index_data/animations/gacha/gacha_vid_press.gif";
@@ -80,7 +76,6 @@ function summonPilotTen() {
       };
     };
   },5150);
-  // generate 10 pilots
   const results = [];
   let containsArank = false;
   const availableCommons = pilots.filter(p => p.rarity === "Default");
