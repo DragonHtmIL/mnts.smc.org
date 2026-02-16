@@ -62,15 +62,6 @@ a {
   overflow: hidden;
   z-index: 1;
 }
-#content404,
-#contentError {
-  display: none;
-  text-align: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-}
 .wrapper {
   width: 100vmin;
   height: 100vmin;
@@ -361,7 +352,7 @@ a {
   border: solid 2px var(--white);
   overflow: hidden;
   padding: 0;
-  transition: grid-area 0.1s linear !important;
+  transition: grid-area 0.0.4s linear !important;
 }
 .play-board > .head ~ .head {
   background-image: none;
@@ -2886,23 +2877,23 @@ input[type="color"]::-webkit-color-swatch {
 }
 #mouseBoard.leftcur {
   cursor: url('../animations/cursour/left/0.png') 32 32, default;
-  -webkit-animation: cursorleft 1s !important;
-  animation: cursorleft 1s !important;
+  -webkit-animation: cursorleft 0.4s !important;
+  animation: cursorleft 0.4s !important;
 }
 #mouseBoard.rightcur {
   cursor: url('../animations/cursour/right/0.png') 32 32, default;
-  -webkit-animation: cursorright 1s !important;
-  animation: cursorright 1s !important;
+  -webkit-animation: cursorright 0.4s !important;
+  animation: cursorright 0.4s !important;
 }
 #mouseBoard.upcur {
   cursor: url('../animations/cursour/up/0.png') 32 32, default;
-  -webkit-animation: cursorup 1s !important;
-  animation: cursorup 1s !important;
+  -webkit-animation: cursorup 0.4s !important;
+  animation: cursorup 0.4s !important;
 }
 #mouseBoard.downcur {
   cursor: url('../animations/cursour/down/0.png') 32 32, default;
-  -webkit-animation: cursordown 1s !important;
-  animation: cursordown 1s !important;
+  -webkit-animation: cursordown 0.4s !important;
+  animation: cursordown 0.4s !important;
 }
 .first-content {
   display: none;
@@ -3281,10 +3272,10 @@ input[type="number"]::-webkit-inner-spin-button {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  transition: 1s !important;
-  -o-transition: 1s !important;
-  -moz-transition: 1s !important;
-  -webkit-transition: 1s !important;
+  transition: 0.4s !important;
+  -o-transition: 0.4s !important;
+  -moz-transition: 0.4s !important;
+  -webkit-transition: 0.4s !important;
 }
 #sourceGachaAnimation {
   width: 100%;
@@ -3482,9 +3473,24 @@ p {
   width: 234px;
   overflow: hidden;
   position: relative;
+  transform: scale(1);
   cursor: url('../animations/cursour/clickable/0.png'), pointer;
   -webkit-animation: cursorlnk 0.4s infinite;
   animation: cursorlnk 0.4s infinite;
+}
+.gallery-card:hover {
+  transform: scale(1.05);
+}
+.gallery-card-effect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-size: 111% 117%;
+  background-position: center;
 }
 .gallery-card.default {
   background-image: var(--bg-coll-d);
@@ -3506,6 +3512,15 @@ p {
 }
 .gallery-card.ss-rank {
   background-image: var(--bg-coll-ss);
+}
+.gallery-card.default:hover .gallery-card-effect,
+.gallery-card.a-rank:hover .gallery-card-effect,
+.gallery-card.b-rank:hover .gallery-card-effect,
+.gallery-card.c-rank:hover .gallery-card-effect,
+.gallery-card.s-rank:hover .gallery-card-effect,
+.gallery-card.sp-rank:hover .gallery-card-effect,
+.gallery-card.ss-rank:hover .gallery-card-effect {
+  background-image: var(--bg-coll-hover);
 }
 .item-image {
   width: 100%;
@@ -3731,22 +3746,19 @@ p {
   padding: 2px 15px 0px 20px;
 }
 .gacha-continer {
-  -webkit-transition: 1s;
-  -moz-transition: 1s;
-  -o-transition: 1s;
-  transition: 1s;
+  background-position: center;
+  background-size: auto 72%;
+  background-repeat: no-repeat;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
 }
 #mechacontent {
   background-image: var(--akashic-img-preview);
-  background-position: center;
-  background-size: auto 72%;
-  background-repeat: no-repeat;
 }
 #pilotcontent {
   background-image: var(--aya-img-preview);
-  background-position: center;
-  background-size: auto 72%;
-  background-repeat: no-repeat;
 }
 .add-more {
   position: absolute;

@@ -1,4 +1,4 @@
-:root {/* Default */
+:root {
   --black: #000000ff;
   --black-a: #000000aa;
   --black-b: #00000011;
@@ -8,8 +8,6 @@
   --gray: #7c8089ff;
   --light-blue: aqua;
   --yellow: gold;
-  /* Imageres */
-  /* System */
   --battery-prog-normal: url('../textures/system/battery_normal.png');
   --battery-prog-low: url('../textures/system/battery_low.png');
   --battery-prog-charging: url('../textures/system/battery_charging.png');
@@ -17,7 +15,6 @@
   --battery-main-prog-low: url('../textures/system/battery_main_low.png');
   --battery-main-prog-charging: url('../textures/system/battery_main_charging.png');
   --discord: url('../textures/system/discord.png');
-  /* Food */
   --meaw-token: url('../textures/foods/meaw_token.png');
   --gold: url('../textures/foods/gold.png');
   --alpha-coin: url('../textures/foods/alpha_coin.png');
@@ -105,7 +102,6 @@
   --food-75-image: url('../textures/foods/img_0_075.png');
   --food-76-image: url('../textures/foods/img_0_076.png');
   --food-77-image: url('../textures/foods/img_0_077.png');
-  /* Board */
   --alpha: url('../textures/boards/alpha_map.png');
   --alpha2: url('../textures/boards/alpha_map_2.png');
   --origo: url('../textures/boards/origo_map.png');
@@ -183,7 +179,6 @@
   --board-71-image: url('../textures/boards/img_071.png');
   --board-72-image: url('../textures/boards/img_072.png');
   --board-73-image: url('../textures/boards/img_073.png');
-  /* Gui */
   --button-true: url('../textures/gui/button_true.png');
   --button-null: url('../textures/gui/button_null.png');
   --first-back: url('../textures/gui/first_modal_bg.png');
@@ -265,6 +260,7 @@
   --bg-coll-s: url('../textures/gui/inventory/item_bg_5s.png');
   --bg-coll-sp: url('../textures/gui/inventory/item_bg_6sp.png');
   --bg-coll-ss: url('../textures/gui/inventory/item_bg_7ss.png');
+  --bg-coll-hover: url('../textures/gui/inventory/item_bg_hoverlay.png');
   --skip-vid: url('../textures/gui/skip.png');
   --shop-bg: url('../textures/gui/shop_window.png');
   --shop-button: url('../textures/gui/shop_tab_vertical.png');
@@ -281,7 +277,6 @@
   --gacha-window: url('../textures/gui/gacha.png');
   --more-icon: url('../textures/gui/more_in_menu.png');
   --shop-window: url('../textures/gui/icon_shop.png');
-  /* League */
   --league-0: url('../textures/league/non.png');
   --league-1: url('../textures/league/league_1_bronze.png');
   --league-2: url('../textures/league/league_2_silver.png');
@@ -300,14 +295,12 @@
   --league-6-star: url('../textures/league/league_6_super_star.png');
   --league-7-star: url('../textures/league/league_7_legendary_star.png');
   --league-8-star: url('../textures/league/league_8_alpha_knight_star.png');
-  /* System Scripts */
   --battery-prog-normal-script: url('index_data/textures/system/battery_normal.png');
   --battery-prog-low-script: url('index_data/textures/system/battery_low.png');
   --battery-prog-charging-script: url('index_data/textures/system/battery_charging.png');
   --battery-main-prog-normal-script: url('index_data/textures/system/battery_main_normal.png');
   --battery-main-prog-low-script: url('index_data/textures/system/battery_main_low.png');
   --battery-main-prog-charging-script: url('index_data/textures/system/battery_main_charging.png');
-  /* Snake */
   --letter-a: url('../textures/snake/a.png');
   --letter-A: url('../textures/snake/As.png');
   --letter-b: url('../textures/snake/b.png');
@@ -380,7 +373,6 @@
   --letter-8s: url('../textures/snake/8s.png');
   --letter-9: url('../textures/snake/9.png');
   --letter-9s: url('../textures/snake/9s.png');
-  /* Mechas */
   --akashic-img: url('../textures/images/cards/def_mecha/Akashic.png');
   --akashic-img-preview: url('../textures/images/views/def_mecha/Akashic.png');
   --alborada-img: url('../textures/images/cards/def_mecha/Alborada.png');
@@ -455,7 +447,6 @@
   --twilight-img-preview: url('../textures/images/views/def_mecha/Twilight.png');
   --ventorus-img: url('../textures/images/cards/def_mecha/Ventorus.png');
   --ventorus-img-preview: url('../textures/images/views/def_mecha/Ventorus.png');
-  /* Pilots */
   --aya-img: url('../textures/images/cards/def_pilot/Aya.png');
   --aya-img-preview: url('../textures/images/views/def_pilot/Aya.png');
   --belladonna-img: url('../textures/images/cards/def_pilot/Belladonna.png');
@@ -532,6 +523,5 @@
   --yutong-img-preview: url('../textures/images/views/def_pilot/Yutong.png');
   --zoe-img: url('../textures/images/cards/def_pilot/Zoe.png');
   --zoe-img-preview: url('../textures/images/views/def_pilot/Zoe.png');
-  /* Other */
   --empty-image: url('../textures/empty.png');
 }
