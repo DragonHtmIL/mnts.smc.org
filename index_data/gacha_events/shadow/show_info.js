@@ -17,7 +17,7 @@ function showMechaShadowWatcher() {
   }else{
     cancelSound();
   }
-  itemInfoBg.className = "item-info-bg def-bg";
+  itemInfoBg.className = "item-info-bg shad-bg";
   if(localStorage.getItem("lang") === "en") {
     itemName.innerHTML = mecha1en;
     textInfoBelong.innerHTML = "Pilot: " + pilot1en;
@@ -53,7 +53,7 @@ function showMechaYellowDwarf() {
   }else{
     cancelSound();
   }
-  itemInfoBg.className = "item-info-bg def-bg";
+  itemInfoBg.className = "item-info-bg shad-bg";
   if(localStorage.getItem("lang") === "en") {
     itemName.innerHTML = mecha1en;
     textInfoBelong.innerHTML = "Pilot: " + pilot1en;

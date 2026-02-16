@@ -3,6 +3,7 @@
   --shadow-watcher-img-preview: url('image_shadow_watcher.png');
   --yellow-dwarf-img: url('card_yellow_dwarf.png');
   --yellow-dwarf-img-preview: url('image_yellow_dwarf.png');
+  --shad-bg: url('shadow_bg.png');
 }
 img[alt="Shadow Watcher"] {
   width: auto;
@@ -51,4 +52,7 @@ img[alt="Yellow Dwarf"] {
   background: var() center/cover no-repeat;
   filter: blur(5px);
   z-index: -1;
+}
+.item-info-bg.shad-bg {
+  background: var(--shad-bg);
 }

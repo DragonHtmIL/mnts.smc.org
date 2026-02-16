@@ -1,5 +1,5 @@
 const shadows = [
-  { name: "Aya", rarity: "Default", image: "index_data/textures/images/cards/def_pilot/Aya.png" }, // Replace with actual image paths
+  { name: "Aya", rarity: "Default", image: "index_data/textures/images/cards/def_pilot/Aya.png" },
   { name: "Belladonna", rarity: "Default", image: "index_data/textures/images/cards/def_pilot/Belladonna.png" },
   { name: "Cyrus", rarity: "Default", image: "index_data/textures/images/cards/def_pilot/Cyrus.png" },
   { name: "Fran", rarity: "Default", image: "index_data/textures/images/cards/def_pilot/Fran.png" },
@@ -36,5 +36,4 @@ const shadows = [
   { name: "Ventorus", rarity: "Default", image: "index_data/textures/images/cards/def_mecha/Ventorus.png" },
   { name: "Yellow Dwarf", rarity: "Arank", image: "index_data/gacha_events/shadow/card_yellow_dwarf.png" },
   { name: "Shadow Watcher", rarity: "Srank", image: "index_data/gacha_events/shadow/card_shadow_watcher.png" }
-  // ... more mechas
 ];
