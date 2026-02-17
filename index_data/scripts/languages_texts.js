@@ -49,7 +49,7 @@ function languagesContents() {
   var a047 = document.getElementById("ifMobileLang");
   var a048 = document.getElementById("pilotCollectionGallery");
   var a049 = document.getElementById("snakeTabsound");
-//  var a050 = document.getElementById("");
+  var a050 = document.getElementById("username");
   var a051 = document.getElementById("profileTitleLang");
   var a052 = document.getElementById("clickable0Lang");
   var a053 = document.getElementById("cratedOn0Lang");
@@ -82,6 +82,10 @@ function languagesContents() {
   var a080 = document.getElementById("mechaDefaultEvent");
   var a081 = document.getElementById("pilotDefaultEvent");
   var a082 = document.getElementById("shopTitle");
+  var a083 = document.getElementById("code");
+  var a084 = document.getElementById("regAccBtn");
+  var a085 = document.getElementById("logAccBtn");
+  var a086 = document.getElementById("saveAccBtn");
   const a000_all = document.getElementsByClassName('settingscontent');
   const a001_all = document.getElementsByClassName('stylescontent');
   const a002_all = document.getElementsByClassName('coming-soon');
@@ -222,7 +226,7 @@ function languagesContents() {
     a047.innerHTML = "If users use Mobiles (Android, iPhone, iPad, Tablets)";
     a048.innerHTML = "Pilot";
     a049.innerHTML = "Snake";
-//    a050.innerHTML = "";
+    a050.placeholder = "Nickname";
     a051.innerHTML = "Collection Center";
     a052.innerHTML = "> Clickable <";
     a053.innerHTML = "Coded on: ";
@@ -271,6 +275,10 @@ function languagesContents() {
     a080.innerHTML = "Mecha";
     a081.innerHTML = "Pilot";
     a082.innerHTML = "Store";
+    a083.placeholder = "Code";
+    a084.innerHTML = "Register";
+    a085.innerHTML = "Login";
+    a086.innerHTML = "Save";
     for (let i = 0; i < a000_all.length; i++) {
       a000_all[i].textContent = 'Settings:';
     };
@@ -585,7 +593,7 @@ function languagesContents() {
     a047.innerHTML = "Если пользователи используют мобильные (Android, iPhone, iPad, планшеты)";
     a048.innerHTML = "Пилот";
     a049.innerHTML = "Змея";
-//    a050.innerHTML = "";
+    a050.placeholder = "Прозвище";
     a051.innerHTML = "Центр сбора";
     a052.innerHTML = "> Нажемной <";
     a053.innerHTML = "Кодировано на: ";
@@ -634,6 +642,10 @@ function languagesContents() {
     a080.innerHTML = "Меха";
     a081.innerHTML = "Пилот";
     a082.innerHTML = "Магазин";
+    a083.placeholder = "Код";
+    a084.innerHTML = "Регистрация";
+    a085.innerHTML = "Вход";
+    a086.innerHTML = "Сохранять";
     for (let i = 0; i < a000_all.length; i++) {
       a000_all[i].textContent = 'Настройки:';
     };
@@ -974,7 +986,7 @@ function languagesContents() {
      a047.style.textAlign = "right";
     a048.innerHTML = "טייס";
     a049.innerHTML = "נחש";
-//    a050.innerHTML = "";
+    a050.placeholder = "כינוי";
     a051.innerHTML = "מרכז איסוף";
      a051.style.textAlign = "right";
      a051.style.width = "75%";
@@ -1045,6 +1057,10 @@ function languagesContents() {
     a082.innerHTML = "חנות";
      a082.style.textAlign = "right";
      a082.style.direction = "rtl";
+    a083.placeholder = "קוד";
+    a084.innerHTML = "הרשמה";
+    a085.innerHTML = "כניסה";
+    a086.innerHTML = "לשמור";
     for (let i = 0; i < a000_all.length; i++) {
       a000_all[i].textContent = 'הגדרות:';
       a000_all[i].style.direction = "rtl";

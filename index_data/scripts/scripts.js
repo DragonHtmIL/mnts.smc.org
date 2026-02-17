@@ -1519,6 +1519,8 @@ function alertDeleteProgress() {
     localStorage.removeItem("Yulia");
     localStorage.removeItem("Yutong");
     localStorage.removeItem("Zoe");
+    localStorage.removeItem("Shadow Watcher");
+    localStorage.removeItem("Yellow Dwarf");
     window.location.reload();
   }
   defaultClickSound();
@@ -3031,11 +3033,9 @@ function saveProgressViaFile() {
   text.value += "localStorage.setItem('food075Storage','" + localStorage.getItem('food075Storage') + "');\n";
   text.value += "localStorage.setItem('food076Storage','" + localStorage.getItem('food076Storage') + "');\n";
   text.value += "localStorage.setItem('food077Storage','" + localStorage.getItem('food077Storage') + "');\n";
-  text.value += "localStorage.setItem('steelScore','" + localStorage.getItem('steelScore') + "');\n";
   text.value += "localStorage.setItem('reapitfood','" + localStorage.getItem('reapitfood') + "');\n";
   text.value += "localStorage.setItem('firsttime','" + localStorage.getItem('firsttime') + "');\n";
   text.value += "localStorage.setItem('updateRead','" + localStorage.getItem('updateRead') + "');\n";
-  text.value += "localStorage.setItem('currentScore','" + localStorage.getItem('currentScore') + "');\n";
   text.value += "localStorage.setItem('snakePosY','" + localStorage.getItem('snakePosY') + "');\n";
   text.value += "localStorage.setItem('snakePosX','" + localStorage.getItem('snakePosX') + "');\n";
   text.value += "localStorage.setItem('snakePosType','" + localStorage.getItem('snakePosType') + "');\n";
@@ -3114,6 +3114,8 @@ function saveProgressViaFile() {
   text.value += "localStorage.setItem('Yulia','" + localStorage.getItem('Yulia') + "');\n";
   text.value += "localStorage.setItem('Yutong','" + localStorage.getItem('Yutong') + "');\n";
   text.value += "localStorage.setItem('Zoe','" + localStorage.getItem('Zoe') + "');\n";
+  text.value += "localStorage.setItem('Shadow Watcher','" + localStorage.getItem('Shadow Watcher') + "');\n";
+  text.value += "localStorage.setItem('Yellow Dwarf','" + localStorage.getItem('Yellow Dwarf') + "');\n";
   text.value += "window.location.reload();\n";
   text.value += "}";
   let valueinput = text.value;
@@ -3157,3 +3159,53 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log('JavaScript file loaded and script tag created.');
   }
 });
+function setLogined() {
+  const noning = document.getElementById("accnoning");
+  const name = document.getElementById("username");
+  const code = document.getElementById("code");
+  const reg = document.getElementById("regAccBtn");
+  const log = document.getElementById("logAccBtn");
+  const save = document.getElementById("saveAccBtn");
+  const display = document.getElementById("accdisplay");
+  const user = document.getElementById("nicknameUser");
+  localStorage.setItem("accState", "logined");
+  localStorage.setItem("nickname", name.value);
+  localStorage.setItem("code", code.value);
+  noning.style.display = "none";
+  display.style.display = "block";
+  user.textContent = name.value;
+  reg.style.display = "none";
+  log.style.display = "none";
+  save.style.display = "flex";
+};
+function checkLogin() {
+  const noning = document.getElementById("accnoning");
+  const name = document.getElementById("username");
+  const code = document.getElementById("code");
+  const reg = document.getElementById("regAccBtn");
+  const log = document.getElementById("logAccBtn");
+  const save = document.getElementById("saveAccBtn");
+  const display = document.getElementById("accdisplay");
+  const user = document.getElementById("nicknameUser");
+  if(localStorage.getItem("accState") === "logined") {
+    noning.style.display = "none";
+    name.value = localStorage.getItem("nickname");
+    code.value = localStorage.getItem("code");
+    display.style.display = "block";
+    reg.style.display = "none";
+    log.style.display = "none";
+    save.style.display = "flex";
+    user.textContent = localStorage.getItem("nickname");
+  }else{
+    localStorage.removeItem("nickname");
+    localStorage.removeItem("code");
+    noning.style.display = "block";
+    name.value = "";
+    code.value = "";
+    display.style.display = "none";
+    reg.style.display = "flex";
+    log.style.display = "flex";
+    save.style.display = "none";
+    user.textContent = "...";
+  }
+}

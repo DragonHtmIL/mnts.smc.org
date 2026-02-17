@@ -1,8 +1,4 @@
 window.addEventListener('load', function() {
-  setTimeout(() => {
-    document.getElementById("gameLogo").style.display = "none";
-    loadTextures();
-  }, 1000);
   languagesContents();
   updateTextLangs();
   autoDifficultyLoadNew();
@@ -245,4 +241,11 @@ window.addEventListener('load', function() {
   updateFoodPosition();
   updateSnakePosition();
   costShows();
+  if (errored === false) {
+    setTimeout(() => {
+      document.getElementById("gameLogo").style.display = "none";
+      loadTextures();
+      checkLogin();
+    }, 1000);
+  };
 });
