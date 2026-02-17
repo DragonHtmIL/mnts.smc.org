@@ -3889,6 +3889,77 @@ p {
 .gallery-skins .gallery-card {
   margin: 0 5px;
 }
+.user-acc-logregsave {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: absolute;
+  top: 100px;
+  right: 0;
+  bottom: auto;
+  left: 0;
+  width: 600px;
+  height: auto;
+  flex-direction: column;
+  align-items: center;
+  background-image: var(--modal);
+  background-size: 100% auto;
+  background-position: center;
+  margin: auto;
+  padding: 5px 0;
+  border-radius: 2px;
+}
+.user-acc-logregsave div:first-child {
+  margin-bottom: 5px;
+}
+.user-acc-logregsave input {
+  background-image: var(--line);
+  background-size: 100% 10%;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  width: 292px;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  margin: 0px 1.5px;
+}
+.user-acc-logregsave #accButtons {
+  display: flex;
+  flex-direction: row;
+}
+.user-acc-logregsave button {
+  width: 63px;
+  background-color: transparent;
+  background-image: var(--button-null);
+  background-size: auto 100%;
+  background-position: center center;
+  border: none;
+  outline: none;
+  padding-bottom: 2px;
+  border-radius: 2px;
+  cursor: url(../animations/cursour/clickable/0.png), pointer;
+  -webkit-animation: cursorlnk 0.4s infinite;
+  animation: cursorlnk 0.4s infinite;
+  color: var(--black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 2.5px;
+}
+.user-acc-logregsave button:first-child {
+  background-image: var(--button-true);
+}
+.user-acc-logregsave button:last-child {
+  background-image: var(--button);
+}
+.services.alert {
+  position: absolute;
+  left: 68px;
+  top: 269px;
+  width: 100px;
+  height: 27px;
+  background: none;
+}
 @font-face {
   font-family: gintocopilot;
   src: url('../fonts/gintocopilot.woff2');
@@ -4022,7 +4093,7 @@ p {
   .alert-btn-container input {
     height: 30px;
     width: 90px !important;
-    margin: 0px 0px;
+    margin: 0px 1px;
     font-size: 13px;
   }
   .alert .alert-content #alertText {
@@ -4271,6 +4342,17 @@ p {
     width: 60px;
     height: 200px;
     margin: 6px;
+  }
+  .user-acc-logregsave {
+    width: 378px;
+  }
+  .user-acc-logregsave input {
+    width: 181px;
+  }
+  .user-acc-logregsave button {
+    height: 30px;
+    width: 90px !important;
+    font-size: 13px;
   }
 }
 @media screen and (min-width: 1545px) {
