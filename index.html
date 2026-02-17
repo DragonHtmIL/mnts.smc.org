@@ -39,6 +39,20 @@
         <div id="fpsDisplay">FPS: 0</div>
       </div>
       <div id="accenter" class="modal" style="display: none;">
+        <div class="user-acc-logregsave" id="userAcc">
+          <div id="accnoning" style="display: block;">
+            <input type="text" id="username" placeholder="...">
+            <input type="text" id="code" placeholder="...">
+          </div>
+          <div id="accdisplay" style="display: none;">
+            <span id="nicknameUser">...</span>
+          </div>
+          <div id="accButtons">
+            <button id="regAccBtn" onclick="register(username.value, code.value);" style="display: flex;">...</button>
+            <button id="logAccBtn" onclick="login(username.value, code.value);" style="display: flex;">...</button>
+            <button id="saveAccBtn" onclick="saveGame(username.value, code.value);" style="display: none;">...</button>
+          </div>
+        </div>
         <div class="modal-content">
           <div id="profileTitleLang">...</div>
           <button class="reset-button" id="closeacc" onclick="document.getElementById('accenter').style.display='none';handleIntervalModals();closeModalSound();"></button>
@@ -1449,6 +1463,12 @@
           <input type="submit" id="alertCenter" value="...">
           <input type="submit" id="alertRight" value="...">
         </div>
+        <div id="alertService" class="services alert" style="display: none;">
+          <div class="service-type" id="discord" onclick="openDiscordService();defaultClickSound();">
+            <div class="service-logo" id="sIdiscord"></div>
+            <div class="service-name">Discord</div>
+          </div>
+        </div>
       </div>
     </div>
     <div id="loseModal" class="modal" style="display: none;">
@@ -2780,6 +2800,7 @@
     <script src="index_data/scripts/scripts_2.js"></script>
     <script src="index_data/scripts/is_first_player.js"></script>
     <div id="scriptsCreates"></div>
+    <script type="module" src="index_data/scripts/saves.js"></script>
     <script src="index_data/gacha_events/shadow/load.js"></script>
     <script src="index_data/scripts/window_load.js"></script>
     <script>

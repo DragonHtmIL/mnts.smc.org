@@ -1,6 +1,6 @@
 var GHPATH = '/mnts.smc.org';
 var APP_PREFIX = 'gppwa_';
-var VERSION = "1.4.4-15022026";
+var VERSION = "1.4.5-17022026";
 var URLS = [
   `${GHPATH}/index_data/animations/anime.gif`,
   `${GHPATH}/index_data/animations/anime_2.gif`,
@@ -270,6 +270,7 @@ var URLS = [
   `${GHPATH}/index_data/scripts/ui/tab_select.js`,
   `${GHPATH}/index_data/scripts/ui`,
   `${GHPATH}/index_data/scripts/updates.js`,
+  `${GHPATH}/index_data/scripts/saves.js`,
   `${GHPATH}/index_data/scripts/walk/akashic_walk.js`,
   `${GHPATH}/index_data/scripts/walk/alborada_walk.js`,
   `${GHPATH}/index_data/scripts/walk/andromeda_walk.js`,
