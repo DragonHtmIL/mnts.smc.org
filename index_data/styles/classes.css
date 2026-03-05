@@ -1,0 +1,1423 @@
+img[alt="Akashic"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.akashic {
+  background-image: var(--akashic-img);
+  background-position: 0 -41px;
+}
+.name.akashic {
+  font-size: 16px;
+}
+.image-preview.akashic {
+  background-image: var(--akashic-img-preview);
+}
+.avatar-in-display.akashic {
+  background-image: var(--avatar-akashic);
+}
+img[alt="Alborada"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.alborada {
+  background-image: var(--alborada-img);
+  background-position: 0 -63px;
+}
+.name.alborada {
+  font-size: 16px;
+}
+.image-preview.alborada {
+  background-image: var(--alborada-img-preview);
+}
+.avatar-in-display.alborada {
+  background-image: var(--avatar-alborada);
+}
+img[alt="Andromeda"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.andromeda {
+  background-image: var(--andromeda-img);
+  background-position: 0 -39px;
+}
+.name.andromeda {
+  font-size: 16px;
+}
+.image-preview.andromeda {
+  background-image: var(--andromeda-img-preview);
+}
+.avatar-in-display.andromeda {
+  background-image: var(--avatar-andromeda);
+}
+img[alt="Arthur"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.arthur {
+  background-image: var(--arthur-img);
+  background-position: 0 -35px;
+}
+.name.arthur {
+  font-size: 16px;
+}
+.image-preview.arthur {
+  background-image: var(--arthur-img-preview);
+}
+.avatar-in-display.arthur {
+  background-image: var(--avatar-arthur);
+}
+img[alt="Aurora"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.aurora {
+  background-image: var(--aurora-img);
+  background-position: 0 -63px;
+}
+.name.aurora {
+  font-size: 16px;
+}
+.image-preview.aurora {
+  background-image: var(--aurora-img-preview);
+}
+.avatar-in-display.aurora {
+  background-image: var(--avatar-aurora);
+}
+img[alt="Boltus"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.boltus {
+  background-image: var(--boltus-img);
+  background-position: 0 -59px;
+}
+.name.boltus {
+  font-size: 16px;
+}
+.image-preview.boltus {
+  background-image: var(--boltus-img-preview);
+}
+.avatar-in-display.boltus {
+  background-image: var(--avatar-boltus);
+}
+img[alt="Caramel"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.caramel {
+  background-image: var(--caramel-img);
+  background-position: 0 -49px;
+}
+.name.caramel {
+  font-size: 16px;
+}
+.image-preview.caramel {
+  background-image: var(--caramel-img-preview);
+}
+.avatar-in-display.caramel {
+  background-image: var(--avatar-caramel);
+}
+img[alt="Death Knell"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.death-knell {
+  background-image: var(--death-knell-img);
+  background-position: 0 -35px;
+}
+.name.death-knell {
+  font-size: 16px;
+}
+.image-preview.death-knell {
+  background-image: var(--death-knell-img-preview);
+}
+.avatar-in-display.death-knell {
+  background-image: var(--avatar-death-knell);
+}
+img[alt="Doomlight"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.doomlight {
+  background-image: var(--doomlight-img);
+  background-position: 0 -47px;
+}
+.name.doomlight {
+  font-size: 16px;
+}
+.image-preview.doomlight {
+  background-image: var(--doomlight-img-preview);
+}
+.avatar-in-display.doomlight {
+  background-image: var(--avatar-doomlight);
+}
+img[alt="Dreadwolf"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.dreadwolf {
+  background-image: var(--dreadwolf-img);
+  background-position: 0 -13px;
+}
+.name.dreadwolf {
+  font-size: 16px;
+}
+.image-preview.dreadwolf {
+  background-image: var(--dreadwolf-img-preview);
+}
+.avatar-in-display.dreadwolf {
+  background-image: var(--avatar-dreadwolf);
+}
+img[alt="Firefox"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.firefox {
+  background-image: var(--firefox-img);
+  background-position: 0 -72px;
+}
+.name.firefox {
+  font-size: 16px;
+}
+.image-preview.firefox {
+  background-image: var(--firefox-img-preview);
+}
+.avatar-in-display.firefox {
+  background-image: var(--avatar-firefox);
+}
+img[alt="Firestar"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.firestar {
+  background-image: var(--firestar-img);
+  background-position: 0 -52px;
+}
+.name.firestar {
+  font-size: 16px;
+}
+.image-preview.firestar {
+  background-image: var(--firestar-img-preview);
+}
+.avatar-in-display.firestar {
+  background-image: var(--avatar-firestar);
+}
+img[alt="Flamenco"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.flamenco {
+  background-image: var(--flamenco-img);
+  background-position: 0 -44px;
+}
+.name.flamenco {
+  font-size: 16px;
+}
+.image-preview.flamenco {
+  background-image: var(--flamenco-img-preview);
+}
+.avatar-in-display.flamenco {
+  background-image: var(--avatar-flamenco);
+}
+img[alt="Gabriel"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.gabriel {
+  background-image: var(--gabriel-img);
+  background-position: 0 -21px;
+}
+.name.gabriel {
+  font-size: 16px;
+}
+.image-preview.gabriel {
+  background-image: var(--gabriel-img-preview);
+}
+.avatar-in-display.gabriel {
+  background-image: var(--avatar-gabriel);
+}
+img[alt="Gaia"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.gaia {
+  background-image: var(--gaia-img);
+  background-position: 0 -35px;
+}
+.name.gaia {
+  font-size: 16px;
+}
+.image-preview.gaia {
+  background-image: var(--gaia-img-preview);
+}
+.avatar-in-display.gaia {
+  background-image: var(--avatar-gaia);
+}
+img[alt="Guerilla Hunter"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.guerilla-hunter {
+  background-image: var(--guerilla-hunter-img);
+  background-position: 0 -35px;
+}
+.name.guerilla-hunter {
+  font-size: 16px;
+}
+.image-preview.guerilla-hunter {
+  background-image: var(--guerilla-hunter-img-preview);
+}
+.avatar-in-display.guerilla-hunter {
+  background-image: var(--avatar-guerilla-hunter);
+}
+img[alt="Hotsteel"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.hotsteel {
+  background-image: var(--hotsteel-img);
+  background-position: 0px -55px;
+}
+.name.hotsteel {
+  font-size: 16px;
+}
+.image-preview.hotsteel {
+  background-image: var(--hotsteel-img-preview);
+}
+.avatar-in-display.hotsteel {
+  background-image: var(--avatar-hotsteel);
+}
+img[alt="Hurricane"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.hurricane {
+  background-image: var(--hurricane-img);
+  background-position: 0 -35px;
+}
+.name.hurricane {
+  font-size: 16px;
+}
+.image-preview.hurricane {
+  background-image: var(--hurricane-img-preview);
+}
+.avatar-in-display.hurricane {
+  background-image: var(--avatar-hurricane);
+}
+img[alt="JOJO"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.jojo {
+  background-image: var(--jojo-img);
+  background-position: 0 -72px;
+}
+.name.jojo {
+  font-size: 16px;
+}
+.image-preview.jojo {
+  background-image: var(--jojo-img-preview);
+}
+.avatar-in-display.jojo {
+  background-image: var(--avatar-jojo);
+}
+img[alt="Lancelot"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.lancelot {
+  background-image: var(--lancelot-img);
+  background-position: 0 -35px;
+}
+.name.lancelot {
+  font-size: 16px;
+}
+.image-preview.lancelot {
+  background-image: var(--lancelot-img-preview);
+}
+.avatar-in-display.lancelot {
+  background-image: var(--avatar-lancelot);
+}
+img[alt="Michael"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.michael {
+  background-image: var(--michael-img);
+  background-position: 0 -46px;
+}
+.name.michael {
+  font-size: 16px;
+}
+.image-preview.michael {
+  background-image: var(--michael-img-preview);
+}
+.avatar-in-display.michael {
+  background-image: var(--avatar-michael);
+}
+img[alt="Moon Rabbit"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.moon-rabbit {
+  background-image: var(--moon-rabbit-img);
+  background-position: 0 -64px;
+}
+.name.moon-rabbit {
+  font-size: 16px;
+}
+.image-preview.moon-rabbit {
+  background-image: var(--moon-rabbit-img-preview);
+}
+.avatar-in-display.moon-rabbit {
+  background-image: var(--avatar-moon-rabbit);
+}
+img[alt="Nebula"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.nebula {
+  background-image: var(--nebula-img);
+  background-position: 0 -70px;
+}
+.name.nebula {
+  font-size: 16px;
+}
+.image-preview.nebula {
+  background-image: var(--nebula-img-preview);
+}
+.avatar-in-display.nebula {
+  background-image: var(--avatar-nebula);
+}
+img[alt="Neutron Star"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.neutron-star {
+  background-image: var(--neutron-star-img);
+  background-position: 0 -70px;
+}
+.name.neutron-star {
+  font-size: 16px;
+}
+.image-preview.neutron-star {
+  background-image: var(--neutron-star-img-preview);
+}
+.avatar-in-display.neutron-star {
+  background-image: var(--avatar-neutron-star);
+}
+img[alt="Northern Knight"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.northern-knight {
+  background-image: var(--northern-knight-img);
+  background-position: 0 -60px;
+}
+.name.northern-knight {
+  font-size: 16px;
+}
+.image-preview.northern-knight {
+  background-image: var(--northern-knight-img-preview);
+}
+.avatar-in-display.northern-knight {
+  background-image: var(--avatar-northern-knight);
+}
+img[alt="Pulsar"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.pulsar {
+  background-image: var(--pulsar-img);
+  background-position: 0 -54px;
+}
+.name.pulsar {
+  font-size: 16px;
+}
+.image-preview.pulsar {
+  background-image: var(--pulsar-img-preview);
+}
+.avatar-in-display.pulsar {
+  background-image: var(--avatar-pulsar);
+}
+img[alt="Ranger"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.ranger {
+  background-image: var(--ranger-img);
+  background-position: 0 -57px;
+}
+.name.ranger {
+  font-size: 16px;
+}
+.image-preview.ranger {
+  background-image: var(--ranger-img-preview);
+}
+.avatar-in-display.ranger {
+  background-image: var(--avatar-ranger);
+}
+img[alt="Raven"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.raven {
+  background-image: var(--raven-img);
+  background-position: 0 -30px;
+}
+.name.raven {
+  font-size: 16px;
+}
+.image-preview.raven {
+  background-image: var(--raven-img-preview);
+}
+.avatar-in-display.raven {
+  background-image: var(--avatar-raven);
+}
+img[alt="Shiranui"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.shiranui {
+  background-image: var(--shiranui-img);
+  background-position: 0 -60px;
+}
+.name.shiranui {
+  font-size: 16px;
+}
+.image-preview.shiranui {
+  background-image: var(--shiranui-img-preview);
+}
+.avatar-in-display.shiranui {
+  background-image: var(--avatar-shiranui);
+}
+img[alt="Skyfall"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.skyfall {
+  background-image: var(--skyfall-img);
+  background-position: 0 -50px;
+}
+.name.skyfall {
+  font-size: 16px;
+}
+.image-preview.skyfall {
+  background-image: var(--skyfall-img-preview);
+}
+.avatar-in-display.skyfall {
+  background-image: var(--avatar-skyfall);
+}
+img[alt="Skyfire"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.skyfire {
+  background-image: var(--skyfire-img);
+  background-position: 0 -41px;
+}
+.name.skyfire {
+  font-size: 16px;
+}
+.image-preview.skyfire {
+  background-image: var(--skyfire-img-preview);
+}
+.avatar-in-display.skyfire {
+  background-image: var(--avatar-skyfire);
+}
+img[alt="Skylark"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.skylark {
+  background-image: var(--skylark-img);
+  background-position: 0 -60px;
+}
+.name.skylark {
+  font-size: 16px;
+}
+.image-preview.skylark {
+  background-image: var(--skylark-img-preview);
+}
+.avatar-in-display.skylark {
+  background-image: var(--avatar-skylark);
+}
+img[alt="Snow Mirage"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.snow-mirage {
+  background-image: var(--snow-mirage-img);
+  background-position: 0 -46px;
+}
+.name.snow-mirage {
+  font-size: 16px;
+}
+.image-preview.snow-mirage {
+  background-image: var(--snow-mirage-img-preview);
+}
+.avatar-in-display.snow-mirage {
+  background-image: var(--avatar-snow-mirage);
+}
+img[alt="Tempest"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.tempest {
+  background-image: var(--tempest-img);
+  background-position: 0 -38px;
+}
+.name.tempest {
+  font-size: 16px;
+}
+.image-preview.tempest {
+  background-image: var(--tempest-img-preview);
+}
+.avatar-in-display.tempest {
+  background-image: var(--avatar-tempest);
+}
+img[alt="Trio of Enders"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.trio-of-enders {
+  background-image: var(--trio-of-enders-img);
+  background-position: 0 -50px;
+}
+.name.trio-of-enders {
+  font-size: 16px;
+}
+.image-preview.trio-of-enders {
+  background-image: var(--trio-of-enders-img-preview);
+}
+.avatar-in-display.trio-of-enders {
+  background-image: var(--avatar-trio-of-enders);
+}
+img[alt="Twilight"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.twilight {
+  background-image: var(--twilight-img);
+  background-position: 0 -72px;
+}
+.name.twilight {
+  font-size: 16px;
+}
+.image-preview.twilight {
+  background-image: var(--twilight-img-preview);
+}
+.avatar-in-display.twilight {
+  background-image: var(--avatar-twilight);
+}
+img[alt="Ventorus"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.ventorus {
+  background-image: var(--ventorus-img);
+  background-position: 0 -72px;
+}
+.name.ventorus {
+  font-size: 16px;
+}
+.image-preview.ventorus {
+  background-image: var(--ventorus-img-preview);
+}
+.avatar-in-display.ventorus {
+  background-image: var(--avatar-ventorus);
+}
+img[alt="Aya"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.aya {
+  background-image: var(--aya-img);
+  background-position: 0 -55px;
+}
+.name.aya {
+  font-size: 16px;
+}
+.image-preview.aya {
+  background-image: var(--aya-img-preview);
+}
+.avatar-in-display.aya {
+  background-image: var(--avatar-aya);
+}
+img[alt="Belladonna"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.belladonna {
+  background-image: var(--belladonna-img);
+  background-position: 0 -52px;
+}
+.name.belladonna {
+  font-size: 16px;
+}
+.image-preview.belladonna {
+  background-image: var(--belladonna-img-preview);
+}
+.avatar-in-display.belladonna {
+  background-image: var(--avatar-belladonna);
+}
+img[alt="Cyrus"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.cyrus {
+  background-image: var(--cyrus-img);
+  background-position: 0 -86px;
+}
+.name.cyrus {
+  font-size: 16px;
+}
+.image-preview.cyrus {
+  background-image: var(--cyrus-img-preview);
+}
+.avatar-in-display.cyrus {
+  background-image: var(--avatar-cyrus);
+}
+img[alt="Fran"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.fran {
+  background-image: var(--fran-img);
+  background-position: 0 -36px;
+}
+.name.fran {
+  font-size: 16px;
+}
+.image-preview.fran {
+  background-image: var(--fran-img-preview);
+}
+.avatar-in-display.fran {
+  background-image: var(--avatar-fran);
+}
+img[alt="Furanku"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.furanku {
+  background-image: var(--furanku-img);
+  background-position: 0 -67px;
+}
+.name.furanku {
+  font-size: 16px;
+}
+.image-preview.furanku {
+  background-image: var(--furanku-img-preview);
+}
+.avatar-in-display.furanku {
+  background-image: var(--avatar-furanku);
+}
+img[alt="Iori"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.iori {
+  background-image: var(--iori-img);
+  background-position: 0 -62px;
+}
+.name.iori {
+  font-size: 16px;
+}
+.image-preview.iori {
+  background-image: var(--iori-img-preview);
+}
+.avatar-in-display.iori {
+  background-image: var(--avatar-iori);
+}
+img[alt="Ivan"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.ivan {
+  background-image: var(--ivan-img);
+  background-position: 0 -49px;
+}
+.name.ivan {
+  font-size: 16px;
+}
+.image-preview.ivan {
+  background-image: var(--ivan-img-preview);
+}
+.avatar-in-display.ivan {
+  background-image: var(--avatar-ivan);
+}
+img[alt="Jaka"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.jaka {
+  background-image: var(--jaka-img);
+  background-position: 0 -51px;
+}
+.name.jaka {
+  font-size: 16px;
+}
+.image-preview.jaka {
+  background-image: var(--jaka-img-preview);
+}
+.avatar-in-display.jaka {
+  background-image: var(--avatar-jaka);
+}
+img[alt="Jiu Chong"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.jiu-chong {
+  background-image: var(--jiu-chong-img);
+  background-position: 0 -47px;
+}
+.name.jiu-chong {
+  font-size: 16px;
+}
+.image-preview.jiu-chong {
+  background-image: var(--jiu-chong-img-preview);
+}
+.avatar-in-display.jiu-chong {
+  background-image: var(--avatar-jiu-chong);
+}
+img[alt="Joanna"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.joanna {
+  background-image: var(--joanna-img);
+  background-position: 0 -66px;
+}
+.name.joanna {
+  font-size: 16px;
+}
+.image-preview.joanna {
+  background-image: var(--joanna-img-preview);
+}
+.avatar-in-display.joanna {
+  background-image: var(--avatar-joanna);
+}
+img[alt="Kije"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.kije {
+  background-image: var(--kije-img);
+  background-position: 0 -91px;
+}
+.name.kije {
+  font-size: 16px;
+}
+.image-preview.kije {
+  background-image: var(--kije-img-preview);
+}
+.avatar-in-display.kije {
+  background-image: var(--avatar-kije);
+}
+img[alt="Kikina"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.kikina {
+  background-image: var(--kikina-img);
+  background-position: 0 -55px;
+}
+.name.kikina {
+  font-size: 16px;
+}
+.image-preview.kikina {
+  background-image: var(--kikina-img-preview);
+}
+.avatar-in-display.kikina {
+  background-image: var(--avatar-kikina);
+}
+img[alt="Kizuna Ai"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.kizuna-ai {
+  background-image: var(--kizuna-ai-img);
+  background-position: 0 -72px;
+}
+.name.kizuna-ai {
+  font-size: 16px;
+}
+.image-preview.kizuna-ai {
+  background-image: var(--kizuna-ai-img-preview);
+}
+.avatar-in-display.kizuna-ai {
+  background-image: var(--avatar-kizuna-ai);
+}
+img[alt="Lillian"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.lillian {
+  background-image: var(--lillian-img);
+  background-position: 0 -62px;
+}
+.name.lillian {
+  font-size: 16px;
+}
+.image-preview.lillian {
+  background-image: var(--lillian-img-preview);
+}
+.avatar-in-display.lillian {
+  background-image: var(--avatar-lillian);
+}
+img[alt="Lysa"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.lysa {
+  background-image: var(--lysa-img);
+  background-position: 0 -57px;
+}
+.name.lysa {
+  font-size: 16px;
+}
+.image-preview.lysa {
+  background-image: var(--lysa-img-preview);
+}
+.avatar-in-display.lysa {
+  background-image: var(--avatar-lysa);
+}
+img[alt="Matilda"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.matilda {
+  background-image: var(--matilda-img);
+  background-position: 0 -47px;
+}
+.name.matilda {
+  font-size: 16px;
+}
+.image-preview.matilda {
+  background-image: var(--matilda-img-preview);
+}
+.avatar-in-display.matilda {
+  background-image: var(--avatar-matilda);
+}
+img[alt="Mia"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.mia {
+  background-image: var(--mia-img);
+  background-position: 0 -70px;
+}
+.name.mia {
+  font-size: 16px;
+}
+.image-preview.mia {
+  background-image: var(--mia-img-preview);
+}
+.avatar-in-display.mia {
+  background-image: var(--avatar-mia);
+}
+img[alt="Mila"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.mila {
+  background-image: var(--mila-img);
+  background-position: 0 -46px;
+}
+.name.mila {
+  font-size: 16px;
+}
+.image-preview.mila {
+  background-image: var(--mila-img-preview);
+}
+.avatar-in-display.mila {
+  background-image: var(--avatar-mila);
+}
+img[alt="Mobius"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.mobius {
+  background-image: var(--mobius-img);
+  background-position: 0 -51px;
+}
+.name.mobius {
+  font-size: 16px;
+}
+.image-preview.mobius {
+  background-image: var(--mobius-img-preview);
+}
+.avatar-in-display.mobius {
+  background-image: var(--avatar-mobius);
+}
+img[alt="Nighthawk"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.nighthawk {
+  background-image: var(--nighthawk-img);
+  background-position: 0 -59px;
+}
+.name.nighthawk {
+  font-size: 16px;
+}
+.image-preview.nighthawk {
+  background-image: var(--nighthawk-img-preview);
+}
+.avatar-in-display.nighthawk {
+  background-image: var(--avatar-nighthawk);
+}
+img[alt="Ning"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.ning {
+  background-image: var(--ning-img);
+  background-position: 0 -44px;
+}
+.name.ning {
+  font-size: 16px;
+}
+.image-preview.ning {
+  background-image: var(--ning-img-preview);
+}
+.avatar-in-display.ning {
+  background-image: var(--avatar-ning);
+}
+img[alt="Norma"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.norma {
+  background-image: var(--norma-img);
+  background-position: 0 -58px;
+}
+.name.norma {
+  content: 'Norma';
+  font-size: 16px;
+}
+.image-preview.norma {
+  background-image: var(--norma-img-preview);
+}
+.avatar-in-display.norma {
+  background-image: var(--avatar-norma);
+}
+img[alt="Opal"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.opal {
+  background-image: var(--opal-img);
+  background-position: 0 -77px;
+}
+.name.opal {
+  font-size: 16px;
+}
+.image-preview.opal {
+  background-image: var(--opal-img-preview);
+}
+.avatar-in-display.opal {
+  background-image: var(--avatar-opal);
+}
+img[alt="Purity"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.purity {
+  background-image: var(--purity-img);
+  background-position: 0 -63px;
+}
+.name.purity {
+  font-size: 16px;
+}
+.image-preview.purity {
+  background-image: var(--purity-img-preview);
+}
+.avatar-in-display.purity {
+  background-image: var(--avatar-purity);
+}
+img[alt="RED"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.red {
+  background-image: var(--red-img);
+  background-position: 0 -50px;
+}
+.name.red {
+  font-size: 16px;
+}
+.image-preview.red {
+  background-image: var(--red-img-preview);
+}
+.avatar-in-display.red {
+  background-image: var(--avatar-red);
+}
+img[alt="Riko"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.riko {
+  background-image: var(--riko-img);
+  background-position: 0 -94px;
+}
+.name.riko {
+  font-size: 16px;
+}
+.image-preview.riko {
+  background-image: var(--riko-img-preview);
+}
+.avatar-in-display.riko {
+  background-image: var(--avatar-riko);
+}
+img[alt="Rom"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.rom {
+  background-image: var(--rom-img);
+  background-position: 0 -69px;
+}
+.name.rom {
+  font-size: 16px;
+}
+.image-preview.rom {
+  background-image: var(--rom-img-preview);
+}
+.avatar-in-display.rom {
+  background-image: var(--avatar-rom);
+}
+img[alt="Serena"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.serena {
+  background-image: var(--serena-img);
+  background-position: 0 -85px;
+}
+.name.serena {
+  font-size: 16px;
+}
+.image-preview.serena {
+  background-image: var(--serena-img-preview);
+}
+.avatar-in-display.serena {
+  background-image: var(--avatar-serena);
+}
+img[alt="Shin"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.shin {
+  background-image: var(--shin-img);
+  background-position: 0 -59px;
+}
+.name.shin {
+  font-size: 16px;
+}
+.image-preview.shin {
+  background-image: var(--shin-img-preview);
+}
+.avatar-in-display.shin {
+  background-image: var(--avatar-shin);
+}
+img[alt="Silver Deacon"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.silver-deacon {
+  background-image: var(--silver-deacon-img);
+  background-position: 0 -51px;
+}
+.name.silver-deacon {
+  font-size: 16px;
+}
+.image-preview.silver-deacon {
+  background-image: var(--silver-deacon-img-preview);
+}
+.avatar-in-display.silver-deacon {
+  background-image: var(--avatar-silver-deacon);
+}
+img[alt="Tarantula"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.tarantula {
+  background-image: var(--tarantula-img);
+  background-position: 0 -69px;
+}
+.name.tarantula {
+  font-size: 16px;
+}
+.image-preview.tarantula {
+  background-image: var(--tarantula-img-preview);
+}
+.avatar-in-display.tarantula {
+  background-image: var(--avatar-tarantula);
+}
+img[alt="Vanessa"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.vanessa {
+  background-image: var(--vanessa-img);
+  background-position: 0 -60px;
+}
+.name.vanessa {
+  font-size: 16px;
+}
+.image-preview.vanessa {
+  background-image: var(--vanessa-img-preview);
+}
+.avatar-in-display.vanessa {
+  background-image: var(--avatar-vanessa);
+}
+img[alt="Villar"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.villar {
+  background-image: var(--villar-img);
+  background-position: 0 -64px;
+}
+.name.villar {
+  font-size: 16px;
+}
+.image-preview.villar {
+  background-image: var(--villar-img-preview);
+}
+.avatar-in-display.villar {
+  background-image: var(--avatar-villar);
+}
+img[alt="Vita"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.vita {
+  background-image: var(--vita-img);
+  background-position: 0 -54px;
+}
+.name.vita {
+  font-size: 16px;
+}
+.image-preview.vita {
+  background-image: var(--vita-img-preview);
+}
+.avatar-in-display.vita {
+  background-image: var(--avatar-vita);
+}
+img[alt="Yang"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.yang {
+  background-image: var(--yang-img);
+  background-position: 0 -62px;
+}
+.name.yang {
+  font-size: 16px;
+}
+.image-preview.yang {
+  background-image: var(--yang-img-preview);
+}
+.avatar-in-display.yang {
+  background-image: var(--avatar-yang);
+}
+img[alt="Yulia"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.yulia {
+  background-image: var(--yulia-img);
+  background-position: 0 -56px;
+}
+.name.yulia {
+  font-size: 16px;
+}
+.image-preview.yulia {
+  background-image: var(--yulia-img-preview);
+}
+.avatar-in-display.yulia {
+  background-image: var(--avatar-yulia);
+}
+img[alt="Yutong"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.yutong {
+  background-image: var(--yutong-img);
+  background-position: 0 -61px;
+}
+.name.yutong {
+  font-size: 16px;
+}
+.image-preview.yutong {
+  background-image: var(--yutong-img-preview);
+}
+.avatar-in-display.yutong {
+  background-image: var(--avatar-yutong);
+}
+img[alt="Zoe"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.zoe {
+  background-image: var(--zoe-img);
+  background-position: 0 -67px;
+}
+.name.zoe {
+  font-size: 16px;
+}
+.image-preview.zoe {
+  background-image: var(--zoe-img-preview);
+}
