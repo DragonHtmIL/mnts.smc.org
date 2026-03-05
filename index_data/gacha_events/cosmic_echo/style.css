@@ -1,0 +1,132 @@
+:root {
+  --cosmic-pulse-1-img: url('card_cosmic_pulse_1.png');
+  --cosmic-pulse-2-img: url('card_cosmic_pulse_2.png');
+  --cosmic-pulse-3-img: url('card_cosmic_pulse_3.png');
+  --cosmic-pulse-1-img-preview: url('image_cosmic_pulse_1.png');
+  --cosmic-pulse-2-img-preview: url('image_cosmic_pulse_2.png');
+  --cosmic-pulse-3-img-preview: url('image_cosmic_pulse_3.png');
+  --dj-hacker-1-img: url('card_dj_hacker_1.png');
+  --dj-hacker-2-img: url('card_dj_hacker_2.png');
+  --dj-hacker-3-img: url('card_dj_hacker_3.png');
+  --dj-hacker-1-img-preview: url('image_dj_hacker_1.png');
+  --dj-hacker-2-img-preview: url('image_dj_hacker_2.png');
+  --dj-hacker-3-img-preview: url('image_dj_hacker_3.png');
+  --cos-bg: url('cosmic_echo_bg.png');
+}
+img[alt="Cosmic Pulse 1"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.cosmic-pulse-1 {
+  background-image: var(--cosmic-pulse-1-img);
+  background-position: 0 -41px;
+}
+.name.cosmic-pulse-1 {
+  font-size: 16px;
+}
+.image-preview.cosmic-pulse-1 {
+  background-image: var(--cosmic-pulse-1-img-preview);
+}
+.avatar-in-display.cosmic-pulse-1 {
+  background-image: var(--avatar-cosmic-pulse-1);
+}
+img[alt="Cosmic Pulse 2"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.cosmic-pulse-2 {
+  background-image: var(--cosmic-pulse-2-img);
+  background-position: 0 -41px;
+}
+.name.cosmic-pulse-2 {
+  font-size: 16px;
+}
+.image-preview.cosmic-pulse-2 {
+  background-image: var(--cosmic-pulse-2-img-preview);
+}
+.avatar-in-display.cosmic-pulse-2 {
+  background-image: var(--avatar-cosmic-pulse-2);
+}
+img[alt="Cosmic Pulse 3"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.cosmic-pulse-3 {
+  background-image: var(--cosmic-pulse-3-img);
+  background-position: 0 -41px;
+}
+.name.cosmic-pulse-3 {
+  font-size: 16px;
+}
+.image-preview.cosmic-pulse-3 {
+  background-image: var(--cosmic-pulse-3-img-preview);
+}
+.avatar-in-display.cosmic-pulse-3 {
+  background-image: var(--avatar-cosmic-pulse-3);
+}
+img[alt="DJ Hacker 1"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.dj-hacker-1 {
+  background-image: var(--dj-hacker-1-img);
+  background-position: 0 -41px;
+}
+.name.dj-hacker-1 {
+  font-size: 16px;
+}
+.image-preview.dj-hacker-1 {
+  background-image: var(--dj-hacker-1-img-preview);
+}
+.avatar-in-display.dj-hacker-1 {
+  background-image: var(--avatar-dj-hacker-1);
+}
+img[alt="DJ Hacker 2"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.dj-hacker-2 {
+  background-image: var(--dj-hacker-2-img);
+  background-position: 0 -41px;
+}
+.name.dj-hacker-2 {
+  font-size: 16px;
+}
+.image-preview.dj-hacker-2 {
+  background-image: var(--dj-hacker-2-img-preview);
+}
+.avatar-in-display.dj-hacker-2 {
+  background-image: var(--avatar-dj-hacker-2);
+}
+img[alt="DJ Hacker 3"] {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin-left: -25px;
+}
+.item-image.dj-hacker-3 {
+  background-image: var(--dj-hacker-3-img);
+  background-position: 0 -41px;
+}
+.name.dj-hacker-3 {
+  font-size: 16px;
+}
+.image-preview.dj-hacker-3 {
+  background-image: var(--dj-hacker-3-img-preview);
+}
+.avatar-in-display.dj-hacker-3 {
+  background-image: var(--avatar-dj-hacker-3);
+}
+.item-info-bg.cos-bg {
+  background: var(--cos-bg);
+}
