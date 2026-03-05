@@ -7,3 +7,4 @@ function registerGachaEvents() {
   gachaEventsRegContainer.appendChild(shadowEvent);
   gachaEventsRegContainer.appendChild(cosmicechoEvent);
 }
+registerGachaEvents();
