@@ -1,179 +1,118 @@
-function eventId00000001() {
-  var name = "cosmic";
-  const namesEn =[
-    "Cosmic Echo",
-    "Cosmic Pulse",
-    "DJ Hacker"
-  ];
-  const namesRu =[
-    "Космическое Эхо",
-    "Космический Пульс",
-    "DJ Хакер"
-  ];
-  const namesHe =[
-    "הד קוסמי",
-    "דופק קוסמי",
-    "DJ הקר"
-  ];
+const cosmicName = "cosmic";
+const namesEnCosmic = ["Cosmic Echo", "Cosmic Pulse", "DJ Hacker"];
+const namesRuCosmic = ["Космическое Эхо", "Космический Пульс", "DJ Хакер"];
+const namesHeCosmic = ["הד קוסמי", "דופק קוסמי", "DJ הקר"];
+const btnCosmic = document.createElement("button");
+const contentCosmic = document.createElement("div");
+const costsCosmic = document.createElement("div");
+const crystalCosmic = document.createElement("div");
+const costContainerCosmic = document.createElement("div");
+const ticketCosmic = document.createElement("div");
+const addCosmic = document.createElement("div");
+const btnsCosmic = document.createElement("div");
+const btnOneCosmic = document.createElement("button");
+const btnTenCosmic = document.createElement("button");
+const mechaCosmic0 = document.createElement("div");
+const imgCosmic0 = document.createElement("div");
+const rankCosmic0 = document.createElement("div");
+const nameCosmic0 = document.createElement("div");
+const effectCosmic0 = document.createElement("div");
+const pilotCosmic1 = document.createElement("div");
+const imgCosmic1 = document.createElement("div");
+const rankCosmic1 = document.createElement("div");
+const nameCosmic1 = document.createElement("div");
+const effectCosmic1 = document.createElement("div");
+const cssCosmic0 = document.createElement("link");
+const scriptListCosmic = document.createElement("script");
+const scriptInfoCosmic = document.createElement("script");
+const scriptOneCosmic = document.createElement("script");
+const scriptTenCosmic = document.createElement("script");
+function setupCosmicElements() {
+  btnCosmic.className = "gachatab " + cosmicName;
+  btnCosmic.id = cosmicName + "Event";
+  btnCosmic.setAttribute("onclick", "openGacha(event, '" + cosmicName + "content'); selectionSound();");
+  contentCosmic.id = cosmicName + "content";
+  contentCosmic.className = "gacha-continer";
+  contentCosmic.style.backgroundImage = "url('index_data/gacha_events/cosmic_echo/image_cosmic_pulse_1.png')";
+  costsCosmic.className = "costs-container";
+  crystalCosmic.className = "cost-have-crystal";
+  crystalCosmic.textContent = "0";
+  costContainerCosmic.className = "cost-container";
+  ticketCosmic.className = "cost-have-premium-ticket";
+  ticketCosmic.textContent = "0";
+  addCosmic.className = "add-more";
+  addCosmic.setAttribute("onclick", "openShopModalPremiumTickets();");
+  addCosmic.textContent = "+";
+  btnsCosmic.className = "gacha-btn-container";
+  btnOneCosmic.className = "opone";
+  btnOneCosmic.id = "op" + cosmicName + "btnOne";
+  btnOneCosmic.setAttribute("onclick", "summon" + cosmicName + "One();");
+  btnTenCosmic.className = "opten";
+  btnTenCosmic.id = "op" + cosmicName + "btnTen";
+  btnTenCosmic.setAttribute("onclick", "summon" + cosmicName + "Ten();");
+  mechaCosmic0.className = "gallery-card ss-rank";
+  mechaCosmic0.setAttribute("onclick", "showMechaCosmicPulse();");
+  pilotCosmic1.className = "gallery-card s-rank";
+  pilotCosmic1.setAttribute("onclick", "showPilotDjHacker();");
+  const isPulseGeted = localStorage.getItem("Cosmic Pulse") === "geted";
+  const isHackerGeted = localStorage.getItem("Dj Hacker") === "geted";
+  const lang = localStorage.getItem("lang") || "en";
+  imgCosmic0.className = "item-image cosmic-pulse" + (isPulseGeted ? "" : " locked");
+  rankCosmic0.className = "class ssssss" + (isPulseGeted ? "" : " locked");
+  imgCosmic1.className = "item-image dj-hacker" + (isHackerGeted ? "" : " locked");
+  rankCosmic1.className = "class sss" + (isHackerGeted ? "" : " locked");
+  if (lang === "ru") {
+    btnCosmic.textContent = namesRuCosmic[0];
+    nameCosmic0.textContent = namesRuCosmic[1];
+    nameCosmic1.textContent = namesRuCosmic[2];
+  } else if (lang === "he") {
+    btnCosmic.textContent = namesHeCosmic[0];
+    nameCosmic0.textContent = namesHeCosmic[1];
+    nameCosmic1.textContent = namesHeCosmic[2];
+  } else {
+    btnCosmic.textContent = namesEnCosmic[0];
+    nameCosmic0.textContent = namesEnCosmic[1];
+    nameCosmic1.textContent = namesEnCosmic[2];
+  }
+  cssCosmic0.rel = "stylesheet";
+  cssCosmic0.href = "index_data/gacha_events/cosmic_echo/style.css";
+  scriptListCosmic.src = "index_data/gacha_events/cosmic_echo/list.js";
+  scriptInfoCosmic.src = "index_data/gacha_events/cosmic_echo/show_info.js";
+  scriptOneCosmic.src = "index_data/gacha_events/cosmic_echo/openx1.js";
+  scriptTenCosmic.src = "index_data/gacha_events/cosmic_echo/openx10.js";
+  contentCosmic.append(costsCosmic, btnsCosmic);
+  costsCosmic.append(crystalCosmic, costContainerCosmic);
+  costContainerCosmic.append(ticketCosmic, addCosmic);
+  btnsCosmic.append(btnOneCosmic, btnTenCosmic);
+  mechaCosmic0.append(imgCosmic0, rankCosmic0, nameCosmic0, effectCosmic0);
+  pilotCosmic1.append(imgCosmic1, rankCosmic1, nameCosmic1, effectCosmic1);
+}
+function toggleCosmicEvent() {
   const tabs = document.getElementById("tabsGacha");
   const containers = document.getElementById("gachaContent");
   const skin0 = document.getElementById("skinsAurora");
   const skin1 = document.getElementById("skinsCyrus");
   const scripts = document.getElementById("scriptsCreates");
-  const head = document.head;
-  const btn = document.createElement("button");
-  btn.className = "gachatab " + name;
-  btn.setAttribute("onclick", "openGacha(event, '" + name + "content');selectionSound();");
-  btn.id = name + "Event";
-  const content = document.createElement("div");
-  const costs = document.createElement("div");
-  const crystal = document.createElement("div");
-  const costContainer = document.createElement("div");
-  const ticket = document.createElement("div");
-  const add = document.createElement("div");
-  const btns = document.createElement("div");
-  const btnOne = document.createElement("button");
-  const btnTen = document.createElement("button");
-  content.id = name + "content";
-  content.className = "gacha-continer";
-  content.setAttribute("style", "background-image: url('https://dragonhtmil.github.io/mnts.smc.org/gacha_events/cosmic_echo/image_cosmic_pulse_1.png');");
-  costs.className = "costs-container";
-  crystal.className = "cost-have-crystal";
-  crystal.textContent = "0";
-  costContainer.className = "cost-container";
-  ticket.className = "cost-have-premium-ticket";
-  ticket.textContent = "0";
-  add.className = "add-more";
-  add.setAttribute("onclick", "openShopModalPremiumTickets();");
-  add.textContent = "+";
-  btns.className = "gacha-btn-container";
-  btnOne.className = "opone";
-  btnOne.id = "op" + name + "btnOne";
-  btnOne.setAttribute("onclick", "summon" + name + "One();");
-  btnTen.className = "opten";
-  btnTen.id = "op" + name + "btnTen";
-  btnTen.setAttribute("onclick", "summon" + name + "Ten();");
-  const mecha0 = document.createElement("div");
-  const img0 = document.createElement("div");
-  const rank0 = document.createElement("div");
-  const name0 = document.createElement("div");
-  const effect0 = document.createElement("div");
-  const piot1 = document.createElement("div");
-  const img1 = document.createElement("div");
-  const rank1 = document.createElement("div");
-  const name1 = document.createElement("div");
-  const effect1 = document.createElement("div");
-  mecha0.className = "gallery-card ss-rank";
-  mecha0.setAttribute("onclick", "showMechaCosmicPulse();");
-  if(localStorage.getItem("Cosmic Pulse") === "geted") {
-    img0.className = "item-image cosmic-pulse";
-    rank0.className = "class ssssss";
-  }else{
-    img0.className = "item-image cosmic-pulse locked";
-    rank0.className = "class ssssss locked";
+  if (navigator.onLine) {
+    if (tabs) tabs.appendChild(btnCosmic);
+    if (containers) containers.appendChild(contentCosmic);
+    if (skin0) skin0.appendChild(mechaCosmic0);
+    if (skin1) skin1.appendChild(pilotCosmic1);
+    if (scripts) scripts.append(scriptListCosmic, scriptInfoCosmic, scriptOneCosmic, scriptTenCosmic);
+    document.head.appendChild(cssCosmic0);
+  } else {
+    btnCosmic.remove();
+    contentCosmic.remove();
+    mechaCosmic0.remove();
+    pilotCosmic1.remove();
+    scriptListCosmic.remove();
+    scriptInfoCosmic.remove();
+    scriptOneCosmic.remove();
+    scriptTenCosmic.remove();
+    cssCosmic0.remove();
   }
-  img0.id = "imgLockCosmicPulse";
-  rank0.id = "classesCosmicPulse";
-  name0.className = "name cosmic-pulse name-cosmic-pulse";
-  piot1.className = "gallery-card s-rank";
-  piot1.setAttribute("onclick", "showPilotDjHacker();");
-  if(localStorage.getItem("Dj Hacker") === "geted") {
-    img1.className = "item-image dj-hacker";
-    rank1.className = "class sss";
-  }else{
-    img1.className = "item-image dj-hacker locked";
-    rank1.className = "class sss locked";
-  }
-  img1.id = "imgLockDjHacker";
-  rank1.id = "classesDjHacker";
-  name1.className = "name dj-hacker name-dj-hacker";
-  effect0.className = "gallery-card-effect";
-  effect1.className = "gallery-card-effect";
-  if(localStorage.getItem("lang") === "en") {
-    btn.textContent = namesEn[0];
-    name0.textContent = namesEn[1];
-    name1.textContent = namesEn[2];
-  }else
-  if(localStorage.getItem("lang") === "ru") {
-    btn.textContent = namesRu[0];
-    name0.textContent = namesRu[1];
-    name1.textContent = namesRu[2];
-  }else
-  if(localStorage.getItem("lang") === "he") {
-    btn.textContent = namesHe[0];
-    name0.textContent = namesHe[1];
-    name1.textContent = namesHe[2];
-  }
-  const css0 = document.createElement("link");
-  const scriptList = document.createElement("script");
-  const scriptInfo = document.createElement("script");
-  const scriptOne = document.createElement("script");
-  const scriptTen = document.createElement("script");
-  css0.setAttribute("rel", "stylesheet");
-  css0.href = "https://dragonhtmil.github.io/mnts.smc.org/gacha_events/cosmic_echo/style.css";
-  scriptList.src = "https://dragonhtmil.github.io/mnts.smc.org/gacha_events/cosmic_echo/list.js";
-  scriptInfo.src = "https://dragonhtmil.github.io/mnts.smc.org/gacha_events/cosmic_echo/show_info.js";
-  scriptOne.src = "https://dragonhtmil.github.io/mnts.smc.org/gacha_events/cosmic_echo/openx1.js";
-  scriptTen.src = "https://dragonhtmil.github.io/mnts.smc.org/gacha_events/cosmic_echo/openx10.js";
-  window.addEventListener('online', function() {
-    tabs.appendChild(btn);
-    containers.appendChild(content);
-    content.appendChild(costs);
-    costs.appendChild(crystal);
-    costs.appendChild(costContainer);
-    costContainer.appendChild(ticket);
-    costContainer.appendChild(add);
-    content.appendChild(btns);
-    btns.appendChild(btnOne);
-    btns.appendChild(btnTen);
-    skin0.appendChild(mecha0);
-    mecha0.appendChild(img0);
-    mecha0.appendChild(rank0);
-    mecha0.appendChild(name0);
-    mecha0.appendChild(effect0);
-    skin1.appendChild(piot1);
-    piot1.appendChild(img1);
-    piot1.appendChild(rank1);
-    piot1.appendChild(name1);
-    piot1.appendChild(effect1);
-    head.appendChild(css0);
-    scripts.appendChild(scriptList);
-    scripts.appendChild(scriptInfo);
-    scripts.appendChild(scriptOne);
-    scripts.appendChild(scriptTen);
-  });
-  window.addEventListener('offline', function() {
-    tabs.removeChild(btn);
-    containers.removeChild(content);
-    content.removeChild(costs);
-    costs.removeChild(crystal);
-    costs.removeChild(costContainer);
-    costContainer.removeChild(ticket);
-    costContainer.removeChild(add);
-    content.removeChild(btns);
-    btns.removeChild(btnOne);
-    btns.removeChild(btnTen);
-    skin0.removeChild(mecha0);
-    mecha0.removeChild(img0);
-    mecha0.removeChild(rank0);
-    mecha0.removeChild(name0);
-    mecha0.removeChild(effect0);
-    skin1.removeChild(piot1);
-    piot1.removeChild(img1);
-    piot1.removeChild(rank1);
-    piot1.removeChild(name1);
-    piot1.removeChild(effect1);
-    head.removeChild(css0);
-    scripts.removeChild(scriptList);
-    scripts.removeChild(scriptInfo);
-    scripts.removeChild(scriptOne);
-    scripts.removeChild(scriptTen);
-  });
 }
-eventId00000001();
-window.addEventListener('online', function() {
-  eventId00000001();
-});
-window.addEventListener('offline', function() {
-  eventId00000001();
-});
+setupCosmicElements();
+toggleCosmicEvent();
+window.addEventListener('online', toggleCosmicEvent);
+window.addEventListener('offline', toggleCosmicEvent);
