@@ -1,6 +1,6 @@
 
-let basicVersion = "1.4.5-v2";
-let dateVersion = "[17/02/2026]";
+let basicVersion = "1.4.6-v2";
+let dateVersion = "[05/03/2026]";
 function markUpdateReaded() {
   var modal = document.getElementById("updateModal");
   modal.style.display = "none";
@@ -15,13 +15,13 @@ let text1en = "Now profiling become to beta." + "<br>";
 let text1ru = "Теперь профилирование перешло в бета-версию." + "<br>";
 let text1he = "כעת לחשבן הגיע לגרסת בטא." + "<br>";
 
-let text2en = "" + "<br>";
-let text2ru = "" + "<br>";
-let text2he = "" + "<br>";
+let text2en = "A new event has been added." + "<br>";
+let text2ru = "Добавлено новое событие." + "<br>";
+let text2he = "אירוע חדש התווסף." + "<br>";
 
-let text3en = "";
-let text3ru = "";
-let text3he = "";
+let text3en = "SEASON COLLECTION: COSMIC ECHO v-1";
+let text3ru = "СЕЗОННАЯ КОЛЛЕКЦИЯ: КОСМИЧЕСКИЙ ЭХО v-1";
+let text3he = "אוסף עונתי: אקווה קוסמית v-1";
 
 function updateTextLangs() {
   var updateTitle = document.getElementById("updateTitleLang");
