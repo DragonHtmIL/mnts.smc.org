@@ -2,9 +2,6 @@ var GHPATH = '/mnts.smc.org';
 var APP_PREFIX = 'gppwa_';
 var VERSION = "pre-2.0.0-03082026";
 var URLS = [
-  `${GHPATH}/index_data/animations/anime.gif`,
-  `${GHPATH}/index_data/animations/anime_2.gif`,
-  `${GHPATH}/index_data/animations/anime_3.gif`,
   `${GHPATH}/index_data/animations/classic.gif`,
   `${GHPATH}/index_data/animations/cursour/clickable/0.png`,
   `${GHPATH}/index_data/animations/cursour/clickable/1.png`,
