@@ -2,7 +2,6 @@ var GHPATH = '/mnts.smc.org';
 var APP_PREFIX = 'gppwa_';
 var VERSION = "pre-2.0.0-03082026";
 var URLS = [
-  `${GHPATH}/index_data/Untitled-1.js`,
   `${GHPATH}/index_data/animations/anime.gif`,
   `${GHPATH}/index_data/animations/anime_2.gif`,
   `${GHPATH}/index_data/animations/anime_3.gif`,
@@ -129,8 +128,6 @@ var URLS = [
   `${GHPATH}/index_data/animations/gacha/gacha_vid_pressed_6ss.gif`,
   `${GHPATH}/index_data/animations/gacha/gacha_vid_start.gif`,
   `${GHPATH}/index_data/animations/gacha`,
-  `${GHPATH}/index_data/animations/miku.gif`,
-  `${GHPATH}/index_data/animations/nakano_azusa.gif`,
   `${GHPATH}/index_data/animations`,
   `${GHPATH}/index_data/audio/game/ambient_sounds.ogg`,
   `${GHPATH}/index_data/audio/game/fireworks_sound.mp3`,
@@ -430,7 +427,7 @@ var URLS = [
   `${GHPATH}/index_data/textures/boards/origo_map.png`,
   `${GHPATH}/index_data/textures/boards`,
   `${GHPATH}/index_data/textures/empty.png`,
-  `${GHPATH}/index_data/textures/foods/alpha_coin.png`,
+//  `${GHPATH}/index_data/textures/foods/alpha_coin.png`,
   `${GHPATH}/index_data/textures/foods/crystal.png`,
   `${GHPATH}/index_data/textures/foods/gold.png`,
 //  `${GHPATH}/index_data/textures/foods/img_0_000.png`,
@@ -513,7 +510,7 @@ var URLS = [
 //  `${GHPATH}/index_data/textures/foods/img_0_077.png`,
 //  `${GHPATH}/index_data/textures/foods/meaw_token.png`,
   `${GHPATH}/index_data/textures/foods/ticket.png`,
-  `${GHPATH}/index_data/textures/foods/ticket_chromatic.png`,
+//  `${GHPATH}/index_data/textures/foods/ticket_chromatic.png`,
   `${GHPATH}/index_data/textures/foods/ticket_premium.png`,
 //  `${GHPATH}/index_data/textures/foods/ticket_premium_2.png`,
 //  `${GHPATH}/index_data/textures/foods/virtual_token.png`,
