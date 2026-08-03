@@ -6,11 +6,6 @@
   --loading-logo: url('../textures/gui/loading_yi_logo_2x.png');
   --loading-prog: url('../textures/gui/loading_progress.png');
   --loading-classic: url('../animations/classic.gif');
-  --loading-anime: url('../animations/anime.gif');
-  --loading-miku: url('../animations/miku.gif');
-  --loading-nakano: url('../animations/nakano_azusa.gif');
-  --loading-anime-2: url('../animations/anime_2.gif');
-  --loading-anime-3: url('../animations/anime_3.gif');
   --load-bg-screen: url('../textures/loading_screens/0.png');
 }
 .loading {
@@ -76,46 +71,6 @@
   -webkit-background-size: 100% 100%;
   background-size: 100% 100%;
   filter: invert(100%) drop-shadow(0 0 20px black);
-}
-.animeload {
-  width: 165px;
-  height: 100px;
-  background: var(--loading-anime) no-repeat;
-  -webkit-background-size: 100% 100%;
-  background-size: 100% 100%;
-  margin-left: -12px;
-}
-.mikuload {
-  width: 165px;
-  height: 165px;
-  background: var(--loading-miku) no-repeat;
-  -webkit-background-size: 100% 100%;
-  background-size: 100% 100%;
-  margin-top: -64px;
-}
-.nakanoload {
-  width: 165px;
-  height: 165px;
-  background: var(--loading-nakano) no-repeat;
-  -webkit-background-size: 100% 100%;
-  background-size: 100% 100%;
-  margin-top: -64px;
-}
-.anime2load {
-  width: 165px;
-  height: 165px;
-  background: var(--loading-anime-2) no-repeat;
-  -webkit-background-size: 100% 100%;
-  background-size: 100% 100%;
-  margin-top: -64px;
-}
-.anime3load {
-  width: 165px;
-  height: 97px;
-  background: var(--loading-anime-3) no-repeat;
-  -webkit-background-size: 100% 100%;
-  background-size: 100% 100%;
-  margin-left: -12px;
 }
 .loading-images {
   width: 100%;
