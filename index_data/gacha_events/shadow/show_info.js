@@ -32,7 +32,7 @@ function showMechaShadowWatcher() {
     textInfoBelong.style.direction = "rtl"
   }
   itemImage.className = "image-preview " + mecha0;
-  document.getElementById('collectionCenter').style.display = "none";
+//  document.getElementById('collectionCenter').style.display = "none";
 };
 function showMechaYellowDwarf() {
   var itemInfo = document.getElementById("itemInfo");
@@ -68,5 +68,5 @@ function showMechaYellowDwarf() {
     textInfoBelong.style.direction = "rtl"
   }
   itemImage.className = "image-preview " + mecha0;
-  document.getElementById('collectionCenter').style.display = "none";
+//  document.getElementById('collectionCenter').style.display = "none";
 };

@@ -1,16 +1,16 @@
-function showMechaShadowWatcher() {
+function showMechaCosmicPulse() {
   var itemInfo = document.getElementById("itemInfo");
   var itemInfoBg = document.getElementById("bgItemInfo");
   var itemImage = document.getElementById("itemImage");
   var itemName = document.getElementById("itemName");
   var textInfoBelong = document.getElementById("textInfoBelong");
-  var mecha0 = "shadow-watcher";
-  var mecha1en = "Shadow Watcher";
-  var mecha1ru = "Теневой Страж";
-  var mecha1he = "צופה צללים";
-  var pilot1en = "Nighthawk";
-  var pilot1ru = "Ночной Ястреб";
-  var pilot1he = "נייטוק";
+  var mecha0 = "cosmic-pulse";
+  var mecha1en = "Cosmic Pulse";
+  var mecha1ru = "Космический Пульс";
+  var mecha1he = "דופק קוסמי";
+  var pilot1en = "Yutong";
+  var pilot1ru = "Ютонг";
+  var pilot1he = "יוטונג";
   if(localStorage.getItem(mecha1en) === "geted") {
     itemInfo.style.display = "flex";
     defaultClickSound();
@@ -32,7 +32,7 @@ function showMechaShadowWatcher() {
     textInfoBelong.style.direction = "rtl"
   }
   itemImage.className = "image-preview " + mecha0;
-  document.getElementById('collectionCenter').style.display = "none";
+//  document.getElementById('collectionCenter').style.display = "none";
 };
 function showMechaYellowDwarf() {
   var itemInfo = document.getElementById("itemInfo");
@@ -68,5 +68,5 @@ function showMechaYellowDwarf() {
     textInfoBelong.style.direction = "rtl"
   }
   itemImage.className = "image-preview " + mecha0;
-  document.getElementById('collectionCenter').style.display = "none";
+//  document.getElementById('collectionCenter').style.display = "none";
 };

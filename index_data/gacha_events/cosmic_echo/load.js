@@ -3,17 +3,23 @@ function eventId00000001() {
   const namesEn =[
     "Cosmic Echo",
     "Cosmic Pulse",
-    "DJ Hacker"
+    "DJ Hacker",
+    "Open x1",
+    "Open x10"
   ];
   const namesRu =[
     "Космическое Эхо",
     "Космический Пульс",
-    "DJ Хакер"
+    "DJ Хакер",
+    "Открить x1",
+    "Открить x10"
   ];
   const namesHe =[
     "הד קוסמי",
     "דופק קוסמי",
-    "DJ הקר"
+    "DJ הקר",
+    "לפתוח x1",
+    "לפתוח x10"
   ];
   const tabs = document.getElementById("tabsGacha");
   const containers = document.getElementById("gachaContent");
@@ -53,19 +59,34 @@ function eventId00000001() {
   btnTen.className = "opten";
   btnTen.id = "op" + name + "btnTen";
   btnTen.setAttribute("onclick", "summon" + name + "Ten();");
+  if(localStorage.getItem("lang") === "en") {
+    btnOne.innerHTML = namesEn[3];
+    btnTen.innerHTML = namesEn[4];
+  }else
+  if(localStorage.getItem("lang") === "ru") {
+    btnOne.innerHTML = namesRu[3];
+    btnTen.innerHTML = namesRu[4];
+  }else
+  if(localStorage.getItem("lang") === "he") {
+    btnOne.innerHTML = namesHe[3];
+    btnTen.innerHTML = namesHe[4];
+    btnOne.style.direction = "rtl";
+    btnTen.style.direction = "rtl";
+  };
   const mecha0 = document.createElement("div");
   const img0 = document.createElement("div");
   const rank0 = document.createElement("div");
   const name0 = document.createElement("div");
   const effect0 = document.createElement("div");
-  const piot1 = document.createElement("div");
+  const pilot1 = document.createElement("div");
   const img1 = document.createElement("div");
   const rank1 = document.createElement("div");
   const name1 = document.createElement("div");
   const effect1 = document.createElement("div");
-  mecha0.className = "gallery-card ss-rank";
+  mecha0.className = "gallery-card ss-rank locked";
   mecha0.setAttribute("onclick", "showMechaCosmicPulse();");
   if(localStorage.getItem("Cosmic Pulse") === "geted") {
+    mecha0.classList.remove("locked");
     img0.className = "item-image cosmic-pulse";
     rank0.className = "class ssssss";
   }else{
@@ -75,9 +96,10 @@ function eventId00000001() {
   img0.id = "imgLockCosmicPulse";
   rank0.id = "classesCosmicPulse";
   name0.className = "name cosmic-pulse name-cosmic-pulse";
-  piot1.className = "gallery-card s-rank";
-  piot1.setAttribute("onclick", "showPilotDjHacker();");
+  pilot1.className = "gallery-card s-rank locked";
+  pilot1.setAttribute("onclick", "showPilotDjHacker();");
   if(localStorage.getItem("Dj Hacker") === "geted") {
+    pilot1.classList.remove("locked");
     img1.className = "item-image dj-hacker";
     rank1.className = "class sss";
   }else{
@@ -130,11 +152,11 @@ function eventId00000001() {
   mecha0.appendChild(rank0);
   mecha0.appendChild(name0);
   mecha0.appendChild(effect0);
-  skin1.appendChild(piot1);
-  piot1.appendChild(img1);
-  piot1.appendChild(rank1);
-  piot1.appendChild(name1);
-  piot1.appendChild(effect1);
+  skin1.appendChild(pilot1);
+  pilot1.appendChild(img1);
+  pilot1.appendChild(rank1);
+  pilot1.appendChild(name1);
+  pilot1.appendChild(effect1);
   head.appendChild(css0);
   scripts.appendChild(scriptList);
   scripts.appendChild(scriptInfo);

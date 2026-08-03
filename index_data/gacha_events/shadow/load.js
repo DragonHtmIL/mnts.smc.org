@@ -3,17 +3,23 @@ function eventId00000000() {
   const namesEn =[
     "Shadow",
     "Shadow Watcher",
-    "Yellow Dwarf"
+    "Yellow Dwarf",
+    "Open x1",
+    "Open x10"
   ];
   const namesRu =[
     "Тень",
     "Теневой Наблюдатель",
-    "Жёлтый Гном"
+    "Жёлтый Гном",
+    "Открить x1",
+    "Открить x10"
   ];
   const namesHe =[
     "צל",
     "צופה צללים",
-    "גמד צהוב"
+    "גמד צהוב",
+    "לפתוח x1",
+    "לפתוח x10"
   ];
   const tabs = document.getElementById("tabsGacha");
   const containers = document.getElementById("gachaContent");
@@ -53,6 +59,20 @@ function eventId00000000() {
   btnTen.className = "opten";
   btnTen.id = "op" + name + "btnTen";
   btnTen.setAttribute("onclick", "summon" + name + "Ten();");
+  if(localStorage.getItem("lang") === "en") {
+    btnOne.innerHTML = namesEn[3];
+    btnTen.innerHTML = namesEn[4];
+  }else
+  if(localStorage.getItem("lang") === "ru") {
+    btnOne.innerHTML = namesRu[3];
+    btnTen.innerHTML = namesRu[4];
+  }else
+  if(localStorage.getItem("lang") === "he") {
+    btnOne.innerHTML = namesHe[3];
+    btnTen.innerHTML = namesHe[4];
+    btnOne.style.direction = "rtl";
+    btnTen.style.direction = "rtl";
+  };
   const mecha0 = document.createElement("div");
   const img0 = document.createElement("div");
   const rank0 = document.createElement("div");
@@ -63,9 +83,10 @@ function eventId00000000() {
   const rank1 = document.createElement("div");
   const name1 = document.createElement("div");
   const effect1 = document.createElement("div");
-  mecha0.className = "gallery-card s-rank";
+  mecha0.className = "gallery-card s-rank locked";
   mecha0.setAttribute("onclick", "showMechaShadowWatcher();");
   if(localStorage.getItem("Shadow Watcher") === "geted") {
+    mecha0.classList.remove("locked");
     img0.className = "item-image shadow-watcher";
     rank0.className = "class sss";
   }else{
@@ -75,9 +96,10 @@ function eventId00000000() {
   img0.id = "imgLockShadowWatcher";
   rank0.id = "classesShadowWatcher";
   name0.className = "name shadow-watcher name-shadow-watcher";
-  mecha1.className = "gallery-card a-rank";
+  mecha1.className = "gallery-card a-rank locked";
   mecha1.setAttribute("onclick", "showMechaYellowDwarf();");
   if(localStorage.getItem("Yellow Dwarf") === "geted") {
+    mecha1.classList.remove("locked");
     img1.className = "item-image yellow-dwarf";
     rank1.className = "class aaa";
   }else{
