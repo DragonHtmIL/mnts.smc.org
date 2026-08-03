@@ -28,8 +28,9 @@
   </head>
   <body>
     <div id="main">
-      <div class="profile-content" id="profileOpener" onclick="clearInterval(setIntervalId);openProfileCenter();menuPauseWalkSound();defaultClickSound();">
-        <div class="league-info" id="">
+      <!-- profile detailes'll here -->
+      <div class="profile-content">
+        <div class="league-info" id="leagueInfo">
           <div class="game-details">
             <div class="score" id="getscore">...</div>
             <div class="high-score" id="gethighscore">...</div>
@@ -38,22 +39,22 @@
         <div class="clickable-text" id="clickable0Lang">...</div>
         <div id="fpsDisplay">FPS: 0</div>
       </div>
-      <div id="accenter" class="modal" style="display: none;">
-        <div action="javascript:setLogined();" class="user-acc-logregsave" id="userAcc">
-          <div id="accnoning" style="display: block;">
-            <input type="username" id="username" placeholder="..." required>
+      <div class="modal" id="userModal" style="display: none;">
+        <form action="javascript:setLogined();" class="user-logregsave" id="userInfo">
+          <div id="usnoning" style="display: block;">
+            <label for="username" style="display: none;"></label>
+            <input type="username" id="username" placeholder="..." autocomplete="name" required>
           </div>
-          <div id="accdisplay" style="display: none;">
+          <div id="userdisplay" style="display: none;">
             <div class="avatar-in-display"></div>
             <span id="nicknameUser">...</span>
           </div>
-          <div id="accButtons">
-            <button type="submit" id="regAccBtn" onclick="setLogined();" style="display: flex;">...</button>
-            <button type="button" id="reregAccBtn" onclick="setReLogined();" style="display: flex;">...</button>
-            <button type="button" id="avAccBtn" onclick="avatarsLists();" style="display: flex;">...</button>
+          <div id="usButtons">
+            <button type="submit" id="regUserBtn" onclick="setLogined();" style="display: flex;">...</button>
+            <button type="button" id="reregUserBtn" onclick="setReLogined();" style="display: flex;">...</button>
           </div>
-        </div>
-        <div class="modal-content" id="avatarsList" style="display: none;">
+        </form>
+        <div class="modal-content" id="avatarsList">
           <div class="av-list special">
             <div class="av-image locked kizuna-ai"><div class="lock-av-block" id="blockKizunaAi"></div></div>
             <div class="av-image locked riko"><div class="lock-av-block" id="blockRiko"></div></div>
@@ -135,18 +136,20 @@
           </div>
           <button class="apply-avatar-button" id="applyAvList" onclick="applyAvatar();defaultClickSound();"></button>
         </div>
+      </div>
+      <div id="collectionCenter" class="modal" style="display: none;">
         <div class="modal-content" id="collectionContent">
-          <div id="profileTitleLang">...</div>
-          <button class="reset-button" id="closeacc" onclick="document.getElementById('accenter').style.display='none';handleIntervalModals();closeModalSound();"></button>
-          <div class="in-modal-content" id="accontent">
-            <div class="left-modal-acc">
+          <div id="collectedTitleLang">...</div>
+          <button class="reset-button" id="closeCollection" onclick="document.getElementById('collectionCenter').style.display='none';handleIntervalModals();closeModalSound();"></button>
+          <div class="in-modal-content" id="inCollectionContent">
+            <div class="left-modal-collect">
               <div id="leagueImage"></div>
               <div id="leagueType">...</div>
               <div class="leaguelevel"><span id="star">★</span><span id="leaguelevel">...</span></div>
             </div>
-            <hr class="acc">
-            <div class="right-modal-acc" id="profileItemsContent">
-              <div class="item-cont meow">
+            <hr class="collect-split">
+            <div class="right-modal-collect" id="collectedItemsContent">
+              <div class="item-cont meow" style="display: none;">
                 <div class="item-cont-icon" id="meowIcon"></div>
                 <div class="item-cont-label" id="collectedMeow">0</div>
               </div>
@@ -154,7 +157,7 @@
                 <div class="item-cont-icon" id="goldIcon"></div>
                 <div class="item-cont-label" id="collectedGold">0</div>
               </div>
-              <div class="item-cont alphacoin">
+              <div class="item-cont alphacoin" style="display: none;">
                 <div class="item-cont-icon" id="alphacoinIcon"></div>
                 <div class="item-cont-label" id="collectedAlphacoin">0</div>
               </div>
@@ -162,319 +165,319 @@
                 <div class="item-cont-icon" id="crystalIcon"></div>
                 <div class="item-cont-label" id="collectedCrystal">0</div>
               </div>
-              <div class="item-cont virtualToken">
+              <div class="item-cont virtualToken" style="display: none;">
                 <div class="item-cont-icon" id="virtualTokenIcon"></div>
                 <div class="item-cont-label" id="collectedVirtualToken">0</div>
               </div>
-              <div class="item-cont food-item-000-content">
+              <div class="item-cont food-item-000-content" style="display: none;">
                 <div class="item-cont-icon" id="food000Item0Icon"></div>
                 <div class="item-cont-label" id="collected000Food">0</div>
               </div>
-              <div class="item-cont food-item-001-content">
+              <div class="item-cont food-item-001-content" style="display: none;">
                 <div class="item-cont-icon" id="food001Item0Icon"></div>
                 <div class="item-cont-label" id="collected001Food">0</div>
               </div>
-              <div class="item-cont food-item-002-content">
+              <div class="item-cont food-item-002-content" style="display: none;">
                 <div class="item-cont-icon" id="food002Item0Icon"></div>
                 <div class="item-cont-label" id="collected002Food">0</div>
               </div>
-              <div class="item-cont food-item-003-content">
+              <div class="item-cont food-item-003-content" style="display: none;">
                 <div class="item-cont-icon" id="food003Item0Icon"></div>
                 <div class="item-cont-label" id="collected003Food">0</div>
               </div>
-              <div class="item-cont food-item-004-content">
+              <div class="item-cont food-item-004-content" style="display: none;">
                 <div class="item-cont-icon" id="food004Item0Icon"></div>
                 <div class="item-cont-label" id="collected004Food">0</div>
               </div>
-              <div class="item-cont food-item-005-content">
+              <div class="item-cont food-item-005-content" style="display: none;">
                 <div class="item-cont-icon" id="food005Item0Icon"></div>
                 <div class="item-cont-label" id="collected005Food">0</div>
               </div>
-              <div class="item-cont food-item-006-content">
+              <div class="item-cont food-item-006-content" style="display: none;">
                 <div class="item-cont-icon" id="food006Item0Icon"></div>
                 <div class="item-cont-label" id="collected006Food">0</div>
               </div>
-              <div class="item-cont food-item-007-content">
+              <div class="item-cont food-item-007-content" style="display: none;">
                 <div class="item-cont-icon" id="food007Item0Icon"></div>
                 <div class="item-cont-label" id="collected007Food">0</div>
               </div>
-              <div class="item-cont food-item-008-content">
+              <div class="item-cont food-item-008-content" style="display: none;">
                 <div class="item-cont-icon" id="food008Item0Icon"></div>
                 <div class="item-cont-label" id="collected008Food">0</div>
               </div>
-              <div class="item-cont food-item-009-content">
+              <div class="item-cont food-item-009-content" style="display: none;">
                 <div class="item-cont-icon" id="food009Item0Icon"></div>
                 <div class="item-cont-label" id="collected009Food">0</div>
               </div>
-              <div class="item-cont food-item-010-content">
+              <div class="item-cont food-item-010-content" style="display: none;">
                 <div class="item-cont-icon" id="food010Item0Icon"></div>
                 <div class="item-cont-label" id="collected010Food">0</div>
               </div>
-              <div class="item-cont food-item-011-content">
+              <div class="item-cont food-item-011-content" style="display: none;">
                 <div class="item-cont-icon" id="food011Item0Icon"></div>
                 <div class="item-cont-label" id="collected011Food">0</div>
               </div>
-              <div class="item-cont food-item-012-content">
+              <div class="item-cont food-item-012-content" style="display: none;">
                 <div class="item-cont-icon" id="food012Item0Icon"></div>
                 <div class="item-cont-label" id="collected012Food">0</div>
               </div>
-              <div class="item-cont food-item-013-content">
+              <div class="item-cont food-item-013-content" style="display: none;">
                 <div class="item-cont-icon" id="food013Item0Icon"></div>
                 <div class="item-cont-label" id="collected013Food">0</div>
               </div>
-              <div class="item-cont food-item-014-content">
+              <div class="item-cont food-item-014-content" style="display: none;">
                 <div class="item-cont-icon" id="food014Item0Icon"></div>
                 <div class="item-cont-label" id="collected014Food">0</div>
               </div>
-              <div class="item-cont food-item-015-content">
+              <div class="item-cont food-item-015-content" style="display: none;">
                 <div class="item-cont-icon" id="food015Item0Icon"></div>
                 <div class="item-cont-label" id="collected015Food">0</div>
               </div>
-              <div class="item-cont food-item-016-content">
+              <div class="item-cont food-item-016-content" style="display: none;">
                 <div class="item-cont-icon" id="food016Item0Icon"></div>
                 <div class="item-cont-label" id="collected016Food">0</div>
               </div>
-              <div class="item-cont food-item-017-content">
+              <div class="item-cont food-item-017-content" style="display: none;">
                 <div class="item-cont-icon" id="food017Item0Icon"></div>
                 <div class="item-cont-label" id="collected017Food">0</div>
               </div>
-              <div class="item-cont food-item-018-content">
+              <div class="item-cont food-item-018-content" style="display: none;">
                 <div class="item-cont-icon" id="food018Item0Icon"></div>
                 <div class="item-cont-label" id="collected018Food">0</div>
               </div>
-              <div class="item-cont food-item-019-content">
+              <div class="item-cont food-item-019-content" style="display: none;">
                 <div class="item-cont-icon" id="food019Item0Icon"></div>
                 <div class="item-cont-label" id="collected019Food">0</div>
               </div>
-              <div class="item-cont food-item-020-content">
+              <div class="item-cont food-item-020-content" style="display: none;">
                 <div class="item-cont-icon" id="food020Item0Icon"></div>
                 <div class="item-cont-label" id="collected020Food">0</div>
               </div>
-              <div class="item-cont food-item-021-content">
+              <div class="item-cont food-item-021-content" style="display: none;">
                 <div class="item-cont-icon" id="food021Item0Icon"></div>
                 <div class="item-cont-label" id="collected021Food">0</div>
               </div>
-              <div class="item-cont food-item-022-content">
+              <div class="item-cont food-item-022-content" style="display: none;">
                 <div class="item-cont-icon" id="food022Item0Icon"></div>
                 <div class="item-cont-label" id="collected022Food">0</div>
               </div>
-              <div class="item-cont food-item-023-content">
+              <div class="item-cont food-item-023-content" style="display: none;">
                 <div class="item-cont-icon" id="food023Item0Icon"></div>
                 <div class="item-cont-label" id="collected023Food">0</div>
               </div>
-              <div class="item-cont food-item-024-content">
+              <div class="item-cont food-item-024-content" style="display: none;">
                 <div class="item-cont-icon" id="food024Item0Icon"></div>
                 <div class="item-cont-label" id="collected024Food">0</div>
               </div>
-              <div class="item-cont food-item-025-content">
+              <div class="item-cont food-item-025-content" style="display: none;">
                 <div class="item-cont-icon" id="food025Item0Icon"></div>
                 <div class="item-cont-label" id="collected025Food">0</div>
               </div>
-              <div class="item-cont food-item-026-content">
+              <div class="item-cont food-item-026-content" style="display: none;">
                 <div class="item-cont-icon" id="food026Item0Icon"></div>
                 <div class="item-cont-label" id="collected026Food">0</div>
               </div>
-              <div class="item-cont food-item-027-content">
+              <div class="item-cont food-item-027-content" style="display: none;">
                 <div class="item-cont-icon" id="food027Item0Icon"></div>
                 <div class="item-cont-label" id="collected027Food">0</div>
               </div>
-              <div class="item-cont food-item-028-content">
+              <div class="item-cont food-item-028-content" style="display: none;">
                 <div class="item-cont-icon" id="food028Item0Icon"></div>
                 <div class="item-cont-label" id="collected028Food">0</div>
               </div>
-              <div class="item-cont food-item-029-content">
+              <div class="item-cont food-item-029-content" style="display: none;">
                 <div class="item-cont-icon" id="food029Item0Icon"></div>
                 <div class="item-cont-label" id="collected029Food">0</div>
               </div>
-              <div class="item-cont food-item-030-content">
+              <div class="item-cont food-item-030-content" style="display: none;">
                 <div class="item-cont-icon" id="food030Item0Icon"></div>
                 <div class="item-cont-label" id="collected030Food">0</div>
               </div>
-              <div class="item-cont food-item-031-content">
+              <div class="item-cont food-item-031-content" style="display: none;">
                 <div class="item-cont-icon" id="food031Item0Icon"></div>
                 <div class="item-cont-label" id="collected031Food">0</div>
               </div>
-              <div class="item-cont food-item-032-content">
+              <div class="item-cont food-item-032-content" style="display: none;">
                 <div class="item-cont-icon" id="food032Item0Icon"></div>
                 <div class="item-cont-label" id="collected032Food">0</div>
               </div>
-              <div class="item-cont food-item-033-content">
+              <div class="item-cont food-item-033-content" style="display: none;">
                 <div class="item-cont-icon" id="food033Item0Icon"></div>
                 <div class="item-cont-label" id="collected033Food">0</div>
               </div>
-              <div class="item-cont food-item-034-content">
+              <div class="item-cont food-item-034-content" style="display: none;">
                 <div class="item-cont-icon" id="food034Item0Icon"></div>
                 <div class="item-cont-label" id="collected034Food">0</div>
               </div>
-              <div class="item-cont food-item-035-content">
+              <div class="item-cont food-item-035-content" style="display: none;">
                 <div class="item-cont-icon" id="food035Item0Icon"></div>
                 <div class="item-cont-label" id="collected035Food">0</div>
               </div>
-              <div class="item-cont food-item-036-content">
+              <div class="item-cont food-item-036-content" style="display: none;">
                 <div class="item-cont-icon" id="food036Item0Icon"></div>
                 <div class="item-cont-label" id="collected036Food">0</div>
               </div>
-              <div class="item-cont food-item-037-content">
+              <div class="item-cont food-item-037-content" style="display: none;">
                 <div class="item-cont-icon" id="food037Item0Icon"></div>
                 <div class="item-cont-label" id="collected037Food">0</div>
               </div>
-              <div class="item-cont food-item-038-content">
+              <div class="item-cont food-item-038-content" style="display: none;">
                 <div class="item-cont-icon" id="food038Item0Icon"></div>
                 <div class="item-cont-label" id="collected038Food">0</div>
               </div>
-              <div class="item-cont food-item-039-content">
+              <div class="item-cont food-item-039-content" style="display: none;">
                 <div class="item-cont-icon" id="food039Item0Icon"></div>
                 <div class="item-cont-label" id="collected039Food">0</div>
               </div>
-              <div class="item-cont food-item-040-content">
+              <div class="item-cont food-item-040-content" style="display: none;">
                 <div class="item-cont-icon" id="food040Item0Icon"></div>
                 <div class="item-cont-label" id="collected040Food">0</div>
               </div>
-              <div class="item-cont food-item-041-content">
+              <div class="item-cont food-item-041-content" style="display: none;">
                 <div class="item-cont-icon" id="food041Item0Icon"></div>
                 <div class="item-cont-label" id="collected041Food">0</div>
               </div>
-              <div class="item-cont food-item-042-content">
+              <div class="item-cont food-item-042-content" style="display: none;">
                 <div class="item-cont-icon" id="food042Item0Icon"></div>
                 <div class="item-cont-label" id="collected042Food">0</div>
               </div>
-              <div class="item-cont food-item-043-content">
+              <div class="item-cont food-item-043-content" style="display: none;">
                 <div class="item-cont-icon" id="food043Item0Icon"></div>
                 <div class="item-cont-label" id="collected043Food">0</div>
               </div>
-              <div class="item-cont food-item-044-content">
+              <div class="item-cont food-item-044-content" style="display: none;">
                 <div class="item-cont-icon" id="food044Item0Icon"></div>
                 <div class="item-cont-label" id="collected044Food">0</div>
               </div>
-              <div class="item-cont food-item-045-content">
+              <div class="item-cont food-item-045-content" style="display: none;">
                 <div class="item-cont-icon" id="food045Item0Icon"></div>
                 <div class="item-cont-label" id="collected045Food">0</div>
               </div>
-              <div class="item-cont food-item-046-content">
+              <div class="item-cont food-item-046-content" style="display: none;">
                 <div class="item-cont-icon" id="food046Item0Icon"></div>
                 <div class="item-cont-label" id="collected046Food">0</div>
               </div>
-              <div class="item-cont food-item-047-content">
+              <div class="item-cont food-item-047-content" style="display: none;">
                 <div class="item-cont-icon" id="food047Item0Icon"></div>
                 <div class="item-cont-label" id="collected047Food">0</div>
               </div>
-              <div class="item-cont food-item-048-content">
+              <div class="item-cont food-item-048-content" style="display: none;">
                 <div class="item-cont-icon" id="food048Item0Icon"></div>
                 <div class="item-cont-label" id="collected048Food">0</div>
               </div>
-              <div class="item-cont food-item-049-content">
+              <div class="item-cont food-item-049-content" style="display: none;">
                 <div class="item-cont-icon" id="food049Item0Icon"></div>
                 <div class="item-cont-label" id="collected049Food">0</div>
               </div>
-              <div class="item-cont food-item-050-content">
+              <div class="item-cont food-item-050-content" style="display: none;">
                 <div class="item-cont-icon" id="food050Item0Icon"></div>
                 <div class="item-cont-label" id="collected050Food">0</div>
               </div>
-              <div class="item-cont food-item-051-content">
+              <div class="item-cont food-item-051-content" style="display: none;">
                 <div class="item-cont-icon" id="food051Item0Icon"></div>
                 <div class="item-cont-label" id="collected051Food">0</div>
               </div>
-              <div class="item-cont food-item-052-content">
+              <div class="item-cont food-item-052-content" style="display: none;">
                 <div class="item-cont-icon" id="food052Item0Icon"></div>
                 <div class="item-cont-label" id="collected052Food">0</div>
               </div>
-              <div class="item-cont food-item-053-content">
+              <div class="item-cont food-item-053-content" style="display: none;">
                 <div class="item-cont-icon" id="food053Item0Icon"></div>
                 <div class="item-cont-label" id="collected053Food">0</div>
               </div>
-              <div class="item-cont food-item-054-content">
+              <div class="item-cont food-item-054-content" style="display: none;">
                 <div class="item-cont-icon" id="food054Item0Icon"></div>
                 <div class="item-cont-label" id="collected054Food">0</div>
               </div>
-              <div class="item-cont food-item-055-content">
+              <div class="item-cont food-item-055-content" style="display: none;">
                 <div class="item-cont-icon" id="food055Item0Icon"></div>
                 <div class="item-cont-label" id="collected055Food">0</div>
               </div>
-              <div class="item-cont food-item-056-content">
+              <div class="item-cont food-item-056-content" style="display: none;">
                 <div class="item-cont-icon" id="food056Item0Icon"></div>
                 <div class="item-cont-label" id="collected056Food">0</div>
               </div>
-              <div class="item-cont food-item-057-content">
+              <div class="item-cont food-item-057-content" style="display: none;">
                 <div class="item-cont-icon" id="food057Item0Icon"></div>
                 <div class="item-cont-label" id="collected057Food">0</div>
               </div>
-              <div class="item-cont food-item-058-content">
+              <div class="item-cont food-item-058-content" style="display: none;">
                 <div class="item-cont-icon" id="food058Item0Icon"></div>
                 <div class="item-cont-label" id="collected058Food">0</div>
               </div>
-              <div class="item-cont food-item-059-content">
+              <div class="item-cont food-item-059-content" style="display: none;">
                 <div class="item-cont-icon" id="food059Item0Icon"></div>
                 <div class="item-cont-label" id="collected059Food">0</div>
               </div>
-              <div class="item-cont food-item-060-content">
+              <div class="item-cont food-item-060-content" style="display: none;">
                 <div class="item-cont-icon" id="food060Item0Icon"></div>
                 <div class="item-cont-label" id="collected060Food">0</div>
               </div>
-              <div class="item-cont food-item-061-content">
+              <div class="item-cont food-item-061-content" style="display: none;">
                 <div class="item-cont-icon" id="food061Item0Icon"></div>
                 <div class="item-cont-label" id="collected061Food">0</div>
               </div>
-              <div class="item-cont food-item-062-content">
+              <div class="item-cont food-item-062-content" style="display: none;">
                 <div class="item-cont-icon" id="food062Item0Icon"></div>
                 <div class="item-cont-label" id="collected062Food">0</div>
               </div>
-              <div class="item-cont food-item-063-content">
+              <div class="item-cont food-item-063-content" style="display: none;">
                 <div class="item-cont-icon" id="food063Item0Icon"></div>
                 <div class="item-cont-label" id="collected063Food">0</div>
               </div>
-              <div class="item-cont food-item-064-content">
+              <div class="item-cont food-item-064-content" style="display: none;">
                 <div class="item-cont-icon" id="food064Item0Icon"></div>
                 <div class="item-cont-label" id="collected064Food">0</div>
               </div>
-              <div class="item-cont food-item-065-content">
+              <div class="item-cont food-item-065-content" style="display: none;">
                 <div class="item-cont-icon" id="food065Item0Icon"></div>
                 <div class="item-cont-label" id="collected065Food">0</div>
               </div>
-              <div class="item-cont food-item-066-content">
+              <div class="item-cont food-item-066-content" style="display: none;">
                 <div class="item-cont-icon" id="food066Item0Icon"></div>
                 <div class="item-cont-label" id="collected066Food">0</div>
               </div>
-              <div class="item-cont food-item-067-content">
+              <div class="item-cont food-item-067-content" style="display: none;">
                 <div class="item-cont-icon" id="food067Item0Icon"></div>
                 <div class="item-cont-label" id="collected067Food">0</div>
               </div>
-              <div class="item-cont food-item-068-content">
+              <div class="item-cont food-item-068-content" style="display: none;">
                 <div class="item-cont-icon" id="food068Item0Icon"></div>
                 <div class="item-cont-label" id="collected068Food">0</div>
               </div>
-              <div class="item-cont food-item-069-content">
+              <div class="item-cont food-item-069-content" style="display: none;">
                 <div class="item-cont-icon" id="food069Item0Icon"></div>
                 <div class="item-cont-label" id="collected069Food">0</div>
               </div>
-              <div class="item-cont food-item-070-content">
+              <div class="item-cont food-item-070-content" style="display: none;">
                 <div class="item-cont-icon" id="food070Item0Icon"></div>
                 <div class="item-cont-label" id="collected070Food">0</div>
               </div>
-              <div class="item-cont food-item-071-content">
+              <div class="item-cont food-item-071-content" style="display: none;">
                 <div class="item-cont-icon" id="food071Item0Icon"></div>
                 <div class="item-cont-label" id="collected071Food">0</div>
               </div>
-              <div class="item-cont food-item-072-content">
+              <div class="item-cont food-item-072-content" style="display: none;">
                 <div class="item-cont-icon" id="food072Item0Icon"></div>
                 <div class="item-cont-label" id="collected072Food">0</div>
               </div>
-              <div class="item-cont food-item-073-content">
+              <div class="item-cont food-item-073-content" style="display: none;">
                 <div class="item-cont-icon" id="food073Item0Icon"></div>
                 <div class="item-cont-label" id="collected073Food">0</div>
               </div>
-              <div class="item-cont food-item-074-content">
+              <div class="item-cont food-item-074-content" style="display: none;">
                 <div class="item-cont-icon" id="food074Item0Icon"></div>
                 <div class="item-cont-label" id="collected074Food">0</div>
               </div>
-              <div class="item-cont food-item-075-content">
+              <div class="item-cont food-item-075-content" style="display: none;">
                 <div class="item-cont-icon" id="food075Item0Icon"></div>
                 <div class="item-cont-label" id="collected075Food">0</div>
               </div>
-              <div class="item-cont food-item-076-content">
+              <div class="item-cont food-item-076-content" style="display: none;">
                 <div class="item-cont-icon" id="food076Item0Icon"></div>
                 <div class="item-cont-label" id="collected076Food">0</div>
               </div>
-              <div class="item-cont food-item-077-content">
+              <div class="item-cont food-item-077-content" style="display: none;">
                 <div class="item-cont-icon" id="food077Item0Icon"></div>
                 <div class="item-cont-label" id="collected077Food">0</div>
               </div>
@@ -540,16 +543,8 @@
             </form>
             <br>
             <div class="checkbox-content" id="administratorToolsContent">
-              <input type="checkbox" id="administratorTools" onclick="selectionSound();" onchange="collpaceDrowerAdmins();">
+              <input type="checkbox" id="administratorTools" onclick="selectionSound();" onchange="checkSettingsChanges();checkDev();">
               <label class="label-checkbox" for="administratorTools" id="adminToolsLang">...</label>
-              <hr>
-              <div id="devToolsDrower">
-                <div class="checkbox-content">
-                  <input type="checkbox" id="f12Tool" onchange="f12Active();" onclick="selectionSound();">
-                  <label class="label-checkbox" for="f12Tool" id="f12ToolLang">...</label>
-                  <span class="mini-modal-opener" onclick="openWIDmModalF12();defaultClickSound();"></span>
-                </div>
-              </div>
             </div>
             <hr>
             <div class="categores stylescontent">...</div>
@@ -557,21 +552,6 @@
             <div id="selectOptions" class="select-content">
               <div onclick="loadingClassic();checkSettingsChanges();" id="loadClassicCon" class="select">
                 <span id="loadClassic">...</span>
-              </div>
-              <div onclick="loadingAnime();checkSettingsChanges();" id="loadAnimeCon" class="select">
-                <span id="loadAnime" class="lasbLang">...</span>
-              </div>
-              <div onclick="loadingAnime2();checkSettingsChanges();" id="loadAnimeCon2" class="select">
-                <span id="loadAnime2" class="lasbLang">...</span><span> 2</span>
-              </div>
-              <div onclick="loadingAnime3();checkSettingsChanges();" id="loadAnimeCon3" class="select">
-                <span id="loadAnime3" class="lasbLang">...</span><span> 3</span>
-              </div>
-              <div onclick="loadingMiku();checkSettingsChanges();" id="loadMikuCon" class="select">
-                <span id="loadMiku">Hatsune Miku</span>
-              </div>
-              <div onclick="loadingNakano();checkSettingsChanges();" id="loadNakanoCon" class="select">
-                <span id="loadNakano">Nakano Azusa</span>
               </div>
             </div>
           </div>
@@ -623,7 +603,7 @@
               </div>
             </div>
             <hr>
-            <div id="selectOptions" class="select-content">
+            <div id="selectOptions" class="select-content" style="display: none;">
               <div onclick="activeWall(event);checkSettingsChanges();" id="conBoard000img" class="select-img board-wall">
                 <div class="select-icon-img" id="board000img"></div>
                 <div class="select-icon-frame" id="board000frame"></div>
@@ -999,7 +979,7 @@
             <hr>
             <div class="categores stylescontent">...</div>
             <div id="selectOptions" class="select-content">
-              <div onclick="activeItem(event);checkSettingsChanges();" id="meowItem" class="select item-food">
+              <div onclick="activeItem(event);checkSettingsChanges();" id="meowItem" class="select item-food" style="display: none;">
                 <div class="select-icon" id="meowItemImage"></div>
                 <span id="meowLang">...</span>
               </div>
@@ -1007,7 +987,7 @@
                 <div class="select-icon" id="goldItemImage"></div>
                 <span id="goldLang">...</span>
               </div>
-              <div onclick="activeItem(event);checkSettingsChanges();" id="alphacoinItem" class="select item-food">
+              <div onclick="activeItem(event);checkSettingsChanges();" id="alphacoinItem" class="select item-food" style="display: none;">
                 <div class="select-icon i-op-img" id="alphacoinItemImage"></div>
                 <span id="alphaLang">...</span>
               </div>
@@ -1015,13 +995,13 @@
                 <div class="select-icon i-op-img" id="crystalItemImage"></div>
                 <span id="crystalLang">...</span>
               </div>
-              <div onclick="activeItem(event);checkSettingsChanges();" id="virtualTokenItem" class="select item-food">
+              <div onclick="activeItem(event);checkSettingsChanges();" id="virtualTokenItem" class="select item-food" style="display: none;">
                 <div class="select-icon" id="virtualTokenItemImage"></div>
                 <span id="virtualTokenLang">...</span>
               </div>
             </div>
             <hr>
-            <div id="selectOptions" class="select-content">
+            <div id="selectOptions" class="select-content" style="display: none;">
               <div onclick="activeItem(event);checkSettingsChanges();" id="food000Item0" class="select-img item-food">
                 <div class="select-icon-img" id="food000Item0Image"></div>
                 <div class="select-icon-frame" id="food000Item0Frame"></div>
@@ -1393,44 +1373,44 @@
               <div id="selectOptions" class="select-content">
                 <div onclick="aaSetActiveMoveSound();" id="pwAlang" class="select">Pilot Walk</div>
                 <hr class="hr-fix">
-                <div onclick="ibSetActiveMechaMoveSound();checkSettingsChanges();" id="mwAIlang" class="select name-akashic">...</div>
-                <div onclick="aaSetActiveMechaMoveSound();checkSettingsChanges();" id="mwAlang" class="select name-alborada">...</div>
-                <div onclick="baSetActiveMechaMoveSound();checkSettingsChanges();" id="mwBlang" class="select name-andromeda">...</div>
-                <div onclick="caSetActiveMechaMoveSound();checkSettingsChanges();" id="mwClang" class="select name-arthur">...</div>
-                <div onclick="daSetActiveMechaMoveSound();checkSettingsChanges();" id="mwDlang" class="select name-aurora">...</div>
-                <div onclick="eaSetActiveMechaMoveSound();checkSettingsChanges();" id="mwElang" class="select name-boltus">...</div>
-                <div onclick="faSetActiveMechaMoveSound();checkSettingsChanges();" id="mwFlang" class="select name-caramel">...</div>
-                <div onclick="yaSetActiveMechaMoveSound();checkSettingsChanges();" id="mwYlang" class="select name-death-knell">...</div>
-                <div onclick="gaSetActiveMechaMoveSound();checkSettingsChanges();" id="mwGlang" class="select name-doomlight">...</div>
-                <div onclick="zaSetActiveMechaMoveSound();checkSettingsChanges();" id="mwZlang" class="select name-dreadwolf">...</div>
-                <div onclick="haSetActiveMechaMoveSound();checkSettingsChanges();" id="mwHlang" class="select name-firefox">...</div>
-                <div onclick="iaSetActiveMechaMoveSound();checkSettingsChanges();" id="mwIlang" class="select name-firestar">...</div>
-                <div onclick="jaSetActiveMechaMoveSound();checkSettingsChanges();" id="mwJlang" class="select name-flamenco">...</div>
-                <div onclick="kaSetActiveMechaMoveSound();checkSettingsChanges();" id="mwKlang" class="select name-gabriel">...</div>
-                <div onclick="abSetActiveMechaMoveSound();checkSettingsChanges();" id="mwAAlang" class="select name-gaia">...</div>
-                <div onclick="bbSetActiveMechaMoveSound();checkSettingsChanges();" id="mwABlang" class="select name-guerilla-hunter">...</div>
-                <div onclick="laSetActiveMechaMoveSound();checkSettingsChanges();" id="mwLlang" class="select name-hotsteel">...</div>
-                <div onclick="maSetActiveMechaMoveSound();checkSettingsChanges();" id="mwMlang" class="select name-hurricane">...</div>
-                <div onclick="naSetActiveMechaMoveSound();checkSettingsChanges();" id="mwNlang" class="select name-jojo">...</div>
-                <div onclick="cbSetActiveMechaMoveSound();checkSettingsChanges();" id="mwAClang" class="select name-lancelot">...</div>
-                <div onclick="oaSetActiveMechaMoveSound();checkSettingsChanges();" id="mwOlang" class="select name-michael">...</div>
-                <div onclick="dbSetActiveMechaMoveSound();checkSettingsChanges();" id="mwADlang" class="select name-moon-rabbit">...</div>
-                <div onclick="ebSetActiveMechaMoveSound();checkSettingsChanges();" id="mwAElang" class="select name-nebula">...</div>
-                <div onclick="paSetActiveMechaMoveSound();checkSettingsChanges();" id="mwPlang" class="select name-neutron-star">...</div>
-                <div onclick="qaSetActiveMechaMoveSound();checkSettingsChanges();" id="mwQlang" class="select name-northern-knight">...</div>
-                <div onclick="raSetActiveMechaMoveSound();checkSettingsChanges();" id="mwRlang" class="select name-pulsar">...</div>
-                <div onclick="saSetActiveMechaMoveSound();checkSettingsChanges();" id="mwSlang" class="select name-ranger">...</div>
-                <div onclick="taSetActiveMechaMoveSound();checkSettingsChanges();" id="mwTlang" class="select name-raven">...</div>
-                <div onclick="fbSetActiveMechaMoveSound();checkSettingsChanges();" id="mwAFlang" class="select name-shiranui">...</div>
-                <div onclick="jbSetActiveMechaMoveSound();checkSettingsChanges();" id="mwAJlang" class="select name-skyfall">...</div>
-                <div onclick="gbSetActiveMechaMoveSound();checkSettingsChanges();" id="mwAGlang" class="select name-skyfire">...</div>
-                <div onclick="uaSetActiveMechaMoveSound();checkSettingsChanges();" id="mwUlang" class="select name-skylark">...</div>
-                <div onclick="vaSetActiveMechaMoveSound();checkSettingsChanges();" id="mwVlang" class="select name-snow-mirage">...</div>
-                <div onclick="kbSetActiveMechaMoveSound();checkSettingsChanges();" id="mwAKlang" class="select name-tempest">...</div>
-                <div onclick="waSetActiveMechaMoveSound();checkSettingsChanges();" id="mwWlang" class="select name-trio-of-enders">...</div>
-                <div onclick="hbSetActiveMechaMoveSound();checkSettingsChanges();" id="mwAHlang" class="select name-twilight">...</div>
-                <div onclick="xaSetActiveMechaMoveSound();checkSettingsChanges();" id="mwXlang" class="select name-ventorus">...</div>
-                <div onclick="goToScrollToIdElementMusicLang();selectionSound();" class="select active totopelement">...</div>
+                <div onclick="ibSetActiveMechaMoveSound();checkSettingsChanges();" id="mwAIlang" class="select name-akashic" style="display: none;">...</div>
+                <div onclick="aaSetActiveMechaMoveSound();checkSettingsChanges();" id="mwAlang" class="select name-alborada" style="display: none;">...</div>
+                <div onclick="baSetActiveMechaMoveSound();checkSettingsChanges();" id="mwBlang" class="select name-andromeda" style="display: none;">...</div>
+                <div onclick="caSetActiveMechaMoveSound();checkSettingsChanges();" id="mwClang" class="select name-arthur" style="display: none;">...</div>
+                <div onclick="daSetActiveMechaMoveSound();checkSettingsChanges();" id="mwDlang" class="select name-aurora" style="display: none;">...</div>
+                <div onclick="eaSetActiveMechaMoveSound();checkSettingsChanges();" id="mwElang" class="select name-boltus" style="display: none;">...</div>
+                <div onclick="faSetActiveMechaMoveSound();checkSettingsChanges();" id="mwFlang" class="select name-caramel" style="display: none;">...</div>
+                <div onclick="yaSetActiveMechaMoveSound();checkSettingsChanges();" id="mwYlang" class="select name-death-knell" style="display: none;">...</div>
+                <div onclick="gaSetActiveMechaMoveSound();checkSettingsChanges();" id="mwGlang" class="select name-doomlight" style="display: none;">...</div>
+                <div onclick="zaSetActiveMechaMoveSound();checkSettingsChanges();" id="mwZlang" class="select name-dreadwolf" style="display: none;">...</div>
+                <div onclick="haSetActiveMechaMoveSound();checkSettingsChanges();" id="mwHlang" class="select name-firefox" style="display: none;">...</div>
+                <div onclick="iaSetActiveMechaMoveSound();checkSettingsChanges();" id="mwIlang" class="select name-firestar" style="display: none;">...</div>
+                <div onclick="jaSetActiveMechaMoveSound();checkSettingsChanges();" id="mwJlang" class="select name-flamenco" style="display: none;">...</div>
+                <div onclick="kaSetActiveMechaMoveSound();checkSettingsChanges();" id="mwKlang" class="select name-gabriel" style="display: none;">...</div>
+                <div onclick="abSetActiveMechaMoveSound();checkSettingsChanges();" id="mwAAlang" class="select name-gaia" style="display: none;">...</div>
+                <div onclick="bbSetActiveMechaMoveSound();checkSettingsChanges();" id="mwABlang" class="select name-guerilla-hunter" style="display: none;">...</div>
+                <div onclick="laSetActiveMechaMoveSound();checkSettingsChanges();" id="mwLlang" class="select name-hotsteel" style="display: none;">...</div>
+                <div onclick="maSetActiveMechaMoveSound();checkSettingsChanges();" id="mwMlang" class="select name-hurricane" style="display: none;">...</div>
+                <div onclick="naSetActiveMechaMoveSound();checkSettingsChanges();" id="mwNlang" class="select name-jojo" style="display: none;">...</div>
+                <div onclick="cbSetActiveMechaMoveSound();checkSettingsChanges();" id="mwAClang" class="select name-lancelot" style="display: none;">...</div>
+                <div onclick="oaSetActiveMechaMoveSound();checkSettingsChanges();" id="mwOlang" class="select name-michael" style="display: none;">...</div>
+                <div onclick="dbSetActiveMechaMoveSound();checkSettingsChanges();" id="mwADlang" class="select name-moon-rabbit" style="display: none;">...</div>
+                <div onclick="ebSetActiveMechaMoveSound();checkSettingsChanges();" id="mwAElang" class="select name-nebula" style="display: none;">...</div>
+                <div onclick="paSetActiveMechaMoveSound();checkSettingsChanges();" id="mwPlang" class="select name-neutron-star" style="display: none;">...</div>
+                <div onclick="qaSetActiveMechaMoveSound();checkSettingsChanges();" id="mwQlang" class="select name-northern-knight" style="display: none;">...</div>
+                <div onclick="raSetActiveMechaMoveSound();checkSettingsChanges();" id="mwRlang" class="select name-pulsar" style="display: none;">...</div>
+                <div onclick="saSetActiveMechaMoveSound();checkSettingsChanges();" id="mwSlang" class="select name-ranger" style="display: none;">...</div>
+                <div onclick="taSetActiveMechaMoveSound();checkSettingsChanges();" id="mwTlang" class="select name-raven" style="display: none;">...</div>
+                <div onclick="fbSetActiveMechaMoveSound();checkSettingsChanges();" id="mwAFlang" class="select name-shiranui" style="display: none;">...</div>
+                <div onclick="jbSetActiveMechaMoveSound();checkSettingsChanges();" id="mwAJlang" class="select name-skyfall" style="display: none;">...</div>
+                <div onclick="gbSetActiveMechaMoveSound();checkSettingsChanges();" id="mwAGlang" class="select name-skyfire" style="display: none;">...</div>
+                <div onclick="uaSetActiveMechaMoveSound();checkSettingsChanges();" id="mwUlang" class="select name-skylark" style="display: none;">...</div>
+                <div onclick="vaSetActiveMechaMoveSound();checkSettingsChanges();" id="mwVlang" class="select name-snow-mirage" style="display: none;">...</div>
+                <div onclick="kbSetActiveMechaMoveSound();checkSettingsChanges();" id="mwAKlang" class="select name-tempest" style="display: none;">...</div>
+                <div onclick="waSetActiveMechaMoveSound();checkSettingsChanges();" id="mwWlang" class="select name-trio-of-enders" style="display: none;">...</div>
+                <div onclick="hbSetActiveMechaMoveSound();checkSettingsChanges();" id="mwAHlang" class="select name-twilight" style="display: none;">...</div>
+                <div onclick="xaSetActiveMechaMoveSound();checkSettingsChanges();" id="mwXlang" class="select name-ventorus" style="display: none;">...</div>
+                <div onclick="goToScrollToIdElementMusicLang();selectionSound();" class="select active totopelement" style="display: none;">...</div>
               </div>
             </div>
           </div>
@@ -1444,13 +1424,15 @@
             <hr>
             <div id="servicesLang">...</div>
             <div id="aboutService" class="services">
-              <div class="service-type" id="discord" onclick="openDiscordService();defaultClickSound();">
-                <div class="service-logo" id="sIdiscord"></div>
+              <div class="service-type" id="menuDiscord" onclick="openDiscordService();defaultClickSound();">
+                <div class="service-logo" id="menuSIdiscord"></div>
                 <div class="service-name">Discord</div>
               </div>
             </div>
           </div>
           <div id="tools" class="content" style="display: none;">
+            <button onclick="openUserSettings();defaultClickSound();" class="menu-btn food-inventory" id="foodInvLang">...</button>
+            <button onclick="openCollectionCenter();defaultClickSound();" class="menu-btn food-inventory" id="foodInvLang">...</button>
             <button onclick="document.getElementById('updateModal').style.display='block';defaultClickSound();" class="menu-btn update-notice" id="noticeUpLang">...</button>
             <button onclick="document.getElementById('shopPlace').style.display='flex';defaultClickSound();" class="menu-btn shop-window" id="shopWindowLang">...</button>
             <button onclick="openGachaWindow();costShows();" class="menu-btn gacha-window" id="gachaWindowLang">...</button>
@@ -1465,6 +1447,7 @@
           <div class="sub-device-inpo-indicator">
             <div id="subDateTimeIndicator">
               <div id="subClock">...</div>
+              <div class="sub-dc-symbol"></div>
               <div id="subCalendar">...</div>
             </div>
             <div id="subBatteryIndicator">
@@ -1526,9 +1509,9 @@
       <div id="loadedbar" class="loading-images">
         <div class="blocker"></div>
       </div>
-      <div id="loadingService" class="services">
-        <div class="service-type" id="discord" onclick="openDiscordService();defaultClickSound();">
-          <div class="service-logo" id="sIdiscord"></div>
+      <div id="loadingService" class="services" style="display: none;">
+        <div class="service-type" id="loadDiscord" onclick="openDiscordService();defaultClickSound();">
+          <div class="service-logo" id="loadSIdiscord"></div>
           <div class="service-name">Discord</div>
         </div>
       </div>
@@ -1546,8 +1529,8 @@
           <input type="submit" id="alertRight" value="...">
         </div>
         <div id="alertService" class="services alert" style="display: none;">
-          <div class="service-type" id="discord" onclick="openDiscordService();defaultClickSound();">
-            <div class="service-logo" id="sIdiscord"></div>
+          <div class="service-type" id="alertDiscord" onclick="openDiscordService();defaultClickSound();">
+            <div class="service-logo" id="alertSIdiscord"></div>
             <div class="service-name">Discord</div>
           </div>
         </div>
@@ -1559,10 +1542,12 @@
         <button class="reset-button" id="reset"></button>
         <div class="in-modal-content" id="progressingALost">
           <div class="left-modal-acc">
-            <div id="subleagueImage"></div>
             <div id="subleagueType">...</div>
             <div class="subleaguelevel"><span id="substar">★</span><span id="subleaguelevel">...</span></div>
           </div>
+          <br>
+          <br>
+          <div id="subleagueImage"></div>
           <hr class="acc">
           <div class="right-modal-acc">
             <h2 class="lose-title" id="loseText">...</h2>
@@ -1570,152 +1555,6 @@
             <div class="gettedscore" id="loseNewRecordScore">...</div>
           </div>
         </div>
-      </div>
-    </div>
-    <div id="firstModal" class="first-modal" style="display: none;">
-      <div id="firstTabsContents" class="first-modal-content">
-        <div id="firstAtab" class="first-content" style="display: block;">
-          <h1 id="fAtLang" class="first-tabs-title">First select a Language</h1>
-          <div id="selectOptions" class="select-content">
-            <div onclick="selectLangInFirstEn();" class="first-language select" id="fLsa">English</div><br>
-            <div onclick="selectLangInFirstRu();" class="first-language select" id="fLsb">Русский</div><br>
-            <div onclick="selectLangInFirstHe();" class="first-language select" id="fLsg">עברית</div><br>
-          </div>
-          <div id="nc100l"></div>
-        </div>
-        <div id="firstBtab" class="first-content" style="display: none;">
-          <h1 id="fBtLang" class="first-tabs-title">...</h1>
-          <div id="selectOptions" class="select-content">
-            <div onclick="selectDeffInFirstNorm();" class="first-difficulty select" id="fDsa">...</div><br>
-            <div onclick="selectDeffInFirstHard();" class="first-difficulty select" id="fDsb">...</div><br>
-            <div onclick="selectDeffInFirstHell();" class="first-difficulty select" id="fDsc">...</div><br>
-          </div>
-        </div>
-        <div id="firstCtab" class="first-content" style="display: none;">
-          <h1 id="fCtLang" class="first-tabs-title">...</h1>
-          <input type="color" name="sCinFirst" id="fSnakeColor" value="#ddaaff" onchange="snakeDecoloringFmodal();">
-          <div id="keypad" class="padsInFirst">
-            <div class="keypad numpad">
-              <div class="first-letters" id="sLetter0" onclick="sLetterSis0();">0</div>
-              <div class="first-letters" id="sLetter1" onclick="sLetterSis1();">1</div>
-              <div class="first-letters" id="sLetter2" onclick="sLetterSis2();">2</div>
-              <div class="first-letters" id="sLetter3" onclick="sLetterSis3();">3</div>
-              <div class="first-letters" id="sLetter4" onclick="sLetterSis4();">4</div>
-              <div class="first-letters" id="sLetter5" onclick="sLetterSis5();">5</div>
-              <div class="first-letters" id="sLetter6" onclick="sLetterSis6();">6</div>
-              <div class="first-letters" id="sLetter7" onclick="sLetterSis7();">7</div>
-              <div class="first-letters" id="sLetter8" onclick="sLetterSis8();">8</div>
-              <div class="first-letters" id="sLetter9" onclick="sLetterSis9();">9</div>
-            </div>
-            <div class="keypad wordpad">
-              <div class="first-letters" id="sLettera" onclick="sLetterSisa();">a</div>
-              <div class="first-letters" id="sLetterb" onclick="sLetterSisb();">b</div>
-              <div class="first-letters" id="sLetterc" onclick="sLetterSisc();">c</div>
-              <div class="first-letters" id="sLetterd" onclick="sLetterSisd();">d</div>
-              <div class="first-letters" id="sLettere" onclick="sLetterSise();">e</div>
-              <div class="first-letters" id="sLetterf" onclick="sLetterSisf();">f</div>
-              <div class="first-letters" id="sLetterg" onclick="sLetterSisg();">g</div>
-              <div class="first-letters" id="sLetterh" onclick="sLetterSish();">h</div>
-              <div class="first-letters" id="sLetteri" onclick="sLetterSisi();">i</div>
-              <div class="first-letters" id="sLetterj" onclick="sLetterSisj();">j</div>
-              <div class="first-letters" id="sLetterk" onclick="sLetterSisk();">k</div>
-              <div class="first-letters" id="sLetterl" onclick="sLetterSisl();">l</div>
-              <div class="first-letters" id="sLetterm" onclick="sLetterSism();">m</div>
-              <div class="first-letters" id="sLettern" onclick="sLetterSisn();">n</div>
-              <div class="first-letters" id="sLettero" onclick="sLetterSiso();">o</div>
-              <div class="first-letters" id="sLetterp" onclick="sLetterSisp();">p</div>
-              <div class="first-letters" id="sLetterq" onclick="sLetterSisq();">q</div>
-              <div class="first-letters" id="sLetterr" onclick="sLetterSisr();">r</div>
-              <div class="first-letters" id="sLetters" onclick="sLetterSiss();">s</div>
-              <div class="first-letters" id="sLettert" onclick="sLetterSist();">t</div>
-              <div class="first-letters" id="sLetteru" onclick="sLetterSisu();">u</div>
-              <div class="first-letters" id="sLetterv" onclick="sLetterSisv();">v</div>
-              <div class="first-letters" id="sLetterw" onclick="sLetterSisw();">w</div>
-              <div class="first-letters" id="sLetterx" onclick="sLetterSisx();">x</div>
-              <div class="first-letters" id="sLettery" onclick="sLetterSisy();">y</div>
-              <div class="first-letters" id="sLetterz" onclick="sLetterSisz();">z</div>
-              <div class="first-letters" id="keyShiftFirst" onclick="sLetterSisShift();">↑</div>
-              <div class="first-letters" id="sLetterSisEmpty" onclick="sLetterSisEmpty();">⨱</div>
-            </div>
-          </div>
-        </div>
-        <div id="firstDtab" class="first-content" style="display: none;">
-          <h1 id="fDtLang" class="first-tabs-title">...</h1>
-          <div id="selectOptions" class="select-content">
-            <div onclick="selectMusicInFirsta();" class="first-music select" id="fMsa">Stable and Upbeat</div><br>
-            <div onclick="selectMusicInFirstb();" class="first-music select" id="fMsb">Acceleration Folding</div><br>
-            <div onclick="selectMusicInFirstc();" class="first-music select" id="fMsc">Alice the Dreamer: Accompaniment</div><br>
-            <div onclick="selectMusicInFirstd();" class="first-music select" id="fMsd">Alice the Dreamer</div><br>
-            <div onclick="selectMusicInFirste();" class="first-music select" id="fMse">All or Nothing - Ending Version</div><br>
-            <div onclick="selectMusicInFirstf();" class="first-music select" id="fMsf">All or Nothing</div><br>
-            <div onclick="selectMusicInFirstg();" class="first-music select" id="fMsg">Backtracking Journey</div><br>
-            <div onclick="selectMusicInFirsth();" class="first-music select" id="fMsh">Before the Storm</div><br>
-            <div onclick="selectMusicInFirsti();" class="first-music select" id="fMsi">Disillusionment Melody</div><br>
-            <div onclick="selectMusicInFirstj();" class="first-music select" id="fMsj">Explosive Halo</div><br>
-            <div onclick="selectMusicInFirstk();" class="first-music select" id="fMsk">Firestar</div><br>
-            <div onclick="selectMusicInFirstl();" class="first-music select" id="fMsl">Future Bounce</div><br>
-            <div onclick="selectMusicInFirstm();" class="first-music select" id="fMsm">Interlude Mojito</div><br>
-            <div onclick="selectMusicInFirstn();" class="first-music select" id="fMsn">Joyful Passion</div><br>
-            <div onclick="selectMusicInFirsto();" class="first-music select" id="fMso">Lunar</div><br>
-            <div onclick="selectMusicInFirstp();" class="first-music select" id="fMsp">Nyan Nyan</div><br>
-            <div onclick="selectMusicInFirstq();" class="first-music select" id="fMsq">Prelude of War</div><br>
-            <div onclick="selectMusicInFirstr();" class="first-music select" id="fMsr">Preparation Break</div><br>
-            <div onclick="selectMusicInFirsts();" class="first-music select" id="fMss">SMC Memory 2022</div><br>
-            <div onclick="selectMusicInFirstt();" class="first-music select" id="fMst">SMC Memory 2023</div><br>
-            <div onclick="selectMusicInFirstu();" class="first-music select" id="fMsu">Throbbing Beat</div><br>
-            <div onclick="selectMusicInFirstv();" class="first-music select" id="fMsv">Ultra Beast Force</div>
-          </div>
-        </div>
-        <div id="firstEtab" class="first-content" style="display: none;">
-          <h1 id="fEtLang" class="first-tabs-title">...</h1>
-          <div id="selectOptions" class="select-content">
-            <div onclick="mwAIlangFunction();" class="first-music select name-akashic" id="fWsai">...</div><br>
-            <div onclick="mwAlangFunction();" class="first-music select name-alborada" id="fWsa">...</div><br>
-            <div onclick="mwBlangFunction();" class="first-music select name-andromeda" id="fWsb">...</div><br>
-            <div onclick="mwClangFunction();" class="first-music select name-arthur" id="fWsc">...</div><br>
-            <div onclick="mwDlangFunction();" class="first-music select name-aurora" id="fWsd">...</div><br>
-            <div onclick="mwElangFunction();" class="first-music select name-boltus" id="fWse">...</div><br>
-            <div onclick="mwFlangFunction();" class="first-music select name-caramel" id="fWsf">...</div><br>
-            <div onclick="mwYlangFunction();" class="first-music select name-death-knell" id="fWsy">...</div><br>
-            <div onclick="mwGlangFunction();" class="first-music select name-doomlight" id="fWsg">...</div><br>
-            <div onclick="mwZlangFunction();" class="first-music select name-dreadwolf" id="fWsz">...</div><br>
-            <div onclick="mwHlangFunction();" class="first-music select name-firefox" id="fWsh">...</div><br>
-            <div onclick="mwIlangFunction();" class="first-music select name-firestar" id="fWsi">...</div><br>
-            <div onclick="mwJlangFunction();" class="first-music select name-flamenco" id="fWsj">...</div><br>
-            <div onclick="mwKlangFunction();" class="first-music select name-gabriel" id="fWsk">...</div><br>
-            <div onclick="mwAAlangFunction();" class="first-music select name-gaia" id="fWsaa">...</div><br>
-            <div onclick="mwABlangFunction();" class="first-music select name-guerilla-hunter" id="fWsab">...</div><br>
-            <div onclick="mwLlangFunction();" class="first-music select name-hotsteel" id="fWsl">...</div><br>
-            <div onclick="mwMlangFunction();" class="first-music select name-hurricane" id="fWsm">...</div><br>
-            <div onclick="mwNlangFunction();" class="first-music select name-jojo" id="fWsn">...</div><br>
-            <div onclick="mwAClangFunction();" class="first-music select name-lancelot" id="fWsac">...</div><br>
-            <div onclick="mwOlangFunction();" class="first-music select name-michael" id="fWso">...</div><br>
-            <div onclick="mwADlangFunction();" class="first-music select name-moon-rabbit" id="fWsad">...</div><br>
-            <div onclick="mwAElangFunction();" class="first-music select name-nebula" id="fWsae">...</div><br>
-            <div onclick="mwPlangFunction();" class="first-music select name-neutron-star" id="fWsp">...</div><br>
-            <div onclick="mwQlangFunction();" class="first-music select name-northern-knight" id="fWsq">...</div><br>
-            <div onclick="mwRlangFunction();" class="first-music select name-pulsar" id="fWsr">...</div><br>
-            <div onclick="mwSlangFunction();" class="first-music select name-ranger" id="fWss">...</div><br>
-            <div onclick="mwTlangFunction();" class="first-music select name-raven" id="fWst">...</div><br>
-            <div onclick="mwAFlangFunction();" class="first-music select name-shiranui" id="fWsaf">...</div><br>
-            <div onclick="mwAJlangFunction();" class="first-music select name-skyfall" id="fWsaj">...</div><br>
-            <div onclick="mwAGlangFunction();" class="first-music select name-skyfire" id="fWsag">...</div><br>
-            <div onclick="mwUlangFunction();" class="first-music select name-skylark" id="fWsu">...</div><br>
-            <div onclick="mwVlangFunction();" class="first-music select name-snow-mirage" id="fWsv">...</div><br>
-            <div onclick="mwAKlangFunction();" class="first-music select name-tempest" id="fWsak">...</div><br>
-            <div onclick="mwWlangFunction();" class="first-music select name-trio-of-enders" id="fWsw">...</div><br>
-            <div onclick="mwAHlangFunction();" class="first-music select name-twilight" id="fWsah">...</div><br>
-            <div onclick="mwXlangFunction();" class="first-music select name-ventorus" id="fWsx">...</div>
-          </div>
-        </div>
-      </div>
-      <button id="applyFirstSettings" class="apply-first-settings" onclick="localStorage.setItem('firstModal', 'exist');applySettings();" disabled>Complate</button>
-      <div id="firstTabsContiner" class="tab-first">
-        <button onclick="openFtab(event, 'firstAtab');pauseFirstMusic();selectionSound();" class="tablinks-first active" id="tabAfirst">Languages</button>
-        <button onclick="openFtab(event, 'firstBtab');pauseFirstMusic();selectionSound();" class="tablinks-first" id="tabBfirst" disabled>Game</button>
-        <button onclick="openFtab(event, 'firstCtab');pauseFirstMusic();selectionSound();" class="tablinks-first" id="tabCfirst" disabled>Snake</button>
-        <button onclick="openFtab(event, 'firstDtab');selectionSound();" class="tablinks-first" id="tabDfirst" disabled>Music</button>
-        <button onclick="openFtab(event, 'firstEtab');pauseFirstMusic();selectionSound();" class="tablinks-first" id="tabEfirst" disabled>Walking</button>
       </div>
     </div>
     <div id="updateModal" class="modal" style="display: none;">
@@ -1823,7 +1662,7 @@
       <div class="collection-continer" id="mechaGallery">
         <div class="items-title name-akashic">...</div>
         <div class="gallery-skins" id="skinsAkashic">
-          <div class="gallery-card default" onclick="showMechaAkashic();">
+          <div class="gallery-card default locked" id="akashicSkin000000" onclick="showMechaAkashic();">
             <div class="item-image akashic locked" id="imgLockAkashic"></div>
             <div class="class ddd locked" id="classesAkashic"></div>
             <div class="name akashic name-akashic">...</div>
@@ -1833,7 +1672,7 @@
         <hr>
         <div class="items-title name-alborada">...</div>
         <div class="gallery-skins" id="skinsAlborada">
-          <div class="gallery-card default" onclick="showMechaAlborada();">
+          <div class="gallery-card default locked" id="alboradaSkin000000" onclick="showMechaAlborada();">
             <div class="item-image alborada locked" id="imgLockAlborada"></div>
             <div class="class ddd locked" id="classesAlborada"></div>
             <div class="name alborada name-alborada">...</div>
@@ -1843,7 +1682,7 @@
         <hr>
         <div class="items-title name-andromeda">...</div>
         <div class="gallery-skins" id="skinsAndromeda">
-          <div class="gallery-card default" onclick="showMechaAndromeda();">
+          <div class="gallery-card default locked" id="andromedaSkin000000" onclick="showMechaAndromeda();">
             <div class="item-image andromeda locked" id="imgLockAndromeda"></div>
             <div class="class ddd locked" id="classesAndromeda"></div>
             <div class="name andromeda name-andromeda">...</div>
@@ -1853,7 +1692,7 @@
         <hr>
         <div class="items-title name-arthur">...</div>
         <div class="gallery-skins" id="skinsArthur">
-          <div class="gallery-card default" onclick="showMechaArthur();">
+          <div class="gallery-card default locked" id="arthurSkin000000" onclick="showMechaArthur();">
             <div class="item-image arthur locked" id="imgLockArthur"></div>
             <div class="class ddd locked" id="classesArthur"></div>
             <div class="name arthur name-arthur">...</div>
@@ -1863,7 +1702,7 @@
         <hr>
         <div class="items-title name-aurora">...</div>
         <div class="gallery-skins" id="skinsAurora">
-          <div class="gallery-card default" onclick="showMechaAurora();">
+          <div class="gallery-card default locked" id="auroraSkin000000" onclick="showMechaAurora();">
             <div class="item-image aurora locked" id="imgLockAurora"></div>
             <div class="class ddd locked" id="classesAurora"></div>
             <div class="name aurora name-aurora">...</div>
@@ -1873,7 +1712,7 @@
         <hr>
         <div class="items-title name-boltus">...</div>
         <div class="gallery-skins" id="skinsBoltus">
-          <div class="gallery-card default" onclick="showMechaBoltus();">
+          <div class="gallery-card default locked" id="boltusSkin000000" onclick="showMechaBoltus();">
             <div class="item-image boltus locked" id="imgLockBoltus"></div>
             <div class="class ddd locked" id="classesBoltus"></div>
             <div class="name boltus name-boltus">...</div>
@@ -1883,7 +1722,7 @@
         <hr>
         <div class="items-title name-caramel">...</div>
         <div class="gallery-skins" id="skinsCaramel">
-          <div class="gallery-card default" onclick="showMechaCaramel();">
+          <div class="gallery-card default locked" id="caramelSkin000000" onclick="showMechaCaramel();">
             <div class="item-image caramel locked" id="imgLockCaramel"></div>
             <div class="class ddd locked" id="classesCaramel"></div>
             <div class="name caramel name-caramel">...</div>
@@ -1893,7 +1732,7 @@
         <hr>
         <div class="items-title name-death-knell">...</div>
         <div class="gallery-skins" id="skinsDeathKnell">
-          <div class="gallery-card default" onclick="showMechaDeathKnell();">
+          <div class="gallery-card default locked" id="death-knellSkin000000" onclick="showMechaDeathKnell();">
             <div class="item-image death-knell locked" id="imgLockDeathKnell"></div>
             <div class="class ddd locked" id="classesDeathKnell"></div>
             <div class="name death-knell name-death-knell">...</div>
@@ -1903,7 +1742,7 @@
         <hr>
         <div class="items-title name-doomlight">...</div>
         <div class="gallery-skins" id="skinsDoomlight">
-          <div class="gallery-card default" onclick="showMechaDoomlight();">
+          <div class="gallery-card default locked" id="doomlightSkin000000" onclick="showMechaDoomlight();">
             <div class="item-image doomlight locked" id="imgLockDoomlight"></div>
             <div class="class ddd locked" id="classesDoomlight"></div>
             <div class="name doomlight name-doomlight">...</div>
@@ -1913,7 +1752,7 @@
         <hr>
         <div class="items-title name-dreadwolf">...</div>
         <div class="gallery-skins" id="skinsDreadwolf">
-          <div class="gallery-card default" onclick="showMechaDreadwolf();">
+          <div class="gallery-card default locked" id="dreadwolfSkin000000" onclick="showMechaDreadwolf();">
             <div class="item-image dreadwolf locked" id="imgLockDreadwolf"></div>
             <div class="class ddd locked" id="classesDreadwolf"></div>
             <div class="name dreadwolf name-dreadwolf">...</div>
@@ -1923,7 +1762,7 @@
         <hr>
         <div class="items-title name-firefox">...</div>
         <div class="gallery-skins" id="skinsFirefox">
-          <div class="gallery-card default" onclick="showMechaFirefox();">
+          <div class="gallery-card default locked" id="firefoxSkin000000" onclick="showMechaFirefox();">
             <div class="item-image firefox locked" id="imgLockFirefox"></div>
             <div class="class ddd locked" id="classesFirefox"></div>
             <div class="name firefox name-firefox">...</div>
@@ -1933,7 +1772,7 @@
         <hr>
         <div class="items-title name-firestar">...</div>
         <div class="gallery-skins" id="skinsFirestar">
-          <div class="gallery-card default" onclick="showMechaFirestar();">
+          <div class="gallery-card default locked" id="firestarSkin000000" onclick="showMechaFirestar();">
             <div class="item-image firestar locked" id="imgLockFirestar"></div>
             <div class="class ddd locked" id="classesFirestar"></div>
             <div class="name firestar name-firestar">...</div>
@@ -1943,7 +1782,7 @@
         <hr>
         <div class="items-title name-flamenco">...</div>
         <div class="gallery-skins" id="skinsFlamenco">
-          <div class="gallery-card default" onclick="showMechaFlamenco();">
+          <div class="gallery-card default locked" id="flamencoSkin000000" onclick="showMechaFlamenco();">
             <div class="item-image flamenco locked" id="imgLockFlamenco"></div>
             <div class="class ddd locked" id="classesFlamenco"></div>
             <div class="name flamenco name-flamenco">...</div>
@@ -1953,7 +1792,7 @@
         <hr>
         <div class="items-title name-gabriel">...</div>
         <div class="gallery-skins" id="skins">
-          <div class="gallery-card default" onclick="showMechaGabriel();">
+          <div class="gallery-card default locked" id="gabrielSkin000000" onclick="showMechaGabriel();">
             <div class="item-image gabriel locked" id="imgLockGabriel"></div>
             <div class="class ddd locked" id="classesGabriel"></div>
             <div class="name gabriel name-gabriel">...</div>
@@ -1963,7 +1802,7 @@
         <hr>
         <div class="items-title name-gaia">...</div>
         <div class="gallery-skins" id="skinsGaia">
-          <div class="gallery-card default" onclick="showMechaGaia();">
+          <div class="gallery-card default locked" id="gaiaSkin000000" onclick="showMechaGaia();">
             <div class="item-image gaia locked" id="imgLockGaia"></div>
             <div class="class ddd locked" id="classesGaia"></div>
             <div class="name gaia name-gaia">...</div>
@@ -1973,7 +1812,7 @@
         <hr>
         <div class="items-title name-guerilla-hunter">...</div>
         <div class="gallery-skins" id="skinsGuerillaHunter">
-          <div class="gallery-card default" onclick="showMechaGuerillaHunter();">
+          <div class="gallery-card default locked" id="guerilla-hunterSkin000000" onclick="showMechaGuerillaHunter();">
             <div class="item-image guerilla-hunter locked" id="imgLockGuerillaHunter"></div>
             <div class="class ddd locked" id="classesGuerillaHunter"></div>
             <div class="name guerilla-hunter name-guerilla-hunter">...</div>
@@ -1983,7 +1822,7 @@
         <hr>
         <div class="items-title name-hotsteel">...</div>
         <div class="gallery-skins" id="skinsHotsteel">
-          <div class="gallery-card default" onclick="showMechaHotsteel();">
+          <div class="gallery-card default locked" id="hotsteelSkin000000" onclick="showMechaHotsteel();">
             <div class="item-image hotsteel locked" id="imgLockHotsteel"></div>
             <div class="class ddd locked" id="classesHotsteel"></div>
             <div class="name hotsteel name-hotsteel">...</div>
@@ -1993,7 +1832,7 @@
         <hr>
         <div class="items-title name-hurricane">...</div>
         <div class="gallery-skins" id="skinsHurricane">
-          <div class="gallery-card default" onclick="showMechaHurricane();">
+          <div class="gallery-card default locked" id="hurricaneSkin000000" onclick="showMechaHurricane();">
             <div class="item-image hurricane locked" id="imgLockHurricane"></div>
             <div class="class ddd locked" id="classesHurricane"></div>
             <div class="name hurricane name-hurricane">...</div>
@@ -2003,7 +1842,7 @@
         <hr>
         <div class="items-title name-jojo">...</div>
         <div class="gallery-skins" id="skinsJOJO">
-          <div class="gallery-card default" onclick="showMechaJOJO();">
+          <div class="gallery-card default locked" id="jojoSkin000000" onclick="showMechaJOJO();">
             <div class="item-image jojo locked" id="imgLockJOJO"></div>
             <div class="class ddd locked" id="classesJOJO"></div>
             <div class="name jojo name-jojo">...</div>
@@ -2013,7 +1852,7 @@
         <hr>
         <div class="items-title name-lancelot">...</div>
         <div class="gallery-skins" id="skinsLancelot">
-          <div class="gallery-card default" onclick="showMechaLancelot();">
+          <div class="gallery-card default locked" id="lancelotSkin000000" onclick="showMechaLancelot();">
             <div class="item-image lancelot locked" id="imgLockLancelot"></div>
             <div class="class ddd locked" id="classesLancelot"></div>
             <div class="name lancelot name-lancelot">...</div>
@@ -2023,7 +1862,7 @@
         <hr>
         <div class="items-title name-michael">...</div>
         <div class="gallery-skins" id="skinsMichael">
-          <div class="gallery-card default" onclick="showMechaMichael();">
+          <div class="gallery-card default locked" id="michaelSkin000000" onclick="showMechaMichael();">
             <div class="item-image michael locked" id="imgLockMichael"></div>
             <div class="class ddd locked" id="classesMichael"></div>
             <div class="name michael name-michael">...</div>
@@ -2033,7 +1872,7 @@
         <hr>
         <div class="items-title name-moon-rabbit">...</div>
         <div class="gallery-skins" id="skinsMoonRabbit">
-          <div class="gallery-card default" onclick="showMechaMoonRabbit();">
+          <div class="gallery-card default locked" id="moon-rabbitSkin000000" onclick="showMechaMoonRabbit();">
             <div class="item-image moon-rabbit locked" id="imgLockMoonRabbit"></div>
             <div class="class ddd locked" id="classesMoonRabbit"></div>
             <div class="name moon-rabbit name-moon-rabbit">...</div>
@@ -2043,7 +1882,7 @@
         <hr>
         <div class="items-title name-nebula">...</div>
         <div class="gallery-skins" id="skinsNebula">
-          <div class="gallery-card default" onclick="showMechaNebula();">
+          <div class="gallery-card default locked" id="nebulaSkin000000" onclick="showMechaNebula();">
             <div class="item-image nebula locked" id="imgLockNebula"></div>
             <div class="class ddd locked" id="classesNebula"></div>
             <div class="name nebula name-nebula">...</div>
@@ -2053,7 +1892,7 @@
         <hr>
         <div class="items-title name-neutron-star">...</div>
         <div class="gallery-skins" id="skinsNeutronStar">
-          <div class="gallery-card default" onclick="showMechaNeutronStar();">
+          <div class="gallery-card default locked" id="neutron-starSkin000000" onclick="showMechaNeutronStar();">
             <div class="item-image neutron-star locked" id="imgLockNeutronStar"></div>
             <div class="class ddd locked" id="classesNeutronStar"></div>
             <div class="name neutron-star name-neutron-star">...</div>
@@ -2063,7 +1902,7 @@
         <hr>
         <div class="items-title name-northern-knight">...</div>
         <div class="gallery-skins" id="skinsNorthernKnight">
-          <div class="gallery-card default" onclick="showMechaNorthernKnight();">
+          <div class="gallery-card default locked" id="northern-knightSkin000000" onclick="showMechaNorthernKnight();">
             <div class="item-image northern-knight locked" id="imgLockNorthernKnight"></div>
             <div class="class ddd locked" id="classesNorthernKnight"></div>
             <div class="name northern-knight name-northern-knight">...</div>
@@ -2073,7 +1912,7 @@
         <hr>
         <div class="items-title name-pulsar">...</div>
         <div class="gallery-skins" id="skinsPulsar">
-          <div class="gallery-card default" onclick="showMechaPulsar();">
+          <div class="gallery-card default locked" id="pulsarSkin000000" onclick="showMechaPulsar();">
             <div class="item-image pulsar locked" id="imgLockPulsar"></div>
             <div class="class ddd locked" id="classesPulsar"></div>
             <div class="name pulsar name-pulsar">...</div>
@@ -2083,7 +1922,7 @@
         <hr>
         <div class="items-title name-ranger">...</div>
         <div class="gallery-skins" id="skinsRanger">
-          <div class="gallery-card default" onclick="showMechaRanger();">
+          <div class="gallery-card default locked" id="rangerSkin000000" onclick="showMechaRanger();">
             <div class="item-image ranger locked" id="imgLockRanger"></div>
             <div class="class ddd locked" id="classesRanger"></div>
             <div class="name ranger name-ranger">...</div>
@@ -2093,7 +1932,7 @@
         <hr>
         <div class="items-title name-raven">...</div>
         <div class="gallery-skins" id="skinsRaven">
-          <div class="gallery-card default" onclick="showMechaRaven();">
+          <div class="gallery-card default locked" id="ravenSkin000000" onclick="showMechaRaven();">
             <div class="item-image raven locked" id="imgLockRaven"></div>
             <div class="class ddd locked" id="classesRaven"></div>
             <div class="name raven name-raven">...</div>
@@ -2103,7 +1942,7 @@
         <hr>
         <div class="items-title name-shiranui">...</div>
         <div class="gallery-skins" id="skinsShiranui">
-          <div class="gallery-card default" onclick="showMechaShiranui();">
+          <div class="gallery-card default locked" id="shiranuiSkin000000" onclick="showMechaShiranui();">
             <div class="item-image shiranui locked" id="imgLockShiranui"></div>
             <div class="class ddd locked" id="classesShiranui"></div>
             <div class="name shiranui name-shiranui">...</div>
@@ -2113,7 +1952,7 @@
         <hr>
         <div class="items-title name-skyfall">...</div>
         <div class="gallery-skins" id="skinsSkyfall">
-          <div class="gallery-card default" onclick="showMechaSkyfall();">
+          <div class="gallery-card default locked" id="skyfallSkin000000" onclick="showMechaSkyfall();">
             <div class="item-image skyfall locked" id="imgLockSkyfall"></div>
             <div class="class ddd locked" id="classesSkyfall"></div>
             <div class="name skyfall name-skyfall">...</div>
@@ -2123,7 +1962,7 @@
         <hr>
         <div class="items-title name-skyfire">...</div>
         <div class="gallery-skins" id="skinsSkyfire">
-          <div class="gallery-card default" onclick="showMechaSkyfire();">
+          <div class="gallery-card default locked" id="skyfireSkin000000" onclick="showMechaSkyfire();">
             <div class="item-image skyfire locked" id="imgLockSkyfire"></div>
             <div class="class ddd locked" id="classesSkyfire"></div>
             <div class="name skyfire name-skyfire">...</div>
@@ -2133,7 +1972,7 @@
         <hr>
         <div class="items-title name-skylark">...</div>
         <div class="gallery-skins" id="skinsSkylark">
-          <div class="gallery-card default" onclick="showMechaSkylark();">
+          <div class="gallery-card default locked" id="skylarkSkin000000" onclick="showMechaSkylark();">
             <div class="item-image skylark locked" id="imgLockSkylark"></div>
             <div class="class ddd locked" id="classesSkylark"></div>
             <div class="name skylark name-skylark">...</div>
@@ -2143,7 +1982,7 @@
         <hr>
         <div class="items-title name-snow-mirage">...</div>
         <div class="gallery-skins" id="skinsSnowMirage">
-          <div class="gallery-card default" onclick="showMechaSnowMirage();">
+          <div class="gallery-card default locked" id="snow-mirageSkin000000" onclick="showMechaSnowMirage();">
             <div class="item-image snow-mirage locked" id="imgLockSnowMirage"></div>
             <div class="class ddd locked" id="classesSnowMirage"></div>
             <div class="name snow-mirage name-snow-mirage">...</div>
@@ -2153,7 +1992,7 @@
         <hr>
         <div class="items-title name-tempest">...</div>
         <div class="gallery-skins" id="skinsTempest">
-          <div class="gallery-card default" onclick="showMechaTempest();">
+          <div class="gallery-card default locked" id="tempestSkin000000" onclick="showMechaTempest();">
             <div class="item-image tempest locked" id="imgLockTempest"></div>
             <div class="class ddd locked" id="classesTempest"></div>
             <div class="name tempest name-tempest">...</div>
@@ -2163,7 +2002,7 @@
         <hr>
         <div class="items-title name-trio-of-enders">...</div>
         <div class="gallery-skins" id="skinsTrioofEnders">
-          <div class="gallery-card default" onclick="showMechaTrioofEnders();">
+          <div class="gallery-card default locked" id="trio-of-endersSkin000000" onclick="showMechaTrioofEnders();">
             <div class="item-image trio-of-enders locked" id="imgLockTrioofEnders"></div>
             <div class="class ddd locked" id="classesTrioofEnders"></div>
             <div class="name trio-of-enders name-trio-of-enders">...</div>
@@ -2173,7 +2012,7 @@
         <hr>
         <div class="items-title name-twilight">...</div>
         <div class="gallery-skins" id="skinsTwilight">
-          <div class="gallery-card default" onclick="showMechaTwilight();">
+          <div class="gallery-card default locked" id="twilightSkin000000" onclick="showMechaTwilight();">
             <div class="item-image twilight locked" id="imgLockTwilight"></div>
             <div class="class ddd locked" id="classesTwilight"></div>
             <div class="name twilight name-twilight">...</div>
@@ -2183,7 +2022,7 @@
         <hr>
         <div class="items-title name-ventorus">...</div>
         <div class="gallery-skins" id="skinsVentorus">
-          <div class="gallery-card default" onclick="showMechaVentorus();">
+          <div class="gallery-card default locked" id="ventorusSkin000000" onclick="showMechaVentorus();">
             <div class="item-image ventorus locked" id="imgLockVentorus"></div>
             <div class="class ddd locked" id="classesVentorus"></div>
             <div class="name ventorus name-ventorus">...</div>
@@ -2195,7 +2034,7 @@
       <div class="collection-continer" id="pilotGallery">
         <div class="items-title name-aya">...</div>
         <div class="gallery-skins" id="skinsAya">
-          <div class="gallery-card default" onclick="showPilotAya();">
+          <div class="gallery-card default locked" id="ayaSkin000000" onclick="showPilotAya();">
             <div class="item-image aya locked" id="imgLockAya"></div>
             <div class="class ddd locked" id="classesAya"></div>
             <div class="name aya name-aya">...</div>
@@ -2205,7 +2044,7 @@
         <hr>
         <div class="items-title name-belladonna">...</div>
         <div class="gallery-skins" id="skinsBelladonna">
-          <div class="gallery-card default" onclick="showPilotBelladonna();">
+          <div class="gallery-card default locked" id="belladonnaSkin000000" onclick="showPilotBelladonna();">
             <div class="item-image belladonna locked" id="imgLockBelladonna"></div>
             <div class="class ddd locked" id="classesBelladonna"></div>
             <div class="name belladonna name-belladonna">...</div>
@@ -2215,7 +2054,7 @@
         <hr>
         <div class="items-title name-cyrus">...</div>
         <div class="gallery-skins" id="skinsCyrus">
-          <div class="gallery-card default" onclick="showPilotCyrus();">
+          <div class="gallery-card default locked" id="cyrusSkin000000" onclick="showPilotCyrus();">
             <div class="item-image cyrus locked" id="imgLockCyrus"></div>
             <div class="class ddd locked" id="classesCyrus"></div>
             <div class="name cyrus name-cyrus">...</div>
@@ -2225,7 +2064,7 @@
         <hr>
         <div class="items-title name-fran">...</div>
         <div class="gallery-skins" id="skinsFran">
-          <div class="gallery-card default" onclick="showPilotFran();">
+          <div class="gallery-card default locked" id="franSkin000000" onclick="showPilotFran();">
             <div class="item-image fran locked" id="imgLockFran"></div>
             <div class="class ddd locked" id="classesFran"></div>
             <div class="name fran name-fran">...</div>
@@ -2235,7 +2074,7 @@
         <hr>
         <div class="items-title name-furanku">...</div>
         <div class="gallery-skins" id="skinsFuranku">
-          <div class="gallery-card default" onclick="showPilotFuranku();">
+          <div class="gallery-card default locked" id="furankuSkin000000" onclick="showPilotFuranku();">
             <div class="item-image furanku locked" id="imgLockFuranku"></div>
             <div class="class ddd locked" id="classesFuranku"></div>
             <div class="name furanku name-furanku">...</div>
@@ -2245,7 +2084,7 @@
         <hr>
         <div class="items-title name-iori">...</div>
         <div class="gallery-skins" id="skinsIori">
-          <div class="gallery-card default" onclick="showPilotIori();">
+          <div class="gallery-card default locked" id="ioriSkin000000" onclick="showPilotIori();">
             <div class="item-image iori locked" id="imgLockIori"></div>
             <div class="class ddd locked" id="classesIori"></div>
             <div class="name iori name-iori">...</div>
@@ -2255,7 +2094,7 @@
         <hr>
         <div class="items-title name-ivan">...</div>
         <div class="gallery-skins" id="skinsIvan">
-          <div class="gallery-card default" onclick="showPilotIvan();">
+          <div class="gallery-card default locked" id="ivanSkin000000" onclick="showPilotIvan();">
             <div class="item-image ivan locked" id="imgLockIvan"></div>
             <div class="class ddd locked" id="classesIvan"></div>
             <div class="name ivan name-ivan">...</div>
@@ -2265,7 +2104,7 @@
         <hr>
         <div class="items-title name-jaka">...</div>
         <div class="gallery-skins" id="skinsJaka">
-          <div class="gallery-card default" onclick="showPilotJaka();">
+          <div class="gallery-card default locked" id="jakaSkin000000" onclick="showPilotJaka();">
             <div class="item-image jaka locked" id="imgLockJaka"></div>
             <div class="class ddd locked" id="classesJaka"></div>
             <div class="name jaka name-jaka">...</div>
@@ -2275,7 +2114,7 @@
         <hr>
         <div class="items-title name-jiu-chong">...</div>
         <div class="gallery-skins" id="skinsJiuChong">
-          <div class="gallery-card default" onclick="showPilotJiuChong();">
+          <div class="gallery-card default locked" id="jiu-chongSkin000000" onclick="showPilotJiuChong();">
             <div class="item-image jiu-chong locked" id="imgLockJiuChong"></div>
             <div class="class ddd locked" id="classesJiuChong"></div>
             <div class="name jiu-chong name-jiu-chong">...</div>
@@ -2285,7 +2124,7 @@
         <hr>
         <div class="items-title name-joanna">...</div>
         <div class="gallery-skins" id="skinsJoanna">
-          <div class="gallery-card default" onclick="showPilotJoanna();">
+          <div class="gallery-card default locked" id="joannaSkin000000" onclick="showPilotJoanna();">
             <div class="item-image joanna locked" id="imgLockJoanna"></div>
             <div class="class ddd locked" id="classesJoanna"></div>
             <div class="name joanna name-joanna">...</div>
@@ -2295,7 +2134,7 @@
         <hr>
         <div class="items-title name-kije">...</div>
         <div class="gallery-skins" id="skinsKije">
-          <div class="gallery-card default" onclick="showPilotKije();">
+          <div class="gallery-card default locked" id="kijeSkin000000" onclick="showPilotKije();">
             <div class="item-image kije locked" id="imgLockKije"></div>
             <div class="class ddd locked" id="classesKije"></div>
             <div class="name kije name-kije">...</div>
@@ -2305,7 +2144,7 @@
         <hr>
         <div class="items-title name-kikina">...</div>
         <div class="gallery-skins" id="skinsKikina">
-          <div class="gallery-card default" onclick="showPilotKikina();">
+          <div class="gallery-card default locked" id="kikinaSkin000000" onclick="showPilotKikina();">
             <div class="item-image kikina locked" id="imgLockKikina"></div>
             <div class="class ddd locked" id="classesKikina"></div>
             <div class="name kikina name-kikina">...</div>
@@ -2315,7 +2154,7 @@
         <hr>
         <div class="items-title name-kizuna-ai">...</div>
         <div class="gallery-skins" id="skinsKizunaAi">
-          <div class="gallery-card a-rank" onclick="showPilotKizunaAi();">
+          <div class="gallery-card a-rank locked" id="kizuna-aiSkin000000" onclick="showPilotKizunaAi();">
             <div class="item-image kizuna-ai locked" id="imgLockKizunaAi"></div>
             <div class="class aaa locked" id="classesKizunaAi"></div>
             <div class="name kizuna-ai name-kizuna-ai">...</div>
@@ -2325,7 +2164,7 @@
         <hr>
         <div class="items-title name-lillian">...</div>
         <div class="gallery-skins" id="skinsLillian">
-          <div class="gallery-card default" onclick="showPilotLillian();">
+          <div class="gallery-card default locked" id="lillianSkin000000" onclick="showPilotLillian();">
             <div class="item-image lillian locked" id="imgLockLillian"></div>
             <div class="class ddd locked" id="classesLillian"></div>
             <div class="name lillian name-lillian">...</div>
@@ -2335,7 +2174,7 @@
         <hr>
         <div class="items-title name-lysa">...</div>
         <div class="gallery-skins" id="skinsLysa">
-          <div class="gallery-card default" onclick="showPilotLysa();">
+          <div class="gallery-card default locked" id="lysaSkin000000" onclick="showPilotLysa();">
             <div class="item-image lysa locked" id="imgLockLysa"></div>
             <div class="class ddd locked" id="classesLysa"></div>
             <div class="name lysa name-lysa">...</div>
@@ -2345,7 +2184,7 @@
         <hr>
         <div class="items-title name-matilda">...</div>
         <div class="gallery-skins" id="skinsMatilda">
-          <div class="gallery-card default" onclick="showPilotMatilda();">
+          <div class="gallery-card default locked" id="matildaSkin000000" onclick="showPilotMatilda();">
             <div class="item-image matilda locked" id="imgLockMatilda"></div>
             <div class="class ddd locked" id="classesMatilda"></div>
             <div class="name matilda name-matilda">...</div>
@@ -2355,7 +2194,7 @@
         <hr>
         <div class="items-title name-mia">...</div>
         <div class="gallery-skins" id="skinsMia">
-          <div class="gallery-card default" onclick="showPilotMia();">
+          <div class="gallery-card default locked" id="miaSkin000000" onclick="showPilotMia();">
             <div class="item-image mia locked" id="imgLockMia"></div>
             <div class="class ddd locked" id="classesMia"></div>
             <div class="name mia name-mia">...</div>
@@ -2365,7 +2204,7 @@
         <hr>
         <div class="items-title name-mila">...</div>
         <div class="gallery-skins" id="skinsMila">
-          <div class="gallery-card default" onclick="showPilotMila();">
+          <div class="gallery-card default locked" id="milaSkin000000" onclick="showPilotMila();">
             <div class="item-image mila locked" id="imgLockMila"></div>
             <div class="class ddd locked" id="classesMila"></div>
             <div class="name mila name-mila">...</div>
@@ -2375,7 +2214,7 @@
         <hr>
         <div class="items-title name-mobius">...</div>
         <div class="gallery-skins" id="skinsMobius">
-          <div class="gallery-card default" onclick="showPilotMobius();">
+          <div class="gallery-card default locked" id="mobiusSkin000000" onclick="showPilotMobius();">
             <div class="item-image mobius locked" id="imgLockMobius"></div>
             <div class="class ddd locked" id="classesMobius"></div>
             <div class="name mobius name-mobius">...</div>
@@ -2385,7 +2224,7 @@
         <hr>
         <div class="items-title name-nighthawk">...</div>
         <div class="gallery-skins" id="skinsNighthawk">
-          <div class="gallery-card default" onclick="showPilotNighthawk();">
+          <div class="gallery-card default locked" id="nighthawkSkin000000" onclick="showPilotNighthawk();">
             <div class="item-image nighthawk locked" id="imgLockNighthawk"></div>
             <div class="class ddd locked" id="classesNighthawk"></div>
             <div class="name nighthawk name-nighthawk">...</div>
@@ -2395,7 +2234,7 @@
         <hr>
         <div class="items-title name-ning">...</div>
         <div class="gallery-skins" id="skinsNing">
-          <div class="gallery-card default" onclick="showPilotNing();">
+          <div class="gallery-card default locked" id="ningSkin000000" onclick="showPilotNing();">
             <div class="item-image ning locked" id="imgLockNing"></div>
             <div class="class ddd locked" id="classesNing"></div>
             <div class="name ning name-ning">...</div>
@@ -2405,7 +2244,7 @@
         <hr>
         <div class="items-title name-norma">...</div>
         <div class="gallery-skins" id="skinsNorma">
-          <div class="gallery-card default" onclick="showPilotNorma();">
+          <div class="gallery-card default locked" id="normaSkin000000" onclick="showPilotNorma();">
             <div class="item-image norma locked" id="imgLockNorma"></div>
             <div class="class ddd locked" id="classesNorma"></div>
             <div class="name norma name-norma">...</div>
@@ -2415,7 +2254,7 @@
         <hr>
         <div class="items-title name-opal">...</div>
         <div class="gallery-skins" id="skinsOpal">
-          <div class="gallery-card default" onclick="showPilotOpal();">
+          <div class="gallery-card default locked" id="opalSkin000000" onclick="showPilotOpal();">
             <div class="item-image opal locked" id="imgLockOpal"></div>
             <div class="class ddd locked" id="classesOpal"></div>
             <div class="name opal name-opal">...</div>
@@ -2425,7 +2264,7 @@
         <hr>
         <div class="items-title name-purity">...</div>
         <div class="gallery-skins" id="skinsPurity">
-          <div class="gallery-card default" onclick="showPilotPurity();">
+          <div class="gallery-card default locked" id="puritySkin000000" onclick="showPilotPurity();">
             <div class="item-image purity locked" id="imgLockPurity"></div>
             <div class="class ddd locked" id="classesPurity"></div>
             <div class="name purity name-purity">...</div>
@@ -2435,7 +2274,7 @@
         <hr>
         <div class="items-title name-r-e-d">...</div>
         <div class="gallery-skins" id="skinsRED">
-          <div class="gallery-card default" onclick="showPilotRED();">
+          <div class="gallery-card default locked" id="redSkin000000" onclick="showPilotRED();">
             <div class="item-image red locked" id="imgLockRED"></div>
             <div class="class ddd locked" id="classesRED"></div>
             <div class="name red name-r-e-d">...</div>
@@ -2445,7 +2284,7 @@
         <hr>
         <div class="items-title name-riko">...</div>
         <div class="gallery-skins" id="skinsRiko">
-          <div class="gallery-card a-rank" onclick="showPilotRiko();">
+          <div class="gallery-card a-rank locked" id="rikoSkin000000" onclick="showPilotRiko();">
             <div class="item-image riko locked" id="imgLockRiko"></div>
             <div class="class aaa locked" id="classesRiko"></div>
             <div class="name riko name-riko">...</div>
@@ -2455,7 +2294,7 @@
         <hr>
         <div class="items-title name-rom">...</div>
         <div class="gallery-skins" id="skinsRom">
-          <div class="gallery-card default" onclick="showPilotRom();">
+          <div class="gallery-card default locked" id="romSkin000000" onclick="showPilotRom();">
             <div class="item-image rom locked" id="imgLockRom"></div>
             <div class="class ddd locked" id="classesRom"></div>
             <div class="name rom name-rom">...</div>
@@ -2465,7 +2304,7 @@
         <hr>
         <div class="items-title name-serena">...</div>
         <div class="gallery-skins" id="skinsSerena">
-          <div class="gallery-card default" onclick="showPilotSerena();">
+          <div class="gallery-card default locked" id="serenaSkin000000" onclick="showPilotSerena();">
             <div class="item-image serena locked" id="imgLockSerena"></div>
             <div class="class ddd locked" id="classesSerena"></div>
             <div class="name serena name-serena">...</div>
@@ -2475,7 +2314,7 @@
         <hr>
         <div class="items-title name-shin">...</div>
         <div class="gallery-skins" id="skinsShin">
-          <div class="gallery-card default" onclick="showPilotShin();">
+          <div class="gallery-card default locked" id="shinSkin000000" onclick="showPilotShin();">
             <div class="item-image shin locked" id="imgLockShin"></div>
             <div class="class ddd locked" id="classesShin"></div>
             <div class="name shin name-shin">...</div>
@@ -2485,7 +2324,7 @@
         <hr>
         <div class="items-title name-silver-deacon">...</div>
         <div class="gallery-skins" id="skinsSilverDeacon">
-          <div class="gallery-card default" onclick="showPilotSilverDeacon();">
+          <div class="gallery-card default locked" id="silver-deaconSkin000000" onclick="showPilotSilverDeacon();">
             <div class="item-image silver-deacon locked" id="imgLockSilverDeacon"></div>
             <div class="class ddd locked" id="classesSilverDeacon"></div>
             <div class="name silver-deacon name-silver-deacon">...</div>
@@ -2495,7 +2334,7 @@
         <hr>
         <div class="items-title name-tarantula">...</div>
         <div class="gallery-skins" id="skinsTarantula">
-          <div class="gallery-card default" onclick="showPilotTarantula();">
+          <div class="gallery-card default locked" id="tarantulaSkin000000" onclick="showPilotTarantula();">
             <div class="item-image tarantula locked" id="imgLockTarantula"></div>
             <div class="class ddd locked" id="classesTarantula"></div>
             <div class="name tarantula name-tarantula"></div>
@@ -2505,7 +2344,7 @@
         <hr>
         <div class="items-title name-vanessa">...</div>
         <div class="gallery-skins" id="skinsVanessa">
-          <div class="gallery-card default" onclick="showPilotVanessa();">
+          <div class="gallery-card default locked" id="vanessaSkin000000" onclick="showPilotVanessa();">
             <div class="item-image vanessa locked" id="imgLockVanessa"></div>
             <div class="class ddd locked" id="classesVanessa"></div>
             <div class="name vanessa name-vanessa">...</div>
@@ -2515,7 +2354,7 @@
         <hr>
         <div class="items-title name-villar">...</div>
         <div class="gallery-skins" id="skinsVillar">
-          <div class="gallery-card default" onclick="showPilotVillar();">
+          <div class="gallery-card default locked" id="villarSkin000000" onclick="showPilotVillar();">
             <div class="item-image villar locked" id="imgLockVillar"></div>
             <div class="class ddd locked" id="classesVillar"></div>
             <div class="name villar name-villar">...</div>
@@ -2525,7 +2364,7 @@
         <hr>
         <div class="items-title name-vita">...</div>
         <div class="gallery-skins" id="skinsVita">
-          <div class="gallery-card default" onclick="showPilotVita();">
+          <div class="gallery-card default locked" id="vitaSkin000000" onclick="showPilotVita();">
             <div class="item-image vita locked" id="imgLockVita"></div>
             <div class="class ddd locked" id="classesVita"></div>
             <div class="name vita name-vita">...</div>
@@ -2535,7 +2374,7 @@
         <hr>
         <div class="items-title name-yang">...</div>
         <div class="gallery-skins" id="skinsYang">
-          <div class="gallery-card default" onclick="showPilotYang();">
+          <div class="gallery-card default locked" id="yangSkin000000" onclick="showPilotYang();">
             <div class="item-image yang locked" id="imgLockYang"></div>
             <div class="class ddd locked" id="classesYang"></div>
             <div class="name yang name-yang">...</div>
@@ -2545,7 +2384,7 @@
         <hr>
         <div class="items-title name-yulia">...</div>
         <div class="gallery-skins" id="skinsYulia">
-          <div class="gallery-card default" onclick="showPilotYulia();">
+          <div class="gallery-card default locked" id="yuliaSkin000000" onclick="showPilotYulia();">
             <div class="item-image yulia locked" id="imgLockYulia"></div>
             <div class="class ddd locked" id="classesYulia"></div>
             <div class="name yulia name-yulia">...</div>
@@ -2555,7 +2394,7 @@
         <hr>
         <div class="items-title name-yutong">...</div>
         <div class="gallery-skins" id="skinsYutong">
-          <div class="gallery-card default" onclick="showPilotYutong();">
+          <div class="gallery-card default locked" id="yutongSkin000000" onclick="showPilotYutong();">
             <div class="item-image yutong locked" id="imgLockYutong"></div>
             <div class="class ddd locked" id="classesYutong"></div>
             <div class="name yutong name-yutong">...</div>
@@ -2565,7 +2404,7 @@
         <hr>
         <div class="items-title name-zoe">...</div>
         <div class="gallery-skins" id="skinsZoe">
-          <div class="gallery-card default" onclick="showPilotZoe();">
+          <div class="gallery-card default locked" id="zoeSkin000000" onclick="showPilotZoe();">
             <div class="item-image zoe locked" id="imgLockZoe"></div>
             <div class="class ddd locked" id="classesZoe"></div>
             <div class="name zoe name-zoe">...</div>
@@ -2880,41 +2719,14 @@
     <script src="index_data/scripts/key_controlls.js"></script>
     <script src="index_data/scripts/updates.js"></script>
     <script src="index_data/scripts/scripts_2.js"></script>
-    <script src="index_data/scripts/is_first_player.js"></script>
     <script src="index_data/gacha_events/events_register.js"></script>
+    <script src="index_data/additionals/developments.js"></script>
     <div id="scriptsCreates"></div>
     <div id="scriptsCreatesRegistrationEvents"></div>
+    <script src="index_data/scripts/window_contextmenu.js"></script>
     <script src="index_data/scripts/window_load.js"></script>
-    <script>
-      if(navigator.serviceWorker) {
-        if(window.location.protocol === 'https:') {
-          navigator.serviceWorker.register('/mnts.smc.org/sw.js',{scope: '/mnts.smc.org/'})
-          .then(registration => {
-            console.log('Service Worker registered with scope:', registration.scope);
-          })
-          .catch(error => {
-            return false
-          });
-          document.getElementById("manifestTestLoad").setAttribute('href','/mnts.smc.org/manifest.webmanifest');
-        }else
-        if (window.location.protocol === 'file:') {
-          if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('/sw.js', { scope: '/' })
-              .then(registration => {
-                console.log('Service Worker registered for local file with scope:', registration.scope);
-              })
-              .catch(error => {
-                return false
-              });
-              document.getElementById("manifestTestLoad").setAttribute('href','./manifest.webmanifest');
-          } else {
-            console.log('Service workers are not supported in this environment.');
-          }
-        } else {
-          console.log('Service workers are not being registered on non-HTTPS or non-file protocols.');
-        }
-      }
-    </script>
+    <script src="index_data/scripts/window_error.js"></script>
     <div id="scriptContainer"></div>
+    <script src="sw_loader.js"></script>
   </body>
 </html>
